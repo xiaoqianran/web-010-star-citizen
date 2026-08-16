@@ -315,7 +315,6 @@
 .hud .compass,
 .hud .disc-menu,
 .hud .info-card,
-.hud .ctx-menu,
 .hud .flyout,
 .hud .display-bar {
   pointer-events: auto;
@@ -823,30 +822,6 @@
   pointer-events: none;
   transform: translateY(-50%);
   text-shadow: 0 0 8px #ffb53488;
-}
-
-.ctx-menu {
-  position: absolute;
-  z-index: 20;
-  display: grid;
-  gap: 8px;
-  min-width: 160px;
-  padding: 4px 0;
-  pointer-events: auto;
-  transform: translate(12px, -8px);
-}
-
-.ctx-menu button {
-  text-align: left;
-  color: #42cbf8;
-  letter-spacing: 0.16em;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.ctx-menu button:hover,
-.ctx-menu button:focus {
-  color: #ffb534;
 }
 
 .panel tbody tr {

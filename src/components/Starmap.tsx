@@ -58,7 +58,6 @@ export function Starmap() {
   const [hover, setHover] = useState<CapturedBody | null>(null);
   const [selected, setSelected] = useState<CapturedBody | null>(null);
   const [discPage, setDiscPage] = useState<"inspect" | "information" | "routing" | "bookmark">("information");
-  const [ctx, setCtx] = useState<{ x: number; y: number; body?: CapturedBody; system?: string } | null>(null);
   const [inspectNonce, setInspectNonce] = useState(0);
   const [query, setQuery] = useState("");
   const [from, setFrom] = useState("GOSS");
@@ -299,27 +298,28 @@ export function Starmap() {
         onHover={setHover}
         onSelect={(body) => {
           blip(sound);
-          setCtx(null);
           setSelected(body);
           setLevel("object");
           setDiscPage("information");
         }}
         onSelectSystem={(code) => enterSystem(code)}
         onBackground={() => {
-          setCtx(null);
           setMenu(false);
           if (selected) {
             setSelected(null);
             if (level === "object") setLevel("system");
           }
         }}
-        onContext={(hit, x, y) => {
+        onContext={(hit) => {
+          if (!hit) return;
           blip(sound);
-          if (!hit) {
-            setCtx(null);
+          if (hit.body) {
+            setSelected(hit.body);
+            setLevel("object");
+            setDiscPage("information");
             return;
           }
-          setCtx({ x, y, body: hit.body, system: hit.system });
+          if (hit.system) setFocusCode(hit.system);
         }}
         onProject={placeHud}
         onCamera={onCamera}
@@ -405,79 +405,9 @@ export function Starmap() {
           </button>
         </div>
 
-        {hover && !selected && !ctx && (
+        {hover && !selected && (
           <div className="hover-tip" ref={tipRef}>
             {zh.disc.controlDisc} &gt;
-          </div>
-        )}
-
-        {ctx && (
-          <div className="ctx-menu" data-ctx="menu" style={{ left: ctx.x, top: ctx.y }}>
-            <button
-              type="button"
-              data-action="inspect"
-              onClick={() => {
-                if (ctx.body) {
-                  setSelected(ctx.body);
-                  setLevel("object");
-                  setDiscPage("inspect");
-                  setInspectNonce((n) => n + 1);
-                } else if (ctx.system) {
-                  setSelected(null);
-                  setFocusCode(ctx.system);
-                }
-                setCtx(null);
-              }}
-            >
-              {zh.disc.inspect}
-            </button>
-            <button
-              type="button"
-              data-page="information"
-              onClick={() => {
-                if (ctx.body) {
-                  setSelected(ctx.body);
-                  setLevel("object");
-                  setDiscPage("information");
-                } else if (ctx.system) enterSystem(ctx.system);
-                setCtx(null);
-              }}
-            >
-              {zh.disc.information}
-            </button>
-            <button
-              type="button"
-              data-page="routing"
-              onClick={() => {
-                if (ctx.body) {
-                  setSelected(ctx.body);
-                  setLevel("object");
-                  setDiscPage("routing");
-                } else if (ctx.system) {
-                  setFrom(systemByCode.get(ctx.system)?.name || ctx.system);
-                  setTab("routes");
-                }
-                setCtx(null);
-              }}
-            >
-              {zh.disc.routing}
-            </button>
-            <button
-              type="button"
-              data-page="bookmark"
-              onClick={() => {
-                const code = ctx.body?.code || ctx.system;
-                if (code) setMarks(store.toggleBookmark(code));
-                if (ctx.body) {
-                  setSelected(ctx.body);
-                  setLevel("object");
-                  setDiscPage("bookmark");
-                }
-                setCtx(null);
-              }}
-            >
-              {zh.disc.bookmark}
-            </button>
           </div>
         )}
 

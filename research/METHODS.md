@@ -78,4 +78,4 @@
 10. 双击跃迁点（此前未进入目标星系）
 
 记录目录：`research/capture/official-combos/`。  
-本轮结果见同目录 `SUMMARY.md`：空白右键无菜单；搜索要 Enter；星系 DISPLAY 只有传感器+摄像机。
+本轮结果见同目录 `SUMMARY.md`：空白右键无菜单；已标注星系（SOL）右键也无浮动菜单、仅高亮；搜索要 Enter；星系 DISPLAY 只有传感器+摄像机。

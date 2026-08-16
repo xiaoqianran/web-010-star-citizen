@@ -571,7 +571,6 @@ export function StarMapCanvas({
     };
     const onClick = () => {
       if (drag > 8) return;
-      contextRef.current?.(null, 0, 0);
       if (modeRef.current === "galaxy" && hoverSys) {
         selectSysRef.current(hoverSys);
         return;

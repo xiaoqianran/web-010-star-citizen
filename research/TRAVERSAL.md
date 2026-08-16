@@ -209,6 +209,7 @@ DISPLAY 在银河视图类名是 `sm-galaxy-display-tab`，星系视图是 `sm-s
 见 `research/capture/official-combos/SUMMARY.md`。
 
 - 银河空白处右键：无上屏菜单。INSPECT 节点在 DOM 里但像素是空的，直到控制盘真正打开。
+- 银河已标注星系（SOL）右键：同样无浮动菜单，仅绿色高亮；双击不进入系统。
 - 搜索必须 **Enter**：Terra 26 条；`jump` = `NO OBJECTS FOUND WITH FILTERS.`；Levski 类型 **LANDING ZONE**；行名 `CASSEL IN GOSS`。
 - 点 Terra 星系：`?selection=TERRA` → `?location=TERRA&camera=60,0,0.002,0,0`。
 - **星系 DISPLAY**（`sm-system-display-tab`）只有 SENSORS + CAMERA，没有阵营/隧道。

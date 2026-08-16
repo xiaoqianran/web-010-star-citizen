@@ -18,7 +18,9 @@ Pixel check on `03-right-center.png`: the DOM lists INSPECT at (410,226) with `o
 - System-view right-click at canvas center did not add a new INSPECT list; the routing disc was already open.
 - Double-click in Terra: `location` / `camera` unchanged.
 
-2015 tutorial still stands as first-party intent (right-click object → INSPECT). On 9.536.0 window mode, empty-space right-click is a no-op. Object-hit right-click still needs a labeled-node hit (WebGL), which this grid missed.
+2015 tutorial still stands as first-party intent (right-click object → INSPECT). On 9.536.0 window mode, empty-space right-click is a no-op.
+
+ComputerUse follow-up (2026-08-16, window mode): right-click on a **labeled galaxy system (SOL)** also paints **no** INSPECT/INFORMATION/ROUTING/BOOKMARK menu. The system only gets a green highlight. Left-click likewise highlights; double-click does not enter the system. Control-disc pages still exist in leftover DOM and paint after a disc is actually open — they are not a floating right-click menu.
 
 ## Search + Enter
 
