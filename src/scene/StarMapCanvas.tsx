@@ -38,6 +38,7 @@ type Props = {
   onHover: (body: CapturedBody | null) => void;
   onSelect: (body: CapturedBody) => void;
   onSelectSystem: (code: string) => void;
+  onBackground?: () => void;
   onContext?: (hit: { body?: CapturedBody; system?: string } | null, x: number, y: number) => void;
   onProject: (pt: ScreenPt | null) => void;
   onCamera: (c: CameraTuple) => void;
@@ -94,6 +95,7 @@ export function StarMapCanvas({
   onHover,
   onSelect,
   onSelectSystem,
+  onBackground,
   onContext,
   onProject,
   onCamera,
@@ -114,6 +116,7 @@ export function StarMapCanvas({
   const hoverRef = useRef(onHover);
   const selectRef = useRef(onSelect);
   const selectSysRef = useRef(onSelectSystem);
+  const backgroundRef = useRef(onBackground);
   const contextRef = useRef(onContext);
   const camRef = useRef(onCamera);
   const selectedRef = useRef(selected);
@@ -122,6 +125,7 @@ export function StarMapCanvas({
   hoverRef.current = onHover;
   selectRef.current = onSelect;
   selectSysRef.current = onSelectSystem;
+  backgroundRef.current = onBackground;
   contextRef.current = onContext;
   camRef.current = onCamera;
   selectedRef.current = selected;
@@ -138,7 +142,14 @@ export function StarMapCanvas({
     const cam = new THREE.PerspectiveCamera(48, 1, 0.05, 800);
     cam.position.set(3.8, 2.1, 10.4);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: "high-performance" });
+    } catch {
+      el.classList.add("canvas-fail");
+      el.textContent = "当前浏览器似乎不支持 WebGL。";
+      return;
+    }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.toneMapping = THREE.NoToneMapping;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -161,6 +172,8 @@ export function StarMapCanvas({
     controls.minDistance = 2;
     controls.maxDistance = 80;
     controls.rotateSpeed = 0.52;
+    controls.mouseButtons.LEFT = THREE.MOUSE.ROTATE;
+    controls.touches.ONE = THREE.TOUCH.ROTATE;
     controls.target.set(0, 0, 0);
 
     scene.add(new THREE.AmbientLight(0x142838, 0.9));
@@ -202,6 +215,8 @@ export function StarMapCanvas({
     const GAL = 0.18;
     const galPos = (s: SystemRow) => new THREE.Vector3(s.position[0] * GAL, s.position[2] * GAL, s.position[1] * GAL);
     const galaxyMeshes = new Map<string, THREE.Mesh>();
+    const galaxyHits: THREE.Object3D[] = [];
+    const galHitMat = new THREE.MeshBasicMaterial({ visible: false });
     const heatSprites = new Map<string, THREE.Sprite>();
 
     for (const sys of systems) {
@@ -215,6 +230,12 @@ export function StarMapCanvas({
       m.userData.affil = sys.affiliation[0] || "uee";
       galaxyGroup.add(m);
       galaxyMeshes.set(sys.code, m);
+      const galHit = new THREE.Mesh(new THREE.SphereGeometry(0.34, 8, 8), galHitMat);
+      galHit.position.copy(m.position);
+      galHit.userData.system = sys.code;
+      galaxyGroup.add(galHit);
+      galaxyHits.push(galHit);
+      m.userData.hit = galHit;
       const near = ["GOSS", "TERRA", "HELIOS", "TAYAC", "TYROL", "OSIRIS", "STANTON", "PYRO", "SOL", "TAMSA", "NYX"];
       if (near.includes(sys.code)) {
         const div = document.createElement("div");
@@ -279,6 +300,8 @@ export function StarMapCanvas({
         if (!m || !heat) continue;
         const aff = sys.affiliation[0] || "uee";
         m.visible = d.affiliations[aff] !== false;
+        const extra = m.userData.hit as THREE.Object3D | undefined;
+        if (extra) extra.visible = m.visible;
         const scan = d.scanners;
         const active = scan.lifeforms || scan.economy || scan.crime;
         heat.visible = m.visible && active;
@@ -465,10 +488,16 @@ export function StarMapCanvas({
     };
     const setView = (v: "3d" | "2d") => {
       if (v === "2d") {
+        controls.enablePan = true;
+        controls.mouseButtons.LEFT = THREE.MOUSE.PAN;
+        controls.touches.ONE = THREE.TOUCH.PAN;
         controls.minPolarAngle = 0;
         controls.maxPolarAngle = 0.08;
         startFly(controls.target.clone(), new THREE.Vector3(0.01, 14, 0.01));
       } else {
+        controls.enablePan = false;
+        controls.mouseButtons.LEFT = THREE.MOUSE.ROTATE;
+        controls.touches.ONE = THREE.TOUCH.ROTATE;
         controls.minPolarAngle = 0;
         controls.maxPolarAngle = Math.PI;
       }
@@ -493,7 +522,7 @@ export function StarMapCanvas({
       pointer.y = -((e.clientY - r.top) / r.height) * 2 + 1;
       ray.setFromCamera(pointer, cam);
       if (modeRef.current === "galaxy") {
-        const hit = ray.intersectObjects([...galaxyMeshes.values()], false)[0];
+        const hit = ray.intersectObjects(galaxyHits, false)[0];
         hoverSys = hit ? ((hit.object.userData.system as string) ?? null) : null;
         hovering = null;
         hoverRef.current(null);
@@ -515,18 +544,26 @@ export function StarMapCanvas({
     let downX = 0;
     let downY = 0;
     const onDown = (e: PointerEvent) => {
+      const active = document.activeElement;
+      if (active instanceof HTMLElement && (active.tagName === "INPUT" || active.tagName === "TEXTAREA")) {
+        active.blur();
+      }
       drag = 0;
       downX = e.clientX;
       downY = e.clientY;
     };
     const onClick = () => {
-      if (drag > 6) return;
+      if (drag > 8) return;
       contextRef.current?.(null, 0, 0);
       if (modeRef.current === "galaxy" && hoverSys) {
         selectSysRef.current(hoverSys);
         return;
       }
-      if (hovering) selectRef.current(hovering);
+      if (hovering) {
+        selectRef.current(hovering);
+        return;
+      }
+      backgroundRef.current?.();
     };
     const onContextMenu = (e: MouseEvent) => {
       e.preventDefault();
@@ -589,6 +626,9 @@ export function StarMapCanvas({
     galaxyGroup.visible = mode === "galaxy";
     controls.minDistance = mode === "galaxy" ? 8 : 2;
     if (view === "2d") {
+      controls.enablePan = true;
+      controls.mouseButtons.LEFT = THREE.MOUSE.PAN;
+      controls.touches.ONE = THREE.TOUCH.PAN;
       controls.minPolarAngle = 0;
       controls.maxPolarAngle = 0.08;
     }

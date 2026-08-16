@@ -17,9 +17,9 @@ export default function App() {
   const [skipAck, setSkipAck] = useState(() => store.skipAck());
   const [skipInfo, setSkipInfo] = useState(() => store.skipInfo());
 
-  const enter = async (fullscreen: boolean) => {
+  const enter = (fullscreen: boolean) => {
     if (fullscreen) {
-      await document.documentElement.requestFullscreen?.().catch(() => undefined);
+      void document.documentElement.requestFullscreen?.().catch(() => undefined);
     }
     setPhase(store.skipAck() ? (store.skipInfo() ? "map" : "lore") : "ack");
   };
@@ -32,8 +32,8 @@ export default function App() {
       {phase !== "map" ? (
         <Intro
           phase={phase}
-          onFull={() => void enter(true)}
-          onWindow={() => void enter(false)}
+          onFull={() => enter(true)}
+          onWindow={() => enter(false)}
           onAck={() => setPhase(store.skipInfo() ? "map" : "lore")}
           onExplore={() => setPhase("map")}
           skipAck={skipAck}

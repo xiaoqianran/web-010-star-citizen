@@ -261,18 +261,22 @@ export async function loadSystem(code: string) {
   if (hit) return hit;
   const key = loaderKey(upper) ?? loaderKey(code);
   if (!key) return null;
-  const mod = (await systemLoaders[key]()) as {
-    default: { data?: { resultset?: { celestial_objects?: CapturedBody[]; code?: string }[] } };
-  };
-  const row = mod.default?.data?.resultset?.[0];
-  const info = systemByCode.get(upper) ?? systemByCode.get(row?.code ?? "");
-  if (!row || !info) return null;
-  const captured = (row.celestial_objects ?? []) as CapturedBody[];
-  const have = new Set(captured.map((b) => b.code));
-  const injected = extraBodies.filter((b) => systemCodeOf(b.code) === info.code && !have.has(b.code));
-  const packed = { info, bodies: [...captured, ...injected] };
-  systemCache.set(info.code, packed);
-  return packed;
+  try {
+    const mod = (await systemLoaders[key]()) as {
+      default: { data?: { resultset?: { celestial_objects?: CapturedBody[]; code?: string }[] } };
+    };
+    const row = mod.default?.data?.resultset?.[0];
+    const info = systemByCode.get(upper) ?? systemByCode.get(row?.code ?? "");
+    if (!row || !info) return null;
+    const captured = (row.celestial_objects ?? []) as CapturedBody[];
+    const have = new Set(captured.map((b) => b.code));
+    const injected = extraBodies.filter((b) => systemCodeOf(b.code) === info.code && !have.has(b.code));
+    const packed = { info, bodies: [...captured, ...injected] };
+    systemCache.set(info.code, packed);
+    return packed;
+  } catch {
+    return null;
+  }
 }
 
 export const AFFILIATIONS = [

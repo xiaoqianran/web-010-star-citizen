@@ -16,6 +16,7 @@ export function ControlDisc({
   onBookmark,
   onAvoid,
   onJump,
+  onOpen,
 }: {
   body: CapturedBody;
   page: "inspect" | "information" | "routing" | "bookmark";
@@ -29,6 +30,7 @@ export function ControlDisc({
   onBookmark: () => void;
   onAvoid: () => void;
   onJump: () => void;
+  onOpen?: () => void;
 }) {
   const dest = jumpDestination(body.code);
   const kind =
@@ -110,7 +112,7 @@ export function ControlDisc({
         )}
         {page === "information" && body.type === "LZ" && (
           <div className="disc-actions">
-            <button type="button" data-action="open">
+            <button type="button" data-action="open" onClick={onOpen}>
               {zh.disc.open}
             </button>
           </div>

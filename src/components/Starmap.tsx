@@ -31,6 +31,17 @@ const AFFIL_HEX: Record<string, string> = {
 };
 
 const initial = readMapUrl();
+const bootQuery = () => new URLSearchParams(window.location.search);
+const firstLevel = (): Level => {
+  const q = bootQuery();
+  if (!q.has("location") && !q.has("system")) return "galaxy";
+  return initial.location.includes(".") ? "object" : "system";
+};
+const firstCamera = (): CameraTuple => {
+  const q = bootQuery();
+  if (!q.has("camera") && !q.has("location") && !q.has("system")) return [10, 0, 0.4, 0, 0];
+  return initial.camera;
+};
 
 const defaultDisplay = (): DisplayState => ({
   affiliations: Object.fromEntries(AFFILIATIONS.map((a) => [a.code, true])),
@@ -41,7 +52,7 @@ const defaultDisplay = (): DisplayState => ({
 export function Starmap() {
   const [systemCode, setSystemCode] = useState(initial.system || "GOSS");
   const [bodies, setBodies] = useState<CapturedBody[]>([]);
-  const [level, setLevel] = useState<Level>(initial.location.includes(".") ? "object" : "system");
+  const [level, setLevel] = useState<Level>(firstLevel);
   const [tab, setTab] = useState<TabId>(initial.tab);
   const [view, setView] = useState<"3d" | "2d">(initial.view);
   const [hover, setHover] = useState<CapturedBody | null>(null);
@@ -59,7 +70,7 @@ export function Starmap() {
   const [point, setPoint] = useState<ScreenPt | null>(null);
   const [focusCode, setFocusCode] = useState<string | null>(null);
   const [sound, setSound] = useState(() => store.sound());
-  const [camera, setCamera] = useState<CameraTuple>(initial.camera);
+  const [camera, setCamera] = useState<CameraTuple>(firstCamera);
   const [display, setDisplay] = useState<DisplayState>(defaultDisplay);
   const [marks, setMarks] = useState<string[]>(() => store.bookmarks());
   const [avoids, setAvoids] = useState<string[]>(() => store.avoid());
@@ -76,18 +87,24 @@ export function Starmap() {
   useEffect(() => {
     let live = true;
     setLoading(true);
-    void loadSystem(systemCode).then((pack) => {
-      if (!live) return;
-      const next = pack?.bodies ?? [];
-      setBodies(next);
-      const loc = readMapUrl().location;
-      const want = next.find((b) => b.code === loc);
-      if (want) {
-        setSelected(want);
-        setLevel("object");
-      }
-      setLoading(false);
-    });
+    void loadSystem(systemCode)
+      .then((pack) => {
+        if (!live) return;
+        const next = pack?.bodies ?? [];
+        setBodies(next);
+        const loc = readMapUrl().location;
+        const want = next.find((b) => b.code === loc);
+        if (want) {
+          setSelected(want);
+          setLevel("object");
+        }
+      })
+      .catch(() => {
+        if (live) setBodies([]);
+      })
+      .finally(() => {
+        if (live) setLoading(false);
+      });
     return () => {
       live = false;
     };
@@ -197,11 +214,15 @@ export function Starmap() {
       setSystemCode(home);
       setLevel("object");
       setTab(null);
-      void loadSystem(home).then((pack) => {
-        const body = pack?.bodies.find((b) => b.code === code) ?? null;
-        setSelected(body);
-        setBodies(pack?.bodies ?? []);
-      });
+      void loadSystem(home)
+        .then((pack) => {
+          const body = pack?.bodies.find((b) => b.code === code) ?? null;
+          setSelected(body);
+          setBodies(pack?.bodies ?? []);
+        })
+        .catch(() => {
+          setSelected(null);
+        });
       return;
     }
     const body = bodies.find((b) => b.code === code);
@@ -248,6 +269,14 @@ export function Starmap() {
           setDiscPage("information");
         }}
         onSelectSystem={(code) => enterSystem(code)}
+        onBackground={() => {
+          setCtx(null);
+          setMenu(false);
+          if (selected) {
+            setSelected(null);
+            if (level === "object") setLevel("system");
+          }
+        }}
         onContext={(hit, x, y) => {
           blip(sound);
           if (!hit) {
@@ -439,6 +468,10 @@ export function Starmap() {
             onBookmark={() => setMarks(store.toggleBookmark(selected.code))}
             onAvoid={() => setAvoids(store.toggleAvoid(selected.code))}
             onJump={() => void jumpThrough(selected)}
+            onOpen={() => {
+              setDiscPage("inspect");
+              setInspectNonce((n) => n + 1);
+            }}
           />
         )}
 
@@ -508,7 +541,6 @@ export function Starmap() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={zh.study.filterPlaceholder}
-                autoFocus
               />
             </div>
             {!query.trim() && recent.length > 0 && (
