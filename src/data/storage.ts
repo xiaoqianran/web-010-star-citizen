@@ -4,6 +4,7 @@ const KEYS = {
   skipInfo: "skipInfo",
   bookmarks: "sm_bookmarks",
   avoid: "sm_avoid",
+  recent: "sm_recent",
 } as const;
 
 function readList(key: string): string[] {
@@ -45,6 +46,16 @@ export const store = {
     else cur.add(code);
     localStorage.setItem(KEYS.bookmarks, JSON.stringify([...cur]));
     return [...cur];
+  },
+  recent(): string[] {
+    return readList(KEYS.recent);
+  },
+  pushRecent(name: string) {
+    const clean = name.trim();
+    if (!clean) return readList(KEYS.recent);
+    const next = [clean, ...readList(KEYS.recent).filter((x) => x.toLowerCase() !== clean.toLowerCase())].slice(0, 8);
+    localStorage.setItem(KEYS.recent, JSON.stringify(next));
+    return next;
   },
   avoid(): string[] {
     return readList(KEYS.avoid);

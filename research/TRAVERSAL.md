@@ -198,6 +198,7 @@ DISPLAY 在银河视图类名是 `sm-galaxy-display-tab`，星系视图是 `sm-s
 
 - 登录态书签 JSON（未登录只有 `ErrNotAuthenticated`）
 - 官方键盘在 3D 画布聚焦时的 WASD（这次按键时焦点还在书签搜索框，camera 查询未变）
-- 搜索框是否要回车才出 `N ITEMS FOUND` 表（窗口模式只见到底栏输入）
+- 搜索框是否要回车才出 `N ITEMS FOUND` 表（窗口模式只见到底栏输入）。`jump` + Enter 官方空文案是 `NO OBJECTS FOUND WITH FILTERS`。空输入会下拉最近访问（Terra / GOSS / Sol / Stanton / Cassel）。
+- 画布聚焦时 W 会抬镜头；焦点在搜索框时 W 会变成最近词。星系视图点 DISPLAY 不会出银河那条图标栏。
 - 航线 Calculate 之后的结果表 / shortest 开关（字段已能写入 GOSS/TERRA，表未截到）
 - 控制盘穿跃动画（现场仍无 Jump Through，克隆保持闪白换系）

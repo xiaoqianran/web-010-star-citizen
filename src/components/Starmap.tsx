@@ -66,6 +66,7 @@ export function Starmap() {
   const [loading, setLoading] = useState(true);
   const [lookNonce, setLookNonce] = useState(0);
   const [markFilter, setMarkFilter] = useState<"all" | "system" | "body">("all");
+  const [recent, setRecent] = useState<string[]>(() => store.recent());
 
   const sys = systemByCode.get(systemCode);
   const focus = selected ? bodyLabel(selected) : level === "galaxy" ? zh.levels.galaxy : sys?.name || systemCode;
@@ -152,6 +153,8 @@ export function Starmap() {
   const enterSystem = useCallback(
     (code: string, body?: CapturedBody | null) => {
       blip(sound);
+      const named = systemByCode.get(code)?.name || code;
+      setRecent(store.pushRecent(named));
       setSystemCode(code);
       setFocusCode(null);
       setLevel(body ? "object" : "system");
@@ -178,6 +181,11 @@ export function Starmap() {
 
   const pickHit = (code: string, type: string, system?: string) => {
     blip(sound);
+    const named =
+      type === "STAR_SYSTEM"
+        ? systemByCode.get(code)?.name || code
+        : bodyLabel(objects.find((o) => o.code === code) ?? { name: code, designation: null, code });
+    setRecent(store.pushRecent(named));
     if (type === "STAR_SYSTEM") {
       enterSystem(code);
       return;
@@ -418,6 +426,17 @@ export function Starmap() {
                 autoFocus
               />
             </div>
+            {!query.trim() && recent.length > 0 && (
+              <ul className="search-auto" data-search-auto>
+                {recent.map((name) => (
+                  <li key={name}>
+                    <button type="button" onClick={() => setQuery(name)}>
+                      {name}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
             {query.trim().length >= 3 && (
               <p className="found-count" data-found={hits.length}>
                 {hits.length} {zh.search.itemsFound}
@@ -452,7 +471,7 @@ export function Starmap() {
                 ))}
               </tbody>
             </table>
-            {!hits.length && <p className="empty">{zh.search.empty}</p>}
+            {query.trim().length >= 3 && !hits.length && <p className="empty">{zh.search.empty}</p>}
           </section>
         )}
 
