@@ -80,9 +80,17 @@
 
 开场（可跳过）→ 90 星系银河（阵营色 + 可筛选隧道）→ 点星系进入 → 恒星/行星/卫星/空间站/小行星带/黑洞/POI/跳跃点 → 悬停「控制盘 >」→ 信息/航线/书签盘 → 设为起终点 → 本机书签 → 跳跃点跃迁闪白进入邻系 → 搜索任意字串排列组合 → 航线 BFS（与官方隧道图一致）并在银河画线 → DISPLAY 阵营/SML/热力 → 2D/3D → WASD/方向键/+/-/Esc/2/3/F → `?location=&camera=&tab=&view=` 同步
 
+## 官方页真人点击（窗口模式）
+
+- 悬停天体出现 `CONTROL DISC >`；单击出选择环与控制盘。双击跳跃点**不会**穿过去。
+- 进入邻系可靠办法：控制盘操作，或改 URL `?location=STANTON&system=STANTON`。
+- GOSS：双星 + Cassel / Goss I / Goss III + 四向跳跃点（Terra / Tyrol / Tayac / Osiris）。
+- STANTON：单星、Hurston、ARC-L2、Stanton - Pyro、偏橙星云。
+- 窗口模式下搜索输入框会被底栏裁切，官方自己也难打字；组合结果以 API sweep 为准。
+- DISPLAY / 键盘 / 书签页这次窗口模式没点完。
+
 ## 仍须对照官网补的现场
 
-- 官方跳跃点「穿过去」的精确手势（双击 / Inspect / 自动）
-- DISPLAY 热力是否真是网格而非光晕
+- DISPLAY 热力是网格还是光晕
 - 登录态书签 JSON
-- 官方键盘是否 WASD（部分环境只响应鼠标）
+- 官方键盘是否 WASD（窗口模式未测完）
