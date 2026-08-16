@@ -1,5 +1,5 @@
 import type { CapturedBody } from "@/data/celestial";
-import { bodyLabel } from "@/data/celestial";
+import { bodyLabel, jumpDestination, sensorNum } from "@/data/celestial";
 import { zh } from "@/i18n/zh";
 import type { ScreenPt } from "@/scene/StarMapCanvas";
 
@@ -7,14 +7,42 @@ export function ControlDisc({
   body,
   page,
   point,
+  affiliation,
+  bookmarked,
+  avoided,
   onPage,
+  onDeparture,
+  onDestination,
+  onBookmark,
+  onAvoid,
+  onJump,
 }: {
   body: CapturedBody;
   page: "information" | "routing" | "bookmark";
   point: ScreenPt;
+  affiliation: string;
+  bookmarked: boolean;
+  avoided: boolean;
   onPage: (p: "information" | "routing" | "bookmark") => void;
+  onDeparture: () => void;
+  onDestination: () => void;
+  onBookmark: () => void;
+  onAvoid: () => void;
+  onJump: () => void;
 }) {
-  const kind = body.type === "STAR" ? zh.disc.star : body.type === "PLANET" ? zh.disc.planet : zh.levels.jumpPoint;
+  const dest = jumpDestination(body.code);
+  const kind =
+    body.type === "STAR"
+      ? zh.disc.star
+      : body.type === "PLANET"
+        ? zh.disc.planet
+        : body.type === "SATELLITE"
+          ? zh.types.SATELLITE
+          : body.type === "MANMADE"
+            ? zh.types.MANMADE
+            : body.type === "BLACKHOLE"
+              ? zh.types.BLACKHOLE
+              : zh.levels.jumpPoint;
   const sub = body.subtype?.name.replaceAll("-", " - ") || kind;
   return (
     <div className="disc-wrap" style={{ left: point.x, top: point.y }}>
@@ -65,20 +93,41 @@ export function ControlDisc({
             <dt>{zh.disc.size}</dt>
             <dd>{body.size || "—"}</dd>
             <dt>{zh.disc.affiliation}</dt>
-            <dd>UEE</dd>
+            <dd>{affiliation}</dd>
+            <dt>{zh.disc.population}</dt>
+            <dd>{sensorNum(body.sensor_population)}</dd>
+            <dt>{zh.disc.economy}</dt>
+            <dd>{sensorNum(body.sensor_economy)}</dd>
+            <dt>{zh.disc.threat}</dt>
+            <dd>{sensorNum(body.sensor_danger)}</dd>
           </dl>
         )}
         {page === "routing" && (
-          <dl>
-            <dt>{zh.disc.setAs}</dt>
-            <dd>{zh.disc.departure}</dd>
-            <dt>{zh.disc.setAs}</dt>
-            <dd>{zh.disc.destination}</dd>
-            <dt>{zh.disc.avoid}</dt>
-            <dd>—</dd>
-          </dl>
+          <div className="disc-actions">
+            <button onClick={onDeparture}>
+              {zh.disc.setAs} {zh.disc.departure}
+            </button>
+            <button onClick={onDestination}>
+              {zh.disc.setAs} {zh.disc.destination}
+            </button>
+            <button className={avoided ? "on" : ""} onClick={onAvoid}>
+              {zh.disc.avoid}
+            </button>
+            {dest && (
+              <button className="jump-cta" onClick={onJump}>
+                {zh.disc.jumpThrough} {dest}
+              </button>
+            )}
+          </div>
         )}
-        {page === "bookmark" && <p className="empty">{zh.bookmarks.empty}</p>}
+        {page === "bookmark" && (
+          <div className="disc-actions">
+            <button className={bookmarked ? "on" : ""} onClick={onBookmark}>
+              {bookmarked ? zh.search.removeBookmark : zh.disc.bookmark}
+            </button>
+            <p className="empty slim-empty">{zh.bookmarks.localNote}</p>
+          </div>
+        )}
       </aside>
     </div>
   );

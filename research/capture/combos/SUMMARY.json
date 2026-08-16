@@ -1,0 +1,1441 @@
+{
+  "find": [
+    {
+      "query": "Terra",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 25,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 4,
+        "SATELLITE": 4,
+        "ASTEROID_BELT": 1,
+        "ASTEROID_FIELD": 1,
+        "JUMPPOINT": 14
+      },
+      "systemNames": [
+        "TERRA"
+      ],
+      "objectSample": [
+        {
+          "code": "TERRA.STARS.TERRANOVA",
+          "type": "STAR",
+          "name": "Terra Nova"
+        },
+        {
+          "code": "TERRA.PLANETS.TERRAIAERO",
+          "type": "PLANET",
+          "name": "Aero"
+        },
+        {
+          "code": "TERRA.PLANETS.TERRAIIPIKE",
+          "type": "PLANET",
+          "name": "Pike"
+        },
+        {
+          "code": "TERRA.PLANETS.TERRAIIITERRA",
+          "type": "PLANET",
+          "name": "Terra"
+        },
+        {
+          "code": "TERRA.PLANETS.TERRAIVGEN",
+          "type": "PLANET",
+          "name": "Gen"
+        },
+        {
+          "code": "TERRA.MOONS.PETRAM",
+          "type": "SATELLITE",
+          "name": "Petram"
+        }
+      ]
+    },
+    {
+      "query": "Stanton",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 27,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 4,
+        "SATELLITE": 12,
+        "MANMADE": 1,
+        "ASTEROID_BELT": 1,
+        "JUMPPOINT": 8
+      },
+      "systemNames": [
+        "STANTON"
+      ],
+      "objectSample": [
+        {
+          "code": "STANTON.STARS.STANTON",
+          "type": "STAR",
+          "name": "Stanton"
+        },
+        {
+          "code": "STANTON.PLANETS.STANTONIVMICROTECH",
+          "type": "PLANET",
+          "name": "microTech"
+        },
+        {
+          "code": "STANTON.PLANETS.STANTONIHURSTONDYNAMICS",
+          "type": "PLANET",
+          "name": "Hurston"
+        },
+        {
+          "code": "STANTON.PLANETS.STANTONIIIARCCORP",
+          "type": "PLANET",
+          "name": "ArcCorp"
+        },
+        {
+          "code": "STANTON.PLANETS.STANTONIICRUSADER",
+          "type": "PLANET",
+          "name": "Crusader"
+        },
+        {
+          "code": "STANTON.MOONS.CELLIN",
+          "type": "SATELLITE",
+          "name": "Cellin"
+        }
+      ]
+    },
+    {
+      "query": "Sol",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 36,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 9,
+        "SATELLITE": 19,
+        "ASTEROID_BELT": 3,
+        "JUMPPOINT": 4
+      },
+      "systemNames": [
+        "SOL"
+      ],
+      "objectSample": [
+        {
+          "code": "SOL.STARS.SOL",
+          "type": "STAR",
+          "name": "Sol"
+        },
+        {
+          "code": "SOL.PLANETS.PLUTO",
+          "type": "PLANET",
+          "name": "Pluto"
+        },
+        {
+          "code": "SOL.PLANETS.NEPTUNE",
+          "type": "PLANET",
+          "name": "Neptune"
+        },
+        {
+          "code": "SOL.PLANETS.URANUS",
+          "type": "PLANET",
+          "name": "Uranus"
+        },
+        {
+          "code": "SOL.PLANETS.SATURN",
+          "type": "PLANET",
+          "name": "Saturn"
+        },
+        {
+          "code": "SOL.PLANETS.MERCURY",
+          "type": "PLANET",
+          "name": "Mercury"
+        }
+      ]
+    },
+    {
+      "query": "Pyro",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 28,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 6,
+        "SATELLITE": 6,
+        "ASTEROID_FIELD": 1,
+        "JUMPPOINT": 14
+      },
+      "systemNames": [
+        "PYRO"
+      ],
+      "objectSample": [
+        {
+          "code": "PYRO.STARS.PYRO",
+          "type": "STAR",
+          "name": "Pyro"
+        },
+        {
+          "code": "PYRO.PLANETS.PYROI",
+          "type": "PLANET",
+          "name": "Pyro I"
+        },
+        {
+          "code": "PYRO.PLANETS.PYROII",
+          "type": "PLANET",
+          "name": "Monox"
+        },
+        {
+          "code": "PYRO.PLANETS.PYROIII",
+          "type": "PLANET",
+          "name": "Bloom"
+        },
+        {
+          "code": "PYRO.PLANETS.PYROV",
+          "type": "PLANET",
+          "name": "Pyro V"
+        },
+        {
+          "code": "PYRO.PLANETS.PYROIV",
+          "type": "PLANET",
+          "name": "Pyro IV"
+        }
+      ]
+    },
+    {
+      "query": "Cassel",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "PLANET": 1
+      },
+      "systemNames": [],
+      "objectSample": [
+        {
+          "code": "GOSS.PLANETS.GOSSIICASSEL",
+          "type": "PLANET",
+          "name": "Cassel"
+        }
+      ]
+    },
+    {
+      "query": "Helios",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 14,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 4,
+        "SATELLITE": 1,
+        "JUMPPOINT": 8
+      },
+      "systemNames": [
+        "HELIOS"
+      ],
+      "objectSample": [
+        {
+          "code": "HELIOS.STARS.HELIOS",
+          "type": "STAR",
+          "name": "Helios"
+        },
+        {
+          "code": "HELIOS.PLANETS.HELIOSII",
+          "type": "PLANET",
+          "name": "Tangaroa"
+        },
+        {
+          "code": "HELIOS.PLANETS.HELIOSI",
+          "type": "PLANET",
+          "name": "Helios I"
+        },
+        {
+          "code": "HELIOS.PLANETS.HELIOSIII",
+          "type": "PLANET",
+          "name": "Helios III"
+        },
+        {
+          "code": "HELIOS.PLANETS.HELIOSIV",
+          "type": "PLANET",
+          "name": "Helios IV"
+        },
+        {
+          "code": "HELIOS.MOONS.HELIOS2A",
+          "type": "SATELLITE",
+          "name": "Helios 2a"
+        }
+      ]
+    },
+    {
+      "query": "Goss",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 15,
+      "objectTypes": {
+        "STAR": 2,
+        "PLANET": 3,
+        "JUMPPOINT": 10
+      },
+      "systemNames": [
+        "GOSS"
+      ],
+      "objectSample": [
+        {
+          "code": "GOSS.STARS.GOSSA",
+          "type": "STAR",
+          "name": "Goss A"
+        },
+        {
+          "code": "GOSS.STARS.GOSSB",
+          "type": "STAR",
+          "name": "Goss B"
+        },
+        {
+          "code": "GOSS.PLANETS.GOSSI",
+          "type": "PLANET",
+          "name": "Goss I"
+        },
+        {
+          "code": "GOSS.PLANETS.GOSSIICASSEL",
+          "type": "PLANET",
+          "name": "Cassel"
+        },
+        {
+          "code": "GOSS.PLANETS.GOSSIII",
+          "type": "PLANET",
+          "name": "Goss III"
+        },
+        {
+          "code": "TERRA.JUMPPOINTS.GOSS",
+          "type": "JUMPPOINT",
+          "name": "Terra - Goss"
+        }
+      ]
+    },
+    {
+      "query": "jump",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "systemNames": [],
+      "objectSample": []
+    },
+    {
+      "query": "star",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "MANMADE": 1
+      },
+      "systemNames": [],
+      "objectSample": [
+        {
+          "code": "KELLOG.STATION.JUSTICESTARSATELLITE",
+          "type": "MANMADE",
+          "name": "JusticeStar Satellite"
+        }
+      ]
+    },
+    {
+      "query": "planet",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 7,
+      "objectTypes": {
+        "ASTEROID_BELT": 7
+      },
+      "systemNames": [],
+      "objectSample": [
+        {
+          "code": "GURZIL.BELTS.GURZILBELTALPHA1",
+          "type": "ASTEROID_BELT",
+          "name": "Protoplanetary Disk"
+        },
+        {
+          "code": "GURZIL.BELTS.GURZILBELTALPHA2",
+          "type": "ASTEROID_BELT",
+          "name": "Protoplanetary Disk 2"
+        },
+        {
+          "code": "GURZIL.BELTS.GURZILBELTALPHA3",
+          "type": "ASTEROID_BELT",
+          "name": "Protoplanetary Disk 3"
+        },
+        {
+          "code": "GURZIL.BELTS.GURZILBELTALPHA6",
+          "type": "ASTEROID_BELT",
+          "name": "Protoplanetary Disk 6"
+        },
+        {
+          "code": "GURZIL.BELTS.GURZILBELTALPHA7",
+          "type": "ASTEROID_BELT",
+          "name": "Protoplanetary Disk 7"
+        },
+        {
+          "code": "GURZIL.BELTS.GURZILBELTALPHA8",
+          "type": "ASTEROID_BELT",
+          "name": "Protoplanetary Disk 8"
+        }
+      ]
+    },
+    {
+      "query": "moon",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "SATELLITE": 1
+      },
+      "systemNames": [],
+      "objectSample": [
+        {
+          "code": "TARANIS.MOONS.BROKENMOON",
+          "type": "SATELLITE",
+          "name": "Broken Moon"
+        }
+      ]
+    },
+    {
+      "query": "station",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 9,
+      "objectTypes": {
+        "MANMADE": 9
+      },
+      "systemNames": [],
+      "objectSample": [
+        {
+          "code": "CHRONOS.STATION.ARCHANGELSTATION",
+          "type": "MANMADE",
+          "name": "Archangel Station"
+        },
+        {
+          "code": "ELLIS.STATION.SCIENCESTATION",
+          "type": "MANMADE",
+          "name": "Encole Station"
+        },
+        {
+          "code": "HELIOS.STATION.HEPHAESTUSSTATION",
+          "type": "MANMADE",
+          "name": "Hephaestus Station"
+        },
+        {
+          "code": "KALLIS.STATION.FUELINGSHIPPINGSTATION",
+          "type": "MANMADE",
+          "name": "OB Station Gryphon"
+        },
+        {
+          "code": "OSO.STATION.OBCHIMERA",
+          "type": "MANMADE",
+          "name": "Yogi Station"
+        },
+        {
+          "code": "PYRO.STATION.RUINSTATION",
+          "type": "MANMADE",
+          "name": "Ruin Station"
+        }
+      ]
+    },
+    {
+      "query": "belt",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 48,
+      "objectTypes": {
+        "ASTEROID_BELT": 48
+      },
+      "systemNames": [],
+      "objectSample": [
+        {
+          "code": "STANTON.BELTS.ALPHABELT",
+          "type": "ASTEROID_BELT",
+          "name": "Aaron Halo"
+        },
+        {
+          "code": "NYX.BELTS.GLACIEMRING",
+          "type": "ASTEROID_BELT",
+          "name": "Glaciem Ring"
+        },
+        {
+          "code": "TERRA.BELTS.MARISOLBELT",
+          "type": "ASTEROID_BELT",
+          "name": "Marisol Belt"
+        },
+        {
+          "code": "VIRGIL.BELTS.ASTEROIDBELT",
+          "type": "ASTEROID_BELT",
+          "name": "Gideon's Belt"
+        },
+        {
+          "code": "TARANIS.BELTS.INNERASTEROIDBELT",
+          "type": "ASTEROID_BELT",
+          "name": "Taranis Belt Alpha"
+        },
+        {
+          "code": "TARANIS.BELTS.BETABELT",
+          "type": "ASTEROID_BELT",
+          "name": "Taranis Belt Beta"
+        }
+      ]
+    },
+    {
+      "query": "black",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "systemNames": [],
+      "objectSample": []
+    },
+    {
+      "query": "a",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "systemNames": [],
+      "objectSample": []
+    },
+    {
+      "query": "UE",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "systemNames": [],
+      "objectSample": []
+    },
+    {
+      "query": "xxxnomatch",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "systemNames": [],
+      "objectSample": []
+    },
+    {
+      "query": "ArcCorp",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "PLANET": 1
+      },
+      "systemNames": [],
+      "objectSample": [
+        {
+          "code": "STANTON.PLANETS.STANTONIIIARCCORP",
+          "type": "PLANET",
+          "name": "ArcCorp"
+        }
+      ]
+    },
+    {
+      "query": "Crusader",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "PLANET": 1
+      },
+      "systemNames": [],
+      "objectSample": [
+        {
+          "code": "STANTON.PLANETS.STANTONIICRUSADER",
+          "type": "PLANET",
+          "name": "Crusader"
+        }
+      ]
+    },
+    {
+      "query": "Hurston",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "PLANET": 1
+      },
+      "systemNames": [],
+      "objectSample": [
+        {
+          "code": "STANTON.PLANETS.STANTONIHURSTONDYNAMICS",
+          "type": "PLANET",
+          "name": "Hurston"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "pair": "GOSS->TERRA",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [
+        "shortest",
+        "leastjumps"
+      ],
+      "shortest": {
+        "name": "Goss to Terra",
+        "label": "Through Terra",
+        "jumps": 1,
+        "first_jump": "Goss - Terra",
+        "segments": [
+          {
+            "name": "Goss",
+            "type": "system",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Terra",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Terra - Goss",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra",
+            "type": "system",
+            "code": "TERRA"
+          }
+        ]
+      },
+      "leastjumps": {
+        "name": "Goss to Terra",
+        "label": "Through Terra",
+        "jumps": 1,
+        "first_jump": "Goss - Terra",
+        "segments": [
+          {
+            "name": "Goss",
+            "type": "system",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Terra",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Terra - Goss",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra",
+            "type": "system",
+            "code": "TERRA"
+          }
+        ]
+      }
+    },
+    {
+      "pair": "GOSS->HELIOS",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [
+        "shortest",
+        "leastjumps"
+      ],
+      "shortest": {
+        "name": "Goss to Helios",
+        "label": "Through Helios",
+        "jumps": 1,
+        "first_jump": "Goss - Helios",
+        "segments": [
+          {
+            "name": "Goss",
+            "type": "system",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Helios",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Helios - Goss",
+            "type": "jump",
+            "code": "HELIOS"
+          },
+          {
+            "name": "Helios",
+            "type": "system",
+            "code": "HELIOS"
+          }
+        ]
+      },
+      "leastjumps": {
+        "name": "Goss to Helios",
+        "label": "Through Helios",
+        "jumps": 1,
+        "first_jump": "Goss - Helios",
+        "segments": [
+          {
+            "name": "Goss",
+            "type": "system",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Helios",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Helios - Goss",
+            "type": "jump",
+            "code": "HELIOS"
+          },
+          {
+            "name": "Helios",
+            "type": "system",
+            "code": "HELIOS"
+          }
+        ]
+      }
+    },
+    {
+      "pair": "GOSS->SOL",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [
+        "shortest",
+        "leastjumps"
+      ],
+      "shortest": {
+        "name": "Goss to Sol",
+        "label": "Through Terra",
+        "jumps": 5,
+        "first_jump": "Goss - Terra",
+        "segments": [
+          {
+            "name": "Goss",
+            "type": "system",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Terra",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Terra - Goss",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra - Pyro",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Pyro - Terra",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro - Cano",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Cano - Pyro",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Cano - Davien",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Davien - Cano",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Davien - Sol",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Sol - Davien",
+            "type": "jump",
+            "code": "SOL"
+          },
+          {
+            "name": "Sol",
+            "type": "system",
+            "code": "SOL"
+          }
+        ]
+      },
+      "leastjumps": {
+        "name": "Goss to Sol",
+        "label": "Through Terra",
+        "jumps": 5,
+        "first_jump": "Goss - Terra",
+        "segments": [
+          {
+            "name": "Goss",
+            "type": "system",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Terra",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Terra - Goss",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra - Pyro",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Pyro - Terra",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro - Cano",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Cano - Pyro",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Cano - Davien",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Davien - Cano",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Davien - Sol",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Sol - Davien",
+            "type": "jump",
+            "code": "SOL"
+          },
+          {
+            "name": "Sol",
+            "type": "system",
+            "code": "SOL"
+          }
+        ]
+      }
+    },
+    {
+      "pair": "GOSS->GOSS",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [],
+      "shortest": {
+        "name": null,
+        "label": null,
+        "jumps": null,
+        "first_jump": null,
+        "segments": []
+      },
+      "leastjumps": {
+        "name": null,
+        "label": null,
+        "jumps": null,
+        "first_jump": null,
+        "segments": []
+      }
+    },
+    {
+      "pair": "STANTON->PYRO",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [
+        "shortest",
+        "leastjumps"
+      ],
+      "shortest": {
+        "name": "Stanton to Pyro",
+        "label": "Through Pyro",
+        "jumps": 1,
+        "first_jump": "Stanton - Pyro",
+        "segments": [
+          {
+            "name": "Stanton",
+            "type": "system",
+            "code": "STANTON"
+          },
+          {
+            "name": "Stanton - Pyro",
+            "type": "jump",
+            "code": "STANTON"
+          },
+          {
+            "name": "Pyro - Stanton",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro",
+            "type": "system",
+            "code": "PYRO"
+          }
+        ]
+      },
+      "leastjumps": {
+        "name": "Stanton to Pyro",
+        "label": "Through Pyro",
+        "jumps": 1,
+        "first_jump": "Stanton - Pyro",
+        "segments": [
+          {
+            "name": "Stanton",
+            "type": "system",
+            "code": "STANTON"
+          },
+          {
+            "name": "Stanton - Pyro",
+            "type": "jump",
+            "code": "STANTON"
+          },
+          {
+            "name": "Pyro - Stanton",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro",
+            "type": "system",
+            "code": "PYRO"
+          }
+        ]
+      }
+    },
+    {
+      "pair": "SOL->TERRA",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [
+        "shortest",
+        "leastjumps"
+      ],
+      "shortest": {
+        "name": "Sol to Terra",
+        "label": "Through Davien",
+        "jumps": 4,
+        "first_jump": "Sol - Davien",
+        "segments": [
+          {
+            "name": "Sol",
+            "type": "system",
+            "code": "SOL"
+          },
+          {
+            "name": "Sol - Davien",
+            "type": "jump",
+            "code": "SOL"
+          },
+          {
+            "name": "Davien - Sol",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Davien - Cano",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Cano - Davien",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Cano - Pyro",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Pyro - Cano",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro - Terra",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Terra - Pyro",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra",
+            "type": "system",
+            "code": "TERRA"
+          }
+        ]
+      },
+      "leastjumps": {
+        "name": "Sol to Terra",
+        "label": "Through Davien",
+        "jumps": 4,
+        "first_jump": "Sol - Davien",
+        "segments": [
+          {
+            "name": "Sol",
+            "type": "system",
+            "code": "SOL"
+          },
+          {
+            "name": "Sol - Davien",
+            "type": "jump",
+            "code": "SOL"
+          },
+          {
+            "name": "Davien - Sol",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Davien - Cano",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Cano - Davien",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Cano - Pyro",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Pyro - Cano",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro - Terra",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Terra - Pyro",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra",
+            "type": "system",
+            "code": "TERRA"
+          }
+        ]
+      }
+    },
+    {
+      "pair": "TERRA->PYRO",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [
+        "shortest",
+        "leastjumps"
+      ],
+      "shortest": {
+        "name": "Terra to Pyro",
+        "label": "Through Pyro",
+        "jumps": 1,
+        "first_jump": "Terra - Pyro",
+        "segments": [
+          {
+            "name": "Terra",
+            "type": "system",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra - Pyro",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Pyro - Terra",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro",
+            "type": "system",
+            "code": "PYRO"
+          }
+        ]
+      },
+      "leastjumps": {
+        "name": "Terra to Pyro",
+        "label": "Through Pyro",
+        "jumps": 1,
+        "first_jump": "Terra - Pyro",
+        "segments": [
+          {
+            "name": "Terra",
+            "type": "system",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra - Pyro",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Pyro - Terra",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro",
+            "type": "system",
+            "code": "PYRO"
+          }
+        ]
+      }
+    },
+    {
+      "pair": "SOL->PYRO",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [
+        "shortest",
+        "leastjumps"
+      ],
+      "shortest": {
+        "name": "Sol to Pyro",
+        "label": "Through Davien",
+        "jumps": 3,
+        "first_jump": "Sol - Davien",
+        "segments": [
+          {
+            "name": "Sol",
+            "type": "system",
+            "code": "SOL"
+          },
+          {
+            "name": "Sol - Davien",
+            "type": "jump",
+            "code": "SOL"
+          },
+          {
+            "name": "Davien - Sol",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Davien - Cano",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Cano - Davien",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Cano - Pyro",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Pyro - Cano",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro",
+            "type": "system",
+            "code": "PYRO"
+          }
+        ]
+      },
+      "leastjumps": {
+        "name": "Sol to Pyro",
+        "label": "Through Davien",
+        "jumps": 3,
+        "first_jump": "Sol - Davien",
+        "segments": [
+          {
+            "name": "Sol",
+            "type": "system",
+            "code": "SOL"
+          },
+          {
+            "name": "Sol - Davien",
+            "type": "jump",
+            "code": "SOL"
+          },
+          {
+            "name": "Davien - Sol",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Davien - Cano",
+            "type": "jump",
+            "code": "DAVIEN"
+          },
+          {
+            "name": "Cano - Davien",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Cano - Pyro",
+            "type": "jump",
+            "code": "CANO"
+          },
+          {
+            "name": "Pyro - Cano",
+            "type": "jump",
+            "code": "PYRO"
+          },
+          {
+            "name": "Pyro",
+            "type": "system",
+            "code": "PYRO"
+          }
+        ]
+      }
+    },
+    {
+      "pair": "HELIOS->TAYAC",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [
+        "shortest",
+        "leastjumps"
+      ],
+      "shortest": {
+        "name": "Helios to Tayac",
+        "label": "Through Goss",
+        "jumps": 2,
+        "first_jump": "Helios - Goss",
+        "segments": [
+          {
+            "name": "Helios",
+            "type": "system",
+            "code": "HELIOS"
+          },
+          {
+            "name": "Helios - Goss",
+            "type": "jump",
+            "code": "HELIOS"
+          },
+          {
+            "name": "Goss - Helios",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Tayac",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Tayac - Goss",
+            "type": "jump",
+            "code": "TAYAC"
+          },
+          {
+            "name": "Tayac",
+            "type": "system",
+            "code": "TAYAC"
+          }
+        ]
+      },
+      "leastjumps": {
+        "name": "Helios to Tayac",
+        "label": "Through Goss",
+        "jumps": 2,
+        "first_jump": "Helios - Goss",
+        "segments": [
+          {
+            "name": "Helios",
+            "type": "system",
+            "code": "HELIOS"
+          },
+          {
+            "name": "Helios - Goss",
+            "type": "jump",
+            "code": "HELIOS"
+          },
+          {
+            "name": "Goss - Helios",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Tayac",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Tayac - Goss",
+            "type": "jump",
+            "code": "TAYAC"
+          },
+          {
+            "name": "Tayac",
+            "type": "system",
+            "code": "TAYAC"
+          }
+        ]
+      }
+    },
+    {
+      "pair": "foo->bar",
+      "status": 200,
+      "success": 0,
+      "code": "ErrInvalidObject",
+      "msg": "Invalid object specified",
+      "keys": "str",
+      "shortest": null,
+      "leastjumps": null
+    },
+    {
+      "pair": "GOSS->STANTON",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "keys": [
+        "shortest",
+        "leastjumps"
+      ],
+      "shortest": {
+        "name": "Goss to Stanton",
+        "label": "Through Terra",
+        "jumps": 2,
+        "first_jump": "Goss - Terra",
+        "segments": [
+          {
+            "name": "Goss",
+            "type": "system",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Terra",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Terra - Goss",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra - Stanton",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Stanton - Terra",
+            "type": "jump",
+            "code": "STANTON"
+          },
+          {
+            "name": "Stanton",
+            "type": "system",
+            "code": "STANTON"
+          }
+        ]
+      },
+      "leastjumps": {
+        "name": "Goss to Stanton",
+        "label": "Through Terra",
+        "jumps": 2,
+        "first_jump": "Goss - Terra",
+        "segments": [
+          {
+            "name": "Goss",
+            "type": "system",
+            "code": "GOSS"
+          },
+          {
+            "name": "Goss - Terra",
+            "type": "jump",
+            "code": "GOSS"
+          },
+          {
+            "name": "Terra - Goss",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Terra - Stanton",
+            "type": "jump",
+            "code": "TERRA"
+          },
+          {
+            "name": "Stanton - Terra",
+            "type": "jump",
+            "code": "STANTON"
+          },
+          {
+            "name": "Stanton",
+            "type": "system",
+            "code": "STANTON"
+          }
+        ]
+      }
+    }
+  ]
+}

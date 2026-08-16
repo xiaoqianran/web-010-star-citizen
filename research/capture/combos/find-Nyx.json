@@ -1,0 +1,337 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 315,
+          "code": "NYX",
+          "name": "Nyx",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 20,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1703,
+          "code": "NYX.STARS.NYX",
+          "designation": "Nyx",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1704,
+          "code": "NYX.PLANETS.NYXI",
+          "designation": "Nyx I",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1705,
+          "code": "NYX.PLANETS.NYXII",
+          "designation": "Nyx II",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1706,
+          "code": "NYX.PLANETS.NYXIII",
+          "designation": "Nyx III",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1707,
+          "code": "NYX.BELTS.GLACIEMRING",
+          "designation": "Nyx Belt Alpha",
+          "name": "Glaciem Ring",
+          "star_system_id": 315,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2627,
+          "code": "NYX.BELTS.KEEGERBELT",
+          "designation": "Nyx Belt Beta",
+          "name": "Keeger Belt",
+          "star_system_id": 315,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1701,
+          "code": "NYX.JUMPPOINTS.CASTRA",
+          "designation": "Nyx - Castra",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1702,
+          "code": "NYX.JUMPPOINTS.BREMEN",
+          "designation": "Nyx - Bremen",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1710,
+          "code": "NYX.JUMPPOINTS.PYRO",
+          "designation": "Nyx - Pyro",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1711,
+          "code": "NYX.JUMPPOINTS.VIRGIL",
+          "designation": "Nyx - Virgil",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1712,
+          "code": "NYX.JUMPPOINTS.TOHIL",
+          "designation": "Nyx - Tohil",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1713,
+          "code": "NYX.JUMPPOINTS.ODIN",
+          "designation": "Nyx - Odin",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1732,
+          "code": "VIRGIL.JUMPPOINTS.NYX",
+          "designation": "Virgil - Nyx",
+          "name": null,
+          "star_system_id": 317,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 317,
+            "code": "VIRGIL",
+            "name": "Virgil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1739,
+          "code": "PYRO.JUMPPOINTS.NYX",
+          "designation": "Pyro - Nyx",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1831,
+          "code": "ODIN.JUMPPOINTS.NYX",
+          "designation": "Odin - Nyx",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1874,
+          "code": "BREMEN.JUMPPOINTS.NYX",
+          "designation": "Bremen - Nyx",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1909,
+          "code": "CASTRA.JUMPPOINTS.NYX",
+          "designation": "Castra - Nyx",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2374,
+          "code": "TOHIL.JUMPPOINTS.NYX",
+          "designation": "Tohil - Nyx",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2842,
+          "code": "NYX.JUMPPOINTS.STANTON",
+          "designation": "Nyx - Stanton",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2843,
+          "code": "STANTON.JUMPPOINTS.NYX",
+          "designation": "Stanton - Nyx",
+          "name": null,
+          "star_system_id": 314,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 314,
+            "code": "STANTON",
+            "name": "Stanton",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 20,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

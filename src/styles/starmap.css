@@ -643,6 +643,119 @@
   color: #14e6fa;
 }
 
+.jump-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 18;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, #14e6faaa, #001018ee 62%);
+  animation: jumpflash 0.72s ease-out;
+}
+
+@keyframes jumpflash {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.load-hint {
+  position: absolute;
+  top: 96px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 16;
+  letter-spacing: 0.2em;
+  color: #42cbf8;
+  pointer-events: none;
+}
+
+.burger-hit {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 36px;
+  height: 40px;
+  z-index: 22;
+}
+
+.flyout {
+  position: absolute;
+  top: 78px;
+  left: 12px;
+  z-index: 22;
+  min-width: 180px;
+  padding: 12px 16px;
+  background: #000c14ee;
+  border: 1px solid #0c67a1;
+  display: grid;
+  gap: 10px;
+  letter-spacing: 0.14em;
+}
+
+.flyout p {
+  margin: 8px 0 0;
+  color: #0a8bb7;
+  font-size: 11px;
+}
+
+.disc-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.disc-actions button {
+  text-align: left;
+  color: #42cbf8;
+  letter-spacing: 0.12em;
+}
+
+.disc-actions button.on,
+.jump-cta {
+  color: #ffb534;
+}
+
+.slim-empty {
+  padding: 10px 0 0;
+  font-size: 11px;
+}
+
+.ship-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #5adbef;
+}
+
+.ship-row .on {
+  color: #14e6fa;
+  text-shadow: 0 0 8px #00edff66;
+}
+
+.route-meta {
+  margin: 8px 0;
+  color: #ffb534;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}
+
+.on-row {
+  color: #ffb534;
+}
+
+.label3d.poi {
+  color: #ff6b6b;
+}
+
 .focus i {
   width: 7px;
   height: 7px;

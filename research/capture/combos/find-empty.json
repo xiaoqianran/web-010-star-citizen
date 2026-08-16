@@ -1,0 +1,8 @@
+{
+  "success": 0,
+  "code": "ErrValidationFailed",
+  "msg": "Validation failed",
+  "data": {
+    "query": "This field is required"
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 369,
+          "code": "CROSHAW",
+          "name": "Croshaw",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 15,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2133,
+          "code": "CROSHAW.STARS.CROSHAW",
+          "designation": "Croshaw",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2134,
+          "code": "CROSHAW.PLANETS.CROSHAWI",
+          "designation": "Croshaw I",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2135,
+          "code": "CROSHAW.PLANETS.CROSHAWIIANGELI",
+          "designation": "Croshaw II",
+          "name": "Angeli",
+          "star_system_id": 369,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2136,
+          "code": "CROSHAW.PLANETS.CROSHAWIIIVANN",
+          "designation": "Croshaw III",
+          "name": "Vann",
+          "star_system_id": 369,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2137,
+          "code": "CROSHAW.PLANETS.CROSHAWIV",
+          "designation": "Croshaw IV",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2138,
+          "code": "CROSHAW.BELTS.ICARUSCLUSTER",
+          "designation": "Croshaw Cluster Alpha",
+          "name": "Icarus Cluster",
+          "star_system_id": 369,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2656,
+          "code": "CROSHAW.BELTS.DAEDALUSCLUSTER",
+          "designation": "Croshaw Cluster Beta",
+          "name": "Daedalus Cluster",
+          "star_system_id": 369,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1764,
+          "code": "NUL.JUMPPOINTS.CROSHAW",
+          "designation": "Nul - Croshaw",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1994,
+          "code": "RHETOR.JUMPPOINTS.CROSHAW",
+          "designation": "Rhetor - Croshaw",
+          "name": null,
+          "star_system_id": 349,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2021,
+          "code": "SOL.JUMPPOINTS.CROSHAW",
+          "designation": "Sol - Croshaw",
+          "name": null,
+          "star_system_id": 355,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2122,
+          "code": "FERRON.JUMPPOINTS.CROSHAW",
+          "designation": "Ferron - Croshaw",
+          "name": null,
+          "star_system_id": 367,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2129,
+          "code": "CROSHAW.JUMPPOINTS.SOL",
+          "designation": "Croshaw - Sol",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2130,
+          "code": "CROSHAW.JUMPPOINTS.FERRON",
+          "designation": "Croshaw - Ferron",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2131,
+          "code": "CROSHAW.JUMPPOINTS.RHETOR",
+          "designation": "Croshaw - Rhetor",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2132,
+          "code": "CROSHAW.JUMPPOINTS.NUL",
+          "designation": "Croshaw - Nul",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 15,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

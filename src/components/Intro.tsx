@@ -8,12 +8,20 @@ export function Intro({
   onWindow,
   onAck,
   onExplore,
+  skipAck,
+  skipInfo,
+  onSkipAck,
+  onSkipInfo,
 }: {
   phase: Phase;
   onFull: () => void;
   onWindow: () => void;
   onAck: () => void;
   onExplore: () => void;
+  skipAck: boolean;
+  skipInfo: boolean;
+  onSkipAck: (v: boolean) => void;
+  onSkipInfo: (v: boolean) => void;
 }) {
   return (
     <div className="intro">
@@ -42,7 +50,7 @@ export function Intro({
           </blockquote>
           <p className="ack">{zh.intro.ackBody}</p>
           <label className="check">
-            <input type="checkbox" />
+            <input type="checkbox" checked={skipAck} onChange={(e) => onSkipAck(e.target.checked)} />
             {zh.intro.dontShowNext}
           </label>
           <button className="cta" onClick={onAck}>
@@ -60,7 +68,7 @@ export function Intro({
             <p>{zh.intro.lore2}</p>
           </div>
           <label className="check">
-            <input type="checkbox" />
+            <input type="checkbox" checked={skipInfo} onChange={(e) => onSkipInfo(e.target.checked)} />
             {zh.intro.dontShowNext}
           </label>
           <button className="cta" onClick={onExplore}>

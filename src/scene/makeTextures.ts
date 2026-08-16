@@ -51,9 +51,20 @@ function hexAlpha(hex: string, a: number) {
 
 export const AFFIL: Record<string, number> = {
   uee: 0x48bbd4,
+  UEE: 0x48bbd4,
   BANU: 0xffce17,
   VNCL: 0xbd002d,
   XIAN: 0x52c231,
   DEV: 0xca922d,
   UNC: 0xf6851f,
+};
+
+export const PLANET: Record<string, number> = {
+  PLANET_GREEN: 0x2fd6a8,
+  PLANET_BLUE: 0x3a7ec8,
+  PLANET_BROWN: 0xb8895a,
+  PLANET_GAS: 0xd4b46a,
+  DEFAULT: 0x6a8aaa,
+  CUSTOM: 0x8ab4c8,
+  WARNING_RED: 0xff4444,
 };

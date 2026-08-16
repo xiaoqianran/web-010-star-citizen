@@ -99,6 +99,7 @@ export const zh = {
     no: "否",
     mainSequenceK: "主序矮星 K 型",
     controlDisc: "控制盘",
+    jumpThrough: "跃迁至",
   },
   search: {
     name: "名称",
@@ -110,6 +111,7 @@ export const zh = {
   bookmarks: {
     empty: "你还没有书签。",
     emptyFiltered: "没有符合筛选的书签。",
+    localNote: "官方书签需登录。此处仅保存在本机。",
   },
   routes: {
     shipSize: "舰船尺寸",
@@ -146,6 +148,7 @@ export const zh = {
     MANMADE: "人造设施",
     BLACKHOLE: "黑洞",
     POI: "兴趣点",
+    LZ: "着陆区",
     SINGLE_STAR: "单星",
     BINARY: "双星",
   },

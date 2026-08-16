@@ -1,0 +1,60 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 2,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2739,
+          "code": "STANTON.MOONS.YELA",
+          "designation": "Stanton 2c",
+          "name": "Yela",
+          "star_system_id": 314,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 314,
+            "code": "STANTON",
+            "name": "Stanton",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2829,
+          "code": "STANTON.RINGS.RINGSOFYELA",
+          "designation": "Ring of Yela",
+          "name": null,
+          "star_system_id": 314,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 314,
+            "code": "STANTON",
+            "name": "Stanton",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 2,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}
