@@ -538,7 +538,11 @@ export function Starmap() {
               <tbody>
                 {hits.map((row) => (
                   <tr key={row.code} onClick={() => pickHit(row.code, row.type, row.system)}>
-                    <td>{row.name}</td>
+                    <td>
+                      {row.type === "STAR_SYSTEM"
+                        ? row.name
+                        : `${row.name} ${zh.search.in} ${systemByCode.get(row.system ?? "")?.name || row.system || ""}`}
+                    </td>
                     <td>{zh.types[row.type as keyof typeof zh.types] ?? row.type}</td>
                     <td>
                       <button
@@ -690,7 +694,8 @@ export function Starmap() {
         )}
 
         {tab === "display" && (
-          <section className="display-bar">
+          <section className="display-bar" data-display={level === "galaxy" ? "galaxy" : "system"}>
+            {level === "galaxy" && (
             <div className="display-group">
               <div className="display-icons">
                 {AFFILIATIONS.map((n) => (
@@ -713,6 +718,8 @@ export function Starmap() {
               </div>
               <em>{zh.display.factions}</em>
             </div>
+            )}
+            {level === "galaxy" && (
             <div className="display-group">
               <div className="display-icons">
                 {(["S", "M", "L"] as const).map((sz) => (
@@ -732,6 +739,7 @@ export function Starmap() {
               </div>
               <em>{zh.display.jumpTunnels}</em>
             </div>
+            )}
             <div className="display-group">
               <div className="display-icons">
                 {(

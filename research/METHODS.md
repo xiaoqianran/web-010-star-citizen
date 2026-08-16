@@ -77,4 +77,5 @@
 9. **先点 canvas 再** WASD / 方向键 / +/- / Esc / 2 / 3，记 `camera=`
 10. 双击跃迁点（此前未进入目标星系）
 
-记录目录：`research/capture/official-combos/`。
+记录目录：`research/capture/official-combos/`。  
+本轮结果见同目录 `SUMMARY.md`：空白右键无菜单；搜索要 Enter；星系 DISPLAY 只有传感器+摄像机。

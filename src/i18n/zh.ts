@@ -110,6 +110,7 @@ export const zh = {
     type: "类型",
     information: "信息",
     itemsFound: "条结果",
+    in: "于",
     bookmarkAction: "书签 >",
     loading: "加载中…",
     empty: "没有符合筛选的目标。",

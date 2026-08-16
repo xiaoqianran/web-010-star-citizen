@@ -204,6 +204,17 @@ DISPLAY 在银河视图类名是 `sm-galaxy-display-tab`，星系视图是 `sm-s
 
 社区仓库只对照字段：Dymerz/RSI-Scraper、koo04/GoScrapeRSI、Synchrones/ARK_Starmap（Unity 复刻，不抄其自加键位）。
 
+## 官方未测组合重录（2026-08-16）
+
+见 `research/capture/official-combos/SUMMARY.md`。
+
+- 银河空白处右键：无上屏菜单。INSPECT 节点在 DOM 里但像素是空的，直到控制盘真正打开。
+- 搜索必须 **Enter**：Terra 26 条；`jump` = `NO OBJECTS FOUND WITH FILTERS.`；Levski 类型 **LANDING ZONE**；行名 `CASSEL IN GOSS`。
+- 点 Terra 星系：`?selection=TERRA` → `?location=TERRA&camera=60,0,0.002,0,0`。
+- **星系 DISPLAY**（`sm-system-display-tab`）只有 SENSORS + CAMERA，没有阵营/隧道。
+- 在 Terra 里 CALCULATE 等 3s：底栏能填 GOSS/TERRA，结果表仍未进 DOM。
+- 左键拖动会写 `camera=`；本次按键时 URL 在 `/routes` 上没有五元组。
+
 ## 仍须对照官网补的现场
 
 - 登录态书签 JSON（未登录只有 `ErrNotAuthenticated`）

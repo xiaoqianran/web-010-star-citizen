@@ -1,0 +1,783 @@
+{
+  "title": "ARK Starmap | Roberts Space Industries | Follow the development of Star Citizen and Squadron 42",
+  "bodyText": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE",
+  "href": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+  "menu": [
+    {
+      "tag": "section",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+      "cls": "sm-starmap-application",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 976
+      }
+    },
+    {
+      "tag": "section",
+      "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+      "cls": "sm-starmap",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 1083
+      }
+    },
+    {
+      "tag": "section",
+      "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+      "cls": "disc-root starmap-disc",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 554,
+        "h": 273
+      }
+    },
+    {
+      "tag": "a",
+      "text": "INSPECT",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 410,
+        "y": 226,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "INFORMATION",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 406,
+        "y": 256,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "ROUTING",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 398,
+        "y": 286,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "BOOKMARK",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 379,
+        "y": 316,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "section",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+      "cls": "sm-controls",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 974,
+        "w": 1920,
+        "h": 106
+      }
+    },
+    {
+      "tag": "ul",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+      "cls": "sm-tabs",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 933,
+        "w": 1920,
+        "h": 41
+      }
+    },
+    {
+      "tag": "a",
+      "text": "BOOKMARKS",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1564,
+        "y": 938,
+        "w": 142,
+        "h": 36
+      }
+    }
+  ],
+  "items": [
+    {
+      "tag": "a",
+      "text": "Home",
+      "cls": "a-breadcrumbItem__link",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 314,
+        "y": 10,
+        "w": 36,
+        "h": 20
+      }
+    },
+    {
+      "tag": "a",
+      "text": "Starmap",
+      "cls": "a-productHomeProductLogo -large",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 252,
+        "y": 40,
+        "w": 128,
+        "h": 64
+      }
+    },
+    {
+      "tag": "section",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+      "cls": "sm-starmap-application",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 976
+      }
+    },
+    {
+      "tag": "div",
+      "text": "GLXSYSOBJ",
+      "cls": "sm-header",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 41
+      }
+    },
+    {
+      "tag": "div",
+      "text": "GLXSYSOBJ",
+      "cls": "sm-back-indicator-container",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 211,
+        "h": 41
+      }
+    },
+    {
+      "tag": "ul",
+      "text": "GLXSYSOBJ",
+      "cls": "sm-indicator",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 25,
+        "y": 104,
+        "w": 186,
+        "h": 40
+      }
+    },
+    {
+      "tag": "li",
+      "text": "GLX",
+      "cls": "sm-active",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 25,
+        "y": 104,
+        "w": 60,
+        "h": 40
+      }
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "cls": "sm-info-container",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 241,
+        "y": 104,
+        "w": 1514,
+        "h": 41
+      }
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "cls": "sm-settings-container",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1755,
+        "y": 104,
+        "w": 165,
+        "h": 41
+      }
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "cls": "sm-settings",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1785,
+        "y": 104,
+        "w": 135,
+        "h": 41
+      }
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "cls": "sm-sound sm-enabled",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1785,
+        "y": 104,
+        "w": 57,
+        "h": 40
+      }
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "cls": "sm-fullscreen ",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1842,
+        "y": 104,
+        "w": 53,
+        "h": 40
+      }
+    },
+    {
+      "tag": "section",
+      "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+      "cls": "sm-starmap",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 1083
+      }
+    },
+    {
+      "tag": "section",
+      "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+      "cls": "disc-root starmap-disc",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 554,
+        "h": 273
+      }
+    },
+    {
+      "tag": "a",
+      "text": "INSPECT",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 410,
+        "y": 226,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "INFORMATION",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 406,
+        "y": 256,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "ROUTING",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 398,
+        "y": 286,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "BOOKMARK",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 379,
+        "y": 316,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "section",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+      "cls": "sm-controls",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 974,
+        "w": 1920,
+        "h": 106
+      }
+    },
+    {
+      "tag": "ul",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+      "cls": "sm-tabs",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 933,
+        "w": 1920,
+        "h": 41
+      }
+    },
+    {
+      "tag": "a",
+      "text": "SEARCH",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1448,
+        "y": 938,
+        "w": 116,
+        "h": 36
+      }
+    },
+    {
+      "tag": "a",
+      "text": "BOOKMARKS",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1564,
+        "y": 938,
+        "w": 142,
+        "h": 36
+      }
+    },
+    {
+      "tag": "a",
+      "text": "ROUTES",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1707,
+        "y": 938,
+        "w": 115,
+        "h": 36
+      }
+    },
+    {
+      "tag": "li",
+      "text": "DISPLAY",
+      "cls": "sm-active",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1822,
+        "y": 933,
+        "w": 98,
+        "h": 41
+      }
+    },
+    {
+      "tag": "a",
+      "text": "DISPLAY",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1822,
+        "y": 934,
+        "w": 98,
+        "h": 40
+      }
+    },
+    {
+      "tag": "div",
+      "text": "FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D",
+      "cls": "sm-galaxy-display-tab",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 989,
+        "w": 1920,
+        "h": 60
+      }
+    },
+    {
+      "tag": "div",
+      "text": "FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED",
+      "cls": "sm-affiliations",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1064,
+        "y": 990,
+        "w": 246,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "FACTIONS",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1064,
+        "y": 1058,
+        "w": 57,
+        "h": 10
+      }
+    },
+    {
+      "tag": "label",
+      "text": "UEE",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1005,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "BANU",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1046,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "VANDUUL",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1087,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "XI'AN",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1128,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "DEVELOPING",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1169,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "UNCLAIMED",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1210,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "div",
+      "text": "JUMP TUNNELS SMALL MEDIUM LARGE",
+      "cls": "sm-route-sizes",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1394,
+        "y": 990,
+        "w": 123,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "JUMP TUNNELS",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1394,
+        "y": 1058,
+        "w": 87,
+        "h": 10
+      }
+    },
+    {
+      "tag": "label",
+      "text": "SMALL",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1335,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "MEDIUM",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1376,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "LARGE",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1417,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "div",
+      "text": "SENSORS POPULATION ECONOMY THREAT",
+      "cls": "sm-scanners",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1601,
+        "y": 990,
+        "w": 123,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "SENSORS",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1601,
+        "y": 1058,
+        "w": 54,
+        "h": 10
+      }
+    },
+    {
+      "tag": "label",
+      "text": "POPULATION",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1542,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "ECONOMY",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1583,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "THREAT",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1624,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "div",
+      "text": "CAMERA 3D 2D",
+      "cls": "sm-camera-views",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1808,
+        "y": 990,
+        "w": 82,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "CAMERA",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1808,
+        "y": 1058,
+        "w": 49,
+        "h": 10
+      }
+    },
+    {
+      "tag": "label",
+      "text": "3D",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1749,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "2D",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1790,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "a",
+      "text": "BACK TO RSI WEBSITE",
+      "cls": "sm-website",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 30,
+        "y": 1059,
+        "w": 118,
+        "h": 10
+      }
+    }
+  ],
+  "classesPresent": [
+    "sm-galaxy-display-tab",
+    "sm-affiliations",
+    "sm-scanners",
+    "starmap-disc",
+    "disc-root__menu"
+  ]
+}

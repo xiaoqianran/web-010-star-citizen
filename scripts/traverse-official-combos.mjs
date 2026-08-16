@@ -94,8 +94,9 @@ async function main() {
   const cam = () => new URL(page.url()).searchParams.get("camera");
   const loc = () => new URL(page.url()).searchParams.get("location");
 
-  const dump = async () =>
-    page.evaluate(() => {
+  const dump = async () => {
+    try {
+      return await page.evaluate(() => {
       const vis = (el) => {
         const s = getComputedStyle(el);
         const r = el.getBoundingClientRect();
@@ -119,7 +120,7 @@ async function main() {
         });
       }
       const menuWords = ["INSPECT", "INFORMATION", "ROUTING", "BOOKMARK", "SET AS", "AVOID", "CONTROL DISC"];
-      const menu = items.filter((i) => vis(i) === true && menuWords.some((w) => i.text.toUpperCase().includes(w)));
+      const menu = items.filter((i) => i.vis && menuWords.some((w) => i.text.toUpperCase().includes(w)));
       return {
         title: document.title,
         bodyText: (document.body?.innerText || "").replace(/\s+/g, " ").slice(0, 3500),
@@ -142,7 +143,19 @@ async function main() {
           "disc-root__menu",
         ].filter((c) => document.getElementsByClassName(c).length),
       };
-    });
+      });
+    } catch (err) {
+      return {
+        title: "",
+        bodyText: "",
+        href: page.url(),
+        menu: [],
+        items: [],
+        classesPresent: [],
+        error: String(err.message || err),
+      };
+    }
+  };
 
   const clickText = async (needles, { exact = false } = {}) => {
     const hit = await page.evaluate(

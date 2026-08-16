@@ -9,7 +9,8 @@
 - 字体：Electrolize / Orbitron / starmap-icons
 - 3D：Three.js + Collada `.dae`
 - 路由 tab：`"" | search | bookmarks | routes`
-- 查询：`location`（层级码）+ `camera`（五元组，精确映射待运行时确认）
+- 查询：`location`（层级码）+ `camera`（五元组）+ 偶发 `selection`（搜索点选瞬间）
+- 星系默认镜头现场见过 `60,0,0.002,0,0`（Terra）；GOSS 仍是 `10,102.98,0.002,0,0`
 - 无 WebSocket；`localStorage` 仅 `sm_sound_fx`、`skipAcknowledgment`、`skipInfo`
 
 ## 已打通的公开 API
