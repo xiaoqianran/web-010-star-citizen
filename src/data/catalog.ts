@@ -336,7 +336,7 @@ type JumpRec = {
 };
 
 const jumps = jumpPointIndex as Record<string, JumpRec>;
-const objectPos = objectPositions as Record<string, [number, number, number]>;
+const objectPos = objectPositions as unknown as Record<string, [number, number, number]>;
 
 function sphCart(distance: number, latitude: number, longitude: number) {
   const la = (latitude * Math.PI) / 180;
