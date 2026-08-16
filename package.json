@@ -10,6 +10,8 @@
     "preview": "vite preview",
     "capture": "node scripts/capture-starmap.mjs",
     "traverse": "node scripts/traverse-clone.mjs",
+    "traverse:human": "node scripts/traverse-human.mjs",
+    "traverse:official": "node scripts/traverse-official-leftover.mjs",
     "verify:routes": "node scripts/verify-routes.mjs"
   },
   "dependencies": {

@@ -100,6 +100,9 @@ export const zh = {
     mainSequenceK: "主序矮星 K 型",
     controlDisc: "控制盘",
     jumpThrough: "跃迁至",
+    manMade: "人造设施",
+    voiceOvers: "语音解说",
+    open: "打开",
   },
   search: {
     name: "名称",

@@ -70,6 +70,8 @@ export function ControlDisc({
       <div className="disc-meta">
         <div>{kind}</div>
         <div>{sub}</div>
+        <div className="disc-side">{zh.disc.manMade}</div>
+        <div className="disc-side">{zh.disc.voiceOvers}</div>
       </div>
       <div className="disc-menu">
         <button data-page="information" className={page === "information" ? "on" : ""} onClick={() => onPage("information")}>
@@ -101,6 +103,13 @@ export function ControlDisc({
             <dt>{zh.disc.threat}</dt>
             <dd>{sensorNum(body.sensor_danger)}</dd>
           </dl>
+        )}
+        {page === "information" && body.type === "LZ" && (
+          <div className="disc-actions">
+            <button type="button" data-action="open">
+              {zh.disc.open}
+            </button>
+          </div>
         )}
         {page === "routing" && (
           <div className="disc-actions">
