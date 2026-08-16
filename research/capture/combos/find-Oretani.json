@@ -1,0 +1,157 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 421,
+          "code": "ORETANI",
+          "name": "Oretani",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 8,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2524,
+          "code": "ORETANI.STAR.ORETANI",
+          "designation": "Oretani",
+          "name": null,
+          "star_system_id": 421,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 421,
+            "code": "ORETANI",
+            "name": "Oretani",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2722,
+          "code": "ORETANI.PLANET.ORETANII",
+          "designation": "Oretani I",
+          "name": null,
+          "star_system_id": 421,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 421,
+            "code": "ORETANI",
+            "name": "Oretani",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2723,
+          "code": "ORETANI.PLANET.ORETANIII",
+          "designation": "Oretani II",
+          "name": null,
+          "star_system_id": 421,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 421,
+            "code": "ORETANI",
+            "name": "Oretani",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2724,
+          "code": "ORETANI.PLANET.ORETANIIII",
+          "designation": "Oretani III",
+          "name": null,
+          "star_system_id": 421,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 421,
+            "code": "ORETANI",
+            "name": "Oretani",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2725,
+          "code": "ORETANI.PLANET.ORETANIIV",
+          "designation": "Oretani IV",
+          "name": null,
+          "star_system_id": 421,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 421,
+            "code": "ORETANI",
+            "name": "Oretani",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2726,
+          "code": "ORETANI.PLANET.ORETANIV",
+          "designation": "Oretani V",
+          "name": null,
+          "star_system_id": 421,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 421,
+            "code": "ORETANI",
+            "name": "Oretani",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2727,
+          "code": "ORETANI.PLANET.ORETANIVI",
+          "designation": "Oretani VI",
+          "name": null,
+          "star_system_id": 421,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 421,
+            "code": "ORETANI",
+            "name": "Oretani",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2721,
+          "code": "ORETANI.BELTS.ORETANIBELTALPHA",
+          "designation": "Oretani Belt Alpha",
+          "name": null,
+          "star_system_id": 421,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 421,
+            "code": "ORETANI",
+            "name": "Oretani",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 8,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 361,
+          "code": "NEMO",
+          "name": "Nemo",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 10,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2096,
+          "code": "NEMO.STARS.NEMO",
+          "designation": "Nemo",
+          "name": null,
+          "star_system_id": 361,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2478,
+          "code": "NEMO.PLANET.NEMOI",
+          "designation": "Nemo I",
+          "name": null,
+          "star_system_id": 361,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2479,
+          "code": "NEMO.PLANET.NEMOII",
+          "designation": "Nemo II",
+          "name": null,
+          "star_system_id": 361,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2480,
+          "code": "NEMO.PLANET.NEMOIIIERGO",
+          "designation": "Nemo III",
+          "name": "Ergo",
+          "star_system_id": 361,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1858,
+          "code": "FORA.JUMPPOINTS.NEMO",
+          "designation": "Fora - Nemo",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2093,
+          "code": "NEMO.JUMPPOINTS.HADES",
+          "designation": "Nemo - Hades",
+          "name": null,
+          "star_system_id": 361,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2094,
+          "code": "NEMO.JUMPPOINTS.COREL",
+          "designation": "Nemo - Corel",
+          "name": null,
+          "star_system_id": 361,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2095,
+          "code": "NEMO.JUMPPOINTS.FORA",
+          "designation": "Nemo - Fora",
+          "name": null,
+          "star_system_id": 361,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2144,
+          "code": "COREL.JUMPPOINTS.NEMO",
+          "designation": "Corel - Nemo",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2150,
+          "code": "HADES.JUMPPOINTS.NEMO",
+          "designation": "Hades - Nemo",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 10,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

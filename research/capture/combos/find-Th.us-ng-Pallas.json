@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 397,
+          "code": "PALLAS",
+          "name": "Th.us'ūng (Pallas)",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2268,
+          "code": "PALLAS.STARS.PALLAS",
+          "designation": "Th.us'ūng (Pallas)",
+          "name": null,
+          "star_system_id": 397,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2644,
+          "code": "PALLAS.PLANETS.PALLASI",
+          "designation": "Th.us'ūng (Pallas) I",
+          "name": null,
+          "star_system_id": 397,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2645,
+          "code": "PALLAS.PLANETS.PALLASII",
+          "designation": "Th.us'ūng (Pallas) II",
+          "name": "K.yuy'a'than",
+          "star_system_id": 397,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2646,
+          "code": "PALLAS.PLANETS.PALLASIII",
+          "designation": "Th.us'ūng (Pallas) III",
+          "name": "Se'kith",
+          "star_system_id": 397,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2648,
+          "code": "PALLAS.PLANETS.PALLASIV",
+          "designation": "Th.us'ūng (Pallas) IV",
+          "name": "Hua'nam",
+          "star_system_id": 397,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2649,
+          "code": "PALLAS.PLANETS.PALLASV",
+          "designation": "Th.us'ūng (Pallas) V",
+          "name": "H.ua'u",
+          "star_system_id": 397,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2620,
+          "code": "PALLAS.BELTS.PALLASBELTALPHA",
+          "designation": "Th.us'ūng (Pallas) Belt Alpha",
+          "name": "Huichuaihyao y.ath'o se Th.usūng",
+          "star_system_id": 397,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1947,
+          "code": "BAKER.JUMPPOINTS.PALLAS",
+          "designation": "Baker - Th.us'ūng (Pallas)",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2174,
+          "code": "HADUR.JUMPPOINTS.PALLAS",
+          "designation": "Yā'mon (Hadur) - Th.us'ūng (Pallas)",
+          "name": null,
+          "star_system_id": 377,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2210,
+          "code": "TAL.JUMPPOINTS.PALLAS",
+          "designation": "T.āl - Th.us'ūng (Pallas)",
+          "name": null,
+          "star_system_id": 385,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2264,
+          "code": "PALLAS.JUMPPOINTS.BAKER",
+          "designation": "Th.us'ūng (Pallas) - Baker",
+          "name": null,
+          "star_system_id": 397,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2266,
+          "code": "PALLAS.JUMPPOINTS.HADUR",
+          "designation": "Th.us'ūng (Pallas) - Hadur",
+          "name": null,
+          "star_system_id": 397,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2267,
+          "code": "PALLAS.JUMPPOINTS.TAL",
+          "designation": "Th.us'ūng (Pallas) - T.āl",
+          "name": null,
+          "star_system_id": 397,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

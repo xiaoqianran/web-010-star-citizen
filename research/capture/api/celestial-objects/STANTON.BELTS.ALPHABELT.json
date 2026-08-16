@@ -1,0 +1,59 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 1698,
+        "age": 0,
+        "appearance": "DEFAULT",
+        "axial_tilt": 0,
+        "code": "STANTON.BELTS.ALPHABELT",
+        "description": "Though Crusader Industries argues that the belt was part of their purchase of Stanton II from the UEE, the legal confusion and ensuing court case has created a massive wave of miners rushing to grab claims of their own.",
+        "designation": "Stanton Belt Alpha",
+        "distance": 1.563,
+        "fairchanceact": null,
+        "habitable": null,
+        "info_url": null,
+        "latitude": 0,
+        "longitude": 0,
+        "name": "Aaron Halo",
+        "orbit_period": null,
+        "parent_id": 1691,
+        "sensor_danger": "5",
+        "sensor_economy": "5",
+        "sensor_population": "1",
+        "shader_data": {
+          "orbitalMin": 1,
+          "orbitalMax": 5,
+          "orbitalFactor": 1,
+          "fullturn": 1,
+          "radius": 0.05
+        },
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": 0,
+        "subtype_id": 50,
+        "time_modified": "2015-10-09 19:26:46",
+        "type": "ASTEROID_BELT",
+        "subtype": {
+          "id": 50,
+          "name": "System Belt",
+          "type": "ASTEROID_BELT"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

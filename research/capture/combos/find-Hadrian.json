@@ -1,0 +1,307 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 411,
+          "code": "HADRIAN",
+          "name": "Hadrian",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 18,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2346,
+          "code": "HADRIAN.STARS.HADRIAN",
+          "designation": "Hadrian",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2464,
+          "code": "HADRIAN.PLANET.HADRIANI",
+          "designation": "Hadrian I",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2465,
+          "code": "HADRIAN.PLANET.HADRIANII",
+          "designation": "Hadrian II",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2466,
+          "code": "HADRIAN.PLANET.HADRIANIII",
+          "designation": "Hadrian III",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2604,
+          "code": "HADRIAN.STATION.HADRIANFLOTILLA",
+          "designation": "Hadrian Flotilla",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2537,
+          "code": "HADRIAN.BELTS.HADRIANBELTALPHA",
+          "designation": "Hadrian Belt Alpha",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1714,
+          "code": "TERRA.JUMPPOINTS.HADRIAN",
+          "designation": "Terra - Hadrian",
+          "name": null,
+          "star_system_id": 316,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 316,
+            "code": "TERRA",
+            "name": "Terra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1741,
+          "code": "PYRO.JUMPPOINTS.HADRIAN",
+          "designation": "Pyro - Hadrian",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1908,
+          "code": "CASTRA.JUMPPOINTS.HADRIAN",
+          "designation": "Castra - Hadrian",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2323,
+          "code": "GURZIL.JUMPPOINTS.HADRIAN",
+          "designation": "Gurzil - Hadrian",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2330,
+          "code": "OYA.JUMPPOINTS.HADRIAN",
+          "designation": "Oya - Hadrian",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2340,
+          "code": "HADRIAN.JUMPPOINTS.GURZIL",
+          "designation": "Hadrian - Gurzil",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2341,
+          "code": "HADRIAN.JUMPPOINTS.CASTRA",
+          "designation": "Hadrian - Castra",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2342,
+          "code": "HADRIAN.JUMPPOINTS.KIEL",
+          "designation": "Hadrian - Kiel",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2343,
+          "code": "HADRIAN.JUMPPOINTS.OYA",
+          "designation": "Hadrian - Oya",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2344,
+          "code": "HADRIAN.JUMPPOINTS.TERRA",
+          "designation": "Hadrian - Terra",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2345,
+          "code": "HADRIAN.JUMPPOINTS.PYRO",
+          "designation": "Hadrian - Pyro",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2367,
+          "code": "KIEL.JUMPPOINTS.HADRIAN",
+          "designation": "Kiel - Hadrian",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 18,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

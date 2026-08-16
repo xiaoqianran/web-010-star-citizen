@@ -1,0 +1,262 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 357,
+          "code": "NEXUS",
+          "name": "Nexus",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 15,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2071,
+          "code": "NEXUS.STARS.NEXUS",
+          "designation": "Nexus",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2072,
+          "code": "NEXUS.PLANETS.NEXUSI",
+          "designation": "Nexus I",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2073,
+          "code": "NEXUS.PLANETS.NEXUSII",
+          "designation": "Nexus II",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2074,
+          "code": "NEXUS.PLANETS.NEXUSIII",
+          "designation": "Nexus III",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2076,
+          "code": "NEXUS.PLANETS.NEXUSIVLAGO",
+          "designation": "Nexus IV",
+          "name": "Lago",
+          "star_system_id": 357,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2077,
+          "code": "NEXUS.PLANETS.NEXUSVTHEREDGOD",
+          "designation": "Nexus V",
+          "name": "The Red God",
+          "star_system_id": 357,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2079,
+          "code": "NEXUS.BELTS.DARKBELT",
+          "designation": "Nexus Belt Alpha",
+          "name": "Elcibre Belt",
+          "star_system_id": 357,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1805,
+          "code": "ELLIS.JUMPPOINTS.NEXUS",
+          "designation": "Ellis - Nexus",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1899,
+          "code": "MIN.JUMPPOINTS.NEXUS",
+          "designation": "Min - Nexus",
+          "name": null,
+          "star_system_id": 335,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 335,
+            "code": "MIN",
+            "name": "Min",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1919,
+          "code": "HADES.JUMPPOINTS.NEXUS",
+          "designation": "Hades - Nexus",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2067,
+          "code": "NEXUS.JUMPPOINTS.CATHCART",
+          "designation": "Nexus - Cathcart",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2068,
+          "code": "NEXUS.JUMPPOINTS.HADES",
+          "designation": "Nexus - Hades",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2069,
+          "code": "NEXUS.JUMPPOINTS.ELLIS",
+          "designation": "Nexus - Ellis",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2070,
+          "code": "NEXUS.JUMPPOINTS.MIN",
+          "designation": "Nexus - Min",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2153,
+          "code": "CATHCART.JUMPPOINTS.NEXUS",
+          "designation": "Cathcart - Nexus",
+          "name": null,
+          "star_system_id": 372,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 372,
+            "code": "CATHCART",
+            "name": "Cathcart",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 15,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 406,
+          "code": "VECTOR",
+          "name": "Vector",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 5,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2314,
+          "code": "VECTOR.STARS.VECTOR",
+          "designation": "Vector",
+          "name": null,
+          "star_system_id": 406,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 406,
+            "code": "VECTOR",
+            "name": "Vector",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1843,
+          "code": "KELLOG.JUMPPOINTS.VECTOR",
+          "designation": "Kellog - Vector",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1849,
+          "code": "TIBER.JUMPPOINTS.VECTOR",
+          "designation": "Tiber - Vector",
+          "name": null,
+          "star_system_id": 327,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 327,
+            "code": "TIBER",
+            "name": "Tiber",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2312,
+          "code": "VECTOR.JUMPPOINTS.TIBER",
+          "designation": "Vector - Tiber",
+          "name": null,
+          "star_system_id": 406,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 406,
+            "code": "VECTOR",
+            "name": "Vector",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2313,
+          "code": "VECTOR.JUMPPOINTS.KELLOG",
+          "designation": "Vector - Kellog",
+          "name": null,
+          "star_system_id": 406,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 406,
+            "code": "VECTOR",
+            "name": "Vector",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 5,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

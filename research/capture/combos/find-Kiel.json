@@ -1,0 +1,277 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 415,
+          "code": "KIEL",
+          "name": "Kiel",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 16,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2368,
+          "code": "KIEL.STARS.KIEL",
+          "designation": "Kiel",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2472,
+          "code": "KIEL.PLANET.KIELI",
+          "designation": "Kiel I",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2473,
+          "code": "KIEL.PLANET.KIELII",
+          "designation": "Kiel II",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2474,
+          "code": "KIEL.PLANET.KIELIIISEVERUS",
+          "designation": "Kiel III",
+          "name": "Severus",
+          "star_system_id": 415,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2475,
+          "code": "KIEL.PLANET.KIELIV",
+          "designation": "Kiel IV",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2476,
+          "code": "KIEL.PLANET.KIELV",
+          "designation": "Kiel V",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2477,
+          "code": "KIEL.PLANET.KIELVI",
+          "designation": "Kiel VI ",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2781,
+          "code": "KIEL.MOONS.AEMILIA",
+          "designation": "Kiel 3a",
+          "name": "Aemilia",
+          "star_system_id": 415,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2541,
+          "code": "KIEL.BELTS.KIELBELTALPHA",
+          "designation": "Kiel Belt Alpha",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2782,
+          "code": "KIEL.RINGS.RINGSOFKIELV",
+          "designation": "Rings of Kiel V",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1944,
+          "code": "BAKER.JUMPPOINTS.KIEL",
+          "designation": "Baker - Kiel",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2342,
+          "code": "HADRIAN.JUMPPOINTS.KIEL",
+          "designation": "Hadrian - Kiel",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2354,
+          "code": "HORUS.JUMPPOINTS.KIEL",
+          "designation": "Horus - Kiel",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2365,
+          "code": "KIEL.JUMPPOINTS.HORUS",
+          "designation": "Kiel - Horus",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2366,
+          "code": "KIEL.JUMPPOINTS.BAKER",
+          "designation": "Kiel - Baker",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2367,
+          "code": "KIEL.JUMPPOINTS.HADRIAN",
+          "designation": "Kiel - Hadrian",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 16,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

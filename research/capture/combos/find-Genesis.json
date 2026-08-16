@@ -1,0 +1,202 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 414,
+          "code": "GENESIS",
+          "name": "Genesis",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 11,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2364,
+          "code": "GENESIS.STARS.GENESIS",
+          "designation": "Genesis",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2546,
+          "code": "GENESIS.PLANET.GENESISI",
+          "designation": "Genesis I",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2547,
+          "code": "GENESIS.PLANET.GENESISII",
+          "designation": "Genesis II",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2548,
+          "code": "GENESIS.PLANET.GENESISIII",
+          "designation": "Genesis III",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2535,
+          "code": "GENESIS.BELTS.GENESISBELTALPHA",
+          "designation": "Genesis Belt Alpha",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1780,
+          "code": "TARANIS.JUMPPOINTS.GENESIS",
+          "designation": "Taranis - Genesis",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2142,
+          "code": "COREL.JUMPPOINTS.GENESIS",
+          "designation": "Corel - Genesis",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2318,
+          "code": "CHARON.JUMPPOINTS.GENESIS",
+          "designation": "Charon - Genesis",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2360,
+          "code": "GENESIS.JUMPPOINTS.CHARON",
+          "designation": "Genesis - Charon",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2361,
+          "code": "GENESIS.JUMPPOINTS.COREL",
+          "designation": "Genesis - Corel",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2363,
+          "code": "GENESIS.JUMPPOINTS.TARANIS",
+          "designation": "Genesis - Taranis",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 11,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

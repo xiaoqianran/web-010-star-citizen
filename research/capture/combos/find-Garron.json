@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 412,
+          "code": "GARRON",
+          "name": "Garron",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2352,
+          "code": "GARRON.STARS.GARRON",
+          "designation": "Garron",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2684,
+          "code": "GARRON.PLANET.GARRONI",
+          "designation": "Garron I",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2685,
+          "code": "GARRON.PLANET.GARRONII",
+          "designation": "Garron II",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2686,
+          "code": "GARRON.PLANET.GARRONIII",
+          "designation": "Garron III",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2687,
+          "code": "GARRON.PLANET.GARRONIV",
+          "designation": "Garron IV",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1982,
+          "code": "BANSHEE.JUMPPOINTS.GARRON",
+          "designation": "Banshee - Garron",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2110,
+          "code": "IDRIS.JUMPPOINTS.GARRON",
+          "designation": "Idris - Garron",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2205,
+          "code": "BACCHUS.JUMPPOINT.GARRON",
+          "designation": "Bacchus - Garron",
+          "name": null,
+          "star_system_id": 384,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 384,
+            "code": "BACCHUS",
+            "name": "Bacchus",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2333,
+          "code": "LEIR.JUMPPOINTS.GARRON",
+          "designation": "Leir - Garron",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2347,
+          "code": "GARRON.JUMPPOINTS.IDRIS",
+          "designation": "Garron - Idris",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2348,
+          "code": "GARRON.JUMPPOINTS.LEIR",
+          "designation": "Garron - Leir",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2349,
+          "code": "GARRON.JUMPPOINTS.BANSHEE",
+          "designation": "Garron - Banshee",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2350,
+          "code": "GARRON.JUMPPOINTS.BACCHUS",
+          "designation": "Garron - Bacchus",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import bootup from "@capture/api/bootup.json";
 import objectIndex from "@capture/index/celestial-objects.json";
+import jumpPointIndex from "@capture/index/jump-points.json";
 import type { CapturedBody } from "./celestial";
 import { bodyLabel, systemCodeOf } from "./celestial";
 
@@ -38,19 +39,25 @@ export type SearchHit = {
 
 export type RouteSegment = { id?: number; name: string; type: "system" | "jump"; code: string };
 
+export type RouteLeg = {
+  name: string | null;
+  label: string | null;
+  jumps: number | null;
+  first_jump: string | null;
+  flight_distance: number | null;
+  segments: RouteSegment[];
+};
+
 export type RouteResult = {
   ok: boolean;
   code: string;
   msg: string;
   empty?: boolean;
-  shortest: {
-    name: string | null;
-    label: string | null;
-    jumps: number | null;
-    first_jump: string | null;
-    segments: RouteSegment[];
-  } | null;
+  shortest: RouteLeg | null;
+  leastjumps: RouteLeg | null;
 };
+
+export type RouteMode = "shortest" | "leastjumps";
 
 type BootSystem = {
   id: number;
@@ -105,6 +112,46 @@ const extras: ObjectRow[] = [
     appearance: null,
     subtype: "Landing Zone",
   },
+  {
+    system: "NYX",
+    id: 2730,
+    code: "NYX.LZS.LEVSKI",
+    name: "Levski",
+    designation: "Levski",
+    type: "LZ",
+    appearance: null,
+    subtype: "Landing Zone",
+  },
+  {
+    system: "STANTON",
+    id: 2553,
+    code: "STANTON.LZS.LORVILLE",
+    name: "Lorville",
+    designation: "Lorville",
+    type: "LZ",
+    appearance: null,
+    subtype: "Landing Zone",
+  },
+  {
+    system: "STANTON",
+    id: 2716,
+    code: "STANTON.LZS.AREA18",
+    name: "Area18",
+    designation: "Area18",
+    type: "LZ",
+    appearance: null,
+    subtype: "Landing Zone",
+  },
+  {
+    system: "STANTON",
+    id: 2554,
+    code: "STANTON.LZS.ORISON",
+    name: "Orison",
+    designation: "Orison",
+    type: "LZ",
+    appearance: null,
+    subtype: "Landing Zone",
+  },
 ];
 
 export const objects = [...(objectIndex as ObjectRow[]), ...extras];
@@ -112,6 +159,94 @@ export const objects = [...(objectIndex as ObjectRow[]), ...extras];
 export const systemByCode = new Map(systems.map((s) => [s.code, s]));
 export const systemById = new Map(systems.map((s) => [s.id, s]));
 export const objectByCode = new Map(objects.map((o) => [o.code, o]));
+
+const extraBodies: CapturedBody[] = [
+  {
+    id: 2569,
+    code: "SOL.LZS.PORTRETANUS",
+    name: "Port Renatus",
+    designation: "Port Renatus",
+    type: "LZ",
+    distance: 0,
+    latitude: 46,
+    longitude: 13,
+    size: 0,
+    habitable: null,
+    show_label: true,
+    show_orbitlines: false,
+    appearance: "DEFAULT",
+    parent_id: 2027,
+    subtype: { id: 0, name: "Landing Zone", type: "LZ" },
+  },
+  {
+    id: 2730,
+    code: "NYX.LZS.LEVSKI",
+    name: "Levski",
+    designation: "Levski",
+    type: "LZ",
+    distance: 0,
+    latitude: -15,
+    longitude: -55,
+    size: 0,
+    habitable: null,
+    show_label: true,
+    show_orbitlines: false,
+    appearance: "DEFAULT",
+    parent_id: 2626,
+    subtype: { id: 0, name: "Landing Zone", type: "LZ" },
+  },
+  {
+    id: 2553,
+    code: "STANTON.LZS.LORVILLE",
+    name: "Lorville",
+    designation: "Lorville",
+    type: "LZ",
+    distance: 0,
+    latitude: 0,
+    longitude: 0,
+    size: 0,
+    habitable: null,
+    show_label: true,
+    show_orbitlines: false,
+    appearance: "DEFAULT",
+    parent_id: 1693,
+    subtype: { id: 0, name: "Landing Zone", type: "LZ" },
+  },
+  {
+    id: 2716,
+    code: "STANTON.LZS.AREA18",
+    name: "Area18",
+    designation: "Area18",
+    type: "LZ",
+    distance: 0,
+    latitude: 34,
+    longitude: -29,
+    size: 0,
+    habitable: null,
+    show_label: true,
+    show_orbitlines: false,
+    appearance: "DEFAULT",
+    parent_id: 1694,
+    subtype: { id: 0, name: "Landing Zone", type: "LZ" },
+  },
+  {
+    id: 2554,
+    code: "STANTON.LZS.ORISON",
+    name: "Orison",
+    designation: "Orison",
+    type: "LZ",
+    distance: 0,
+    latitude: 0,
+    longitude: 0,
+    size: 0,
+    habitable: null,
+    show_label: true,
+    show_orbitlines: false,
+    appearance: "DEFAULT",
+    parent_id: 1695,
+    subtype: { id: 0, name: "Landing Zone", type: "LZ" },
+  },
+];
 
 const systemLoaders = import.meta.glob("../../research/capture/api/star-systems/*.json");
 const systemCache = new Map<string, { info: SystemRow; bodies: CapturedBody[] }>();
@@ -132,7 +267,10 @@ export async function loadSystem(code: string) {
   const row = mod.default?.data?.resultset?.[0];
   const info = systemByCode.get(upper) ?? systemByCode.get(row?.code ?? "");
   if (!row || !info) return null;
-  const packed = { info, bodies: (row.celestial_objects ?? []) as CapturedBody[] };
+  const captured = (row.celestial_objects ?? []) as CapturedBody[];
+  const have = new Set(captured.map((b) => b.code));
+  const injected = extraBodies.filter((b) => systemCodeOf(b.code) === info.code && !have.has(b.code));
+  const packed = { info, bodies: [...captured, ...injected] };
   systemCache.set(info.code, packed);
   return packed;
 }
@@ -146,7 +284,42 @@ export const AFFILIATIONS = [
   { code: "UNC", name: "Unclaimed" },
 ] as const;
 
-type Edge = { to: string; size: "S" | "M" | "L"; name: string; jumpCode: string };
+type Edge = {
+  to: string;
+  size: "S" | "M" | "L";
+  name: string;
+  jumpCode: string;
+  arriveName: string;
+  arriveCode: string;
+};
+
+type JumpRec = {
+  distance: number;
+  latitude: number;
+  longitude: number;
+};
+
+const jumps = jumpPointIndex as Record<string, JumpRec>;
+
+function jpCart(code: string) {
+  const j = jumps[code];
+  if (!j) return { x: 0, y: 0, z: 0 };
+  const la = (j.latitude * Math.PI) / 180;
+  const lo = (j.longitude * Math.PI) / 180;
+  const d = j.distance;
+  return {
+    x: d * Math.cos(la) * Math.cos(lo),
+    y: d * Math.sin(la),
+    z: d * Math.cos(la) * Math.sin(lo),
+  };
+}
+
+function flightBetween(a?: string | null, b?: string | null) {
+  if (!a || !b) return 0;
+  const pa = jpCart(a);
+  const pb = jpCart(b);
+  return Math.hypot(pa.x - pb.x, pa.y - pb.y, pa.z - pb.z);
+}
 
 const graph = new Map<string, Edge[]>();
 for (const t of boot.data.tunnels.resultset) {
@@ -156,10 +329,24 @@ for (const t of boot.data.tunnels.resultset) {
   const ab = t.entry.designation || `${a.name} - ${b.name}`;
   const ba = t.exit.designation || `${b.name} - ${a.name}`;
   const listA = graph.get(a.code) ?? [];
-  listA.push({ to: b.code, size: t.size, name: ab, jumpCode: t.entry.code });
+  listA.push({
+    to: b.code,
+    size: t.size,
+    name: ab,
+    jumpCode: t.entry.code,
+    arriveName: ba,
+    arriveCode: t.exit.code,
+  });
   graph.set(a.code, listA);
   const listB = graph.get(b.code) ?? [];
-  listB.push({ to: a.code, size: t.size, name: ba, jumpCode: t.exit.code });
+  listB.push({
+    to: a.code,
+    size: t.size,
+    name: ba,
+    jumpCode: t.exit.code,
+    arriveName: ab,
+    arriveCode: t.entry.code,
+  });
   graph.set(b.code, listB);
 }
 
@@ -180,8 +367,8 @@ export function resolveEndpoint(raw: string): string | null {
 }
 
 export function searchCatalog(query: string, currentSystem?: string): SearchHit[] {
-  const q = query.trim().toLowerCase();
-  if (!q) {
+  const raw = query.trim();
+  if (!raw) {
     const here = currentSystem ? objects.filter((o) => o.system === currentSystem) : [];
     return here.slice(0, 24).map((o) => ({
       name: bodyLabel(o),
@@ -190,13 +377,16 @@ export function searchCatalog(query: string, currentSystem?: string): SearchHit[
       system: o.system,
     }));
   }
+  // Official /api/starmap/find rejects shorter than 3 characters.
+  if (raw.length < 3) return [];
+  const q = raw.toLowerCase();
   const sysHits = systems
     .filter((s) => s.code.toLowerCase().includes(q) || s.name.toLowerCase().includes(q))
     .map((s) => ({ name: s.name, code: s.code, type: "STAR_SYSTEM" as const, system: s.code }));
+  // Official find matches name/designation, not object codes (GOSS.STARS.GOSSA and JUMPPOINTS stay empty).
   const objHits = objects
     .filter(
       (o) =>
-        o.code.toLowerCase().includes(q) ||
         (o.name && o.name.toLowerCase().includes(q)) ||
         (o.designation && o.designation.toLowerCase().includes(q)),
     )
@@ -214,40 +404,100 @@ export function searchCatalog(query: string, currentSystem?: string): SearchHit[
   return [...objHits, ...sysHits].sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name)).slice(0, 32);
 }
 
-function bfs(from: string, to: string): { path: string[]; edges: Edge[] } | null {
-  if (from === to) return { path: [from], edges: [] };
-  const q: string[] = [from];
-  const prev = new Map<string, { via: string; edge: Edge }>();
-  const seen = new Set([from]);
+type Walk = { path: string[]; edges: Edge[]; cost: number; hops: number };
+
+function walkGraph(from: string, to: string, mode: RouteMode): Walk | null {
+  type Node = { sys: string; via: string | null; cost: number; hops: number };
+  const keyOf = (sys: string, via: string | null) => `${sys}\0${via ?? ""}`;
+  const better = (a: { cost: number; hops: number }, b: { cost: number; hops: number }) => {
+    if (mode === "leastjumps") return a.hops < b.hops || (a.hops === b.hops && a.cost < b.cost);
+    return a.cost < b.cost || (a.cost === b.cost && a.hops < b.hops);
+  };
+  const best = new Map<string, { cost: number; hops: number }>();
+  const prev = new Map<string, { pk: string; edge: Edge }>();
+  const q: Node[] = [{ sys: from, via: null, cost: 0, hops: 0 }];
+  best.set(keyOf(from, null), { cost: 0, hops: 0 });
+  let destKey: string | null = null;
+  let destScore = { cost: Number.POSITIVE_INFINITY, hops: Number.POSITIVE_INFINITY };
+
   while (q.length) {
-    const cur = q.shift()!;
-    for (const edge of graph.get(cur) ?? []) {
-      if (seen.has(edge.to)) continue;
-      seen.add(edge.to);
-      prev.set(edge.to, { via: cur, edge });
-      if (edge.to === to) {
-        const path = [to];
-        const edges: Edge[] = [];
-        let node = to;
-        while (node !== from) {
-          const step = prev.get(node)!;
-          edges.unshift(step.edge);
-          node = step.via;
-          path.unshift(node);
-        }
-        return { path, edges };
+    let idx = 0;
+    for (let i = 1; i < q.length; i++) {
+      if (better(q[i], q[idx])) idx = i;
+    }
+    const cur = q.splice(idx, 1)[0];
+    const ck = keyOf(cur.sys, cur.via);
+    const known = best.get(ck);
+    if (!known || cur.cost !== known.cost || cur.hops !== known.hops) continue;
+
+    if (cur.sys === to && cur.via) {
+      if (better(cur, destScore)) {
+        destScore = { cost: cur.cost, hops: cur.hops };
+        destKey = ck;
       }
-      q.push(edge.to);
+      continue;
+    }
+
+    for (const edge of graph.get(cur.sys) ?? []) {
+      const extra = cur.via ? flightBetween(cur.via, edge.jumpCode) : 0;
+      const next = { sys: edge.to, via: edge.arriveCode, cost: cur.cost + extra, hops: cur.hops + 1 };
+      const nk = keyOf(next.sys, next.via);
+      const held = best.get(nk);
+      if (held && !better(next, held)) continue;
+      best.set(nk, { cost: next.cost, hops: next.hops });
+      prev.set(nk, { pk: ck, edge });
+      q.push(next);
     }
   }
-  return null;
+
+  if (!destKey) return null;
+  const edges: Edge[] = [];
+  const path = [to];
+  let cursor = destKey;
+  while (prev.has(cursor)) {
+    const step = prev.get(cursor)!;
+    edges.unshift(step.edge);
+    path.unshift(step.pk.split("\0")[0]);
+    cursor = step.pk;
+  }
+  return { path, edges, cost: destScore.cost, hops: destScore.hops };
 }
+
+function packLeg(from: string, to: string, walk: Walk): RouteLeg {
+  const a = systemByCode.get(from)!;
+  const b = systemByCode.get(to)!;
+  const through = walk.path[1] && walk.path[1] !== to ? systemByCode.get(walk.path[1])?.name : b.name;
+  const segments: RouteSegment[] = [{ name: a.name, type: "system", code: from }];
+  for (let i = 0; i < walk.edges.length; i++) {
+    const edge = walk.edges[i];
+    segments.push({ name: edge.name, type: "jump", code: walk.path[i] });
+    segments.push({ name: edge.arriveName, type: "jump", code: walk.path[i + 1] });
+  }
+  segments.push({ name: b.name, type: "system", code: to });
+  return {
+    name: `${a.name} to ${b.name}`,
+    label: `Through ${through}`,
+    jumps: walk.edges.length,
+    first_jump: walk.edges[0]?.name ?? null,
+    flight_distance: walk.cost,
+    segments,
+  };
+}
+
+const emptyLeg = (): RouteLeg => ({
+  name: null,
+  label: null,
+  jumps: null,
+  first_jump: null,
+  flight_distance: null,
+  segments: [],
+});
 
 export function findRoute(departure: string, destination: string): RouteResult {
   const from = resolveEndpoint(departure);
   const to = resolveEndpoint(destination);
   if (!from || !to) {
-    return { ok: false, code: "ErrInvalidObject", msg: "Invalid object specified", shortest: null };
+    return { ok: false, code: "ErrInvalidObject", msg: "Invalid object specified", shortest: null, leastjumps: null };
   }
   if (from === to) {
     return {
@@ -255,43 +505,33 @@ export function findRoute(departure: string, destination: string): RouteResult {
       code: "OK",
       msg: "OK",
       empty: true,
-      shortest: { name: null, label: null, jumps: null, first_jump: null, segments: [] },
+      shortest: emptyLeg(),
+      leastjumps: emptyLeg(),
     };
   }
-  const found = bfs(from, to);
-  if (!found) {
-    return { ok: false, code: "ErrNoRoute", msg: "No route", shortest: null };
+  const short = walkGraph(from, to, "shortest");
+  const least = walkGraph(from, to, "leastjumps");
+  if (!short || !least) {
+    return { ok: false, code: "ErrNoRoute", msg: "No route", shortest: null, leastjumps: null };
   }
-  const a = systemByCode.get(from)!;
-  const b = systemByCode.get(to)!;
-  const through = found.path[1] && found.path[1] !== to ? systemByCode.get(found.path[1])?.name : b.name;
-  const segments: RouteSegment[] = [{ name: a.name, type: "system", code: from }];
-  for (let i = 0; i < found.edges.length; i++) {
-    const edge = found.edges[i];
-    const prev = found.path[i];
-    const next = found.path[i + 1];
-    segments.push({ name: edge.name, type: "jump", code: prev });
-    const back = (graph.get(next) ?? []).find((e) => e.to === prev);
-    segments.push({ name: back?.name || `${systemByCode.get(next)?.name} - ${systemByCode.get(prev)?.name}`, type: "jump", code: next });
-  }
-  segments.push({ name: b.name, type: "system", code: to });
   return {
     ok: true,
     code: "OK",
     msg: "OK",
-    shortest: {
-      name: `${a.name} to ${b.name}`,
-      label: `Through ${through}`,
-      jumps: found.edges.length,
-      first_jump: found.edges[0]?.name ?? null,
-      segments,
-    },
+    shortest: packLeg(from, to, short),
+    leastjumps: packLeg(from, to, least),
   };
 }
 
-export function routeSystems(result: RouteResult | null): string[] {
-  if (!result?.shortest) return [];
-  return result.shortest.segments.filter((s) => s.type === "system").map((s) => s.code);
+export function pickRoute(result: RouteResult | null, mode: RouteMode): RouteLeg | null {
+  if (!result) return null;
+  return mode === "leastjumps" ? result.leastjumps : result.shortest;
+}
+
+export function routeSystems(result: RouteResult | null, mode: RouteMode = "shortest"): string[] {
+  const leg = pickRoute(result, mode);
+  if (!leg) return [];
+  return [...new Set(leg.segments.filter((s) => s.type === "system").map((s) => s.code))];
 }
 
 export { systemCodeOf };

@@ -435,13 +435,17 @@
   bottom: 18px;
   width: 72px;
   height: 72px;
+  padding: 0;
   border: 1px solid #0c67a1;
   border-radius: 50%;
   display: grid;
   place-items: center;
   color: #42cbf8;
+  background: transparent;
+  font: inherit;
   font-size: 8px;
   letter-spacing: 0.12em;
+  cursor: pointer;
   box-shadow: 0 0 16px #00edff22 inset;
 }
 

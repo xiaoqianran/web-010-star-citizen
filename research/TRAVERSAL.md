@@ -114,8 +114,38 @@
 - 远距才分叉：`shortest` 优化 `flight_distance`，跳数可**多于** `leastjumps`（SOL–NYX 10 vs 4；STANTON–TAMSA 11 vs 7 Through Nyx / Through Pyro；KILIAN–PYRO 4 vs 3 且 first_jump 不同）。CROSHAW–SOL / TERRA–NYX 不分。无 `BANU` 星系码，Banu 用 TRISE–SOL（10 vs 7）
 - 天体详情：TAMSA 恒星 `BLACKHOLE`+`shader_data.blackhole`；The ARK `habitable` Space Station；WARN01 `appearance=WARNING_RED` 长设定文；Luna `PLANET_BROWN`
 
+## API combo sweep 4
+
+公开 `find` 又穷尽了 139 组（含 90 个官方星系名）+ 26 组航线 + 12 个天体详情。
+
+### 新搜到的现象
+
+- 着陆区 `LZ`（不在 `star-systems` 列表里）：`Port Renatus` `SOL.LZS.PORTRETANUS`、`Levski` `NYX.LZS.LEVSKI`、`Lorville` `STANTON.LZS.LORVILLE`、`Area18`/`A18` `STANTON.LZS.AREA18`、`Orison` `STANTON.LZS.ORISON`。天体接口：`distance=0`，挂在行星 `parent_id` 上。
+- 游戏里后加的站点名在旧星图里不存在：`Grim Hex` / `New Babbage` / `Baijini` / `Tressler` / `Port Tressler` / `Dumpers Depot` / `Javelin` 成功但空。`Everus` 误伤行星 Severus。
+- 名称子串：`protoplanetary` 7 条带；`cluster` 7 个小行星场；`flotilla` 5 座人造设施；`halo` → Aaron Halo；`ring` 12 条环；`the` → The Red God / The ARK / The Coil。
+- 种族/类型词仍空：`Human` `Tevarin` `Kr'Thak` `Claimed` `BLACKHOLE` `Jump` `JUMP` `Landing`。
+- `ab`（2 字符）`ErrValidationFailed`；`xxx` / `***` / `123` 成功但空。
+- 西安星系官方显示名带括注：`Ē'aluth (Eealus)`、`Kai'pua (Kayfa)`、`Yā'mon (Hadur)`、`La'uo (Virtus)`。用英文短名 `Kayfa` 搜得到天体但 **0 个星系行**（星系码仍是 `KAYFA`）。
+- `K.ap'a'ri (Khabari)` / `Malkail (Markahil)` 命中星系行但 0 天体。
+
+### 航线
+
+- 又一批 shortest ≠ leastjumps：KINS–SOL 8/7、GEDDON–TRISE 10/8、EEALUS–SOL 9/6、KAYFA–TERRA 5/4、VIRGIL–SOL 9/4、GOSS–TAMSA 9/8、HELIOS–SOL 6/5、OBERON–TAMSA 7/6、HADUR–SOL 8/7、RIHLAH–GOSS 5/4。
+- `size=S/M/L` 不改 SOL–NYX / STANTON–TAMSA 路径。
+- 表单多写 `avoid=DAVIEN` / `avoid=TERRA` / `mode=` / `type=` **官方直接忽略**，仍走原路。
+- `BANU` 不是星系码：`ErrInvalidObject`。
+- `flight_distance` = 中转星系里「到达跳跃点 → 离开跳跃点」的球面欧氏距离之和（出发/到达星系为 0）。本地用 270 个跳跃点坐标重建，14 组官方对完全一致。
+
+## 克隆已接上（对照 sweep 3–4）
+
+- 搜索：少于 3 字符空；只匹配名称/称号，不匹配天体码（`jump` / `GOSS.STARS.GOSSA` 与官方一样空）。
+- 航线：同时给出 shortest / leastjumps，面板切换会改银河高亮。
+- 五个 LZ 注入对应星系场景（贴在行星上）。
+- 指南针点击回到官方默认 `camera=10,102.98,0.002,0,0`。
+
 ## 仍须对照官网补的现场
 
-- DISPLAY 热力是网格还是光晕
+- DISPLAY 热力是网格还是光晕（全屏点击代理仍在跑）
 - 登录态书签 JSON
-- 官方键盘是否 WASD（窗口模式未测完）
+- 官方键盘是否 WASD、右键/中键、指南针是否复位
+- 控制盘穿跃动画（克隆仍是闪白换系）

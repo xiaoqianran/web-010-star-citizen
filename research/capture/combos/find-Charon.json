@@ -1,0 +1,322 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 407,
+          "code": "CHARON",
+          "name": "Charon",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 19,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2320,
+          "code": "CHARON.STARS.CHARON",
+          "designation": "Charon",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2441,
+          "code": "CHARON.PLANET.CHARONI",
+          "designation": "Charon I",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2442,
+          "code": "CHARON.PLANET.CHARONII",
+          "designation": "Charon II",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2443,
+          "code": "CHARON.PLANET.CHARONIII",
+          "designation": "Charon III",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2444,
+          "code": "CHARON.PLANET.CHARONIV",
+          "designation": "Charon IV",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2445,
+          "code": "CHARON.PLANET.CHARONV",
+          "designation": "Charon V",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2774,
+          "code": "SOL.MOONS.CHARON",
+          "designation": "Sol 9a",
+          "name": "Charon",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2778,
+          "code": "CHARON.MOONS.CHARON2A",
+          "designation": "Charon 2a",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2779,
+          "code": "CHARON.MOONS.CHARON2B",
+          "designation": "Charon 2b",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2812,
+          "code": "CHARON.MOONS.CHARON3A",
+          "designation": "Charon 3a",
+          "name": "Touvoni/Aiya",
+          "star_system_id": 407,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2534,
+          "code": "CHARON.BELTS.CHARONBELTALPHAGEDINASHOBELT",
+          "designation": "Charon Belt Alpha",
+          "name": "Gedinasho Belt",
+          "star_system_id": 407,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1833,
+          "code": "HELIOS.JUMPPOINTS.CHARON",
+          "designation": "Helios - Charon",
+          "name": null,
+          "star_system_id": 325,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 325,
+            "code": "HELIOS",
+            "name": "Helios",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1984,
+          "code": "TYROL.JUMPPOINTS.CHARON",
+          "designation": "Tyrol - Charon",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2191,
+          "code": "KINS.JUMPPOINTS.CHARON",
+          "designation": "Kins - Charon",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2315,
+          "code": "CHARON.JUMPPOINTS.TYROL",
+          "designation": "Charon - Tyrol",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2317,
+          "code": "CHARON.JUMPPOINTS.HELIOS",
+          "designation": "Charon - Helios",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2318,
+          "code": "CHARON.JUMPPOINTS.GENESIS",
+          "designation": "Charon - Genesis",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2319,
+          "code": "CHARON.JUMPPOINTS.KINS",
+          "designation": "Charon - Kins",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2360,
+          "code": "GENESIS.JUMPPOINTS.CHARON",
+          "designation": "Genesis - Charon",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 19,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

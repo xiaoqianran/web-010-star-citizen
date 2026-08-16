@@ -1,0 +1,52 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 403,
+          "code": "VOODOO",
+          "name": "Voodoo",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2301,
+          "code": "VOODOO.STARS.VOODOO",
+          "designation": "Voodoo",
+          "name": null,
+          "star_system_id": 403,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 403,
+            "code": "VOODOO",
+            "name": "Voodoo",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

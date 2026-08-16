@@ -1,0 +1,247 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 363,
+          "code": "ELYSIUM",
+          "name": "Elysium",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 14,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2105,
+          "code": "ELYSIUM.STARS.ELYSIUM",
+          "designation": "Elysium",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2455,
+          "code": "ELYSIUM.PLANET.ELYSIUMI",
+          "designation": "Elysium I",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2456,
+          "code": "ELYSIUM.PLANET.ELYSIUMII",
+          "designation": "Elysium II",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2457,
+          "code": "ELYSIUM.PLANET.ELYSIUMIIIVOSCA",
+          "designation": "Elysium III",
+          "name": "Vosca",
+          "star_system_id": 363,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2458,
+          "code": "ELYSIUM.PLANETELYSIUMIVJALAN",
+          "designation": "Elysium IV",
+          "name": "Jalan",
+          "star_system_id": 363,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2459,
+          "code": "ELYSIUM.PLANET.ELYSIUMV",
+          "designation": "Elysium V",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2097,
+          "code": "CENTAURI.JUMPPOINTS.ELYSIUM",
+          "designation": "Centauri - Elysium",
+          "name": null,
+          "star_system_id": 362,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2101,
+          "code": "ELYSIUM.JUMPPOINTS.LEIR",
+          "designation": "Elysium - Leir",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2102,
+          "code": "ELYSIUM.JUMPPOINTS.VANGUARD",
+          "designation": "Elysium - Vanguard",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2103,
+          "code": "ELYSIUM.JUMPPOINTS.CENTAURI",
+          "designation": "Elysium - Centauri",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2104,
+          "code": "ELYSIUM.JUMPPOINTS.IDRIS",
+          "designation": "Elysium - Idris",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2109,
+          "code": "IDRIS.JUMPPOINTS.ELYSIUM",
+          "designation": "Idris - Elysium",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2240,
+          "code": "VANGUARD.JUMPPOINTS.ELYSIUM",
+          "designation": "Vanguard - Elysium",
+          "name": null,
+          "star_system_id": 391,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 391,
+            "code": "VANGUARD",
+            "name": "Vanguard",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2337,
+          "code": "LEIR.JUMPPOINTS.ELYSIUM",
+          "designation": "Leir - Elysium",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 14,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 388,
+          "code": "EEALUS",
+          "name": "Ē'aluth (Eealus)",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 15,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2230,
+          "code": "EEALUS.STARS.EEALUS",
+          "designation": "Ē'aluth (Eealus)",
+          "name": null,
+          "star_system_id": 388,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2497,
+          "code": "EEALUS.PLANET.EEALUSIIIKOLI",
+          "designation": "Ē'aluth (Eealus) III",
+          "name": "Ko'li",
+          "star_system_id": 388,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2587,
+          "code": "EEALUS.PLANET.EEALUSI",
+          "designation": "Ē'aluth (Eealus) I",
+          "name": "Tua.lu\"",
+          "star_system_id": 388,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2588,
+          "code": "EEALUS.PLANET.EEALUSII",
+          "designation": "Ē'aluth (Eealus) II",
+          "name": "Kyupuāng",
+          "star_system_id": 388,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2589,
+          "code": "EEALUS.PLANET.EEALUSIV",
+          "designation": "Ē'aluth (Eealus) IV",
+          "name": "Xyekyu",
+          "star_system_id": 388,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2590,
+          "code": "EEALUS.PLANET.EEALUSV",
+          "designation": "Ē'aluth (Eealus) V",
+          "name": "Puāngkiil",
+          "star_system_id": 388,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2594,
+          "code": "EALUS.BELTS.EALUSBELTALPHA",
+          "designation": "Ē'aluth (Eealus) Belt Alpha",
+          "name": null,
+          "star_system_id": 388,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2171,
+          "code": "VIRTUS.JUMPPOINTS.EEALUS",
+          "designation": "La'uo (Virtus) - Ē'aluth (Eealus)",
+          "name": null,
+          "star_system_id": 376,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2216,
+          "code": "TRISE.JUMPPOINTS.EEALUS",
+          "designation": "Trise - Ē'aluth (Eealus)",
+          "name": null,
+          "star_system_id": 400,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 400,
+            "code": "TRISE",
+            "name": "Trise",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2225,
+          "code": "EEALUS.JUMPPOINTS.TRISE",
+          "designation": "Ē'aluth (Eealus) - Trise",
+          "name": null,
+          "star_system_id": 388,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2226,
+          "code": "EEALUS.JUMPPOINTS.VIRTUS",
+          "designation": "Ē'aluth (Eealus) - La'uo (Virtus)",
+          "name": null,
+          "star_system_id": 388,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2227,
+          "code": "EEALUS.JUMPPOINTS.OYA",
+          "designation": "Ē'aluth (Eealus) - Oya",
+          "name": null,
+          "star_system_id": 388,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2229,
+          "code": "EEALUS.JUMPPOINTS.RIHLAH",
+          "designation": "Ē'aluth (Eealus) - R.il'a (Rihlah)",
+          "name": null,
+          "star_system_id": 388,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2285,
+          "code": "RIHLAH.JUMPPOINTS.EEALUS",
+          "designation": "R.il'a (Rihlah) - Ē'aluth (Eealus)",
+          "name": null,
+          "star_system_id": 401,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2328,
+          "code": "OYA.JUMPPOINTS.EEALUS",
+          "designation": "Oya - Ē'aluth (Eealus)",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 15,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

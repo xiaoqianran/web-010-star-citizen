@@ -1,0 +1,52 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 396,
+          "code": "EL'SIN",
+          "name": "El'sin",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2263,
+          "code": "EL'SIN.STARS.EL'SIN",
+          "designation": "El'sin",
+          "name": null,
+          "star_system_id": 396,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 396,
+            "code": "EL'SIN",
+            "name": "El'sin",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 7,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2759,
+          "code": "GURZIL.BELTS.GURZILBELTALPHA1",
+          "designation": "Protoplanetary Disk",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2760,
+          "code": "GURZIL.BELTS.GURZILBELTALPHA2",
+          "designation": "Protoplanetary Disk 2",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2761,
+          "code": "GURZIL.BELTS.GURZILBELTALPHA3",
+          "designation": "Protoplanetary Disk 3",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2764,
+          "code": "GURZIL.BELTS.GURZILBELTALPHA6",
+          "designation": "Protoplanetary Disk 6",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2765,
+          "code": "GURZIL.BELTS.GURZILBELTALPHA7",
+          "designation": "Protoplanetary Disk 7",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2766,
+          "code": "GURZIL.BELTS.GURZILBELTALPHA8",
+          "designation": "Protoplanetary Disk 8",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2767,
+          "code": "GURZIL.BELTS.GURZILBELTALPHA9",
+          "designation": "Protoplanetary Disk 9",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 7,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

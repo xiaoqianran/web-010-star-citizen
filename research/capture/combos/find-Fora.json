@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 329,
+          "code": "FORA",
+          "name": "Fora",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1860,
+          "code": "FORA.STARS.FORA",
+          "designation": "Fora",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1861,
+          "code": "FORA.PLANETS.FORAI",
+          "designation": "Fora I",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1862,
+          "code": "FORA.PLANETS.FORAII",
+          "designation": "Fora II",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1863,
+          "code": "FORA.PLANETS.FORAIIIHYPERION",
+          "designation": "Fora III",
+          "name": "Hyperion",
+          "star_system_id": 329,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1865,
+          "code": "FORA.PLANETS.FORAV",
+          "designation": "Fora V",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1866,
+          "code": "FORA.PLANETS.FORAIV",
+          "designation": "Fora IV",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1864,
+          "code": "FORA.BELTS.ALPHABELT",
+          "designation": "Fora Belt Alpha",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1856,
+          "code": "FORA.JUMPPOINTS.RHETOR",
+          "designation": "Fora - Rhetor",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1858,
+          "code": "FORA.JUMPPOINTS.NEMO",
+          "designation": "Fora - Nemo",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1859,
+          "code": "FORA.JUMPPOINTS.BANSHEE",
+          "designation": "Fora - Banshee",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1978,
+          "code": "BANSHEE.JUMPPOINTS.FORA",
+          "designation": "Banshee - Fora",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1996,
+          "code": "RHETOR.JUMPPOINTS.FORA",
+          "designation": "Rhetor - Fora",
+          "name": null,
+          "star_system_id": 349,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2095,
+          "code": "NEMO.JUMPPOINTS.FORA",
+          "designation": "Nemo - Fora",
+          "name": null,
+          "star_system_id": 361,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

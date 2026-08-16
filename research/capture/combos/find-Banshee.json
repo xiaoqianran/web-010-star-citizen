@@ -1,0 +1,262 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 346,
+          "code": "BANSHEE",
+          "name": "Banshee",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 15,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1983,
+          "code": "BANSHEE.STARS.BANSHEE",
+          "designation": "Banshee",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2428,
+          "code": "BANSHEE.PLANET.BANSHEEI",
+          "designation": "Banshee I",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2429,
+          "code": "BANSHEE.PLANET.BANSHEEII",
+          "designation": "Banshee II",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2430,
+          "code": "BANSHEE.PLANET.BANSHEEIIILORONA",
+          "designation": "Banshee III",
+          "name": "Lorona",
+          "star_system_id": 346,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2431,
+          "code": "BANSHEE.PLANET.BANSHEEIV",
+          "designation": "Banshee IV",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1859,
+          "code": "FORA.JUMPPOINTS.BANSHEE",
+          "designation": "Fora - Banshee",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1978,
+          "code": "BANSHEE.JUMPPOINTS.FORA",
+          "designation": "Banshee - Fora",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1979,
+          "code": "BANSHEE.JUMPPOINTS.YULIN",
+          "designation": "Banshee - Yulin",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1980,
+          "code": "BANSHEE.JUMPPOINTS.LEIR",
+          "designation": "Banshee - Leir",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1982,
+          "code": "BANSHEE.JUMPPOINTS.GARRON",
+          "designation": "Banshee - Garron",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2292,
+          "code": "YULIN.JUMPPOINTS.BANSHEE",
+          "designation": "Yulin - Banshee",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2335,
+          "code": "LEIR.JUMPPOINTS.BANSHEE",
+          "designation": "Leir - Banshee",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2349,
+          "code": "GARRON.JUMPPOINTS.BANSHEE",
+          "designation": "Garron - Banshee",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2659,
+          "code": "TAMSA.JUMPPOINTS.BANSHEE",
+          "designation": "Tamsa - Banshee",
+          "name": null,
+          "star_system_id": 422,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 422,
+            "code": "TAMSA",
+            "name": "Tamsa",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2660,
+          "code": "BANSHEE.JUMPPOINTS.TAMSA",
+          "designation": "Banshee - Tamsa",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 15,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

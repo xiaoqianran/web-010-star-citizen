@@ -1,0 +1,157 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 334,
+          "code": "CHRONOS",
+          "name": "Chronos",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 8,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1896,
+          "code": "CHRONOS.STARS.CHRONOS",
+          "designation": "Chronos",
+          "name": null,
+          "star_system_id": 334,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 334,
+            "code": "CHRONOS",
+            "name": "Chronos",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2446,
+          "code": "CHRONOS.PLANET.CHRONOSIBRUDER",
+          "designation": "Chronos I ",
+          "name": "Bruder",
+          "star_system_id": 334,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 334,
+            "code": "CHRONOS",
+            "name": "Chronos",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2447,
+          "code": "CHRONOS.PLANET.CHRONOSIISCHWESTER",
+          "designation": "Chronos II",
+          "name": "Schwester",
+          "star_system_id": 334,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 334,
+            "code": "CHRONOS",
+            "name": "Chronos",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2448,
+          "code": "CHRONOS.PLANET.CHRONOSIIISYNTHWORLD",
+          "designation": "Chronos III",
+          "name": "Synthworld",
+          "star_system_id": 334,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 334,
+            "code": "CHRONOS",
+            "name": "Chronos",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1845,
+          "code": "KELLOG.JUMPPOINTS.CHRONOS",
+          "designation": "Kellog - Chronos",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1894,
+          "code": "CHRONOS.JUMPPOINTS.KELLOG",
+          "designation": "Chronos - Kellog",
+          "name": null,
+          "star_system_id": 334,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 334,
+            "code": "CHRONOS",
+            "name": "Chronos",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1895,
+          "code": "CHRONOS.JUMPPOINTS.BRANAUGH",
+          "designation": "Chronos - Branaugh",
+          "name": null,
+          "star_system_id": 334,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 334,
+            "code": "CHRONOS",
+            "name": "Chronos",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2370,
+          "code": "BRANAUGH.JUMPPOINTS.CHRONOS",
+          "designation": "Branaugh - Chronos",
+          "name": null,
+          "star_system_id": 416,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 416,
+            "code": "BRANAUGH",
+            "name": "Branaugh",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 8,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 379,
+          "code": "VIKING",
+          "name": "Viking",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 5,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2186,
+          "code": "VIKING.STARS.VIKING",
+          "designation": "Viking",
+          "name": null,
+          "star_system_id": 379,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 379,
+            "code": "VIKING",
+            "name": "Viking",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1923,
+          "code": "CALIBAN.JUMPPOINTS.VIKING",
+          "designation": "Caliban - Viking",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2091,
+          "code": "ORION.JUMPPOINTS.VIKING",
+          "designation": "Orion - Viking",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2184,
+          "code": "VIKING.JUMPPOINTS.ORION",
+          "designation": "Viking - Orion",
+          "name": null,
+          "star_system_id": 379,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 379,
+            "code": "VIKING",
+            "name": "Viking",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2185,
+          "code": "VIKING.JUMPPOINTS.CALIBAN",
+          "designation": "Viking - Caliban",
+          "name": null,
+          "star_system_id": 379,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 379,
+            "code": "VIKING",
+            "name": "Viking",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 5,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

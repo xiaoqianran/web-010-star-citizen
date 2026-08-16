@@ -1,0 +1,217 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 349,
+          "code": "RHETOR",
+          "name": "Rhetor",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 12,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1999,
+          "code": "RHETOR.STARS.RHETOR",
+          "designation": "Rhetor",
+          "name": null,
+          "star_system_id": 349,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2481,
+          "code": "RHETOR.PLANET.RHETORI",
+          "designation": "Rhetor I",
+          "name": null,
+          "star_system_id": 349,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2482,
+          "code": "RHETOR.PLANET.RHETORIIPERSEI",
+          "designation": "Rhetor II",
+          "name": "Persei",
+          "star_system_id": 349,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2483,
+          "code": "RHETOR.PLANET.RHETORIIIREISSE",
+          "designation": "Rhetor III",
+          "name": "Reisse",
+          "star_system_id": 349,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2484,
+          "code": "RHETOR.PLANET.RHETORIVMENTOR",
+          "designation": "Rhetor IV",
+          "name": "Mentor",
+          "star_system_id": 349,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2485,
+          "code": "RHETOR.PLANET.RHETORV",
+          "designation": "Rhetor V",
+          "name": null,
+          "star_system_id": 349,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1856,
+          "code": "FORA.JUMPPOINTS.RHETOR",
+          "designation": "Fora - Rhetor",
+          "name": null,
+          "star_system_id": 329,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 329,
+            "code": "FORA",
+            "name": "Fora",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1994,
+          "code": "RHETOR.JUMPPOINTS.CROSHAW",
+          "designation": "Rhetor - Croshaw",
+          "name": null,
+          "star_system_id": 349,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1995,
+          "code": "RHETOR.JUMPPOINTS.IDRIS",
+          "designation": "Rhetor - Idris",
+          "name": null,
+          "star_system_id": 349,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1996,
+          "code": "RHETOR.JUMPPOINTS.FORA",
+          "designation": "Rhetor - Fora",
+          "name": null,
+          "star_system_id": 349,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2107,
+          "code": "IDRIS.JUMPPOINTS.RHETOR",
+          "designation": "Idris - Rhetor",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2131,
+          "code": "CROSHAW.JUMPPOINTS.RHETOR",
+          "designation": "Croshaw - Rhetor",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 12,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

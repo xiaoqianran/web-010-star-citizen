@@ -1,0 +1,217 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 381,
+          "code": "KINS",
+          "name": "Kins",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 12,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2195,
+          "code": "KINS.STARS.KINS",
+          "designation": "Kins",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2670,
+          "code": "KINS.PLANET.KINSI",
+          "designation": "Kins I",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2671,
+          "code": "KINS.PLANET.KINSII",
+          "designation": "Kins II",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2672,
+          "code": "KINS.PLANET.KINSIII",
+          "designation": "Kins III",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2673,
+          "code": "KINS.PLANET.KINSIV",
+          "designation": "Kins IV",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2674,
+          "code": "KINS.PLANET.KINSV",
+          "designation": "Kins V",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2580,
+          "code": "KINS.BELTS.KINSBELTALPHA",
+          "designation": "Kins Belt Alpha",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2581,
+          "code": "KINS.BELTS.KINSBELTBETA",
+          "designation": "Kins Belt Beta",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2191,
+          "code": "KINS.JUMPPOINTS.CHARON",
+          "designation": "Kins - Charon",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2192,
+          "code": "KINS.JUMPPOINTS.INDRA",
+          "designation": "Kins - Kyuk'ya (Indra)",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2276,
+          "code": "INDRA.JUMPPOINTS.KINS",
+          "designation": "Kyuk'ya (Indra) - Kins",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2319,
+          "code": "CHARON.JUMPPOINTS.KINS",
+          "designation": "Charon - Kins",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 12,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

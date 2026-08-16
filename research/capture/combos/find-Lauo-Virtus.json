@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 376,
+          "code": "VIRTUS",
+          "name": "La'uo (Virtus)",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2172,
+          "code": "VIRTUS.STARS.VIRTUS",
+          "designation": "La'uo (Virtus)",
+          "name": null,
+          "star_system_id": 376,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2650,
+          "code": "VIRTUS.PLANETS.VIRTUSI",
+          "designation": "La'uo (Virtus) I",
+          "name": "Pi'tua",
+          "star_system_id": 376,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2651,
+          "code": "VIRTUS.PLANETS.VIRTUSII",
+          "designation": "La'uo (Virtus) II",
+          "name": "Yengchuai ",
+          "star_system_id": 376,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2652,
+          "code": "VIRTUS.PLANETS.VIRTUSIII",
+          "designation": "La'uo (Virtus) III",
+          "name": "Kyu'ām",
+          "star_system_id": 376,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2654,
+          "code": "VIRTUS.PLANETS.VIRTUSIV",
+          "designation": "La'uo (Virtus) IV",
+          "name": "S.ap'uāng",
+          "star_system_id": 376,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2653,
+          "code": "VIRTUS.BELTS.ALPHABELT",
+          "designation": "La'uo (Virtus) Belt Alpha",
+          "name": "Huichuaihyao y.ath'o se La'uo ",
+          "star_system_id": 376,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2655,
+          "code": "VIRTUS.BELTS.BETABELT",
+          "designation": "La'uo (Virtus) Belt Beta",
+          "name": "Huichuaihyao sy.en'o se La'uo",
+          "star_system_id": 376,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2169,
+          "code": "VIRTUS.JUMPPOINTS.TOHIL",
+          "designation": "La'uo (Virtus) - Tohil",
+          "name": null,
+          "star_system_id": 376,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2170,
+          "code": "VIRTUS.JUMPPOINTS.TRISE",
+          "designation": "La'uo (Virtus) - Trise",
+          "name": null,
+          "star_system_id": 376,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2171,
+          "code": "VIRTUS.JUMPPOINTS.EEALUS",
+          "designation": "La'uo (Virtus) - Ē'aluth (Eealus)",
+          "name": null,
+          "star_system_id": 376,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2215,
+          "code": "TRISE.JUMPPOINTS.VIRTUS",
+          "designation": "Trise - La'uo (Virtus)",
+          "name": null,
+          "star_system_id": 400,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 400,
+            "code": "TRISE",
+            "name": "Trise",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2226,
+          "code": "EEALUS.JUMPPOINTS.VIRTUS",
+          "designation": "Ē'aluth (Eealus) - La'uo (Virtus)",
+          "name": null,
+          "star_system_id": 388,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2373,
+          "code": "TOHIL.JUMPPOINTS.VIRTUS",
+          "designation": "Tohil - La'uo (Virtus)",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

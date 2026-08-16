@@ -1,0 +1,247 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 399,
+          "code": "INDRA",
+          "name": "Kyuk'ya (Indra)",
+          "type": "BINARY"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 14,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2277,
+          "code": "INDRA.STARS.INDRAA",
+          "designation": "Kyuk'ya (Indra) A",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2596,
+          "code": "INDRA.STAR.INDRAB",
+          "designation": "Kyuk'ya (Indra) B",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2641,
+          "code": "INDRA.PLANETS.INDRAI",
+          "designation": "Kyuk'ya (Indra) I",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2642,
+          "code": "INDRA.PLANETS.INDRAII",
+          "designation": "Kyuk'ya (Indra) II",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2643,
+          "code": "INDRA.MOONS.INDRA1A",
+          "designation": "Kyuk'ya (Indra) 1a",
+          "name": "Pue'nu",
+          "star_system_id": 399,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2619,
+          "code": "INDRA.BELTS.INDRABELTALPHA",
+          "designation": "Kyuk'ya (Indra) Belt Alpha",
+          "name": "Huichuaihyao y.ath'o se Kyuk'ya",
+          "star_system_id": 399,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 1854,
+          "code": "OSIRIS.JUMPPOINTS.INDRA",
+          "designation": "Osiris - Kyuk'ya (Indra)",
+          "name": null,
+          "star_system_id": 328,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 328,
+            "code": "OSIRIS",
+            "name": "Osiris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2173,
+          "code": "HADUR.JUMPPOINTS.INDRA",
+          "designation": "Yā'mon (Hadur) - Kyuk'ya (Indra)",
+          "name": null,
+          "star_system_id": 377,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2192,
+          "code": "KINS.JUMPPOINTS.INDRA",
+          "designation": "Kins - Kyuk'ya (Indra)",
+          "name": null,
+          "star_system_id": 381,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 381,
+            "code": "KINS",
+            "name": "Kins",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2269,
+          "code": "AYR'KA.JUMPPOINTS.INDRA",
+          "designation": "Ail'ka - Kyuk'ya (Indra)",
+          "name": null,
+          "star_system_id": 398,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2273,
+          "code": "INDRA.JUMPPOINTS.HADUR",
+          "designation": "Kyuk'ya (Indra) - Yā'mon (Hadur)",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2274,
+          "code": "INDRA.JUMPPOINTS.AYR'KA",
+          "designation": "Kyuk'ya (Indra) - Ail'ka",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2275,
+          "code": "INDRA.JUMPPOINTS.OSIRIS",
+          "designation": "Kyuk'ya (Indra) - Osiris",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2276,
+          "code": "INDRA.JUMPPOINTS.KINS",
+          "designation": "Kyuk'ya (Indra) - Kins",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        }
+      ],
+      "totalrows": 14,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

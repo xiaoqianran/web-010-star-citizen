@@ -1,0 +1,52 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 404,
+          "code": "VERMILION",
+          "name": "Vermilion",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2305,
+          "code": "VERMILLION.STARS.VERMILLION",
+          "designation": "Vermilion",
+          "name": null,
+          "star_system_id": 404,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 404,
+            "code": "VERMILION",
+            "name": "Vermilion",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -8,6 +8,7 @@ import {
   findRoute,
   loadSystem,
   objects,
+  pickRoute,
   routeSystems,
   searchCatalog,
   systemByCode,
@@ -54,6 +55,7 @@ export function Starmap() {
   const [jumping, setJumping] = useState(false);
   const [menu, setMenu] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [lookNonce, setLookNonce] = useState(0);
 
   const sys = systemByCode.get(systemCode);
   const focus = selected ? bodyLabel(selected) : level === "galaxy" ? zh.levels.galaxy : sys?.name || systemCode;
@@ -115,6 +117,10 @@ export function Starmap() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [tab, selected, level]);
+
+  useEffect(() => {
+    setSeg(0);
+  }, [routeMode]);
 
   const hits = useMemo(() => searchCatalog(query, systemCode), [query, systemCode]);
   const markedHits = useMemo(() => {
@@ -193,7 +199,8 @@ export function Starmap() {
     if (result.ok && result.shortest?.segments.length) setLevel("galaxy");
   };
 
-  const drawnRoute = routeSystems(route);
+  const shown = pickRoute(route, routeMode);
+  const drawnRoute = routeSystems(route, routeMode);
 
   return (
     <>
@@ -208,6 +215,7 @@ export function Starmap() {
         display={display}
         routeSystems={drawnRoute}
         camera={camera}
+        lookNonce={lookNonce}
         onHover={setHover}
         onSelect={(body) => {
           blip(sound);
@@ -347,9 +355,18 @@ export function Starmap() {
             </button>
             <span>{zh.hud.camera}</span>
           </div>
-          <div className="compass">
+          <button
+            type="button"
+            className="compass"
+            data-action="compass"
+            title={zh.hud.camera}
+            onClick={() => {
+              setCamera([10, 102.98, 0.002, 0, 0]);
+              setLookNonce((n) => n + 1);
+            }}
+          >
             <span>STAR CITIZEN</span>
-          </div>
+          </button>
         </footer>
 
         <button className="burger-hit" onClick={() => setMenu((m) => !m)} aria-label="menu" />
@@ -431,17 +448,25 @@ export function Starmap() {
                   {sz === "S" ? zh.display.sizeS : sz === "M" ? zh.display.sizeM : zh.display.sizeL}
                 </button>
               ))}
-              <button className={routeMode === "shortest" ? "on" : ""} onClick={() => setRouteMode("shortest")}>
+              <button
+                data-route-mode="shortest"
+                className={routeMode === "shortest" ? "on" : ""}
+                onClick={() => setRouteMode("shortest")}
+              >
                 {zh.routes.shortest}
               </button>
-              <button className={routeMode === "leastjumps" ? "on" : ""} onClick={() => setRouteMode("leastjumps")}>
+              <button
+                data-route-mode="leastjumps"
+                className={routeMode === "leastjumps" ? "on" : ""}
+                onClick={() => setRouteMode("leastjumps")}
+              >
                 {zh.routes.leastJumps}
               </button>
             </div>
-            {route?.shortest && !route.empty ? (
+            {shown && !route?.empty ? (
               <>
                 <p className="route-meta">
-                  {route.shortest.name} · {route.shortest.label} · {route.shortest.jumps} {zh.levels.jumpPoint}
+                  {shown.name} · {shown.label} · {shown.jumps} {zh.levels.jumpPoint}
                 </p>
                 <table>
                   <thead>
@@ -451,7 +476,7 @@ export function Starmap() {
                     </tr>
                   </thead>
                   <tbody>
-                    {route.shortest.segments.map((s, i) => (
+                    {shown.segments.map((s, i) => (
                       <tr
                         key={`${s.code}-${i}`}
                         className={i === seg ? "on-row" : ""}
@@ -469,7 +494,7 @@ export function Starmap() {
                 <div className="ship-row">
                   <button onClick={() => setSeg((n) => Math.max(0, n - 1))}>{zh.routes.prevSegment}</button>
                   <button
-                    onClick={() => setSeg((n) => Math.min((route.shortest?.segments.length ?? 1) - 1, n + 1))}
+                    onClick={() => setSeg((n) => Math.min((shown.segments.length ?? 1) - 1, n + 1))}
                   >
                     {zh.routes.nextSegment}
                   </button>

@@ -1,0 +1,277 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 320,
+          "code": "NUL",
+          "name": "Nul",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 16,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1769,
+          "code": "NUL.STARS.NUL",
+          "designation": "Nul",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1770,
+          "code": "NUL.PLANETS.NULI",
+          "designation": "Nul I",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1771,
+          "code": "NUL.PLANETS.NULII",
+          "designation": "Nul II",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1772,
+          "code": "NUL.PLANETS.NULIIICOLE",
+          "designation": "Nul III",
+          "name": "Cole",
+          "star_system_id": 320,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1773,
+          "code": "NUL.PLANETS.NULIV",
+          "designation": "Nul IV",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1774,
+          "code": "NUL.PLANETS.NULVASHANA",
+          "designation": "Nul V",
+          "name": "Ashana",
+          "star_system_id": 320,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1764,
+          "code": "NUL.JUMPPOINTS.CROSHAW",
+          "designation": "Nul - Croshaw",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1766,
+          "code": "NUL.JUMPPOINTS.CALIBAN",
+          "designation": "Nul - Caliban",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1768,
+          "code": "NUL.JUMPPOINTS.CENTAURI",
+          "designation": "Nul - Centauri",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1778,
+          "code": "NUL.JUMPPOINTS.VEGA",
+          "designation": "Nul - Vega",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1794,
+          "code": "VEGA.JUMPPOINTS.NUL",
+          "designation": "Vega - Nul",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1922,
+          "code": "CALIBAN.JUMPPOINTS.NUL",
+          "designation": "Caliban - Nul",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2099,
+          "code": "CENTAURI.JUMPPOINTS.NUL",
+          "designation": "Centauri - Nul",
+          "name": null,
+          "star_system_id": 362,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2132,
+          "code": "CROSHAW.JUMPPOINTS.NUL",
+          "designation": "Croshaw - Nul",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2830,
+          "code": "NUL.JUMPPOINTS.OBERON",
+          "designation": "Nul - Oberon",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2831,
+          "code": "OBERON.JUMPPOINTS.NUL",
+          "designation": "Oberon - Nul",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 16,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

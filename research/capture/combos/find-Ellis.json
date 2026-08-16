@@ -1,0 +1,472 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 323,
+          "code": "ELLIS",
+          "name": "Ellis",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 29,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1806,
+          "code": "ELLIS.STARS.ELLIS",
+          "designation": "Ellis",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1807,
+          "code": "ELLIS.PLANETS.ELLISI",
+          "designation": "Ellis I",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1808,
+          "code": "ELLIS.PLANETS.ELLISII",
+          "designation": "Ellis II",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1809,
+          "code": "ELLIS.PLANETS.ELLISIIIGREEN",
+          "designation": "Ellis III",
+          "name": "Green",
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1810,
+          "code": "ELLIS.PLANETS.ELLISIVKAMPOS",
+          "designation": "Ellis IV",
+          "name": "Kampos",
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1811,
+          "code": "ELLIS.PLANETS.ELLISVNOBLE",
+          "designation": "Ellis V",
+          "name": "Noble",
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1812,
+          "code": "ELLIS.PLANETS.ELLISVI",
+          "designation": "Ellis VI",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1813,
+          "code": "ELLIS.PLANETS.ELLISVII",
+          "designation": "Ellis VII",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1814,
+          "code": "ELLIS.PLANETS.ELLISVIII",
+          "designation": "Ellis VIII",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1815,
+          "code": "ELLIS.PLANETS.ELLISIXWALLEYE",
+          "designation": "Ellis IX",
+          "name": "Walleye",
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1816,
+          "code": "ELLIS.PLANETS.ELLISXBOMBORA",
+          "designation": "Ellis X",
+          "name": "Bombora",
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1818,
+          "code": "ELLIS.PLANETS.ELLISXIIJUDECCA",
+          "designation": "Ellis XII",
+          "name": "Judecca",
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1819,
+          "code": "ELLIS.PLANETS.ELLISXIIIPINECONE",
+          "designation": "Ellis XIII",
+          "name": "Pinecone",
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2813,
+          "code": "ELLIS.PLANETS.ELLISXI",
+          "designation": "Ellis XI",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2789,
+          "code": "MOONS.ELLIS.ELLIS5A",
+          "designation": "Ellis 5a",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2790,
+          "code": "ELLIS.MOONS.ELLIS5B",
+          "designation": "Ellis 5b",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1821,
+          "code": "ELLIS.BELTS.ALPHABELT",
+          "designation": "Ellis Belt Alpha",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2780,
+          "code": "ELLIS.RINGS.RINGSOFELLISVII",
+          "designation": "Rings of Ellis VII",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1817,
+          "code": "ELLIS.BELTS.ELLISXIBELT",
+          "designation": "Ellis XI",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1755,
+          "code": "MAGNUS.JUMPPOINTS.ELLIS",
+          "designation": "Magnus - Ellis",
+          "name": null,
+          "star_system_id": 319,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 319,
+            "code": "MAGNUS",
+            "name": "Magnus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1779,
+          "code": "TARANIS.JUMPPOINTS.ELLIS",
+          "designation": "Taranis - Ellis",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1804,
+          "code": "ELLIS.JUMPPOINTS.KILIAN",
+          "designation": "Ellis - Kilian",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1805,
+          "code": "ELLIS.JUMPPOINTS.NEXUS",
+          "designation": "Ellis - Nexus",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1822,
+          "code": "ELLIS.JUMPPOINTS.MAGNUS",
+          "designation": "Ellis - Magnus",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1823,
+          "code": "ELLIS.JUMPPOINTS.MIN",
+          "designation": "Ellis - Min",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1824,
+          "code": "ELLIS.JUMPPOINTS.TARANIS",
+          "designation": "Ellis - Taranis",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1918,
+          "code": "MIN.JUMPPOINTS.ELLIS",
+          "designation": "Min - Ellis",
+          "name": null,
+          "star_system_id": 335,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 335,
+            "code": "MIN",
+            "name": "Min",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1953,
+          "code": "KILIAN.JUMPPOINTS.ELLIS",
+          "designation": "Kilian - Ellis",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2069,
+          "code": "NEXUS.JUMPPOINTS.ELLIS",
+          "designation": "Nexus - Ellis",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 29,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

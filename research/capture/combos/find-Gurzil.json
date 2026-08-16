@@ -1,0 +1,187 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 408,
+          "code": "GURZIL",
+          "name": "Gurzil",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 10,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2325,
+          "code": "GURZIL.STARS.GURZIL",
+          "designation": "Gurzil",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2536,
+          "code": "GURZIL.BELTS.GURZILBELTALPHA",
+          "designation": "Gurzil Belt Alpha",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2287,
+          "code": "RIHLAH.JUMPPOINTS.GURZIL",
+          "designation": "R.il'a (Rihlah) - Gurzil",
+          "name": null,
+          "star_system_id": 401,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2321,
+          "code": "GURZIL.JUMPPOINTS.OYA",
+          "designation": "Gurzil - Oya",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2322,
+          "code": "GURZIL.JUMPPOINTS.RIHLAH",
+          "designation": "Gurzil - R.il'a (Rihlah)",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2323,
+          "code": "GURZIL.JUMPPOINTS.HADRIAN",
+          "designation": "Gurzil - Hadrian",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2324,
+          "code": "GURZIL.JUMPPOINTS.HORUS",
+          "designation": "Gurzil - Horus",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2327,
+          "code": "OYA.JUMPPOINTS.GURZIL",
+          "designation": "Oya - Gurzil",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2340,
+          "code": "HADRIAN.JUMPPOINTS.GURZIL",
+          "designation": "Hadrian - Gurzil",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2358,
+          "code": "HORUS.JUMPPOINTS.GURZIL",
+          "designation": "Horus - Gurzil",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 10,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

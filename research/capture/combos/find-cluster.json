@@ -1,0 +1,135 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 7,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1727,
+          "code": "TERRA.BELTS.HENGECLUSTER",
+          "designation": "Terra Cluster Alpha",
+          "name": "Henge Cluster",
+          "star_system_id": 316,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 316,
+            "code": "TERRA",
+            "name": "Terra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1753,
+          "code": "PYRO.CLUSTERS.ALPHACLUSTER",
+          "designation": "Pyro Cluster Alpha",
+          "name": "Akiro Cluster",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2138,
+          "code": "CROSHAW.BELTS.ICARUSCLUSTER",
+          "designation": "Croshaw Cluster Alpha",
+          "name": "Icarus Cluster",
+          "star_system_id": 369,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2540,
+          "code": "KABAL.BELTS.KABALCLUTERALPHA",
+          "designation": "Kabal Cluster Alpha",
+          "name": null,
+          "star_system_id": 419,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 419,
+            "code": "KABAL",
+            "name": "Kabal",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2579,
+          "code": "GLIESE.BELTS.GLIESECLUSTERGAMMA",
+          "designation": "Gliese Cluster Gamma",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2584,
+          "code": "YULIN.BELTS.YULINCLUSTERALPHA",
+          "designation": "Yulin Cluster Alpha",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2656,
+          "code": "CROSHAW.BELTS.DAEDALUSCLUSTER",
+          "designation": "Croshaw Cluster Beta",
+          "name": "Daedalus Cluster",
+          "star_system_id": 369,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 7,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

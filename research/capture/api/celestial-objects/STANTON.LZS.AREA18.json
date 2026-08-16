@@ -1,0 +1,49 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2716,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "STANTON.LZS.AREA18",
+        "description": "Area18 is one of the main commercial ports for interplanetary traffic for the surrounding region of ArcCorp. Travellers can find a variety of goods from trusted names as well as local providers, if they’re not overwhelmed by the sights and sounds of this landing zone.",
+        "designation": "Area18",
+        "distance": 0,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": 34,
+        "longitude": -29,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 1694,
+        "sensor_danger": "0",
+        "sensor_economy": "0",
+        "sensor_population": "0",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": null,
+        "subtype_id": null,
+        "time_modified": "2015-10-08 04:51:48",
+        "type": "LZ",
+        "subtype": null,
+        "affiliation": [],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

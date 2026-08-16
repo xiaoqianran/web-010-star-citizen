@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 337,
+          "code": "CASTRA",
+          "name": "Castra",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1911,
+          "code": "CASTRA.STARS.CASTRA",
+          "designation": "Castra",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1912,
+          "code": "CASTRA.PLANETS.CASTRAI",
+          "designation": "Castra I",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1913,
+          "code": "CASTRA.PLANETS.CASTRAII",
+          "designation": "Castra II",
+          "name": "Cascom",
+          "star_system_id": 337,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1701,
+          "code": "NYX.JUMPPOINTS.CASTRA",
+          "designation": "Nyx - Castra",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1743,
+          "code": "PYRO.JUMPPOINTS.CASTRA",
+          "designation": "Pyro - Castra",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1878,
+          "code": "OSO.JUMPPOINTS.CASTRA",
+          "designation": "Oso - Castra",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1906,
+          "code": "CASTRA.JUMPPOINTS.PYRO",
+          "designation": "Castra - Pyro",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1907,
+          "code": "CASTRA.JUMPPOINTS.OYA",
+          "designation": "Castra - Oya",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1908,
+          "code": "CASTRA.JUMPPOINTS.HADRIAN",
+          "designation": "Castra - Hadrian",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1909,
+          "code": "CASTRA.JUMPPOINTS.NYX",
+          "designation": "Castra - Nyx",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1910,
+          "code": "CASTRA.JUMPPOINTS.OSO",
+          "designation": "Castra - Oso",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2329,
+          "code": "OYA.JUMPPOINTS.CASTRA",
+          "designation": "Oya - Castra",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2341,
+          "code": "HADRIAN.JUMPPOINTS.CASTRA",
+          "designation": "Hadrian - Castra",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

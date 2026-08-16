@@ -1,0 +1,217 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 338,
+          "code": "HADES",
+          "name": "Hades",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 12,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1921,
+          "code": "HADES.STARS.HADES",
+          "designation": "Hades",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2398,
+          "code": "HADES.PLANET.HADESI",
+          "designation": "Hades I",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2399,
+          "code": "HADES.PLANET.HADESII",
+          "designation": "Hades II",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2400,
+          "code": "HADES.PLANET.HADESIII",
+          "designation": "Hades III",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2401,
+          "code": "HADES.PLANET.HADESIV",
+          "designation": "Hades IV",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2770,
+          "code": "HADES.PLANET.HADESIVSPLIT",
+          "designation": "Hades IV split",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1897,
+          "code": "HADES.JUMPPOINTS.CATHCART",
+          "designation": "Hades - Cathcart",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1919,
+          "code": "HADES.JUMPPOINTS.NEXUS",
+          "designation": "Hades - Nexus",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2068,
+          "code": "NEXUS.JUMPPOINTS.HADES",
+          "designation": "Nexus - Hades",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2093,
+          "code": "NEMO.JUMPPOINTS.HADES",
+          "designation": "Nemo - Hades",
+          "name": null,
+          "star_system_id": 361,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2150,
+          "code": "HADES.JUMPPOINTS.NEMO",
+          "designation": "Hades - Nemo",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2152,
+          "code": "CATHCART.JUMPPOINTS.HADES",
+          "designation": "Cathcart - Hades",
+          "name": null,
+          "star_system_id": 372,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 372,
+            "code": "CATHCART",
+            "name": "Cathcart",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 12,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

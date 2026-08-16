@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 386,
+          "code": "GLIESE",
+          "name": "Gliese",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2219,
+          "code": "GLIESE.STARS.GILESE",
+          "designation": "Gliese",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2664,
+          "code": "GLIESE.PLANET.GLIESEI",
+          "designation": "Gliese I",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2665,
+          "code": "GLIESE.PLANET.GLIESEII",
+          "designation": "Gliese II",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2666,
+          "code": "GLIESE.PLANET.GLIESEIII",
+          "designation": "Gliese III",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2667,
+          "code": "GLIESE.PLANET.GLIESEIV",
+          "designation": "Gliese IV",
+          "name": "Nogo",
+          "star_system_id": 386,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2668,
+          "code": "GLIESE.PLANET.GLIESEV",
+          "designation": "Gliese V",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2669,
+          "code": "GLIESE.PLANET.GLIESEVI",
+          "designation": "Gliese VI",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2597,
+          "code": "GLIESE.STATION.GLIESEFLOTILLA",
+          "designation": "Gliese Flotilla",
+          "name": "Lyris",
+          "star_system_id": 386,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2577,
+          "code": "GLIESE.BELTS.GLIESEBELTALPHA",
+          "designation": "Gliese Belt Alpha",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2578,
+          "code": "GLIESE.BELTS.GLIESEBELTBETA",
+          "designation": "Gliese Belt Beta",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2579,
+          "code": "GLIESE.BELTS.GLIESECLUSTERGAMMA",
+          "designation": "Gliese Cluster Gamma",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2234,
+          "code": "GEDDON.JUMPPOINTS.GLIESE",
+          "designation": "Geddon - Gliese",
+          "name": null,
+          "star_system_id": 390,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 390,
+            "code": "GEDDON",
+            "name": "Geddon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2279,
+          "code": "GLIESE.JUMPPOINTS.GEDDON",
+          "designation": "Gliese - Geddon",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

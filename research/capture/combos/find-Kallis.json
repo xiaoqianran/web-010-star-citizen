@@ -1,0 +1,292 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 336,
+          "code": "KALLIS",
+          "name": "Kallis",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 17,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1905,
+          "code": "KALLIS.STARS.KALLIS",
+          "designation": "Kallis",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2380,
+          "code": "KALLIS.PLANET.KALLISI",
+          "designation": "Kallis I",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2381,
+          "code": "KALLIS.PLANET.KALLISII",
+          "designation": "Kallis II",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2382,
+          "code": "KALLIS.PLANET.KALLISIII",
+          "designation": "Kallis III",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2383,
+          "code": "KALLIS.PLANET.KALLISIV",
+          "designation": "Kallis IV",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2384,
+          "code": "KALLIS.PLANET.KALLISV",
+          "designation": "Kallis V",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2385,
+          "code": "KALLIS.PLANET.KALLISVI",
+          "designation": "Kallis VI",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2388,
+          "code": "KALLIS.PLANET.KALLISVII",
+          "designation": "Kallis VII",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2775,
+          "code": "KALLIS.PLANETS.KALLISVIII",
+          "designation": "Kallis VIII",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2776,
+          "code": "KALLIS.PLANETS.KALLISIX",
+          "designation": "Kallis IX",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2526,
+          "code": "KALLIS.BELTS.ALPHABELT",
+          "designation": "Kallis Belt Alpha",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2527,
+          "code": "KALLIS.BELTS.BETABELT",
+          "designation": "Kallis Belt Beta",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2755,
+          "code": "KALLISV.ACCRETIONDISK",
+          "designation": "Kallis V Accretion Disk",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1873,
+          "code": "BREMEN.JUMPPOINTS.KALLIS",
+          "designation": "Bremen - Kallis",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1876,
+          "code": "OSO.JUMPPOINTS.KALLIS",
+          "designation": "Oso - Kallis",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1903,
+          "code": "KALLIS.JUMPPOINTS.BREMEN",
+          "designation": "Kallis - Bremen",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1904,
+          "code": "KALLIS.JUMPPOINTS.OSO",
+          "designation": "Kallis - Oso",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 17,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

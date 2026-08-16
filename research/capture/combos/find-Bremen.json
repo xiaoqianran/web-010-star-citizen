@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 331,
+          "code": "BREMEN",
+          "name": "Bremen",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1875,
+          "code": "BREMEN.STARS.BREMEN",
+          "designation": "Bremen",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2432,
+          "code": "BREMEN.PLANET.BREMENI",
+          "designation": "Bremen I",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2433,
+          "code": "BREMEN.PLANET.BREMENIIRYTIF",
+          "designation": "Bremen II",
+          "name": "Rytif",
+          "star_system_id": 331,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2434,
+          "code": "BREMEN.PLANET.BREMENIII",
+          "designation": "Bremen III",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2435,
+          "code": "BREMEN.PLANET.BREMENIV",
+          "designation": "Bremen IV",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1702,
+          "code": "NYX.JUMPPOINTS.BREMEN",
+          "designation": "Nyx - Bremen",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1797,
+          "code": "VEGA.JUMPPOINTS.BREMEN",
+          "designation": "Vega - Bremen",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1872,
+          "code": "BREMEN.JUMPPOINTS.VEGA",
+          "designation": "Bremen - Vega",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1873,
+          "code": "BREMEN.JUMPPOINTS.KALLIS",
+          "designation": "Bremen - Kallis",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1874,
+          "code": "BREMEN.JUMPPOINTS.NYX",
+          "designation": "Bremen - Nyx",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1903,
+          "code": "KALLIS.JUMPPOINTS.BREMEN",
+          "designation": "Kallis - Bremen",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2714,
+          "code": "TANGA.JUMPPOINTS.BREMEN",
+          "designation": "Tanga - Bremen",
+          "name": null,
+          "star_system_id": 420,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 420,
+            "code": "TANGA",
+            "name": "Tanga",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2715,
+          "code": "BREMEN.JUMPPOINTS.TANGA",
+          "designation": "Bremen - Tanga",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

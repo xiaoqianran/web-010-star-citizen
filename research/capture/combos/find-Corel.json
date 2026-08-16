@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 370,
+          "code": "COREL",
+          "name": "Corel",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2145,
+          "code": "COREL.STARS.COREL",
+          "designation": "Corel",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2449,
+          "code": "COREL.PLANET.CORELI",
+          "designation": "Corel I",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2450,
+          "code": "COREL.PLANET.CORELII",
+          "designation": "Corel II",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2451,
+          "code": "COREL.PLANET.CORELIIILO",
+          "designation": "Corel III",
+          "name": "Lo",
+          "star_system_id": 370,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2452,
+          "code": "COREL.PLANET.CORELIVCASTOR",
+          "designation": "Corel IV",
+          "name": "Castor",
+          "star_system_id": 370,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2453,
+          "code": "COREL.PLANET.CORELV",
+          "designation": "Corel V",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2454,
+          "code": "COREL.PLANET.CORELVI",
+          "designation": "Corel VI",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2094,
+          "code": "NEMO.JUMPPOINTS.COREL",
+          "designation": "Nemo - Corel",
+          "name": null,
+          "star_system_id": 361,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 361,
+            "code": "NEMO",
+            "name": "Nemo",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2142,
+          "code": "COREL.JUMPPOINTS.GENESIS",
+          "designation": "Corel - Genesis",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2143,
+          "code": "COREL.JUMPPOINTS.GEDDON",
+          "designation": "Corel - Geddon",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2144,
+          "code": "COREL.JUMPPOINTS.NEMO",
+          "designation": "Corel - Nemo",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2233,
+          "code": "GEDDON.JUMPPOINTS.COREL",
+          "designation": "Geddon - Corel",
+          "name": null,
+          "star_system_id": 390,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 390,
+            "code": "GEDDON",
+            "name": "Geddon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2361,
+          "code": "GENESIS.JUMPPOINTS.COREL",
+          "designation": "Genesis - Corel",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

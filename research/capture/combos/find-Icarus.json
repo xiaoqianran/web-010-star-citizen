@@ -1,0 +1,45 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2138,
+          "code": "CROSHAW.BELTS.ICARUSCLUSTER",
+          "designation": "Croshaw Cluster Alpha",
+          "name": "Icarus Cluster",
+          "star_system_id": 369,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 409,
+          "code": "OYA",
+          "name": "Oya",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 15,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2332,
+          "code": "OYA.STARS.OYA",
+          "designation": "Oya",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2632,
+          "code": "OYA.PLANETS.OYAI",
+          "designation": "Oya I",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2633,
+          "code": "OYA.PLANETS.OYAII",
+          "designation": "Oya II",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2634,
+          "code": "OYA.PLANETS.OYAIII",
+          "designation": "Oya III",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2635,
+          "code": "OYA.PLANETS.OYAIV",
+          "designation": "Oya IV",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1907,
+          "code": "CASTRA.JUMPPOINTS.OYA",
+          "designation": "Castra - Oya",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2227,
+          "code": "EEALUS.JUMPPOINTS.OYA",
+          "designation": "Ē'aluth (Eealus) - Oya",
+          "name": null,
+          "star_system_id": 388,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2321,
+          "code": "GURZIL.JUMPPOINTS.OYA",
+          "designation": "Gurzil - Oya",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2327,
+          "code": "OYA.JUMPPOINTS.GURZIL",
+          "designation": "Oya - Gurzil",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2328,
+          "code": "OYA.JUMPPOINTS.EEALUS",
+          "designation": "Oya - Ē'aluth (Eealus)",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2329,
+          "code": "OYA.JUMPPOINTS.CASTRA",
+          "designation": "Oya - Castra",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2330,
+          "code": "OYA.JUMPPOINTS.HADRIAN",
+          "designation": "Oya - Hadrian",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2331,
+          "code": "OYA.JUMPPOINTS.TOHIL",
+          "designation": "Oya - Tohil",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2343,
+          "code": "HADRIAN.JUMPPOINTS.OYA",
+          "designation": "Hadrian - Oya",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2372,
+          "code": "TOHIL.JUMPPOINTS.OYA",
+          "designation": "Tohil - Oya",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 15,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

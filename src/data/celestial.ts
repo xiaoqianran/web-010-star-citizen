@@ -71,7 +71,7 @@ export function placeBodies(bodies: CapturedBody[], scale: number): Map<number, 
     const lat = Number(body.latitude) || 0;
     const lon = Number(body.longitude) || 0;
     const parent = body.parent_id ? byId.get(body.parent_id) : undefined;
-    const local = parent && dist > 0 && dist < 0.05;
+    const local = Boolean(parent) && dist < 0.05;
     if (local && parent) {
       const origin = place(parent);
       const orbit = 0.22 + Math.max(dist, 0.0004) * 80 + (Number(body.size) || 0.3) * 0.08;

@@ -1,0 +1,292 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 347,
+          "code": "TYROL",
+          "name": "Tyrol",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 17,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1987,
+          "code": "TYROL.STARS.TYROLA",
+          "designation": "Tyrol A",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2798,
+          "code": "TYROL.STARS.TYROLB",
+          "designation": "Tyrol B",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2413,
+          "code": "TYROL.PLANET.TYROLI",
+          "designation": "Tyrol I",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2414,
+          "code": "TYROL.PLANET.TYROLII",
+          "designation": "Tyrol II",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2415,
+          "code": "TYROL.PLANET.TYROLIII",
+          "designation": "Tyrol III",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2416,
+          "code": "TYROL.PLANET.TYROLIV",
+          "designation": "Tyrol IV",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2417,
+          "code": "TYROL.PLANET.TYROLV",
+          "designation": "Tyrol V",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2418,
+          "code": "TYROL.PLANETTYROLVI",
+          "designation": "Tyrol VI",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2419,
+          "code": "TYROL.PLANET.TYROLVII",
+          "designation": "Tyrol VII",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2733,
+          "code": "TYROL.MOONS.TYROL1a",
+          "designation": "Tyrol 1a",
+          "name": "Lanisto",
+          "star_system_id": 347,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2583,
+          "code": "TYROL.BELTS.TYROLBELTLPHA",
+          "designation": "Tyrol Belt Alpha",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1832,
+          "code": "HELIOS.JUMPPOINTS.TYROL",
+          "designation": "Helios - Tyrol",
+          "name": null,
+          "star_system_id": 325,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 325,
+            "code": "HELIOS",
+            "name": "Helios",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1984,
+          "code": "TYROL.JUMPPOINTS.CHARON",
+          "designation": "Tyrol - Charon",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1985,
+          "code": "TYROL.JUMPPOINTS.HELIOS",
+          "designation": "Tyrol - Helios",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1986,
+          "code": "TYROL.JUMPPOINTS.GOSS",
+          "designation": "Tyrol - Goss",
+          "name": null,
+          "star_system_id": 347,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 347,
+            "code": "TYROL",
+            "name": "Tyrol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2066,
+          "code": "GOSS.JUMPPOINTS.TYROL",
+          "designation": "Goss - Tyrol",
+          "name": null,
+          "star_system_id": 356,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 356,
+            "code": "GOSS",
+            "name": "Goss",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2315,
+          "code": "CHARON.JUMPPOINTS.TYROL",
+          "designation": "Charon - Tyrol",
+          "name": null,
+          "star_system_id": 407,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 407,
+            "code": "CHARON",
+            "name": "Charon",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 17,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

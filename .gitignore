@@ -12,3 +12,4 @@ pnpm-debug.log*
 research/capture/.tmp
 research/capture/clone-pass/*.png
 research/capture/clone-deep/*.png
+research/capture/clone-leftover/*.png

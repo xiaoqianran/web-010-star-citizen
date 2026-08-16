@@ -1,0 +1,82 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 383,
+          "code": "VULTURE",
+          "name": "Vulture",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 3,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2204,
+          "code": "VULTURE.STARS.VULTURE",
+          "designation": "Vulture",
+          "name": null,
+          "star_system_id": 383,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 383,
+            "code": "VULTURE",
+            "name": "Vulture",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2835,
+          "code": "ORION.JUMPPOINT.VULTURE",
+          "designation": "Orion - VS-9 \"Vulture\"",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2836,
+          "code": "VULTURE.JUMPPOINT.ORION",
+          "designation": "VS-9 \"Vulture\" - Orion",
+          "name": null,
+          "star_system_id": 383,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 383,
+            "code": "VULTURE",
+            "name": "Vulture",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 3,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

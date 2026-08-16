@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 332,
+          "code": "OSO",
+          "name": "Oso",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1879,
+          "code": "OSO.STARS.OSO",
+          "designation": "Oso",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1880,
+          "code": "OSO.PLANETS.OSOI",
+          "designation": "Oso I",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1881,
+          "code": "OSO.PLANETS.OSOII",
+          "designation": "Oso II",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1882,
+          "code": "OSO.PLANETS.OSOIII",
+          "designation": "Oso III",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1883,
+          "code": "OSO.PLANETS.OSOIV",
+          "designation": "Oso IV",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1884,
+          "code": "OSO.PLANETS.OSOV",
+          "designation": "Oso V",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1885,
+          "code": "OSO.PLANETS.OSOVI",
+          "designation": "Oso VI",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1742,
+          "code": "PYRO.JUMPPOINTS.OSO",
+          "designation": "Pyro - Oso",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1876,
+          "code": "OSO.JUMPPOINTS.KALLIS",
+          "designation": "Oso - Kallis",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1877,
+          "code": "OSO.JUMPPOINTS.PYRO",
+          "designation": "Oso - Pyro",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1878,
+          "code": "OSO.JUMPPOINTS.CASTRA",
+          "designation": "Oso - Castra",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1904,
+          "code": "KALLIS.JUMPPOINTS.OSO",
+          "designation": "Kallis - Oso",
+          "name": null,
+          "star_system_id": 336,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 336,
+            "code": "KALLIS",
+            "name": "Kallis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1910,
+          "code": "CASTRA.JUMPPOINTS.OSO",
+          "designation": "Castra - Oso",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

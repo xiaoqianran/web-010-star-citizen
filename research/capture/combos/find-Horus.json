@@ -1,0 +1,247 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 413,
+          "code": "HORUS",
+          "name": "Horus",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 14,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2359,
+          "code": "HORUS.STARS.HORUS",
+          "designation": "Horus",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2629,
+          "code": "HORUS.PLANETS.SERLING",
+          "designation": "Horus I",
+          "name": "Serling",
+          "star_system_id": 413,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2630,
+          "code": "HORUS.PLANETS.HORUSII",
+          "designation": "Horus II",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2631,
+          "code": "HORUS.PLANETS.HORUSIII",
+          "designation": "Horus III",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2538,
+          "code": "HORUS.BELTS.HORUSBELTALPHA",
+          "designation": "Horus Belt Alpha",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2539,
+          "code": "HORUS.BELTS.HORUSBELTBETA",
+          "designation": "Horus Belt Beta",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2198,
+          "code": "KAYFA.JUMPPOINTS.HORUS",
+          "designation": "Kai'pua (Kayfa) - Horus",
+          "name": null,
+          "star_system_id": 382,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 382,
+            "code": "KAYFA",
+            "name": "Kai'pua (Kayfa)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2289,
+          "code": "RIHLAH.JUMPPOINTS.HORUS",
+          "designation": "R.il'a (Rihlah) - Horus",
+          "name": null,
+          "star_system_id": 401,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2324,
+          "code": "GURZIL.JUMPPOINTS.HORUS",
+          "designation": "Gurzil - Horus",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2353,
+          "code": "HORUS.JUMPPOINTS.RIHLAH",
+          "designation": "Horus - R.il'a (Rihlah)",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2354,
+          "code": "HORUS.JUMPPOINTS.KIEL",
+          "designation": "Horus - Kiel",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2355,
+          "code": "HORUS.JUMPPOINTS.KAYFA",
+          "designation": "Horus - Kai'pua (Kayfa)",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2358,
+          "code": "HORUS.JUMPPOINTS.GURZIL",
+          "designation": "Horus - Gurzil",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2365,
+          "code": "KIEL.JUMPPOINTS.HORUS",
+          "designation": "Kiel - Horus",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 14,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

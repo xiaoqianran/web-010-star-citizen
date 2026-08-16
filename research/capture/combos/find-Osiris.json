@@ -1,0 +1,187 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 328,
+          "code": "OSIRIS",
+          "name": "Osiris",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 10,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1855,
+          "code": "OSIRIS.STARS.OSIRIS",
+          "designation": "Osiris",
+          "name": null,
+          "star_system_id": 328,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 328,
+            "code": "OSIRIS",
+            "name": "Osiris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2395,
+          "code": "OSIRIS.PLANET.OSIRISIETOS",
+          "designation": "Osiris I",
+          "name": "Etos",
+          "star_system_id": 328,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 328,
+            "code": "OSIRIS",
+            "name": "Osiris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2396,
+          "code": "OSIRIS.PLANET.OSIRISII",
+          "designation": "Osiris II",
+          "name": null,
+          "star_system_id": 328,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 328,
+            "code": "OSIRIS",
+            "name": "Osiris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2542,
+          "code": "OSIRIS.BELTS.OSIRISBELTALPHA",
+          "designation": "Osiris Belt Alpha",
+          "name": null,
+          "star_system_id": 328,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 328,
+            "code": "OSIRIS",
+            "name": "Osiris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1852,
+          "code": "OSIRIS.JUMPPOINTS.GOSS",
+          "designation": "Osiris - Goss",
+          "name": null,
+          "star_system_id": 328,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 328,
+            "code": "OSIRIS",
+            "name": "Osiris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1853,
+          "code": "OSIRIS.JUMPPOINTS.BAKER",
+          "designation": "Osiris - Baker",
+          "name": null,
+          "star_system_id": 328,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 328,
+            "code": "OSIRIS",
+            "name": "Osiris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1854,
+          "code": "OSIRIS.JUMPPOINTS.INDRA",
+          "designation": "Osiris - Kyuk'ya (Indra)",
+          "name": null,
+          "star_system_id": 328,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 328,
+            "code": "OSIRIS",
+            "name": "Osiris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1946,
+          "code": "BAKER.JUMPPOINTS.OSIRIS",
+          "designation": "Baker - Osiris",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2054,
+          "code": "GOSS.JUMPPOINTS.OSIRIS",
+          "designation": "Goss - Osiris",
+          "name": null,
+          "star_system_id": 356,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 356,
+            "code": "GOSS",
+            "name": "Goss",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2275,
+          "code": "INDRA.JUMPPOINTS.OSIRIS",
+          "designation": "Kyuk'ya (Indra) - Osiris",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        }
+      ],
+      "totalrows": 10,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

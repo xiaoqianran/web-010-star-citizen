@@ -33,6 +33,7 @@ type Props = {
   display: DisplayState;
   routeSystems: string[];
   camera: CameraTuple;
+  lookNonce?: number;
   onHover: (body: CapturedBody | null) => void;
   onSelect: (body: CapturedBody) => void;
   onSelectSystem: (code: string) => void;
@@ -86,6 +87,7 @@ export function StarMapCanvas({
   display,
   routeSystems,
   camera,
+  lookNonce = 0,
   onHover,
   onSelect,
   onSelectSystem,
@@ -389,7 +391,8 @@ export function StarMapCanvas({
           belt.position.set(0, 0, 0);
           systemGroup.add(belt);
         } else if (isPoi || body.type === "LZ") {
-          group.add(new THREE.Mesh(new THREE.OctahedronGeometry(0.08, 0), new THREE.MeshBasicMaterial({ color: 0xff4444 })));
+          const col = body.appearance === "WARNING_RED" ? 0xff4444 : 0x14e6fa;
+          group.add(new THREE.Mesh(new THREE.OctahedronGeometry(0.08, 0), new THREE.MeshBasicMaterial({ color: col })));
         } else {
           group.add(new THREE.Mesh(new THREE.OctahedronGeometry(0.06, 0), new THREE.MeshBasicMaterial({ color: 0x14e6fa })));
         }
@@ -407,9 +410,9 @@ export function StarMapCanvas({
           systemGroup.add(orbit);
         }
 
-        if (body.show_label || isStar || isPlanet || isJump || isHole || isStation) {
+        if (body.show_label || isStar || isPlanet || isJump || isHole || isStation || body.type === "LZ") {
           const div = document.createElement("div");
-          const kind = isStar ? "STAR" : isPlanet ? "PLANET" : isHole ? "BLACKHOLE" : isStation ? "STATION" : isMoon ? "MOON" : "";
+          const kind = isStar ? "STAR" : isPlanet ? "PLANET" : isHole ? "BLACKHOLE" : isStation ? "STATION" : isMoon ? "MOON" : body.type === "LZ" ? "LZ" : "";
           div.className = `label3d ${isStar || isHole ? "star" : ""} ${isJump ? "jump" : ""} ${isPoi ? "poi" : ""}`;
           div.textContent = `${bodyLabel(body)}${kind ? ` ${kind}` : ""}`;
           const obj = new CSS2DObject(div);
@@ -663,6 +666,11 @@ export function StarMapCanvas({
   useEffect(() => {
     api.current?.applyDisplay(display, routeSystems);
   }, [display, routeSystems]);
+
+  useEffect(() => {
+    if (!lookNonce) return;
+    api.current?.applyCamera(camera, mode);
+  }, [lookNonce, camera, mode]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

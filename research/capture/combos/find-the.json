@@ -1,0 +1,75 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 3,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2077,
+          "code": "NEXUS.PLANETS.NEXUSVTHEREDGOD",
+          "designation": "Nexus V",
+          "name": "The Red God",
+          "star_system_id": 357,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2700,
+          "code": "TAYAC.STATION.THEARK",
+          "designation": "The ARK",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1827,
+          "code": "ODIN.FIELDS.ASTEROIDFIELDS",
+          "designation": "Odin I",
+          "name": "The Coil",
+          "star_system_id": 324,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 3,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

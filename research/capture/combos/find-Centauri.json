@@ -1,0 +1,202 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 362,
+          "code": "CENTAURI",
+          "name": "Centauri",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 11,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2100,
+          "code": "CENTAURI.STARS.CENTAURI",
+          "designation": "Centauri",
+          "name": null,
+          "star_system_id": 362,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2436,
+          "code": "CENTAURI.PLANET.CENTAURI",
+          "designation": "Centauri I",
+          "name": null,
+          "star_system_id": 362,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2437,
+          "code": "CENTAURI.PLANET.CENTAURIIIYAR",
+          "designation": "Centauri II",
+          "name": "Yar",
+          "star_system_id": 362,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2438,
+          "code": "CENTAURI.PLANET.CENTAURIIIISAISEI",
+          "designation": "Centauri III",
+          "name": "Saisei",
+          "star_system_id": 362,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2439,
+          "code": "CENTAURI.PLANET.CENTAURIIV",
+          "designation": "Centauri IV",
+          "name": null,
+          "star_system_id": 362,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2440,
+          "code": "CENTAURI.PLANET.CENTAURIV",
+          "designation": "Centauri V",
+          "name": null,
+          "star_system_id": 362,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2533,
+          "code": "CENTAURI.BELTS.CENTAURIBELTALPHA",
+          "designation": "Centauri Belt Alpha",
+          "name": null,
+          "star_system_id": 362,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1768,
+          "code": "NUL.JUMPPOINTS.CENTAURI",
+          "designation": "Nul - Centauri",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2097,
+          "code": "CENTAURI.JUMPPOINTS.ELYSIUM",
+          "designation": "Centauri - Elysium",
+          "name": null,
+          "star_system_id": 362,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2099,
+          "code": "CENTAURI.JUMPPOINTS.NUL",
+          "designation": "Centauri - Nul",
+          "name": null,
+          "star_system_id": 362,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 362,
+            "code": "CENTAURI",
+            "name": "Centauri",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2103,
+          "code": "ELYSIUM.JUMPPOINTS.CENTAURI",
+          "designation": "Elysium - Centauri",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 11,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

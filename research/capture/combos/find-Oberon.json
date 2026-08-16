@@ -1,0 +1,322 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 348,
+          "code": "OBERON",
+          "name": "Oberon",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 19,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1993,
+          "code": "OBERON.STARS.OBERON",
+          "designation": "Oberon",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2406,
+          "code": "OBERON.PLANET.OBERONIII",
+          "designation": "Oberon III",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2407,
+          "code": "OBERON.PLANET.OBERONIV",
+          "designation": "Oberon IV",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2408,
+          "code": "OBERON.PLANET.OBERONV",
+          "designation": "Oberon V",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2409,
+          "code": "OBERON.PLANET.OBERONIGONN",
+          "designation": "Oberon I",
+          "name": "Gonn",
+          "star_system_id": 348,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2410,
+          "code": "OBERON.PLANET.OBERONIIURIEL",
+          "designation": "Oberon II",
+          "name": "Uriel",
+          "star_system_id": 348,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2411,
+          "code": "OBERON.PLANET.OBERONVI",
+          "designation": "Oberon VI",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2412,
+          "code": "OBERON.PLANET.OBERONVII",
+          "designation": "Oberon VII",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2051,
+          "code": "SOL.PLANETS.OBERON",
+          "designation": "Sol 7e",
+          "name": "Oberon",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1733,
+          "code": "VIRGIL.JUMPPOINTS.OBERON",
+          "designation": "Virgil - Oberon",
+          "name": null,
+          "star_system_id": 317,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 317,
+            "code": "VIRGIL",
+            "name": "Virgil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1796,
+          "code": "VEGA.JUMPPOINTS.OBERON",
+          "designation": "Vega - Oberon",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1850,
+          "code": "TIBER.JUMPPOINTS.OBERON",
+          "designation": "Tiber - Oberon",
+          "name": null,
+          "star_system_id": 327,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 327,
+            "code": "TIBER",
+            "name": "Tiber",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1926,
+          "code": "CALIBAN.JUMPPOINTS.OBERON",
+          "designation": "Caliban - Oberon",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1988,
+          "code": "OBERON.JUMPPOINTS.TIBER",
+          "designation": "Oberon - Tiber",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1989,
+          "code": "OBERON.JUMPPOINTS.VIRGIL",
+          "designation": "Oberon - Virgil",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1990,
+          "code": "OBERON.JUMPPOINTS.CALIBAN",
+          "designation": "Oberon - Caliban",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1992,
+          "code": "OBERON.JUMPPOINTS.VEGA",
+          "designation": "Oberon - Vega",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2830,
+          "code": "NUL.JUMPPOINTS.OBERON",
+          "designation": "Nul - Oberon",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2831,
+          "code": "OBERON.JUMPPOINTS.NUL",
+          "designation": "Oberon - Nul",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 19,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

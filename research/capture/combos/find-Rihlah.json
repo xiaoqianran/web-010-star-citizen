@@ -1,0 +1,255 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 15,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2291,
+          "code": "RIHLAH.STARS.RIHLAH",
+          "designation": "R.il'a (Rihlah) ",
+          "name": null,
+          "star_system_id": 401,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2498,
+          "code": "RIHLAH.PLANET.RIHLAHI",
+          "designation": "R.il'a (Rihlah) I",
+          "name": "Chuai'chuai ",
+          "star_system_id": 401,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2499,
+          "code": "RIHLAH.PLANET.RIHLAHII",
+          "designation": "R.il'a (Rihlah) II",
+          "name": "P.uay'aha ",
+          "star_system_id": 401,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2500,
+          "code": "RIHLAH.PLANET.RIHLAHIII",
+          "designation": "R.il'a (Rihlah) III",
+          "name": "Ping'leth",
+          "star_system_id": 401,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2501,
+          "code": "RIHLAH.PLANET.RIHLAHIVSHORVU",
+          "designation": "R.il'a (Rihlah) IV",
+          "name": "Xōl'uu",
+          "star_system_id": 401,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2502,
+          "code": "RIHLAH.PLANET.RIHLAHVXI",
+          "designation": "R.il'a (Rihlah) V",
+          "name": "Xi",
+          "star_system_id": 401,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2503,
+          "code": "RIHLAH.PLANET.RIHLAHVI",
+          "designation": "R.il'a (Rihlah) VI",
+          "name": "Pi'pa",
+          "star_system_id": 401,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2197,
+          "code": "KAYFA.JUMPPOINTS.RIHLAH",
+          "designation": "Kai'pua (Kayfa) - R.il'a (Rihlah)",
+          "name": null,
+          "star_system_id": 382,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 382,
+            "code": "KAYFA",
+            "name": "Kai'pua (Kayfa)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2229,
+          "code": "EEALUS.JUMPPOINTS.RIHLAH",
+          "designation": "Ē'aluth (Eealus) - R.il'a (Rihlah)",
+          "name": null,
+          "star_system_id": 388,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 388,
+            "code": "EEALUS",
+            "name": "Ē'aluth (Eealus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2285,
+          "code": "RIHLAH.JUMPPOINTS.EEALUS",
+          "designation": "R.il'a (Rihlah) - Ē'aluth (Eealus)",
+          "name": null,
+          "star_system_id": 401,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2287,
+          "code": "RIHLAH.JUMPPOINTS.GURZIL",
+          "designation": "R.il'a (Rihlah) - Gurzil",
+          "name": null,
+          "star_system_id": 401,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2289,
+          "code": "RIHLAH.JUMPPOINTS.HORUS",
+          "designation": "R.il'a (Rihlah) - Horus",
+          "name": null,
+          "star_system_id": 401,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2290,
+          "code": "RIHLAH.JUMPPOINTS.KAYFA",
+          "designation": "R.il'a (Rihlah) - Kai'pua (Kayfa)",
+          "name": null,
+          "star_system_id": 401,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2322,
+          "code": "GURZIL.JUMPPOINTS.RIHLAH",
+          "designation": "Gurzil - R.il'a (Rihlah)",
+          "name": null,
+          "star_system_id": 408,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 408,
+            "code": "GURZIL",
+            "name": "Gurzil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2353,
+          "code": "HORUS.JUMPPOINTS.RIHLAH",
+          "designation": "Horus - R.il'a (Rihlah)",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 15,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

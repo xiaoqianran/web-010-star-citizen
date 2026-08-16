@@ -1,0 +1,157 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 416,
+          "code": "BRANAUGH",
+          "name": "Branaugh",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 8,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2371,
+          "code": "BRANAUGH.STARS.BRANAUGH",
+          "designation": "Branaugh",
+          "name": null,
+          "star_system_id": 416,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 416,
+            "code": "BRANAUGH",
+            "name": "Branaugh",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2681,
+          "code": "BRANAUGH.PLANET.BRANAUGHI",
+          "designation": "Branaugh I",
+          "name": null,
+          "star_system_id": 416,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 416,
+            "code": "BRANAUGH",
+            "name": "Branaugh",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2682,
+          "code": "BRANAUGH.PLANET.BRANAUGHII",
+          "designation": "Branaugh II",
+          "name": null,
+          "star_system_id": 416,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 416,
+            "code": "BRANAUGH",
+            "name": "Branaugh",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2683,
+          "code": "BRANAUGH.PLANET.BRANAUGHIII",
+          "designation": "Branaugh III",
+          "name": null,
+          "star_system_id": 416,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 416,
+            "code": "BRANAUGH",
+            "name": "Branaugh",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2530,
+          "code": "BRANAUGH.BELTS.BRANAUGHBELTALPHA",
+          "designation": "Branaugh Belt Alpha",
+          "name": null,
+          "star_system_id": 416,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 416,
+            "code": "BRANAUGH",
+            "name": "Branaugh",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2734,
+          "code": "BRANAUGH.RINGS.BRANAUGHII",
+          "designation": "Rings of Branaugh II",
+          "name": null,
+          "star_system_id": 416,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 416,
+            "code": "BRANAUGH",
+            "name": "Branaugh",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1895,
+          "code": "CHRONOS.JUMPPOINTS.BRANAUGH",
+          "designation": "Chronos - Branaugh",
+          "name": null,
+          "star_system_id": 334,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 334,
+            "code": "CHRONOS",
+            "name": "Chronos",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2370,
+          "code": "BRANAUGH.JUMPPOINTS.CHRONOS",
+          "designation": "Branaugh - Chronos",
+          "name": null,
+          "star_system_id": 416,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 416,
+            "code": "BRANAUGH",
+            "name": "Branaugh",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 8,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}
