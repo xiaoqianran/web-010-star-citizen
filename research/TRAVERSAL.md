@@ -70,7 +70,7 @@
 | ARK | 4 | 含 The ARK |
 | Vanduul / Banu | 1 | POI / Trise Flotilla |
 | black / xxxnomatch | 0 | 与官方空结果一致 |
-| jump/star/planet/moon/station/belt | 32（上限） | 本地子串比官方宽，便于穷尽 |
+| jump/star/planet/moon/station/belt | 旧版会顶格 32 | 现已改为只匹配名称，与官方一致 |
 
 航线：GOSS→TERRA 1 跳 Through Terra；GOSS→SOL 5 跳；GOSS→GOSS 空；foo/Cassel/空 → Invalid object specified。与官方 API 一致。
 
@@ -80,13 +80,13 @@
 
 开场（可跳过）→ 90 星系银河（阵营色 + 可筛选隧道）→ 点星系进入 → 恒星/行星/卫星/空间站/小行星带/黑洞/POI/跳跃点 → 悬停「控制盘 >」→ 信息/航线/书签盘 → 设为起终点 → 本机书签 → 跳跃点跃迁闪白进入邻系 → 搜索任意字串排列组合 → 航线 BFS（与官方隧道图一致）并在银河画线 → DISPLAY 阵营/SML/热力 → 2D/3D → WASD/方向键/+/-/Esc/2/3/F → `?location=&camera=&tab=&view=` 同步
 
-## API combo sweep 3
+## API combo sweep 3（摘要；完整数字见下一节）
 
 - `Renatus` / `Port Renatus` → **LZ** `SOL.LZS.PORTRETANUS`（不在 star-systems 列表里）
 - `The ARK` / `The Ark` 命中空间站；`Fair` 误伤卫星 Fairo；`Warn` → Vanduul Attack
 - `ARC-L2` / `Lagrange` / `L1`–`L5` / `uee` / `Xi'an`：空或校验失败
-- **S 级隧道** TERRA–PYRO、NUL–CROSHAW、CATHCART–KILIAN、BANSHEE–YULIN：`size=S` 与 `size=L` 路径完全相同
-- 远距对（SOL–NYX、PYRO–TAMSA、VEGA–TAMSA、TRISE–SOL…）**shortest 与 leastjumps 仍始终相同**
+- **S 级隧道** TERRA–PYRO、NUL–CROSHAW、CATHCART–KILIAN、BANSHEE–YULIN：`size=S` 与 `size=L` 路径完全相同（**不挡 S 隧道**）
+- 远距对 **shortest ≠ leastjumps**（`shortest` 优化 `flight_distance`，跳数可以更多）。详见下一节与 `SUMMARY3.json`。
 - 已抓天体详情：Tamsa 黑洞、The ARK、Port Olisar、Cellin、Luna、VEGA POI
 
 ## 克隆深度遍历
@@ -151,9 +151,18 @@
 
 航线面板切换与官方数字一致：SOL–NYX 10 / 4；STANTON–TAMSA 11 / 7 Through Nyx / Through Pyro；KILIAN–PYRO 4 / 3 Through Ellis / Through Davien。
 
+## 官方页补充（窗口 / 全屏点击）
+
+- 悬停 `CONTROL DISC >`。盘右页：INFORMATION / ROUTING / BOOKMARK。ROUTING：SET AS DEPARTURE / SET AS DESTINATION。全屏点过的盘上**没有** Jump Through；换系可靠办法仍是搜索点星系或改 URL。
+- 搜索表：`N ITEMS FOUND`，列 NAME | TYPE | INFORMATION，行内 `BOOKMARK >`。`Cassel` → `CASSEL IV (GOSS)` 行星。`Terra` 界面约 20 行（API 25）。
+- 书签空文案：`NO BOOKMARKS FOUND WITH THOSE FILTERS`。
+- 人口扫描器现场见过绿色方格网，角标 `// POPULATION`（不是光晕）。克隆已改成方格网。
+- 右方向键会切底栏页；W 在书签页聚焦时会打开书签，**不能当成 WASD 飞镜头的证据**。
+- 汉堡是 RSI 站点菜单（OUR GAMES / SHOP / EXPLORE…），不是星图内页。
+
 ## 仍须对照官网补的现场
 
-- DISPLAY 热力是网格还是光晕（全屏点击代理仍在跑）
+- DISPLAY 每一项开关的完整上屏（全屏代理还在补）
 - 登录态书签 JSON
 - 官方键盘是否 WASD、右键/中键、指南针是否复位
 - 控制盘穿跃动画（克隆仍是闪白换系）

@@ -12,7 +12,7 @@ import type { CapturedBody } from "@/data/celestial";
 import { bodyLabel, placeBodies, systemScale } from "@/data/celestial";
 import type { SystemRow } from "@/data/catalog";
 import { tunnels } from "@/data/catalog";
-import { AFFIL, PLANET, glowSprite, nebulaTexture } from "./makeTextures";
+import { AFFIL, PLANET, glowSprite, gridSprite, nebulaTexture } from "./makeTextures";
 
 export type ScreenPt = { x: number; y: number };
 
@@ -183,6 +183,7 @@ export function StarMapCanvas({
     const glowA = glowSprite("#ffb056");
     const glowB = glowSprite("#42e6ff");
     const glowR = glowSprite("#ff6b4a");
+    const heatGrid = gridSprite("#9be80d");
 
     const systemGroup = new THREE.Group();
     const galaxyGroup = new THREE.Group();
@@ -217,7 +218,7 @@ export function StarMapCanvas({
       }
       const heat = new THREE.Sprite(
         new THREE.SpriteMaterial({
-          map: glowB,
+          map: heatGrid,
           color: 0x9be80d,
           transparent: true,
           opacity: 0,

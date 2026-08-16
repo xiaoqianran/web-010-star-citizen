@@ -230,6 +230,15 @@ export function Starmap() {
 
       {jumping && <div className="jump-veil" />}
       {loading && <div className="load-hint">{zh.search.loading}</div>}
+      {level === "galaxy" && (display.scanners.lifeforms || display.scanners.economy || display.scanners.crime) && (
+        <div className="scan-tag">
+          {display.scanners.crime
+            ? `// ${zh.disc.threat}`
+            : display.scanners.economy
+              ? `// ${zh.disc.economy}`
+              : zh.display.populationTag}
+        </div>
+      )}
 
       <div className="hud">
         <nav className="levels">
@@ -392,11 +401,17 @@ export function Starmap() {
                 autoFocus
               />
             </div>
+            {query.trim().length >= 3 && (
+              <p className="found-count" data-found={hits.length}>
+                {hits.length} {zh.search.itemsFound}
+              </p>
+            )}
             <table>
               <thead>
                 <tr>
                   <th>{zh.search.name}</th>
                   <th>{zh.search.type}</th>
+                  <th>{zh.search.information}</th>
                 </tr>
               </thead>
               <tbody>
@@ -404,6 +419,18 @@ export function Starmap() {
                   <tr key={row.code} onClick={() => pickHit(row.code, row.type, row.system)}>
                     <td>{row.name}</td>
                     <td>{zh.types[row.type as keyof typeof zh.types] ?? row.type}</td>
+                    <td>
+                      <button
+                        type="button"
+                        className="row-mark"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setMarks(store.toggleBookmark(row.code));
+                        }}
+                      >
+                        {marks.includes(row.code) ? zh.search.removeBookmark : zh.search.bookmarkAction}
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -419,6 +446,7 @@ export function Starmap() {
                 <tr>
                   <th>{zh.search.name}</th>
                   <th>{zh.search.type}</th>
+                  <th>{zh.search.information}</th>
                 </tr>
               </thead>
               <tbody>
@@ -426,6 +454,18 @@ export function Starmap() {
                   <tr key={row.code} onClick={() => pickHit(row.code, row.type, row.system)}>
                     <td>{row.name}</td>
                     <td>{zh.types[row.type as keyof typeof zh.types] ?? row.type}</td>
+                    <td>
+                      <button
+                        type="button"
+                        className="row-mark"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setMarks(store.toggleBookmark(row.code));
+                        }}
+                      >
+                        {zh.search.removeBookmark}
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>

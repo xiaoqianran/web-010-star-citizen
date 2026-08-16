@@ -1,5 +1,30 @@
 import * as THREE from "three";
 
+/** Official LRS overlay is a square grid (seen as `// POPULATION`), not a soft glow. */
+export function gridSprite(color = "#9be80d", size = 256) {
+  const c = document.createElement("canvas");
+  c.width = c.height = size;
+  const g = c.getContext("2d")!;
+  g.clearRect(0, 0, size, size);
+  const cells = 6;
+  const step = size / cells;
+  for (let y = 0; y < cells; y++) {
+    for (let x = 0; x < cells; x++) {
+      const dx = (x + 0.5) / cells - 0.5;
+      const dy = (y + 0.5) / cells - 0.5;
+      const fall = Math.max(0, 1 - Math.hypot(dx, dy) * 2.1);
+      if (fall <= 0) continue;
+      g.fillStyle = hexAlpha(color, 0.08 + fall * 0.42);
+      g.fillRect(x * step + 1, y * step + 1, step - 2, step - 2);
+      g.strokeStyle = hexAlpha(color, 0.2 + fall * 0.55);
+      g.strokeRect(x * step + 0.5, y * step + 0.5, step - 1, step - 1);
+    }
+  }
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  return tex;
+}
+
 export function glowSprite(color: string, size = 256) {
   const c = document.createElement("canvas");
   c.width = c.height = size;

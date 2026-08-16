@@ -507,6 +507,30 @@
   color: #42cbf8;
 }
 
+.found-count {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #7acbff;
+}
+
+.row-mark {
+  color: #fee5a1;
+  letter-spacing: 0.12em;
+  font-size: 11px;
+}
+
+.scan-tag {
+  position: absolute;
+  left: 22px;
+  bottom: 92px;
+  z-index: 8;
+  color: #9be80d;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+  pointer-events: none;
+}
+
 .fields {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
