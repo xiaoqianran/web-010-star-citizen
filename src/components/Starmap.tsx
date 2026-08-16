@@ -322,12 +322,12 @@ export function Starmap() {
             avoided={avoids.includes(selected.code)}
             onPage={setDiscPage}
             onDeparture={() => {
-              setFrom(jumpDestination(selected.code) ? systemCode : selected.code);
+              setFrom(bodyLabel(selected));
               setTab("routes");
               setDiscPage("routing");
             }}
             onDestination={() => {
-              setTo(jumpDestination(selected.code) || selected.code);
+              setTo(bodyLabel(selected));
               setTab("routes");
             }}
             onBookmark={() => setMarks(store.toggleBookmark(selected.code))}

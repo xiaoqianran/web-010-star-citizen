@@ -54,6 +54,7 @@ const ROUTES = [
   ["Cassel", "Terra"],
   ["BANU", "SOL"],
   ["Goss A", "TERRA"],
+  ["GOSS.STARS.GOSSA", "TERRA"],
 ];
 
 async function main() {

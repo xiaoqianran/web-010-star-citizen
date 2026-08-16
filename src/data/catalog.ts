@@ -363,6 +363,9 @@ export function resolveEndpoint(raw: string): string | null {
   if (systemByCode.has(u)) return u;
   const byName = systems.find((s) => s.name.toUpperCase() === u);
   if (byName) return byName.code;
+  // Official routes/find accepts object codes (GOSS.STARS.GOSSA → GOSS) but rejects display names (Goss A, Cassel).
+  const byCode = objectByCode.get(u) ?? objects.find((o) => o.code.toUpperCase() === u);
+  if (byCode) return byCode.system;
   return null;
 }
 
