@@ -95,10 +95,19 @@ async function main() {
       /* ignore */
     }
   });
+  await page.reload({ waitUntil: "domcontentloaded", timeout: 90000 });
   await sleep(2500);
   const win = (await clickClass("launch")) || (await clickText(["or enter in window mode", "enter in window mode"]));
   note("intro:window", { text: String(win) });
-  await sleep(8000);
+  await sleep(4000);
+  for (const label of ["acknowledge & continue", "acknowledge", "explore starmap", "explore"]) {
+    const hit = await clickText([label]);
+    if (hit) {
+      note("intro:cta", { text: hit });
+      await sleep(1200);
+    }
+  }
+  await sleep(4000);
 
   const glx = (await clickText(["glx"])) || (await clickText(["galaxy"]));
   note("glx", { text: String(glx) });

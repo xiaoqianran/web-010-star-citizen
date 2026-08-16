@@ -91,7 +91,7 @@ async function main() {
   const afterBlur = await page.evaluate(() => document.activeElement?.tagName);
   if (afterBlur === "INPUT") fail("canvas click did not blur search");
 
-  if (!(await click('[data-tab="search"]'))) fail("search tab reopen");
+  if (!(await page.$("[data-search]")) && !(await click('[data-tab="search"]'))) fail("search tab reopen");
   await setInput("[data-search]", "Terra");
   await page.focus("[data-search]");
   await page.keyboard.press("Enter");

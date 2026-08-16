@@ -34,8 +34,9 @@
 - GOSS→TERRA / HELIOS：1 跳；GOSS→STANTON：2；GOSS→SOL：5（Through Terra）
 - GOSS→GOSS：成功但无段
 - foo→bar：`ErrInvalidObject`
-- 舰船键是 **`ship_size`**（不是 `size`）。GOSS→TERRA 默认/S/M = 1 跳；`ship_size=L` = Through Tayac、2 跳
-- 135 条隧道全部 `direction=B`，尺寸 L79 / M36 / S20。规则：隧道尺寸 ≥ 舰船尺寸才可走
+- 舰船键是 **`ship_size`**（不是 `size`）。规则：隧道尺寸 ≥ 舰船尺寸。GOSS→TERRA 默认/S/M = 1 跳；L = Through Tayac、2 跳
+- 135 条隧道全部 `direction=B`，尺寸 L79 / M36 / S20
+- 2026-08-16 再探测：TERRA→PYRO（S 隧道）S/M/L = 1 / 2 Through Stanton / 4 Through Stanton；STANTON→PYRO（M 隧道）L = 3 Through Nyx；CATHCART→KILIAN L = 12/3 Through Nexus；NUL→CROSHAW L = 5 Through Centauri；BANSHEE→YULIN L = `OK` 但无段；`ship_size=X` = `ErrValidationFailed`
 
 ### 其它
 

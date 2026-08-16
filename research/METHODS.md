@@ -88,4 +88,4 @@
 10. 双击跃迁点（此前未进入目标星系）
 
 记录目录：`research/capture/official-combos/`、`research/capture/official-restore/`。  
-已锁定并写入克隆：搜索 STAR SYSTEM → `camera=60,0,0.002,0,0`；航线结果表四列；系统空白单击回银河；银河轴向 −y。
+已锁定并写入克隆：搜索 STAR SYSTEM → `camera=60,0,0.002,0,0`；航线结果表四列；系统空白单击回银河；银河轴向 −y；`ship_size` 过滤隧道并在 leftover SHIP SIZE 切换时重算。

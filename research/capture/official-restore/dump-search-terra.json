@@ -1,0 +1,81 @@
+{
+  "href": "https://robertsspaceindustries.com/en/starmap/search",
+  "camera": null,
+  "location": null,
+  "selection": null,
+  "bodyText": "This website uses cookies We use cookies to analyse our traffic. We also share information about your use of our site with our analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. For more information please read our Privacy Policy. Opt-In/Opt-out Preferences: Do Not Sell or Share My Personal Information You may manage your consent and Opt-In/Opt-Out settings via the links below. You may need to enable or allow pop-ups for this page in order to access this utility. You can at any time change your cookie settings below or on the Cookie Declaration on our website. Consent Selection Necessary Preferences Statistics Marketing Show details ALLOW ALL COOKIES ALLOW SELECTION USE NECESSARY COOKIES ONLY Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREA",
+  "items": [
+    {
+      "tag": "div",
+      "cls": "sm-table-container",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 684,
+        "y": 825,
+        "w": 552,
+        "h": 76
+      }
+    },
+    {
+      "tag": "th",
+      "cls": "sm-name",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 685,
+        "y": 830,
+        "w": 186,
+        "h": 34
+      }
+    },
+    {
+      "tag": "th",
+      "cls": "sm-type",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 871,
+        "y": 830,
+        "w": 150,
+        "h": 34
+      }
+    },
+    {
+      "tag": "th",
+      "cls": "sm-bookmark-container",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 1021,
+        "y": 830,
+        "w": 150,
+        "h": 34
+      }
+    },
+    {
+      "tag": "th",
+      "cls": "sm-go-container",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 1171,
+        "y": 830,
+        "w": 38,
+        "h": 34
+      }
+    },
+    {
+      "tag": "td",
+      "cls": "",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 685,
+        "y": 866,
+        "w": 550,
+        "h": 34
+      }
+    }
+  ]
+}

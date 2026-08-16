@@ -1,9 +1,13 @@
 {
-  "capturedAt": "2026-08-16T20:29:31.232Z",
+  "capturedAt": "2026-08-16T20:34:25.906Z",
   "notes": [
     "bootup without User-Agent → HTTP 200 code=OK",
+    "bookmarks/find → ErrNotAuthenticated You must be authenticated to reach this area.",
     "SOL→NYX size S/L jumps 10/10 dist 31.698254770871397/31.698254770871397",
-    "SOL→NYX ship_size S jumps 10 (community scrapers send this key)"
+    "SOL→NYX ship_size S jumps 10 (community scrapers send this key)",
+    "GOSS→TERRA ship_size=L → Through Tayac jumps=2",
+    "TERRA→PYRO (S tunnel) ship_size S/L jumps 1/4 label Through Pyro/Through Stanton",
+    "GOSS→TERRA ship_size=X → ErrValidationFailed Validation failed"
   ],
   "bootupNoUa": {
     "status": 200,
@@ -15,6 +19,11 @@
     "success": 1,
     "systems": 90,
     "tunnels": 135,
+    "tunnelSizes": {
+      "S": 20,
+      "M": 36,
+      "L": 79
+    },
     "starfieldCount": 2000
   },
   "findLz": {
@@ -83,198 +92,162 @@
       "types": [
         "LZ"
       ]
+    },
+    "The ARK": {
+      "n": 1,
+      "types": [
+        "MANMADE"
+      ]
+    },
+    "Port": {
+      "n": 2,
+      "types": [
+        "MANMADE",
+        "LZ"
+      ]
     }
+  },
+  "bookmarks": {
+    "status": 200,
+    "success": 0,
+    "code": "ErrNotAuthenticated",
+    "msg": "You must be authenticated to reach this area."
   },
   "routesSize": {
     "GOSS-TERRA-{\"size\":\"S\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Goss to Terra",
-        "label": "Through Terra",
-        "jumps": 1,
-        "first_jump": "Goss - Terra",
-        "flight_distance": 0
-      },
-      "leastjumps": {
-        "name": "Goss to Terra",
-        "label": "Through Terra",
-        "jumps": 1,
-        "first_jump": "Goss - Terra",
-        "flight_distance": 0
-      }
+      "short": "1/Through Terra/0",
+      "least": "1/Through Terra"
     },
     "GOSS-TERRA-{\"size\":\"L\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Goss to Terra",
-        "label": "Through Terra",
-        "jumps": 1,
-        "first_jump": "Goss - Terra",
-        "flight_distance": 0
-      },
-      "leastjumps": {
-        "name": "Goss to Terra",
-        "label": "Through Terra",
-        "jumps": 1,
-        "first_jump": "Goss - Terra",
-        "flight_distance": 0
-      }
+      "short": "1/Through Terra/0",
+      "least": "1/Through Terra"
     },
     "GOSS-TERRA-{\"ship_size\":\"S\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Goss to Terra",
-        "label": "Through Terra",
-        "jumps": 1,
-        "first_jump": "Goss - Terra",
-        "flight_distance": 0
-      },
-      "leastjumps": {
-        "name": "Goss to Terra",
-        "label": "Through Terra",
-        "jumps": 1,
-        "first_jump": "Goss - Terra",
-        "flight_distance": 0
-      }
+      "short": "1/Through Terra/0",
+      "least": "1/Through Terra"
+    },
+    "GOSS-TERRA-{\"ship_size\":\"M\"}": {
+      "code": "OK",
+      "short": "1/Through Terra/0",
+      "least": "1/Through Terra"
     },
     "GOSS-TERRA-{\"ship_size\":\"L\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Goss to Terra",
-        "label": "Through Tayac",
-        "jumps": 2,
-        "first_jump": "Goss - Tayac",
-        "flight_distance": 2.232875585701012
-      },
-      "leastjumps": {
-        "name": "Goss to Terra",
-        "label": "Through Tayac",
-        "jumps": 2,
-        "first_jump": "Goss - Tayac",
-        "flight_distance": 2.232875585701012
-      }
+      "short": "2/Through Tayac/2.232875585701012",
+      "least": "2/Through Tayac"
     },
     "SOL-NYX-{\"size\":\"S\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Sol to Nyx",
-        "label": "Through Davien",
-        "jumps": 10,
-        "first_jump": "Sol - Davien",
-        "flight_distance": 31.698254770871397
-      },
-      "leastjumps": {
-        "name": "Sol to Nyx",
-        "label": "Through Davien",
-        "jumps": 4,
-        "first_jump": "Sol - Davien",
-        "flight_distance": 32.86809371982527
-      }
+      "short": "10/Through Davien/31.698254770871397",
+      "least": "4/Through Davien"
     },
     "SOL-NYX-{\"size\":\"L\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Sol to Nyx",
-        "label": "Through Davien",
-        "jumps": 10,
-        "first_jump": "Sol - Davien",
-        "flight_distance": 31.698254770871397
-      },
-      "leastjumps": {
-        "name": "Sol to Nyx",
-        "label": "Through Davien",
-        "jumps": 4,
-        "first_jump": "Sol - Davien",
-        "flight_distance": 32.86809371982527
-      }
+      "short": "10/Through Davien/31.698254770871397",
+      "least": "4/Through Davien"
     },
     "SOL-NYX-{\"ship_size\":\"S\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Sol to Nyx",
-        "label": "Through Davien",
-        "jumps": 10,
-        "first_jump": "Sol - Davien",
-        "flight_distance": 31.698254770871397
-      },
-      "leastjumps": {
-        "name": "Sol to Nyx",
-        "label": "Through Davien",
-        "jumps": 4,
-        "first_jump": "Sol - Davien",
-        "flight_distance": 32.86809371982527
-      }
+      "short": "10/Through Davien/31.698254770871397",
+      "least": "4/Through Davien"
     },
     "SOL-NYX-{\"ship_size\":\"L\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Sol to Nyx",
-        "label": "Through Davien",
-        "jumps": 12,
-        "first_jump": "Sol - Davien",
-        "flight_distance": 55.07166518683863
-      },
-      "leastjumps": {
-        "name": "Sol to Nyx",
-        "label": "Through Davien",
-        "jumps": 6,
-        "first_jump": "Sol - Davien",
-        "flight_distance": 60.814883391897496
-      }
+      "short": "12/Through Davien/55.07166518683863",
+      "least": "6/Through Davien"
     },
     "STANTON-PYRO-{\"size\":\"S\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Stanton to Pyro",
-        "label": "Through Pyro",
-        "jumps": 1,
-        "first_jump": "Stanton - Pyro",
-        "flight_distance": 0
-      },
-      "leastjumps": {
-        "name": "Stanton to Pyro",
-        "label": "Through Pyro",
-        "jumps": 1,
-        "first_jump": "Stanton - Pyro",
-        "flight_distance": 0
-      }
+      "short": "1/Through Pyro/0",
+      "least": "1/Through Pyro"
     },
     "STANTON-PYRO-{\"size\":\"L\"}": {
-      "success": 1,
       "code": "OK",
-      "msg": "OK",
-      "shortest": {
-        "name": "Stanton to Pyro",
-        "label": "Through Pyro",
-        "jumps": 1,
-        "first_jump": "Stanton - Pyro",
-        "flight_distance": 0
-      },
-      "leastjumps": {
-        "name": "Stanton to Pyro",
-        "label": "Through Pyro",
-        "jumps": 1,
-        "first_jump": "Stanton - Pyro",
-        "flight_distance": 0
-      }
+      "short": "1/Through Pyro/0",
+      "least": "1/Through Pyro"
+    },
+    "STANTON-PYRO-{\"ship_size\":\"L\"}": {
+      "code": "OK",
+      "short": "3/Through Nyx/30.948989481504654",
+      "least": "3/Through Nyx"
+    },
+    "STANTON-TAMSA-{\"ship_size\":\"L\"}": {
+      "code": "OK",
+      "short": "11/Through Nyx/31.878515436177885",
+      "least": "8/Through Magnus"
+    },
+    "TERRA-PYRO-{\"ship_size\":\"S\"}": {
+      "code": "OK",
+      "short": "1/Through Pyro/0",
+      "least": "1/Through Pyro"
+    },
+    "TERRA-PYRO-{\"ship_size\":\"M\"}": {
+      "code": "OK",
+      "short": "2/Through Stanton/4.562264470054994",
+      "least": "2/Through Stanton"
+    },
+    "TERRA-PYRO-{\"ship_size\":\"L\"}": {
+      "code": "OK",
+      "short": "4/Through Stanton/34.67066568770363",
+      "least": "3/Through Hadrian"
+    },
+    "CATHCART-KILIAN-{\"ship_size\":\"S\"}": {
+      "code": "OK",
+      "short": "1/Through Kilian/0",
+      "least": "1/Through Kilian"
+    },
+    "CATHCART-KILIAN-{\"ship_size\":\"L\"}": {
+      "code": "OK",
+      "short": "12/Through Nexus/82.1924751640351",
+      "least": "3/Through Nexus"
+    },
+    "BANSHEE-YULIN-{\"ship_size\":\"S\"}": {
+      "code": "OK",
+      "short": "1/Through Yulin/0",
+      "least": "1/Through Yulin"
+    },
+    "BANSHEE-YULIN-{\"ship_size\":\"L\"}": {
+      "code": "OK",
+      "short": null,
+      "least": null
+    },
+    "NUL-CROSHAW-{\"ship_size\":\"S\"}": {
+      "code": "OK",
+      "short": "1/Through Croshaw/0",
+      "least": "1/Through Croshaw"
+    },
+    "NUL-CROSHAW-{\"ship_size\":\"L\"}": {
+      "code": "OK",
+      "short": "5/Through Centauri/7.00632134419592",
+      "least": "5/Through Centauri"
+    },
+    "GOSS-TERRA-{\"ship_size\":\"X\"}": {
+      "code": "ErrValidationFailed",
+      "short": null,
+      "least": null
+    },
+    "GOSS-TERRA-{\"ship_size\":\"\"}": {
+      "code": "OK",
+      "short": "1/Through Terra/0",
+      "least": "1/Through Terra"
+    },
+    "SOL-NYX-{\"ship_size\":\"L\",\"avoid\":\"DAVIEN\"}": {
+      "code": "OK",
+      "short": "12/Through Davien/55.07166518683863",
+      "least": "6/Through Davien"
+    },
+    "GOSS.STARS.GOSSA-TERRA-{\"ship_size\":\"L\"}": {
+      "code": "OK",
+      "short": "2/Through Tayac/8.147480082101545",
+      "least": "2/Through Tayac"
+    },
+    "GOSS-TERRA-{}": {
+      "code": "OK",
+      "short": "1/Through Terra/0",
+      "least": "1/Through Terra"
     }
   }
 }

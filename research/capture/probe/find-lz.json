@@ -145,5 +145,42 @@
         "system": "SOL"
       }
     ]
+  },
+  "The ARK": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "TAYAC.STATION.THEARK",
+        "name": null,
+        "designation": "The ARK",
+        "type": "MANMADE",
+        "system": "TAYAC"
+      }
+    ]
+  },
+  "Port": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "STANTON.STATION.PORTOLISAR",
+        "name": null,
+        "designation": "Port Olisar",
+        "type": "MANMADE",
+        "system": "STANTON"
+      },
+      {
+        "code": "SOL.LZS.PORTRETANUS",
+        "name": null,
+        "designation": "Port Renatus",
+        "type": "LZ",
+        "system": "SOL"
+      }
+    ]
   }
 }

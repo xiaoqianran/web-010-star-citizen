@@ -574,12 +574,13 @@ export function Starmap() {
               </p>
             )}
             {showResults && hits.length > 0 && (
+            <div className="sm-table-container">
             <table>
               <thead>
                 <tr>
-                  <th>{zh.search.name}</th>
-                  <th>{zh.search.type}</th>
-                  <th>{zh.search.information}</th>
+                  <th className="sm-name">{zh.search.name}</th>
+                  <th className="sm-type">{zh.search.type}</th>
+                  <th className="sm-bookmark-container">{zh.search.information}</th>
                 </tr>
               </thead>
               <tbody>
@@ -607,6 +608,7 @@ export function Starmap() {
                 ))}
               </tbody>
             </table>
+            </div>
             )}
             {showResults && !hits.length && <p className="empty">{zh.search.empty}</p>}
           </section>
@@ -715,6 +717,7 @@ export function Starmap() {
                   {shown.label ? ` · ${shown.label}` : ""}
                 </p>
                 <div className="sm-list-region">
+                <div className="sm-table-container">
                 <table data-route-table className="sm-list">
                   <thead>
                     <tr>
@@ -741,6 +744,7 @@ export function Starmap() {
                     </tr>
                   </tbody>
                 </table>
+                </div>
                 </div>
                 <p className="route-seg sm-current-segment" data-current-segment={seg}>
                   <button

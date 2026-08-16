@@ -545,7 +545,8 @@ export function findRoute(departure: string, destination: string, ship: "S" | "M
   const short = walkGraph(from, to, "shortest", ship);
   const least = walkGraph(from, to, "leastjumps", ship);
   if (!short || !least) {
-    return { ok: false, code: "ErrNoRoute", msg: "No route", shortest: null, leastjumps: null };
+    // Official BANSHEE→YULIN ship_size=L: success=1 code=OK with null legs (not ErrNoRoute).
+    return { ok: true, code: "OK", msg: "OK", empty: true, shortest: null, leastjumps: null };
   }
   return {
     ok: true,

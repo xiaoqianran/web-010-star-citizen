@@ -181,8 +181,10 @@ for (const [key, official] of Object.entries(sized)) {
   const extra = JSON.parse(parsed[3]);
   const ship = extra.ship_size;
   if (!ship || !["S", "M", "L"].includes(ship)) continue;
-  const from = parsed[1].includes(".") ? parsed[1].split(".")[0] : parsed[1];
-  const to = parsed[2].includes(".") ? parsed[2].split(".")[0] : parsed[2];
+  // Object-code endpoints add intra-system AU on the official API; local graph is system-to-system.
+  if (parsed[1].includes(".") || parsed[2].includes(".")) continue;
+  const from = parsed[1];
+  const to = parsed[2];
   const short = walkGraph(from, to, "shortest", ship);
   const least = walkGraph(from, to, "leastjumps", ship);
   if (!official.shortest && !official.leastjumps) {
