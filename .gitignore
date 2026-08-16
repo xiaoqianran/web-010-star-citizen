@@ -1,0 +1,12 @@
+node_modules
+dist
+.vercel/*
+!.vercel/project.json
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+npm-debug.log*
+pnpm-debug.log*
+research/capture/.tmp

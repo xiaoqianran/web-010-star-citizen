@@ -1,0 +1,70 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2061,
+        "age": 0,
+        "appearance": "PLANET_GREEN",
+        "axial_tilt": 0,
+        "code": "GOSS.PLANETS.GOSSIII",
+        "description": "Access to this large sub-tropical world is restricted to those who receive clearance from the military base on its surface.  \n",
+        "designation": "Goss III",
+        "distance": 1.01,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": 0,
+        "longitude": 42,
+        "name": null,
+        "orbit_period": 1069.5,
+        "parent_id": null,
+        "sensor_danger": "1",
+        "sensor_economy": "6",
+        "sensor_population": "4",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": 10066,
+        "subtype_id": 38,
+        "time_modified": "2018-01-25 20:22:14",
+        "type": "PLANET",
+        "subtype": {
+          "id": 38,
+          "name": "Super-Earth",
+          "type": "PLANET"
+        },
+        "affiliation": [
+          {
+            "id": 1,
+            "code": "uee",
+            "color": "#48bbd4",
+            "name": "UEE",
+            "membership.id": 2868
+          }
+        ],
+        "population": [],
+        "children": [],
+        "texture": {
+          "slug": "duxhoei3b7nnm",
+          "source": "https://robertsspaceindustries.com/media/duxhoei3b7nnmr/source/Planet_EarthLike.jpg",
+          "images": {
+            "post": "https://robertsspaceindustries.com/media/duxhoei3b7nnmr/post/Planet_EarthLike.jpg",
+            "product_thumb_large": "https://robertsspaceindustries.com/media/duxhoei3b7nnmr/product_thumb_large/Planet_EarthLike.jpg",
+            "subscribers_vault_thumbnail": "https://robertsspaceindustries.com/media/duxhoei3b7nnmr/subscribers_vault_thumbnail/Planet_EarthLike.jpg"
+          }
+        }
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}
