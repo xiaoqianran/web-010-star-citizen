@@ -2,7 +2,7 @@
 
 学习复刻 [ARK Starmap](https://robertsspaceindustries.com/en/starmap/bookmarks?location=GOSS&camera=10,102.98,0.002,0,0) 的前置仓库。
 
-当前阶段：**先抓取、先对照、先部署学习台**。三维场景还没写。界面用语默认中文，专有名词保持英文。
+当前阶段：按官网 ARK Starmap 的真实交互还原开场、HUD 与 GOSS 三维场景。界面用语默认中文，专有名词保持英文。
 
 这是粉丝学习项目，与 Cloud Imperium Games / Roberts Space Industries 无关。
 
