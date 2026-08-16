@@ -15,18 +15,18 @@
 | `/api/starmap/star-systems/{CODE}` | `{}` | 星系天体 |
 | `/api/starmap/celestial-objects/{CODE}` | `{}` | 单天体 |
 | `/api/starmap/find` | `query=` | 搜索（≥3 字，匹配名称不是 code） |
-| `/api/starmap/routes/find` | `departure` + `destination` + 可选 `size`/`avoid` | 航线 |
+| `/api/starmap/routes/find` | `departure` + `destination` + 可选 `ship_size`（`size`/`avoid` 被忽略） | 航线 |
 
 社区封装（只对照端点，不引入依赖；**不能**当 schema）：
 
-1. [Dymerz/RSI-Scraper](https://github.com/Dymerz/RSI-Scraper) — Python 原样回 `resultset`；航线误发 `ship_size`
-2. [koo04/GoScrapeRSI](https://github.com/koo04/GoScrapeRSI) — Go 移植，struct 把 `position_x` 错绑成 `{x,y,z}`，隧道丢 `code`
+1. [Dymerz/RSI-Scraper](https://github.com/Dymerz/RSI-Scraper) — `StarmapRouteSearch` 明文发 `ship_size`（S/M/L）。2026-08-16 探测确认官方认这个键，`size` 会被忽略
+2. [koo04/GoScrapeRSI](https://github.com/koo04/GoScrapeRSI) — 同样发 `ship_size`；struct 把 `position_x` 错绑成 `{x,y,z}`，隧道丢 `code`
 
 精确字段表：`research/MAPPING.md`，运行时：`src/data/official.ts`。
 3. [robertsspaceindustries/sc-starmap](https://github.com/robertsspaceindustries/sc-starmap) — 第三方 TS JSON dump（作者 ari-party，**不是** CIG 源码）
 4. [StarCitizenWiki/API](https://github.com/StarCitizenWiki/API) — wiki + 游戏文件，管道不同
 5. [agabani/StarCitizenApi](https://github.com/agabani/StarCitizenApi) — 2017 C# SDK
-6. [KarelWintersky/RSI_Starmap_Mirror](https://github.com/KarelWintersky/RSI_Starmap_Mirror) — PHP 离线镜像。**只读它的公开笔记**（`ENGINE.md` / leftover class）。它会下载官方 bundle / `.dae` / 音效，本仓库不跟。它的双击退出是作者补丁，**不是** 9.536.0。有用事实：无浏览器 User-Agent 时 `bootup` 会 405；银河轴向 `(x,z,−y)`；天体 `lon=−longitude`；系统视图空白单击回银河。
+6. [KarelWintersky/RSI_Starmap_Mirror](https://github.com/KarelWintersky/RSI_Starmap_Mirror) — PHP 离线镜像。**只读公开笔记**（`ENGINE.md` / `AGENTS.md` / leftover class）。它会下载官方 bundle / `.dae` / 音效，本仓库不跟。它的双击退出是作者补丁，**不是** 9.536.0。有用事实：无浏览器 User-Agent 时 `bootup` 会 405（本环境 2026-08-16 探测为 HTTP 200）；银河轴向 `(x,z,−y)`；天体 `lon=−longitude`；系统视图空白单击回银河；**L 舰只走 L 隧道**；`routes/find` 体是 `{departure, destination, ship_size}`；系统详情只读 `star-systems/{CODE}`，`celestial-objects/{CODE}` 仅行星缩放/LZ 才懒加载。
 7. [jan-krueger gist](https://gist.github.com/jan-krueger/d64fb0d12e949d9f7f22e18ec4083a00) — 只示范 `bootup` + `star-systems/{code}`
 8. [Meetsch/starcitizen-api](https://github.com/Meetsch/starcitizen-api) — 组织 API，星图只在 roadmap
 
@@ -63,7 +63,7 @@
 5. **官方 CSS class 清单** — `research/tokens/design-tokens.json`：`sm-lz-open`、`sm-system-display-tab`、`sm-search-autocomplete`、`sm-go`、`sm-next-segment`。有 class ≠ 已观察到可见文案。
 6. **社区传感器设定** — NID / J&P / TSAS 解释 DISPLAY 三个扫描器，不是 HUD 铬件。
 7. [Synchrones/ARK_Starmap](https://github.com/Synchrones/ARK_Starmap) — Unity 离线复刻（3 star）。只作对照，**不要**抄它的右键拖平移 / `J` 开关隧道 / `Esc` 退选；那些是作者自加，不是官网。
-8. leftover 航线表头 class：`sm-label` / `sm-jumps` / `sm-distance` / `sm-selection`（`sm-list-region` 约 76px，一行摘要）。表单：`DEPARTURE` / `DESTINATION` / `SHIP SIZE`。
+8. leftover 航线表头 class：`sm-label` 200 / `sm-jumps` 70 / `sm-distance` 125 / `sm-selection` 145（`sm-list-region` 约 76px，一行摘要）。表单：`sm-departure-region` / `sm-destination-region` / `sm-ship-size` / `sm-go`。盘上 ROUTING：`SET AS:DEPARTURE` / `SET AS:DESTINATION`。
 
 不要用：`mehdibadjian/starmap`（GitHub star 图书馆，与 ARK 无关）。
 

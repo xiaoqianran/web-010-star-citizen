@@ -279,13 +279,15 @@ export function Starmap() {
     }
   };
 
-  const calculate = () => {
+  const applyRoute = (nextShip: "S" | "M" | "L" = ship) => {
     blip(sound);
-    const result = findRoute(from, to);
+    const result = findRoute(from, to, nextShip);
     setRoute(result);
     setSeg(0);
     if (result.ok && result.shortest?.segments.length) setLevel("galaxy");
   };
+
+  const calculate = () => applyRoute(ship);
 
   const shown = pickRoute(route, routeMode);
   const drawnRoute = routeSystems(route, routeMode);
@@ -550,7 +552,7 @@ export function Starmap() {
               />
             </div>
             {!query.trim() && recent.length > 0 && (
-              <ul className="search-auto" data-search-auto>
+              <ul className="search-auto sm-search-autocomplete" data-search-auto>
                 {recent.map((name) => (
                   <li key={name}>
                     <button
@@ -657,24 +659,32 @@ export function Starmap() {
         )}
 
         {tab === "routes" && (
-          <section className="panel">
+          <section className="panel sm-routes">
             <div className="fields">
-              <label className="field">
+              <label className="field sm-departure-region">
                 <span>{zh.disc.departure}</span>
                 <input value={from} onChange={(e) => setFrom(e.target.value)} placeholder={zh.disc.departure} />
               </label>
-              <label className="field">
+              <label className="field sm-destination-region">
                 <span>{zh.disc.destination}</span>
                 <input value={to} onChange={(e) => setTo(e.target.value)} placeholder={zh.disc.destination} />
               </label>
-              <button className="cta slim-cta" onClick={calculate}>
+              <button className="cta slim-cta sm-go" onClick={calculate}>
                 {zh.hud.calculate} &gt;
               </button>
             </div>
-            <div className="ship-row">
+            <div className="ship-row sm-route-sizes">
               <span>{zh.routes.shipSize}</span>
               {(["S", "M", "L"] as const).map((sz) => (
-                <button key={sz} className={ship === sz ? "on" : ""} onClick={() => setShip(sz)}>
+                <button
+                  key={sz}
+                  data-ship={sz}
+                  className={`sm-ship-size ${ship === sz ? "on" : ""}`}
+                  onClick={() => {
+                    setShip(sz);
+                    if (route) applyRoute(sz);
+                  }}
+                >
                   {sz === "S" ? zh.display.sizeS : sz === "M" ? zh.display.sizeM : zh.display.sizeL}
                 </button>
               ))}
@@ -704,25 +714,26 @@ export function Starmap() {
                   {shown.name}
                   {shown.label ? ` · ${shown.label}` : ""}
                 </p>
-                <table data-route-table>
+                <div className="sm-list-region">
+                <table data-route-table className="sm-list">
                   <thead>
                     <tr>
-                      <th>{zh.search.name}</th>
-                      <th>{zh.routes.jumps}</th>
-                      <th>{zh.routes.distance}</th>
-                      <th>{zh.routes.selection}</th>
+                      <th className="sm-label">{zh.search.name}</th>
+                      <th className="sm-jumps">{zh.routes.jumps}</th>
+                      <th className="sm-distance">{zh.routes.distance}</th>
+                      <th className="sm-selection">{zh.routes.selection}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="on-row">
-                      <td>{shown.name}</td>
-                      <td>{shown.jumps ?? "—"}</td>
-                      <td>
+                      <td className="sm-label">{shown.name}</td>
+                      <td className="sm-jumps">{shown.jumps ?? "—"}</td>
+                      <td className="sm-distance">
                         {shown.flight_distance != null
                           ? `${Number(shown.flight_distance).toFixed(3)} ${zh.routes.au}`
                           : "—"}
                       </td>
-                      <td>
+                      <td className="sm-selection">
                         <button type="button" className="row-mark" onClick={() => setLevel("galaxy")}>
                           {zh.routes.viewRoute}
                         </button>
@@ -730,7 +741,8 @@ export function Starmap() {
                     </tr>
                   </tbody>
                 </table>
-                <p className="route-seg" data-current-segment={seg}>
+                </div>
+                <p className="route-seg sm-current-segment" data-current-segment={seg}>
                   <button
                     type="button"
                     onClick={() => {
@@ -742,11 +754,12 @@ export function Starmap() {
                   </button>
                 </p>
                 <div className="ship-row">
-                  <button type="button" onClick={() => setSeg((n) => Math.max(0, n - 1))}>
+                  <button type="button" className="sm-prev-segment" onClick={() => setSeg((n) => Math.max(0, n - 1))}>
                     {zh.routes.prevSegment}
                   </button>
                   <button
                     type="button"
+                    className="sm-next-segment"
                     onClick={() => setSeg((n) => Math.min((shown.segments.length ?? 1) - 1, n + 1))}
                   >
                     {zh.routes.nextSegment}

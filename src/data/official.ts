@@ -2,8 +2,8 @@
  * Official ARK Starmap 9.536.0 field map.
  * Source of truth: captured POST /api/starmap/* JSON — not community scrapers.
  *
- * Dymerz/RSI-Scraper returns raw JSON (good) but posts routes with `ship_size`
- * (official form field observed as `size`) and never reads `data.config`.
+ * Dymerz/RSI-Scraper returns raw JSON (good) and posts routes with `ship_size`
+ * (official API honors `ship_size`; the `size` key is ignored) and never reads `data.config`.
  * koo04/GoScrapeRSI re-types the same endpoints and drops/renames keys:
  * position {x,y,z} vs position_x/y/z, TunnelPoint missing code/designation,
  * subtype as array vs object, affiliation flattened.

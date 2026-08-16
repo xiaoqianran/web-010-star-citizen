@@ -431,7 +431,7 @@ export function searchCatalog(query: string, _currentSystem?: string): SearchHit
 
 type Walk = { path: string[]; edges: Edge[]; cost: number; hops: number };
 
-function walkGraph(from: string, to: string, mode: RouteMode): Walk | null {
+function walkGraph(from: string, to: string, mode: RouteMode, ship: "S" | "M" | "L" = "M"): Walk | null {
   type Node = { sys: string; via: string | null; cost: number; hops: number };
   const keyOf = (sys: string, via: string | null) => `${sys}\0${via ?? ""}`;
   const better = (a: { cost: number; hops: number }, b: { cost: number; hops: number }) => {
@@ -464,6 +464,7 @@ function walkGraph(from: string, to: string, mode: RouteMode): Walk | null {
     }
 
     for (const edge of graph.get(cur.sys) ?? []) {
+      if (!tunnelFitsShip(edge.size, ship)) continue;
       const extra = cur.via ? flightBetween(cur.via, edge.jumpCode) : 0;
       const next = { sys: edge.to, via: edge.arriveCode, cost: cur.cost + extra, hops: cur.hops + 1 };
       const nk = keyOf(next.sys, next.via);
@@ -518,7 +519,14 @@ const emptyLeg = (): RouteLeg => ({
   segments: [],
 });
 
-export function findRoute(departure: string, destination: string): RouteResult {
+const SHIP_RANK = { S: 1, M: 2, L: 3 } as const;
+
+/** Official form field is `ship_size`. A ship may use a tunnel if tunnel size >= ship size. */
+export function tunnelFitsShip(tunnel: "S" | "M" | "L", ship: "S" | "M" | "L" = "M") {
+  return SHIP_RANK[tunnel] >= SHIP_RANK[ship];
+}
+
+export function findRoute(departure: string, destination: string, ship: "S" | "M" | "L" = "M"): RouteResult {
   const from = resolveEndpoint(departure);
   const to = resolveEndpoint(destination);
   if (!from || !to) {
@@ -534,8 +542,8 @@ export function findRoute(departure: string, destination: string): RouteResult {
       leastjumps: emptyLeg(),
     };
   }
-  const short = walkGraph(from, to, "shortest");
-  const least = walkGraph(from, to, "leastjumps");
+  const short = walkGraph(from, to, "shortest", ship);
+  const least = walkGraph(from, to, "leastjumps", ship);
   if (!short || !least) {
     return { ok: false, code: "ErrNoRoute", msg: "No route", shortest: null, leastjumps: null };
   }

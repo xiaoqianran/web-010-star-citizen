@@ -145,10 +145,12 @@ export const ControlDisc = forwardRef<
               {zh.hud.back}
             </button>
             <button data-action="departure" onClick={onDeparture}>
-              {zh.disc.setAs} {zh.disc.departure}
+              {zh.disc.setAs}
+              {zh.disc.departure}
             </button>
             <button data-action="destination" onClick={onDestination}>
-              {zh.disc.setAs} {zh.disc.destination}
+              {zh.disc.setAs}
+              {zh.disc.destination}
             </button>
             <button data-action="avoid" className={avoided ? "on" : ""} onClick={onAvoid}>
               {zh.disc.avoid}

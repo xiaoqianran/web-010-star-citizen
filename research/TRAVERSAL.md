@@ -34,8 +34,8 @@
 - GOSS→TERRA / HELIOS：1 跳；GOSS→STANTON：2；GOSS→SOL：5（Through Terra）
 - GOSS→GOSS：成功但无段
 - foo→bar：`ErrInvalidObject`
-- 舰船 S/M/L 对 GOSS→TERRA 均接受
-- 135 条隧道全部 `direction=B`，尺寸 L79 / M36 / S20
+- 舰船键是 **`ship_size`**（不是 `size`）。GOSS→TERRA 默认/S/M = 1 跳；`ship_size=L` = Through Tayac、2 跳
+- 135 条隧道全部 `direction=B`，尺寸 L79 / M36 / S20。规则：隧道尺寸 ≥ 舰船尺寸才可走
 
 ### 其它
 
@@ -56,7 +56,7 @@
 - `GOSS.STARS.GOSSA` / `THEARK` 完整码搜索为空；`Goss A` 可以
 - 航线只接受星系代号/名称：`Cassel→Terra` = `ErrInvalidObject`
 - 空起终点：`ErrValidationFailed`
-- S/M/L 不改变 GOSS→TERRA / GOSS→SOL 结果
+- 表单键 `size=S/M/L` 不改变 GOSS→TERRA / GOSS→SOL 结果（官方忽略 `size`）
 - TAMSA→SOL 5 跳 Through Banshee；VEGA→TERRA 4 跳 Through Bremen
 
 ## 克隆真人遍历（headless Chrome → `research/capture/clone-pass/REPORT.json`）
@@ -132,7 +132,7 @@
 ### 航线
 
 - 又一批 shortest ≠ leastjumps：KINS–SOL 8/7、GEDDON–TRISE 10/8、EEALUS–SOL 9/6、KAYFA–TERRA 5/4、VIRGIL–SOL 9/4、GOSS–TAMSA 9/8、HELIOS–SOL 6/5、OBERON–TAMSA 7/6、HADUR–SOL 8/7、RIHLAH–GOSS 5/4。
-- `size=S/M/L` 不改 SOL–NYX / STANTON–TAMSA 路径。
+- 表单键 `size=S/M/L` 不改 SOL–NYX / STANTON–TAMSA 路径；`ship_size=L` 会改（SOL–NYX 12 / 55.072）。
 - 表单多写 `avoid=DAVIEN` / `avoid=TERRA` / `mode=` / `type=` **官方直接忽略**，仍走原路。
 - `BANU` 不是星系码：`ErrInvalidObject`。
 - `flight_distance` = 中转星系里「到达跳跃点 → 离开跳跃点」的球面欧氏距离之和（出发/到达星系为 0）。本地用 270 个跳跃点坐标重建，14 组官方对完全一致。

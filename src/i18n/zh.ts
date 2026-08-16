@@ -78,7 +78,7 @@ export const zh = {
     information: "信息",
     routing: "航线",
     bookmark: "书签",
-    setAs: "设为",
+    setAs: "设为：",
     departure: "起点",
     destination: "终点",
     avoid: "避开",

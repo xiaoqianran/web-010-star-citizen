@@ -24,7 +24,7 @@
 | POST JSON | `/api/starmap/star-systems/{CODE}` | 单星系天体 |
 | POST JSON | `/api/starmap/celestial-objects/{CODE}` | 单天体详情 |
 | POST form | `/api/starmap/find` `query=` | 搜索 |
-| POST form | `/api/starmap/routes/find` `departure` + `destination` | `shortest` / `leastjumps` |
+| POST form | `/api/starmap/routes/find` `departure` + `destination` + 可选 `ship_size` | `shortest` / `leastjumps`；`size` 键无效 |
 | POST | `/api/starmap/bookmarks/find` | 未登录：`ErrNotAuthenticated` |
 | POST | `/api/starmap/bookmarks/{code}/toggleBookmark` 或 `toggleAvoid` | 需登录 |
 

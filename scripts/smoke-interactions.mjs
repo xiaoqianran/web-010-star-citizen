@@ -117,12 +117,18 @@ async function main() {
   if (!(await click('[data-view="3d"]'))) fail("3D");
 
   if (!(await click('[data-tab="routes"]'))) fail("routes tab");
-  await setInput(".fields .field:nth-of-type(1) input", "Cassel");
-  await setInput(".fields .field:nth-of-type(2) input", "Terra");
+  await setInput(".fields .field:nth-of-type(1) input", "GOSS");
+  await setInput(".fields .field:nth-of-type(2) input", "TERRA");
   if (!(await click(".panel .cta"))) fail("calculate");
   await sleep(80);
   const route = await page.$eval(".route-meta", (el) => el.textContent.trim()).catch(() => "");
-  if (!route) fail("Cassel → Terra calculate produced no route");
+  if (!route) fail("GOSS → TERRA calculate produced no route");
+  const jumpsM = await page.$eval("[data-jumps]", (el) => el.getAttribute("data-jumps")).catch(() => "");
+  if (jumpsM !== "1") fail(`GOSS→TERRA default/M jumps ${jumpsM}, official is 1`);
+  if (!(await click('[data-ship="L"]'))) fail("ship size L");
+  await sleep(80);
+  const jumpsL = await page.$eval("[data-jumps]", (el) => el.getAttribute("data-jumps")).catch(() => "");
+  if (jumpsL !== "2") fail(`GOSS→TERRA ship_size=L jumps ${jumpsL}, official is 2 Through Tayac`);
 
   await click('[data-tab="display"]');
   const display = await page.$(".display-bar");

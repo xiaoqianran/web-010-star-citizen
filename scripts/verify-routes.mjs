@@ -50,7 +50,7 @@ for (const t of boot.data.tunnels.resultset) {
   push(b.code, a.code, ba, t.exit.code, ab, t.entry.code, t.size);
 }
 
-function walkGraph(from, to, mode) {
+function walkGraph(from, to, mode, ship) {
   const keyOf = (sys, via) => `${sys}\0${via ?? ""}`;
   const better = (a, b) =>
     mode === "leastjumps"
@@ -78,6 +78,7 @@ function walkGraph(from, to, mode) {
       continue;
     }
     for (const edge of graph.get(cur.sys) ?? []) {
+      if (ship && ({ S: 1, M: 2, L: 3 }[edge.size] < { S: 1, M: 2, L: 3 }[ship])) continue;
       const extra = cur.via ? flightBetween(cur.via, edge.jumpCode) : 0;
       const next = { sys: edge.to, via: edge.arriveCode, cost: cur.cost + extra, hops: cur.hops + 1 };
       const nk = keyOf(next.sys, next.via);
@@ -172,8 +173,47 @@ for (const [from, to] of pairs) {
   }
 }
 
+const sized = JSON.parse(await readFile(join(ROOT, "research/capture/probe/routes-size.json"), "utf8"));
+let sizeChecked = 0;
+for (const [key, official] of Object.entries(sized)) {
+  const parsed = key.match(/^([A-Z0-9.]+)-([A-Z0-9.]+)-(\{.*\})$/);
+  if (!parsed) continue;
+  const extra = JSON.parse(parsed[3]);
+  const ship = extra.ship_size;
+  if (!ship || !["S", "M", "L"].includes(ship)) continue;
+  const from = parsed[1].includes(".") ? parsed[1].split(".")[0] : parsed[1];
+  const to = parsed[2].includes(".") ? parsed[2].split(".")[0] : parsed[2];
+  const short = walkGraph(from, to, "shortest", ship);
+  const least = walkGraph(from, to, "leastjumps", ship);
+  if (!official.shortest && !official.leastjumps) {
+    if (!short && !least) {
+      sizeChecked += 1;
+      console.log(`OK   ${from}-${to} ship=${ship} no-route (${official.code})`);
+      continue;
+    }
+    fail += 1;
+    console.log(`FAIL ${from}-${to} ship=${ship} local found a route, official ${official.code}`);
+    continue;
+  }
+  const checks = [
+    ["short.jumps", short?.hops, official.shortest?.jumps],
+    ["least.jumps", least?.hops, official.leastjumps?.jumps],
+    ["short.dist", Number(short?.cost.toFixed(8)), Number(Number(official.shortest?.flight_distance).toFixed(8))],
+    ["least.dist", Number(least?.cost.toFixed(8)), Number(Number(official.leastjumps?.flight_distance).toFixed(8))],
+  ];
+  const bad = checks.filter(([, a, b]) => a !== b);
+  sizeChecked += 1;
+  if (bad.length) {
+    fail += 1;
+    console.log(`FAIL ${from}-${to} ship=${ship}`);
+    for (const [name, a, b] of bad) console.log(`  ${name}: local=${a} official=${b}`);
+  } else {
+    console.log(`OK   ${from}-${to} ship=${ship} short=${short.hops}/${short.cost.toFixed(3)}`);
+  }
+}
+
 if (fail) {
-  console.error(`mismatched ${fail}/${pairs.length}`);
+  console.error(`mismatched ${fail} official pairs`);
   process.exit(1);
 }
-console.log(`all ${pairs.length} official pairs match`);
+console.log(`all ${pairs.length} official pairs match, plus ${sizeChecked} ship_size checks`);

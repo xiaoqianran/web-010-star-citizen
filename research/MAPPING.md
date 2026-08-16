@@ -15,7 +15,7 @@
 | `POST /api/starmap/star-systems/{CODE}` | `{}` |
 | `POST /api/starmap/celestial-objects/{CODE}` | `{}` |
 | `POST /api/starmap/find` | `query=` |
-| `POST /api/starmap/routes/find` | `departure` + `destination` + 可选 `size` |
+| `POST /api/starmap/routes/find` | `departure` + `destination` + 可选 `ship_size`（`S`/`M`/`L`） |
 
 ## 社区封装哪里不准
 
@@ -25,7 +25,7 @@
 | `tunnels[].entry.code` / `designation` / `distance` / `lat/lon` | 原样 | `TunnelPoint` 只有 `star_system_id` 和臆造的 `celestial_object_id` | 用 `code` + `star_system_id` |
 | `affiliation[]` | 原样 | 压成 `affiliation_id` / `affiliation_name` | `affiliation[].code` + 官方色 |
 | `subtype` 对象 `{id,name,type}` | 原样 | 写成 `[]SubType` | 单对象 |
-| `routes/find` 的 `size` | 错发 `ship_size` | 同样错发 `ship_size` | 官方忽略该键；本地图不按舰船改路 |
+| `routes/find` 的舰船键 | 发 `ship_size` | 发 `ship_size` | **`ship_size` 会改路**：舰船只能走 `tunnel.size >= ship_size` 的隧道。`size` 被忽略。2026-08-16 探测：GOSS→TERRA `ship_size=L` 变为 Through Tayac、2 跳；S 级隧道对（TERRA–PYRO 等）在 L 舰下会绕路或无路 |
 | `data.config`（LRS 色、星野、隧道外观） | 不读 | 不读 | `src/data/official.ts` |
 | `frost_line` / `habitable_zone_*` / `shader_data` | 透传但不用 | 类型里没有 | 系统视图片环 + 主光色 |
 | `find` 对象带 `star_system.code` | 原样 | `map[string]any` | 搜索行 `于 {星系}` |
@@ -48,7 +48,7 @@
 系统视图像素：官方引擎取 `lon = −longitude`（社区镜像笔记；平方距离不变）。  
 银河位置：官方 `obj3d.position.set(position_x/100, position_z/100, −position_y/100)`。克隆保持 0.18 倍率以配合已锁定的 `camera=0.4` 取景，只对齐轴向（含 −y）。
 
-航线结果表 leftover 列：`sm-label` | `sm-jumps` | `sm-distance` | `sm-selection`（约 76px 高，一行摘要）。表单标签：`DEPARTURE` / `DESTINATION` / `SHIP SIZE`。Q&A：距离单位是 AU。
+航线结果表 leftover 列宽（窗口模式未算出时仍在 DOM）：`sm-label` 200px | `sm-jumps` 70px | `sm-distance` 125px | `sm-selection` 145px；`sm-list-region` 约 76px 高，一行摘要。表单：`sm-departure-region` / `sm-destination-region` / `sm-ship-size` / `sm-go`。Q&A：距离单位是 AU。
 
 ## 航线段
 

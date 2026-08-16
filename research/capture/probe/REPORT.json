@@ -1,0 +1,280 @@
+{
+  "capturedAt": "2026-08-16T20:29:31.232Z",
+  "notes": [
+    "bootup without User-Agent → HTTP 200 code=OK",
+    "SOL→NYX size S/L jumps 10/10 dist 31.698254770871397/31.698254770871397",
+    "SOL→NYX ship_size S jumps 10 (community scrapers send this key)"
+  ],
+  "bootupNoUa": {
+    "status": 200,
+    "code": "OK",
+    "success": 1
+  },
+  "bootup": {
+    "status": 200,
+    "success": 1,
+    "systems": 90,
+    "tunnels": 135,
+    "starfieldCount": 2000
+  },
+  "findLz": {
+    "New Babbage": {
+      "n": 0,
+      "types": []
+    },
+    "Grim HEX": {
+      "n": 0,
+      "types": []
+    },
+    "Port Olisar": {
+      "n": 1,
+      "types": [
+        "MANMADE"
+      ]
+    },
+    "Baijini": {
+      "n": 0,
+      "types": []
+    },
+    "Everus": {
+      "n": 1,
+      "types": [
+        "PLANET"
+      ]
+    },
+    "Tressler": {
+      "n": 0,
+      "types": []
+    },
+    "Seraphim": {
+      "n": 0,
+      "types": []
+    },
+    "Astera": {
+      "n": 0,
+      "types": []
+    },
+    "Lorville": {
+      "n": 1,
+      "types": [
+        "LZ"
+      ]
+    },
+    "Area18": {
+      "n": 1,
+      "types": [
+        "LZ"
+      ]
+    },
+    "Orison": {
+      "n": 1,
+      "types": [
+        "LZ"
+      ]
+    },
+    "Levski": {
+      "n": 1,
+      "types": [
+        "LZ"
+      ]
+    },
+    "Port Renatus": {
+      "n": 1,
+      "types": [
+        "LZ"
+      ]
+    }
+  },
+  "routesSize": {
+    "GOSS-TERRA-{\"size\":\"S\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Goss to Terra",
+        "label": "Through Terra",
+        "jumps": 1,
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      },
+      "leastjumps": {
+        "name": "Goss to Terra",
+        "label": "Through Terra",
+        "jumps": 1,
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      }
+    },
+    "GOSS-TERRA-{\"size\":\"L\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Goss to Terra",
+        "label": "Through Terra",
+        "jumps": 1,
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      },
+      "leastjumps": {
+        "name": "Goss to Terra",
+        "label": "Through Terra",
+        "jumps": 1,
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      }
+    },
+    "GOSS-TERRA-{\"ship_size\":\"S\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Goss to Terra",
+        "label": "Through Terra",
+        "jumps": 1,
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      },
+      "leastjumps": {
+        "name": "Goss to Terra",
+        "label": "Through Terra",
+        "jumps": 1,
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      }
+    },
+    "GOSS-TERRA-{\"ship_size\":\"L\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Goss to Terra",
+        "label": "Through Tayac",
+        "jumps": 2,
+        "first_jump": "Goss - Tayac",
+        "flight_distance": 2.232875585701012
+      },
+      "leastjumps": {
+        "name": "Goss to Terra",
+        "label": "Through Tayac",
+        "jumps": 2,
+        "first_jump": "Goss - Tayac",
+        "flight_distance": 2.232875585701012
+      }
+    },
+    "SOL-NYX-{\"size\":\"S\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Sol to Nyx",
+        "label": "Through Davien",
+        "jumps": 10,
+        "first_jump": "Sol - Davien",
+        "flight_distance": 31.698254770871397
+      },
+      "leastjumps": {
+        "name": "Sol to Nyx",
+        "label": "Through Davien",
+        "jumps": 4,
+        "first_jump": "Sol - Davien",
+        "flight_distance": 32.86809371982527
+      }
+    },
+    "SOL-NYX-{\"size\":\"L\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Sol to Nyx",
+        "label": "Through Davien",
+        "jumps": 10,
+        "first_jump": "Sol - Davien",
+        "flight_distance": 31.698254770871397
+      },
+      "leastjumps": {
+        "name": "Sol to Nyx",
+        "label": "Through Davien",
+        "jumps": 4,
+        "first_jump": "Sol - Davien",
+        "flight_distance": 32.86809371982527
+      }
+    },
+    "SOL-NYX-{\"ship_size\":\"S\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Sol to Nyx",
+        "label": "Through Davien",
+        "jumps": 10,
+        "first_jump": "Sol - Davien",
+        "flight_distance": 31.698254770871397
+      },
+      "leastjumps": {
+        "name": "Sol to Nyx",
+        "label": "Through Davien",
+        "jumps": 4,
+        "first_jump": "Sol - Davien",
+        "flight_distance": 32.86809371982527
+      }
+    },
+    "SOL-NYX-{\"ship_size\":\"L\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Sol to Nyx",
+        "label": "Through Davien",
+        "jumps": 12,
+        "first_jump": "Sol - Davien",
+        "flight_distance": 55.07166518683863
+      },
+      "leastjumps": {
+        "name": "Sol to Nyx",
+        "label": "Through Davien",
+        "jumps": 6,
+        "first_jump": "Sol - Davien",
+        "flight_distance": 60.814883391897496
+      }
+    },
+    "STANTON-PYRO-{\"size\":\"S\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Stanton to Pyro",
+        "label": "Through Pyro",
+        "jumps": 1,
+        "first_jump": "Stanton - Pyro",
+        "flight_distance": 0
+      },
+      "leastjumps": {
+        "name": "Stanton to Pyro",
+        "label": "Through Pyro",
+        "jumps": 1,
+        "first_jump": "Stanton - Pyro",
+        "flight_distance": 0
+      }
+    },
+    "STANTON-PYRO-{\"size\":\"L\"}": {
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "name": "Stanton to Pyro",
+        "label": "Through Pyro",
+        "jumps": 1,
+        "first_jump": "Stanton - Pyro",
+        "flight_distance": 0
+      },
+      "leastjumps": {
+        "name": "Stanton to Pyro",
+        "label": "Through Pyro",
+        "jumps": 1,
+        "first_jump": "Stanton - Pyro",
+        "flight_distance": 0
+      }
+    }
+  }
+}

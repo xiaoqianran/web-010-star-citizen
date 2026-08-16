@@ -162,6 +162,16 @@ async function main() {
   await writeFile(join(OUT, "dump-calculate.json"), JSON.stringify(afterCalc, null, 2) + "\n");
   await page.screenshot({ path: join(OUT, "02-calculate.png") }).catch(() => undefined);
 
+  const large = (await clickText(["large"])) || (await clickText(["l"]));
+  note("ship-size-l", { text: String(large) });
+  await sleep(3500);
+  const afterL = await dumpHud();
+  note("calculate-l", {
+    found: afterL.items.filter((i) => i.vis && i.text).map((i) => `${i.cls}:${i.text}`).slice(0, 12).join(" | "),
+  });
+  await writeFile(join(OUT, "dump-calculate-l.json"), JSON.stringify(afterL, null, 2) + "\n");
+  await page.screenshot({ path: join(OUT, "03-calculate-l.png") }).catch(() => undefined);
+
   const summary = {
     capturedAt: new Date().toISOString(),
     searchTerra: { row: terraRow, camera: afterSearch.camera, location: afterSearch.location, selection: afterSearch.selection },
@@ -172,12 +182,17 @@ async function main() {
       through: (afterCalc.bodyText.match(/THROUGH [A-Z][A-Za-z' ]+/) || [])[0] || null,
       visibleTh: afterCalc.items.filter((i) => i.tag === "th" && i.vis).map((i) => ({ cls: i.cls, text: i.text, box: i.box })),
     },
+    calculateL: {
+      camera: afterL.camera,
+      jumps: (afterL.bodyText.match(/(\d+)\s+JUMP/i) || [])[1] || null,
+      through: (afterL.bodyText.match(/THROUGH [A-Z][A-Za-z' ]+/) || [])[0] || null,
+    },
     log,
   };
   await writeFile(join(OUT, "SUMMARY.json"), JSON.stringify(summary, null, 2) + "\n");
   await writeFile(
     join(OUT, "SUMMARY.md"),
-    `# Official restore pass\n\nCaptured: ${summary.capturedAt}\n\n- Search Terra STAR SYSTEM → location=${summary.searchTerra.location} camera=${summary.searchTerra.camera}\n- Empty click after that → location=${summary.emptyClick.location} camera=${summary.emptyClick.camera}\n- Galaxy CALCULATE JUMP=${summary.calculate.jumps} ${summary.calculate.through || ""}\n`,
+    `# Official restore pass\n\nCaptured: ${summary.capturedAt}\n\n- Search Terra STAR SYSTEM → location=${summary.searchTerra.location} camera=${summary.searchTerra.camera}\n- Empty click after that → location=${summary.emptyClick.location} camera=${summary.emptyClick.camera}\n- Galaxy CALCULATE JUMP=${summary.calculate.jumps} ${summary.calculate.through || ""}\n- Galaxy CALCULATE ship LARGE JUMP=${summary.calculateL.jumps} ${summary.calculateL.through || ""}\n`,
   );
   await browser.close();
   console.log("wrote", OUT);

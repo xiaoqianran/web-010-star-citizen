@@ -978,6 +978,27 @@
   color: #ffb534;
 }
 
+.sm-list-region {
+  max-height: 76px;
+  overflow: hidden;
+}
+
+.sm-list .sm-label {
+  width: 200px;
+}
+
+.sm-list .sm-jumps {
+  width: 70px;
+}
+
+.sm-list .sm-distance {
+  width: 125px;
+}
+
+.sm-list .sm-selection {
+  width: 145px;
+}
+
 .label3d.poi {
   color: #ff6b6b;
 }
