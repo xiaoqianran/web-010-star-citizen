@@ -136,6 +136,12 @@ export const zh = {
     empty: "没有符合筛选的航线。",
     shortest: "最短航程",
     leastJumps: "最少跳跃",
+    jumps: "跳跃",
+    distance: "距离",
+    selection: "选择",
+    through: "途经",
+    au: "AU",
+    firstJump: "首跳",
   },
   display: {
     jumpTunnels: "跳跃隧道",

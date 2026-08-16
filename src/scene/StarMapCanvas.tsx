@@ -7,7 +7,7 @@ import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
 import type { CameraTuple, Level } from "@/data/cameraUrl";
-import { cameraToPose, formatCamera, poseToCamera } from "@/data/cameraUrl";
+import { cameraToPose, formatCamera, GALAXY_HOME, poseToCamera, SYSTEM_HOME } from "@/data/cameraUrl";
 import type { CapturedBody } from "@/data/celestial";
 import { bodyLabel, placeBodies, systemScale } from "@/data/celestial";
 import type { OfficialSystemZones } from "@/data/official";
@@ -202,7 +202,7 @@ export function StarMapCanvas({
     scene.add(key);
 
     const starGeo = new THREE.BufferGeometry();
-    const starPos = new Float32Array(3200 * 3);
+    const starPos = new Float32Array(2000 * 3);
     for (let i = 0; i < starPos.length; i++) starPos[i] = (Math.random() - 0.5) * 220;
     starGeo.setAttribute("position", new THREE.BufferAttribute(starPos, 3));
     scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: STARFIELD_COLOR, size: 0.1 })));
@@ -233,8 +233,9 @@ export function StarMapCanvas({
     const meshes = new Map<string, THREE.Object3D>();
     const sunMats: THREE.ShaderMaterial[] = [];
 
+    // Official galaxy remap is (x/100, z/100, -y/100). Keep 0.18 so camera=0.4 still frames the cluster.
     const GAL = 0.18;
-    const galPos = (s: SystemRow) => new THREE.Vector3(s.position[0] * GAL, s.position[2] * GAL, s.position[1] * GAL);
+    const galPos = (s: SystemRow) => new THREE.Vector3(s.position[0] * GAL, s.position[2] * GAL, -s.position[1] * GAL);
     const galaxyMeshes = new Map<string, THREE.Mesh>();
     const galaxyHits: THREE.Object3D[] = [];
     const galHitMat = new THREE.MeshBasicMaterial({ visible: false });
@@ -676,7 +677,7 @@ export function StarMapCanvas({
       applyCamera,
       resetHome: () => {
         const galaxy = modeRef.current === "galaxy";
-        const home: CameraTuple = galaxy ? [10, 0, 0.4, 0, 0] : [10, 102.98, 0.002, 0, 0];
+        const home: CameraTuple = galaxy ? GALAXY_HOME : SYSTEM_HOME;
         applyCamera(home, galaxy ? "galaxy" : "system");
         camRef.current(home);
       },
@@ -826,7 +827,7 @@ export function StarMapCanvas({
 
   useEffect(() => {
     if (!lookNonce) return;
-    api.current?.resetHome();
+    api.current?.applyCamera(camera, mode);
   }, [lookNonce]);
 
   useEffect(() => {

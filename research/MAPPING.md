@@ -44,7 +44,11 @@
 
 `id code designation name type appearance distance latitude longitude size habitable parent_id show_label show_orbitlines sensor_* shader_data subtype affiliation age axial_tilt orbit_period fairchanceact texture children population`
 
-球面：`x = d·cos(lat)·cos(lon)`，`y = d·sin(lat)`，`z = d·cos(lat)·sin(lon)`。
+球面（航线距离用无符号经度，与官方 `flight_distance` 对齐）：`x = d·cos(lat)·cos(lon)`，`y = d·sin(lat)`，`z = d·cos(lat)·sin(lon)`。  
+系统视图像素：官方引擎取 `lon = −longitude`（社区镜像笔记；平方距离不变）。  
+银河位置：官方 `obj3d.position.set(position_x/100, position_z/100, −position_y/100)`。克隆保持 0.18 倍率以配合已锁定的 `camera=0.4` 取景，只对齐轴向（含 −y）。
+
+航线结果表 leftover 列：`sm-label` | `sm-jumps` | `sm-distance` | `sm-selection`（约 76px 高，一行摘要）。表单标签：`DEPARTURE` / `DESTINATION` / `SHIP SIZE`。Q&A：距离单位是 AU。
 
 ## 航线段
 

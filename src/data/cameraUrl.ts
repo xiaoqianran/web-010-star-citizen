@@ -8,9 +8,17 @@ export type MapUrl = {
   camera: CameraTuple;
   tab: TabId;
   view: "3d" | "2d";
+  selection?: string | null;
 };
 
-const DEFAULT_CAM: CameraTuple = [10, 102.98, 0.002, 0, 0];
+/** Official first-load / GLX home: `camera=10,0,0.4,0,0`. */
+export const GALAXY_HOME: CameraTuple = [10, 0, 0.4, 0, 0];
+/** Official compass / system home (GOSS field capture): `camera=10,102.98,0.002,0,0`. */
+export const SYSTEM_HOME: CameraTuple = [10, 102.98, 0.002, 0, 0];
+/** Official search → STAR SYSTEM fly-in (Terra): `camera=60,0,0.002,0,0`. */
+export const SEARCH_SYSTEM_CAM: CameraTuple = [60, 0, 0.002, 0, 0];
+
+const DEFAULT_CAM: CameraTuple = [...SYSTEM_HOME];
 
 export function parseCamera(raw: string | null): CameraTuple {
   if (!raw) return [...DEFAULT_CAM];
@@ -48,6 +56,7 @@ export function writeMapUrl(next: MapUrl) {
   q.set("location", next.location);
   if (next.system && next.system !== next.location) q.set("system", next.system);
   q.set("camera", formatCamera(next.camera));
+  if (next.selection) q.set("selection", next.selection);
   if (next.tab) q.set("tab", next.tab);
   if (next.view === "2d") q.set("view", "2d");
   const url = `${window.location.pathname}?${q.toString()}`;

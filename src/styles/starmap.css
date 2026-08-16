@@ -569,6 +569,28 @@
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   gap: 10px;
+  align-items: end;
+}
+
+.field {
+  display: grid;
+  gap: 4px;
+}
+
+.field span {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: #0a8bb7;
+}
+
+.route-seg {
+  margin: 8px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.route-seg button {
+  color: #ffb534;
 }
 
 .fields input,

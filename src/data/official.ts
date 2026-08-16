@@ -3,10 +3,12 @@
  * Source of truth: captured POST /api/starmap/* JSON — not community scrapers.
  *
  * Dymerz/RSI-Scraper returns raw JSON (good) but posts routes with `ship_size`
- * (official field is `size`) and never reads `data.config`.
+ * (official form field observed as `size`) and never reads `data.config`.
  * koo04/GoScrapeRSI re-types the same endpoints and drops/renames keys:
  * position {x,y,z} vs position_x/y/z, TunnelPoint missing code/designation,
  * subtype as array vs object, affiliation flattened.
+ * KarelWintersky/RSI_Starmap_Mirror publishes engine notes (galaxy axis, -longitude)
+ * but vendors the official bundle — this repo does not copy that.
  */
 import bootup from "@capture/api/bootup.json";
 

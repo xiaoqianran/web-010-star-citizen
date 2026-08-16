@@ -91,6 +91,23 @@ async function main() {
   const afterBlur = await page.evaluate(() => document.activeElement?.tagName);
   if (afterBlur === "INPUT") fail("canvas click did not blur search");
 
+  if (!(await click('[data-tab="search"]'))) fail("search tab reopen");
+  await setInput("[data-search]", "Terra");
+  await page.focus("[data-search]");
+  await page.keyboard.press("Enter");
+  await sleep(80);
+  const terraRow = await page.evaluate(() => {
+    const tr = [...document.querySelectorAll(".panel tbody tr")].find((row) =>
+      row.children[1]?.textContent?.includes("星系"),
+    );
+    tr?.click();
+    return tr?.children[0]?.textContent?.trim() || null;
+  });
+  if (terraRow !== "Terra") fail(`Terra STAR SYSTEM row was ${terraRow}`);
+  await sleep(200);
+  const terraCam = await page.evaluate(() => new URL(location.href).searchParams.get("camera"));
+  if (!terraCam?.startsWith("60,0,0.002")) fail(`search Terra STAR SYSTEM camera ${terraCam}, official is 60,0,0.002`);
+
   if (!(await click('[data-level="galaxy"]'))) fail("GLX");
   await sleep(200);
   if (!(await click('[data-level="system"]'))) fail("SYS");
@@ -100,8 +117,8 @@ async function main() {
   if (!(await click('[data-view="3d"]'))) fail("3D");
 
   if (!(await click('[data-tab="routes"]'))) fail("routes tab");
-  await setInput(".fields input:nth-of-type(1)", "Cassel");
-  await setInput(".fields input:nth-of-type(2)", "Terra");
+  await setInput(".fields .field:nth-of-type(1) input", "Cassel");
+  await setInput(".fields .field:nth-of-type(2) input", "Terra");
   if (!(await click(".panel .cta"))) fail("calculate");
   await sleep(80);
   const route = await page.$eval(".route-meta", (el) => el.textContent.trim()).catch(() => "");

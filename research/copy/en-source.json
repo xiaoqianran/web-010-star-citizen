@@ -53,8 +53,16 @@
     "viewRoute": "View route",
     "exitRoute": "Exit route",
     "prevSegment": "Previous segment",
+    "nextSegment": "Next segment",
     "shipSize": "Ship size",
     "jumpTunnels": "Jump tunnels",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "departure": "Departure",
+    "destination": "Destination",
+    "jumps": "Jumps",
+    "distance": "Distance",
+    "selection": "Selection",
+    "through": "Through",
+    "au": "AU"
   }
 }

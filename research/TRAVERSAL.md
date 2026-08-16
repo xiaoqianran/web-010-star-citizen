@@ -15,7 +15,8 @@
 | c | 距离/缩放。~0.002 星系，~0.006–0.02 跳跃标签，~0.001 近天体，>0.05 银河 |
 | d, e | 目标偏移；星系视图常为 0，进入天体后出现小数 |
 
-`location` 为层级码（`GOSS` 或 `GOSS.STARS.GOSSA`）。tab 走路径 `"" | search | bookmarks | routes`。
+`location` 为层级码（`GOSS` 或 `GOSS.STARS.GOSSA`）。tab 走路径 `"" | search | bookmarks | routes`。  
+搜索点选 STAR SYSTEM 锁定 `camera=60,0,0.002,0,0`；罗盘系统主视角仍是 `10,102.98,0.002,0,0`。
 
 ### 搜索 `/api/starmap/find`
 

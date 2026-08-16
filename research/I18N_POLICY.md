@@ -30,5 +30,9 @@
 | You have no bookmarks yet. | 你还没有书签。 |
 | Single star / Binary | 单星 / 双星 |
 | Jump Point | 跳跃点 |
+| Departure / Destination | 起点 / 终点 |
+| Jumps / Distance / Selection | 跳跃 / 距离 / 选择 |
+| Through | 途经（后接星系专有名词） |
+| AU | AU（单位不译） |
 
 完整对照见 `research/copy/en-source.json` 与 `src/i18n/zh.ts`。
