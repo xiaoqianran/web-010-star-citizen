@@ -215,6 +215,32 @@
   box-shadow: 0 0 28px #00edff66;
 }
 
+.cta::before,
+.cta::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  width: 10px;
+  border: 1px solid #14e6fa;
+}
+
+.cta::before {
+  left: 6px;
+  border-right: 0;
+}
+
+.cta::after {
+  right: 6px;
+  border-left: 0;
+}
+
+.slim-cta {
+  min-width: 140px;
+  height: 34px;
+  font-size: 11px;
+}
+
 .window-link {
   margin-top: 14px;
   color: #29648a;
@@ -255,6 +281,11 @@
   color: #ffb534;
 }
 
+.label3d.jump {
+  color: #5adbef;
+  font-size: 10px;
+}
+
 .hud {
   position: absolute;
   inset: 0;
@@ -262,7 +293,19 @@
   z-index: 12;
 }
 
-.hud * {
+.hud button,
+.hud input,
+.hud a,
+.hud .panel,
+.hud .tab,
+.hud .levels,
+.hud .utils,
+.hud .focus,
+.hud .tools,
+.hud .brand-ark,
+.hud .compass,
+.hud .disc-menu,
+.hud .info-card {
   pointer-events: auto;
 }
 
@@ -489,38 +532,39 @@
   color: #7acbff;
 }
 
-.disc {
+.disc-wrap {
   position: absolute;
-  right: 8%;
-  top: 28%;
-  width: 280px;
+  width: 240px;
+  height: 240px;
+  transform: translate(-50%, -50%);
   pointer-events: none;
+  z-index: 15;
 }
 
-.disc-ring {
-  width: 220px;
-  height: 220px;
-  border: 1px solid #14e6fa66;
-  border-radius: 50%;
-  box-shadow: 0 0 30px #00edff22 inset;
+.disc-svg {
+  width: 240px;
+  height: 240px;
+  filter: drop-shadow(0 0 12px #00edff55);
 }
 
 .disc-meta {
   position: absolute;
-  left: -30px;
-  top: 70px;
+  left: -92px;
+  top: 78px;
+  width: 90px;
   text-align: right;
   color: #fee5a1;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .disc-menu {
   position: absolute;
-  left: 170px;
-  top: 58px;
+  left: 228px;
+  top: 72px;
   display: grid;
-  gap: 8px;
+  gap: 10px;
 }
 
 .disc-menu button {
@@ -535,13 +579,15 @@
 }
 
 .info-card {
-  position: absolute;
+  position: fixed;
   top: 100px;
   right: 24px;
-  width: 280px;
+  left: auto;
+  width: 260px;
   background: #000c14d9;
   border: 1px solid #0c67a1;
   padding: 14px 16px;
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
 }
 
 .info-card h2 {
@@ -570,4 +616,37 @@
   font-size: 11px;
   letter-spacing: 0.14em;
   pointer-events: none;
+  transform: translateY(-50%);
+  text-shadow: 0 0 8px #ffb53488;
+}
+
+.panel tbody tr {
+  cursor: pointer;
+}
+
+.panel tbody tr:hover {
+  background: #0a568833;
+  color: #ffb534;
+}
+
+.compass span {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #14e6fa55;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.utils button.on {
+  color: #14e6fa;
+}
+
+.focus i {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #14e6fa;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00edff;
 }
