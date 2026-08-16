@@ -196,7 +196,8 @@ DISPLAY 在银河视图类名是 `sm-galaxy-display-tab`，星系视图是 `sm-s
 
 ## 仍须对照官网补的现场
 
-- DISPLAY 每一项开关的完整上屏（先 GLX 再点 galaxy-display-tab）
-- 登录态书签 JSON
-- 官方键盘是否 WASD、右键/中键、指南针是否复位
-- 控制盘穿跃动画（克隆仍是闪白换系；全屏盘上仍未见到 Jump Through）
+- 登录态书签 JSON（未登录只有 `ErrNotAuthenticated`）
+- 官方键盘在 3D 画布聚焦时的 WASD（这次按键时焦点还在书签搜索框，camera 查询未变）
+- 搜索框是否要回车才出 `N ITEMS FOUND` 表（窗口模式只见到底栏输入）
+- 航线 Calculate 之后的结果表 / shortest 开关（字段已能写入 GOSS/TERRA，表未截到）
+- 控制盘穿跃动画（现场仍无 Jump Through，克隆保持闪白换系）

@@ -219,12 +219,12 @@ async function main() {
   await click('[data-level="galaxy"]');
   await openTab("display");
   const displaySel = ".display-bar input, .display-grid input";
-  const displayBefore = await page.evaluate((sel) =>
-    [...document.querySelectorAll(sel)].map((el) => ({
+  const displayBefore = await page.evaluate((sel) => {
+    return [...document.querySelectorAll(sel)].map((el) => ({
       key: el.getAttribute("data-affil") || el.getAttribute("data-tunnel") || el.getAttribute("data-scan"),
       checked: el.checked,
-    })),
-  , displaySel);
+    }));
+  }, displaySel);
   const displayToggles = [];
   const n = await page.$$eval(displaySel, (els) => els.length);
   for (let i = 0; i < n; i++) {
