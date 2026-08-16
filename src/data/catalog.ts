@@ -5,6 +5,14 @@ import objectPositions from "@capture/index/object-positions.json";
 import type { CapturedBody } from "./celestial";
 import { bodyLabel, systemCodeOf } from "./celestial";
 import { AFFILIATIONS, zonesFromSystemRow, type OfficialSystemZones } from "./official";
+import {
+  buildTunnelGraph,
+  tunnelFitsShip,
+  walkGraph,
+  withEndpointAu,
+  type RouteMode as GraphRouteMode,
+  type Walk,
+} from "./routeGraph";
 
 export type SystemRow = {
   id: number;
@@ -59,7 +67,7 @@ export type RouteResult = {
   leastjumps: RouteLeg | null;
 };
 
-export type RouteMode = "shortest" | "leastjumps";
+export type RouteMode = GraphRouteMode;
 
 type BootSystem = {
   id: number;
@@ -270,9 +278,15 @@ export type SystemPack = {
 };
 
 const systemCache = new Map<string, SystemPack>();
+const loaderByCode = new Map(
+  Object.keys(systemLoaders).map((key) => {
+    const file = key.split("/").pop() ?? key;
+    return [file.replace(/\.json$/i, "").toUpperCase(), key] as const;
+  }),
+);
 
 function loaderKey(code: string) {
-  return Object.keys(systemLoaders).find((k) => k.endsWith(`/${code}.json`));
+  return loaderByCode.get(code.toUpperCase());
 }
 
 export function peekSystem(code: string) {
@@ -318,85 +332,11 @@ export async function loadSystem(code: string) {
   }
 }
 
-export { AFFILIATIONS };
+export { AFFILIATIONS, tunnelFitsShip };
 
-type Edge = {
-  to: string;
-  size: "S" | "M" | "L";
-  name: string;
-  jumpCode: string;
-  arriveName: string;
-  arriveCode: string;
-};
-
-type JumpRec = {
-  distance: number;
-  latitude: number;
-  longitude: number;
-};
-
-const jumps = jumpPointIndex as Record<string, JumpRec>;
+const jumps = jumpPointIndex as Record<string, { distance: number; latitude: number; longitude: number }>;
 const objectPos = objectPositions as unknown as Record<string, [number, number, number]>;
-
-function sphCart(distance: number, latitude: number, longitude: number) {
-  const la = (latitude * Math.PI) / 180;
-  const lo = (longitude * Math.PI) / 180;
-  return {
-    x: distance * Math.cos(la) * Math.cos(lo),
-    y: distance * Math.sin(la),
-    z: distance * Math.cos(la) * Math.sin(lo),
-  };
-}
-
-function jpCart(code: string) {
-  const j = jumps[code];
-  if (!j) return { x: 0, y: 0, z: 0 };
-  return sphCart(j.distance, j.latitude, j.longitude);
-}
-
-function objectCart(code: string) {
-  const trip = objectPos[code];
-  if (trip) return sphCart(trip[0], trip[1], trip[2]);
-  const j = jumps[code];
-  if (j) return sphCart(j.distance, j.latitude, j.longitude);
-  return null;
-}
-
-function flightBetween(a?: string | null, b?: string | null) {
-  if (!a || !b) return 0;
-  const pa = jpCart(a);
-  const pb = jpCart(b);
-  return Math.hypot(pa.x - pb.x, pa.y - pb.y, pa.z - pb.z);
-}
-
-const graph = new Map<string, Edge[]>();
-for (const t of boot.data.tunnels.resultset) {
-  const a = systemById.get(t.entry.star_system_id);
-  const b = systemById.get(t.exit.star_system_id);
-  if (!a || !b) continue;
-  const ab = t.entry.designation || `${a.name} - ${b.name}`;
-  const ba = t.exit.designation || `${b.name} - ${a.name}`;
-  const listA = graph.get(a.code) ?? [];
-  listA.push({
-    to: b.code,
-    size: t.size,
-    name: ab,
-    jumpCode: t.entry.code,
-    arriveName: ba,
-    arriveCode: t.exit.code,
-  });
-  graph.set(a.code, listA);
-  const listB = graph.get(b.code) ?? [];
-  listB.push({
-    to: a.code,
-    size: t.size,
-    name: ba,
-    jumpCode: t.exit.code,
-    arriveName: ab,
-    arriveCode: t.entry.code,
-  });
-  graph.set(b.code, listB);
-}
+const graph = buildTunnelGraph(boot.data.tunnels.resultset, systemById);
 
 export const tunnels = boot.data.tunnels.resultset.map((t) => ({
   size: t.size,
@@ -449,66 +389,6 @@ export function searchCatalog(query: string, _currentSystem?: string): SearchHit
   return [...objHits, ...sysHits].sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name)).slice(0, 32);
 }
 
-type Walk = { path: string[]; edges: Edge[]; cost: number; hops: number };
-
-function walkGraph(from: string, to: string, mode: RouteMode, ship: "S" | "M" | "L" = "M"): Walk | null {
-  type Node = { sys: string; via: string | null; cost: number; hops: number };
-  const keyOf = (sys: string, via: string | null) => `${sys}\0${via ?? ""}`;
-  const better = (a: { cost: number; hops: number }, b: { cost: number; hops: number }) => {
-    if (mode === "leastjumps") return a.hops < b.hops || (a.hops === b.hops && a.cost < b.cost);
-    return a.cost < b.cost || (a.cost === b.cost && a.hops < b.hops);
-  };
-  const best = new Map<string, { cost: number; hops: number }>();
-  const prev = new Map<string, { pk: string; edge: Edge }>();
-  const q: Node[] = [{ sys: from, via: null, cost: 0, hops: 0 }];
-  best.set(keyOf(from, null), { cost: 0, hops: 0 });
-  let destKey: string | null = null;
-  let destScore = { cost: Number.POSITIVE_INFINITY, hops: Number.POSITIVE_INFINITY };
-
-  while (q.length) {
-    let idx = 0;
-    for (let i = 1; i < q.length; i++) {
-      if (better(q[i], q[idx])) idx = i;
-    }
-    const cur = q.splice(idx, 1)[0];
-    const ck = keyOf(cur.sys, cur.via);
-    const known = best.get(ck);
-    if (!known || cur.cost !== known.cost || cur.hops !== known.hops) continue;
-
-    if (cur.sys === to && cur.via) {
-      if (better(cur, destScore)) {
-        destScore = { cost: cur.cost, hops: cur.hops };
-        destKey = ck;
-      }
-      continue;
-    }
-
-    for (const edge of graph.get(cur.sys) ?? []) {
-      if (!tunnelFitsShip(edge.size, ship)) continue;
-      const extra = cur.via ? flightBetween(cur.via, edge.jumpCode) : 0;
-      const next = { sys: edge.to, via: edge.arriveCode, cost: cur.cost + extra, hops: cur.hops + 1 };
-      const nk = keyOf(next.sys, next.via);
-      const held = best.get(nk);
-      if (held && !better(next, held)) continue;
-      best.set(nk, { cost: next.cost, hops: next.hops });
-      prev.set(nk, { pk: ck, edge });
-      q.push(next);
-    }
-  }
-
-  if (!destKey) return null;
-  const edges: Edge[] = [];
-  const path = [to];
-  let cursor = destKey;
-  while (prev.has(cursor)) {
-    const step = prev.get(cursor)!;
-    edges.unshift(step.edge);
-    path.unshift(step.pk.split("\0")[0]);
-    cursor = step.pk;
-  }
-  return { path, edges, cost: destScore.cost, hops: destScore.hops };
-}
-
 function packLeg(from: string, to: string, walk: Walk): RouteLeg {
   const a = systemByCode.get(from)!;
   const b = systemByCode.get(to)!;
@@ -539,31 +419,9 @@ const emptyLeg = (): RouteLeg => ({
   segments: [],
 });
 
-const SHIP_RANK = { S: 1, M: 2, L: 3 } as const;
-
-/** Official form field is `ship_size`. A ship may use a tunnel if tunnel size >= ship size. */
-export function tunnelFitsShip(tunnel: "S" | "M" | "L", ship: "S" | "M" | "L" = "M") {
-  return SHIP_RANK[tunnel] >= SHIP_RANK[ship];
-}
-
 function objectCodeOf(raw: string) {
   const u = raw.trim().toUpperCase();
   return objectByCode.has(u) ? u : null;
-}
-
-function objectToJump(objectCode: string | null, jumpCode?: string | null) {
-  if (!objectCode || !jumpCode) return 0;
-  const a = objectCart(objectCode);
-  if (!a) return 0;
-  const b = jpCart(jumpCode);
-  return Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z);
-}
-
-function withEndpointAu(walk: Walk, departure: string, destination: string): Walk {
-  const extra =
-    objectToJump(objectCodeOf(departure), walk.edges[0]?.jumpCode) +
-    objectToJump(objectCodeOf(destination), walk.edges[walk.edges.length - 1]?.arriveCode);
-  return extra ? { ...walk, cost: walk.cost + extra } : walk;
 }
 
 const routeCache = new Map<string, RouteResult>();
@@ -595,8 +453,20 @@ export function findRoute(departure: string, destination: string, ship: "S" | "M
       leastjumps: emptyLeg(),
     });
   }
-  const short = walkGraph(from, to, "shortest", ship);
-  const least = walkGraph(from, to, "leastjumps", ship);
+  const short = withEndpointAu(
+    walkGraph(graph, jumps, from, to, "shortest", ship),
+    objectPos,
+    jumps,
+    departure,
+    destination,
+  );
+  const least = withEndpointAu(
+    walkGraph(graph, jumps, from, to, "leastjumps", ship),
+    objectPos,
+    jumps,
+    departure,
+    destination,
+  );
   if (!short || !least) {
     // Official BANSHEE→YULIN ship_size=L: success=1 code=OK with null legs (not ErrNoRoute).
     return store({ ok: true, code: "OK", msg: "OK", empty: true, shortest: null, leastjumps: null });
@@ -605,8 +475,8 @@ export function findRoute(departure: string, destination: string, ship: "S" | "M
     ok: true,
     code: "OK",
     msg: "OK",
-    shortest: packLeg(from, to, withEndpointAu(short, departure, destination)),
-    leastjumps: packLeg(from, to, withEndpointAu(least, departure, destination)),
+    shortest: packLeg(from, to, short),
+    leastjumps: packLeg(from, to, least),
   });
 }
 

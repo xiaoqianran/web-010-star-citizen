@@ -10,4 +10,13 @@ export default defineConfig({
       "@capture": fileURLToPath(new URL("./research/capture", import.meta.url)),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules/three")) return "three";
+        },
+      },
+    },
+  },
 });

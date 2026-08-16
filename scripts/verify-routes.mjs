@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 /**
  * Compare local shortest/leastjumps reconstruction against captured official routes.
+ * Walks the same graph as src/data/catalog.ts (src/data/routeGraph.ts).
  */
 import { readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildTunnelGraph, walkGraph, withEndpointAu } from "../src/data/routeGraph.ts";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const boot = JSON.parse(await readFile(join(ROOT, "research/capture/api/bootup.json"), "utf8"));
@@ -14,120 +16,22 @@ const objectPos = JSON.parse(await readFile(join(ROOT, "research/capture/index/o
 const systems = boot.data.systems.resultset;
 const byId = new Map(systems.map((s) => [s.id, s]));
 const byCode = new Map(systems.map((s) => [s.code, s]));
+const graph = buildTunnelGraph(boot.data.tunnels.resultset, byId);
 
-function sphCart(distance, latitude, longitude) {
-  const la = (latitude * Math.PI) / 180;
-  const lo = (longitude * Math.PI) / 180;
+function walk(fromSys, toSys, mode, ship, departure = fromSys, destination = toSys) {
+  const result = withEndpointAu(
+    walkGraph(graph, jumps, fromSys, toSys, mode, ship),
+    objectPos,
+    jumps,
+    departure,
+    destination,
+  );
+  if (!result) return null;
   return {
-    x: distance * Math.cos(la) * Math.cos(lo),
-    y: distance * Math.sin(la),
-    z: distance * Math.cos(la) * Math.sin(lo),
+    ...result,
+    first: result.edges[0]?.name,
+    through: byCode.get(result.path[1])?.name,
   };
-}
-
-function jpCart(code) {
-  const j = jumps[code];
-  if (!j) return { x: 0, y: 0, z: 0 };
-  return sphCart(j.distance, j.latitude, j.longitude);
-}
-
-function objectCart(code) {
-  const trip = objectPos[code];
-  if (trip) return sphCart(trip[0], trip[1], trip[2]);
-  const j = jumps[code];
-  if (j) return sphCart(j.distance, j.latitude, j.longitude);
-  return null;
-}
-
-function objectToJump(objectCode, jumpCode) {
-  if (!objectCode || !jumpCode || !objectCode.includes(".")) return 0;
-  const a = objectCart(objectCode);
-  if (!a) return 0;
-  const b = jpCart(jumpCode);
-  return Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z);
-}
-
-function flightBetween(a, b) {
-  if (!a || !b) return 0;
-  const pa = jpCart(a);
-  const pb = jpCart(b);
-  return Math.hypot(pa.x - pb.x, pa.y - pb.y, pa.z - pb.z);
-}
-
-const graph = new Map();
-for (const t of boot.data.tunnels.resultset) {
-  const a = byId.get(t.entry.star_system_id);
-  const b = byId.get(t.exit.star_system_id);
-  if (!a || !b) continue;
-  const push = (from, to, name, jumpCode, arriveName, arriveCode, size) => {
-    const list = graph.get(from) ?? [];
-    list.push({ to, name, jumpCode, arriveName, arriveCode, size });
-    graph.set(from, list);
-  };
-  const ab = t.entry.designation || `${a.name} - ${b.name}`;
-  const ba = t.exit.designation || `${b.name} - ${a.name}`;
-  push(a.code, b.code, ab, t.entry.code, ba, t.exit.code, t.size);
-  push(b.code, a.code, ba, t.exit.code, ab, t.entry.code, t.size);
-}
-
-function walkGraph(from, to, mode, ship) {
-  const keyOf = (sys, via) => `${sys}\0${via ?? ""}`;
-  const better = (a, b) =>
-    mode === "leastjumps"
-      ? a.hops < b.hops || (a.hops === b.hops && a.cost < b.cost)
-      : a.cost < b.cost || (a.cost === b.cost && a.hops < b.hops);
-  const best = new Map();
-  const prev = new Map();
-  const q = [{ sys: from, via: null, cost: 0, hops: 0 }];
-  best.set(keyOf(from, null), { cost: 0, hops: 0 });
-  let destKey = null;
-  let destScore = { cost: Infinity, hops: Infinity };
-
-  while (q.length) {
-    let idx = 0;
-    for (let i = 1; i < q.length; i++) if (better(q[i], q[idx])) idx = i;
-    const cur = q.splice(idx, 1)[0];
-    const ck = keyOf(cur.sys, cur.via);
-    const known = best.get(ck);
-    if (!known || cur.cost !== known.cost || cur.hops !== known.hops) continue;
-    if (cur.sys === to && cur.via) {
-      if (better(cur, destScore)) {
-        destScore = { cost: cur.cost, hops: cur.hops };
-        destKey = ck;
-      }
-      continue;
-    }
-    for (const edge of graph.get(cur.sys) ?? []) {
-      if (ship && ({ S: 1, M: 2, L: 3 }[edge.size] < { S: 1, M: 2, L: 3 }[ship])) continue;
-      const extra = cur.via ? flightBetween(cur.via, edge.jumpCode) : 0;
-      const next = { sys: edge.to, via: edge.arriveCode, cost: cur.cost + extra, hops: cur.hops + 1 };
-      const nk = keyOf(next.sys, next.via);
-      const held = best.get(nk);
-      if (held && !better(next, held)) continue;
-      best.set(nk, { cost: next.cost, hops: next.hops });
-      prev.set(nk, { pk: ck, edge });
-      q.push(next);
-    }
-  }
-  if (!destKey) return null;
-  const edges = [];
-  const path = [to];
-  let cursor = destKey;
-  while (prev.has(cursor)) {
-    const step = prev.get(cursor);
-    edges.unshift(step.edge);
-    path.unshift(step.pk.split("\0")[0]);
-    cursor = step.pk;
-  }
-  return { path, edges, cost: destScore.cost, hops: destScore.hops, first: edges[0]?.name, through: byCode.get(path[1])?.name };
-}
-
-function withEndpointAu(walk, departure, destination) {
-  if (!walk) return walk;
-  const extra =
-    objectToJump(departure, walk.edges[0]?.jumpCode) +
-    objectToJump(destination, walk.edges[walk.edges.length - 1]?.arriveCode);
-  return extra ? { ...walk, cost: walk.cost + extra } : walk;
 }
 
 function uniqueSystems(route) {
@@ -177,8 +81,8 @@ let fail = 0;
 for (const [from, to] of pairs) {
   const file = files[`${from}-${to}`];
   const official = JSON.parse(await readFile(join(ROOT, "research/capture/combos", file), "utf8"));
-  const short = walkGraph(from, to, "shortest");
-  const least = walkGraph(from, to, "leastjumps");
+  const short = walk(from, to, "shortest");
+  const least = walk(from, to, "leastjumps");
   const oS = official.data.shortest;
   const oL = official.data.leastjumps;
   const checks = [
@@ -213,8 +117,8 @@ for (const [key, official] of Object.entries(sized)) {
   const to = parsed[2];
   const fromSys = from.includes(".") ? from.split(".")[0] : from;
   const toSys = to.includes(".") ? to.split(".")[0] : to;
-  const short = withEndpointAu(walkGraph(fromSys, toSys, "shortest", ship), from, to);
-  const least = withEndpointAu(walkGraph(fromSys, toSys, "leastjumps", ship), from, to);
+  const short = walk(fromSys, toSys, "shortest", ship, from, to);
+  const least = walk(fromSys, toSys, "leastjumps", ship, from, to);
   if (!official.shortest && !official.leastjumps) {
     if (!short && !least) {
       sizeChecked += 1;

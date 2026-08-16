@@ -847,9 +847,10 @@ export function StarMapCanvas({
     api.current?.highlightSystem(highlightCode);
   }, [highlightCode]);
 
+  const routeKey = routeSystems.join("|");
   useEffect(() => {
     api.current?.applyDisplay(display, routeSystems);
-  }, [display, routeSystems]);
+  }, [display, routeKey, routeSystems]);
 
   useEffect(() => {
     if (!lookNonce) return;

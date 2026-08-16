@@ -92,12 +92,14 @@ export const LRS_INT = {
 export const TUNNEL_COLOR = officialConfig.routes[0]?.color ?? "#3a2018";
 export const STARFIELD_COLOR = officialConfig.starfield.color2;
 
-export const emptyZones = (): OfficialSystemZones => ({
+export const EMPTY_ZONES: OfficialSystemZones = Object.freeze({
   lightColor: null,
   frostLine: null,
   habitableInner: null,
   habitableOuter: null,
 });
+
+export const emptyZones = (): OfficialSystemZones => EMPTY_ZONES;
 
 export function zonesFromSystemRow(row: {
   frost_line?: number | null;

@@ -15,7 +15,7 @@
     "traverse:official-combos": "node scripts/traverse-official-combos.mjs",
     "traverse:official-restore": "node scripts/traverse-official-restore.mjs",
     "probe:official": "node scripts/probe-official-api.mjs",
-    "verify:routes": "node scripts/verify-routes.mjs",
+    "verify:routes": "node --experimental-strip-types --no-warnings scripts/verify-routes.mjs",
     "verify:mapping": "node scripts/verify-mapping.mjs",
     "verify:search": "node scripts/verify-search.mjs",
     "smoke": "node scripts/smoke-interactions.mjs"

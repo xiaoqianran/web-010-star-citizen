@@ -7,7 +7,7 @@ import {
   AFFILIATIONS,
   findRoute,
   loadSystem,
-  objects,
+  objectByCode,
   peekSystem,
   pickRoute,
   routeSystems,
@@ -77,6 +77,31 @@ export function Starmap() {
   const [markFilter, setMarkFilter] = useState<"all" | "system" | "body">("all");
   const [recent, setRecent] = useState<string[]>(() => store.recent());
   const [zones, setZones] = useState<OfficialSystemZones>(emptyZones);
+  const cameraRef = useRef(camera);
+  const tabRef = useRef(tab);
+  const viewRef = useRef(view);
+  const levelRef = useRef(level);
+  const highlightRef = useRef(highlightCode);
+  const selectedRef = useRef(selected);
+  const systemRef = useRef(systemCode);
+  cameraRef.current = camera;
+  tabRef.current = tab;
+  viewRef.current = view;
+  levelRef.current = level;
+  highlightRef.current = highlightCode;
+  selectedRef.current = selected;
+  systemRef.current = systemCode;
+
+  const flushUrl = useCallback(() => {
+    writeMapUrl({
+      location: selectedRef.current?.code ?? systemRef.current,
+      system: systemRef.current,
+      camera: cameraRef.current,
+      tab: tabRef.current,
+      view: viewRef.current,
+      selection: levelRef.current === "galaxy" ? highlightRef.current : null,
+    });
+  }, []);
 
   const sys = systemByCode.get(systemCode);
   const highlighted = highlightCode ? systemByCode.get(highlightCode) : undefined;
@@ -142,16 +167,8 @@ export function Starmap() {
   );
 
   useEffect(() => {
-    const loc = selected?.code ?? (level === "galaxy" ? systemCode : systemCode);
-    writeMapUrl({
-      location: loc,
-      system: systemCode,
-      camera,
-      tab,
-      view,
-      selection: level === "galaxy" ? highlightCode : null,
-    });
-  }, [selected, systemCode, camera, tab, view, level, highlightCode]);
+    flushUrl();
+  }, [selected, systemCode, tab, view, level, highlightCode, flushUrl]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -205,12 +222,12 @@ export function Starmap() {
   const markedHits = useMemo(() => {
     const rows: { name: string; code: string; type: string; system: string }[] = [];
     for (const code of marks) {
-      const obj = objects.find((o) => o.code === code);
+      const obj = objectByCode.get(code);
       if (obj) {
         rows.push({ name: bodyLabel(obj), code: obj.code, type: obj.type, system: obj.system });
         continue;
       }
-      const sysRow = systems.find((s) => s.code === code);
+      const sysRow = systemByCode.get(code);
       if (sysRow) rows.push({ name: sysRow.name, code: sysRow.code, type: "STAR_SYSTEM", system: sysRow.code });
     }
     if (markFilter === "system") return rows.filter((r) => r.type === "STAR_SYSTEM");
@@ -262,15 +279,17 @@ export function Starmap() {
   }, []);
 
   const onCamera = useCallback((c: CameraTuple) => {
-    setCamera((prev) => (sameCamera(prev, c) ? prev : c));
-  }, []);
+    if (sameCamera(cameraRef.current, c)) return;
+    cameraRef.current = c;
+    flushUrl();
+  }, [flushUrl]);
 
   const pickHit = (code: string, type: string, system?: string) => {
     blip(sound);
     const named =
       type === "STAR_SYSTEM"
         ? systemByCode.get(code)?.name || code
-        : bodyLabel(objects.find((o) => o.code === code) ?? { name: code, designation: null, code });
+        : bodyLabel(objectByCode.get(code) ?? { name: code, designation: null, code });
     setRecent(store.pushRecent(named));
     if (type === "STAR_SYSTEM") {
       enterSystem(code, null, SEARCH_SYSTEM_CAM);
@@ -317,8 +336,8 @@ export function Starmap() {
 
   const calculate = () => applyRoute(ship);
 
-  const shown = pickRoute(route, routeMode);
-  const drawnRoute = routeSystems(route, routeMode);
+  const shown = useMemo(() => pickRoute(route, routeMode), [route, routeMode]);
+  const drawnRoute = useMemo(() => routeSystems(route, routeMode), [route, routeMode]);
 
   return (
     <>
