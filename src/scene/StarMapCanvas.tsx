@@ -30,7 +30,7 @@ type Props = {
   mode: Level;
   view: "3d" | "2d";
   selected: CapturedBody | null;
-  focusCode: string | null;
+  highlightCode: string | null;
   currentSystem: string;
   display: DisplayState;
   routeSystems: string[];
@@ -88,7 +88,7 @@ export function StarMapCanvas({
   mode,
   view,
   selected,
-  focusCode,
+  highlightCode,
   currentSystem,
   display,
   routeSystems,
@@ -109,7 +109,7 @@ export function StarMapCanvas({
     setMode: (m: Level) => void;
     setView: (v: "3d" | "2d") => void;
     select: (code: string | null) => void;
-    focusSystem: (code: string) => void;
+    highlightSystem: (code: string | null) => void;
     rebuild: (bodies: CapturedBody[], zones?: OfficialSystemZones) => void;
     applyDisplay: (d: DisplayState, route: string[]) => void;
     applyCamera: (c: CameraTuple, m: Level) => void;
@@ -280,6 +280,29 @@ export function StarMapCanvas({
       heatSprites.set(sys.code, heat);
     }
 
+    const pickHalo = new THREE.Mesh(
+      new THREE.RingGeometry(0.12, 0.17, 40),
+      new THREE.MeshBasicMaterial({
+        color: 0x9be80d,
+        side: THREE.DoubleSide,
+        transparent: true,
+        opacity: 0.9,
+      }),
+    );
+    pickHalo.visible = false;
+    galaxyGroup.add(pickHalo);
+    let highlighted: string | null = highlightCode;
+    const highlightSystem = (code: string | null) => {
+      highlighted = code;
+      const m = code ? galaxyMeshes.get(code) : undefined;
+      if (!m || !m.visible) {
+        pickHalo.visible = false;
+        return;
+      }
+      pickHalo.position.copy(m.position);
+      pickHalo.visible = true;
+    };
+
     const tunnelLines = new THREE.Group();
     galaxyGroup.add(tunnelLines);
     const byCode = new Map(systems.map((s) => [s.code, s]));
@@ -335,6 +358,7 @@ export function StarMapCanvas({
         heat.scale.set(s, s, 1);
       }
       rebuildTunnels(d, route);
+      highlightSystem(highlighted);
     };
 
     const invisible = new THREE.MeshBasicMaterial({ visible: false });
@@ -646,13 +670,7 @@ export function StarMapCanvas({
         if (!item) return;
         startFly(item.position.clone(), new THREE.Vector3(1.4, 0.7, 2.2));
       },
-      focusSystem: (code) => {
-        const m = galaxyMeshes.get(code);
-        if (!m) return;
-        systemGroup.visible = false;
-        galaxyGroup.visible = true;
-        startFly(m.position.clone(), new THREE.Vector3(1.2, 2.2, 4));
-      },
+      highlightSystem,
       rebuild,
       applyDisplay,
       applyCamera,
@@ -730,6 +748,7 @@ export function StarMapCanvas({
         controls.target.lerpVectors(fly.fromT, fly.toT, e);
         if (fly.t >= 1) fly = null;
       }
+      if (pickHalo.visible) pickHalo.lookAt(cam.position);
       controls.update();
       if (composer) composer.render();
       else renderer.render(scene, cam);
@@ -798,8 +817,8 @@ export function StarMapCanvas({
   }, [selected]);
 
   useEffect(() => {
-    if (focusCode) api.current?.focusSystem(focusCode);
-  }, [focusCode]);
+    api.current?.highlightSystem(highlightCode);
+  }, [highlightCode]);
 
   useEffect(() => {
     api.current?.applyDisplay(display, routeSystems);

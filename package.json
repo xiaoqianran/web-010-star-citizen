@@ -15,6 +15,7 @@
     "traverse:official-combos": "node scripts/traverse-official-combos.mjs",
     "verify:routes": "node scripts/verify-routes.mjs",
     "verify:mapping": "node scripts/verify-mapping.mjs",
+    "verify:search": "node scripts/verify-search.mjs",
     "smoke": "node scripts/smoke-interactions.mjs"
   },
   "dependencies": {

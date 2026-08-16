@@ -182,7 +182,7 @@ export const zh = {
     i18nKeep: "保持英文",
     i18nTranslate: "译成中文",
     systemsTitle: "90 个星系（bootup）",
-    filterPlaceholder: "按代号或名称筛选，例如 GOSS",
+    filterPlaceholder: "输入至少 3 个字符后按回车，例如 Terra",
     gossTitle: "当前对照目标",
     gossUrl: "官方入口",
     nextTitle: "下一步（仍不自我创作）",

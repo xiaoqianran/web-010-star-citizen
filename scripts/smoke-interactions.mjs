@@ -70,9 +70,21 @@ async function main() {
   if (!(await click('[data-tab="search"]'))) fail("search tab");
   if (!(await page.$("[data-search]"))) fail("search input missing");
   await setInput("[data-search]", "Terra");
+  await page.focus("[data-search]");
+  await page.keyboard.press("Enter");
   await sleep(80);
   const found = await page.$eval("[data-found]", (el) => Number(el.getAttribute("data-found")));
-  if (!(found > 0)) fail(`search Terra found ${found}`);
+  if (found !== 26) fail(`search Terra found ${found}, official is 26`);
+  await setInput("[data-search]", "Kayfa");
+  await page.focus("[data-search]");
+  await page.keyboard.press("Enter");
+  await sleep(80);
+  const kayfa = await page.$eval("[data-found]", (el) => Number(el.getAttribute("data-found")));
+  if (kayfa !== 9) fail(`search Kayfa found ${kayfa}, official is 9`);
+  const kayfaSys = await page.evaluate(() =>
+    [...document.querySelectorAll(".panel tbody tr")].some((tr) => tr.children[1]?.textContent.includes("星系")),
+  );
+  if (kayfaSys) fail("Kayfa must not include a STAR SYSTEM row");
 
   await page.mouse.click(200, 360);
   await sleep(60);

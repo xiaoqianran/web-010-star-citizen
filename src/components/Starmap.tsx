@@ -52,13 +52,14 @@ export function Starmap() {
   const [discPage, setDiscPage] = useState<"inspect" | "information" | "routing" | "bookmark">("information");
   const [inspectNonce, setInspectNonce] = useState(0);
   const [query, setQuery] = useState("");
+  const [submitted, setSubmitted] = useState<string | null>(null);
   const [from, setFrom] = useState("GOSS");
   const [to, setTo] = useState("TERRA");
   const [ship, setShip] = useState<"S" | "M" | "L">("M");
   const [route, setRoute] = useState<RouteResult | null>(null);
   const [routeMode, setRouteMode] = useState<"shortest" | "leastjumps">("shortest");
   const [seg, setSeg] = useState(0);
-  const [focusCode, setFocusCode] = useState<string | null>(null);
+  const [highlightCode, setHighlightCode] = useState<string | null>(null);
   const discRef = useRef<HTMLDivElement>(null);
   const tipRef = useRef<HTMLDivElement>(null);
   const jumpingRef = useRef(false);
@@ -76,7 +77,12 @@ export function Starmap() {
   const [zones, setZones] = useState<OfficialSystemZones>(emptyZones);
 
   const sys = systemByCode.get(systemCode);
-  const focus = selected ? bodyLabel(selected) : level === "galaxy" ? zh.levels.galaxy : sys?.name || systemCode;
+  const highlighted = highlightCode ? systemByCode.get(highlightCode) : undefined;
+  const focus = selected
+    ? bodyLabel(selected)
+    : level === "galaxy"
+      ? highlighted?.name || zh.levels.galaxy
+      : sys?.name || systemCode;
 
   useEffect(() => {
     let live = true;
@@ -152,7 +158,8 @@ export function Starmap() {
     setSeg(0);
   }, [routeMode]);
 
-  const hits = useMemo(() => searchCatalog(query, systemCode), [query, systemCode]);
+  const hits = useMemo(() => (submitted == null ? [] : searchCatalog(submitted)), [submitted]);
+  const showResults = submitted != null && submitted.trim().length >= 3;
   const markedHits = useMemo(() => {
     const rows: { name: string; code: string; type: string; system: string }[] = [];
     for (const code of marks) {
@@ -175,7 +182,7 @@ export function Starmap() {
       const named = systemByCode.get(code)?.name || code;
       setRecent(store.pushRecent(named));
       setSystemCode(code);
-      setFocusCode(null);
+      setHighlightCode(null);
       setLevel(body ? "object" : "system");
       setSelected(body ?? null);
       setTab(null);
@@ -286,7 +293,7 @@ export function Starmap() {
         mode={level}
         view={view}
         selected={level === "object" ? selected : null}
-        focusCode={focusCode}
+        highlightCode={highlightCode}
         currentSystem={systemCode}
         display={display}
         routeSystems={drawnRoute}
@@ -301,9 +308,13 @@ export function Starmap() {
           setLevel("object");
           setDiscPage("information");
         }}
-        onSelectSystem={(code) => enterSystem(code)}
+        onSelectSystem={(code) => {
+          blip(sound);
+          setHighlightCode(code);
+        }}
         onBackground={() => {
           setMenu(false);
+          setHighlightCode(null);
           if (selected) {
             setSelected(null);
             if (level === "object") setLevel("system");
@@ -318,7 +329,7 @@ export function Starmap() {
             setDiscPage("information");
             return;
           }
-          if (hit.system) setFocusCode(hit.system);
+          if (hit.system) setHighlightCode(hit.system);
         }}
         onProject={placeHud}
         onCamera={onCamera}
@@ -365,6 +376,10 @@ export function Starmap() {
               data-level="system"
               className={level === "system" ? "on" : ""}
               onClick={() => {
+                if (level === "galaxy") {
+                  if (highlightCode) enterSystem(highlightCode);
+                  return;
+                }
                 setLevel("system");
                 setSelected(null);
               }}
@@ -511,7 +526,15 @@ export function Starmap() {
               <input
                 data-search
                 value={query}
-                onChange={(e) => setQuery(e.target.value)}
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                  if (!e.target.value.trim()) setSubmitted(null);
+                }}
+                onKeyDown={(e) => {
+                  if (e.key !== "Enter") return;
+                  e.preventDefault();
+                  setSubmitted(query);
+                }}
                 placeholder={zh.study.filterPlaceholder}
               />
             </div>
@@ -519,18 +542,25 @@ export function Starmap() {
               <ul className="search-auto" data-search-auto>
                 {recent.map((name) => (
                   <li key={name}>
-                    <button type="button" onClick={() => setQuery(name)}>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setQuery(name);
+                        setSubmitted(name);
+                      }}
+                    >
                       {name}
                     </button>
                   </li>
                 ))}
               </ul>
             )}
-            {query.trim().length >= 3 && (
+            {showResults && (
               <p className="found-count" data-found={hits.length}>
                 {hits.length} {zh.search.itemsFound}
               </p>
             )}
+            {showResults && hits.length > 0 && (
             <table>
               <thead>
                 <tr>
@@ -564,7 +594,8 @@ export function Starmap() {
                 ))}
               </tbody>
             </table>
-            {query.trim().length >= 3 && !hits.length && <p className="empty">{zh.search.empty}</p>}
+            )}
+            {showResults && !hits.length && <p className="empty">{zh.search.empty}</p>}
           </section>
         )}
 

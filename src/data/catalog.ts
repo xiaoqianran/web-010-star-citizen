@@ -394,22 +394,19 @@ export function resolveEndpoint(raw: string): string | null {
   return null;
 }
 
-export function searchCatalog(query: string, currentSystem?: string): SearchHit[] {
+export function searchCatalog(query: string, _currentSystem?: string): SearchHit[] {
   const raw = query.trim();
-  if (!raw) {
-    const here = currentSystem ? objects.filter((o) => o.system === currentSystem) : [];
-    return here.slice(0, 24).map((o) => ({
-      name: bodyLabel(o),
-      code: o.code,
-      type: o.type,
-      system: o.system,
-    }));
-  }
+  if (!raw) return [];
   // Official /api/starmap/find rejects shorter than 3 characters.
   if (raw.length < 3) return [];
   const q = raw.toLowerCase();
+  // Official systems match name prefix ("Terra"), not code-only or parenthetical
+  // includes: "Kayfa" must not return Kai'pua (Kayfa); "ARK" must not return Malkail (Markahil).
   const sysHits = systems
-    .filter((s) => s.code.toLowerCase().includes(q) || s.name.toLowerCase().includes(q))
+    .filter((s) => {
+      const name = s.name.toLowerCase();
+      return name === q || name.startsWith(q);
+    })
     .map((s) => ({ name: s.name, code: s.code, type: "STAR_SYSTEM" as const, system: s.code }));
   // Official find matches name/designation, not object codes (GOSS.STARS.GOSSA and JUMPPOINTS stay empty).
   const objHits = objects

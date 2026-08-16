@@ -137,6 +137,9 @@ async function main() {
   const searchTable = [];
   for (const q of SEARCHES) {
     await setInput("[data-search]", q);
+    await page.focus("[data-search]").catch(() => {});
+    await page.keyboard.press("Enter");
+    await sleep(50);
     const list = await rows();
     const count = await found();
     searchTable.push({ q, count, sample: list.slice(0, 5) });

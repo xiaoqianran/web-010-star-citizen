@@ -65,3 +65,5 @@ GOSS / TERRA fields filled, S/M/L clicked, `CALCULATE >` clicked. Body text had 
 - Disc + right-click menu include 查看 (INSPECT); INSPECT flies the camera and does not open the info card
 - System DISPLAY hides factions / jump tunnels
 - Search object rows use `名称 于 星系` to match `CASSEL IN GOSS`
+- Search submits on Enter (min 3 chars). System rows match name prefix only, so Kayfa=9 and no STAR SYSTEM, ARK=2.
+- Galaxy left-click highlights with a green ring; SYS enters the highlighted system. Search STAR SYSTEM still enters.
