@@ -1,6 +1,7 @@
 import bootup from "@capture/api/bootup.json";
 import objectIndex from "@capture/index/celestial-objects.json";
 import jumpPointIndex from "@capture/index/jump-points.json";
+import objectPositions from "@capture/index/object-positions.json";
 import type { CapturedBody } from "./celestial";
 import { bodyLabel, systemCodeOf } from "./celestial";
 import { AFFILIATIONS, zonesFromSystemRow, type OfficialSystemZones } from "./official";
@@ -160,6 +161,18 @@ export const objects = [...(objectIndex as ObjectRow[]), ...extras];
 export const systemByCode = new Map(systems.map((s) => [s.code, s]));
 export const systemById = new Map(systems.map((s) => [s.id, s]));
 export const objectByCode = new Map(objects.map((o) => [o.code, o]));
+const systemByName = new Map(systems.map((s) => [s.name.toUpperCase(), s]));
+const objectByName = new Map<string, ObjectRow>();
+for (const o of objects) {
+  if (o.name) objectByName.set(o.name.toUpperCase(), o);
+  if (o.designation) objectByName.set(o.designation.toUpperCase(), o);
+}
+const systemSearch = systems.map((s) => ({ row: s, name: s.name.toLowerCase() }));
+const objectSearch = objects.map((o) => ({
+  row: o,
+  name: (o.name || "").toLowerCase(),
+  designation: (o.designation || "").toLowerCase(),
+}));
 
 const extraBodies: CapturedBody[] = [
   {
@@ -262,6 +275,10 @@ function loaderKey(code: string) {
   return Object.keys(systemLoaders).find((k) => k.endsWith(`/${code}.json`));
 }
 
+export function peekSystem(code: string) {
+  return systemCache.get(code.toUpperCase()) ?? null;
+}
+
 export async function loadSystem(code: string) {
   const upper = code.toUpperCase();
   const hit = systemCache.get(upper);
@@ -319,18 +336,30 @@ type JumpRec = {
 };
 
 const jumps = jumpPointIndex as Record<string, JumpRec>;
+const objectPos = objectPositions as Record<string, [number, number, number]>;
+
+function sphCart(distance: number, latitude: number, longitude: number) {
+  const la = (latitude * Math.PI) / 180;
+  const lo = (longitude * Math.PI) / 180;
+  return {
+    x: distance * Math.cos(la) * Math.cos(lo),
+    y: distance * Math.sin(la),
+    z: distance * Math.cos(la) * Math.sin(lo),
+  };
+}
 
 function jpCart(code: string) {
   const j = jumps[code];
   if (!j) return { x: 0, y: 0, z: 0 };
-  const la = (j.latitude * Math.PI) / 180;
-  const lo = (j.longitude * Math.PI) / 180;
-  const d = j.distance;
-  return {
-    x: d * Math.cos(la) * Math.cos(lo),
-    y: d * Math.sin(la),
-    z: d * Math.cos(la) * Math.sin(lo),
-  };
+  return sphCart(j.distance, j.latitude, j.longitude);
+}
+
+function objectCart(code: string) {
+  const trip = objectPos[code];
+  if (trip) return sphCart(trip[0], trip[1], trip[2]);
+  const j = jumps[code];
+  if (j) return sphCart(j.distance, j.latitude, j.longitude);
+  return null;
 }
 
 function flightBetween(a?: string | null, b?: string | null) {
@@ -380,16 +409,14 @@ export function resolveEndpoint(raw: string): string | null {
   if (!q) return null;
   const u = q.toUpperCase();
   if (systemByCode.has(u)) return u;
-  const byName = systems.find((s) => s.name.toUpperCase() === u);
+  const byName = systemByName.get(u);
   if (byName) return byName.code;
   // Official routes/find accepts object codes (GOSS.STARS.GOSSA → GOSS) but rejects display names (Goss A, Cassel).
-  const byCode = objectByCode.get(u) ?? objects.find((o) => o.code.toUpperCase() === u);
+  const byCode = objectByCode.get(u);
   if (byCode) return byCode.system;
   // Disc "设为起点/终点" fills the visible name; official API rejects those, but the local
   // calculator should still resolve Cassel / Goss A so Calculate does not look frozen.
-  const byObjName = objects.find(
-    (o) => o.name?.toUpperCase() === u || o.designation?.toUpperCase() === u,
-  );
+  const byObjName = objectByName.get(u);
   if (byObjName) return byObjName.system;
   return null;
 }
@@ -402,20 +429,13 @@ export function searchCatalog(query: string, _currentSystem?: string): SearchHit
   const q = raw.toLowerCase();
   // Official systems match name prefix ("Terra"), not code-only or parenthetical
   // includes: "Kayfa" must not return Kai'pua (Kayfa); "ARK" must not return Malkail (Markahil).
-  const sysHits = systems
-    .filter((s) => {
-      const name = s.name.toLowerCase();
-      return name === q || name.startsWith(q);
-    })
-    .map((s) => ({ name: s.name, code: s.code, type: "STAR_SYSTEM" as const, system: s.code }));
+  const sysHits = systemSearch
+    .filter((s) => s.name === q || s.name.startsWith(q))
+    .map((s) => ({ name: s.row.name, code: s.row.code, type: "STAR_SYSTEM" as const, system: s.row.code }));
   // Official find matches name/designation, not object codes (GOSS.STARS.GOSSA and JUMPPOINTS stay empty).
-  const objHits = objects
-    .filter(
-      (o) =>
-        (o.name && o.name.toLowerCase().includes(q)) ||
-        (o.designation && o.designation.toLowerCase().includes(q)),
-    )
-    .map((o) => ({ name: bodyLabel(o), code: o.code, type: o.type, system: o.system }));
+  const objHits = objectSearch
+    .filter((o) => (o.name && o.name.includes(q)) || (o.designation && o.designation.includes(q)))
+    .map((o) => ({ name: bodyLabel(o.row), code: o.row.code, type: o.row.type, system: o.row.system }));
   const rank = (h: SearchHit) => {
     const name = h.name.toLowerCase();
     const code = h.code.toLowerCase();
@@ -526,35 +546,68 @@ export function tunnelFitsShip(tunnel: "S" | "M" | "L", ship: "S" | "M" | "L" = 
   return SHIP_RANK[tunnel] >= SHIP_RANK[ship];
 }
 
+function objectCodeOf(raw: string) {
+  const u = raw.trim().toUpperCase();
+  return objectByCode.has(u) ? u : null;
+}
+
+function objectToJump(objectCode: string | null, jumpCode?: string | null) {
+  if (!objectCode || !jumpCode) return 0;
+  const a = objectCart(objectCode);
+  if (!a) return 0;
+  const b = jpCart(jumpCode);
+  return Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z);
+}
+
+function withEndpointAu(walk: Walk, departure: string, destination: string): Walk {
+  const extra =
+    objectToJump(objectCodeOf(departure), walk.edges[0]?.jumpCode) +
+    objectToJump(objectCodeOf(destination), walk.edges[walk.edges.length - 1]?.arriveCode);
+  return extra ? { ...walk, cost: walk.cost + extra } : walk;
+}
+
+const routeCache = new Map<string, RouteResult>();
+
 export function findRoute(departure: string, destination: string, ship: "S" | "M" | "L" = "M"): RouteResult {
   const from = resolveEndpoint(departure);
   const to = resolveEndpoint(destination);
   if (!from || !to) {
     return { ok: false, code: "ErrInvalidObject", msg: "Invalid object specified", shortest: null, leastjumps: null };
   }
+  const cacheKey = `${from}|${to}|${ship}|${objectCodeOf(departure) ?? ""}|${objectCodeOf(destination) ?? ""}`;
+  const cached = routeCache.get(cacheKey);
+  if (cached) return cached;
+  const store = (result: RouteResult) => {
+    if (routeCache.size > 256) {
+      const first = routeCache.keys().next().value;
+      if (first) routeCache.delete(first);
+    }
+    routeCache.set(cacheKey, result);
+    return result;
+  };
   if (from === to) {
-    return {
+    return store({
       ok: true,
       code: "OK",
       msg: "OK",
       empty: true,
       shortest: emptyLeg(),
       leastjumps: emptyLeg(),
-    };
+    });
   }
   const short = walkGraph(from, to, "shortest", ship);
   const least = walkGraph(from, to, "leastjumps", ship);
   if (!short || !least) {
     // Official BANSHEE→YULIN ship_size=L: success=1 code=OK with null legs (not ErrNoRoute).
-    return { ok: true, code: "OK", msg: "OK", empty: true, shortest: null, leastjumps: null };
+    return store({ ok: true, code: "OK", msg: "OK", empty: true, shortest: null, leastjumps: null });
   }
-  return {
+  return store({
     ok: true,
     code: "OK",
     msg: "OK",
-    shortest: packLeg(from, to, short),
-    leastjumps: packLeg(from, to, least),
-  };
+    shortest: packLeg(from, to, withEndpointAu(short, departure, destination)),
+    leastjumps: packLeg(from, to, withEndpointAu(least, departure, destination)),
+  });
 }
 
 export function pickRoute(result: RouteResult | null, mode: RouteMode): RouteLeg | null {

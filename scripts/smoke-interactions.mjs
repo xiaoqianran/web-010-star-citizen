@@ -68,7 +68,10 @@ async function main() {
   if (!(await page.$("canvas"))) fail("webgl canvas missing");
 
   if (!(await click('[data-tab="search"]'))) fail("search tab");
-  if (!(await page.$("[data-search]"))) fail("search input missing");
+  if (!(await click('[data-tab="search"]'))) fail("search tab stay");
+  if (!(await page.$("[data-search]"))) fail("search input missing after second tab click");
+  await setInput("[data-search]", "Te");
+  if (!(await page.$('[data-search-hint="short"]'))) fail("short search hint missing");
   await setInput("[data-search]", "Terra");
   await page.focus("[data-search]");
   await page.keyboard.press("Enter");
@@ -111,6 +114,9 @@ async function main() {
   if (!(await click('[data-level="galaxy"]'))) fail("GLX");
   await sleep(200);
   if (!(await click('[data-level="system"]'))) fail("SYS");
+  await sleep(200);
+  const sysCam = await page.evaluate(() => new URL(location.href).searchParams.get("camera"));
+  if (!sysCam?.startsWith("10,102.98")) fail(`SYS from galaxy should enter last system home cam, got ${sysCam}`);
   if (!(await click('[data-view="2d"]'))) fail("2D");
   const view = await page.evaluate(() => new URL(location.href).searchParams.get("view"));
   if (view !== "2d") fail(`2D did not write view= ${view}`);
@@ -129,6 +135,8 @@ async function main() {
   await sleep(80);
   const jumpsL = await page.$eval("[data-jumps]", (el) => el.getAttribute("data-jumps")).catch(() => "");
   if (jumpsL !== "2") fail(`GOSS→TERRA ship_size=L jumps ${jumpsL}, official is 2 Through Tayac`);
+  const routeTableH = await page.$eval("[data-route-table]", (el) => el.getBoundingClientRect().height).catch(() => 0);
+  if (routeTableH < 40) fail(`route table clipped to ${routeTableH}px`);
 
   await click('[data-tab="display"]');
   const display = await page.$(".display-bar");

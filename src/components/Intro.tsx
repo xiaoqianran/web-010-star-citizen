@@ -105,15 +105,15 @@ export function TopBar() {
     <div className="topbar">
       <div className="slim">
         <span>{zh.hud.rsi}</span>
-        <a href="#starmap" onClick={(e) => e.preventDefault()}>
+        <span className="nav-ghost" title={zh.hud.cloneNote}>
           {zh.hud.home}
-        </a>
-        <a href="#starmap" onClick={(e) => e.preventDefault()}>
+        </span>
+        <span className="nav-ghost" title={zh.hud.cloneNote}>
           {zh.hud.explore}
-        </a>
-        <a href="#starmap" onClick={(e) => e.preventDefault()}>
+        </span>
+        <span className="nav-ghost" title={zh.hud.cloneNote}>
           {zh.hud.starmap}
-        </a>
+        </span>
       </div>
       <div className="brand">
         <span className="burger" aria-hidden>

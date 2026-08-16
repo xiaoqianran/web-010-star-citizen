@@ -64,6 +64,10 @@ export const zh = {
     sound: "音效",
     fullscreen: "全屏",
     rsi: "ROBERTS SPACE INDUSTRIES®",
+    sysHint: "进入高亮或当前星系",
+    objHint: "先在星图上点选一个天体",
+    menuNote: "学习复刻，无 RSI 账户与 Spectrum。",
+    cloneNote: "界面铬件仅作对照，链接不会打开官网账户。",
   },
   levels: {
     galaxy: "银河",
@@ -104,6 +108,7 @@ export const zh = {
     jumpThrough: "跃迁至",
     manMade: "人造设施",
     voiceOvers: "语音解说",
+    noVoice: "暂无解说",
     open: "打开",
     orbitPeriod: "轨道周期",
     axialTilt: "轴倾角",
@@ -119,6 +124,9 @@ export const zh = {
     loading: "加载中…",
     empty: "没有符合筛选的目标。",
     removeBookmark: "移除书签",
+    hintShort: "至少输入 3 个字符后再搜索",
+    hintEnter: "按回车或点搜索",
+    go: "搜索",
   },
   bookmarks: {
     empty: "你还没有书签。",

@@ -39,8 +39,10 @@ type Props = {
   lookNonce?: number;
   inspectNonce?: number;
   onHover: (body: CapturedBody | null) => void;
+  onHoverSystem?: (code: string | null) => void;
   onSelect: (body: CapturedBody) => void;
   onSelectSystem: (code: string) => void;
+  onEnterSystem?: (code: string) => void;
   onBackground?: () => void;
   onContext?: (hit: { body?: CapturedBody; system?: string } | null, x: number, y: number) => void;
   onProject: (pt: ScreenPt | null) => void;
@@ -97,8 +99,10 @@ export function StarMapCanvas({
   lookNonce = 0,
   inspectNonce = 0,
   onHover,
+  onHoverSystem,
   onSelect,
   onSelectSystem,
+  onEnterSystem,
   onBackground,
   onContext,
   onProject,
@@ -118,8 +122,10 @@ export function StarMapCanvas({
   } | null>(null);
   const projectRef = useRef(onProject);
   const hoverRef = useRef(onHover);
+  const hoverSysRef = useRef(onHoverSystem);
   const selectRef = useRef(onSelect);
   const selectSysRef = useRef(onSelectSystem);
+  const enterSysRef = useRef(onEnterSystem);
   const backgroundRef = useRef(onBackground);
   const contextRef = useRef(onContext);
   const camRef = useRef(onCamera);
@@ -127,8 +133,10 @@ export function StarMapCanvas({
   const modeRef = useRef(mode);
   projectRef.current = onProject;
   hoverRef.current = onHover;
+  hoverSysRef.current = onHoverSystem;
   selectRef.current = onSelect;
   selectSysRef.current = onSelectSystem;
+  enterSysRef.current = onEnterSystem;
   backgroundRef.current = onBackground;
   contextRef.current = onContext;
   camRef.current = onCamera;
@@ -597,9 +605,14 @@ export function StarMapCanvas({
       ray.setFromCamera(pointer, cam);
       if (modeRef.current === "galaxy") {
         const hit = ray.intersectObjects(galaxyHits, false)[0];
-        hoverSys = hit ? ((hit.object.userData.system as string) ?? null) : null;
+        const nextSys = hit ? ((hit.object.userData.system as string) ?? null) : null;
+        if (nextSys !== hoverSys) {
+          hoverSys = nextSys;
+          hoverSysRef.current?.(nextSys);
+        }
         hovering = null;
         hoverRef.current(null);
+        renderer.domElement.style.cursor = nextSys ? "pointer" : "grab";
         return;
       }
       const hit = ray.intersectObjects(
@@ -608,6 +621,7 @@ export function StarMapCanvas({
       )[0];
       const code = hit ? walkPick(hit.object, meshes) : null;
       const next = code ? (pickables.find((p) => p.body.code === code)?.body ?? null) : null;
+      renderer.domElement.style.cursor = next ? "pointer" : "grab";
       if (next?.code !== hovering?.code) {
         hovering = next;
         hoverRef.current(next);
@@ -726,9 +740,14 @@ export function StarMapCanvas({
       el.classList.add("canvas-fail");
       el.textContent = "当前浏览器似乎不支持 WebGL。";
     };
+    const onDblClick = () => {
+      if (drag > 8) return;
+      if (modeRef.current === "galaxy" && hoverSys) enterSysRef.current?.(hoverSys);
+    };
     renderer.domElement.addEventListener("pointermove", onMove);
     renderer.domElement.addEventListener("pointerdown", onDown);
     renderer.domElement.addEventListener("click", onClick);
+    renderer.domElement.addEventListener("dblclick", onDblClick);
     renderer.domElement.addEventListener("contextmenu", onContextMenu);
     renderer.domElement.addEventListener("webglcontextlost", onLost);
     window.addEventListener("resize", resize);
@@ -756,7 +775,13 @@ export function StarMapCanvas({
       labels.render(scene, cam);
 
       const code = selectedRef.current?.code;
-      const obj = code ? meshes.get(code) : hovering ? meshes.get(hovering.code) : null;
+      const obj = code
+        ? meshes.get(code)
+        : hovering
+          ? meshes.get(hovering.code)
+          : hoverSys
+            ? galaxyMeshes.get(hoverSys)
+            : null;
       if (obj) {
         ndc.copy(obj.position).project(cam);
         const r = el.getBoundingClientRect();
@@ -782,6 +807,7 @@ export function StarMapCanvas({
       renderer.domElement.removeEventListener("pointermove", onMove);
       renderer.domElement.removeEventListener("pointerdown", onDown);
       renderer.domElement.removeEventListener("click", onClick);
+      renderer.domElement.removeEventListener("dblclick", onDblClick);
       renderer.domElement.removeEventListener("contextmenu", onContextMenu);
       renderer.domElement.removeEventListener("webglcontextlost", onLost);
       controls.dispose();

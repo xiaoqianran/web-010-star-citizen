@@ -9,22 +9,42 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const boot = JSON.parse(await readFile(join(ROOT, "research/capture/api/bootup.json"), "utf8"));
 const jumps = JSON.parse(await readFile(join(ROOT, "research/capture/index/jump-points.json"), "utf8"));
+const objectPos = JSON.parse(await readFile(join(ROOT, "research/capture/index/object-positions.json"), "utf8"));
 
 const systems = boot.data.systems.resultset;
 const byId = new Map(systems.map((s) => [s.id, s]));
 const byCode = new Map(systems.map((s) => [s.code, s]));
 
+function sphCart(distance, latitude, longitude) {
+  const la = (latitude * Math.PI) / 180;
+  const lo = (longitude * Math.PI) / 180;
+  return {
+    x: distance * Math.cos(la) * Math.cos(lo),
+    y: distance * Math.sin(la),
+    z: distance * Math.cos(la) * Math.sin(lo),
+  };
+}
+
 function jpCart(code) {
   const j = jumps[code];
   if (!j) return { x: 0, y: 0, z: 0 };
-  const la = (j.latitude * Math.PI) / 180;
-  const lo = (j.longitude * Math.PI) / 180;
-  const d = j.distance;
-  return {
-    x: d * Math.cos(la) * Math.cos(lo),
-    y: d * Math.sin(la),
-    z: d * Math.cos(la) * Math.sin(lo),
-  };
+  return sphCart(j.distance, j.latitude, j.longitude);
+}
+
+function objectCart(code) {
+  const trip = objectPos[code];
+  if (trip) return sphCart(trip[0], trip[1], trip[2]);
+  const j = jumps[code];
+  if (j) return sphCart(j.distance, j.latitude, j.longitude);
+  return null;
+}
+
+function objectToJump(objectCode, jumpCode) {
+  if (!objectCode || !jumpCode || !objectCode.includes(".")) return 0;
+  const a = objectCart(objectCode);
+  if (!a) return 0;
+  const b = jpCart(jumpCode);
+  return Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z);
 }
 
 function flightBetween(a, b) {
@@ -100,6 +120,14 @@ function walkGraph(from, to, mode, ship) {
     cursor = step.pk;
   }
   return { path, edges, cost: destScore.cost, hops: destScore.hops, first: edges[0]?.name, through: byCode.get(path[1])?.name };
+}
+
+function withEndpointAu(walk, departure, destination) {
+  if (!walk) return walk;
+  const extra =
+    objectToJump(departure, walk.edges[0]?.jumpCode) +
+    objectToJump(destination, walk.edges[walk.edges.length - 1]?.arriveCode);
+  return extra ? { ...walk, cost: walk.cost + extra } : walk;
 }
 
 function uniqueSystems(route) {
@@ -181,12 +209,12 @@ for (const [key, official] of Object.entries(sized)) {
   const extra = JSON.parse(parsed[3]);
   const ship = extra.ship_size;
   if (!ship || !["S", "M", "L"].includes(ship)) continue;
-  // Object-code endpoints add intra-system AU on the official API; local graph is system-to-system.
-  if (parsed[1].includes(".") || parsed[2].includes(".")) continue;
   const from = parsed[1];
   const to = parsed[2];
-  const short = walkGraph(from, to, "shortest", ship);
-  const least = walkGraph(from, to, "leastjumps", ship);
+  const fromSys = from.includes(".") ? from.split(".")[0] : from;
+  const toSys = to.includes(".") ? to.split(".")[0] : to;
+  const short = withEndpointAu(walkGraph(fromSys, toSys, "shortest", ship), from, to);
+  const least = withEndpointAu(walkGraph(fromSys, toSys, "leastjumps", ship), from, to);
   if (!official.shortest && !official.leastjumps) {
     if (!short && !least) {
       sizeChecked += 1;

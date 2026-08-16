@@ -25,7 +25,7 @@
 | `tunnels[].entry.code` / `designation` / `distance` / `lat/lon` | 原样 | `TunnelPoint` 只有 `star_system_id` 和臆造的 `celestial_object_id` | 用 `code` + `star_system_id` |
 | `affiliation[]` | 原样 | 压成 `affiliation_id` / `affiliation_name` | `affiliation[].code` + 官方色 |
 | `subtype` 对象 `{id,name,type}` | 原样 | 写成 `[]SubType` | 单对象 |
-| `routes/find` 的舰船键 | 发 `ship_size` | 发 `ship_size` | **`ship_size` 会改路**：舰船只能走 `tunnel.size >= ship_size` 的隧道（S 隧道连 M 舰也不能走）。`size` / `avoid` 被忽略。`ship_size=X` → `ErrValidationFailed`；空串当默认。无路时仍 `OK` + null 段（BANSHEE→YULIN L）。天体码作起点会多算段内 AU（`GOSS.STARS.GOSSA`→TERRA L = 8.147，不是星系对的 2.233） |
+| `routes/find` 的舰船键 | 发 `ship_size` | 发 `ship_size` | **`ship_size` 会改路**：舰船只能走 `tunnel.size >= ship_size` 的隧道（S 隧道连 M 舰也不能走）。`size` / `avoid` 被忽略。`ship_size=X` → `ErrValidationFailed`；空串当默认。无路时仍 `OK` + null 段（BANSHEE→YULIN L）。天体码作起点会多算段内 AU：物体坐标到首个跃迁点（`GOSS.STARS.GOSSA`→TERRA L = 8.147，星系对仍是 2.233） |
 | `data.config`（LRS 色、星野、隧道外观） | 不读 | 不读 | `src/data/official.ts` |
 | `frost_line` / `habitable_zone_*` / `shader_data` | 透传但不用 | 类型里没有 | 系统视图片环 + 主光色 |
 | `find` 对象带 `star_system.code` | 原样 | `map[string]any` | 搜索行 `于 {星系}` |
