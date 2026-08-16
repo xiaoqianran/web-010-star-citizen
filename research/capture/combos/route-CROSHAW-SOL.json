@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Croshaw to Sol",
+      "label": "Through Sol",
+      "first_jump": "Croshaw - Sol",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "CROSHAW",
+          "name": "Croshaw",
+          "type": "system",
+          "system_id": 369,
+          "system_code": "CROSHAW",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 2129,
+          "name": "Croshaw - Sol",
+          "type": "jump",
+          "system_id": 369,
+          "system_code": "CROSHAW",
+          "object_id": 2129,
+          "object_code": "CROSHAW.JUMPPOINTS.SOL",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2021,
+          "name": "Sol - Croshaw",
+          "type": "jump",
+          "system_id": 355,
+          "system_code": "SOL",
+          "object_id": 2021,
+          "object_code": "SOL.JUMPPOINTS.CROSHAW",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "SOL",
+          "name": "Sol",
+          "type": "system",
+          "system_id": 355,
+          "system_code": "SOL",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Croshaw to Sol",
+      "label": "Through Sol",
+      "first_jump": "Croshaw - Sol",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "CROSHAW",
+          "name": "Croshaw",
+          "type": "system",
+          "system_id": 369,
+          "system_code": "CROSHAW",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 2129,
+          "name": "Croshaw - Sol",
+          "type": "jump",
+          "system_id": 369,
+          "system_code": "CROSHAW",
+          "object_id": 2129,
+          "object_code": "CROSHAW.JUMPPOINTS.SOL",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2021,
+          "name": "Sol - Croshaw",
+          "type": "jump",
+          "system_id": 355,
+          "system_code": "SOL",
+          "object_id": 2021,
+          "object_code": "SOL.JUMPPOINTS.CROSHAW",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "SOL",
+          "name": "Sol",
+          "type": "system",
+          "system_id": 355,
+          "system_code": "SOL",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2728,
+          "code": "VEGA.POI.WARN01",
+          "designation": "VANDUUL-WARN-01",
+          "name": "Vanduul Attack",
+          "star_system_id": 322,
+          "status": "P",
+          "type": "POI",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

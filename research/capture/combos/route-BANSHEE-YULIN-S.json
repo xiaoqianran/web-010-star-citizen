@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Banshee to Yulin",
+      "label": "Through Yulin",
+      "first_jump": "Banshee - Yulin",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "BANSHEE",
+          "name": "Banshee",
+          "type": "system",
+          "system_id": 346,
+          "system_code": "BANSHEE",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1979,
+          "name": "Banshee - Yulin",
+          "type": "jump",
+          "system_id": 346,
+          "system_code": "BANSHEE",
+          "object_id": 1979,
+          "object_code": "BANSHEE.JUMPPOINTS.YULIN",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2292,
+          "name": "Yulin - Banshee",
+          "type": "jump",
+          "system_id": 402,
+          "system_code": "YULIN",
+          "object_id": 2292,
+          "object_code": "YULIN.JUMPPOINTS.BANSHEE",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "YULIN",
+          "name": "Yulin",
+          "type": "system",
+          "system_id": 402,
+          "system_code": "YULIN",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Banshee to Yulin",
+      "label": "Through Yulin",
+      "first_jump": "Banshee - Yulin",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "BANSHEE",
+          "name": "Banshee",
+          "type": "system",
+          "system_id": 346,
+          "system_code": "BANSHEE",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1979,
+          "name": "Banshee - Yulin",
+          "type": "jump",
+          "system_id": 346,
+          "system_code": "BANSHEE",
+          "object_id": 1979,
+          "object_code": "BANSHEE.JUMPPOINTS.YULIN",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2292,
+          "name": "Yulin - Banshee",
+          "type": "jump",
+          "system_id": 402,
+          "system_code": "YULIN",
+          "object_id": 2292,
+          "object_code": "YULIN.JUMPPOINTS.BANSHEE",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "YULIN",
+          "name": "Yulin",
+          "type": "system",
+          "system_id": 402,
+          "system_code": "YULIN",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

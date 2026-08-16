@@ -66,7 +66,11 @@ async function main() {
   };
 
   const openTab = async (id) => {
-    await page.evaluate((t) => document.querySelector(`[data-tab="${t}"]`)?.click(), id);
+    await page.evaluate((t) => {
+      const btn = document.querySelector(`[data-tab="${t}"]`);
+      if (!btn) return;
+      if (!btn.classList.contains("on")) btn.click();
+    }, id);
     await sleep(200);
   };
 
@@ -303,11 +307,11 @@ async function main() {
     note(`scan:${scan}`, await state());
   }
 
-  await page.evaluate(() => document.querySelector("[data-view=2d]")?.click());
+  await page.evaluate(() => document.querySelector('[data-view="2d"]')?.click());
   await sleep(400);
   note("2d", await state());
   await snap("18-2d.png");
-  await page.evaluate(() => document.querySelector("[data-view=3d]")?.click());
+  await page.evaluate(() => document.querySelector('[data-view="3d"]')?.click());
   await sleep(200);
 
   // keyboard

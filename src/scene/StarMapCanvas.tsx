@@ -285,7 +285,15 @@ export function StarMapCanvas({
 
     const invisible = new THREE.MeshBasicMaterial({ visible: false });
 
+    const dropLabels = (root: THREE.Object3D) => {
+      root.traverse((obj) => {
+        const el = (obj as { element?: HTMLElement }).element;
+        if (el) el.remove();
+      });
+    };
+
     const rebuild = (next: CapturedBody[]) => {
+      dropLabels(systemGroup);
       systemGroup.clear();
       pickables.length = 0;
       meshes.clear();
@@ -427,6 +435,14 @@ export function StarMapCanvas({
     const setMode = (m: Level) => {
       systemGroup.visible = m !== "galaxy";
       galaxyGroup.visible = m === "galaxy";
+      systemGroup.traverse((obj) => {
+        const el = (obj as { element?: HTMLElement }).element;
+        if (el) el.style.display = m === "galaxy" ? "none" : "";
+      });
+      galaxyGroup.traverse((obj) => {
+        const el = (obj as { element?: HTMLElement }).element;
+        if (el) el.style.display = m === "galaxy" ? "" : "none";
+      });
       controls.minDistance = m === "galaxy" ? 8 : 2;
       const here = galaxyMeshes.get(currentSystem);
       if (m === "galaxy") {

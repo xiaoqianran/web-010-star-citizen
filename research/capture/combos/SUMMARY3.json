@@ -1,0 +1,2775 @@
+{
+  "capturedAt": "2026-08-16T18:44:06.302Z",
+  "source": "https://robertsspaceindustries.com",
+  "notes": {
+    "headers": {
+      "Accept": "application/json",
+      "Origin": "https://robertsspaceindustries.com",
+      "Referer": "https://robertsspaceindustries.com/en/starmap/",
+      "Content-Type": "application/x-www-form-urlencoded",
+      "User-Agent": "Mozilla/5.0 (compatible; web-010-star-citizen-study/0.1)"
+    },
+    "sTunnelCount": 20,
+    "sTunnelPicks": [
+      {
+        "departure": "TERRA",
+        "destination": "PYRO",
+        "tunnel": {
+          "id": 1203,
+          "entry_system_id": 316,
+          "exit_system_id": 318,
+          "entry_code": "TERRA",
+          "exit_code": "PYRO",
+          "entry_object": "TERRA.JUMPPOINTS.PYRO",
+          "exit_object": "PYRO.JUMPPOINTS.TERRA"
+        }
+      },
+      {
+        "departure": "NUL",
+        "destination": "CROSHAW",
+        "tunnel": {
+          "id": 1213,
+          "entry_system_id": 320,
+          "exit_system_id": 369,
+          "entry_code": "NUL",
+          "exit_code": "CROSHAW",
+          "entry_object": "NUL.JUMPPOINTS.CROSHAW",
+          "exit_object": "CROSHAW.JUMPPOINTS.NUL"
+        }
+      },
+      {
+        "departure": "CATHCART",
+        "destination": "KILIAN",
+        "tunnel": {
+          "id": 1260,
+          "entry_system_id": 372,
+          "exit_system_id": 344,
+          "entry_code": "CATHCART",
+          "exit_code": "KILIAN",
+          "entry_object": "CATHCART.JUMPPOINTS.KILIAN",
+          "exit_object": "KILIAN.JUMPPOINTS.CATHCART"
+        }
+      },
+      {
+        "departure": "BANSHEE",
+        "destination": "YULIN",
+        "tunnel": {
+          "id": 1280,
+          "entry_system_id": 346,
+          "exit_system_id": 402,
+          "entry_code": "BANSHEE",
+          "exit_code": "YULIN",
+          "entry_object": "BANSHEE.JUMPPOINTS.YULIN",
+          "exit_object": "YULIN.JUMPPOINTS.BANSHEE"
+        }
+      }
+    ],
+    "distantPairs": [
+      "SOL-NYX",
+      "PYRO-TAMSA",
+      "VEGA-TAMSA",
+      "TRISE-SOL",
+      "CROSHAW-SOL",
+      "KILIAN-PYRO",
+      "TERRA-NYX",
+      "STANTON-TAMSA"
+    ],
+    "banuSystemsPresent": [
+      "KINS",
+      "BACCHUS",
+      "GLIESE",
+      "GEDDON",
+      "TRISE",
+      "YULIN"
+    ],
+    "noBanuSystemCode": true
+  },
+  "find": [
+    {
+      "query": "Renatus",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "LZ": 1
+      },
+      "sample": [
+        {
+          "name": "Port Renatus",
+          "code": "SOL.LZS.PORTRETANUS",
+          "type": "LZ"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Renatus.json"
+    },
+    {
+      "query": "LZ",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed",
+      "file": "find-LZ.json"
+    },
+    {
+      "query": "Port Renatus",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "LZ": 1
+      },
+      "sample": [
+        {
+          "name": "Port Renatus",
+          "code": "SOL.LZS.PORTRETANUS",
+          "type": "LZ"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Port-Renatus.json"
+    },
+    {
+      "query": "The ARK",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "MANMADE": 1
+      },
+      "sample": [
+        {
+          "name": "The ARK",
+          "code": "TAYAC.STATION.THEARK",
+          "type": "MANMADE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-The-ARK.json"
+    },
+    {
+      "query": "The Ark",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "MANMADE": 1
+      },
+      "sample": [
+        {
+          "name": "The ARK",
+          "code": "TAYAC.STATION.THEARK",
+          "type": "MANMADE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-The-Ark.json"
+    },
+    {
+      "query": "Fair",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "SATELLITE": 1
+      },
+      "sample": [
+        {
+          "name": "Fairo",
+          "code": "PYRO.MOON.FAIRO",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Fair.json"
+    },
+    {
+      "query": "Fair Chance",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Fair-Chance.json"
+    },
+    {
+      "query": "Delamar",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "PLANET": 1
+      },
+      "sample": [
+        {
+          "name": "Delamar",
+          "code": "NYX.ASTEROID.DELAMAR",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Delamar.json"
+    },
+    {
+      "query": "Aaron Halo",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "ASTEROID_BELT": 1
+      },
+      "sample": [
+        {
+          "name": "Aaron Halo",
+          "code": "STANTON.BELTS.ALPHABELT",
+          "type": "ASTEROID_BELT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Aaron-Halo.json"
+    },
+    {
+      "query": "Yela",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 2,
+      "objectTypes": {
+        "SATELLITE": 1,
+        "ASTEROID_BELT": 1
+      },
+      "sample": [
+        {
+          "name": "Yela",
+          "code": "STANTON.MOONS.YELA",
+          "type": "SATELLITE"
+        },
+        {
+          "name": "Ring of Yela",
+          "code": "STANTON.RINGS.RINGSOFYELA",
+          "type": "ASTEROID_BELT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Yela.json"
+    },
+    {
+      "query": "Ring of Yela",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "ASTEROID_BELT": 1
+      },
+      "sample": [
+        {
+          "name": "Ring of Yela",
+          "code": "STANTON.RINGS.RINGSOFYELA",
+          "type": "ASTEROID_BELT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Ring-of-Yela.json"
+    },
+    {
+      "query": "Warn",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "POI": 1
+      },
+      "sample": [
+        {
+          "name": "Vanduul Attack",
+          "code": "VEGA.POI.WARN01",
+          "type": "POI"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Warn.json"
+    },
+    {
+      "query": "POI",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-POI.json"
+    },
+    {
+      "query": "Lagrange",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Lagrange.json"
+    },
+    {
+      "query": "ARC-L2",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-ARC-L2.json"
+    },
+    {
+      "query": "L1",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed",
+      "file": "find-L1.json"
+    },
+    {
+      "query": "L2",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed",
+      "file": "find-L2.json"
+    },
+    {
+      "query": "L3",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed",
+      "file": "find-L3.json"
+    },
+    {
+      "query": "L4",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed",
+      "file": "find-L4.json"
+    },
+    {
+      "query": "L5",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed",
+      "file": "find-L5.json"
+    },
+    {
+      "query": "neutron",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-neutron.json"
+    },
+    {
+      "query": "pulsar",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-pulsar.json"
+    },
+    {
+      "query": "black hole",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-black-hole.json"
+    },
+    {
+      "query": "Tamsa",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 5,
+      "objectTypes": {
+        "BLACKHOLE": 1,
+        "PLANET": 2,
+        "JUMPPOINT": 2
+      },
+      "sample": [
+        {
+          "name": "Tamsa",
+          "code": "TAMSA",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Tamsa",
+          "code": "TAMSA.STAR.TAMSA",
+          "type": "BLACKHOLE"
+        },
+        {
+          "name": "Tamsa I",
+          "code": "TAMSA.PLANET.TAMSAI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Tamsa II",
+          "code": "TAMSA.PLANET.TAMSAII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Tamsa - Banshee",
+          "code": "TAMSA.JUMPPOINTS.BANSHEE",
+          "type": "JUMPPOINT"
+        },
+        {
+          "name": "Banshee - Tamsa",
+          "code": "BANSHEE.JUMPPOINTS.TAMSA",
+          "type": "JUMPPOINT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Tamsa.json"
+    },
+    {
+      "query": "Broken Moon",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "SATELLITE": 1
+      },
+      "sample": [
+        {
+          "name": "Broken Moon",
+          "code": "TARANIS.MOONS.BROKENMOON",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Broken-Moon.json"
+    },
+    {
+      "query": "Kellog",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 15,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 6,
+        "JUMPPOINT": 8
+      },
+      "sample": [
+        {
+          "name": "Kellog",
+          "code": "KELLOG",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Kellog",
+          "code": "KELLOG.STARS.KELLOG",
+          "type": "STAR"
+        },
+        {
+          "name": "Kellog I",
+          "code": "KELLOG.PLANET.KELLOGI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Xis",
+          "code": "KELLOG.PLANET.KELLOGIIXIS",
+          "type": "PLANET"
+        },
+        {
+          "name": "Kellog III",
+          "code": "KELLOG.PLANET.KELLOGIII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Kellog IV",
+          "code": "KELLOG.PLANET.KELLOGIV",
+          "type": "PLANET"
+        },
+        {
+          "name": "Kellog V",
+          "code": "KELLOG.PLANET.KELLOGV",
+          "type": "PLANET"
+        },
+        {
+          "name": "Quarterdeck",
+          "code": "KELLOG.PLANET.KELLOGVIQUARTERDECK",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Kellog.json"
+    },
+    {
+      "query": "JusticeStar",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "MANMADE": 1
+      },
+      "sample": [
+        {
+          "name": "JusticeStar Satellite",
+          "code": "KELLOG.STATION.JUSTICESTARSATELLITE",
+          "type": "MANMADE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-JusticeStar.json"
+    },
+    {
+      "query": "Croshaw",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 15,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 4,
+        "ASTEROID_FIELD": 2,
+        "JUMPPOINT": 8
+      },
+      "sample": [
+        {
+          "name": "Croshaw",
+          "code": "CROSHAW",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Croshaw",
+          "code": "CROSHAW.STARS.CROSHAW",
+          "type": "STAR"
+        },
+        {
+          "name": "Croshaw I",
+          "code": "CROSHAW.PLANETS.CROSHAWI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Angeli",
+          "code": "CROSHAW.PLANETS.CROSHAWIIANGELI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Vann",
+          "code": "CROSHAW.PLANETS.CROSHAWIIIVANN",
+          "type": "PLANET"
+        },
+        {
+          "name": "Croshaw IV",
+          "code": "CROSHAW.PLANETS.CROSHAWIV",
+          "type": "PLANET"
+        },
+        {
+          "name": "Icarus Cluster",
+          "code": "CROSHAW.BELTS.ICARUSCLUSTER",
+          "type": "ASTEROID_FIELD"
+        },
+        {
+          "name": "Daedalus Cluster",
+          "code": "CROSHAW.BELTS.DAEDALUSCLUSTER",
+          "type": "ASTEROID_FIELD"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Croshaw.json"
+    },
+    {
+      "query": "Baker",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 16,
+      "objectTypes": {
+        "STAR": 2,
+        "PLANET": 4,
+        "JUMPPOINT": 10
+      },
+      "sample": [
+        {
+          "name": "Baker",
+          "code": "BAKER",
+          "type": "BINARY"
+        },
+        {
+          "name": "Baker A",
+          "code": "BAKER.STARS.BAKERA",
+          "type": "STAR"
+        },
+        {
+          "name": "Baker B",
+          "code": "BAKER.STAR.BAKERB",
+          "type": "STAR"
+        },
+        {
+          "name": "Baker I",
+          "code": "BAKER.PLANET.BAKERI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Baker II",
+          "code": "BAKER.PLANET.BAKERII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Baker III",
+          "code": "BAKER.PLANET.BAKERIII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Baker IV",
+          "code": "BAKER.PLANET.BAKERIV",
+          "type": "PLANET"
+        },
+        {
+          "name": "Osiris - Baker",
+          "code": "OSIRIS.JUMPPOINTS.BAKER",
+          "type": "JUMPPOINT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Baker.json"
+    },
+    {
+      "query": "Xi'an",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-Xian.json"
+    },
+    {
+      "query": "XIAN",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-XIAN.json"
+    },
+    {
+      "query": "uee",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-uee.json"
+    },
+    {
+      "query": "UEE",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find-UEE.json"
+    }
+  ],
+  "routes": [
+    {
+      "pair": "TERRA-PYRO",
+      "size": "L",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "s-tunnel",
+      "sTunnel": {
+        "id": 1203,
+        "entry_system_id": 316,
+        "exit_system_id": 318,
+        "entry_code": "TERRA",
+        "exit_code": "PYRO",
+        "entry_object": "TERRA.JUMPPOINTS.PYRO",
+        "exit_object": "PYRO.JUMPPOINTS.TERRA"
+      },
+      "file": "route-TERRA-PYRO-L.json",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Pyro",
+        "name": "Terra to Pyro",
+        "first_jump": "Terra - Pyro",
+        "systems": [
+          "TERRA",
+          "TERRA",
+          "PYRO",
+          "PYRO"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Pyro",
+        "name": "Terra to Pyro",
+        "first_jump": "Terra - Pyro",
+        "systems": [
+          "TERRA",
+          "TERRA",
+          "PYRO",
+          "PYRO"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "TERRA-PYRO",
+      "size": "S",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "s-tunnel",
+      "sTunnel": {
+        "id": 1203,
+        "entry_system_id": 316,
+        "exit_system_id": 318,
+        "entry_code": "TERRA",
+        "exit_code": "PYRO",
+        "entry_object": "TERRA.JUMPPOINTS.PYRO",
+        "exit_object": "PYRO.JUMPPOINTS.TERRA"
+      },
+      "file": "route-TERRA-PYRO-S.json",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Pyro",
+        "name": "Terra to Pyro",
+        "first_jump": "Terra - Pyro",
+        "systems": [
+          "TERRA",
+          "TERRA",
+          "PYRO",
+          "PYRO"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Pyro",
+        "name": "Terra to Pyro",
+        "first_jump": "Terra - Pyro",
+        "systems": [
+          "TERRA",
+          "TERRA",
+          "PYRO",
+          "PYRO"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "NUL-CROSHAW",
+      "size": "L",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "s-tunnel",
+      "sTunnel": {
+        "id": 1213,
+        "entry_system_id": 320,
+        "exit_system_id": 369,
+        "entry_code": "NUL",
+        "exit_code": "CROSHAW",
+        "entry_object": "NUL.JUMPPOINTS.CROSHAW",
+        "exit_object": "CROSHAW.JUMPPOINTS.NUL"
+      },
+      "file": "route-NUL-CROSHAW-L.json",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Croshaw",
+        "name": "Nul to Croshaw",
+        "first_jump": "Nul - Croshaw",
+        "systems": [
+          "NUL",
+          "NUL",
+          "CROSHAW",
+          "CROSHAW"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Croshaw",
+        "name": "Nul to Croshaw",
+        "first_jump": "Nul - Croshaw",
+        "systems": [
+          "NUL",
+          "NUL",
+          "CROSHAW",
+          "CROSHAW"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "NUL-CROSHAW",
+      "size": "S",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "s-tunnel",
+      "sTunnel": {
+        "id": 1213,
+        "entry_system_id": 320,
+        "exit_system_id": 369,
+        "entry_code": "NUL",
+        "exit_code": "CROSHAW",
+        "entry_object": "NUL.JUMPPOINTS.CROSHAW",
+        "exit_object": "CROSHAW.JUMPPOINTS.NUL"
+      },
+      "file": "route-NUL-CROSHAW-S.json",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Croshaw",
+        "name": "Nul to Croshaw",
+        "first_jump": "Nul - Croshaw",
+        "systems": [
+          "NUL",
+          "NUL",
+          "CROSHAW",
+          "CROSHAW"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Croshaw",
+        "name": "Nul to Croshaw",
+        "first_jump": "Nul - Croshaw",
+        "systems": [
+          "NUL",
+          "NUL",
+          "CROSHAW",
+          "CROSHAW"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "CATHCART-KILIAN",
+      "size": "L",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "s-tunnel",
+      "sTunnel": {
+        "id": 1260,
+        "entry_system_id": 372,
+        "exit_system_id": 344,
+        "entry_code": "CATHCART",
+        "exit_code": "KILIAN",
+        "entry_object": "CATHCART.JUMPPOINTS.KILIAN",
+        "exit_object": "KILIAN.JUMPPOINTS.CATHCART"
+      },
+      "file": "route-CATHCART-KILIAN-L.json",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Kilian",
+        "name": "Cathcart to Kilian",
+        "first_jump": "Cathcart - Kilian",
+        "systems": [
+          "CATHCART",
+          "CATHCART",
+          "KILIAN",
+          "KILIAN"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Kilian",
+        "name": "Cathcart to Kilian",
+        "first_jump": "Cathcart - Kilian",
+        "systems": [
+          "CATHCART",
+          "CATHCART",
+          "KILIAN",
+          "KILIAN"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "CATHCART-KILIAN",
+      "size": "S",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "s-tunnel",
+      "sTunnel": {
+        "id": 1260,
+        "entry_system_id": 372,
+        "exit_system_id": 344,
+        "entry_code": "CATHCART",
+        "exit_code": "KILIAN",
+        "entry_object": "CATHCART.JUMPPOINTS.KILIAN",
+        "exit_object": "KILIAN.JUMPPOINTS.CATHCART"
+      },
+      "file": "route-CATHCART-KILIAN-S.json",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Kilian",
+        "name": "Cathcart to Kilian",
+        "first_jump": "Cathcart - Kilian",
+        "systems": [
+          "CATHCART",
+          "CATHCART",
+          "KILIAN",
+          "KILIAN"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Kilian",
+        "name": "Cathcart to Kilian",
+        "first_jump": "Cathcart - Kilian",
+        "systems": [
+          "CATHCART",
+          "CATHCART",
+          "KILIAN",
+          "KILIAN"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "BANSHEE-YULIN",
+      "size": "L",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "s-tunnel",
+      "sTunnel": {
+        "id": 1280,
+        "entry_system_id": 346,
+        "exit_system_id": 402,
+        "entry_code": "BANSHEE",
+        "exit_code": "YULIN",
+        "entry_object": "BANSHEE.JUMPPOINTS.YULIN",
+        "exit_object": "YULIN.JUMPPOINTS.BANSHEE"
+      },
+      "file": "route-BANSHEE-YULIN-L.json",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Yulin",
+        "name": "Banshee to Yulin",
+        "first_jump": "Banshee - Yulin",
+        "systems": [
+          "BANSHEE",
+          "BANSHEE",
+          "YULIN",
+          "YULIN"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Yulin",
+        "name": "Banshee to Yulin",
+        "first_jump": "Banshee - Yulin",
+        "systems": [
+          "BANSHEE",
+          "BANSHEE",
+          "YULIN",
+          "YULIN"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "BANSHEE-YULIN",
+      "size": "S",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "s-tunnel",
+      "sTunnel": {
+        "id": 1280,
+        "entry_system_id": 346,
+        "exit_system_id": 402,
+        "entry_code": "BANSHEE",
+        "exit_code": "YULIN",
+        "entry_object": "BANSHEE.JUMPPOINTS.YULIN",
+        "exit_object": "YULIN.JUMPPOINTS.BANSHEE"
+      },
+      "file": "route-BANSHEE-YULIN-S.json",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Yulin",
+        "name": "Banshee to Yulin",
+        "first_jump": "Banshee - Yulin",
+        "systems": [
+          "BANSHEE",
+          "BANSHEE",
+          "YULIN",
+          "YULIN"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Yulin",
+        "name": "Banshee to Yulin",
+        "first_jump": "Banshee - Yulin",
+        "systems": [
+          "BANSHEE",
+          "BANSHEE",
+          "YULIN",
+          "YULIN"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "SOL-NYX",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "distant",
+      "file": "route-SOL-NYX.json",
+      "shortest": {
+        "jumps": 10,
+        "label": "Through Davien",
+        "name": "Sol to Nyx",
+        "first_jump": "Sol - Davien",
+        "systems": [
+          "SOL",
+          "SOL",
+          "DAVIEN",
+          "DAVIEN",
+          "FERRON",
+          "FERRON",
+          "IDRIS",
+          "IDRIS",
+          "ELYSIUM",
+          "ELYSIUM",
+          "CENTAURI",
+          "CENTAURI",
+          "NUL",
+          "NUL",
+          "CALIBAN",
+          "CALIBAN",
+          "OBERON",
+          "OBERON",
+          "VIRGIL",
+          "VIRGIL",
+          "NYX",
+          "NYX"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 4,
+        "label": "Through Davien",
+        "name": "Sol to Nyx",
+        "first_jump": "Sol - Davien",
+        "systems": [
+          "SOL",
+          "SOL",
+          "DAVIEN",
+          "DAVIEN",
+          "CANO",
+          "CANO",
+          "PYRO",
+          "PYRO",
+          "NYX",
+          "NYX"
+        ]
+      },
+      "jumpsDiffer": true,
+      "segmentsDiffer": true,
+      "shortestVsLeastjumpsDiffer": true
+    },
+    {
+      "pair": "PYRO-TAMSA",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "distant",
+      "file": "route-PYRO-TAMSA.json",
+      "shortest": {
+        "jumps": 7,
+        "label": "Through Cano",
+        "name": "Pyro to Tamsa",
+        "first_jump": "Pyro - Cano",
+        "systems": [
+          "PYRO",
+          "PYRO",
+          "CANO",
+          "CANO",
+          "DAVIEN",
+          "DAVIEN",
+          "FERRON",
+          "FERRON",
+          "IDRIS",
+          "IDRIS",
+          "GARRON",
+          "GARRON",
+          "BANSHEE",
+          "BANSHEE",
+          "TAMSA",
+          "TAMSA"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 6,
+        "label": "Through Cano",
+        "name": "Pyro to Tamsa",
+        "first_jump": "Pyro - Cano",
+        "systems": [
+          "PYRO",
+          "PYRO",
+          "CANO",
+          "CANO",
+          "DAVIEN",
+          "DAVIEN",
+          "BACCHUS",
+          "BACCHUS",
+          "GARRON",
+          "GARRON",
+          "BANSHEE",
+          "BANSHEE",
+          "TAMSA",
+          "TAMSA"
+        ]
+      },
+      "jumpsDiffer": true,
+      "segmentsDiffer": true,
+      "shortestVsLeastjumpsDiffer": true
+    },
+    {
+      "pair": "VEGA-TAMSA",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "distant",
+      "file": "route-VEGA-TAMSA.json",
+      "shortest": {
+        "jumps": 7,
+        "label": "Through Nul",
+        "name": "Vega to Tamsa",
+        "first_jump": "Vega - Nul",
+        "systems": [
+          "VEGA",
+          "VEGA",
+          "NUL",
+          "NUL",
+          "CENTAURI",
+          "CENTAURI",
+          "ELYSIUM",
+          "ELYSIUM",
+          "LEIR",
+          "LEIR",
+          "YULIN",
+          "YULIN",
+          "BANSHEE",
+          "BANSHEE",
+          "TAMSA",
+          "TAMSA"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 6,
+        "label": "Through Nul",
+        "name": "Vega to Tamsa",
+        "first_jump": "Vega - Nul",
+        "systems": [
+          "VEGA",
+          "VEGA",
+          "NUL",
+          "NUL",
+          "CENTAURI",
+          "CENTAURI",
+          "ELYSIUM",
+          "ELYSIUM",
+          "LEIR",
+          "LEIR",
+          "BANSHEE",
+          "BANSHEE",
+          "TAMSA",
+          "TAMSA"
+        ]
+      },
+      "jumpsDiffer": true,
+      "segmentsDiffer": true,
+      "shortestVsLeastjumpsDiffer": true
+    },
+    {
+      "pair": "TRISE-SOL",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "distant",
+      "file": "route-TRISE-SOL.json",
+      "shortest": {
+        "jumps": 10,
+        "label": "Through Ē'aluth (Eealus)",
+        "name": "Trise to Sol",
+        "first_jump": "Trise - Ē'aluth (Eealus)",
+        "systems": [
+          "TRISE",
+          "TRISE",
+          "EEALUS",
+          "EEALUS",
+          "OYA",
+          "OYA",
+          "TOHIL",
+          "TOHIL",
+          "NYX",
+          "NYX",
+          "STANTON",
+          "STANTON",
+          "TERRA",
+          "TERRA",
+          "PYRO",
+          "PYRO",
+          "CANO",
+          "CANO",
+          "DAVIEN",
+          "DAVIEN",
+          "SOL",
+          "SOL"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 7,
+        "label": "Through Ē'aluth (Eealus)",
+        "name": "Trise to Sol",
+        "first_jump": "Trise - Ē'aluth (Eealus)",
+        "systems": [
+          "TRISE",
+          "TRISE",
+          "EEALUS",
+          "EEALUS",
+          "OYA",
+          "OYA",
+          "CASTRA",
+          "CASTRA",
+          "PYRO",
+          "PYRO",
+          "CANO",
+          "CANO",
+          "DAVIEN",
+          "DAVIEN",
+          "SOL",
+          "SOL"
+        ]
+      },
+      "jumpsDiffer": true,
+      "segmentsDiffer": true,
+      "shortestVsLeastjumpsDiffer": true
+    },
+    {
+      "pair": "CROSHAW-SOL",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "distant",
+      "file": "route-CROSHAW-SOL.json",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Sol",
+        "name": "Croshaw to Sol",
+        "first_jump": "Croshaw - Sol",
+        "systems": [
+          "CROSHAW",
+          "CROSHAW",
+          "SOL",
+          "SOL"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Sol",
+        "name": "Croshaw to Sol",
+        "first_jump": "Croshaw - Sol",
+        "systems": [
+          "CROSHAW",
+          "CROSHAW",
+          "SOL",
+          "SOL"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "KILIAN-PYRO",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "distant",
+      "file": "route-KILIAN-PYRO.json",
+      "shortest": {
+        "jumps": 4,
+        "label": "Through Ellis",
+        "name": "Kilian to Pyro",
+        "first_jump": "Kilian - Ellis",
+        "systems": [
+          "KILIAN",
+          "KILIAN",
+          "ELLIS",
+          "ELLIS",
+          "MAGNUS",
+          "MAGNUS",
+          "TERRA",
+          "TERRA",
+          "PYRO",
+          "PYRO"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 3,
+        "label": "Through Davien",
+        "name": "Kilian to Pyro",
+        "first_jump": "Kilian - Davien",
+        "systems": [
+          "KILIAN",
+          "KILIAN",
+          "DAVIEN",
+          "DAVIEN",
+          "CANO",
+          "CANO",
+          "PYRO",
+          "PYRO"
+        ]
+      },
+      "jumpsDiffer": true,
+      "segmentsDiffer": true,
+      "shortestVsLeastjumpsDiffer": true
+    },
+    {
+      "pair": "TERRA-NYX",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "distant",
+      "file": "route-TERRA-NYX.json",
+      "shortest": {
+        "jumps": 2,
+        "label": "Through Stanton",
+        "name": "Terra to Nyx",
+        "first_jump": "Terra - Stanton",
+        "systems": [
+          "TERRA",
+          "TERRA",
+          "STANTON",
+          "STANTON",
+          "NYX",
+          "NYX"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 2,
+        "label": "Through Stanton",
+        "name": "Terra to Nyx",
+        "first_jump": "Terra - Stanton",
+        "systems": [
+          "TERRA",
+          "TERRA",
+          "STANTON",
+          "STANTON",
+          "NYX",
+          "NYX"
+        ]
+      },
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "shortestVsLeastjumpsDiffer": false
+    },
+    {
+      "pair": "STANTON-TAMSA",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "kind": "distant",
+      "file": "route-STANTON-TAMSA.json",
+      "shortest": {
+        "jumps": 11,
+        "label": "Through Nyx",
+        "name": "Stanton to Tamsa",
+        "first_jump": "Stanton - Nyx",
+        "systems": [
+          "STANTON",
+          "STANTON",
+          "NYX",
+          "NYX",
+          "VIRGIL",
+          "VIRGIL",
+          "OBERON",
+          "OBERON",
+          "CALIBAN",
+          "CALIBAN",
+          "NUL",
+          "NUL",
+          "CENTAURI",
+          "CENTAURI",
+          "ELYSIUM",
+          "ELYSIUM",
+          "LEIR",
+          "LEIR",
+          "YULIN",
+          "YULIN",
+          "BANSHEE",
+          "BANSHEE",
+          "TAMSA",
+          "TAMSA"
+        ]
+      },
+      "leastjumps": {
+        "jumps": 7,
+        "label": "Through Pyro",
+        "name": "Stanton to Tamsa",
+        "first_jump": "Stanton - Pyro",
+        "systems": [
+          "STANTON",
+          "STANTON",
+          "PYRO",
+          "PYRO",
+          "CANO",
+          "CANO",
+          "DAVIEN",
+          "DAVIEN",
+          "BACCHUS",
+          "BACCHUS",
+          "GARRON",
+          "GARRON",
+          "BANSHEE",
+          "BANSHEE",
+          "TAMSA",
+          "TAMSA"
+        ]
+      },
+      "jumpsDiffer": true,
+      "segmentsDiffer": true,
+      "shortestVsLeastjumpsDiffer": true
+    }
+  ],
+  "sizeCompare": [
+    {
+      "pair": "TERRA-PYRO",
+      "sJumps": 1,
+      "lJumps": 1,
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "sLabel": "Through Pyro",
+      "lLabel": "Through Pyro"
+    },
+    {
+      "pair": "NUL-CROSHAW",
+      "sJumps": 1,
+      "lJumps": 1,
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "sLabel": "Through Croshaw",
+      "lLabel": "Through Croshaw"
+    },
+    {
+      "pair": "CATHCART-KILIAN",
+      "sJumps": 1,
+      "lJumps": 1,
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "sLabel": "Through Kilian",
+      "lLabel": "Through Kilian"
+    },
+    {
+      "pair": "BANSHEE-YULIN",
+      "sJumps": 1,
+      "lJumps": 1,
+      "jumpsDiffer": false,
+      "segmentsDiffer": false,
+      "sLabel": "Through Yulin",
+      "lLabel": "Through Yulin"
+    }
+  ],
+  "celestialObjects": [
+    {
+      "code": "TAMSA.STAR.TAMSA",
+      "status": 200,
+      "success": 1,
+      "apiCode": "OK",
+      "type": "BLACKHOLE",
+      "name": "Tamsa",
+      "designation": "Tamsa",
+      "parent_id": null,
+      "fairchanceact": null,
+      "habitable": null,
+      "appearance": "DEFAULT",
+      "subtype": "Stellar",
+      "hasShader": true,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "blackhole",
+        "radius"
+      ],
+      "file": "api/celestial-objects/TAMSA.STAR.TAMSA.json"
+    },
+    {
+      "code": "TAYAC.STATION.THEARK",
+      "status": 200,
+      "success": 1,
+      "apiCode": "OK",
+      "type": "MANMADE",
+      "name": "The ARK",
+      "designation": "The ARK",
+      "parent_id": 2688,
+      "fairchanceact": null,
+      "habitable": true,
+      "appearance": "CUSTOM",
+      "subtype": "Space Station",
+      "hasShader": false,
+      "shaderKeys": [],
+      "file": "api/celestial-objects/TAYAC.STATION.THEARK.json"
+    },
+    {
+      "code": "STANTON.STATION.PORTOLISAR",
+      "status": 200,
+      "success": 1,
+      "apiCode": "OK",
+      "type": "MANMADE",
+      "name": "Port Olisar",
+      "designation": "Port Olisar",
+      "parent_id": 1695,
+      "fairchanceact": null,
+      "habitable": true,
+      "appearance": "CUSTOM",
+      "subtype": "Starbase",
+      "hasShader": true,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "radius"
+      ],
+      "file": "api/celestial-objects/STANTON.STATION.PORTOLISAR.json"
+    },
+    {
+      "code": "STANTON.MOONS.CELLIN",
+      "status": 200,
+      "success": 1,
+      "apiCode": "OK",
+      "type": "SATELLITE",
+      "name": "Cellin",
+      "designation": "Stanton 2a",
+      "parent_id": 1695,
+      "fairchanceact": null,
+      "habitable": null,
+      "appearance": "DEFAULT",
+      "subtype": "Planetary Moon",
+      "hasShader": true,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "highlight",
+        "radius"
+      ],
+      "file": "api/celestial-objects/STANTON.MOONS.CELLIN.json"
+    },
+    {
+      "code": "VEGA.POI.WARN01",
+      "status": 200,
+      "success": 1,
+      "apiCode": "OK",
+      "type": "POI",
+      "name": "Vanduul Attack",
+      "designation": "VANDUUL-WARN-01",
+      "parent_id": 1800,
+      "fairchanceact": null,
+      "habitable": null,
+      "appearance": "WARNING_RED",
+      "subtype": "POI",
+      "hasShader": false,
+      "shaderKeys": [],
+      "file": "api/celestial-objects/VEGA.POI.WARN01.json"
+    },
+    {
+      "code": "SOL.PLANETS.LUNA",
+      "status": 200,
+      "success": 1,
+      "apiCode": "OK",
+      "type": "SATELLITE",
+      "name": "Luna",
+      "designation": "Sol 3a",
+      "parent_id": 2026,
+      "fairchanceact": null,
+      "habitable": null,
+      "appearance": "PLANET_BROWN",
+      "subtype": "Planetary Moon",
+      "hasShader": true,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "highlight",
+        "radius"
+      ],
+      "file": "api/celestial-objects/SOL.PLANETS.LUNA.json"
+    }
+  ],
+  "highlights": {
+    "findHits": [
+      {
+        "query": "Renatus",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "LZ": 1
+        },
+        "sample": [
+          {
+            "name": "Port Renatus",
+            "code": "SOL.LZS.PORTRETANUS",
+            "type": "LZ"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Renatus.json"
+      },
+      {
+        "query": "Port Renatus",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "LZ": 1
+        },
+        "sample": [
+          {
+            "name": "Port Renatus",
+            "code": "SOL.LZS.PORTRETANUS",
+            "type": "LZ"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Port-Renatus.json"
+      },
+      {
+        "query": "The ARK",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "MANMADE": 1
+        },
+        "sample": [
+          {
+            "name": "The ARK",
+            "code": "TAYAC.STATION.THEARK",
+            "type": "MANMADE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-The-ARK.json"
+      },
+      {
+        "query": "The Ark",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "MANMADE": 1
+        },
+        "sample": [
+          {
+            "name": "The ARK",
+            "code": "TAYAC.STATION.THEARK",
+            "type": "MANMADE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-The-Ark.json"
+      },
+      {
+        "query": "Fair",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "SATELLITE": 1
+        },
+        "sample": [
+          {
+            "name": "Fairo",
+            "code": "PYRO.MOON.FAIRO",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Fair.json"
+      },
+      {
+        "query": "Delamar",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "PLANET": 1
+        },
+        "sample": [
+          {
+            "name": "Delamar",
+            "code": "NYX.ASTEROID.DELAMAR",
+            "type": "PLANET"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Delamar.json"
+      },
+      {
+        "query": "Aaron Halo",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "ASTEROID_BELT": 1
+        },
+        "sample": [
+          {
+            "name": "Aaron Halo",
+            "code": "STANTON.BELTS.ALPHABELT",
+            "type": "ASTEROID_BELT"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Aaron-Halo.json"
+      },
+      {
+        "query": "Yela",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 2,
+        "objectTypes": {
+          "SATELLITE": 1,
+          "ASTEROID_BELT": 1
+        },
+        "sample": [
+          {
+            "name": "Yela",
+            "code": "STANTON.MOONS.YELA",
+            "type": "SATELLITE"
+          },
+          {
+            "name": "Ring of Yela",
+            "code": "STANTON.RINGS.RINGSOFYELA",
+            "type": "ASTEROID_BELT"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Yela.json"
+      },
+      {
+        "query": "Ring of Yela",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "ASTEROID_BELT": 1
+        },
+        "sample": [
+          {
+            "name": "Ring of Yela",
+            "code": "STANTON.RINGS.RINGSOFYELA",
+            "type": "ASTEROID_BELT"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Ring-of-Yela.json"
+      },
+      {
+        "query": "Warn",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "POI": 1
+        },
+        "sample": [
+          {
+            "name": "Vanduul Attack",
+            "code": "VEGA.POI.WARN01",
+            "type": "POI"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Warn.json"
+      },
+      {
+        "query": "Tamsa",
+        "status": 200,
+        "success": 1,
+        "systems": 1,
+        "objects": 5,
+        "objectTypes": {
+          "BLACKHOLE": 1,
+          "PLANET": 2,
+          "JUMPPOINT": 2
+        },
+        "sample": [
+          {
+            "name": "Tamsa",
+            "code": "TAMSA",
+            "type": "SINGLE_STAR"
+          },
+          {
+            "name": "Tamsa",
+            "code": "TAMSA.STAR.TAMSA",
+            "type": "BLACKHOLE"
+          },
+          {
+            "name": "Tamsa I",
+            "code": "TAMSA.PLANET.TAMSAI",
+            "type": "PLANET"
+          },
+          {
+            "name": "Tamsa II",
+            "code": "TAMSA.PLANET.TAMSAII",
+            "type": "PLANET"
+          },
+          {
+            "name": "Tamsa - Banshee",
+            "code": "TAMSA.JUMPPOINTS.BANSHEE",
+            "type": "JUMPPOINT"
+          },
+          {
+            "name": "Banshee - Tamsa",
+            "code": "BANSHEE.JUMPPOINTS.TAMSA",
+            "type": "JUMPPOINT"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Tamsa.json"
+      },
+      {
+        "query": "Broken Moon",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "SATELLITE": 1
+        },
+        "sample": [
+          {
+            "name": "Broken Moon",
+            "code": "TARANIS.MOONS.BROKENMOON",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Broken-Moon.json"
+      },
+      {
+        "query": "Kellog",
+        "status": 200,
+        "success": 1,
+        "systems": 1,
+        "objects": 15,
+        "objectTypes": {
+          "STAR": 1,
+          "PLANET": 6,
+          "JUMPPOINT": 8
+        },
+        "sample": [
+          {
+            "name": "Kellog",
+            "code": "KELLOG",
+            "type": "SINGLE_STAR"
+          },
+          {
+            "name": "Kellog",
+            "code": "KELLOG.STARS.KELLOG",
+            "type": "STAR"
+          },
+          {
+            "name": "Kellog I",
+            "code": "KELLOG.PLANET.KELLOGI",
+            "type": "PLANET"
+          },
+          {
+            "name": "Xis",
+            "code": "KELLOG.PLANET.KELLOGIIXIS",
+            "type": "PLANET"
+          },
+          {
+            "name": "Kellog III",
+            "code": "KELLOG.PLANET.KELLOGIII",
+            "type": "PLANET"
+          },
+          {
+            "name": "Kellog IV",
+            "code": "KELLOG.PLANET.KELLOGIV",
+            "type": "PLANET"
+          },
+          {
+            "name": "Kellog V",
+            "code": "KELLOG.PLANET.KELLOGV",
+            "type": "PLANET"
+          },
+          {
+            "name": "Quarterdeck",
+            "code": "KELLOG.PLANET.KELLOGVIQUARTERDECK",
+            "type": "PLANET"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Kellog.json"
+      },
+      {
+        "query": "JusticeStar",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "objectTypes": {
+          "MANMADE": 1
+        },
+        "sample": [
+          {
+            "name": "JusticeStar Satellite",
+            "code": "KELLOG.STATION.JUSTICESTARSATELLITE",
+            "type": "MANMADE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-JusticeStar.json"
+      },
+      {
+        "query": "Croshaw",
+        "status": 200,
+        "success": 1,
+        "systems": 1,
+        "objects": 15,
+        "objectTypes": {
+          "STAR": 1,
+          "PLANET": 4,
+          "ASTEROID_FIELD": 2,
+          "JUMPPOINT": 8
+        },
+        "sample": [
+          {
+            "name": "Croshaw",
+            "code": "CROSHAW",
+            "type": "SINGLE_STAR"
+          },
+          {
+            "name": "Croshaw",
+            "code": "CROSHAW.STARS.CROSHAW",
+            "type": "STAR"
+          },
+          {
+            "name": "Croshaw I",
+            "code": "CROSHAW.PLANETS.CROSHAWI",
+            "type": "PLANET"
+          },
+          {
+            "name": "Angeli",
+            "code": "CROSHAW.PLANETS.CROSHAWIIANGELI",
+            "type": "PLANET"
+          },
+          {
+            "name": "Vann",
+            "code": "CROSHAW.PLANETS.CROSHAWIIIVANN",
+            "type": "PLANET"
+          },
+          {
+            "name": "Croshaw IV",
+            "code": "CROSHAW.PLANETS.CROSHAWIV",
+            "type": "PLANET"
+          },
+          {
+            "name": "Icarus Cluster",
+            "code": "CROSHAW.BELTS.ICARUSCLUSTER",
+            "type": "ASTEROID_FIELD"
+          },
+          {
+            "name": "Daedalus Cluster",
+            "code": "CROSHAW.BELTS.DAEDALUSCLUSTER",
+            "type": "ASTEROID_FIELD"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Croshaw.json"
+      },
+      {
+        "query": "Baker",
+        "status": 200,
+        "success": 1,
+        "systems": 1,
+        "objects": 16,
+        "objectTypes": {
+          "STAR": 2,
+          "PLANET": 4,
+          "JUMPPOINT": 10
+        },
+        "sample": [
+          {
+            "name": "Baker",
+            "code": "BAKER",
+            "type": "BINARY"
+          },
+          {
+            "name": "Baker A",
+            "code": "BAKER.STARS.BAKERA",
+            "type": "STAR"
+          },
+          {
+            "name": "Baker B",
+            "code": "BAKER.STAR.BAKERB",
+            "type": "STAR"
+          },
+          {
+            "name": "Baker I",
+            "code": "BAKER.PLANET.BAKERI",
+            "type": "PLANET"
+          },
+          {
+            "name": "Baker II",
+            "code": "BAKER.PLANET.BAKERII",
+            "type": "PLANET"
+          },
+          {
+            "name": "Baker III",
+            "code": "BAKER.PLANET.BAKERIII",
+            "type": "PLANET"
+          },
+          {
+            "name": "Baker IV",
+            "code": "BAKER.PLANET.BAKERIV",
+            "type": "PLANET"
+          },
+          {
+            "name": "Osiris - Baker",
+            "code": "OSIRIS.JUMPPOINTS.BAKER",
+            "type": "JUMPPOINT"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Baker.json"
+      }
+    ],
+    "findEmptyOk": [
+      {
+        "query": "Fair Chance",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Fair-Chance.json"
+      },
+      {
+        "query": "POI",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-POI.json"
+      },
+      {
+        "query": "Lagrange",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Lagrange.json"
+      },
+      {
+        "query": "ARC-L2",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-ARC-L2.json"
+      },
+      {
+        "query": "neutron",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-neutron.json"
+      },
+      {
+        "query": "pulsar",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-pulsar.json"
+      },
+      {
+        "query": "black hole",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-black-hole.json"
+      },
+      {
+        "query": "Xi'an",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-Xian.json"
+      },
+      {
+        "query": "XIAN",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-XIAN.json"
+      },
+      {
+        "query": "uee",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-uee.json"
+      },
+      {
+        "query": "UEE",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find-UEE.json"
+      }
+    ],
+    "findFailed": [
+      {
+        "query": "LZ",
+        "status": 200,
+        "success": 0,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "ErrValidationFailed",
+        "msg": "Validation failed",
+        "file": "find-LZ.json"
+      },
+      {
+        "query": "L1",
+        "status": 200,
+        "success": 0,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "ErrValidationFailed",
+        "msg": "Validation failed",
+        "file": "find-L1.json"
+      },
+      {
+        "query": "L2",
+        "status": 200,
+        "success": 0,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "ErrValidationFailed",
+        "msg": "Validation failed",
+        "file": "find-L2.json"
+      },
+      {
+        "query": "L3",
+        "status": 200,
+        "success": 0,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "ErrValidationFailed",
+        "msg": "Validation failed",
+        "file": "find-L3.json"
+      },
+      {
+        "query": "L4",
+        "status": 200,
+        "success": 0,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "ErrValidationFailed",
+        "msg": "Validation failed",
+        "file": "find-L4.json"
+      },
+      {
+        "query": "L5",
+        "status": 200,
+        "success": 0,
+        "systems": 0,
+        "objects": 0,
+        "objectTypes": {},
+        "sample": [],
+        "code": "ErrValidationFailed",
+        "msg": "Validation failed",
+        "file": "find-L5.json"
+      }
+    ],
+    "routesWhereShortestDiffersLeastjumps": [
+      {
+        "pair": "SOL-NYX",
+        "size": null,
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "kind": "distant",
+        "file": "route-SOL-NYX.json",
+        "shortest": {
+          "jumps": 10,
+          "label": "Through Davien",
+          "name": "Sol to Nyx",
+          "first_jump": "Sol - Davien",
+          "systems": [
+            "SOL",
+            "SOL",
+            "DAVIEN",
+            "DAVIEN",
+            "FERRON",
+            "FERRON",
+            "IDRIS",
+            "IDRIS",
+            "ELYSIUM",
+            "ELYSIUM",
+            "CENTAURI",
+            "CENTAURI",
+            "NUL",
+            "NUL",
+            "CALIBAN",
+            "CALIBAN",
+            "OBERON",
+            "OBERON",
+            "VIRGIL",
+            "VIRGIL",
+            "NYX",
+            "NYX"
+          ]
+        },
+        "leastjumps": {
+          "jumps": 4,
+          "label": "Through Davien",
+          "name": "Sol to Nyx",
+          "first_jump": "Sol - Davien",
+          "systems": [
+            "SOL",
+            "SOL",
+            "DAVIEN",
+            "DAVIEN",
+            "CANO",
+            "CANO",
+            "PYRO",
+            "PYRO",
+            "NYX",
+            "NYX"
+          ]
+        },
+        "jumpsDiffer": true,
+        "segmentsDiffer": true,
+        "shortestVsLeastjumpsDiffer": true
+      },
+      {
+        "pair": "PYRO-TAMSA",
+        "size": null,
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "kind": "distant",
+        "file": "route-PYRO-TAMSA.json",
+        "shortest": {
+          "jumps": 7,
+          "label": "Through Cano",
+          "name": "Pyro to Tamsa",
+          "first_jump": "Pyro - Cano",
+          "systems": [
+            "PYRO",
+            "PYRO",
+            "CANO",
+            "CANO",
+            "DAVIEN",
+            "DAVIEN",
+            "FERRON",
+            "FERRON",
+            "IDRIS",
+            "IDRIS",
+            "GARRON",
+            "GARRON",
+            "BANSHEE",
+            "BANSHEE",
+            "TAMSA",
+            "TAMSA"
+          ]
+        },
+        "leastjumps": {
+          "jumps": 6,
+          "label": "Through Cano",
+          "name": "Pyro to Tamsa",
+          "first_jump": "Pyro - Cano",
+          "systems": [
+            "PYRO",
+            "PYRO",
+            "CANO",
+            "CANO",
+            "DAVIEN",
+            "DAVIEN",
+            "BACCHUS",
+            "BACCHUS",
+            "GARRON",
+            "GARRON",
+            "BANSHEE",
+            "BANSHEE",
+            "TAMSA",
+            "TAMSA"
+          ]
+        },
+        "jumpsDiffer": true,
+        "segmentsDiffer": true,
+        "shortestVsLeastjumpsDiffer": true
+      },
+      {
+        "pair": "VEGA-TAMSA",
+        "size": null,
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "kind": "distant",
+        "file": "route-VEGA-TAMSA.json",
+        "shortest": {
+          "jumps": 7,
+          "label": "Through Nul",
+          "name": "Vega to Tamsa",
+          "first_jump": "Vega - Nul",
+          "systems": [
+            "VEGA",
+            "VEGA",
+            "NUL",
+            "NUL",
+            "CENTAURI",
+            "CENTAURI",
+            "ELYSIUM",
+            "ELYSIUM",
+            "LEIR",
+            "LEIR",
+            "YULIN",
+            "YULIN",
+            "BANSHEE",
+            "BANSHEE",
+            "TAMSA",
+            "TAMSA"
+          ]
+        },
+        "leastjumps": {
+          "jumps": 6,
+          "label": "Through Nul",
+          "name": "Vega to Tamsa",
+          "first_jump": "Vega - Nul",
+          "systems": [
+            "VEGA",
+            "VEGA",
+            "NUL",
+            "NUL",
+            "CENTAURI",
+            "CENTAURI",
+            "ELYSIUM",
+            "ELYSIUM",
+            "LEIR",
+            "LEIR",
+            "BANSHEE",
+            "BANSHEE",
+            "TAMSA",
+            "TAMSA"
+          ]
+        },
+        "jumpsDiffer": true,
+        "segmentsDiffer": true,
+        "shortestVsLeastjumpsDiffer": true
+      },
+      {
+        "pair": "TRISE-SOL",
+        "size": null,
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "kind": "distant",
+        "file": "route-TRISE-SOL.json",
+        "shortest": {
+          "jumps": 10,
+          "label": "Through Ē'aluth (Eealus)",
+          "name": "Trise to Sol",
+          "first_jump": "Trise - Ē'aluth (Eealus)",
+          "systems": [
+            "TRISE",
+            "TRISE",
+            "EEALUS",
+            "EEALUS",
+            "OYA",
+            "OYA",
+            "TOHIL",
+            "TOHIL",
+            "NYX",
+            "NYX",
+            "STANTON",
+            "STANTON",
+            "TERRA",
+            "TERRA",
+            "PYRO",
+            "PYRO",
+            "CANO",
+            "CANO",
+            "DAVIEN",
+            "DAVIEN",
+            "SOL",
+            "SOL"
+          ]
+        },
+        "leastjumps": {
+          "jumps": 7,
+          "label": "Through Ē'aluth (Eealus)",
+          "name": "Trise to Sol",
+          "first_jump": "Trise - Ē'aluth (Eealus)",
+          "systems": [
+            "TRISE",
+            "TRISE",
+            "EEALUS",
+            "EEALUS",
+            "OYA",
+            "OYA",
+            "CASTRA",
+            "CASTRA",
+            "PYRO",
+            "PYRO",
+            "CANO",
+            "CANO",
+            "DAVIEN",
+            "DAVIEN",
+            "SOL",
+            "SOL"
+          ]
+        },
+        "jumpsDiffer": true,
+        "segmentsDiffer": true,
+        "shortestVsLeastjumpsDiffer": true
+      },
+      {
+        "pair": "KILIAN-PYRO",
+        "size": null,
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "kind": "distant",
+        "file": "route-KILIAN-PYRO.json",
+        "shortest": {
+          "jumps": 4,
+          "label": "Through Ellis",
+          "name": "Kilian to Pyro",
+          "first_jump": "Kilian - Ellis",
+          "systems": [
+            "KILIAN",
+            "KILIAN",
+            "ELLIS",
+            "ELLIS",
+            "MAGNUS",
+            "MAGNUS",
+            "TERRA",
+            "TERRA",
+            "PYRO",
+            "PYRO"
+          ]
+        },
+        "leastjumps": {
+          "jumps": 3,
+          "label": "Through Davien",
+          "name": "Kilian to Pyro",
+          "first_jump": "Kilian - Davien",
+          "systems": [
+            "KILIAN",
+            "KILIAN",
+            "DAVIEN",
+            "DAVIEN",
+            "CANO",
+            "CANO",
+            "PYRO",
+            "PYRO"
+          ]
+        },
+        "jumpsDiffer": true,
+        "segmentsDiffer": true,
+        "shortestVsLeastjumpsDiffer": true
+      },
+      {
+        "pair": "STANTON-TAMSA",
+        "size": null,
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "kind": "distant",
+        "file": "route-STANTON-TAMSA.json",
+        "shortest": {
+          "jumps": 11,
+          "label": "Through Nyx",
+          "name": "Stanton to Tamsa",
+          "first_jump": "Stanton - Nyx",
+          "systems": [
+            "STANTON",
+            "STANTON",
+            "NYX",
+            "NYX",
+            "VIRGIL",
+            "VIRGIL",
+            "OBERON",
+            "OBERON",
+            "CALIBAN",
+            "CALIBAN",
+            "NUL",
+            "NUL",
+            "CENTAURI",
+            "CENTAURI",
+            "ELYSIUM",
+            "ELYSIUM",
+            "LEIR",
+            "LEIR",
+            "YULIN",
+            "YULIN",
+            "BANSHEE",
+            "BANSHEE",
+            "TAMSA",
+            "TAMSA"
+          ]
+        },
+        "leastjumps": {
+          "jumps": 7,
+          "label": "Through Pyro",
+          "name": "Stanton to Tamsa",
+          "first_jump": "Stanton - Pyro",
+          "systems": [
+            "STANTON",
+            "STANTON",
+            "PYRO",
+            "PYRO",
+            "CANO",
+            "CANO",
+            "DAVIEN",
+            "DAVIEN",
+            "BACCHUS",
+            "BACCHUS",
+            "GARRON",
+            "GARRON",
+            "BANSHEE",
+            "BANSHEE",
+            "TAMSA",
+            "TAMSA"
+          ]
+        },
+        "jumpsDiffer": true,
+        "segmentsDiffer": true,
+        "shortestVsLeastjumpsDiffer": true
+      }
+    ],
+    "sVsLDiffer": []
+  }
+}

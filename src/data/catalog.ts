@@ -94,7 +94,20 @@ export const systems: SystemRow[] = boot.data.systems.resultset.map((s) => ({
   description: s.description,
 }));
 
-export const objects = objectIndex as ObjectRow[];
+const extras: ObjectRow[] = [
+  {
+    system: "SOL",
+    id: 2569,
+    code: "SOL.LZS.PORTRETANUS",
+    name: "Port Renatus",
+    designation: "Port Renatus",
+    type: "LZ",
+    appearance: null,
+    subtype: "Landing Zone",
+  },
+];
+
+export const objects = [...(objectIndex as ObjectRow[]), ...extras];
 
 export const systemByCode = new Map(systems.map((s) => [s.code, s]));
 export const systemById = new Map(systems.map((s) => [s.id, s]));

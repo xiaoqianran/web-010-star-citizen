@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Cathcart to Kilian",
+      "label": "Through Kilian",
+      "first_jump": "Cathcart - Kilian",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "CATHCART",
+          "name": "Cathcart",
+          "type": "system",
+          "system_id": 372,
+          "system_code": "CATHCART",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1898,
+          "name": "Cathcart - Kilian",
+          "type": "jump",
+          "system_id": 372,
+          "system_code": "CATHCART",
+          "object_id": 1898,
+          "object_code": "CATHCART.JUMPPOINTS.KILIAN",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1955,
+          "name": "Kilian - Cathcart",
+          "type": "jump",
+          "system_id": 344,
+          "system_code": "KILIAN",
+          "object_id": 1955,
+          "object_code": "KILIAN.JUMPPOINTS.CATHCART",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "KILIAN",
+          "name": "Kilian",
+          "type": "system",
+          "system_id": 344,
+          "system_code": "KILIAN",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Cathcart to Kilian",
+      "label": "Through Kilian",
+      "first_jump": "Cathcart - Kilian",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "CATHCART",
+          "name": "Cathcart",
+          "type": "system",
+          "system_id": 372,
+          "system_code": "CATHCART",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1898,
+          "name": "Cathcart - Kilian",
+          "type": "jump",
+          "system_id": 372,
+          "system_code": "CATHCART",
+          "object_id": 1898,
+          "object_code": "CATHCART.JUMPPOINTS.KILIAN",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1955,
+          "name": "Kilian - Cathcart",
+          "type": "jump",
+          "system_id": 344,
+          "system_code": "KILIAN",
+          "object_id": 1955,
+          "object_code": "KILIAN.JUMPPOINTS.CATHCART",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "KILIAN",
+          "name": "Kilian",
+          "type": "system",
+          "system_id": 344,
+          "system_code": "KILIAN",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}
