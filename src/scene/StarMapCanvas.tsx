@@ -10,6 +10,8 @@ import type { CameraTuple, Level } from "@/data/cameraUrl";
 import { cameraToPose, formatCamera, poseToCamera } from "@/data/cameraUrl";
 import type { CapturedBody } from "@/data/celestial";
 import { bodyLabel, placeBodies, systemScale } from "@/data/celestial";
+import type { OfficialSystemZones } from "@/data/official";
+import { LRS_INT, STARFIELD_COLOR, TUNNEL_COLOR } from "@/data/official";
 import type { SystemRow } from "@/data/catalog";
 import { tunnels } from "@/data/catalog";
 import { AFFIL, PLANET, glowSprite, gridSprite, nebulaTexture } from "./makeTextures";
@@ -32,6 +34,7 @@ type Props = {
   currentSystem: string;
   display: DisplayState;
   routeSystems: string[];
+  zones?: OfficialSystemZones;
   camera: CameraTuple;
   lookNonce?: number;
   inspectNonce?: number;
@@ -89,6 +92,7 @@ export function StarMapCanvas({
   currentSystem,
   display,
   routeSystems,
+  zones,
   camera,
   lookNonce = 0,
   inspectNonce = 0,
@@ -106,7 +110,7 @@ export function StarMapCanvas({
     setView: (v: "3d" | "2d") => void;
     select: (code: string | null) => void;
     focusSystem: (code: string) => void;
-    rebuild: (bodies: CapturedBody[]) => void;
+    rebuild: (bodies: CapturedBody[], zones?: OfficialSystemZones) => void;
     applyDisplay: (d: DisplayState, route: string[]) => void;
     applyCamera: (c: CameraTuple, m: Level) => void;
     resetHome: () => void;
@@ -201,7 +205,7 @@ export function StarMapCanvas({
     const starPos = new Float32Array(3200 * 3);
     for (let i = 0; i < starPos.length; i++) starPos[i] = (Math.random() - 0.5) * 220;
     starGeo.setAttribute("position", new THREE.BufferAttribute(starPos, 3));
-    scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: 0x8fb4cf, size: 0.1 })));
+    scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: STARFIELD_COLOR, size: 0.1 })));
 
     const nebTex = nebulaTexture();
     const nebula = new THREE.Mesh(
@@ -301,7 +305,7 @@ export function StarMapCanvas({
       if (linePos.length) {
         const lg = new THREE.BufferGeometry();
         lg.setAttribute("position", new THREE.Float32BufferAttribute(linePos, 3));
-        tunnelLines.add(new THREE.LineSegments(lg, new THREE.LineBasicMaterial({ color: 0x3a2018, transparent: true, opacity: 0.55 })));
+        tunnelLines.add(new THREE.LineSegments(lg, new THREE.LineBasicMaterial({ color: TUNNEL_COLOR, transparent: true, opacity: 0.55 })));
       }
       if (routePos.length) {
         const rg = new THREE.BufferGeometry();
@@ -324,7 +328,7 @@ export function StarMapCanvas({
         heat.visible = m.visible && active;
         if (!active) continue;
         const value = scan.crime ? sys.danger : scan.economy ? sys.economy : sys.population;
-        const color = scan.crime ? 0xed7346 : scan.economy ? 0xefc22f : 0x9be80d;
+        const color = scan.crime ? LRS_INT.crime : scan.economy ? LRS_INT.economy : LRS_INT.lifeforms;
         (heat.material as THREE.SpriteMaterial).color.setHex(color);
         (heat.material as THREE.SpriteMaterial).opacity = 0.25 + Math.min(1, value / 10) * 0.7;
         const s = 0.8 + Math.min(1, value / 10) * 3.2;
@@ -342,7 +346,15 @@ export function StarMapCanvas({
       });
     };
 
-    const rebuild = (next: CapturedBody[]) => {
+    let zoneState: OfficialSystemZones = zones ?? {
+      lightColor: null,
+      frostLine: null,
+      habitableInner: null,
+      habitableOuter: null,
+    };
+
+    const rebuild = (next: CapturedBody[], nextZones?: OfficialSystemZones) => {
+      if (nextZones) zoneState = nextZones;
       dropLabels(systemGroup);
       systemGroup.clear();
       pickables.length = 0;
@@ -350,6 +362,26 @@ export function StarMapCanvas({
       sunMats.length = 0;
       const scale = systemScale(next);
       const placed = placeBodies(next, scale);
+      if (zoneState.lightColor) key.color.set(zoneState.lightColor);
+      const zoneRing = (au: number | null, color: number, opacity: number) => {
+        if (au == null || au <= 0) return;
+        const r = (au > 40 ? Math.log10(au) * 2.4 : au) * scale;
+        if (r < 0.15) return;
+        const ring = new THREE.Mesh(
+          new THREE.RingGeometry(Math.max(0.04, r - 0.012), r + 0.012, 128),
+          new THREE.MeshBasicMaterial({
+            color,
+            side: THREE.DoubleSide,
+            transparent: true,
+            opacity,
+          }),
+        );
+        ring.rotation.x = Math.PI / 2;
+        systemGroup.add(ring);
+      };
+      zoneRing(zoneState.habitableInner, 0x14e6fa, 0.2);
+      zoneRing(zoneState.habitableOuter, 0x42cbf8, 0.14);
+      zoneRing(zoneState.frostLine, 0x7acbff, 0.1);
 
       for (let i = 1; i <= 8; i++) {
         const r = i * 1.15;
@@ -744,8 +776,8 @@ export function StarMapCanvas({
   const boot = useRef(true);
 
   useEffect(() => {
-    api.current?.rebuild(bodies);
-  }, [bodies]);
+    api.current?.rebuild(bodies, zones);
+  }, [bodies, zones]);
 
   useEffect(() => {
     if (boot.current) return;

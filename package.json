@@ -14,6 +14,7 @@
     "traverse:official": "node scripts/traverse-official-leftover.mjs",
     "traverse:official-combos": "node scripts/traverse-official-combos.mjs",
     "verify:routes": "node scripts/verify-routes.mjs",
+    "verify:mapping": "node scripts/verify-mapping.mjs",
     "smoke": "node scripts/smoke-interactions.mjs"
   },
   "dependencies": {

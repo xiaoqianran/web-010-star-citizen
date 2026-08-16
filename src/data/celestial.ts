@@ -18,6 +18,10 @@ export type CapturedBody = {
   sensor_economy?: string | number | null;
   sensor_population?: string | number | null;
   affiliation?: { code: string; name: string; color?: string }[];
+  age?: number | null;
+  axial_tilt?: number | null;
+  orbit_period?: number | null;
+  fairchanceact?: boolean | null;
   subtype: { id: number; name: string; type: string } | null;
   shader_data?: {
     sun?: { color1: string; color2: string };

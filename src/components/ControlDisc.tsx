@@ -112,6 +112,24 @@ export const ControlDisc = forwardRef<
             <dd>{sensorNum(body.sensor_economy)}</dd>
             <dt>{zh.disc.threat}</dt>
             <dd>{sensorNum(body.sensor_danger)}</dd>
+            {body.orbit_period != null && (
+              <>
+                <dt>{zh.disc.orbitPeriod}</dt>
+                <dd>{body.orbit_period}</dd>
+              </>
+            )}
+            {body.axial_tilt != null && (
+              <>
+                <dt>{zh.disc.axialTilt}</dt>
+                <dd>{body.axial_tilt}</dd>
+              </>
+            )}
+            {body.fairchanceact != null && (
+              <>
+                <dt>{zh.disc.fairChance}</dt>
+                <dd>{body.fairchanceact ? zh.disc.yes : zh.disc.no}</dd>
+              </>
+            )}
           </dl>
         )}
         {page === "information" && body.type === "LZ" && (

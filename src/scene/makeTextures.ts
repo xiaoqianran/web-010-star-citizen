@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { AFFIL_INT, LRS_HEX } from "@/data/official";
 
 /** Official LRS overlay is a square grid (seen as `// POPULATION`), not a soft glow. */
 export function gridSprite(color = "#9be80d", size = 256) {
@@ -74,15 +75,8 @@ function hexAlpha(hex: string, a: number) {
   return `rgba(${r},${g},${b},${a})`;
 }
 
-export const AFFIL: Record<string, number> = {
-  uee: 0x48bbd4,
-  UEE: 0x48bbd4,
-  BANU: 0xffce17,
-  VNCL: 0xbd002d,
-  XIAN: 0x52c231,
-  DEV: 0xca922d,
-  UNC: 0xf6851f,
-};
+export const AFFIL: Record<string, number> = AFFIL_INT;
+export const LRS = LRS_HEX;
 
 export const PLANET: Record<string, number> = {
   PLANET_GREEN: 0x2fd6a8,

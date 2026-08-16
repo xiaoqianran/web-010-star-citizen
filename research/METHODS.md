@@ -17,10 +17,12 @@
 | `/api/starmap/find` | `query=` | 搜索（≥3 字，匹配名称不是 code） |
 | `/api/starmap/routes/find` | `departure` + `destination` + 可选 `size`/`avoid` | 航线 |
 
-社区封装（只对照字段，不引入依赖）：
+社区封装（只对照端点，不引入依赖；**不能**当 schema）：
 
-1. [Dymerz/RSI-Scraper](https://github.com/Dymerz/RSI-Scraper) — Python：`StarmapSystems` / `Tunnels` / `Search` / `RouteSearch`
-2. [koo04/GoScrapeRSI](https://github.com/koo04/GoScrapeRSI) — Go 客户端，含 route find
+1. [Dymerz/RSI-Scraper](https://github.com/Dymerz/RSI-Scraper) — Python 原样回 `resultset`；航线误发 `ship_size`
+2. [koo04/GoScrapeRSI](https://github.com/koo04/GoScrapeRSI) — Go 移植，struct 把 `position_x` 错绑成 `{x,y,z}`，隧道丢 `code`
+
+精确字段表：`research/MAPPING.md`，运行时：`src/data/official.ts`。
 3. [robertsspaceindustries/sc-starmap](https://github.com/robertsspaceindustries/sc-starmap) — 第三方 TS JSON dump（作者 ari-party，**不是** CIG 源码）
 4. [StarCitizenWiki/API](https://github.com/StarCitizenWiki/API) — wiki + 游戏文件，管道不同
 5. [agabani/StarCitizenApi](https://github.com/agabani/StarCitizenApi) — 2017 C# SDK

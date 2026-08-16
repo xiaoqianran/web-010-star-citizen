@@ -105,6 +105,9 @@ export const zh = {
     manMade: "人造设施",
     voiceOvers: "语音解说",
     open: "打开",
+    orbitPeriod: "轨道周期",
+    axialTilt: "轴倾角",
+    fairChance: "公平机会法案",
   },
   search: {
     name: "名称",

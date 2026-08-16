@@ -3,6 +3,7 @@ import objectIndex from "@capture/index/celestial-objects.json";
 import jumpPointIndex from "@capture/index/jump-points.json";
 import type { CapturedBody } from "./celestial";
 import { bodyLabel, systemCodeOf } from "./celestial";
+import { AFFILIATIONS, zonesFromSystemRow, type OfficialSystemZones } from "./official";
 
 export type SystemRow = {
   id: number;
@@ -249,7 +250,13 @@ const extraBodies: CapturedBody[] = [
 ];
 
 const systemLoaders = import.meta.glob("../../research/capture/api/star-systems/*.json");
-const systemCache = new Map<string, { info: SystemRow; bodies: CapturedBody[] }>();
+export type SystemPack = {
+  info: SystemRow;
+  bodies: CapturedBody[];
+  zones: OfficialSystemZones;
+};
+
+const systemCache = new Map<string, SystemPack>();
 
 function loaderKey(code: string) {
   return Object.keys(systemLoaders).find((k) => k.endsWith(`/${code}.json`));
@@ -263,7 +270,18 @@ export async function loadSystem(code: string) {
   if (!key) return null;
   try {
     const mod = (await systemLoaders[key]()) as {
-      default: { data?: { resultset?: { celestial_objects?: CapturedBody[]; code?: string }[] } };
+      default: {
+        data?: {
+          resultset?: {
+            celestial_objects?: CapturedBody[];
+            code?: string;
+            frost_line?: number | null;
+            habitable_zone_inner?: number | null;
+            habitable_zone_outer?: number | null;
+            shader_data?: { lightColor?: string | null } | null;
+          }[];
+        };
+      };
     };
     const row = mod.default?.data?.resultset?.[0];
     const info = systemByCode.get(upper) ?? systemByCode.get(row?.code ?? "");
@@ -271,7 +289,11 @@ export async function loadSystem(code: string) {
     const captured = (row.celestial_objects ?? []) as CapturedBody[];
     const have = new Set(captured.map((b) => b.code));
     const injected = extraBodies.filter((b) => systemCodeOf(b.code) === info.code && !have.has(b.code));
-    const packed = { info, bodies: [...captured, ...injected] };
+    const packed: SystemPack = {
+      info,
+      bodies: [...captured, ...injected],
+      zones: zonesFromSystemRow(row),
+    };
     systemCache.set(info.code, packed);
     return packed;
   } catch {
@@ -279,14 +301,7 @@ export async function loadSystem(code: string) {
   }
 }
 
-export const AFFILIATIONS = [
-  { code: "uee", name: "UEE" },
-  { code: "BANU", name: "Banu" },
-  { code: "VNCL", name: "Vanduul" },
-  { code: "XIAN", name: "Xi'an" },
-  { code: "DEV", name: "Developing" },
-  { code: "UNC", name: "Unclaimed" },
-] as const;
+export { AFFILIATIONS };
 
 type Edge = {
   to: string;

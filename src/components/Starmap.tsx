@@ -15,20 +15,12 @@ import {
   systems,
   type RouteResult,
 } from "@/data/catalog";
+import { AFFIL_HEX, emptyZones, type OfficialSystemZones } from "@/data/official";
 import { blip, store } from "@/data/storage";
 import { zh } from "@/i18n/zh";
 import { StarMapCanvas, type DisplayState, type ScreenPt } from "@/scene/StarMapCanvas";
 import { ArkMark } from "./Intro";
 import { ControlDisc } from "./ControlDisc";
-
-const AFFIL_HEX: Record<string, string> = {
-  uee: "#48bbd4",
-  BANU: "#ffce17",
-  VNCL: "#bd002d",
-  XIAN: "#52c231",
-  DEV: "#ca922d",
-  UNC: "#f6851f",
-};
 
 const initial = readMapUrl();
 const bootQuery = () => new URLSearchParams(window.location.search);
@@ -81,6 +73,7 @@ export function Starmap() {
   const [lookNonce, setLookNonce] = useState(0);
   const [markFilter, setMarkFilter] = useState<"all" | "system" | "body">("all");
   const [recent, setRecent] = useState<string[]>(() => store.recent());
+  const [zones, setZones] = useState<OfficialSystemZones>(emptyZones);
 
   const sys = systemByCode.get(systemCode);
   const focus = selected ? bodyLabel(selected) : level === "galaxy" ? zh.levels.galaxy : sys?.name || systemCode;
@@ -93,6 +86,7 @@ export function Starmap() {
         if (!live) return;
         const next = pack?.bodies ?? [];
         setBodies(next);
+        setZones(pack?.zones ?? emptyZones());
         const loc = readMapUrl().location;
         const want = next.find((b) => b.code === loc);
         if (want) {
@@ -101,7 +95,10 @@ export function Starmap() {
         }
       })
       .catch(() => {
-        if (live) setBodies([]);
+        if (live) {
+          setBodies([]);
+          setZones(emptyZones());
+        }
       })
       .finally(() => {
         if (live) setLoading(false);
@@ -254,6 +251,7 @@ export function Starmap() {
           const body = pack?.bodies.find((b) => b.code === code) ?? null;
           setSelected(body);
           setBodies(pack?.bodies ?? []);
+          setZones(pack?.zones ?? emptyZones());
         })
         .catch(() => {
           setSelected(null);
@@ -292,6 +290,7 @@ export function Starmap() {
         currentSystem={systemCode}
         display={display}
         routeSystems={drawnRoute}
+        zones={zones}
         camera={camera}
         lookNonce={lookNonce}
         inspectNonce={inspectNonce}

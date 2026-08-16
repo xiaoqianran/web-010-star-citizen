@@ -202,7 +202,7 @@ DISPLAY 在银河视图类名是 `sm-galaxy-display-tab`，星系视图是 `sm-s
 2. 按官方 class 的 puppeteer（`traverse-official-combos.mjs` 重录未测组合）
 3. 第一方教程：CIG 2015 [Star Map](https://www.youtube.com/watch?v=4eAD0liNeis) 明确 **右键 → INSPECT / INFORMATION / ROUTING / BOOKMARK**；Q&A 确认航线 AU 不含跃迁段。
 
-社区仓库只对照字段：Dymerz/RSI-Scraper、koo04/GoScrapeRSI、Synchrones/ARK_Starmap（Unity 复刻，不抄其自加键位）。
+社区仓库只对照端点：Dymerz/RSI-Scraper、koo04/GoScrapeRSI（Go struct 会写错 `position_x` / 隧道 `code`，见 `research/MAPPING.md`）。Synchrones/ARK_Starmap 是 Unity 复刻，不抄其自加键位。
 
 ## 官方未测组合重录（2026-08-16）
 
