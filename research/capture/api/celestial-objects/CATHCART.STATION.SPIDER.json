@@ -1,0 +1,53 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2600,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "CATHCART.STATION.SPIDER",
+        "description": "A man-made structure built from a half-finished habitable platform and countless ship hulls. As a center of pirate activity, various gangs use it as their base of operations and frequently fight for control of certain sectors. Spider is also home to an extensive black market and every form of illegal activity imaginable.\n",
+        "designation": "Spider",
+        "distance": 4.67,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": null,
+        "longitude": 324.157,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 2154,
+        "sensor_danger": "8",
+        "sensor_economy": "7",
+        "sensor_population": "6",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": null,
+        "subtype_id": 44,
+        "time_modified": "2015-10-10 04:10:57",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

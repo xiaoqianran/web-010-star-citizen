@@ -187,22 +187,25 @@ async function main() {
   const clickText = async (needles, { exact = false } = {}) => {
     const hit = await page.evaluate((list, exactMatch) => {
       const want = list.map((s) => s.toLowerCase());
-      const nodes = [...document.querySelectorAll("button, a, label, [role=button], .sm-tabs *, [class*='sm-']")];
+      const nodes = [...document.querySelectorAll("button, a, label, [role=button], .launch, .launch-fullscreen")];
       const vis = (el) => {
         const s = getComputedStyle(el);
         const r = el.getBoundingClientRect();
         return s.display !== "none" && s.visibility !== "hidden" && r.width > 1 && r.height > 1;
       };
+      const hits = [];
       for (const el of nodes) {
         const t = (el.innerText || el.getAttribute("aria-label") || "").replace(/\s+/g, " ").trim();
-        if (!t || !vis(el)) continue;
+        if (!t || t.length > 80 || !vis(el)) continue;
         const low = t.toLowerCase();
         if (want.some((w) => (exactMatch ? low === w : low === w || low.includes(w)))) {
-          el.click();
-          return t;
+          hits.push({ el, t, n: t.length });
         }
       }
-      return null;
+      hits.sort((a, b) => a.n - b.n);
+      if (!hits[0]) return null;
+      hits[0].el.click();
+      return hits[0].t;
     }, needles, exact);
     await sleep(400);
     return hit;
@@ -220,7 +223,9 @@ async function main() {
   };
 
   const typeInto = async (value, prefer = []) => {
-    const typed = await page.evaluate((v, prefs) => {
+    let typed = false;
+    try {
+    typed = await page.evaluate((v, prefs) => {
       const vis = (el) => {
         const s = getComputedStyle(el);
         const r = el.getBoundingClientRect();
@@ -240,6 +245,10 @@ async function main() {
       el.dispatchEvent(new KeyboardEvent("keyup", { bubbles: true, key: "a" }));
       return { cls: el.className, placeholder: el.placeholder, value: el.value };
     }, value, prefer);
+    } catch (err) {
+      note(`type-fail:${value}`, { error: String(err.message || err) });
+      await sleep(800);
+    }
     await sleep(500);
     return typed;
   };
@@ -292,20 +301,34 @@ async function main() {
   await page.reload({ waitUntil: "domcontentloaded", timeout: 90000 });
   await sleep(2500);
   await clickText(["allow all", "accept all"]);
-  for (const label of [
-    "enter full screen",
-    "enter in window mode",
-    "window mode",
-    "acknowledge & continue",
-    "acknowledge",
-    "explore starmap",
-    "explore",
-  ]) {
+  const windowHit =
+    (await clickClass("launch")) ||
+    (await clickText(["or enter in window mode", "enter in window mode"]));
+  note("intro:window", { text: String(windowHit) });
+  await sleep(1200);
+  for (const label of ["acknowledge & continue", "acknowledge", "explore starmap", "don't show this screen next time"]) {
     const hit = await clickText([label]);
     if (hit) note(`intro:${label}`, { text: hit });
-    await sleep(600);
+    await sleep(700);
   }
-  await sleep(2500);
+  // skip boxes then confirm
+  await page.evaluate(() => {
+    for (const el of document.querySelectorAll(".sm-acknowledgment-scene input[type=checkbox], .sm-info-scene input[type=checkbox]")) {
+      if (!el.checked) el.click();
+    }
+  });
+  await clickText(["acknowledge & continue", "acknowledge"]);
+  await sleep(700);
+  await clickText(["explore starmap", "explore"]);
+  await page
+    .waitForFunction(
+      () =>
+        !!document.querySelector(".sm-search-tab, .sm-tabs, .launch") === false &&
+        /SEARCH|ROUTES|DISPLAY/i.test(document.body.innerText),
+      { timeout: 45000 },
+    )
+    .catch(() => {});
+  await sleep(1500);
   await shot("01-after-intro");
   const firstDump = await dump();
   await writeFile(join(OUT, "dump-after-intro.json"), JSON.stringify(firstDump, null, 2) + "\n");
@@ -332,32 +355,30 @@ async function main() {
   });
 
   const checkToggles = [];
-  const checkCount = await page.evaluate(() => document.querySelectorAll("input[type=checkbox]").length);
+  const CHECK_SEL =
+    "#starmap-application input[type=checkbox], .sm-starmap input[type=checkbox], .sm-galaxy-display-tab input[type=checkbox], .sm-system-display-tab input[type=checkbox], .sm-affiliations input, .sm-scanners input";
+  const checkCount = await page.evaluate((sel) => document.querySelectorAll(sel).length, CHECK_SEL);
   for (let i = 0; i < checkCount; i++) {
-    const before = await page.evaluate((idx) => {
-      const el = document.querySelectorAll("input[type=checkbox]")[idx];
+    const before = await page.evaluate((idx, sel) => {
+      const el = document.querySelectorAll(sel)[idx];
       if (!el) return null;
       const label = (el.closest("label")?.innerText || el.parentElement?.innerText || "").replace(/\s+/g, " ").trim();
       return { label, checked: el.checked };
-    }, i);
-    await page.evaluate((idx) => {
-      const el = document.querySelectorAll("input[type=checkbox]")[idx];
-      if (el) el.click();
-    }, i);
+    }, i, CHECK_SEL);
+    await page.evaluate((idx, sel) => {
+      document.querySelectorAll(sel)[idx]?.click();
+    }, i, CHECK_SEL);
     await sleep(350);
-    const after = await page.evaluate((idx) => {
-      const el = document.querySelectorAll("input[type=checkbox]")[idx];
-      return el ? el.checked : null;
-    }, i);
+    const after = await page.evaluate((idx, sel) => document.querySelectorAll(sel)[idx]?.checked ?? null, i, CHECK_SEL);
     if (before) {
       checkToggles.push({ ...before, after });
       note(`display-toggle:${before.label}`, { text: `${before.checked} -> ${after}` });
     }
     await shot(`04-display-${i}`);
-    await page.evaluate((idx) => {
-      const el = document.querySelectorAll("input[type=checkbox]")[idx];
+    await page.evaluate((idx, sel) => {
+      const el = document.querySelectorAll(sel)[idx];
       if (el && el.checked !== true) el.click();
-    }, i);
+    }, i, CHECK_SEL);
     await sleep(150);
   }
 

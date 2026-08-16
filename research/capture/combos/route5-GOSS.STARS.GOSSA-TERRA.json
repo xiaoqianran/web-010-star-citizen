@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Goss A to Terra",
+      "label": "Through Terra",
+      "first_jump": "Goss - Terra",
+      "flight_distance": 5.0779088131246075,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": 2057,
+          "name": "Goss A",
+          "type": "object",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": 2057,
+          "object_code": "GOSS.STARS.GOSSA",
+          "segment_type": "F",
+          "segment_distance": 5.0779088131246075,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 2056,
+          "name": "Goss - Terra",
+          "type": "jump",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": 2056,
+          "object_code": "GOSS.JUMPPOINTS.TERRA",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1716,
+          "name": "Terra - Goss",
+          "type": "jump",
+          "system_id": 316,
+          "system_code": "TERRA",
+          "object_id": 1716,
+          "object_code": "TERRA.JUMPPOINTS.GOSS",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "TERRA",
+          "name": "Terra",
+          "type": "system",
+          "system_id": 316,
+          "system_code": "TERRA",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Goss A to Terra",
+      "label": "Through Terra",
+      "first_jump": "Goss - Terra",
+      "flight_distance": 5.0779088131246075,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": 2057,
+          "name": "Goss A",
+          "type": "object",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": 2057,
+          "object_code": "GOSS.STARS.GOSSA",
+          "segment_type": "F",
+          "segment_distance": 5.0779088131246075,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 2056,
+          "name": "Goss - Terra",
+          "type": "jump",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": 2056,
+          "object_code": "GOSS.JUMPPOINTS.TERRA",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1716,
+          "name": "Terra - Goss",
+          "type": "jump",
+          "system_id": 316,
+          "system_code": "TERRA",
+          "object_id": 1716,
+          "object_code": "TERRA.JUMPPOINTS.GOSS",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "TERRA",
+          "name": "Terra",
+          "type": "system",
+          "system_id": 316,
+          "system_code": "TERRA",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

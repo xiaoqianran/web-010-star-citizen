@@ -1,0 +1,61 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2701,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "YULIN.STATION.SATABALLARENA",
+        "description": "Sitting high in orbit, Yulin II’s atmosphere provides a stunning kaleidoscopic backdrop to this popular arena where Banu gather to watch one of their favorite Human sports.\n",
+        "designation": "Buloi Sataball Arena",
+        "distance": 0.00004969,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": null,
+        "longitude": 12.164,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 2676,
+        "sensor_danger": "5",
+        "sensor_economy": "5",
+        "sensor_population": "2",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": null,
+        "subtype_id": 44,
+        "time_modified": "2015-10-09 19:56:01",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [
+          {
+            "id": 2,
+            "code": "BANU",
+            "color": "#ffce17",
+            "name": "Banu",
+            "membership.id": 2373
+          }
+        ],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

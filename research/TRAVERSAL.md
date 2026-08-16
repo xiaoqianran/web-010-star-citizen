@@ -160,9 +160,26 @@
 - 右方向键会切底栏页；W 在书签页聚焦时会打开书签，**不能当成 WASD 飞镜头的证据**。
 - 汉堡是 RSI 站点菜单（OUR GAMES / SHOP / EXPLORE…），不是星图内页。
 
+## API combo sweep 5
+
+- 航线端点只认星系码/名称：`GOSS` / `Goss` / `Terra` / `Kayfa`（大写即 `KAYFA`）成功。
+- 天体显示名一律 `ErrInvalidObject`：`Goss A` / `GOSS A` / `Cassel` / `Levski` / `Area18` / `The ARK`。官方盘 SET AS DEPARTURE 填入 `GOSS A` 后 Calculate 空白，与此一致。
+- 天体完整码可以：`GOSS.STARS.GOSSA`→`TERRA` 与 `GOSS`→`TERRA` 同为 1 跳。
+- `find` 分页字段 `page` / `offset` / `start` / `limit` / `count` / `max` **全部忽略**，Terra 仍 25 条。界面约 20 行是 UI 截断。
+- HUD 词 `OPEN` / `voice` / `manmade` / `scanner` / `population` / `economy` / `crime` / `lifeforms` / `display` / `bookmark` / `route` 成功但空。
+- 西安短名搜得到天体、0 星系行：`Kayfa` 9、`Eealus` 15、`Hadur` 14、`Virtus` 13。
+- 又一批 shortest ≠ leastjumps：VIRGIL–TAMSA 9/7、PYRO–TAMSA 7/6、VEGA–TAMSA 7/6、TRISE–SOL 10/7。
+- 已补抓全部 POI / BLACKHOLE / 可见 MANMADE 天体详情。
+
+## 官方 leftover 脚本（puppeteer）
+
+开场按钮是 `.launch-fullscreen`（ENTER FULL SCREEN）与 `.launch`（Or enter in window mode），不是 `sm-` 容器。第一轮误点 `sm-initial-scene` 整页，卡在欢迎屏。已改为点最短匹配按钮。
+
+DISPLAY 在银河视图类名是 `sm-galaxy-display-tab`，星系视图是 `sm-system-display-tab`。先前代理一直停在 GOSS 星系，所以复选框从未出现。
+
 ## 仍须对照官网补的现场
 
-- DISPLAY 每一项开关的完整上屏（全屏代理还在补）
+- DISPLAY 每一项开关的完整上屏（先 GLX 再点 galaxy-display-tab）
 - 登录态书签 JSON
 - 官方键盘是否 WASD、右键/中键、指南针是否复位
-- 控制盘穿跃动画（克隆仍是闪白换系）
+- 控制盘穿跃动画（克隆仍是闪白换系；全屏盘上仍未见到 Jump Through）

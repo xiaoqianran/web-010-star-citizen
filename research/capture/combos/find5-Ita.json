@@ -1,0 +1,105 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 5,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2245,
+          "code": "VERITAS.STARS.VERITAS",
+          "designation": "Veritas",
+          "name": null,
+          "star_system_id": 392,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 392,
+            "code": "VERITAS",
+            "name": "Veritas",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2493,
+          "code": "ORION.PLANET.ORIONIIIARMITAGE",
+          "designation": "Orion III",
+          "name": "Armitage",
+          "star_system_id": 360,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2042,
+          "code": "SOL.PLANETS.TITAN",
+          "designation": "Sol 6a",
+          "name": "Titan",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2050,
+          "code": "SOL.PLANETS.TITANIA",
+          "designation": "Sol 7d",
+          "name": "Titania",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2749,
+          "code": "STANTON.MOONS.ITA",
+          "designation": "Stanton 1d",
+          "name": "Ita",
+          "star_system_id": 314,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 314,
+            "code": "STANTON",
+            "name": "Stanton",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 5,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

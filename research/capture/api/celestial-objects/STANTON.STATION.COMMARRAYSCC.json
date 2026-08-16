@@ -1,0 +1,63 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2745,
+        "age": null,
+        "appearance": "CUSTOM",
+        "axial_tilt": null,
+        "code": "STANTON.STATION.COMMARRAYSCC",
+        "description": "These communication stations are positioned around the area to help provide comm coverage.\n ",
+        "designation": "CommArray SCC",
+        "distance": 0.003,
+        "fairchanceact": null,
+        "habitable": null,
+        "info_url": null,
+        "latitude": 3,
+        "longitude": 145.2499,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 1695,
+        "sensor_danger": "6",
+        "sensor_economy": "1",
+        "sensor_population": "1",
+        "shader_data": {
+          "orbitalMin": 1,
+          "orbitalMax": 5,
+          "orbitalFactor": 1,
+          "radius": 0.01
+        },
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": 0.005,
+        "subtype_id": 44,
+        "time_modified": "2015-10-10 00:07:09",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": [],
+        "model": {
+          "slug": "pkuskri0s4twx",
+          "source": "https://robertsspaceindustries.com/media/pkuskri0s4twxr/source/StationComms.dae",
+          "images": []
+        }
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

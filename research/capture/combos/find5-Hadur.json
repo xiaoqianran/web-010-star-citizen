@@ -1,0 +1,240 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 14,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2177,
+          "code": "HADUR.STARS.HADUR",
+          "designation": "Yā'mon (Hadur)",
+          "name": null,
+          "star_system_id": 377,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2420,
+          "code": "HADUR.PLANET.HADURI",
+          "designation": "Yā'mon (Hadur) I",
+          "name": "Kuā'li",
+          "star_system_id": 377,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2421,
+          "code": "HADUR.PLANET.HADURII",
+          "designation": "Yā'mon (Hadur) II",
+          "name": "Yethlūl y.ath'o",
+          "star_system_id": 377,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2422,
+          "code": "HADUR.PLANET.HADURIII",
+          "designation": "Yā'mon (Hadur) III",
+          "name": "Yethlūl s.yen'o",
+          "star_system_id": 377,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2423,
+          "code": "HADUR.PLANET.HADURIV",
+          "designation": "Yā'mon (Hadur) IV",
+          "name": "Yām'ping",
+          "star_system_id": 377,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2617,
+          "code": "HADUR.BELTS.HADURBELTALPHA",
+          "designation": "Yā'mon (Hadur) Belt Alpha",
+          "name": "Huichuaihyao y.ath'o se Yā'mon",
+          "star_system_id": 377,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1945,
+          "code": "BAKER.JUMPPOINTS.HADUR",
+          "designation": "Baker - Yā'mon (Hadur)",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2173,
+          "code": "HADUR.JUMPPOINTS.INDRA",
+          "designation": "Yā'mon (Hadur) - Kyuk'ya (Indra)",
+          "name": null,
+          "star_system_id": 377,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2174,
+          "code": "HADUR.JUMPPOINTS.PALLAS",
+          "designation": "Yā'mon (Hadur) - Th.us'ūng (Pallas)",
+          "name": null,
+          "star_system_id": 377,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2175,
+          "code": "HADUR.JUMPPOINTS.AYR'KA",
+          "designation": "Yā'mon (Hadur) - Ail'ka",
+          "name": null,
+          "star_system_id": 377,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2176,
+          "code": "HADUR.JUMPPOINTS.BAKER",
+          "designation": "Yā'mon (Hadur) - Baker",
+          "name": null,
+          "star_system_id": 377,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2266,
+          "code": "PALLAS.JUMPPOINTS.HADUR",
+          "designation": "Th.us'ūng (Pallas) - Hadur",
+          "name": null,
+          "star_system_id": 397,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2270,
+          "code": "AYR'KA.JUMPPOINTS.HADUR",
+          "designation": "Ail'ka - Yā'mon (Hadur)",
+          "name": null,
+          "star_system_id": 398,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2273,
+          "code": "INDRA.JUMPPOINTS.HADUR",
+          "designation": "Kyuk'ya (Indra) - Yā'mon (Hadur)",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        }
+      ],
+      "totalrows": 14,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

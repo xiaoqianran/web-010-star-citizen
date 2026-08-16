@@ -1,0 +1,2301 @@
+{
+  "capturedAt": "2026-08-16T19:16:50.167Z",
+  "source": "https://robertsspaceindustries.com",
+  "find": [
+    {
+      "query": "Goss A",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Goss A",
+          "code": "GOSS.STARS.GOSSA",
+          "type": "STAR"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Goss-A.json"
+    },
+    {
+      "query": "GOSS A",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Goss A",
+          "code": "GOSS.STARS.GOSSA",
+          "type": "STAR"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-GOSS-A.json"
+    },
+    {
+      "query": "OPEN",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-OPEN.json"
+    },
+    {
+      "query": "voice",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-voice.json"
+    },
+    {
+      "query": "manmade",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-manmade.json"
+    },
+    {
+      "query": "man-made",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-man-made.json"
+    },
+    {
+      "query": "scanner",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-scanner.json"
+    },
+    {
+      "query": "population",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-population.json"
+    },
+    {
+      "query": "economy",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-economy.json"
+    },
+    {
+      "query": "crime",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-crime.json"
+    },
+    {
+      "query": "lifeforms",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-lifeforms.json"
+    },
+    {
+      "query": "display",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-display.json"
+    },
+    {
+      "query": "bookmark",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-bookmark.json"
+    },
+    {
+      "query": "route",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "sample": [],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-route.json"
+    },
+    {
+      "query": "Kayfa",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 9,
+      "sample": [
+        {
+          "name": "Kai'pua (Kayfa)",
+          "code": "KAYFA.STARS.KAYFA",
+          "type": "STAR"
+        },
+        {
+          "name": "Ui'r.a'ang",
+          "code": "KAYFA.PLANET.KAYFAI",
+          "type": "PLANET"
+        },
+        {
+          "name": "R.aip'uāng",
+          "code": "KAYFA.PLANET.KAYFAII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Kyu'kyu",
+          "code": "KAYFA.PLANET.KAYFAIII",
+          "type": "PLANET"
+        },
+        {
+          "name": "K.yuk'o",
+          "code": "KAYFA.PLANET.KAYFAIV",
+          "type": "PLANET"
+        },
+        {
+          "name": "Kai'pua (Kayfa) - R.il'a (Rihlah)",
+          "code": "KAYFA.JUMPPOINTS.RIHLAH",
+          "type": "JUMPPOINT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Kayfa.json"
+    },
+    {
+      "query": "Eealus",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 15,
+      "sample": [
+        {
+          "name": "Ē'aluth (Eealus)",
+          "code": "EEALUS.STARS.EEALUS",
+          "type": "STAR"
+        },
+        {
+          "name": "Ko'li",
+          "code": "EEALUS.PLANET.EEALUSIIIKOLI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Tua.lu\"",
+          "code": "EEALUS.PLANET.EEALUSI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Kyupuāng",
+          "code": "EEALUS.PLANET.EEALUSII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Xyekyu",
+          "code": "EEALUS.PLANET.EEALUSIV",
+          "type": "PLANET"
+        },
+        {
+          "name": "Puāngkiil",
+          "code": "EEALUS.PLANET.EEALUSV",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Eealus.json"
+    },
+    {
+      "query": "Hadur",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 14,
+      "sample": [
+        {
+          "name": "Yā'mon (Hadur)",
+          "code": "HADUR.STARS.HADUR",
+          "type": "STAR"
+        },
+        {
+          "name": "Kuā'li",
+          "code": "HADUR.PLANET.HADURI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Yethlūl y.ath'o",
+          "code": "HADUR.PLANET.HADURII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Yethlūl s.yen'o",
+          "code": "HADUR.PLANET.HADURIII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Yām'ping",
+          "code": "HADUR.PLANET.HADURIV",
+          "type": "PLANET"
+        },
+        {
+          "name": "Huichuaihyao y.ath'o se Yā'mon",
+          "code": "HADUR.BELTS.HADURBELTALPHA",
+          "type": "ASTEROID_BELT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Hadur.json"
+    },
+    {
+      "query": "Virtus",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 13,
+      "sample": [
+        {
+          "name": "La'uo (Virtus)",
+          "code": "VIRTUS.STARS.VIRTUS",
+          "type": "STAR"
+        },
+        {
+          "name": "Pi'tua",
+          "code": "VIRTUS.PLANETS.VIRTUSI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Yengchuai ",
+          "code": "VIRTUS.PLANETS.VIRTUSII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Kyu'ām",
+          "code": "VIRTUS.PLANETS.VIRTUSIII",
+          "type": "PLANET"
+        },
+        {
+          "name": "S.ap'uāng",
+          "code": "VIRTUS.PLANETS.VIRTUSIV",
+          "type": "PLANET"
+        },
+        {
+          "name": "Huichuaihyao y.ath'o se La'uo ",
+          "code": "VIRTUS.BELTS.ALPHABELT",
+          "type": "ASTEROID_BELT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Virtus.json"
+    },
+    {
+      "query": "Khabari",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Khabari",
+          "code": "KHABARI.STARS.KHABARI",
+          "type": "STAR"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Khabari.json"
+    },
+    {
+      "query": "Markahil",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Markahil",
+          "code": "MARKAHIL.STARS.MARKAHIL",
+          "type": "STAR"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Markahil.json"
+    },
+    {
+      "query": "Delamar",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Delamar",
+          "code": "NYX.ASTEROID.DELAMAR",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Delamar.json"
+    },
+    {
+      "query": "Luna",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Luna",
+          "code": "SOL.PLANETS.LUNA",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Luna.json"
+    },
+    {
+      "query": "Cellin",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Cellin",
+          "code": "STANTON.MOONS.CELLIN",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Cellin.json"
+    },
+    {
+      "query": "Yela",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 2,
+      "sample": [
+        {
+          "name": "Yela",
+          "code": "STANTON.MOONS.YELA",
+          "type": "SATELLITE"
+        },
+        {
+          "name": "Ring of Yela",
+          "code": "STANTON.RINGS.RINGSOFYELA",
+          "type": "ASTEROID_BELT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Yela.json"
+    },
+    {
+      "query": "Daymar",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Daymar",
+          "code": "STANTON.MOONS.DAYMAR",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Daymar.json"
+    },
+    {
+      "query": "Aberdeen",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Aberdeen",
+          "code": "STANTON.MOONS.ABERDEEN",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Aberdeen.json"
+    },
+    {
+      "query": "Arial",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Arial",
+          "code": "STANTON.MOONS.ARIAL",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Arial.json"
+    },
+    {
+      "query": "Ita",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 5,
+      "sample": [
+        {
+          "name": "Veritas",
+          "code": "VERITAS.STARS.VERITAS",
+          "type": "STAR"
+        },
+        {
+          "name": "Armitage",
+          "code": "ORION.PLANET.ORIONIIIARMITAGE",
+          "type": "PLANET"
+        },
+        {
+          "name": "Titan",
+          "code": "SOL.PLANETS.TITAN",
+          "type": "SATELLITE"
+        },
+        {
+          "name": "Titania",
+          "code": "SOL.PLANETS.TITANIA",
+          "type": "SATELLITE"
+        },
+        {
+          "name": "Ita",
+          "code": "STANTON.MOONS.ITA",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Ita.json"
+    },
+    {
+      "query": "Magda",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Magda",
+          "code": "STANTON.MOONS.MAGDA",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Magda.json"
+    },
+    {
+      "query": "Wala",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Wala",
+          "code": "STANTON.MOONS.WALA",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Wala.json"
+    },
+    {
+      "query": "Calliope",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Calliope",
+          "code": "STANTON.MOONS.CALLIOPE",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Calliope.json"
+    },
+    {
+      "query": "Clio",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Clio",
+          "code": "STANTON.MOONS.CLIO",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Clio.json"
+    },
+    {
+      "query": "Euterpe",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Euterpe",
+          "code": "STANTON.MOONS.EUTERPE",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Euterpe.json"
+    },
+    {
+      "query": "Lyria",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "sample": [
+        {
+          "name": "Lyria",
+          "code": "STANTON.MOONS.LYRIA",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK",
+      "file": "find5-Lyria.json"
+    }
+  ],
+  "findExtras": [
+    {
+      "form": {
+        "query": "Terra",
+        "page": "2"
+      },
+      "status": 200,
+      "success": 1,
+      "objects": 25,
+      "names": [
+        "Terra Nova",
+        "Aero",
+        "Pike",
+        "Terra",
+        "Gen",
+        "Petram",
+        "Petrus",
+        "Toja",
+        "Eda",
+        "Marisol Belt",
+        "Henge Cluster",
+        "Stanton - Terra",
+        "Terra - Hadrian",
+        "Terra - Tayac",
+        "Terra - Goss",
+        "Terra - Magnus",
+        "Terra - Pyro",
+        "Terra - Stanton",
+        "Terra - Taranis",
+        "Pyro - Terra",
+        "Magnus - Terra",
+        "Taranis - Terra",
+        "Tayac - Terra",
+        "Goss - Terra",
+        "Hadrian - Terra"
+      ],
+      "sameAsPlainTerra": true,
+      "file": "find5-extra-query-Terra-page-2.json"
+    },
+    {
+      "form": {
+        "query": "Terra",
+        "offset": "20"
+      },
+      "status": 200,
+      "success": 1,
+      "objects": 25,
+      "names": [
+        "Terra Nova",
+        "Aero",
+        "Pike",
+        "Terra",
+        "Gen",
+        "Petram",
+        "Petrus",
+        "Toja",
+        "Eda",
+        "Marisol Belt",
+        "Henge Cluster",
+        "Stanton - Terra",
+        "Terra - Hadrian",
+        "Terra - Tayac",
+        "Terra - Goss",
+        "Terra - Magnus",
+        "Terra - Pyro",
+        "Terra - Stanton",
+        "Terra - Taranis",
+        "Pyro - Terra",
+        "Magnus - Terra",
+        "Taranis - Terra",
+        "Tayac - Terra",
+        "Goss - Terra",
+        "Hadrian - Terra"
+      ],
+      "sameAsPlainTerra": true,
+      "file": "find5-extra-query-Terra-offset-20.json"
+    },
+    {
+      "form": {
+        "query": "Terra",
+        "start": "20"
+      },
+      "status": 200,
+      "success": 1,
+      "objects": 25,
+      "names": [
+        "Terra Nova",
+        "Aero",
+        "Pike",
+        "Terra",
+        "Gen",
+        "Petram",
+        "Petrus",
+        "Toja",
+        "Eda",
+        "Marisol Belt",
+        "Henge Cluster",
+        "Stanton - Terra",
+        "Terra - Hadrian",
+        "Terra - Tayac",
+        "Terra - Goss",
+        "Terra - Magnus",
+        "Terra - Pyro",
+        "Terra - Stanton",
+        "Terra - Taranis",
+        "Pyro - Terra",
+        "Magnus - Terra",
+        "Taranis - Terra",
+        "Tayac - Terra",
+        "Goss - Terra",
+        "Hadrian - Terra"
+      ],
+      "sameAsPlainTerra": true,
+      "file": "find5-extra-query-Terra-start-20.json"
+    },
+    {
+      "form": {
+        "query": "Terra",
+        "limit": "5"
+      },
+      "status": 200,
+      "success": 1,
+      "objects": 25,
+      "names": [
+        "Terra Nova",
+        "Aero",
+        "Pike",
+        "Terra",
+        "Gen",
+        "Petram",
+        "Petrus",
+        "Toja",
+        "Eda",
+        "Marisol Belt",
+        "Henge Cluster",
+        "Stanton - Terra",
+        "Terra - Hadrian",
+        "Terra - Tayac",
+        "Terra - Goss",
+        "Terra - Magnus",
+        "Terra - Pyro",
+        "Terra - Stanton",
+        "Terra - Taranis",
+        "Pyro - Terra",
+        "Magnus - Terra",
+        "Taranis - Terra",
+        "Tayac - Terra",
+        "Goss - Terra",
+        "Hadrian - Terra"
+      ],
+      "sameAsPlainTerra": true,
+      "file": "find5-extra-query-Terra-limit-5.json"
+    },
+    {
+      "form": {
+        "query": "Terra",
+        "count": "5"
+      },
+      "status": 200,
+      "success": 1,
+      "objects": 25,
+      "names": [
+        "Terra Nova",
+        "Aero",
+        "Pike",
+        "Terra",
+        "Gen",
+        "Petram",
+        "Petrus",
+        "Toja",
+        "Eda",
+        "Marisol Belt",
+        "Henge Cluster",
+        "Stanton - Terra",
+        "Terra - Hadrian",
+        "Terra - Tayac",
+        "Terra - Goss",
+        "Terra - Magnus",
+        "Terra - Pyro",
+        "Terra - Stanton",
+        "Terra - Taranis",
+        "Pyro - Terra",
+        "Magnus - Terra",
+        "Taranis - Terra",
+        "Tayac - Terra",
+        "Goss - Terra",
+        "Hadrian - Terra"
+      ],
+      "sameAsPlainTerra": true,
+      "file": "find5-extra-query-Terra-count-5.json"
+    },
+    {
+      "form": {
+        "query": "Terra",
+        "max": "5"
+      },
+      "status": 200,
+      "success": 1,
+      "objects": 25,
+      "names": [
+        "Terra Nova",
+        "Aero",
+        "Pike",
+        "Terra",
+        "Gen",
+        "Petram",
+        "Petrus",
+        "Toja",
+        "Eda",
+        "Marisol Belt",
+        "Henge Cluster",
+        "Stanton - Terra",
+        "Terra - Hadrian",
+        "Terra - Tayac",
+        "Terra - Goss",
+        "Terra - Magnus",
+        "Terra - Pyro",
+        "Terra - Stanton",
+        "Terra - Taranis",
+        "Pyro - Terra",
+        "Magnus - Terra",
+        "Taranis - Terra",
+        "Tayac - Terra",
+        "Goss - Terra",
+        "Hadrian - Terra"
+      ],
+      "sameAsPlainTerra": true,
+      "file": "find5-extra-query-Terra-max-5.json"
+    }
+  ],
+  "routes": [
+    {
+      "form": {
+        "departure": "Goss A",
+        "destination": "TERRA"
+      },
+      "status": 200,
+      "success": 0,
+      "code": "ErrInvalidObject",
+      "msg": "Invalid object specified",
+      "shortest": null,
+      "leastjumps": null,
+      "differ": false,
+      "file": "route5-Goss-A-TERRA.json"
+    },
+    {
+      "form": {
+        "departure": "GOSS A",
+        "destination": "TERRA"
+      },
+      "status": 200,
+      "success": 0,
+      "code": "ErrInvalidObject",
+      "msg": "Invalid object specified",
+      "shortest": null,
+      "leastjumps": null,
+      "differ": false,
+      "file": "route5-GOSS-A-TERRA.json"
+    },
+    {
+      "form": {
+        "departure": "GOSS.STARS.GOSSA",
+        "destination": "TERRA"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Terra",
+        "first_jump": "Goss - Terra",
+        "flight_distance": 5.0779088131246075
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Terra",
+        "first_jump": "Goss - Terra",
+        "flight_distance": 5.0779088131246075
+      },
+      "differ": false,
+      "file": "route5-GOSS.STARS.GOSSA-TERRA.json"
+    },
+    {
+      "form": {
+        "departure": "Cassel",
+        "destination": "Terra"
+      },
+      "status": 200,
+      "success": 0,
+      "code": "ErrInvalidObject",
+      "msg": "Invalid object specified",
+      "shortest": null,
+      "leastjumps": null,
+      "differ": false,
+      "file": "route5-Cassel-Terra.json"
+    },
+    {
+      "form": {
+        "departure": "Cassel",
+        "destination": "TERRA"
+      },
+      "status": 200,
+      "success": 0,
+      "code": "ErrInvalidObject",
+      "msg": "Invalid object specified",
+      "shortest": null,
+      "leastjumps": null,
+      "differ": false,
+      "file": "route5-Cassel-TERRA.json"
+    },
+    {
+      "form": {
+        "departure": "GOSS",
+        "destination": "Terra"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Terra",
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Terra",
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      },
+      "differ": false,
+      "file": "route5-GOSS-Terra.json"
+    },
+    {
+      "form": {
+        "departure": "Goss",
+        "destination": "Terra"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 1,
+        "label": "Through Terra",
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      },
+      "leastjumps": {
+        "jumps": 1,
+        "label": "Through Terra",
+        "first_jump": "Goss - Terra",
+        "flight_distance": 0
+      },
+      "differ": false,
+      "file": "route5-Goss-Terra.json"
+    },
+    {
+      "form": {
+        "departure": "Levski",
+        "destination": "SOL"
+      },
+      "status": 200,
+      "success": 0,
+      "code": "ErrInvalidObject",
+      "msg": "Invalid object specified",
+      "shortest": null,
+      "leastjumps": null,
+      "differ": false,
+      "file": "route5-Levski-SOL.json"
+    },
+    {
+      "form": {
+        "departure": "Area18",
+        "destination": "PYRO"
+      },
+      "status": 200,
+      "success": 0,
+      "code": "ErrInvalidObject",
+      "msg": "Invalid object specified",
+      "shortest": null,
+      "leastjumps": null,
+      "differ": false,
+      "file": "route5-Area18-PYRO.json"
+    },
+    {
+      "form": {
+        "departure": "The ARK",
+        "destination": "SOL"
+      },
+      "status": 200,
+      "success": 0,
+      "code": "ErrInvalidObject",
+      "msg": "Invalid object specified",
+      "shortest": null,
+      "leastjumps": null,
+      "differ": false,
+      "file": "route5-The-ARK-SOL.json"
+    },
+    {
+      "form": {
+        "departure": "TAMSA",
+        "destination": "SOL"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 5,
+        "label": "Through Banshee",
+        "first_jump": "Tamsa - Banshee",
+        "flight_distance": 25.11242214020971
+      },
+      "leastjumps": {
+        "jumps": 5,
+        "label": "Through Banshee",
+        "first_jump": "Tamsa - Banshee",
+        "flight_distance": 25.11242214020971
+      },
+      "differ": false,
+      "file": "route5-TAMSA-SOL.json"
+    },
+    {
+      "form": {
+        "departure": "KAYFA",
+        "destination": "KINS"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 6,
+        "label": "Through Horus",
+        "first_jump": "Kai'pua (Kayfa) - Horus",
+        "flight_distance": 21.327106430982592
+      },
+      "leastjumps": {
+        "jumps": 6,
+        "label": "Through Horus",
+        "first_jump": "Kai'pua (Kayfa) - Horus",
+        "flight_distance": 21.327106430982592
+      },
+      "differ": false,
+      "file": "route5-KAYFA-KINS.json"
+    },
+    {
+      "form": {
+        "departure": "VIRGIL",
+        "destination": "TAMSA"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 9,
+        "label": "Through Oberon",
+        "first_jump": "Virgil - Oberon",
+        "flight_distance": 17.160284208593115
+      },
+      "leastjumps": {
+        "jumps": 7,
+        "label": "Through Oberon",
+        "first_jump": "Virgil - Oberon",
+        "flight_distance": 20.726227635696528
+      },
+      "differ": true,
+      "file": "route5-VIRGIL-TAMSA.json"
+    },
+    {
+      "form": {
+        "departure": "CALIBAN",
+        "destination": "NYX"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 3,
+        "label": "Through Oberon",
+        "first_jump": "Caliban - Oberon",
+        "flight_distance": 4.663008153239286
+      },
+      "leastjumps": {
+        "jumps": 3,
+        "label": "Through Oberon",
+        "first_jump": "Caliban - Oberon",
+        "flight_distance": 4.663008153239286
+      },
+      "differ": false,
+      "file": "route5-CALIBAN-NYX.json"
+    },
+    {
+      "form": {
+        "departure": "PYRO",
+        "destination": "TAMSA"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 7,
+        "label": "Through Cano",
+        "first_jump": "Pyro - Cano",
+        "flight_distance": 20.845170658320605
+      },
+      "leastjumps": {
+        "jumps": 6,
+        "label": "Through Cano",
+        "first_jump": "Pyro - Cano",
+        "flight_distance": 22.188473159719166
+      },
+      "differ": true,
+      "file": "route5-PYRO-TAMSA.json"
+    },
+    {
+      "form": {
+        "departure": "VEGA",
+        "destination": "TAMSA"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 7,
+        "label": "Through Nul",
+        "first_jump": "Vega - Nul",
+        "flight_distance": 17.50760995682804
+      },
+      "leastjumps": {
+        "jumps": 6,
+        "label": "Through Nul",
+        "first_jump": "Vega - Nul",
+        "flight_distance": 17.543701510911525
+      },
+      "differ": true,
+      "file": "route5-VEGA-TAMSA.json"
+    },
+    {
+      "form": {
+        "departure": "TRISE",
+        "destination": "SOL"
+      },
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": {
+        "jumps": 10,
+        "label": "Through Ē'aluth (Eealus)",
+        "first_jump": "Trise - Ē'aluth (Eealus)",
+        "flight_distance": 40.06477317481895
+      },
+      "leastjumps": {
+        "jumps": 7,
+        "label": "Through Ē'aluth (Eealus)",
+        "first_jump": "Trise - Ē'aluth (Eealus)",
+        "flight_distance": 51.32299800976309
+      },
+      "differ": true,
+      "file": "route5-TRISE-SOL.json"
+    }
+  ],
+  "celestialObjects": [
+    {
+      "code": "STANTON.STATION.PORTOLISAR",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Port Olisar",
+      "appearance": "CUSTOM",
+      "parent_id": 1695,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "radius"
+      ]
+    },
+    {
+      "code": "STANTON.STATION.KAREAH",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Security Post Kareah",
+      "appearance": "CUSTOM",
+      "parent_id": 1695,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "radius"
+      ]
+    },
+    {
+      "code": "STANTON.STATION.GUNDO",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Covalex Hub Gundo",
+      "appearance": "CUSTOM",
+      "parent_id": 1695,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "radius"
+      ]
+    },
+    {
+      "code": "STANTON.STATION.CRYASTRO",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Cry-Astro Service",
+      "appearance": "CUSTOM",
+      "parent_id": 1695,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "radius"
+      ]
+    },
+    {
+      "code": "STANTON.STATION.SCANHUB",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "ICC ScanHub Stanton",
+      "appearance": "CUSTOM",
+      "parent_id": 1695,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "radius"
+      ]
+    },
+    {
+      "code": "STANTON.STATION.COMMARRAYSCC",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "CommArray SCC",
+      "appearance": "CUSTOM",
+      "parent_id": 1695,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "radius"
+      ]
+    },
+    {
+      "code": "TERRA.STATION.INSREILLY",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "INS Reilly",
+      "appearance": "DEFAULT",
+      "parent_id": 1724,
+      "shaderKeys": []
+    },
+    {
+      "code": "TERRA.STATION.IASHAMMETT",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "IAS Hammett",
+      "appearance": "DEFAULT",
+      "parent_id": 1723,
+      "shaderKeys": []
+    },
+    {
+      "code": "TERRA.STATION.ICSEVOLEN",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "ICS Evolen",
+      "appearance": "DEFAULT",
+      "parent_id": 1723,
+      "shaderKeys": []
+    },
+    {
+      "code": "PYRO.STATION.RUINSTATION",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Ruin Station",
+      "appearance": "DEFAULT",
+      "parent_id": 1750,
+      "shaderKeys": []
+    },
+    {
+      "code": "PYRO.STATION.CHECKMATESTATION",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Checkmate Station",
+      "appearance": null,
+      "parent_id": null,
+      "shaderKeys": []
+    },
+    {
+      "code": "VEGA.POI.WARN01",
+      "status": 200,
+      "success": 1,
+      "type": "POI",
+      "name": "Vanduul Attack",
+      "appearance": "WARNING_RED",
+      "parent_id": 1800,
+      "shaderKeys": []
+    },
+    {
+      "code": "ELLIS.STATION.SCIENCESTATION",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Encole Station",
+      "appearance": "DEFAULT",
+      "parent_id": 1812,
+      "shaderKeys": []
+    },
+    {
+      "code": "HELIOS.STATION.HEPHAESTUSSTATION",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Hephaestus Station",
+      "appearance": "DEFAULT",
+      "parent_id": 1837,
+      "shaderKeys": []
+    },
+    {
+      "code": "KELLOG.STATION.JUSTICESTARSATELLITE",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "JusticeStar Satellite",
+      "appearance": "DEFAULT",
+      "parent_id": 1846,
+      "shaderKeys": []
+    },
+    {
+      "code": "KELLOG.STATIONS.OBSTATIONPEGASUS",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "OB Station Pegasus",
+      "appearance": "DEFAULT",
+      "parent_id": 2390,
+      "shaderKeys": []
+    },
+    {
+      "code": "OSIRIS.STATION.OBKOBALD",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "OB Kobold",
+      "appearance": "DEFAULT",
+      "parent_id": 2395,
+      "shaderKeys": []
+    },
+    {
+      "code": "OSO.STATION.OBCHIMERA",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Yogi Station",
+      "appearance": "DEFAULT",
+      "parent_id": 1879,
+      "shaderKeys": []
+    },
+    {
+      "code": "TAYAC.STATION.THEARK",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "The ARK",
+      "appearance": "CUSTOM",
+      "parent_id": 2688,
+      "shaderKeys": []
+    },
+    {
+      "code": "CHRONOS.STATION.ARCHANGELSTATION",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Archangel Station",
+      "appearance": "DEFAULT",
+      "parent_id": 2448,
+      "shaderKeys": []
+    },
+    {
+      "code": "KALLIS.STATION.FUELINGSHIPPINGSTATION",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "OB Station Gryphon",
+      "appearance": "DEFAULT",
+      "parent_id": 1905,
+      "shaderKeys": []
+    },
+    {
+      "code": "BAKER.STATION.COVALEXSHIPPINGHUBXENIA",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Covalex Shipping Hub Xenia",
+      "appearance": "DEFAULT",
+      "parent_id": null,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "orbitalColor",
+        "orbitalHighlightColor",
+        "radius"
+      ]
+    },
+    {
+      "code": "SOL.STATION.TDDKESNER",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "TDD Kesner",
+      "appearance": "DEFAULT",
+      "parent_id": 2023,
+      "shaderKeys": []
+    },
+    {
+      "code": "SOL.STATION.IMSBOLLIVER",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "IMS Bolliver",
+      "appearance": "DEFAULT",
+      "parent_id": 2036,
+      "shaderKeys": []
+    },
+    {
+      "code": "SOL.STATION.INSDUNLEAVY",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "INS Dunleavy",
+      "appearance": "DEFAULT",
+      "parent_id": 2023,
+      "shaderKeys": []
+    },
+    {
+      "code": "CATHCART.STATION.SPIDER",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Spider",
+      "appearance": "DEFAULT",
+      "parent_id": 2154,
+      "shaderKeys": []
+    },
+    {
+      "code": "BACCHUS.STATION.BACCHUSFLOTILLA",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Bacchus Flotilla",
+      "appearance": "DEFAULT",
+      "parent_id": null,
+      "shaderKeys": []
+    },
+    {
+      "code": "GLIESE.STATION.GLIESEFLOTILLA",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Lyris",
+      "appearance": "DEFAULT",
+      "parent_id": 2667,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "orbitalColor",
+        "orbitalHighlightColor",
+        "radius"
+      ]
+    },
+    {
+      "code": "TRISE.STATION.BANUSTATION",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Trise Flotilla",
+      "appearance": "DEFAULT",
+      "parent_id": 2397,
+      "shaderKeys": []
+    },
+    {
+      "code": "YULIN.STATION.SATABALLARENA",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Buloi Sataball Arena",
+      "appearance": "DEFAULT",
+      "parent_id": 2676,
+      "shaderKeys": []
+    },
+    {
+      "code": "YULIN.STATION.YULINFLOTILLA",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Yulin Flotilla",
+      "appearance": "DEFAULT",
+      "parent_id": 2295,
+      "shaderKeys": []
+    },
+    {
+      "code": "HADRIAN.STATION.HADRIANFLOTILLA",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "Hadrian Flotilla",
+      "appearance": "DEFAULT",
+      "parent_id": 2346,
+      "shaderKeys": []
+    },
+    {
+      "code": "GARRON.STATION.OBHELLER",
+      "status": 200,
+      "success": 1,
+      "type": "MANMADE",
+      "name": "OB Heller",
+      "appearance": "DEFAULT",
+      "parent_id": 2685,
+      "shaderKeys": []
+    },
+    {
+      "code": "TAMSA.STAR.TAMSA",
+      "status": 200,
+      "success": 1,
+      "type": "BLACKHOLE",
+      "name": "Tamsa",
+      "appearance": "DEFAULT",
+      "parent_id": null,
+      "shaderKeys": [
+        "orbitalMin",
+        "orbitalMax",
+        "orbitalFactor",
+        "blackhole",
+        "radius"
+      ]
+    }
+  ],
+  "highlights": {
+    "objectNameRoutes": [
+      {
+        "form": {
+          "departure": "Goss A",
+          "destination": "TERRA"
+        },
+        "status": 200,
+        "success": 0,
+        "code": "ErrInvalidObject",
+        "msg": "Invalid object specified",
+        "shortest": null,
+        "leastjumps": null,
+        "differ": false,
+        "file": "route5-Goss-A-TERRA.json"
+      },
+      {
+        "form": {
+          "departure": "GOSS A",
+          "destination": "TERRA"
+        },
+        "status": 200,
+        "success": 0,
+        "code": "ErrInvalidObject",
+        "msg": "Invalid object specified",
+        "shortest": null,
+        "leastjumps": null,
+        "differ": false,
+        "file": "route5-GOSS-A-TERRA.json"
+      },
+      {
+        "form": {
+          "departure": "Cassel",
+          "destination": "Terra"
+        },
+        "status": 200,
+        "success": 0,
+        "code": "ErrInvalidObject",
+        "msg": "Invalid object specified",
+        "shortest": null,
+        "leastjumps": null,
+        "differ": false,
+        "file": "route5-Cassel-Terra.json"
+      },
+      {
+        "form": {
+          "departure": "Cassel",
+          "destination": "TERRA"
+        },
+        "status": 200,
+        "success": 0,
+        "code": "ErrInvalidObject",
+        "msg": "Invalid object specified",
+        "shortest": null,
+        "leastjumps": null,
+        "differ": false,
+        "file": "route5-Cassel-TERRA.json"
+      },
+      {
+        "form": {
+          "departure": "Levski",
+          "destination": "SOL"
+        },
+        "status": 200,
+        "success": 0,
+        "code": "ErrInvalidObject",
+        "msg": "Invalid object specified",
+        "shortest": null,
+        "leastjumps": null,
+        "differ": false,
+        "file": "route5-Levski-SOL.json"
+      },
+      {
+        "form": {
+          "departure": "Area18",
+          "destination": "PYRO"
+        },
+        "status": 200,
+        "success": 0,
+        "code": "ErrInvalidObject",
+        "msg": "Invalid object specified",
+        "shortest": null,
+        "leastjumps": null,
+        "differ": false,
+        "file": "route5-Area18-PYRO.json"
+      },
+      {
+        "form": {
+          "departure": "The ARK",
+          "destination": "SOL"
+        },
+        "status": 200,
+        "success": 0,
+        "code": "ErrInvalidObject",
+        "msg": "Invalid object specified",
+        "shortest": null,
+        "leastjumps": null,
+        "differ": false,
+        "file": "route5-The-ARK-SOL.json"
+      }
+    ],
+    "routesWhereShortestDiffersLeastjumps": [
+      {
+        "form": {
+          "departure": "VIRGIL",
+          "destination": "TAMSA"
+        },
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "shortest": {
+          "jumps": 9,
+          "label": "Through Oberon",
+          "first_jump": "Virgil - Oberon",
+          "flight_distance": 17.160284208593115
+        },
+        "leastjumps": {
+          "jumps": 7,
+          "label": "Through Oberon",
+          "first_jump": "Virgil - Oberon",
+          "flight_distance": 20.726227635696528
+        },
+        "differ": true,
+        "file": "route5-VIRGIL-TAMSA.json"
+      },
+      {
+        "form": {
+          "departure": "PYRO",
+          "destination": "TAMSA"
+        },
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "shortest": {
+          "jumps": 7,
+          "label": "Through Cano",
+          "first_jump": "Pyro - Cano",
+          "flight_distance": 20.845170658320605
+        },
+        "leastjumps": {
+          "jumps": 6,
+          "label": "Through Cano",
+          "first_jump": "Pyro - Cano",
+          "flight_distance": 22.188473159719166
+        },
+        "differ": true,
+        "file": "route5-PYRO-TAMSA.json"
+      },
+      {
+        "form": {
+          "departure": "VEGA",
+          "destination": "TAMSA"
+        },
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "shortest": {
+          "jumps": 7,
+          "label": "Through Nul",
+          "first_jump": "Vega - Nul",
+          "flight_distance": 17.50760995682804
+        },
+        "leastjumps": {
+          "jumps": 6,
+          "label": "Through Nul",
+          "first_jump": "Vega - Nul",
+          "flight_distance": 17.543701510911525
+        },
+        "differ": true,
+        "file": "route5-VEGA-TAMSA.json"
+      },
+      {
+        "form": {
+          "departure": "TRISE",
+          "destination": "SOL"
+        },
+        "status": 200,
+        "success": 1,
+        "code": "OK",
+        "msg": "OK",
+        "shortest": {
+          "jumps": 10,
+          "label": "Through Ē'aluth (Eealus)",
+          "first_jump": "Trise - Ē'aluth (Eealus)",
+          "flight_distance": 40.06477317481895
+        },
+        "leastjumps": {
+          "jumps": 7,
+          "label": "Through Ē'aluth (Eealus)",
+          "first_jump": "Trise - Ē'aluth (Eealus)",
+          "flight_distance": 51.32299800976309
+        },
+        "differ": true,
+        "file": "route5-TRISE-SOL.json"
+      }
+    ],
+    "findHits": [
+      {
+        "query": "Goss A",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Goss A",
+            "code": "GOSS.STARS.GOSSA",
+            "type": "STAR"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Goss-A.json"
+      },
+      {
+        "query": "GOSS A",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Goss A",
+            "code": "GOSS.STARS.GOSSA",
+            "type": "STAR"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-GOSS-A.json"
+      },
+      {
+        "query": "Kayfa",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 9,
+        "sample": [
+          {
+            "name": "Kai'pua (Kayfa)",
+            "code": "KAYFA.STARS.KAYFA",
+            "type": "STAR"
+          },
+          {
+            "name": "Ui'r.a'ang",
+            "code": "KAYFA.PLANET.KAYFAI",
+            "type": "PLANET"
+          },
+          {
+            "name": "R.aip'uāng",
+            "code": "KAYFA.PLANET.KAYFAII",
+            "type": "PLANET"
+          },
+          {
+            "name": "Kyu'kyu",
+            "code": "KAYFA.PLANET.KAYFAIII",
+            "type": "PLANET"
+          },
+          {
+            "name": "K.yuk'o",
+            "code": "KAYFA.PLANET.KAYFAIV",
+            "type": "PLANET"
+          },
+          {
+            "name": "Kai'pua (Kayfa) - R.il'a (Rihlah)",
+            "code": "KAYFA.JUMPPOINTS.RIHLAH",
+            "type": "JUMPPOINT"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Kayfa.json"
+      },
+      {
+        "query": "Eealus",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 15,
+        "sample": [
+          {
+            "name": "Ē'aluth (Eealus)",
+            "code": "EEALUS.STARS.EEALUS",
+            "type": "STAR"
+          },
+          {
+            "name": "Ko'li",
+            "code": "EEALUS.PLANET.EEALUSIIIKOLI",
+            "type": "PLANET"
+          },
+          {
+            "name": "Tua.lu\"",
+            "code": "EEALUS.PLANET.EEALUSI",
+            "type": "PLANET"
+          },
+          {
+            "name": "Kyupuāng",
+            "code": "EEALUS.PLANET.EEALUSII",
+            "type": "PLANET"
+          },
+          {
+            "name": "Xyekyu",
+            "code": "EEALUS.PLANET.EEALUSIV",
+            "type": "PLANET"
+          },
+          {
+            "name": "Puāngkiil",
+            "code": "EEALUS.PLANET.EEALUSV",
+            "type": "PLANET"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Eealus.json"
+      },
+      {
+        "query": "Hadur",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 14,
+        "sample": [
+          {
+            "name": "Yā'mon (Hadur)",
+            "code": "HADUR.STARS.HADUR",
+            "type": "STAR"
+          },
+          {
+            "name": "Kuā'li",
+            "code": "HADUR.PLANET.HADURI",
+            "type": "PLANET"
+          },
+          {
+            "name": "Yethlūl y.ath'o",
+            "code": "HADUR.PLANET.HADURII",
+            "type": "PLANET"
+          },
+          {
+            "name": "Yethlūl s.yen'o",
+            "code": "HADUR.PLANET.HADURIII",
+            "type": "PLANET"
+          },
+          {
+            "name": "Yām'ping",
+            "code": "HADUR.PLANET.HADURIV",
+            "type": "PLANET"
+          },
+          {
+            "name": "Huichuaihyao y.ath'o se Yā'mon",
+            "code": "HADUR.BELTS.HADURBELTALPHA",
+            "type": "ASTEROID_BELT"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Hadur.json"
+      },
+      {
+        "query": "Virtus",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 13,
+        "sample": [
+          {
+            "name": "La'uo (Virtus)",
+            "code": "VIRTUS.STARS.VIRTUS",
+            "type": "STAR"
+          },
+          {
+            "name": "Pi'tua",
+            "code": "VIRTUS.PLANETS.VIRTUSI",
+            "type": "PLANET"
+          },
+          {
+            "name": "Yengchuai ",
+            "code": "VIRTUS.PLANETS.VIRTUSII",
+            "type": "PLANET"
+          },
+          {
+            "name": "Kyu'ām",
+            "code": "VIRTUS.PLANETS.VIRTUSIII",
+            "type": "PLANET"
+          },
+          {
+            "name": "S.ap'uāng",
+            "code": "VIRTUS.PLANETS.VIRTUSIV",
+            "type": "PLANET"
+          },
+          {
+            "name": "Huichuaihyao y.ath'o se La'uo ",
+            "code": "VIRTUS.BELTS.ALPHABELT",
+            "type": "ASTEROID_BELT"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Virtus.json"
+      },
+      {
+        "query": "Khabari",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Khabari",
+            "code": "KHABARI.STARS.KHABARI",
+            "type": "STAR"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Khabari.json"
+      },
+      {
+        "query": "Markahil",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Markahil",
+            "code": "MARKAHIL.STARS.MARKAHIL",
+            "type": "STAR"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Markahil.json"
+      },
+      {
+        "query": "Delamar",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Delamar",
+            "code": "NYX.ASTEROID.DELAMAR",
+            "type": "PLANET"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Delamar.json"
+      },
+      {
+        "query": "Luna",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Luna",
+            "code": "SOL.PLANETS.LUNA",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Luna.json"
+      },
+      {
+        "query": "Cellin",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Cellin",
+            "code": "STANTON.MOONS.CELLIN",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Cellin.json"
+      },
+      {
+        "query": "Yela",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 2,
+        "sample": [
+          {
+            "name": "Yela",
+            "code": "STANTON.MOONS.YELA",
+            "type": "SATELLITE"
+          },
+          {
+            "name": "Ring of Yela",
+            "code": "STANTON.RINGS.RINGSOFYELA",
+            "type": "ASTEROID_BELT"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Yela.json"
+      },
+      {
+        "query": "Daymar",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Daymar",
+            "code": "STANTON.MOONS.DAYMAR",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Daymar.json"
+      },
+      {
+        "query": "Aberdeen",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Aberdeen",
+            "code": "STANTON.MOONS.ABERDEEN",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Aberdeen.json"
+      },
+      {
+        "query": "Arial",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Arial",
+            "code": "STANTON.MOONS.ARIAL",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Arial.json"
+      },
+      {
+        "query": "Ita",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 5,
+        "sample": [
+          {
+            "name": "Veritas",
+            "code": "VERITAS.STARS.VERITAS",
+            "type": "STAR"
+          },
+          {
+            "name": "Armitage",
+            "code": "ORION.PLANET.ORIONIIIARMITAGE",
+            "type": "PLANET"
+          },
+          {
+            "name": "Titan",
+            "code": "SOL.PLANETS.TITAN",
+            "type": "SATELLITE"
+          },
+          {
+            "name": "Titania",
+            "code": "SOL.PLANETS.TITANIA",
+            "type": "SATELLITE"
+          },
+          {
+            "name": "Ita",
+            "code": "STANTON.MOONS.ITA",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Ita.json"
+      },
+      {
+        "query": "Magda",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Magda",
+            "code": "STANTON.MOONS.MAGDA",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Magda.json"
+      },
+      {
+        "query": "Wala",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Wala",
+            "code": "STANTON.MOONS.WALA",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Wala.json"
+      },
+      {
+        "query": "Calliope",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Calliope",
+            "code": "STANTON.MOONS.CALLIOPE",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Calliope.json"
+      },
+      {
+        "query": "Clio",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Clio",
+            "code": "STANTON.MOONS.CLIO",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Clio.json"
+      },
+      {
+        "query": "Euterpe",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Euterpe",
+            "code": "STANTON.MOONS.EUTERPE",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Euterpe.json"
+      },
+      {
+        "query": "Lyria",
+        "status": 200,
+        "success": 1,
+        "systems": 0,
+        "objects": 1,
+        "sample": [
+          {
+            "name": "Lyria",
+            "code": "STANTON.MOONS.LYRIA",
+            "type": "SATELLITE"
+          }
+        ],
+        "code": "OK",
+        "msg": "OK",
+        "file": "find5-Lyria.json"
+      }
+    ],
+    "paginationChanges": []
+  }
+}

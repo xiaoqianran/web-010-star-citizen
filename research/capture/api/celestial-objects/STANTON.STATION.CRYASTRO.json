@@ -1,0 +1,63 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2743,
+        "age": null,
+        "appearance": "CUSTOM",
+        "axial_tilt": null,
+        "code": "STANTON.STATION.CRYASTRO",
+        "description": "This station is a franchise of Cry-Astro and provides facilities to restock and refuel a wide variety of ships. \n",
+        "designation": "Cry-Astro Service",
+        "distance": 0.0019,
+        "fairchanceact": null,
+        "habitable": null,
+        "info_url": null,
+        "latitude": 7,
+        "longitude": 78.2649,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 1695,
+        "sensor_danger": "4",
+        "sensor_economy": "5",
+        "sensor_population": "1",
+        "shader_data": {
+          "orbitalMin": 1,
+          "orbitalMax": 5,
+          "orbitalFactor": 1,
+          "radius": 0.01
+        },
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": 0.2,
+        "subtype_id": 44,
+        "time_modified": "2015-10-10 00:07:04",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": [],
+        "model": {
+          "slug": "2c7l2nene7ipk",
+          "source": "https://robertsspaceindustries.com/media/2c7l2nene7ipkr/source/SpaceStation.dae",
+          "images": []
+        }
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

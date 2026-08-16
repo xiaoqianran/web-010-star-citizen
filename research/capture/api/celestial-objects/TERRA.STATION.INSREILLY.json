@@ -1,0 +1,61 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2614,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "TERRA.STATION.INSREILLY",
+        "description": null,
+        "designation": "INS Reilly",
+        "distance": 0.00017443,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": null,
+        "longitude": 152.264498,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 1724,
+        "sensor_danger": "1",
+        "sensor_economy": "3",
+        "sensor_population": "4",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": 1.1,
+        "subtype_id": 44,
+        "time_modified": "2015-10-08 18:17:25",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [
+          {
+            "id": 1,
+            "code": "uee",
+            "color": "#48bbd4",
+            "name": "UEE",
+            "membership.id": 2081
+          }
+        ],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

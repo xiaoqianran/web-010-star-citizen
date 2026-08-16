@@ -1,0 +1,2184 @@
+{
+  "title": "ARK Starmap | Roberts Space Industries | Follow the development of Star Citizen and Squadron 42",
+  "bodyText": "Home Explore Starmap Starmap INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT STELLAR CARTOGRAPHICS Welcome to the ARK Starmap. Use the fullscreen mode for a better experience ENTER FULL SCREEN Or enter in window mode",
+  "inputs": [
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled"
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox"
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox"
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox"
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled"
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox"
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox"
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox"
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton"
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "value": "on",
+      "vis": false,
+      "cls": ""
+    }
+  ],
+  "checks": [
+    {
+      "text": "",
+      "checked": true,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": true,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": true,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": true,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": true,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": false,
+      "cls": "CybotCookiebotDialogBodyLevelButton",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": false,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "",
+      "checked": false,
+      "cls": "",
+      "vis": false
+    }
+  ],
+  "items": [
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Cookiebot by Usercentrics - opens in a new window",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Close banner",
+      "cls": "CybotCookiebotBannerCloseButton",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Consent",
+      "cls": "CybotCookiebotDialogNavItemLink CybotCookiebotDialogActive",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Details",
+      "cls": "CybotCookiebotDialogNavItemLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "[#IABV2SETTINGS#]",
+      "cls": "CybotCookiebotDialogNavItemLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "About",
+      "cls": "CybotCookiebotDialogNavItemLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Privacy Policy",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Cookie Declaration",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "Necessary",
+      "cls": "CybotCookiebotDialogBodyLevelButtonLabel",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": true,
+      "text": "on",
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "Preferences",
+      "cls": "CybotCookiebotDialogBodyLevelButtonLabel",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": true,
+      "text": "on",
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "Statistics",
+      "cls": "CybotCookiebotDialogBodyLevelButtonLabel",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": true,
+      "text": "on",
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "Marketing",
+      "cls": "CybotCookiebotDialogBodyLevelButtonLabel",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": true,
+      "text": "on",
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Show details",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Necessary 50",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": true,
+      "text": "on",
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Cloudflare1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Robertsspaceindustries.com16",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Scribd1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Stripe3",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Twitch2",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Zendesk1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "cloudimperiumgames.com1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "consent.cookiebot.comstatic.robertsspaceindustries.com7",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "m.stripe.com3",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "robertsspaceindustries.comsquadron42.comstarcitizen.com6",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "support.robertsspaceindustries.comtwitter.comvimeo.com3",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "www.recaptcha.net6",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Preferences 3",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": false,
+      "text": "on",
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Twitch1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "YouTube1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "m.stripe.com1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Statistics 20",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": false,
+      "text": "on",
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Google4",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "TikTok4",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Twitch1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Vimeo3",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "robertsspaceindustries.comsquadron42.com2",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "www.google-analytics.comsquadron42.com3",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "www.googletagmanager.comsquadron42.com3",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Marketing 60",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": false,
+      "text": "on",
+      "cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Meta Platforms, Inc.4",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Google1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Reddit3",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Robertsspaceindustries.com5",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Scribd1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "TikTok13",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Twitch8",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Vimeo5",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "YouTube17",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "k.twitchcdn.net1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "robertsspaceindustries.comsquadron42.com2",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Unclassified 23",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Flipsnack1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Robertsspaceindustries.com4",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Scribd1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Twitch3",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "YouTube1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Learn more about this provider",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "k.twitchcdn.net1",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "robertsspaceindustries.comstatic.squadron42.comstatic-ptu.cloudimperiumgames.com8",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "robertsspaceindustries.comstatic.squadron42.comstatic.starcitizen.com4",
+      "cls": "CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Cross-domain consent6",
+      "cls": "CybotExpandLink CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "starcitizen.com",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "squadron42.com",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "support.robertsspaceindustries.com",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "ptu.cloudimperiumgames.com",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "cloudimperiumgames.com",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "robertsspaceindustries.com",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Cookiebot",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "[#IABV2_LABEL_PURPOSES#]",
+      "cls": "CybotCookiebotDialogDetailBodyContentIABv2Tab CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "[#IABV2_LABEL_FEATURES#]",
+      "cls": "CybotCookiebotDialogDetailBodyContentIABv2Tab CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "[#IABV2_LABEL_PARTNERS#]",
+      "cls": "CybotCookiebotDialogDetailBodyContentIABv2Tab CybotCookiebotDialogCollapsed",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Privacy Policy",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": false,
+      "text": "on",
+      "cls": "CybotCookiebotDialogBodyLevelButton",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "Do not sell or share my personal information",
+      "cls": "CybotCookiebotDialogBodyLevelButtonLabel",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Allow all cookies",
+      "cls": "CybotCookiebotDialogBodyButton",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Customize",
+      "cls": "CybotCookiebotDialogBodyButton CybotCookiebotDialogHide",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Allow selection",
+      "cls": "CybotCookiebotDialogBodyButton",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Use necessary cookies only",
+      "cls": "CybotCookiebotDialogBodyButton",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": null,
+      "checked": null,
+      "text": "Close banner",
+      "cls": "CybotCookiebotBannerCloseButton",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Home",
+      "cls": "a-breadcrumbItem__link",
+      "vis": true,
+      "box": {
+        "x": 314,
+        "y": 10,
+        "w": 36,
+        "h": 20
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Starmap",
+      "cls": "a-productHomeProductLogo -large",
+      "vis": true,
+      "box": {
+        "x": 252,
+        "y": 40,
+        "w": 128,
+        "h": 64
+      }
+    },
+    {
+      "tag": "section",
+      "type": null,
+      "checked": null,
+      "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT STELLAR CARTOGRAPHICS Welcome to the ARK Starmap. Use the fullscreen mode for a better experience",
+      "cls": "sm-starmap-application",
+      "vis": true,
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 976
+      }
+    },
+    {
+      "tag": "section",
+      "type": null,
+      "checked": null,
+      "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+      "cls": "sm-starmap",
+      "vis": true,
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 1083
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Control Disc",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "INSPECT",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 410,
+        "y": 226,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "INFORMATION",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 406,
+        "y": 256,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "ROUTING",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 398,
+        "y": 286,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "BOOKMARK",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 379,
+        "y": 316,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Back",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Set As:Departure",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Set As:Destination",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "Avoid",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "section",
+      "type": null,
+      "checked": null,
+      "text": "STELLAR CARTOGRAPHICS Welcome to the ARK Starmap. Use the fullscreen mode for a better experience ENTER FULL SCREEN Or enter in window mode",
+      "cls": "sm-loading-screen sm-current-initial",
+      "vis": true,
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 976
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "STELLAR CARTOGRAPHICS Welcome to the ARK Starmap. Use the fullscreen mode for a better experience ENTER FULL SCREEN Or enter in window mode",
+      "cls": "sm-initial-scene",
+      "vis": true,
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 976
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "STELLAR CARTOGRAPHICS",
+      "cls": "ark-logo-wrapper sm-active",
+      "vis": true,
+      "box": {
+        "x": 828,
+        "y": 396,
+        "w": 265,
+        "h": 403
+      }
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "checked": null,
+      "text": "ENTER FULL SCREEN",
+      "cls": "launch-fullscreen",
+      "vis": true,
+      "box": {
+        "x": 795,
+        "y": 901,
+        "w": 330,
+        "h": 35
+      }
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "checked": null,
+      "text": "Or enter in window mode",
+      "cls": "launch",
+      "vis": true,
+      "box": {
+        "x": 847,
+        "y": 947,
+        "w": 225,
+        "h": 14
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-loading-scene",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 1080,
+        "w": 1920,
+        "h": 0
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-acknowledgment-scene",
+      "vis": false,
+      "box": {
+        "x": 687,
+        "y": 392,
+        "w": 546,
+        "h": 400
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": false,
+      "text": "on",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "checked": null,
+      "text": "",
+      "cls": "sm-acknowledge",
+      "vis": false,
+      "box": {
+        "x": 795,
+        "y": 762,
+        "w": 330,
+        "h": 35
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-info-scene",
+      "vis": false,
+      "box": {
+        "x": 665,
+        "y": 392,
+        "w": 590,
+        "h": 400
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": false,
+      "text": "on",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "checked": null,
+      "text": "",
+      "cls": "sm-continue",
+      "vis": false,
+      "box": {
+        "x": 795,
+        "y": 817,
+        "w": 330,
+        "h": 35
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-no-webgl-scene",
+      "vis": false,
+      "box": {
+        "x": 610,
+        "y": 367,
+        "w": 700,
+        "h": 450
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-contents",
+      "vis": false,
+      "box": {
+        "x": 610,
+        "y": 385,
+        "w": 700,
+        "h": 264
+      }
+    },
+    {
+      "tag": "p",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-welcome",
+      "vis": false,
+      "box": {
+        "x": 610,
+        "y": 385,
+        "w": 700,
+        "h": 158
+      }
+    },
+    {
+      "tag": "p",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-no-support",
+      "vis": false,
+      "box": {
+        "x": 610,
+        "y": 583,
+        "w": 700,
+        "h": 30
+      }
+    },
+    {
+      "tag": "p",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-download",
+      "vis": false,
+      "box": {
+        "x": 610,
+        "y": 631,
+        "w": 700,
+        "h": 18
+      }
+    }
+  ],
+  "classesPresent": [
+    "starmap-disc",
+    "disc-root__menu"
+  ]
+}
