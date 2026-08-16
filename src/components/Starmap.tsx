@@ -1,13 +1,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { CameraTuple, Level, TabId } from "@/data/cameraUrl";
-import { readMapUrl, sameCamera, writeMapUrl } from "@/data/cameraUrl";
+import { GALAXY_HOME, readMapUrl, sameCamera, SEARCH_SYSTEM_CAM, SYSTEM_HOME, writeMapUrl } from "@/data/cameraUrl";
 import type { CapturedBody } from "@/data/celestial";
 import { bodyLabel, jumpDestination, systemCodeOf } from "@/data/celestial";
 import {
   AFFILIATIONS,
   findRoute,
   loadSystem,
-  objects,
+  objectByCode,
+  peekSystem,
   pickRoute,
   routeSystems,
   searchCatalog,
@@ -31,7 +32,7 @@ const firstLevel = (): Level => {
 };
 const firstCamera = (): CameraTuple => {
   const q = bootQuery();
-  if (!q.has("camera") && !q.has("location") && !q.has("system")) return [10, 0, 0.4, 0, 0];
+  if (!q.has("camera") && !q.has("location") && !q.has("system")) return [...GALAXY_HOME];
   return initial.camera;
 };
 
@@ -48,6 +49,7 @@ export function Starmap() {
   const [tab, setTab] = useState<TabId>(initial.tab);
   const [view, setView] = useState<"3d" | "2d">(initial.view);
   const [hover, setHover] = useState<CapturedBody | null>(null);
+  const [hoverSystem, setHoverSystem] = useState<string | null>(null);
   const [selected, setSelected] = useState<CapturedBody | null>(null);
   const [discPage, setDiscPage] = useState<"inspect" | "information" | "routing" | "bookmark">("information");
   const [inspectNonce, setInspectNonce] = useState(0);
@@ -75,6 +77,31 @@ export function Starmap() {
   const [markFilter, setMarkFilter] = useState<"all" | "system" | "body">("all");
   const [recent, setRecent] = useState<string[]>(() => store.recent());
   const [zones, setZones] = useState<OfficialSystemZones>(emptyZones);
+  const cameraRef = useRef(camera);
+  const tabRef = useRef(tab);
+  const viewRef = useRef(view);
+  const levelRef = useRef(level);
+  const highlightRef = useRef(highlightCode);
+  const selectedRef = useRef(selected);
+  const systemRef = useRef(systemCode);
+  cameraRef.current = camera;
+  tabRef.current = tab;
+  viewRef.current = view;
+  levelRef.current = level;
+  highlightRef.current = highlightCode;
+  selectedRef.current = selected;
+  systemRef.current = systemCode;
+
+  const flushUrl = useCallback(() => {
+    writeMapUrl({
+      location: selectedRef.current?.code ?? systemRef.current,
+      system: systemRef.current,
+      camera: cameraRef.current,
+      tab: tabRef.current,
+      view: viewRef.current,
+      selection: levelRef.current === "galaxy" ? highlightRef.current : null,
+    });
+  }, []);
 
   const sys = systemByCode.get(systemCode);
   const highlighted = highlightCode ? systemByCode.get(highlightCode) : undefined;
@@ -86,7 +113,14 @@ export function Starmap() {
 
   useEffect(() => {
     let live = true;
-    setLoading(true);
+    const cached = peekSystem(systemCode);
+    if (cached) {
+      setBodies(cached.bodies);
+      setZones(cached.zones);
+      setLoading(false);
+    } else {
+      setLoading(true);
+    }
     void loadSystem(systemCode)
       .then((pack) => {
         if (!live) return;
@@ -101,7 +135,7 @@ export function Starmap() {
         }
       })
       .catch(() => {
-        if (live) {
+        if (live && !peekSystem(systemCode)) {
           setBodies([]);
           setZones(emptyZones());
         }
@@ -114,16 +148,27 @@ export function Starmap() {
     };
   }, [systemCode]);
 
+  const enterSystem = useCallback(
+    (code: string, body?: CapturedBody | null, cam?: CameraTuple) => {
+      blip(sound);
+      const named = systemByCode.get(code)?.name || code;
+      setRecent(store.pushRecent(named));
+      setSystemCode(code);
+      setHighlightCode(null);
+      setLevel(body ? "object" : "system");
+      setSelected(body ?? null);
+      setTab(null);
+      if (cam) {
+        setCamera([...cam]);
+        setLookNonce((n) => n + 1);
+      }
+    },
+    [sound],
+  );
+
   useEffect(() => {
-    const loc = selected?.code ?? (level === "galaxy" ? systemCode : systemCode);
-    writeMapUrl({
-      location: loc,
-      system: systemCode,
-      camera,
-      tab,
-      view,
-    });
-  }, [selected, systemCode, camera, tab, view, level]);
+    flushUrl();
+  }, [selected, systemCode, tab, view, level, highlightCode, flushUrl]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -144,51 +189,51 @@ export function Starmap() {
         if (document.fullscreenElement) void document.exitFullscreen();
         else void document.documentElement.requestFullscreen?.();
       }
+      if (e.key === "Enter" && level === "galaxy" && highlightCode) {
+        e.preventDefault();
+        enterSystem(highlightCode, null, SYSTEM_HOME);
+        return;
+      }
       if (e.key === " " && tag !== "BUTTON") {
         e.preventDefault();
         setSelected(null);
-        setLevel(level === "galaxy" ? "system" : level);
+        if (level === "galaxy") enterSystem(highlightCode || systemCode, null, SYSTEM_HOME);
+        else {
+          setLevel("system");
+          setCamera([...SYSTEM_HOME]);
+          setLookNonce((n) => n + 1);
+        }
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [tab, selected, level]);
+  }, [tab, selected, level, highlightCode, systemCode, enterSystem]);
 
   useEffect(() => {
     setSeg(0);
   }, [routeMode]);
+
+  useEffect(() => {
+    if (level !== "galaxy") setHoverSystem(null);
+  }, [level]);
 
   const hits = useMemo(() => (submitted == null ? [] : searchCatalog(submitted)), [submitted]);
   const showResults = submitted != null && submitted.trim().length >= 3;
   const markedHits = useMemo(() => {
     const rows: { name: string; code: string; type: string; system: string }[] = [];
     for (const code of marks) {
-      const obj = objects.find((o) => o.code === code);
+      const obj = objectByCode.get(code);
       if (obj) {
         rows.push({ name: bodyLabel(obj), code: obj.code, type: obj.type, system: obj.system });
         continue;
       }
-      const sysRow = systems.find((s) => s.code === code);
+      const sysRow = systemByCode.get(code);
       if (sysRow) rows.push({ name: sysRow.name, code: sysRow.code, type: "STAR_SYSTEM", system: sysRow.code });
     }
     if (markFilter === "system") return rows.filter((r) => r.type === "STAR_SYSTEM");
     if (markFilter === "body") return rows.filter((r) => r.type !== "STAR_SYSTEM");
     return rows;
   }, [marks, markFilter]);
-
-  const enterSystem = useCallback(
-    (code: string, body?: CapturedBody | null) => {
-      blip(sound);
-      const named = systemByCode.get(code)?.name || code;
-      setRecent(store.pushRecent(named));
-      setSystemCode(code);
-      setHighlightCode(null);
-      setLevel(body ? "object" : "system");
-      setSelected(body ?? null);
-      setTab(null);
-    },
-    [sound],
-  );
 
   const jumpThrough = useCallback(
     async (fromBody?: CapturedBody | null) => {
@@ -234,18 +279,20 @@ export function Starmap() {
   }, []);
 
   const onCamera = useCallback((c: CameraTuple) => {
-    setCamera((prev) => (sameCamera(prev, c) ? prev : c));
-  }, []);
+    if (sameCamera(cameraRef.current, c)) return;
+    cameraRef.current = c;
+    flushUrl();
+  }, [flushUrl]);
 
   const pickHit = (code: string, type: string, system?: string) => {
     blip(sound);
     const named =
       type === "STAR_SYSTEM"
         ? systemByCode.get(code)?.name || code
-        : bodyLabel(objects.find((o) => o.code === code) ?? { name: code, designation: null, code });
+        : bodyLabel(objectByCode.get(code) ?? { name: code, designation: null, code });
     setRecent(store.pushRecent(named));
     if (type === "STAR_SYSTEM") {
-      enterSystem(code);
+      enterSystem(code, null, SEARCH_SYSTEM_CAM);
       return;
     }
     const home = system || systemCodeOf(code);
@@ -274,16 +321,23 @@ export function Starmap() {
     }
   };
 
-  const calculate = () => {
+  const applyRoute = (nextShip: "S" | "M" | "L" = ship) => {
     blip(sound);
-    const result = findRoute(from, to);
+    const result = findRoute(from, to, nextShip);
     setRoute(result);
     setSeg(0);
-    if (result.ok && result.shortest?.segments.length) setLevel("galaxy");
+    if (result.ok && result.shortest?.segments.length && level !== "galaxy") {
+      setLevel("galaxy");
+      setSelected(null);
+      setCamera([...GALAXY_HOME]);
+      setLookNonce((n) => n + 1);
+    }
   };
 
-  const shown = pickRoute(route, routeMode);
-  const drawnRoute = routeSystems(route, routeMode);
+  const calculate = () => applyRoute(ship);
+
+  const shown = useMemo(() => pickRoute(route, routeMode), [route, routeMode]);
+  const drawnRoute = useMemo(() => routeSystems(route, routeMode), [route, routeMode]);
 
   return (
     <>
@@ -302,6 +356,7 @@ export function Starmap() {
         lookNonce={lookNonce}
         inspectNonce={inspectNonce}
         onHover={setHover}
+        onHoverSystem={setHoverSystem}
         onSelect={(body) => {
           blip(sound);
           setSelected(body);
@@ -312,12 +367,23 @@ export function Starmap() {
           blip(sound);
           setHighlightCode(code);
         }}
+        onEnterSystem={(code) => enterSystem(code, null, SYSTEM_HOME)}
         onBackground={() => {
           setMenu(false);
+          if (tab) {
+            setTab(null);
+            return;
+          }
           setHighlightCode(null);
           if (selected) {
             setSelected(null);
             if (level === "object") setLevel("system");
+            return;
+          }
+          if (level === "system") {
+            setLevel("galaxy");
+            setCamera([...GALAXY_HOME]);
+            setLookNonce((n) => n + 1);
           }
         }}
         onContext={(hit) => {
@@ -336,7 +402,9 @@ export function Starmap() {
       />
 
       {jumping && <div className="jump-veil" />}
-      {loading && <div className="load-hint">{zh.search.loading}</div>}
+      {loading && (
+        <div className={`load-hint${bodies.length ? " is-soft" : ""}`}>{zh.search.loading}</div>
+      )}
       {level === "galaxy" && (display.scanners.lifeforms || display.scanners.economy || display.scanners.crime) && (
         <div className="scan-tag">
           {display.scanners.crime
@@ -347,7 +415,7 @@ export function Starmap() {
         </div>
       )}
 
-      <div className="hud" data-ready={loading ? "0" : "1"}>
+      <div className="hud" data-ready={loading ? "0" : "1"} data-panel={tab ? "1" : "0"}>
         <nav className="levels">
           <button
             onClick={() => {
@@ -366,7 +434,7 @@ export function Starmap() {
               onClick={() => {
                 setLevel("galaxy");
                 setSelected(null);
-                setCamera([10, 0, 0.4, 0, 0]);
+                setCamera([...GALAXY_HOME]);
                 setLookNonce((n) => n + 1);
               }}
             >
@@ -375,18 +443,25 @@ export function Starmap() {
             <button
               data-level="system"
               className={level === "system" ? "on" : ""}
+              title={zh.hud.sysHint}
               onClick={() => {
                 if (level === "galaxy") {
-                  if (highlightCode) enterSystem(highlightCode);
+                  enterSystem(highlightCode || systemCode, null, SYSTEM_HOME);
                   return;
                 }
                 setLevel("system");
                 setSelected(null);
+                setCamera([...SYSTEM_HOME]);
+                setLookNonce((n) => n + 1);
               }}
             >
               {zh.hud.sys}
             </button>
-          <button className={level === "object" ? "on" : ""} onClick={() => selected && setLevel("object")}>
+          <button
+            className={level === "object" ? "on" : ""}
+            title={selected ? undefined : zh.hud.objHint}
+            onClick={() => selected && setLevel("object")}
+          >
             {zh.hud.obj}
           </button>
         </nav>
@@ -419,9 +494,11 @@ export function Starmap() {
           </button>
         </div>
 
-        {hover && !selected && (
+        {(hover || (level === "galaxy" && hoverSystem)) && !selected && (
           <div className="hover-tip" ref={tipRef}>
-            {zh.disc.controlDisc} &gt;
+            {hover
+              ? `${bodyLabel(hover)} · ${zh.disc.controlDisc} >`
+              : `${systemByCode.get(hoverSystem ?? "")?.name || hoverSystem} >`}
           </div>
         )}
 
@@ -468,7 +545,7 @@ export function Starmap() {
                 key={id}
                 data-tab={id}
                 className={`tab ${tab === id ? "on" : ""}`}
-                onClick={() => setTab(tab === id ? null : id)}
+                onClick={() => setTab(id)}
               >
                 {zh.hud[id]}
               </button>
@@ -491,11 +568,11 @@ export function Starmap() {
             title={zh.hud.camera}
             onClick={() => {
               if (level === "galaxy") {
-                setCamera([10, 0, 0.4, 0, 0]);
+                setCamera([...GALAXY_HOME]);
               } else {
                 setSelected(null);
                 setLevel("system");
-                setCamera([10, 102.98, 0.002, 0, 0]);
+                setCamera([...SYSTEM_HOME]);
               }
               setLookNonce((n) => n + 1);
             }}
@@ -507,15 +584,7 @@ export function Starmap() {
         <button className="burger-hit" onClick={() => setMenu((m) => !m)} aria-label="menu" />
         {menu && (
           <div className="flyout">
-            <a href="#starmap" onClick={(e) => e.preventDefault()}>
-              {zh.hud.home}
-            </a>
-            <a href="#starmap" onClick={(e) => e.preventDefault()}>
-              {zh.hud.explore}
-            </a>
-            <a href="#starmap" onClick={(e) => e.preventDefault()}>
-              {zh.hud.starmap}
-            </a>
+            <p>{zh.hud.menuNote}</p>
             <p>{sys?.type === "BINARY" ? zh.disc.binary : zh.disc.singleStar}</p>
           </div>
         )}
@@ -528,7 +597,7 @@ export function Starmap() {
                 value={query}
                 onChange={(e) => {
                   setQuery(e.target.value);
-                  if (!e.target.value.trim()) setSubmitted(null);
+                  setSubmitted(null);
                 }}
                 onKeyDown={(e) => {
                   if (e.key !== "Enter") return;
@@ -537,9 +606,22 @@ export function Starmap() {
                 }}
                 placeholder={zh.study.filterPlaceholder}
               />
+              <button type="button" data-search-go onClick={() => setSubmitted(query)}>
+                {zh.search.go}
+              </button>
             </div>
+            {query.trim() && query.trim().length < 3 && (
+              <p className="search-hint" data-search-hint="short">
+                {zh.search.hintShort}
+              </p>
+            )}
+            {query.trim().length >= 3 && submitted == null && (
+              <p className="search-hint" data-search-hint="enter">
+                {zh.search.hintEnter}
+              </p>
+            )}
             {!query.trim() && recent.length > 0 && (
-              <ul className="search-auto" data-search-auto>
+              <ul className="search-auto sm-search-autocomplete" data-search-auto>
                 {recent.map((name) => (
                   <li key={name}>
                     <button
@@ -561,12 +643,13 @@ export function Starmap() {
               </p>
             )}
             {showResults && hits.length > 0 && (
+            <div className="sm-table-container">
             <table>
               <thead>
                 <tr>
-                  <th>{zh.search.name}</th>
-                  <th>{zh.search.type}</th>
-                  <th>{zh.search.information}</th>
+                  <th className="sm-name">{zh.search.name}</th>
+                  <th className="sm-type">{zh.search.type}</th>
+                  <th className="sm-bookmark-container">{zh.search.information}</th>
                 </tr>
               </thead>
               <tbody>
@@ -594,6 +677,7 @@ export function Starmap() {
                 ))}
               </tbody>
             </table>
+            </div>
             )}
             {showResults && !hits.length && <p className="empty">{zh.search.empty}</p>}
           </section>
@@ -646,18 +730,36 @@ export function Starmap() {
         )}
 
         {tab === "routes" && (
-          <section className="panel">
+          <section className="panel sm-routes">
             <div className="fields">
-              <input value={from} onChange={(e) => setFrom(e.target.value)} placeholder={zh.disc.departure} />
-              <input value={to} onChange={(e) => setTo(e.target.value)} placeholder={zh.disc.destination} />
-              <button className="cta slim-cta" onClick={calculate}>
+              <label className="field sm-departure-region">
+                <span>{zh.disc.departure}</span>
+                <input value={from} onChange={(e) => setFrom(e.target.value)} placeholder={zh.disc.departure} />
+              </label>
+              <label className="field sm-destination-region">
+                <span>{zh.disc.destination}</span>
+                <input value={to} onChange={(e) => setTo(e.target.value)} placeholder={zh.disc.destination} />
+              </label>
+              <button
+                className="cta slim-cta sm-go"
+                disabled={!from.trim() || !to.trim()}
+                onClick={calculate}
+              >
                 {zh.hud.calculate} &gt;
               </button>
             </div>
-            <div className="ship-row">
+            <div className="ship-row sm-route-sizes">
               <span>{zh.routes.shipSize}</span>
               {(["S", "M", "L"] as const).map((sz) => (
-                <button key={sz} className={ship === sz ? "on" : ""} onClick={() => setShip(sz)}>
+                <button
+                  key={sz}
+                  data-ship={sz}
+                  className={`sm-ship-size ${ship === sz ? "on" : ""}`}
+                  onClick={() => {
+                    setShip(sz);
+                    if (route) applyRoute(sz);
+                  }}
+                >
                   {sz === "S" ? zh.display.sizeS : sz === "M" ? zh.display.sizeM : zh.display.sizeL}
                 </button>
               ))}
@@ -678,46 +780,77 @@ export function Starmap() {
             </div>
             {shown && !route?.empty ? (
               <>
-                <p className="route-meta" data-route-shown={routeMode} data-jumps={shown.jumps ?? ""}>
-                  {shown.name} · {shown.label} · {shown.jumps} {zh.levels.jumpPoint}
+                <p
+                  className="route-meta"
+                  data-route-shown={routeMode}
+                  data-jumps={shown.jumps ?? ""}
+                  data-through={shown.label ?? ""}
+                >
+                  {shown.name}
+                  {shown.label ? ` · ${shown.label}` : ""}
                 </p>
-                <table>
+                <div className="sm-list-region">
+                <div className="sm-table-container">
+                <table data-route-table className="sm-list">
                   <thead>
                     <tr>
-                      <th>{zh.search.name}</th>
-                      <th>{zh.search.type}</th>
+                      <th className="sm-label">{zh.search.name}</th>
+                      <th className="sm-jumps">{zh.routes.jumps}</th>
+                      <th className="sm-distance">{zh.routes.distance}</th>
+                      <th className="sm-selection">{zh.routes.selection}</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {shown.segments.map((s, i) => (
-                      <tr
-                        key={`${s.code}-${i}`}
-                        className={i === seg ? "on-row" : ""}
-                        onClick={() => {
-                          setSeg(i);
-                          if (s.type === "system") enterSystem(s.code);
-                        }}
-                      >
-                        <td>{s.name}</td>
-                        <td>{s.type === "jump" ? zh.levels.jumpPoint : zh.levels.starSystem}</td>
-                      </tr>
-                    ))}
+                    <tr className="on-row">
+                      <td className="sm-label">{shown.name}</td>
+                      <td className="sm-jumps">{shown.jumps ?? "—"}</td>
+                      <td className="sm-distance">
+                        {shown.flight_distance != null
+                          ? `${Number(shown.flight_distance).toFixed(3)} ${zh.routes.au}`
+                          : "—"}
+                      </td>
+                      <td className="sm-selection">
+                        <button
+                          type="button"
+                          className="row-mark"
+                          onClick={() => {
+                            setLevel("galaxy");
+                            setSelected(null);
+                            setCamera([...GALAXY_HOME]);
+                            setLookNonce((n) => n + 1);
+                          }}
+                        >
+                          {zh.routes.viewRoute}
+                        </button>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
-                <div className="ship-row">
-                  <button onClick={() => setSeg((n) => Math.max(0, n - 1))}>{zh.routes.prevSegment}</button>
+                </div>
+                </div>
+                <p className="route-seg sm-current-segment" data-current-segment={seg}>
                   <button
+                    type="button"
+                    onClick={() => {
+                      const step = shown.segments[seg];
+                      if (step?.type === "system") enterSystem(step.code, null, SYSTEM_HOME);
+                    }}
+                  >
+                    {shown.segments[seg]?.name ?? shown.first_jump}
+                  </button>
+                </p>
+                <div className="ship-row">
+                  <button type="button" className="sm-prev-segment" onClick={() => setSeg((n) => Math.max(0, n - 1))}>
+                    {zh.routes.prevSegment}
+                  </button>
+                  <button
+                    type="button"
+                    className="sm-next-segment"
                     onClick={() => setSeg((n) => Math.min((shown.segments.length ?? 1) - 1, n + 1))}
                   >
                     {zh.routes.nextSegment}
                   </button>
-                  <button onClick={() => setLevel("galaxy")}>{zh.routes.viewRoute}</button>
-                  <button
-                    onClick={() => {
-                      setRoute(null);
-                      setLevel("system");
-                    }}
-                  >
+                  <button type="button" onClick={() => setRoute(null)}>
                     {zh.routes.exitRoute}
                   </button>
                 </div>

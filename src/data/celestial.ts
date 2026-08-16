@@ -73,7 +73,8 @@ export function placeBodies(bodies: CapturedBody[], scale: number): Map<number, 
     if (cached) return cached;
     const dist = Number(body.distance) || 0;
     const lat = Number(body.latitude) || 0;
-    const lon = Number(body.longitude) || 0;
+    // Official engine: lon = -longitude (published mirror notes; distances unchanged).
+    const lon = -(Number(body.longitude) || 0);
     const parent = body.parent_id ? byId.get(body.parent_id) : undefined;
     const local = Boolean(parent) && dist < 0.05;
     if (local && parent) {

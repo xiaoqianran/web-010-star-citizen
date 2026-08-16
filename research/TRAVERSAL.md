@@ -15,7 +15,8 @@
 | c | 距离/缩放。~0.002 星系，~0.006–0.02 跳跃标签，~0.001 近天体，>0.05 银河 |
 | d, e | 目标偏移；星系视图常为 0，进入天体后出现小数 |
 
-`location` 为层级码（`GOSS` 或 `GOSS.STARS.GOSSA`）。tab 走路径 `"" | search | bookmarks | routes`。
+`location` 为层级码（`GOSS` 或 `GOSS.STARS.GOSSA`）。tab 走路径 `"" | search | bookmarks | routes`。  
+搜索点选 STAR SYSTEM 锁定 `camera=60,0,0.002,0,0`；罗盘系统主视角仍是 `10,102.98,0.002,0,0`。
 
 ### 搜索 `/api/starmap/find`
 
@@ -33,8 +34,9 @@
 - GOSS→TERRA / HELIOS：1 跳；GOSS→STANTON：2；GOSS→SOL：5（Through Terra）
 - GOSS→GOSS：成功但无段
 - foo→bar：`ErrInvalidObject`
-- 舰船 S/M/L 对 GOSS→TERRA 均接受
+- 舰船键是 **`ship_size`**（不是 `size`）。规则：隧道尺寸 ≥ 舰船尺寸。GOSS→TERRA 默认/S/M = 1 跳；L = Through Tayac、2 跳
 - 135 条隧道全部 `direction=B`，尺寸 L79 / M36 / S20
+- 2026-08-16 再探测：TERRA→PYRO（S 隧道）S/M/L = 1 / 2 Through Stanton / 4 Through Stanton；STANTON→PYRO（M 隧道）L = 3 Through Nyx；CATHCART→KILIAN L = 12/3 Through Nexus；NUL→CROSHAW L = 5 Through Centauri；BANSHEE→YULIN L = `OK` 但无段；`ship_size=X` = `ErrValidationFailed`
 
 ### 其它
 
@@ -55,7 +57,7 @@
 - `GOSS.STARS.GOSSA` / `THEARK` 完整码搜索为空；`Goss A` 可以
 - 航线只接受星系代号/名称：`Cassel→Terra` = `ErrInvalidObject`
 - 空起终点：`ErrValidationFailed`
-- S/M/L 不改变 GOSS→TERRA / GOSS→SOL 结果
+- 表单键 `size=S/M/L` 不改变 GOSS→TERRA / GOSS→SOL 结果（官方忽略 `size`）
 - TAMSA→SOL 5 跳 Through Banshee；VEGA→TERRA 4 跳 Through Bremen
 
 ## 克隆真人遍历（headless Chrome → `research/capture/clone-pass/REPORT.json`）
@@ -131,7 +133,7 @@
 ### 航线
 
 - 又一批 shortest ≠ leastjumps：KINS–SOL 8/7、GEDDON–TRISE 10/8、EEALUS–SOL 9/6、KAYFA–TERRA 5/4、VIRGIL–SOL 9/4、GOSS–TAMSA 9/8、HELIOS–SOL 6/5、OBERON–TAMSA 7/6、HADUR–SOL 8/7、RIHLAH–GOSS 5/4。
-- `size=S/M/L` 不改 SOL–NYX / STANTON–TAMSA 路径。
+- 表单键 `size=S/M/L` 不改 SOL–NYX / STANTON–TAMSA 路径；`ship_size=L` 会改（SOL–NYX 12 / 55.072）。
 - 表单多写 `avoid=DAVIEN` / `avoid=TERRA` / `mode=` / `type=` **官方直接忽略**，仍走原路。
 - `BANU` 不是星系码：`ErrInvalidObject`。
 - `flight_distance` = 中转星系里「到达跳跃点 → 离开跳跃点」的球面欧氏距离之和（出发/到达星系为 0）。本地用 270 个跳跃点坐标重建，14 组官方对完全一致。

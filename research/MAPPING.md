@@ -15,7 +15,7 @@
 | `POST /api/starmap/star-systems/{CODE}` | `{}` |
 | `POST /api/starmap/celestial-objects/{CODE}` | `{}` |
 | `POST /api/starmap/find` | `query=` |
-| `POST /api/starmap/routes/find` | `departure` + `destination` + 可选 `size` |
+| `POST /api/starmap/routes/find` | `departure` + `destination` + 可选 `ship_size`（`S`/`M`/`L`） |
 
 ## 社区封装哪里不准
 
@@ -25,7 +25,7 @@
 | `tunnels[].entry.code` / `designation` / `distance` / `lat/lon` | 原样 | `TunnelPoint` 只有 `star_system_id` 和臆造的 `celestial_object_id` | 用 `code` + `star_system_id` |
 | `affiliation[]` | 原样 | 压成 `affiliation_id` / `affiliation_name` | `affiliation[].code` + 官方色 |
 | `subtype` 对象 `{id,name,type}` | 原样 | 写成 `[]SubType` | 单对象 |
-| `routes/find` 的 `size` | 错发 `ship_size` | 同样错发 `ship_size` | 官方忽略该键；本地图不按舰船改路 |
+| `routes/find` 的舰船键 | 发 `ship_size` | 发 `ship_size` | **`ship_size` 会改路**：舰船只能走 `tunnel.size >= ship_size` 的隧道（S 隧道连 M 舰也不能走）。`size` / `avoid` 被忽略。`ship_size=X` → `ErrValidationFailed`；空串当默认。无路时仍 `OK` + null 段（BANSHEE→YULIN L）。天体码作起点会多算段内 AU：物体坐标到首个跃迁点（`GOSS.STARS.GOSSA`→TERRA L = 8.147，星系对仍是 2.233） |
 | `data.config`（LRS 色、星野、隧道外观） | 不读 | 不读 | `src/data/official.ts` |
 | `frost_line` / `habitable_zone_*` / `shader_data` | 透传但不用 | 类型里没有 | 系统视图片环 + 主光色 |
 | `find` 对象带 `star_system.code` | 原样 | `map[string]any` | 搜索行 `于 {星系}` |
@@ -44,7 +44,12 @@
 
 `id code designation name type appearance distance latitude longitude size habitable parent_id show_label show_orbitlines sensor_* shader_data subtype affiliation age axial_tilt orbit_period fairchanceact texture children population`
 
-球面：`x = d·cos(lat)·cos(lon)`，`y = d·sin(lat)`，`z = d·cos(lat)·sin(lon)`。
+球面（航线距离用无符号经度，与官方 `flight_distance` 对齐）：`x = d·cos(lat)·cos(lon)`，`y = d·sin(lat)`，`z = d·cos(lat)·sin(lon)`。  
+系统视图像素：官方引擎取 `lon = −longitude`（社区镜像笔记；平方距离不变）。  
+银河位置：官方 `obj3d.position.set(position_x/100, position_z/100, −position_y/100)`。克隆保持 0.18 倍率以配合已锁定的 `camera=0.4` 取景，只对齐轴向（含 −y）。
+
+航线结果表 leftover 列宽（窗口模式未算出时仍在 DOM，2026-08-16 restore 再确认）：`sm-label` 200px | `sm-jumps` 70px | `sm-distance` 125px | `sm-selection` 145px；`sm-list-region` 约 76px 高，一行摘要。表单：`sm-departure-region` / `sm-destination-region` / `sm-ship-size` / `sm-go`。  
+搜索 leftover 列：`sm-name` 186 | `sm-type` 150 | `sm-bookmark-container` 150 | `sm-go-container` 38。Q&A：距离单位是 AU。
 
 ## 航线段
 

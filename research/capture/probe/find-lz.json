@@ -1,0 +1,186 @@
+{
+  "New Babbage": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": []
+  },
+  "Grim HEX": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": []
+  },
+  "Port Olisar": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "STANTON.STATION.PORTOLISAR",
+        "name": null,
+        "designation": "Port Olisar",
+        "type": "MANMADE",
+        "system": "STANTON"
+      }
+    ]
+  },
+  "Baijini": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": []
+  },
+  "Everus": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "KIEL.PLANET.KIELIIISEVERUS",
+        "name": "Severus",
+        "designation": "Kiel III",
+        "type": "PLANET",
+        "system": "KIEL"
+      }
+    ]
+  },
+  "Tressler": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": []
+  },
+  "Seraphim": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": []
+  },
+  "Astera": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": []
+  },
+  "Lorville": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "STANTON.LZS.LORVILLE",
+        "name": null,
+        "designation": "Lorville",
+        "type": "LZ",
+        "system": "STANTON"
+      }
+    ]
+  },
+  "Area18": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "STANTON.LZS.AREA18",
+        "name": null,
+        "designation": "Area18",
+        "type": "LZ",
+        "system": "STANTON"
+      }
+    ]
+  },
+  "Orison": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "STANTON.LZS.ORISON",
+        "name": null,
+        "designation": "Orison",
+        "type": "LZ",
+        "system": "STANTON"
+      }
+    ]
+  },
+  "Levski": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "NYX.LZS.LEVSKI",
+        "name": null,
+        "designation": "Levski",
+        "type": "LZ",
+        "system": "NYX"
+      }
+    ]
+  },
+  "Port Renatus": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "SOL.LZS.PORTRETANUS",
+        "name": null,
+        "designation": "Port Renatus",
+        "type": "LZ",
+        "system": "SOL"
+      }
+    ]
+  },
+  "The ARK": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "TAYAC.STATION.THEARK",
+        "name": null,
+        "designation": "The ARK",
+        "type": "MANMADE",
+        "system": "TAYAC"
+      }
+    ]
+  },
+  "Port": {
+    "success": 1,
+    "code": "OK",
+    "msg": "OK",
+    "systems": [],
+    "objects": [
+      {
+        "code": "STANTON.STATION.PORTOLISAR",
+        "name": null,
+        "designation": "Port Olisar",
+        "type": "MANMADE",
+        "system": "STANTON"
+      },
+      {
+        "code": "SOL.LZS.PORTRETANUS",
+        "name": null,
+        "designation": "Port Renatus",
+        "type": "LZ",
+        "system": "SOL"
+      }
+    ]
+  }
+}

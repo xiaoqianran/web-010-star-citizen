@@ -1,0 +1,136 @@
+{
+  "capturedAt": "2026-08-16T20:38:21.694Z",
+  "searchTerra": {
+    "row": null,
+    "camera": null,
+    "location": null,
+    "selection": null
+  },
+  "emptyClick": {
+    "camera": null,
+    "location": null
+  },
+  "calculate": {
+    "camera": null,
+    "jumps": null,
+    "through": null,
+    "visibleTh": [
+      {
+        "cls": "sm-label",
+        "text": "",
+        "box": {
+          "x": 678,
+          "y": 830,
+          "w": 200,
+          "h": 34
+        }
+      },
+      {
+        "cls": "sm-jumps",
+        "text": "",
+        "box": {
+          "x": 878,
+          "y": 830,
+          "w": 70,
+          "h": 34
+        }
+      },
+      {
+        "cls": "sm-distance",
+        "text": "",
+        "box": {
+          "x": 948,
+          "y": 830,
+          "w": 125,
+          "h": 34
+        }
+      },
+      {
+        "cls": "sm-selection",
+        "text": "",
+        "box": {
+          "x": 1073,
+          "y": 830,
+          "w": 145,
+          "h": 34
+        }
+      }
+    ]
+  },
+  "calculateL": {
+    "camera": null,
+    "jumps": null,
+    "through": null
+  },
+  "log": [
+    {
+      "t": "2026-08-16T20:37:42.583Z",
+      "step": "intro:window",
+      "url": "https://robertsspaceindustries.com/en/starmap",
+      "text": "true"
+    },
+    {
+      "t": "2026-08-16T20:37:58.114Z",
+      "step": "glx",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "null"
+    },
+    {
+      "t": "2026-08-16T20:38:00.182Z",
+      "step": "search-tab",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "text": "SEARCH"
+    },
+    {
+      "t": "2026-08-16T20:38:05.425Z",
+      "step": "search-terra-system",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "text": "none",
+      "cam": null,
+      "location": null
+    },
+    {
+      "t": "2026-08-16T20:38:08.000Z",
+      "step": "empty-click-system",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "cam": null,
+      "location": null
+    },
+    {
+      "t": "2026-08-16T20:38:08.357Z",
+      "step": "glx-again",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "text": "null"
+    },
+    {
+      "t": "2026-08-16T20:38:09.528Z",
+      "step": "routes-tab",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "ROUTES"
+    },
+    {
+      "t": "2026-08-16T20:38:10.740Z",
+      "step": "calculate",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "CALCULATE"
+    },
+    {
+      "t": "2026-08-16T20:38:15.036Z",
+      "step": "calculate-galaxy",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "found": "sm-routes-tab:DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE"
+    },
+    {
+      "t": "2026-08-16T20:38:16.501Z",
+      "step": "ship-size-l",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "LARGE"
+    },
+    {
+      "t": "2026-08-16T20:38:20.260Z",
+      "step": "calculate-l",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "found": "sm-routes-tab:DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE"
+    }
+  ]
+}

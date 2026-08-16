@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { Intro, TopBar } from "@/components/Intro";
-import { Starmap } from "@/components/Starmap";
 import { store } from "@/data/storage";
+import { zh } from "@/i18n/zh";
 import "@/styles/starmap.css";
+
+const Starmap = lazy(() => import("@/components/Starmap").then((m) => ({ default: m.Starmap })));
 
 type Phase = "boot" | "ack" | "lore" | "map";
 
@@ -50,7 +52,9 @@ export default function App() {
         />
       ) : (
         <ErrorBoundary>
-          <Starmap />
+          <Suspense fallback={<p className="load-hint">{zh.search.loading}</p>}>
+            <Starmap />
+          </Suspense>
         </ErrorBoundary>
       )}
     </div>

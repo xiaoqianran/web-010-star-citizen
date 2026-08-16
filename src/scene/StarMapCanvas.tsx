@@ -7,7 +7,7 @@ import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
 import type { CameraTuple, Level } from "@/data/cameraUrl";
-import { cameraToPose, formatCamera, poseToCamera } from "@/data/cameraUrl";
+import { cameraToPose, formatCamera, GALAXY_HOME, poseToCamera, SYSTEM_HOME } from "@/data/cameraUrl";
 import type { CapturedBody } from "@/data/celestial";
 import { bodyLabel, placeBodies, systemScale } from "@/data/celestial";
 import type { OfficialSystemZones } from "@/data/official";
@@ -39,8 +39,10 @@ type Props = {
   lookNonce?: number;
   inspectNonce?: number;
   onHover: (body: CapturedBody | null) => void;
+  onHoverSystem?: (code: string | null) => void;
   onSelect: (body: CapturedBody) => void;
   onSelectSystem: (code: string) => void;
+  onEnterSystem?: (code: string) => void;
   onBackground?: () => void;
   onContext?: (hit: { body?: CapturedBody; system?: string } | null, x: number, y: number) => void;
   onProject: (pt: ScreenPt | null) => void;
@@ -97,8 +99,10 @@ export function StarMapCanvas({
   lookNonce = 0,
   inspectNonce = 0,
   onHover,
+  onHoverSystem,
   onSelect,
   onSelectSystem,
+  onEnterSystem,
   onBackground,
   onContext,
   onProject,
@@ -118,8 +122,10 @@ export function StarMapCanvas({
   } | null>(null);
   const projectRef = useRef(onProject);
   const hoverRef = useRef(onHover);
+  const hoverSysRef = useRef(onHoverSystem);
   const selectRef = useRef(onSelect);
   const selectSysRef = useRef(onSelectSystem);
+  const enterSysRef = useRef(onEnterSystem);
   const backgroundRef = useRef(onBackground);
   const contextRef = useRef(onContext);
   const camRef = useRef(onCamera);
@@ -127,8 +133,10 @@ export function StarMapCanvas({
   const modeRef = useRef(mode);
   projectRef.current = onProject;
   hoverRef.current = onHover;
+  hoverSysRef.current = onHoverSystem;
   selectRef.current = onSelect;
   selectSysRef.current = onSelectSystem;
+  enterSysRef.current = onEnterSystem;
   backgroundRef.current = onBackground;
   contextRef.current = onContext;
   camRef.current = onCamera;
@@ -202,7 +210,7 @@ export function StarMapCanvas({
     scene.add(key);
 
     const starGeo = new THREE.BufferGeometry();
-    const starPos = new Float32Array(3200 * 3);
+    const starPos = new Float32Array(2000 * 3);
     for (let i = 0; i < starPos.length; i++) starPos[i] = (Math.random() - 0.5) * 220;
     starGeo.setAttribute("position", new THREE.BufferAttribute(starPos, 3));
     scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: STARFIELD_COLOR, size: 0.1 })));
@@ -233,8 +241,9 @@ export function StarMapCanvas({
     const meshes = new Map<string, THREE.Object3D>();
     const sunMats: THREE.ShaderMaterial[] = [];
 
+    // Official galaxy remap is (x/100, z/100, -y/100). Keep 0.18 so camera=0.4 still frames the cluster.
     const GAL = 0.18;
-    const galPos = (s: SystemRow) => new THREE.Vector3(s.position[0] * GAL, s.position[2] * GAL, s.position[1] * GAL);
+    const galPos = (s: SystemRow) => new THREE.Vector3(s.position[0] * GAL, s.position[2] * GAL, -s.position[1] * GAL);
     const galaxyMeshes = new Map<string, THREE.Mesh>();
     const galaxyHits: THREE.Object3D[] = [];
     const galHitMat = new THREE.MeshBasicMaterial({ visible: false });
@@ -596,9 +605,14 @@ export function StarMapCanvas({
       ray.setFromCamera(pointer, cam);
       if (modeRef.current === "galaxy") {
         const hit = ray.intersectObjects(galaxyHits, false)[0];
-        hoverSys = hit ? ((hit.object.userData.system as string) ?? null) : null;
+        const nextSys = hit ? ((hit.object.userData.system as string) ?? null) : null;
+        if (nextSys !== hoverSys) {
+          hoverSys = nextSys;
+          hoverSysRef.current?.(nextSys);
+        }
         hovering = null;
         hoverRef.current(null);
+        renderer.domElement.style.cursor = nextSys ? "pointer" : "grab";
         return;
       }
       const hit = ray.intersectObjects(
@@ -607,6 +621,7 @@ export function StarMapCanvas({
       )[0];
       const code = hit ? walkPick(hit.object, meshes) : null;
       const next = code ? (pickables.find((p) => p.body.code === code)?.body ?? null) : null;
+      renderer.domElement.style.cursor = next ? "pointer" : "grab";
       if (next?.code !== hovering?.code) {
         hovering = next;
         hoverRef.current(next);
@@ -676,7 +691,7 @@ export function StarMapCanvas({
       applyCamera,
       resetHome: () => {
         const galaxy = modeRef.current === "galaxy";
-        const home: CameraTuple = galaxy ? [10, 0, 0.4, 0, 0] : [10, 102.98, 0.002, 0, 0];
+        const home: CameraTuple = galaxy ? GALAXY_HOME : SYSTEM_HOME;
         applyCamera(home, galaxy ? "galaxy" : "system");
         camRef.current(home);
       },
@@ -725,9 +740,14 @@ export function StarMapCanvas({
       el.classList.add("canvas-fail");
       el.textContent = "当前浏览器似乎不支持 WebGL。";
     };
+    const onDblClick = () => {
+      if (drag > 8) return;
+      if (modeRef.current === "galaxy" && hoverSys) enterSysRef.current?.(hoverSys);
+    };
     renderer.domElement.addEventListener("pointermove", onMove);
     renderer.domElement.addEventListener("pointerdown", onDown);
     renderer.domElement.addEventListener("click", onClick);
+    renderer.domElement.addEventListener("dblclick", onDblClick);
     renderer.domElement.addEventListener("contextmenu", onContextMenu);
     renderer.domElement.addEventListener("webglcontextlost", onLost);
     window.addEventListener("resize", resize);
@@ -755,7 +775,13 @@ export function StarMapCanvas({
       labels.render(scene, cam);
 
       const code = selectedRef.current?.code;
-      const obj = code ? meshes.get(code) : hovering ? meshes.get(hovering.code) : null;
+      const obj = code
+        ? meshes.get(code)
+        : hovering
+          ? meshes.get(hovering.code)
+          : hoverSys
+            ? galaxyMeshes.get(hoverSys)
+            : null;
       if (obj) {
         ndc.copy(obj.position).project(cam);
         const r = el.getBoundingClientRect();
@@ -781,6 +807,7 @@ export function StarMapCanvas({
       renderer.domElement.removeEventListener("pointermove", onMove);
       renderer.domElement.removeEventListener("pointerdown", onDown);
       renderer.domElement.removeEventListener("click", onClick);
+      renderer.domElement.removeEventListener("dblclick", onDblClick);
       renderer.domElement.removeEventListener("contextmenu", onContextMenu);
       renderer.domElement.removeEventListener("webglcontextlost", onLost);
       controls.dispose();
@@ -820,13 +847,14 @@ export function StarMapCanvas({
     api.current?.highlightSystem(highlightCode);
   }, [highlightCode]);
 
+  const routeKey = routeSystems.join("|");
   useEffect(() => {
     api.current?.applyDisplay(display, routeSystems);
-  }, [display, routeSystems]);
+  }, [display, routeKey, routeSystems]);
 
   useEffect(() => {
     if (!lookNonce) return;
-    api.current?.resetHome();
+    api.current?.applyCamera(camera, mode);
   }, [lookNonce]);
 
   useEffect(() => {

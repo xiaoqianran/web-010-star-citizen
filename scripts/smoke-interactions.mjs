@@ -68,7 +68,10 @@ async function main() {
   if (!(await page.$("canvas"))) fail("webgl canvas missing");
 
   if (!(await click('[data-tab="search"]'))) fail("search tab");
-  if (!(await page.$("[data-search]"))) fail("search input missing");
+  if (!(await click('[data-tab="search"]'))) fail("search tab stay");
+  if (!(await page.$("[data-search]"))) fail("search input missing after second tab click");
+  await setInput("[data-search]", "Te");
+  if (!(await page.$('[data-search-hint="short"]'))) fail("short search hint missing");
   await setInput("[data-search]", "Terra");
   await page.focus("[data-search]");
   await page.keyboard.press("Enter");
@@ -91,21 +94,49 @@ async function main() {
   const afterBlur = await page.evaluate(() => document.activeElement?.tagName);
   if (afterBlur === "INPUT") fail("canvas click did not blur search");
 
+  if (!(await page.$("[data-search]")) && !(await click('[data-tab="search"]'))) fail("search tab reopen");
+  await setInput("[data-search]", "Terra");
+  await page.focus("[data-search]");
+  await page.keyboard.press("Enter");
+  await sleep(80);
+  const terraRow = await page.evaluate(() => {
+    const tr = [...document.querySelectorAll(".panel tbody tr")].find((row) =>
+      row.children[1]?.textContent?.includes("星系"),
+    );
+    tr?.click();
+    return tr?.children[0]?.textContent?.trim() || null;
+  });
+  if (terraRow !== "Terra") fail(`Terra STAR SYSTEM row was ${terraRow}`);
+  await sleep(200);
+  const terraCam = await page.evaluate(() => new URL(location.href).searchParams.get("camera"));
+  if (!terraCam?.startsWith("60,0,0.002")) fail(`search Terra STAR SYSTEM camera ${terraCam}, official is 60,0,0.002`);
+
   if (!(await click('[data-level="galaxy"]'))) fail("GLX");
   await sleep(200);
   if (!(await click('[data-level="system"]'))) fail("SYS");
+  await sleep(200);
+  const sysCam = await page.evaluate(() => new URL(location.href).searchParams.get("camera"));
+  if (!sysCam?.startsWith("10,102.98")) fail(`SYS from galaxy should enter last system home cam, got ${sysCam}`);
   if (!(await click('[data-view="2d"]'))) fail("2D");
   const view = await page.evaluate(() => new URL(location.href).searchParams.get("view"));
   if (view !== "2d") fail(`2D did not write view= ${view}`);
   if (!(await click('[data-view="3d"]'))) fail("3D");
 
   if (!(await click('[data-tab="routes"]'))) fail("routes tab");
-  await setInput(".fields input:nth-of-type(1)", "Cassel");
-  await setInput(".fields input:nth-of-type(2)", "Terra");
+  await setInput(".fields .field:nth-of-type(1) input", "GOSS");
+  await setInput(".fields .field:nth-of-type(2) input", "TERRA");
   if (!(await click(".panel .cta"))) fail("calculate");
   await sleep(80);
   const route = await page.$eval(".route-meta", (el) => el.textContent.trim()).catch(() => "");
-  if (!route) fail("Cassel → Terra calculate produced no route");
+  if (!route) fail("GOSS → TERRA calculate produced no route");
+  const jumpsM = await page.$eval("[data-jumps]", (el) => el.getAttribute("data-jumps")).catch(() => "");
+  if (jumpsM !== "1") fail(`GOSS→TERRA default/M jumps ${jumpsM}, official is 1`);
+  if (!(await click('[data-ship="L"]'))) fail("ship size L");
+  await sleep(80);
+  const jumpsL = await page.$eval("[data-jumps]", (el) => el.getAttribute("data-jumps")).catch(() => "");
+  if (jumpsL !== "2") fail(`GOSS→TERRA ship_size=L jumps ${jumpsL}, official is 2 Through Tayac`);
+  const routeTableH = await page.$eval("[data-route-table]", (el) => el.getBoundingClientRect().height).catch(() => 0);
+  if (routeTableH < 40) fail(`route table clipped to ${routeTableH}px`);
 
   await click('[data-tab="display"]');
   const display = await page.$(".display-bar");

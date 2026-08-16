@@ -1,0 +1,117 @@
+{
+  "href": "https://robertsspaceindustries.com/en/starmap/routes",
+  "camera": null,
+  "location": null,
+  "selection": null,
+  "bodyText": "This website uses cookies We use cookies to analyse our traffic. We also share information about your use of our site with our analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. For more information please read our Privacy Policy. Opt-In/Opt-out Preferences: Do Not Sell or Share My Personal Information You may manage your consent and Opt-In/Opt-Out settings via the links below. You may need to enable or allow pop-ups for this page in order to access this utility. You can at any time change your cookie settings below or on the Cookie Declaration on our website. Consent Selection Necessary Preferences Statistics Marketing Show details ALLOW ALL COOKIES ALLOW SELECTION USE NECESSARY COOKIES ONLY Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREA",
+  "items": [
+    {
+      "tag": "div",
+      "cls": "sm-routes-tab",
+      "vis": true,
+      "text": "DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE",
+      "box": {
+        "x": 0,
+        "y": 989,
+        "w": 1920,
+        "h": 60
+      }
+    },
+    {
+      "tag": "section",
+      "cls": "sm-list-region",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 0,
+        "y": 825,
+        "w": 1920,
+        "h": 76
+      }
+    },
+    {
+      "tag": "div",
+      "cls": "sm-table-container",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 677,
+        "y": 825,
+        "w": 567,
+        "h": 76
+      }
+    },
+    {
+      "tag": "th",
+      "cls": "sm-label",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 678,
+        "y": 830,
+        "w": 200,
+        "h": 34
+      }
+    },
+    {
+      "tag": "th",
+      "cls": "sm-jumps",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 878,
+        "y": 830,
+        "w": 70,
+        "h": 34
+      }
+    },
+    {
+      "tag": "th",
+      "cls": "sm-distance",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 948,
+        "y": 830,
+        "w": 125,
+        "h": 34
+      }
+    },
+    {
+      "tag": "th",
+      "cls": "sm-selection",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 1073,
+        "y": 830,
+        "w": 145,
+        "h": 34
+      }
+    },
+    {
+      "tag": "th",
+      "cls": "sm-navigation",
+      "vis": false,
+      "text": "",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "td",
+      "cls": "",
+      "vis": true,
+      "text": "",
+      "box": {
+        "x": 678,
+        "y": 866,
+        "w": 565,
+        "h": 34
+      }
+    }
+  ]
+}

@@ -2,11 +2,13 @@
  * Official ARK Starmap 9.536.0 field map.
  * Source of truth: captured POST /api/starmap/* JSON — not community scrapers.
  *
- * Dymerz/RSI-Scraper returns raw JSON (good) but posts routes with `ship_size`
- * (official field is `size`) and never reads `data.config`.
+ * Dymerz/RSI-Scraper returns raw JSON (good) and posts routes with `ship_size`
+ * (official API honors `ship_size`; the `size` key is ignored) and never reads `data.config`.
  * koo04/GoScrapeRSI re-types the same endpoints and drops/renames keys:
  * position {x,y,z} vs position_x/y/z, TunnelPoint missing code/designation,
  * subtype as array vs object, affiliation flattened.
+ * KarelWintersky/RSI_Starmap_Mirror publishes engine notes (galaxy axis, -longitude)
+ * but vendors the official bundle — this repo does not copy that.
  */
 import bootup from "@capture/api/bootup.json";
 
@@ -90,12 +92,14 @@ export const LRS_INT = {
 export const TUNNEL_COLOR = officialConfig.routes[0]?.color ?? "#3a2018";
 export const STARFIELD_COLOR = officialConfig.starfield.color2;
 
-export const emptyZones = (): OfficialSystemZones => ({
+export const EMPTY_ZONES: OfficialSystemZones = Object.freeze({
   lightColor: null,
   frostLine: null,
   habitableInner: null,
   habitableOuter: null,
 });
+
+export const emptyZones = (): OfficialSystemZones => EMPTY_ZONES;
 
 export function zonesFromSystemRow(row: {
   frost_line?: number | null;

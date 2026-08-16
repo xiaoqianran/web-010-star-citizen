@@ -76,8 +76,10 @@ export const ControlDisc = forwardRef<
       <div className="disc-meta">
         <div>{kind}</div>
         <div>{sub}</div>
-        <div className="disc-side">{zh.disc.manMade}</div>
-        <div className="disc-side">{zh.disc.voiceOvers}</div>
+        {(body.type === "MANMADE" || body.type === "LZ") && <div className="disc-side">{zh.disc.manMade}</div>}
+        <div className="disc-side is-off" title={zh.disc.noVoice}>
+          {zh.disc.voiceOvers}
+        </div>
       </div>
       <div className="disc-menu">
         <button data-page="inspect" data-action="inspect" className={page === "inspect" ? "on" : ""} onClick={() => onPage("inspect")}>
@@ -145,10 +147,12 @@ export const ControlDisc = forwardRef<
               {zh.hud.back}
             </button>
             <button data-action="departure" onClick={onDeparture}>
-              {zh.disc.setAs} {zh.disc.departure}
+              {zh.disc.setAs}
+              {zh.disc.departure}
             </button>
             <button data-action="destination" onClick={onDestination}>
-              {zh.disc.setAs} {zh.disc.destination}
+              {zh.disc.setAs}
+              {zh.disc.destination}
             </button>
             <button data-action="avoid" className={avoided ? "on" : ""} onClick={onAvoid}>
               {zh.disc.avoid}

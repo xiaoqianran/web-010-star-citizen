@@ -10,7 +10,10 @@
 - 3D：Three.js + Collada `.dae`
 - 路由 tab：`"" | search | bookmarks | routes`
 - 查询：`location`（层级码）+ `camera`（五元组）+ 偶发 `selection`（搜索点选瞬间）
-- 星系默认镜头现场见过 `60,0,0.002,0,0`（Terra）；GOSS 仍是 `10,102.98,0.002,0,0`
+- 搜索点选 STAR SYSTEM 飞入：`camera=60,0,0.002,0,0`（Terra 锁定）
+- 罗盘 / 系统主视角：`10,102.98,0.002,0,0`（GOSS 现场）
+- 银河主视角 / 无查询首访：`10,0,0.4,0,0`
+- 搜索点选瞬间偶发 `selection=`，随后换成 `location=`
 - 无 WebSocket；`localStorage` 仅 `sm_sound_fx`、`skipAcknowledgment`、`skipInfo`
 
 ## 已打通的公开 API
@@ -21,7 +24,7 @@
 | POST JSON | `/api/starmap/star-systems/{CODE}` | 单星系天体 |
 | POST JSON | `/api/starmap/celestial-objects/{CODE}` | 单天体详情 |
 | POST form | `/api/starmap/find` `query=` | 搜索 |
-| POST form | `/api/starmap/routes/find` `departure` + `destination` | `shortest` / `leastjumps` |
+| POST form | `/api/starmap/routes/find` `departure` + `destination` + 可选 `ship_size` | `shortest` / `leastjumps`；`size` 键无效 |
 | POST | `/api/starmap/bookmarks/find` | 未登录：`ErrNotAuthenticated` |
 | POST | `/api/starmap/bookmarks/{code}/toggleBookmark` 或 `toggleAvoid` | 需登录 |
 
