@@ -1,0 +1,61 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2607,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "KELLOG.STATION.JUSTICESTARSATELLITE",
+        "description": "Located in one of the QuarterDeck’s Lagrange points, this satellite is the central processing center for the prison world. \n",
+        "designation": "JusticeStar Satellite",
+        "distance": 33.337,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": null,
+        "longitude": 200,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 1846,
+        "sensor_danger": "1",
+        "sensor_economy": "5",
+        "sensor_population": "4",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": null,
+        "subtype_id": 44,
+        "time_modified": "2018-10-04 00:08:15",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [
+          {
+            "id": 1,
+            "code": "uee",
+            "color": "#48bbd4",
+            "name": "UEE",
+            "membership.id": 3094
+          }
+        ],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

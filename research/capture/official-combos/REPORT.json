@@ -1,0 +1,2352 @@
+{
+  "capturedAt": "2026-08-16T19:56:01.041Z",
+  "start": "https://robertsspaceindustries.com/en/starmap",
+  "method": "official-combos-untested",
+  "log": [
+    {
+      "t": "2026-08-16T19:52:35.136Z",
+      "step": "intro:window",
+      "url": "https://robertsspaceindustries.com/en/starmap",
+      "text": "button.launch"
+    },
+    {
+      "t": "2026-08-16T19:52:55.805Z",
+      "step": "intro-menu",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "found": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT | INFORMATION | ROUTING | BOOKMARK | SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": "10,0,0.4,0,0"
+    },
+    {
+      "t": "2026-08-16T19:52:56.907Z",
+      "step": "click-galaxy",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "false",
+      "cam": "10,0,0.4,0,0"
+    },
+    {
+      "t": "2026-08-16T19:53:00.049Z",
+      "step": "right:center",
+      "url": "https://robertsspaceindustries.com/en/starmap",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT | INFORMATION | ROUTING | BOOKMARK | SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:02.802Z",
+      "step": "right:center:inspect",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "INSPECT",
+      "cam": null,
+      "found": null
+    },
+    {
+      "t": "2026-08-16T19:53:05.296Z",
+      "step": "right:left-mid",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT | INFORMATION | ROUTING | BOOKMARK | SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:08.123Z",
+      "step": "right:left-mid:inspect",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "INSPECT",
+      "cam": null,
+      "found": null
+    },
+    {
+      "t": "2026-08-16T19:53:10.512Z",
+      "step": "right:right-mid",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT | INFORMATION | ROUTING | BOOKMARK | SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:13.313Z",
+      "step": "right:right-mid:inspect",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "INSPECT",
+      "cam": null,
+      "found": null
+    },
+    {
+      "t": "2026-08-16T19:53:15.668Z",
+      "step": "right:above-center",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT | INFORMATION | ROUTING | BOOKMARK | SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:18.432Z",
+      "step": "right:above-center:inspect",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "INSPECT",
+      "cam": null,
+      "found": null
+    },
+    {
+      "t": "2026-08-16T19:53:21.050Z",
+      "step": "right:sol-ish",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT | INFORMATION | ROUTING | BOOKMARK | SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:23.658Z",
+      "step": "right:sol-ish:inspect",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "INSPECT",
+      "cam": null,
+      "found": null
+    },
+    {
+      "t": "2026-08-16T19:53:26.117Z",
+      "step": "right:lower-right",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT | INFORMATION | ROUTING | BOOKMARK | SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:28.887Z",
+      "step": "right:lower-right:inspect",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "INSPECT",
+      "cam": null,
+      "found": null
+    },
+    {
+      "t": "2026-08-16T19:53:31.279Z",
+      "step": "right:inspect-dom-slot",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT | INFORMATION | ROUTING | BOOKMARK | SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:34.045Z",
+      "step": "right:inspect-dom-slot:inspect",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "INSPECT",
+      "cam": null,
+      "found": null
+    },
+    {
+      "t": "2026-08-16T19:53:36.623Z",
+      "step": "left-sol-ish",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT | INSPECT | INFORMATION | ROUTING | BOOKMARK | SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:38.531Z",
+      "step": "disc:inspect",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "INSPECT",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:39.145Z",
+      "step": "disc:information",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "INFORMATION",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:39.887Z",
+      "step": "disc:routing",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "ROUTING",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:40.248Z",
+      "step": "disc:bookmark",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "BOOKMARK",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:42.098Z",
+      "step": "disc:avoid",
+      "url": "https://robertsspaceindustries.com/en/starmap#",
+      "text": "AVOID",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:53:45.745Z",
+      "step": "click-search",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "text": "SEARCH"
+    },
+    {
+      "t": "2026-08-16T19:53:48.400Z",
+      "step": "search-enter:Terra",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": "26"
+    },
+    {
+      "t": "2026-08-16T19:53:51.918Z",
+      "step": "search-enter:Cassel",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:53:55.349Z",
+      "step": "search-enter:jump",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": "empty"
+    },
+    {
+      "t": "2026-08-16T19:53:59.125Z",
+      "step": "search-enter:Goss A",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:54:02.968Z",
+      "step": "search-enter:ARK",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": "2"
+    },
+    {
+      "t": "2026-08-16T19:54:06.400Z",
+      "step": "search-enter:a",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 2
+    },
+    {
+      "t": "2026-08-16T19:54:10.003Z",
+      "step": "search-enter:Kayfa",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": "9"
+    },
+    {
+      "t": "2026-08-16T19:54:13.338Z",
+      "step": "search-enter:Levski",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:54:16.088Z",
+      "step": "search-autocomplete-empty",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "text": "none"
+    },
+    {
+      "t": "2026-08-16T19:54:19.182Z",
+      "step": "enter-terra-system",
+      "url": "https://robertsspaceindustries.com/en/starmap?selection=TERRA",
+      "text": "Terra Star System Bookmark Go",
+      "cam": null,
+      "found": null
+    },
+    {
+      "t": "2026-08-16T19:54:23.478Z",
+      "step": "system-display",
+      "url": "https://robertsspaceindustries.com/en/starmap",
+      "text": "true",
+      "found": null
+    },
+    {
+      "t": "2026-08-16T19:54:24.444Z",
+      "step": "system-display-dump",
+      "url": "https://robertsspaceindustries.com/en/starmap?location=TERRA&camera=60,0,0.002,0,0",
+      "found": "sm-system-display-tab,sm-scanners,starmap-disc,disc-root__menu",
+      "text": "Home Explore Starmap Starmap BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+    },
+    {
+      "t": "2026-08-16T19:54:28.926Z",
+      "step": "right-system-view",
+      "url": "https://robertsspaceindustries.com/en/starmap",
+      "text": "BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SENSORS POPULATION ECONOMY THREAT C | BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT | BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT | BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID | SET AS:DEPARTURE | SET AS:DESTINATION | AVOID | SEARCH BOOKMARKS ROUTES DISPLAY SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE | SEARCH BOOKMARKS ROUTES DISPLAY | BOOKMARKS",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:54:33.004Z",
+      "step": "double-click-system",
+      "url": "https://robertsspaceindustries.com/en/starmap",
+      "cam": "null -> null",
+      "found": "null -> null"
+    },
+    {
+      "t": "2026-08-16T19:54:37.177Z",
+      "step": "click-routes",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "ROUTES"
+    },
+    {
+      "t": "2026-08-16T19:54:42.639Z",
+      "step": "route:GOSS-TERRA",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:54:51.371Z",
+      "step": "route-size:small",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "CALCULATE"
+    },
+    {
+      "t": "2026-08-16T19:54:54.384Z",
+      "step": "route-size:medium",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "CALCULATE"
+    },
+    {
+      "t": "2026-08-16T19:54:56.942Z",
+      "step": "route-size:large",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "CALCULATE"
+    },
+    {
+      "t": "2026-08-16T19:55:04.251Z",
+      "step": "route:SOL-NYX",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:55:12.348Z",
+      "step": "route:Goss A-TERRA",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:55:20.977Z",
+      "step": "compass-galaxy",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "false",
+      "cam": "null -> null"
+    },
+    {
+      "t": "2026-08-16T19:55:25.301Z",
+      "step": "view-2d",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "null",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:55:29.668Z",
+      "step": "view-3d",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "null",
+      "cam": null
+    },
+    {
+      "t": "2026-08-16T19:56:00.860Z",
+      "step": "left-drag",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes?location=TERRA&camera=50,-19.69,0.002,0,0",
+      "cam": "null -> 50,-19.69,0.002,0,0"
+    }
+  ],
+  "afterIntro": {
+    "href": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+    "cam": "10,0,0.4,0,0",
+    "loc": null,
+    "classes": [
+      "sm-galaxy-display-tab",
+      "sm-affiliations",
+      "sm-scanners",
+      "starmap-disc",
+      "disc-root__menu"
+    ],
+    "menu": [
+      {
+        "tag": "section",
+        "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+        "cls": "sm-starmap-application",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 104,
+          "w": 1920,
+          "h": 976
+        }
+      },
+      {
+        "tag": "section",
+        "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+        "cls": "sm-starmap",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 104,
+          "w": 1920,
+          "h": 1083
+        }
+      },
+      {
+        "tag": "section",
+        "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+        "cls": "disc-root starmap-disc",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 104,
+          "w": 554,
+          "h": 273
+        }
+      },
+      {
+        "tag": "a",
+        "text": "INSPECT",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 410,
+          "y": 226,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "a",
+        "text": "INFORMATION",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 406,
+          "y": 256,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "a",
+        "text": "ROUTING",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 398,
+          "y": 286,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "a",
+        "text": "BOOKMARK",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 379,
+          "y": 316,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "section",
+        "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+        "cls": "sm-controls",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 974,
+          "w": 1920,
+          "h": 106
+        }
+      },
+      {
+        "tag": "ul",
+        "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+        "cls": "sm-tabs",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 933,
+          "w": 1920,
+          "h": 41
+        }
+      },
+      {
+        "tag": "a",
+        "text": "BOOKMARKS",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 1564,
+          "y": 938,
+          "w": 142,
+          "h": 36
+        }
+      }
+    ],
+    "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+  },
+  "rightClicks": [
+    {
+      "label": "center",
+      "x": 960,
+      "y": 420,
+      "href": "https://robertsspaceindustries.com/en/starmap",
+      "cam": null,
+      "loc": null,
+      "classes": [
+        "sm-galaxy-display-tab",
+        "sm-affiliations",
+        "sm-scanners",
+        "starmap-disc",
+        "disc-root__menu"
+      ],
+      "menu": [
+        {
+          "tag": "section",
+          "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+          "cls": "sm-starmap-application",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 976
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "sm-starmap",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 1083
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "disc-root starmap-disc",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 554,
+            "h": 273
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INSPECT",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 410,
+            "y": 226,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INFORMATION",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 406,
+            "y": 256,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "ROUTING",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 398,
+            "y": 286,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARK",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 379,
+            "y": 316,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "section",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+          "cls": "sm-controls",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 974,
+            "w": 1920,
+            "h": 106
+          }
+        },
+        {
+          "tag": "ul",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+          "cls": "sm-tabs",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 933,
+            "w": 1920,
+            "h": 41
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARKS",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 1564,
+            "y": 938,
+            "w": 142,
+            "h": 36
+          }
+        }
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+    },
+    {
+      "label": "left-mid",
+      "x": 700,
+      "y": 380,
+      "href": "https://robertsspaceindustries.com/en/starmap#",
+      "cam": null,
+      "loc": null,
+      "classes": [
+        "sm-galaxy-display-tab",
+        "sm-affiliations",
+        "sm-scanners",
+        "starmap-disc",
+        "disc-root__menu"
+      ],
+      "menu": [
+        {
+          "tag": "section",
+          "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+          "cls": "sm-starmap-application",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 976
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "sm-starmap",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 1083
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "disc-root starmap-disc",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 554,
+            "h": 273
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INSPECT",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 410,
+            "y": 226,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INFORMATION",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 406,
+            "y": 256,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "ROUTING",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 398,
+            "y": 286,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARK",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 379,
+            "y": 316,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "section",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+          "cls": "sm-controls",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 974,
+            "w": 1920,
+            "h": 106
+          }
+        },
+        {
+          "tag": "ul",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+          "cls": "sm-tabs",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 933,
+            "w": 1920,
+            "h": 41
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARKS",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 1564,
+            "y": 938,
+            "w": 142,
+            "h": 36
+          }
+        }
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+    },
+    {
+      "label": "right-mid",
+      "x": 1180,
+      "y": 400,
+      "href": "https://robertsspaceindustries.com/en/starmap#",
+      "cam": null,
+      "loc": null,
+      "classes": [
+        "sm-galaxy-display-tab",
+        "sm-affiliations",
+        "sm-scanners",
+        "starmap-disc",
+        "disc-root__menu"
+      ],
+      "menu": [
+        {
+          "tag": "section",
+          "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+          "cls": "sm-starmap-application",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 976
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "sm-starmap",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 1083
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "disc-root starmap-disc",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 554,
+            "h": 273
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INSPECT",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 410,
+            "y": 226,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INFORMATION",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 406,
+            "y": 256,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "ROUTING",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 398,
+            "y": 286,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARK",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 379,
+            "y": 316,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "section",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+          "cls": "sm-controls",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 974,
+            "w": 1920,
+            "h": 106
+          }
+        },
+        {
+          "tag": "ul",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+          "cls": "sm-tabs",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 933,
+            "w": 1920,
+            "h": 41
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARKS",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 1564,
+            "y": 938,
+            "w": 142,
+            "h": 36
+          }
+        }
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+    },
+    {
+      "label": "above-center",
+      "x": 960,
+      "y": 300,
+      "href": "https://robertsspaceindustries.com/en/starmap#",
+      "cam": null,
+      "loc": null,
+      "classes": [
+        "sm-galaxy-display-tab",
+        "sm-affiliations",
+        "sm-scanners",
+        "starmap-disc",
+        "disc-root__menu"
+      ],
+      "menu": [
+        {
+          "tag": "section",
+          "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+          "cls": "sm-starmap-application",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 976
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "sm-starmap",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 1083
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "disc-root starmap-disc",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 554,
+            "h": 273
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INSPECT",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 410,
+            "y": 226,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INFORMATION",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 406,
+            "y": 256,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "ROUTING",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 398,
+            "y": 286,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARK",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 379,
+            "y": 316,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "section",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+          "cls": "sm-controls",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 974,
+            "w": 1920,
+            "h": 106
+          }
+        },
+        {
+          "tag": "ul",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+          "cls": "sm-tabs",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 933,
+            "w": 1920,
+            "h": 41
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARKS",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 1564,
+            "y": 938,
+            "w": 142,
+            "h": 36
+          }
+        }
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+    },
+    {
+      "label": "sol-ish",
+      "x": 860,
+      "y": 460,
+      "href": "https://robertsspaceindustries.com/en/starmap#",
+      "cam": null,
+      "loc": null,
+      "classes": [
+        "sm-galaxy-display-tab",
+        "sm-affiliations",
+        "sm-scanners",
+        "starmap-disc",
+        "disc-root__menu"
+      ],
+      "menu": [
+        {
+          "tag": "section",
+          "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+          "cls": "sm-starmap-application",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 976
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "sm-starmap",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 1083
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "disc-root starmap-disc",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 554,
+            "h": 273
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INSPECT",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 410,
+            "y": 226,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INFORMATION",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 406,
+            "y": 256,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "ROUTING",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 398,
+            "y": 286,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARK",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 379,
+            "y": 316,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "section",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+          "cls": "sm-controls",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 974,
+            "w": 1920,
+            "h": 106
+          }
+        },
+        {
+          "tag": "ul",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+          "cls": "sm-tabs",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 933,
+            "w": 1920,
+            "h": 41
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARKS",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 1564,
+            "y": 938,
+            "w": 142,
+            "h": 36
+          }
+        }
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+    },
+    {
+      "label": "lower-right",
+      "x": 1100,
+      "y": 480,
+      "href": "https://robertsspaceindustries.com/en/starmap#",
+      "cam": null,
+      "loc": null,
+      "classes": [
+        "sm-galaxy-display-tab",
+        "sm-affiliations",
+        "sm-scanners",
+        "starmap-disc",
+        "disc-root__menu"
+      ],
+      "menu": [
+        {
+          "tag": "section",
+          "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+          "cls": "sm-starmap-application",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 976
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "sm-starmap",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 1083
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "disc-root starmap-disc",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 554,
+            "h": 273
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INSPECT",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 410,
+            "y": 226,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INFORMATION",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 406,
+            "y": 256,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "ROUTING",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 398,
+            "y": 286,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARK",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 379,
+            "y": 316,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "section",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+          "cls": "sm-controls",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 974,
+            "w": 1920,
+            "h": 106
+          }
+        },
+        {
+          "tag": "ul",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+          "cls": "sm-tabs",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 933,
+            "w": 1920,
+            "h": 41
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARKS",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 1564,
+            "y": 938,
+            "w": 142,
+            "h": 36
+          }
+        }
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+    },
+    {
+      "label": "inspect-dom-slot",
+      "x": 400,
+      "y": 240,
+      "href": "https://robertsspaceindustries.com/en/starmap#",
+      "cam": null,
+      "loc": null,
+      "classes": [
+        "sm-galaxy-display-tab",
+        "sm-affiliations",
+        "sm-scanners",
+        "starmap-disc",
+        "disc-root__menu"
+      ],
+      "menu": [
+        {
+          "tag": "section",
+          "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+          "cls": "sm-starmap-application",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 976
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "sm-starmap",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 1920,
+            "h": 1083
+          }
+        },
+        {
+          "tag": "section",
+          "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+          "cls": "disc-root starmap-disc",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 104,
+            "w": 554,
+            "h": 273
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INSPECT",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 410,
+            "y": 226,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "INFORMATION",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 406,
+            "y": 256,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "ROUTING",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 398,
+            "y": 286,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARK",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 379,
+            "y": 316,
+            "w": 160,
+            "h": 30
+          }
+        },
+        {
+          "tag": "section",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+          "cls": "sm-controls",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 974,
+            "w": 1920,
+            "h": 106
+          }
+        },
+        {
+          "tag": "ul",
+          "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+          "cls": "sm-tabs",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 0,
+            "y": 933,
+            "w": 1920,
+            "h": 41
+          }
+        },
+        {
+          "tag": "a",
+          "text": "BOOKMARKS",
+          "cls": "",
+          "vis": true,
+          "opacity": "1",
+          "box": {
+            "x": 1564,
+            "y": 938,
+            "w": 142,
+            "h": 36
+          }
+        }
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+    }
+  ],
+  "afterLeft": {
+    "href": "https://robertsspaceindustries.com/en/starmap#",
+    "cam": null,
+    "loc": null,
+    "classes": [
+      "sm-galaxy-display-tab",
+      "sm-affiliations",
+      "sm-scanners",
+      "starmap-disc",
+      "disc-root__menu"
+    ],
+    "menu": [
+      {
+        "tag": "section",
+        "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
+        "cls": "sm-starmap-application",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 104,
+          "w": 1920,
+          "h": 976
+        }
+      },
+      {
+        "tag": "section",
+        "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+        "cls": "sm-starmap",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 104,
+          "w": 1920,
+          "h": 1083
+        }
+      },
+      {
+        "tag": "section",
+        "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT",
+        "cls": "disc-root starmap-disc",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 104,
+          "w": 554,
+          "h": 273
+        }
+      },
+      {
+        "tag": "a",
+        "text": "INSPECT",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 410,
+          "y": 226,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "a",
+        "text": "INFORMATION",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 406,
+          "y": 256,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "a",
+        "text": "ROUTING",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 398,
+          "y": 286,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "a",
+        "text": "BOOKMARK",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 379,
+          "y": 316,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "section",
+        "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+        "cls": "sm-controls",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 974,
+          "w": 1920,
+          "h": 106
+        }
+      },
+      {
+        "tag": "ul",
+        "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+        "cls": "sm-tabs",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 933,
+          "w": 1920,
+          "h": 41
+        }
+      },
+      {
+        "tag": "a",
+        "text": "BOOKMARKS",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 1564,
+          "y": 938,
+          "w": 142,
+          "h": 36
+        }
+      }
+    ],
+    "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+  },
+  "searchLog": [
+    {
+      "q": "Terra",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Terra"
+      },
+      "found": "26",
+      "empty": false,
+      "auto": [],
+      "rows": [
+        [
+          "TERRA",
+          "STAR SYSTEM",
+          "BOOKMARK"
+        ],
+        [
+          "TERRA NOVA IN TERRA",
+          "STAR",
+          "BOOKMARK"
+        ],
+        [
+          "AERO IN TERRA",
+          "PLANET",
+          "BOOKMARK"
+        ],
+        [
+          "PIKE IN TERRA",
+          "PLANET",
+          "BOOKMARK"
+        ],
+        [
+          "TERRA IN TERRA",
+          "PLANET",
+          "BOOKMARK"
+        ],
+        [
+          "GEN IN TERRA",
+          "PLANET",
+          "BOOKMARK"
+        ],
+        [
+          "PETRAM IN TERRA",
+          "SATELLITE",
+          "BOOKMARK"
+        ]
+      ],
+      "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY NAME TYPE 26 ITEMS FOUND TERRA STAR SYSTEM BOOKMARK TERRA NOVA IN TERRA STAR BOOKMARK AERO IN TERRA PLANET BOOKMARK PIKE IN TERRA PLANET BOOKMARK TERRA IN TERRA PLANET BOOKMARK GEN IN TERRA PLANET BOOKMARK PETRAM IN TERRA SATELLITE BOOKMARK PETRUS IN TERRA SATELLITE BOOKMARK "
+    },
+    {
+      "q": "Cassel",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Cassel"
+      },
+      "found": null,
+      "empty": false,
+      "auto": [],
+      "rows": [
+        [
+          "CASSEL IN GOSS",
+          "PLANET",
+          "BOOKMARK"
+        ]
+      ],
+      "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY NAME TYPE 1 ITEM FOUND CASSEL IN GOSS PLANET BOOKMARK SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "jump",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "jump"
+      },
+      "found": null,
+      "empty": true,
+      "auto": [],
+      "rows": [
+        [
+          "NO OBJECTS FOUND WITH FILTERS."
+        ]
+      ],
+      "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY NAME TYPE NO OBJECTS FOUND WITH FILTERS. SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Goss A",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Goss A"
+      },
+      "found": null,
+      "empty": false,
+      "auto": [],
+      "rows": [
+        [
+          "GOSS A IN GOSS",
+          "STAR",
+          "BOOKMARK"
+        ]
+      ],
+      "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY NAME TYPE 1 ITEM FOUND GOSS A IN GOSS STAR BOOKMARK SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "ARK",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "ARK"
+      },
+      "found": "2",
+      "empty": false,
+      "auto": [],
+      "rows": [
+        [
+          "MARKAHIL IN MALKAIL (MARKAHIL)",
+          "STAR",
+          "BOOKMARK"
+        ],
+        [
+          "THE ARK IN TAYAC",
+          "MAN-MADE",
+          "BOOKMARK"
+        ]
+      ],
+      "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY NAME TYPE 2 ITEMS FOUND MARKAHIL IN MALKAIL (MARKAHIL) STAR BOOKMARK THE ARK IN TAYAC MAN-MADE BOOKMARK SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "a",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "a"
+      },
+      "found": null,
+      "empty": false,
+      "auto": [],
+      "rows": [
+        [],
+        []
+      ],
+      "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Kayfa",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Kayfa"
+      },
+      "found": "9",
+      "empty": false,
+      "auto": [],
+      "rows": [
+        [
+          "KAI'PUA (KAYFA) IN KAI'PUA (KAYFA)",
+          "STAR",
+          "BOOKMARK"
+        ],
+        [
+          "UI'R.A'ANG IN KAI'PUA (KAYFA)",
+          "PLANET",
+          "BOOKMARK"
+        ],
+        [
+          "R.AIP'UĀNG IN KAI'PUA (KAYFA)",
+          "PLANET",
+          "BOOKMARK"
+        ],
+        [
+          "KYU'KYU IN KAI'PUA (KAYFA)",
+          "PLANET",
+          "BOOKMARK"
+        ],
+        [
+          "K.YUK'O IN KAI'PUA (KAYFA)",
+          "PLANET",
+          "BOOKMARK"
+        ],
+        [
+          "KAI'PUA (KAYFA) - R.IL'A (RIHLAH) IN KAI'PUA (KAYFA)",
+          "JUMP POINT",
+          "BOOKMARK"
+        ],
+        [
+          "KAI'PUA (KAYFA) - HORUS IN KAI'PUA (KAYFA)",
+          "JUMP POINT",
+          "BOOKMARK"
+        ]
+      ],
+      "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY NAME TYPE 9 ITEMS FOUND KAI'PUA (KAYFA) IN KAI'PUA (KAYFA) STAR BOOKMARK UI'R.A'ANG IN KAI'PUA (KAYFA) PLANET BOOKMARK R.AIP'UĀNG IN KAI'PUA (KAYFA) PLANET BOOKMARK KYU'KYU IN KAI'PUA (KAYFA) PLANET BOOKMARK K.YUK'O IN KAI'PUA (KAYFA) PLANET BOOKMARK KAI'PUA (KAYFA) - R.IL'A "
+    },
+    {
+      "q": "Levski",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Levski"
+      },
+      "found": null,
+      "empty": false,
+      "auto": [],
+      "rows": [
+        [
+          "LEVSKI IN NYX",
+          "LANDING ZONE",
+          "BOOKMARK"
+        ]
+      ],
+      "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY NAME TYPE 1 ITEM FOUND LEVSKI IN NYX LANDING ZONE BOOKMARK SEARCH BACK TO RSI WEBSITE"
+    }
+  ],
+  "autoEmpty": [],
+  "sysRight": {
+    "href": "https://robertsspaceindustries.com/en/starmap",
+    "cam": null,
+    "loc": null,
+    "classes": [
+      "sm-system-display-tab",
+      "sm-scanners",
+      "starmap-disc",
+      "disc-root__menu"
+    ],
+    "menu": [
+      {
+        "tag": "section",
+        "text": "BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SENSORS POPULATION ECONOMY THREAT C",
+        "cls": "sm-starmap-application",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 104,
+          "w": 1920,
+          "h": 976
+        }
+      },
+      {
+        "tag": "section",
+        "text": "BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT",
+        "cls": "sm-starmap",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 104,
+          "w": 1920,
+          "h": 1083
+        }
+      },
+      {
+        "tag": "section",
+        "text": "BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT",
+        "cls": "disc-root starmap-disc",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 104,
+          "w": 554,
+          "h": 273
+        }
+      },
+      {
+        "tag": "ul",
+        "text": "BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID",
+        "cls": "disc-root__extended-menu",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 304,
+          "y": 40,
+          "w": 250,
+          "h": 400
+        }
+      },
+      {
+        "tag": "a",
+        "text": "SET AS:DEPARTURE",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 398,
+          "y": 166,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "a",
+        "text": "SET AS:DESTINATION",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 407,
+          "y": 196,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "a",
+        "text": "AVOID",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 410,
+          "y": 226,
+          "w": 160,
+          "h": 30
+        }
+      },
+      {
+        "tag": "section",
+        "text": "SEARCH BOOKMARKS ROUTES DISPLAY SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE",
+        "cls": "sm-controls",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 974,
+          "w": 1920,
+          "h": 106
+        }
+      },
+      {
+        "tag": "ul",
+        "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+        "cls": "sm-tabs",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 0,
+          "y": 933,
+          "w": 1920,
+          "h": 41
+        }
+      },
+      {
+        "tag": "a",
+        "text": "BOOKMARKS",
+        "cls": "",
+        "vis": true,
+        "opacity": "1",
+        "box": {
+          "x": 1564,
+          "y": 938,
+          "w": 142,
+          "h": 36
+        }
+      }
+    ],
+    "bodySlice": "Home Explore Starmap Starmap BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE"
+  },
+  "routeLog": [
+    {
+      "from": "GOSS",
+      "to": "TERRA",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "hasView": false,
+        "slice": "Home Explore Starmap Starmap BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      },
+      "cam": null
+    },
+    {
+      "from": "SOL",
+      "to": "NYX",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "hasView": false,
+        "slice": "Home Explore Starmap Starmap BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      },
+      "cam": null
+    },
+    {
+      "from": "Goss A",
+      "to": "TERRA",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "hasView": false,
+        "slice": "Home Explore Starmap Starmap BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      },
+      "cam": null
+    }
+  ],
+  "keyLog": [
+    {
+      "key": "w",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "a",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "s",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "d",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "ArrowLeft",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "ArrowRight",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "ArrowUp",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "ArrowDown",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "+",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "-",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "Escape",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "2",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "3",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    },
+    {
+      "key": "f",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "loc": null
+    }
+  ],
+  "classesFinal": [
+    "sm-routes-tab",
+    "sm-search-autocomplete",
+    "starmap-disc",
+    "disc-root__menu"
+  ],
+  "network": [
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/bootup",
+      "status": 200,
+      "method": "POST",
+      "post": null,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 90,
+        "objects": 0
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/bookmarks/find",
+      "status": 200,
+      "method": "POST",
+      "post": "[]",
+      "success": 0,
+      "code": "ErrNotAuthenticated",
+      "msg": "You must be authenticated to reach this area.",
+      "shortest": null,
+      "leastjumps": null,
+      "find": null
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/find",
+      "status": 200,
+      "method": "POST",
+      "post": "{\"query\":\"Terra\"}",
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 1,
+        "objects": 25
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/find",
+      "status": 200,
+      "method": "POST",
+      "post": "{\"query\":\"Cassel\"}",
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 0,
+        "objects": 1
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/find",
+      "status": 200,
+      "method": "POST",
+      "post": "{\"query\":\"jump\"}",
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 0,
+        "objects": 0
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/find",
+      "status": 200,
+      "method": "POST",
+      "post": "{\"query\":\"Goss A\"}",
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 0,
+        "objects": 1
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/find",
+      "status": 200,
+      "method": "POST",
+      "post": "{\"query\":\"ARK\"}",
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 0,
+        "objects": 2
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/find",
+      "status": 200,
+      "method": "POST",
+      "post": "{\"query\":\"Kayfa\"}",
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 0,
+        "objects": 9
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/find",
+      "status": 200,
+      "method": "POST",
+      "post": "{\"query\":\"Levski\"}",
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 0,
+        "objects": 1
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/find",
+      "status": 200,
+      "method": "POST",
+      "post": "{\"query\":\"Terra\"}",
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 1,
+        "objects": 25
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/star-systems/TERRA",
+      "status": 200,
+      "method": "POST",
+      "post": null,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": null
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/find",
+      "status": 200,
+      "method": "POST",
+      "post": "{\"query\":\"23f\"}",
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 0,
+        "objects": 0
+      }
+    }
+  ]
+}

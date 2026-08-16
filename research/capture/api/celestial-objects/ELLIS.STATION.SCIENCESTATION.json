@@ -1,0 +1,61 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2603,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "ELLIS.STATION.SCIENCESTATION",
+        "description": "Thanks to several government grants and private donors, this scientific station was constructed in 2931 to perform habitation studies on Ellis VI.",
+        "designation": "Encole Station",
+        "distance": 0.00002933,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": null,
+        "longitude": 126.46897,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 1812,
+        "sensor_danger": "3",
+        "sensor_economy": "3",
+        "sensor_population": "3",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": null,
+        "subtype_id": 44,
+        "time_modified": "2018-08-24 23:49:53",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [
+          {
+            "id": 1,
+            "code": "uee",
+            "color": "#48bbd4",
+            "name": "UEE",
+            "membership.id": 3093
+          }
+        ],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

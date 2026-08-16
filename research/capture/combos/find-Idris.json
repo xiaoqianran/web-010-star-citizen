@@ -1,0 +1,247 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 364,
+          "code": "IDRIS",
+          "name": "Idris",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 14,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2111,
+          "code": "IDRIS.STARS.IDRIS",
+          "designation": "Idris",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2467,
+          "code": "IDRIS.PLANET.IDRISI",
+          "designation": "Idris I",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2468,
+          "code": "IDRIS.PLANET.IDRISII",
+          "designation": "Idris II",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2469,
+          "code": "IDRIS.PLANET.IDRISIII",
+          "designation": "Idris III",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2470,
+          "code": "IDRIS.PLANET.IDRISIVLOCKE",
+          "designation": "Idris IV",
+          "name": "Locke",
+          "star_system_id": 364,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2471,
+          "code": "IDRIS.PLANET.IDRISV",
+          "designation": "Idris V",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1995,
+          "code": "RHETOR.JUMPPOINTS.IDRIS",
+          "designation": "Rhetor - Idris",
+          "name": null,
+          "star_system_id": 349,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 349,
+            "code": "RHETOR",
+            "name": "Rhetor",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2104,
+          "code": "ELYSIUM.JUMPPOINTS.IDRIS",
+          "designation": "Elysium - Idris",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2106,
+          "code": "IDRIS.JUMPPOINTS.FERRON",
+          "designation": "Idris - Ferron",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2107,
+          "code": "IDRIS.JUMPPOINTS.RHETOR",
+          "designation": "Idris - Rhetor",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2109,
+          "code": "IDRIS.JUMPPOINTS.ELYSIUM",
+          "designation": "Idris - Elysium",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2110,
+          "code": "IDRIS.JUMPPOINTS.GARRON",
+          "designation": "Idris - Garron",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2120,
+          "code": "FERRON.JUMPPOINTS.IDRIS",
+          "designation": "Ferron - Idris",
+          "name": null,
+          "star_system_id": 367,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2347,
+          "code": "GARRON.JUMPPOINTS.IDRIS",
+          "designation": "Garron - Idris",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 14,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 324,
+          "code": "ODIN",
+          "name": "Odin",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1826,
+          "code": "ODIN.STARS.ODIN",
+          "designation": "Odin",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1828,
+          "code": "ODIN.PLANETS.ODINII",
+          "designation": "Odin II",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1829,
+          "code": "ODIN.PLANETS.ODINIII",
+          "designation": "Odin III",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1830,
+          "code": "ODIN.PLANETS.ODINIV",
+          "designation": "Odin IV",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2773,
+          "code": "ODIN.MOONS.VILI",
+          "designation": "Odin 2a",
+          "name": "Vili",
+          "star_system_id": 324,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2815,
+          "code": "ODIN.MOONS.GAINEY",
+          "designation": "Odin 1a",
+          "name": "Gainey",
+          "star_system_id": 324,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1827,
+          "code": "ODIN.FIELDS.ASTEROIDFIELDS",
+          "designation": "Odin I",
+          "name": "The Coil",
+          "star_system_id": 324,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1713,
+          "code": "NYX.JUMPPOINTS.ODIN",
+          "designation": "Nyx - Odin",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1825,
+          "code": "ODIN.JUMPPOINTS.KELLOG",
+          "designation": "Odin - Kellog",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1831,
+          "code": "ODIN.JUMPPOINTS.NYX",
+          "designation": "Odin - Nyx",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1844,
+          "code": "KELLOG.JUMPPOINTS.ODIN",
+          "designation": "Kellog - Odin",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2712,
+          "code": "TANGA.JUMPPOINTS.ODIN",
+          "designation": "Tanga - Odin",
+          "name": null,
+          "star_system_id": 420,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 420,
+            "code": "TANGA",
+            "name": "Tanga",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2713,
+          "code": "ODIN.JUMPPOINTS.TANGA",
+          "designation": "Odin - Tanga",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

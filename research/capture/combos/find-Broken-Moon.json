@@ -1,0 +1,45 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2771,
+          "code": "TARANIS.MOONS.BROKENMOON",
+          "designation": "Taranis 2a",
+          "name": "Broken Moon",
+          "star_system_id": 321,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

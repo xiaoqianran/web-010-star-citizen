@@ -1,0 +1,277 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 410,
+          "code": "LEIR",
+          "name": "Leir",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 16,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2339,
+          "code": "LEIR.STARS.LEIR",
+          "designation": "Leir",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2402,
+          "code": "LEIR.PLANET.LEIRI",
+          "designation": "Leir I",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2403,
+          "code": "LEIR.PLANET.LEIRIIMYA",
+          "designation": "Leir II",
+          "name": "Mya",
+          "star_system_id": 410,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2404,
+          "code": "LEIR.PLANET.LEIRIII",
+          "designation": "Leir III",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1980,
+          "code": "BANSHEE.JUMPPOINTS.LEIR",
+          "designation": "Banshee - Leir",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2101,
+          "code": "ELYSIUM.JUMPPOINTS.LEIR",
+          "designation": "Elysium - Leir",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2239,
+          "code": "VANGUARD.JUMPPOINTS.LEIR",
+          "designation": "Vanguard - Leir",
+          "name": null,
+          "star_system_id": 391,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 391,
+            "code": "VANGUARD",
+            "name": "Vanguard",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2293,
+          "code": "YULIN.JUMPPOINTS.LEIR",
+          "designation": "Yulin - Leir",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2333,
+          "code": "LEIR.JUMPPOINTS.GARRON",
+          "designation": "Leir - Garron",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2334,
+          "code": "LEIR.JUMPPOINTS.VANGUARD",
+          "designation": "Leir - Vanguard",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2335,
+          "code": "LEIR.JUMPPOINTS.BANSHEE",
+          "designation": "Leir - Banshee",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2336,
+          "code": "LEIR.JUMPPOINTS.YULIN",
+          "designation": "Leir - Yulin",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2337,
+          "code": "LEIR.JUMPPOINTS.ELYSIUM",
+          "designation": "Leir - Elysium",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2348,
+          "code": "GARRON.JUMPPOINTS.LEIR",
+          "designation": "Garron - Leir",
+          "name": null,
+          "star_system_id": 412,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 412,
+            "code": "GARRON",
+            "name": "Garron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2657,
+          "code": "KABAL.JUMPPOINTS.LEIR",
+          "designation": "Kabal - Leir",
+          "name": null,
+          "star_system_id": 419,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 419,
+            "code": "KABAL",
+            "name": "Kabal",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2658,
+          "code": "LEIR.JUMPPOINTS.KABAL",
+          "designation": "Leir - Kabal",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 16,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

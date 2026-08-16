@@ -1,0 +1,397 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 339,
+          "code": "CALIBAN",
+          "name": "Caliban",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 24,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1927,
+          "code": "CALIBAN.STARS.CALIBAN",
+          "designation": "Caliban",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2486,
+          "code": "CALIBAN.PLANET.CALIBANI",
+          "designation": "Caliban I",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2487,
+          "code": "CALIBAN.PLANET.CALIBANIICRION",
+          "designation": "Caliban II",
+          "name": "Crion",
+          "star_system_id": 339,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2488,
+          "code": "CALIBAN.PLANET.CALIBANIII",
+          "designation": "Caliban III",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2489,
+          "code": "CALIBAN.PLANET.CALIBANIV",
+          "designation": "Caliban IV",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2490,
+          "code": "CALIBAN.PLANET.CALIBANV",
+          "designation": "Caliban V",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2803,
+          "code": "CALIBAN.MOONS.CALIBAN2A",
+          "designation": "Caliban 2a",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2804,
+          "code": "CALIBAN.MOONS.CALIBAN3A",
+          "designation": "Caliban 3a",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2805,
+          "code": "CALIBAN.MOONS.CALIBAN3B",
+          "designation": "Caliban 3b",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2806,
+          "code": "CALIBAN.MOONS.CALIBAN4A",
+          "designation": "Caliban 4a",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2807,
+          "code": "CALIBAN.MOONS.CALIBAN4B",
+          "designation": "Caliban 4b",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2808,
+          "code": "CALIBAN.MOONS.CALIBAN4C",
+          "designation": "Caliban 4c",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2809,
+          "code": "CALIBAN.MOONS.CALIBAN4D",
+          "designation": "Caliban 4d",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2810,
+          "code": "CALIBAN.MOONS.CALIBAN4E",
+          "designation": "Caliban 4e",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2811,
+          "code": "CALIBAN.MOONS.CALIBAN4F",
+          "designation": "Caliban 4f",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2531,
+          "code": "CALIBAN.BELTS.CALIBANBELTALPHA",
+          "designation": "Caliban Belt Alpha",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1766,
+          "code": "NUL.JUMPPOINTS.CALIBAN",
+          "designation": "Nul - Caliban",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1922,
+          "code": "CALIBAN.JUMPPOINTS.NUL",
+          "designation": "Caliban - Nul",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1923,
+          "code": "CALIBAN.JUMPPOINTS.VIKING",
+          "designation": "Caliban - Viking",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1924,
+          "code": "CALIBAN.JUMPPOINTS.ORION",
+          "designation": "Caliban - Orion",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1926,
+          "code": "CALIBAN.JUMPPOINTS.OBERON",
+          "designation": "Caliban - Oberon",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1990,
+          "code": "OBERON.JUMPPOINTS.CALIBAN",
+          "designation": "Oberon - Caliban",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2088,
+          "code": "ORION.JUMPPOINTS.CALIBAN",
+          "designation": "Orion - Caliban",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2185,
+          "code": "VIKING.JUMPPOINTS.CALIBAN",
+          "designation": "Viking - Caliban",
+          "name": null,
+          "star_system_id": 379,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 379,
+            "code": "VIKING",
+            "name": "Viking",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 24,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

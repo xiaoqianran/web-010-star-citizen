@@ -1,0 +1,60 @@
+{
+  "source": "ARK Starmap 9.536.0 starmap.bundle.js templates",
+  "note": "Official English UI copy captured for translation. Proper nouns stay English in zh.",
+  "intro": {
+    "stellarCartographics": "Stellar Cartographics",
+    "welcome": "Welcome to the ARK Starmap. Use the fullscreen mode for a better experience",
+    "enterFullScreen": "Enter full screen",
+    "enterWindow": "Or enter in window mode",
+    "quote1": "Humanity has always been told to reach for the stars.",
+    "quote2": "Well, it looks like we may have finally caught one.",
+    "quoteBy": "Nick Croshaw, Explorer, 2271",
+    "ackBody": "Star Citizen is currently in development and changes are to be expected. The ARK Starmap will be regularly expanded and updated as we move toward the completed game. Thank you for joining us on the journey.",
+    "dontShowNext": "Don't show this screen next time",
+    "acknowledge": "Acknowledge & continue",
+    "lore1": "At the dawn of the 29th century, a new center of knowledge and understanding was constructed: the ARK. Not bound to any one place, species or government, the Ark was established under a simple principle: to provide a neutral repository for all galactic knowledge.",
+    "lore2": "Currently residing in the Tayac System, the Ark and its team of dedicated archivists and researchers curate this information for the Galactapedia and the Starmap. Invaluable tools that allow all beings to better understand the universe and find their way through it.",
+    "explore": "Explore starmap",
+    "noWebgl": "Your browser does not seem to support WebGL."
+  },
+  "hud": {
+    "back": "Back",
+    "goBack": "Go back",
+    "search": "Search",
+    "bookmarks": "Bookmarks",
+    "routes": "Routes",
+    "display": "Display",
+    "levels": ["Galaxy", "Star System", "Jump point"]
+  },
+  "disc": {
+    "control": "Control Disc",
+    "inspect": "Inspect",
+    "information": "Information",
+    "routing": "Routing",
+    "bookmark": "Bookmark",
+    "setAsDeparture": "Set As: Departure",
+    "setAsDestination": "Set As: Destination",
+    "avoid": "Avoid",
+    "population": "Population",
+    "economy": "Economy",
+    "threat": "Threat",
+    "affiliation": "Affiliation",
+    "systemType": "System Type",
+    "singleStar": "Single star",
+    "binary": "Binary"
+  },
+  "lists": {
+    "name": "Name",
+    "type": "Type",
+    "noObjects": "No objects found with filters.",
+    "noBookmarks": "You have no bookmarks yet.",
+    "noBookmarksFiltered": "No bookmarks found with filters.",
+    "noRoutes": "No routes found with filters.",
+    "viewRoute": "View route",
+    "exitRoute": "Exit route",
+    "prevSegment": "Previous segment",
+    "shipSize": "Ship size",
+    "jumpTunnels": "Jump tunnels",
+    "loading": "Loading..."
+  }
+}

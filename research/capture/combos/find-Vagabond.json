@@ -1,0 +1,52 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 394,
+          "code": "VAGABOND",
+          "name": "Vagabond",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2255,
+          "code": "VAGABOND.STARS.VAGABOND",
+          "designation": "Vagabond",
+          "name": null,
+          "star_system_id": 394,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 394,
+            "code": "VAGABOND",
+            "name": "Vagabond",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

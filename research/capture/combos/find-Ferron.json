@@ -1,0 +1,202 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 367,
+          "code": "FERRON",
+          "name": "Ferron",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 11,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2123,
+          "code": "FERRON.STARS.FERRON",
+          "designation": "Ferron",
+          "name": null,
+          "star_system_id": 367,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2460,
+          "code": "FERRON.PLANET.FERRONI",
+          "designation": "Ferron I",
+          "name": null,
+          "star_system_id": 367,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2461,
+          "code": "FERRON.PLANET.FERRONII",
+          "designation": "Ferron II",
+          "name": null,
+          "star_system_id": 367,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2462,
+          "code": "FERRON.PLANET.FERRONIIIASURA",
+          "designation": "Ferron III",
+          "name": "Asura",
+          "star_system_id": 367,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2463,
+          "code": "FERRON.PLANET.FERRONIV",
+          "designation": "Ferron IV",
+          "name": null,
+          "star_system_id": 367,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1930,
+          "code": "DAVIEN.JUMPPOINTS.FERRON",
+          "designation": "Davien - Ferron",
+          "name": null,
+          "star_system_id": 340,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 340,
+            "code": "DAVIEN",
+            "name": "Davien",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2106,
+          "code": "IDRIS.JUMPPOINTS.FERRON",
+          "designation": "Idris - Ferron",
+          "name": null,
+          "star_system_id": 364,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 364,
+            "code": "IDRIS",
+            "name": "Idris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2119,
+          "code": "FERRON.JUMPPOINTS.DAVIEN",
+          "designation": "Ferron - Davien",
+          "name": null,
+          "star_system_id": 367,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2120,
+          "code": "FERRON.JUMPPOINTS.IDRIS",
+          "designation": "Ferron - Idris",
+          "name": null,
+          "star_system_id": 367,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2122,
+          "code": "FERRON.JUMPPOINTS.CROSHAW",
+          "designation": "Ferron - Croshaw",
+          "name": null,
+          "star_system_id": 367,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 367,
+            "code": "FERRON",
+            "name": "Ferron",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2130,
+          "code": "CROSHAW.JUMPPOINTS.FERRON",
+          "designation": "Croshaw - Ferron",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 11,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

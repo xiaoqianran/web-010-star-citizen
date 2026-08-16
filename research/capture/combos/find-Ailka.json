@@ -1,0 +1,247 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 398,
+          "code": "AYR'KA",
+          "name": "Ail'ka",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 14,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2272,
+          "code": "AYR'KA.STARS.AYR'KA",
+          "designation": "Ail'ka",
+          "name": null,
+          "star_system_id": 398,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2691,
+          "code": "AYRKA.PLANET.AYRKAI",
+          "designation": "Ail'ka I",
+          "name": "Xyeping",
+          "star_system_id": 398,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2692,
+          "code": "AYRKA.PLANET.AYRKAII",
+          "designation": "Ail'ka II",
+          "name": "K'ya.k'uing",
+          "star_system_id": 398,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2693,
+          "code": "AYRKA.PLANET.AYRKAIII",
+          "designation": "Ail'ka III ",
+          "name": "Ye'ten",
+          "star_system_id": 398,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2694,
+          "code": "AYRKA.PLANET.AYRKAIV",
+          "designation": "Ail'ka IV",
+          "name": "M.iiy'ong",
+          "star_system_id": 398,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2695,
+          "code": "AYRKA.PLANET.AYRKAV",
+          "designation": "Ail'ka V ",
+          "name": "Ye'ton",
+          "star_system_id": 398,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2592,
+          "code": "AYRKA.BELTS.AYRKABELTALPHA",
+          "designation": "Ail'ka Belt Alpha",
+          "name": "Huichuaihyao y.ath'o se Ail'ka",
+          "star_system_id": 398,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2593,
+          "code": "AYRKA.BELTS.AYRKABELTBETA",
+          "designation": "Ail'ka Belt Beta",
+          "name": "Huichuaihyao sy.en'o se Ail'ka",
+          "star_system_id": 398,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2175,
+          "code": "HADUR.JUMPPOINTS.AYR'KA",
+          "designation": "Yā'mon (Hadur) - Ail'ka",
+          "name": null,
+          "star_system_id": 377,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2269,
+          "code": "AYR'KA.JUMPPOINTS.INDRA",
+          "designation": "Ail'ka - Kyuk'ya (Indra)",
+          "name": null,
+          "star_system_id": 398,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2270,
+          "code": "AYR'KA.JUMPPOINTS.HADUR",
+          "designation": "Ail'ka - Yā'mon (Hadur)",
+          "name": null,
+          "star_system_id": 398,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2274,
+          "code": "INDRA.JUMPPOINTS.AYR'KA",
+          "designation": "Kyuk'ya (Indra) - Ail'ka",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2833,
+          "code": "AILKA.JUMPPOINT.TAL",
+          "designation": "Ail'ka - T.āl",
+          "name": null,
+          "star_system_id": 398,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2834,
+          "code": "TAL.JUMPPOINT.AILKA",
+          "designation": "T.āl - Ail'ka",
+          "name": null,
+          "star_system_id": 385,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 14,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

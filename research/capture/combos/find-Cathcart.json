@@ -1,0 +1,187 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 372,
+          "code": "CATHCART",
+          "name": "Cathcart",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 10,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2154,
+          "code": "CATHCART.STARS.CATHCART",
+          "designation": "Cathcart",
+          "name": null,
+          "star_system_id": 372,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 372,
+            "code": "CATHCART",
+            "name": "Cathcart",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2155,
+          "code": "CATHCART.BELTS.THERAFTS",
+          "designation": "Cathcart Belt Alpha",
+          "name": null,
+          "star_system_id": 372,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 372,
+            "code": "CATHCART",
+            "name": "Cathcart",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1897,
+          "code": "HADES.JUMPPOINTS.CATHCART",
+          "designation": "Hades - Cathcart",
+          "name": null,
+          "star_system_id": 338,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 338,
+            "code": "HADES",
+            "name": "Hades",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1898,
+          "code": "CATHCART.JUMPPOINTS.KILIAN",
+          "designation": "Cathcart - Kilian",
+          "name": null,
+          "star_system_id": 372,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 372,
+            "code": "CATHCART",
+            "name": "Cathcart",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1900,
+          "code": "CATHCART.JUMPPOINTS.DAVIEN",
+          "designation": "Cathcart - Davien",
+          "name": null,
+          "star_system_id": 372,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 372,
+            "code": "CATHCART",
+            "name": "Cathcart",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1939,
+          "code": "DAVIEN.JUMPPOINTS.CATHCART",
+          "designation": "Davien - Cathcart",
+          "name": null,
+          "star_system_id": 340,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 340,
+            "code": "DAVIEN",
+            "name": "Davien",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1955,
+          "code": "KILIAN.JUMPPOINTS.CATHCART",
+          "designation": "Kilian - Cathcart",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2067,
+          "code": "NEXUS.JUMPPOINTS.CATHCART",
+          "designation": "Nexus - Cathcart",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2152,
+          "code": "CATHCART.JUMPPOINTS.HADES",
+          "designation": "Cathcart - Hades",
+          "name": null,
+          "star_system_id": 372,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 372,
+            "code": "CATHCART",
+            "name": "Cathcart",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2153,
+          "code": "CATHCART.JUMPPOINTS.NEXUS",
+          "designation": "Cathcart - Nexus",
+          "name": null,
+          "star_system_id": 372,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 372,
+            "code": "CATHCART",
+            "name": "Cathcart",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 10,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

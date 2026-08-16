@@ -1,0 +1,47 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 6,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 1,
+        "code": "HUMAN",
+        "name": "Human"
+      },
+      {
+        "id": 2,
+        "code": "BANU",
+        "name": "Banu"
+      },
+      {
+        "id": 3,
+        "code": "XIAN",
+        "name": "Xi'An"
+      },
+      {
+        "id": 4,
+        "code": "TEVARIN",
+        "name": "Tevarin"
+      },
+      {
+        "id": 5,
+        "code": "KRTHAK",
+        "name": "Kr'Thak"
+      },
+      {
+        "id": 6,
+        "code": "VNCL",
+        "name": "Vanduul"
+      }
+    ],
+    "totalrows": 6,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 326,
+          "code": "KELLOG",
+          "name": "Kellog",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 15,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1846,
+          "code": "KELLOG.STARS.KELLOG",
+          "designation": "Kellog",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2389,
+          "code": "KELLOG.PLANET.KELLOGI",
+          "designation": "Kellog I",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2390,
+          "code": "KELLOG.PLANET.KELLOGIIXIS",
+          "designation": "Kellog II",
+          "name": "Xis",
+          "star_system_id": 326,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2391,
+          "code": "KELLOG.PLANET.KELLOGIII",
+          "designation": "Kellog III",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2392,
+          "code": "KELLOG.PLANET.KELLOGIV",
+          "designation": "Kellog IV",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2393,
+          "code": "KELLOG.PLANET.KELLOGV",
+          "designation": "Kellog V",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2394,
+          "code": "KELLOG.PLANET.KELLOGVIQUARTERDECK",
+          "designation": "Kellog VI",
+          "name": "Quarterdeck",
+          "star_system_id": 326,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1734,
+          "code": "VIRGIL.JUMPPOINTS.KELLOG",
+          "designation": "Virgil - Kellog",
+          "name": null,
+          "star_system_id": 317,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 317,
+            "code": "VIRGIL",
+            "name": "Virgil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1825,
+          "code": "ODIN.JUMPPOINTS.KELLOG",
+          "designation": "Odin - Kellog",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1842,
+          "code": "KELLOG.JUMPPOINTS.VIRGIL",
+          "designation": "Kellog - Virgil",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1843,
+          "code": "KELLOG.JUMPPOINTS.VECTOR",
+          "designation": "Kellog - Vector",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1844,
+          "code": "KELLOG.JUMPPOINTS.ODIN",
+          "designation": "Kellog - Odin",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1845,
+          "code": "KELLOG.JUMPPOINTS.CHRONOS",
+          "designation": "Kellog - Chronos",
+          "name": null,
+          "star_system_id": 326,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1894,
+          "code": "CHRONOS.JUMPPOINTS.KELLOG",
+          "designation": "Chronos - Kellog",
+          "name": null,
+          "star_system_id": 334,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 334,
+            "code": "CHRONOS",
+            "name": "Chronos",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2313,
+          "code": "VECTOR.JUMPPOINTS.KELLOG",
+          "designation": "Vector - Kellog",
+          "name": null,
+          "star_system_id": 406,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 406,
+            "code": "VECTOR",
+            "name": "Vector",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 15,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

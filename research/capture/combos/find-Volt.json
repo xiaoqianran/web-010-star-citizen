@@ -1,0 +1,52 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 380,
+          "code": "VOLT",
+          "name": "Volt",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2190,
+          "code": "VOLT.STARS.VOLT",
+          "designation": "Volt",
+          "name": null,
+          "star_system_id": 380,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 380,
+            "code": "VOLT",
+            "name": "Volt",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

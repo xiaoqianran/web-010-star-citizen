@@ -1,0 +1,457 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 318,
+          "code": "PYRO",
+          "name": "Pyro",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 28,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1744,
+          "code": "PYRO.STARS.PYRO",
+          "designation": "Pyro",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1745,
+          "code": "PYRO.PLANETS.PYROI",
+          "designation": "Pyro I",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1746,
+          "code": "PYRO.PLANETS.PYROII",
+          "designation": "Pyro II",
+          "name": "Monox",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1747,
+          "code": "PYRO.PLANETS.PYROIII",
+          "designation": "Pyro III",
+          "name": "Bloom",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1748,
+          "code": "PYRO.PLANETS.PYROV",
+          "designation": "Pyro V",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1749,
+          "code": "PYRO.PLANETS.PYROIV",
+          "designation": "Pyro IV",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1750,
+          "code": "PYRO.PLANETS.PYROVI",
+          "designation": "Pyro VI",
+          "name": "Terminus",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2783,
+          "code": "PYRO.MOONS.IGNIS",
+          "designation": "Pyro 5a",
+          "name": "Ignis",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2784,
+          "code": "PYRO.MOONS.VATRA",
+          "designation": "Pyro 5b",
+          "name": "Vatra",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2785,
+          "code": "PYRO.MOONS.ADIR",
+          "designation": "Pyro 5c",
+          "name": "Adir",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2786,
+          "code": "PYRO.MOON.FAIRO",
+          "designation": "Pyro 5d",
+          "name": "Fairo",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2787,
+          "code": "PYRO.MOONS.FUEGO",
+          "designation": "Pyro 5e",
+          "name": "Fuego",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2788,
+          "code": "PRYO.MOONS.VUUR",
+          "designation": "Pyro 5f",
+          "name": "Vuur",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1753,
+          "code": "PYRO.CLUSTERS.ALPHACLUSTER",
+          "designation": "Pyro Cluster Alpha",
+          "name": "Akiro Cluster",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1689,
+          "code": "STANTON.JUMPPOINTS.PYRO",
+          "designation": "Stanton - Pyro",
+          "name": null,
+          "star_system_id": 314,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 314,
+            "code": "STANTON",
+            "name": "Stanton",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1710,
+          "code": "NYX.JUMPPOINTS.PYRO",
+          "designation": "Nyx - Pyro",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1719,
+          "code": "TERRA.JUMPPOINTS.PYRO",
+          "designation": "Terra - Pyro",
+          "name": null,
+          "star_system_id": 316,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 316,
+            "code": "TERRA",
+            "name": "Terra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1739,
+          "code": "PYRO.JUMPPOINTS.NYX",
+          "designation": "Pyro - Nyx",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1740,
+          "code": "PYRO.JUMPPOINTS.STANTON",
+          "designation": "Pyro - Stanton",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1741,
+          "code": "PYRO.JUMPPOINTS.HADRIAN",
+          "designation": "Pyro - Hadrian",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1742,
+          "code": "PYRO.JUMPPOINTS.OSO",
+          "designation": "Pyro - Oso",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1743,
+          "code": "PYRO.JUMPPOINTS.CASTRA",
+          "designation": "Pyro - Castra",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1754,
+          "code": "PYRO.JUMPPOINTS.TERRA",
+          "designation": "Pyro - Terra",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1877,
+          "code": "OSO.JUMPPOINTS.PYRO",
+          "designation": "Oso - Pyro",
+          "name": null,
+          "star_system_id": 332,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 332,
+            "code": "OSO",
+            "name": "Oso",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1906,
+          "code": "CASTRA.JUMPPOINTS.PYRO",
+          "designation": "Castra - Pyro",
+          "name": null,
+          "star_system_id": 337,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 337,
+            "code": "CASTRA",
+            "name": "Castra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2345,
+          "code": "HADRIAN.JUMPPOINTS.PYRO",
+          "designation": "Hadrian - Pyro",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2703,
+          "code": "CANO.JUMPPOINTS.PYRO",
+          "designation": "Cano - Pyro",
+          "name": null,
+          "star_system_id": 418,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 418,
+            "code": "CANO",
+            "name": "Cano",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2704,
+          "code": "PYRO.JUMPPOINTS.CANO",
+          "designation": "Pyro - Cano",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 28,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

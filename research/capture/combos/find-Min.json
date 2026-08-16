@@ -1,0 +1,187 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 335,
+          "code": "MIN",
+          "name": "Min",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 10,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1750,
+          "code": "PYRO.PLANETS.PYROVI",
+          "designation": "Pyro VI",
+          "name": "Terminus",
+          "star_system_id": 318,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1901,
+          "code": "MIN.PLANETS.MINI",
+          "designation": "Min",
+          "name": "Min I",
+          "star_system_id": 335,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 335,
+            "code": "MIN",
+            "name": "Min",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2405,
+          "code": "MIN.MOON.MIN1A",
+          "designation": "Min 1a",
+          "name": "Min 1a",
+          "star_system_id": 335,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 335,
+            "code": "MIN",
+            "name": "Min",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2623,
+          "code": "MIN.MOONS.MIN1B",
+          "designation": "Min 1b",
+          "name": null,
+          "star_system_id": 335,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 335,
+            "code": "MIN",
+            "name": "Min",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2624,
+          "code": "MIN.MOONS.MIN1c",
+          "designation": "Min 1c",
+          "name": null,
+          "star_system_id": 335,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 335,
+            "code": "MIN",
+            "name": "Min",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2625,
+          "code": "MIN.MOONS.MIN1d",
+          "designation": "Min 1d",
+          "name": null,
+          "star_system_id": 335,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 335,
+            "code": "MIN",
+            "name": "Min",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1823,
+          "code": "ELLIS.JUMPPOINTS.MIN",
+          "designation": "Ellis - Min",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1899,
+          "code": "MIN.JUMPPOINTS.NEXUS",
+          "designation": "Min - Nexus",
+          "name": null,
+          "star_system_id": 335,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 335,
+            "code": "MIN",
+            "name": "Min",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1918,
+          "code": "MIN.JUMPPOINTS.ELLIS",
+          "designation": "Min - Ellis",
+          "name": null,
+          "star_system_id": 335,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 335,
+            "code": "MIN",
+            "name": "Min",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2070,
+          "code": "NEXUS.JUMPPOINTS.MIN",
+          "designation": "Nexus - Min",
+          "name": null,
+          "star_system_id": 357,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 357,
+            "code": "NEXUS",
+            "name": "Nexus",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 10,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

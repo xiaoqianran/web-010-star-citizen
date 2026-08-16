@@ -1,0 +1,61 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2602,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "CHRONOS.STATION.ARCHANGELSTATION",
+        "description": "An orbital station positioned above the Synthworld that houses the scientists and engineers who are attempting to build a planet. This station is also the port of entry for the vast resources needed to continue their project.\n",
+        "designation": "Archangel Station",
+        "distance": 0.00002444,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": null,
+        "longitude": null,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 2448,
+        "sensor_danger": "3",
+        "sensor_economy": "6",
+        "sensor_population": "4",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": null,
+        "subtype_id": 44,
+        "time_modified": "2015-10-08 18:20:05",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [
+          {
+            "id": 1,
+            "code": "uee",
+            "color": "#48bbd4",
+            "name": "UEE",
+            "membership.id": 2091
+          }
+        ],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

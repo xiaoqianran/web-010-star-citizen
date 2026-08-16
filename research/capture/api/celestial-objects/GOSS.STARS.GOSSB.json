@@ -1,0 +1,77 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2058,
+        "age": 99999999.99999999,
+        "appearance": "DEFAULT",
+        "axial_tilt": 0,
+        "code": "GOSS.STARS.GOSSB",
+        "description": null,
+        "designation": "Goss B",
+        "distance": 0.1065,
+        "fairchanceact": false,
+        "habitable": null,
+        "info_url": null,
+        "latitude": 0,
+        "longitude": 69.5348,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": null,
+        "sensor_danger": "0",
+        "sensor_economy": "0",
+        "sensor_population": "0",
+        "shader_data": {
+          "sun": {
+            "color1": "rgb(205,166,77)",
+            "color2": "rgb(205,90,26)",
+            "flare1": 0.265,
+            "flare2": 0.5,
+            "flare3": 0.265,
+            "flare4": 0.5,
+            "flare5": 0.5,
+            "flare6": 0.1,
+            "sphere": 1,
+            "texture": 1,
+            "corona": 1,
+            "glow": 0.5,
+            "alpha": 1,
+            "rotation1": 0.6,
+            "rotation2": 0.6,
+            "map": 0,
+            "iterations": 0,
+            "scaleMin": 1,
+            "scaleMax": 1,
+            "scalePeriod": 1
+          },
+          "radius": 0.075766794398767
+        },
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": 494373,
+        "subtype_id": 60,
+        "time_modified": "2015-10-05 23:13:35",
+        "type": "STAR",
+        "subtype": {
+          "id": 60,
+          "name": "Main Sequence-Dwarf-K",
+          "type": "STAR"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

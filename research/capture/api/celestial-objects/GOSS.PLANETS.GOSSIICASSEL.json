@@ -1,0 +1,70 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2060,
+        "age": 0,
+        "appearance": "PLANET_GREEN",
+        "axial_tilt": 0,
+        "code": "GOSS.PLANETS.GOSSIICASSEL",
+        "description": "Hundreds of millions of tourists from all over the universe come to visit the beautiful coastlines of this biodiverse world.  \n",
+        "designation": "Goss II",
+        "distance": 0.87,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": 0,
+        "longitude": 80,
+        "name": "Cassel",
+        "orbit_period": 378.12,
+        "parent_id": null,
+        "sensor_danger": "3",
+        "sensor_economy": "9",
+        "sensor_population": "7",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": 5625,
+        "subtype_id": 55,
+        "time_modified": "2022-06-24 22:30:35",
+        "type": "PLANET",
+        "subtype": {
+          "id": 55,
+          "name": "Terrestrial Rocky",
+          "type": "PLANET"
+        },
+        "affiliation": [
+          {
+            "id": 1,
+            "code": "uee",
+            "color": "#48bbd4",
+            "name": "UEE",
+            "membership.id": 2867
+          }
+        ],
+        "population": [],
+        "children": [],
+        "texture": {
+          "slug": "8c99m3v6sfl24",
+          "source": "https://robertsspaceindustries.com/media/8c99m3v6sfl24r/source/Planet_Ocean.jpg",
+          "images": {
+            "post": "https://robertsspaceindustries.com/media/8c99m3v6sfl24r/post/Planet_Ocean.jpg",
+            "product_thumb_large": "https://robertsspaceindustries.com/media/8c99m3v6sfl24r/product_thumb_large/Planet_Ocean.jpg",
+            "subscribers_vault_thumbnail": "https://robertsspaceindustries.com/media/8c99m3v6sfl24r/subscribers_vault_thumbnail/Planet_Ocean.jpg"
+          }
+        }
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

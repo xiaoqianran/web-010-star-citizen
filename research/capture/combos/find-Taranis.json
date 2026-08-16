@@ -1,0 +1,292 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 321,
+          "code": "TARANIS",
+          "name": "Taranis",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 17,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1783,
+          "code": "TARANIS.STARS.TARANIS",
+          "designation": "Taranis",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1784,
+          "code": "TARANIS.PLANETS.TARANISI",
+          "designation": "Taranis I",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1786,
+          "code": "TARANIS.PLANETS.TARANISII",
+          "designation": "Taranis II",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1787,
+          "code": "TARANIS.PLANETS.TARANISIII",
+          "designation": "Taranis III",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1788,
+          "code": "TARANIS.PLANETS.TARANISIV",
+          "designation": "Taranis IV",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2771,
+          "code": "TARANIS.MOONS.BROKENMOON",
+          "designation": "Taranis 2a",
+          "name": "Broken Moon",
+          "star_system_id": 321,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1785,
+          "code": "TARANIS.BELTS.INNERASTEROIDBELT",
+          "designation": "Taranis Belt Alpha",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1789,
+          "code": "TARANIS.BELTS.BETABELT",
+          "designation": "Taranis Belt Beta",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2772,
+          "code": "TARANIS.ASTEROIDS.DEBRIS",
+          "designation": "Taranis 2a Debris",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1729,
+          "code": "TERRA.JUMPPOINTS.TARANIS",
+          "designation": "Terra - Taranis",
+          "name": null,
+          "star_system_id": 316,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 316,
+            "code": "TERRA",
+            "name": "Terra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1779,
+          "code": "TARANIS.JUMPPOINTS.ELLIS",
+          "designation": "Taranis - Ellis",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1780,
+          "code": "TARANIS.JUMPPOINTS.GENESIS",
+          "designation": "Taranis - Genesis",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1790,
+          "code": "TARANIS.JUMPPOINTS.TERRA",
+          "designation": "Taranis - Terra",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1791,
+          "code": "TARANIS.JUMPPOINTS.HELIOS",
+          "designation": "Taranis - Helios",
+          "name": null,
+          "star_system_id": 321,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 321,
+            "code": "TARANIS",
+            "name": "Taranis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1824,
+          "code": "ELLIS.JUMPPOINTS.TARANIS",
+          "designation": "Ellis - Taranis",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1835,
+          "code": "HELIOS.JUMPPOINTS.TARANIS",
+          "designation": "Helios - Taranis",
+          "name": null,
+          "star_system_id": 325,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 325,
+            "code": "HELIOS",
+            "name": "Helios",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2363,
+          "code": "GENESIS.JUMPPOINTS.TARANIS",
+          "designation": "Genesis - Taranis",
+          "name": null,
+          "star_system_id": 414,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 414,
+            "code": "GENESIS",
+            "name": "Genesis",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 17,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

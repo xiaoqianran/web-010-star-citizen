@@ -1,0 +1,68 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2597,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "GLIESE.STATION.GLIESEFLOTILLA",
+        "description": "A collection of stations and permanently docked ships believed to have been established after the Banu abandoned Gliese IV. It has become the main hub of business and trade in Gliese, servicing the many miners, haulers, and travelers who move through the system.",
+        "designation": "Gliese Flotilla",
+        "distance": 0.000578,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": null,
+        "longitude": null,
+        "name": "Lyris",
+        "orbit_period": null,
+        "parent_id": 2667,
+        "sensor_danger": "5",
+        "sensor_economy": "5",
+        "sensor_population": "4",
+        "shader_data": {
+          "orbitalMin": 1,
+          "orbitalMax": 5,
+          "orbitalFactor": 1,
+          "orbitalColor": "rgb(26,86,124)",
+          "orbitalHighlightColor": "rgb(128,128,255)",
+          "radius": 0.02
+        },
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": null,
+        "subtype_id": 44,
+        "time_modified": "2017-05-22 23:37:08",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [
+          {
+            "id": 2,
+            "code": "BANU",
+            "color": "#ffce17",
+            "name": "Banu",
+            "membership.id": 2732
+          }
+        ],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 344,
+          "code": "KILIAN",
+          "name": "Kilian",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 21,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1956,
+          "code": "KILIAN.STARS.KILIAN",
+          "designation": "Kilian",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1957,
+          "code": "KILIAN.PLANETS.KILLIANIFIRSTSISTER",
+          "designation": "Kilian I",
+          "name": "First Sister",
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1958,
+          "code": "KILIAN.PLANETS.KILLIANIISECONDSISTER",
+          "designation": "Kilian II",
+          "name": "Second Sister",
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1959,
+          "code": "KILIAN.PLANETS.KILLIANIIITHIRDSISTER",
+          "designation": "Kilian III",
+          "name": "Third Sister",
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1960,
+          "code": "KILIAN.PLANETS.KILLIANIVMAGMA",
+          "designation": "Kilian IV",
+          "name": "Magma",
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1961,
+          "code": "KILIAN.PLANETS.KILLIANVMACARTHUR",
+          "designation": "Kilian V",
+          "name": "MacArthur",
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1962,
+          "code": "KILIAN.PLANETS.KILLIANVIOSHA",
+          "designation": "Kilian VI",
+          "name": "Osha",
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1963,
+          "code": "KILIAN.PLANETS.KILLIANVIIKEENE",
+          "designation": "Kilian VII",
+          "name": "Keene",
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1964,
+          "code": "KILIAN.PLANETS.KILLIANVIII",
+          "designation": "Kilian VIII",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1965,
+          "code": "KILIAN.PLANETS.KILLIANIXCORIN",
+          "designation": "Kilian IX",
+          "name": "Corin",
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1966,
+          "code": "KILIAN.PLANETS.KILLIANX",
+          "designation": "Kilian X",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1967,
+          "code": "KILIAN.PLANETS.KILLIANXI",
+          "designation": "Kilian XI",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1968,
+          "code": "KILIAN.PLANETS.KILLIANXII",
+          "designation": "Kilian XII",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1969,
+          "code": "KILIAN.PLANETS.KILLIANXIII",
+          "designation": "Kilian XIII",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1970,
+          "code": "KILIAN.PLANETS.KILLIANXIV",
+          "designation": "Kilian XIV",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1804,
+          "code": "ELLIS.JUMPPOINTS.KILIAN",
+          "designation": "Ellis - Kilian",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1898,
+          "code": "CATHCART.JUMPPOINTS.KILIAN",
+          "designation": "Cathcart - Kilian",
+          "name": null,
+          "star_system_id": 372,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 372,
+            "code": "CATHCART",
+            "name": "Cathcart",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1928,
+          "code": "DAVIEN.JUMPPOINTS.KILIAN",
+          "designation": "Davien - Kilian",
+          "name": null,
+          "star_system_id": 340,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 340,
+            "code": "DAVIEN",
+            "name": "Davien",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1953,
+          "code": "KILIAN.JUMPPOINTS.ELLIS",
+          "designation": "Kilian - Ellis",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1954,
+          "code": "KILIAN.JUMPPOINTS.DAVIEN",
+          "designation": "Kilian - Davien",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1955,
+          "code": "KILIAN.JUMPPOINTS.CATHCART",
+          "designation": "Kilian - Cathcart",
+          "name": null,
+          "star_system_id": 344,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 344,
+            "code": "KILIAN",
+            "name": "Kilian",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 21,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

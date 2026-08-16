@@ -1,0 +1,2432 @@
+{
+  "AYR'KA.JUMPPOINTS.INDRA": {
+    "id": 2269,
+    "system": "AYR'KA",
+    "code": "AYR'KA.JUMPPOINTS.INDRA",
+    "designation": "Ail'ka - Kyuk'ya (Indra)",
+    "distance": 33,
+    "latitude": -57.0037,
+    "longitude": 137.8629
+  },
+  "AYR'KA.JUMPPOINTS.HADUR": {
+    "id": 2270,
+    "system": "AYR'KA",
+    "code": "AYR'KA.JUMPPOINTS.HADUR",
+    "designation": "Ail'ka - Yā'mon (Hadur)",
+    "distance": 45,
+    "latitude": -175.1733,
+    "longitude": -81.2263
+  },
+  "AILKA.JUMPPOINT.TAL": {
+    "id": 2833,
+    "system": "AILKA",
+    "code": "AILKA.JUMPPOINT.TAL",
+    "designation": "Ail'ka - T.āl",
+    "distance": 8,
+    "latitude": 120,
+    "longitude": 1
+  },
+  "BACCHUS.JUMPPOINT.GARRON": {
+    "id": 2205,
+    "system": "BACCHUS",
+    "code": "BACCHUS.JUMPPOINT.GARRON",
+    "designation": "Bacchus - Garron",
+    "distance": 4.8,
+    "latitude": 15,
+    "longitude": 107.66
+  },
+  "BACCHUS.JUMPPOINTS.GEDDON": {
+    "id": 2206,
+    "system": "BACCHUS",
+    "code": "BACCHUS.JUMPPOINTS.GEDDON",
+    "designation": "Bacchus - Geddon",
+    "distance": 5.2,
+    "latitude": -1,
+    "longitude": -163.247
+  },
+  "BACCHUS.JUMPPOINT.DAVIEN": {
+    "id": 2840,
+    "system": "BACCHUS",
+    "code": "BACCHUS.JUMPPOINT.DAVIEN",
+    "designation": "Bacchus - Davien",
+    "distance": 4,
+    "latitude": 79,
+    "longitude": -107.66
+  },
+  "BAKER.JUMPPOINTS.TAYAC": {
+    "id": 1943,
+    "system": "BAKER",
+    "code": "BAKER.JUMPPOINTS.TAYAC",
+    "designation": "Baker - Tayac",
+    "distance": 2.154,
+    "latitude": -12.5648,
+    "longitude": -108.696
+  },
+  "BAKER.JUMPPOINTS.KIEL": {
+    "id": 1944,
+    "system": "BAKER",
+    "code": "BAKER.JUMPPOINTS.KIEL",
+    "designation": "Baker - Kiel",
+    "distance": 7.1558,
+    "latitude": -22,
+    "longitude": -12
+  },
+  "BAKER.JUMPPOINTS.HADUR": {
+    "id": 1945,
+    "system": "BAKER",
+    "code": "BAKER.JUMPPOINTS.HADUR",
+    "designation": "Baker - Yā'mon (Hadur)",
+    "distance": 6,
+    "latitude": 18.9724,
+    "longitude": 96.9105
+  },
+  "BAKER.JUMPPOINTS.OSIRIS": {
+    "id": 1946,
+    "system": "BAKER",
+    "code": "BAKER.JUMPPOINTS.OSIRIS",
+    "designation": "Baker - Osiris",
+    "distance": 1,
+    "latitude": 14,
+    "longitude": 172
+  },
+  "BAKER.JUMPPOINTS.PALLAS": {
+    "id": 1947,
+    "system": "BAKER",
+    "code": "BAKER.JUMPPOINTS.PALLAS",
+    "designation": "Baker - Th.us'ūng (Pallas)",
+    "distance": 4,
+    "latitude": 28,
+    "longitude": -147
+  },
+  "BANSHEE.JUMPPOINTS.FORA": {
+    "id": 1978,
+    "system": "BANSHEE",
+    "code": "BANSHEE.JUMPPOINTS.FORA",
+    "designation": "Banshee - Fora",
+    "distance": 4,
+    "latitude": -6.2186,
+    "longitude": 112.518
+  },
+  "BANSHEE.JUMPPOINTS.YULIN": {
+    "id": 1979,
+    "system": "BANSHEE",
+    "code": "BANSHEE.JUMPPOINTS.YULIN",
+    "designation": "Banshee - Yulin",
+    "distance": 2.9,
+    "latitude": 35,
+    "longitude": -86
+  },
+  "BANSHEE.JUMPPOINTS.LEIR": {
+    "id": 1980,
+    "system": "BANSHEE",
+    "code": "BANSHEE.JUMPPOINTS.LEIR",
+    "designation": "Banshee - Leir",
+    "distance": 6,
+    "latitude": -14.95359,
+    "longitude": -13.1248
+  },
+  "BANSHEE.JUMPPOINTS.GARRON": {
+    "id": 1982,
+    "system": "BANSHEE",
+    "code": "BANSHEE.JUMPPOINTS.GARRON",
+    "designation": "Banshee - Garron",
+    "distance": 4,
+    "latitude": 21,
+    "longitude": -16
+  },
+  "BANSHEE.JUMPPOINTS.TAMSA": {
+    "id": 2660,
+    "system": "BANSHEE",
+    "code": "BANSHEE.JUMPPOINTS.TAMSA",
+    "designation": "Banshee - Tamsa",
+    "distance": 9.8,
+    "latitude": 48,
+    "longitude": -21
+  },
+  "BRANAUGH.JUMPPOINTS.CHRONOS": {
+    "id": 2370,
+    "system": "BRANAUGH",
+    "code": "BRANAUGH.JUMPPOINTS.CHRONOS",
+    "designation": "Branaugh - Chronos",
+    "distance": 1,
+    "latitude": 13.3456,
+    "longitude": 81
+  },
+  "BREMEN.JUMPPOINTS.VEGA": {
+    "id": 1872,
+    "system": "BREMEN",
+    "code": "BREMEN.JUMPPOINTS.VEGA",
+    "designation": "Bremen - Vega",
+    "distance": 1,
+    "latitude": -0.8384,
+    "longitude": -129.395
+  },
+  "BREMEN.JUMPPOINTS.KALLIS": {
+    "id": 1873,
+    "system": "BREMEN",
+    "code": "BREMEN.JUMPPOINTS.KALLIS",
+    "designation": "Bremen - Kallis",
+    "distance": 1,
+    "latitude": -16.1451,
+    "longitude": 127.029
+  },
+  "BREMEN.JUMPPOINTS.NYX": {
+    "id": 1874,
+    "system": "BREMEN",
+    "code": "BREMEN.JUMPPOINTS.NYX",
+    "designation": "Bremen - Nyx",
+    "distance": 1,
+    "latitude": 14.1577,
+    "longitude": 14.3556
+  },
+  "BREMEN.JUMPPOINTS.TANGA": {
+    "id": 2715,
+    "system": "BREMEN",
+    "code": "BREMEN.JUMPPOINTS.TANGA",
+    "designation": "Bremen - Tanga",
+    "distance": 3.16,
+    "latitude": -5.06,
+    "longitude": 34.79
+  },
+  "CALIBAN.JUMPPOINTS.NUL": {
+    "id": 1922,
+    "system": "CALIBAN",
+    "code": "CALIBAN.JUMPPOINTS.NUL",
+    "designation": "Caliban - Nul",
+    "distance": 1,
+    "latitude": -20.1651,
+    "longitude": 157.603
+  },
+  "CALIBAN.JUMPPOINTS.VIKING": {
+    "id": 1923,
+    "system": "CALIBAN",
+    "code": "CALIBAN.JUMPPOINTS.VIKING",
+    "designation": "Caliban - Viking",
+    "distance": 1,
+    "latitude": -2.8618,
+    "longitude": 155
+  },
+  "CALIBAN.JUMPPOINTS.ORION": {
+    "id": 1924,
+    "system": "CALIBAN",
+    "code": "CALIBAN.JUMPPOINTS.ORION",
+    "designation": "Caliban - Orion",
+    "distance": 1,
+    "latitude": 2.2561,
+    "longitude": -30.3134
+  },
+  "CALIBAN.JUMPPOINTS.OBERON": {
+    "id": 1926,
+    "system": "CALIBAN",
+    "code": "CALIBAN.JUMPPOINTS.OBERON",
+    "designation": "Caliban - Oberon",
+    "distance": 1,
+    "latitude": 48,
+    "longitude": -85
+  },
+  "CANO.JUMPPOINTS.PYRO": {
+    "id": 2703,
+    "system": "CANO",
+    "code": "CANO.JUMPPOINTS.PYRO",
+    "designation": "Cano - Pyro",
+    "distance": 3,
+    "latitude": 15,
+    "longitude": 270
+  },
+  "CANO.JUMPPOINTS.DAVIEN": {
+    "id": 2705,
+    "system": "CANO",
+    "code": "CANO.JUMPPOINTS.DAVIEN",
+    "designation": "Cano - Davien",
+    "distance": 2.6,
+    "latitude": -8,
+    "longitude": 26
+  },
+  "CASTRA.JUMPPOINTS.PYRO": {
+    "id": 1906,
+    "system": "CASTRA",
+    "code": "CASTRA.JUMPPOINTS.PYRO",
+    "designation": "Castra - Pyro",
+    "distance": 22,
+    "latitude": -13.9843,
+    "longitude": -58.2409
+  },
+  "CASTRA.JUMPPOINTS.OYA": {
+    "id": 1907,
+    "system": "CASTRA",
+    "code": "CASTRA.JUMPPOINTS.OYA",
+    "designation": "Castra - Oya",
+    "distance": 22,
+    "latitude": -4.3947,
+    "longitude": -104.875
+  },
+  "CASTRA.JUMPPOINTS.HADRIAN": {
+    "id": 1908,
+    "system": "CASTRA",
+    "code": "CASTRA.JUMPPOINTS.HADRIAN",
+    "designation": "Castra - Hadrian",
+    "distance": 14,
+    "latitude": 3.8841,
+    "longitude": 163.978
+  },
+  "CASTRA.JUMPPOINTS.NYX": {
+    "id": 1909,
+    "system": "CASTRA",
+    "code": "CASTRA.JUMPPOINTS.NYX",
+    "designation": "Castra - Nyx",
+    "distance": 8,
+    "latitude": -15.0584,
+    "longitude": 127.762
+  },
+  "CASTRA.JUMPPOINTS.OSO": {
+    "id": 1910,
+    "system": "CASTRA",
+    "code": "CASTRA.JUMPPOINTS.OSO",
+    "designation": "Castra - Oso",
+    "distance": 18,
+    "latitude": 7.0957,
+    "longitude": 75.9813
+  },
+  "CATHCART.JUMPPOINTS.KILIAN": {
+    "id": 1898,
+    "system": "CATHCART",
+    "code": "CATHCART.JUMPPOINTS.KILIAN",
+    "designation": "Cathcart - Kilian",
+    "distance": 8,
+    "latitude": 15.0229,
+    "longitude": -97.7838
+  },
+  "CATHCART.JUMPPOINTS.DAVIEN": {
+    "id": 1900,
+    "system": "CATHCART",
+    "code": "CATHCART.JUMPPOINTS.DAVIEN",
+    "designation": "Cathcart - Davien",
+    "distance": 5,
+    "latitude": -7.12263,
+    "longitude": 152.621
+  },
+  "CATHCART.JUMPPOINTS.HADES": {
+    "id": 2152,
+    "system": "CATHCART",
+    "code": "CATHCART.JUMPPOINTS.HADES",
+    "designation": "Cathcart - Hades",
+    "distance": 22,
+    "latitude": 38.3327,
+    "longitude": 130.902
+  },
+  "CATHCART.JUMPPOINTS.NEXUS": {
+    "id": 2153,
+    "system": "CATHCART",
+    "code": "CATHCART.JUMPPOINTS.NEXUS",
+    "designation": "Cathcart - Nexus",
+    "distance": 12,
+    "latitude": -2.0411,
+    "longitude": 111.817
+  },
+  "CENTAURI.JUMPPOINTS.ELYSIUM": {
+    "id": 2097,
+    "system": "CENTAURI",
+    "code": "CENTAURI.JUMPPOINTS.ELYSIUM",
+    "designation": "Centauri - Elysium",
+    "distance": 1,
+    "latitude": -7.5456,
+    "longitude": 89.1825
+  },
+  "CENTAURI.JUMPPOINTS.NUL": {
+    "id": 2099,
+    "system": "CENTAURI",
+    "code": "CENTAURI.JUMPPOINTS.NUL",
+    "designation": "Centauri - Nul",
+    "distance": 1,
+    "latitude": -39.8785,
+    "longitude": -114.193
+  },
+  "CHARON.JUMPPOINTS.TYROL": {
+    "id": 2315,
+    "system": "CHARON",
+    "code": "CHARON.JUMPPOINTS.TYROL",
+    "designation": "Charon - Tyrol",
+    "distance": 1,
+    "latitude": 7.12263,
+    "longitude": -27.3789
+  },
+  "CHARON.JUMPPOINTS.HELIOS": {
+    "id": 2317,
+    "system": "CHARON",
+    "code": "CHARON.JUMPPOINTS.HELIOS",
+    "designation": "Charon - Helios",
+    "distance": 1,
+    "latitude": -21.2287,
+    "longitude": 154.595
+  },
+  "CHARON.JUMPPOINTS.GENESIS": {
+    "id": 2318,
+    "system": "CHARON",
+    "code": "CHARON.JUMPPOINTS.GENESIS",
+    "designation": "Charon - Genesis",
+    "distance": 1,
+    "latitude": 1.12263,
+    "longitude": 16.3789
+  },
+  "CHARON.JUMPPOINTS.KINS": {
+    "id": 2319,
+    "system": "CHARON",
+    "code": "CHARON.JUMPPOINTS.KINS",
+    "designation": "Charon - Kins",
+    "distance": 1,
+    "latitude": 14.2287,
+    "longitude": -154.595
+  },
+  "CHRONOS.JUMPPOINTS.KELLOG": {
+    "id": 1894,
+    "system": "CHRONOS",
+    "code": "CHRONOS.JUMPPOINTS.KELLOG",
+    "designation": "Chronos - Kellog",
+    "distance": 1,
+    "latitude": 5.397,
+    "longitude": 57.0215
+  },
+  "CHRONOS.JUMPPOINTS.BRANAUGH": {
+    "id": 1895,
+    "system": "CHRONOS",
+    "code": "CHRONOS.JUMPPOINTS.BRANAUGH",
+    "designation": "Chronos - Branaugh",
+    "distance": 1,
+    "latitude": -13.3456,
+    "longitude": -54.0598
+  },
+  "COREL.JUMPPOINTS.GENESIS": {
+    "id": 2142,
+    "system": "COREL",
+    "code": "COREL.JUMPPOINTS.GENESIS",
+    "designation": "Corel - Genesis",
+    "distance": 1,
+    "latitude": -2.01163,
+    "longitude": -159.757
+  },
+  "COREL.JUMPPOINTS.GEDDON": {
+    "id": 2143,
+    "system": "COREL",
+    "code": "COREL.JUMPPOINTS.GEDDON",
+    "designation": "Corel - Geddon",
+    "distance": 1,
+    "latitude": -18.3182,
+    "longitude": 106.031
+  },
+  "COREL.JUMPPOINTS.NEMO": {
+    "id": 2144,
+    "system": "COREL",
+    "code": "COREL.JUMPPOINTS.NEMO",
+    "designation": "Corel - Nemo",
+    "distance": 1,
+    "latitude": 6,
+    "longitude": -7.7977
+  },
+  "CROSHAW.JUMPPOINTS.SOL": {
+    "id": 2129,
+    "system": "CROSHAW",
+    "code": "CROSHAW.JUMPPOINTS.SOL",
+    "designation": "Croshaw - Sol",
+    "distance": 39.6,
+    "latitude": 2.19421,
+    "longitude": -132.782
+  },
+  "CROSHAW.JUMPPOINTS.FERRON": {
+    "id": 2130,
+    "system": "CROSHAW",
+    "code": "CROSHAW.JUMPPOINTS.FERRON",
+    "designation": "Croshaw - Ferron",
+    "distance": 8,
+    "latitude": 21.0605,
+    "longitude": 156.789
+  },
+  "CROSHAW.JUMPPOINTS.RHETOR": {
+    "id": 2131,
+    "system": "CROSHAW",
+    "code": "CROSHAW.JUMPPOINTS.RHETOR",
+    "designation": "Croshaw - Rhetor",
+    "distance": 8,
+    "latitude": 38.6959,
+    "longitude": 10.326
+  },
+  "CROSHAW.JUMPPOINTS.NUL": {
+    "id": 2132,
+    "system": "CROSHAW",
+    "code": "CROSHAW.JUMPPOINTS.NUL",
+    "designation": "Croshaw - Nul",
+    "distance": 3,
+    "latitude": -6.33525,
+    "longitude": -26.6764
+  },
+  "DAVIEN.JUMPPOINTS.KILIAN": {
+    "id": 1928,
+    "system": "DAVIEN",
+    "code": "DAVIEN.JUMPPOINTS.KILIAN",
+    "designation": "Davien - Kilian",
+    "distance": 17,
+    "latitude": -1.0605,
+    "longitude": -23.2108
+  },
+  "DAVIEN.JUMPPOINTS.FERRON": {
+    "id": 1930,
+    "system": "DAVIEN",
+    "code": "DAVIEN.JUMPPOINTS.FERRON",
+    "designation": "Davien - Ferron",
+    "distance": 2,
+    "latitude": 31.6079,
+    "longitude": 57.353
+  },
+  "DAVIEN.JUMPPOINTS.SOL": {
+    "id": 1938,
+    "system": "DAVIEN",
+    "code": "DAVIEN.JUMPPOINTS.SOL",
+    "designation": "Davien - Sol",
+    "distance": 17,
+    "latitude": 11,
+    "longitude": -80
+  },
+  "DAVIEN.JUMPPOINTS.CATHCART": {
+    "id": 1939,
+    "system": "DAVIEN",
+    "code": "DAVIEN.JUMPPOINTS.CATHCART",
+    "designation": "Davien - Cathcart",
+    "distance": 6.57,
+    "latitude": 2,
+    "longitude": 163.211
+  },
+  "DAVIEN.JUMPPOINTS.CANO": {
+    "id": 2706,
+    "system": "DAVIEN",
+    "code": "DAVIEN.JUMPPOINTS.CANO",
+    "designation": "Davien - Cano",
+    "distance": 2.88,
+    "latitude": 13,
+    "longitude": 233
+  },
+  "DAVIEN.JUMPPOINT.BACCHUS": {
+    "id": 2841,
+    "system": "DAVIEN",
+    "code": "DAVIEN.JUMPPOINT.BACCHUS",
+    "designation": "Davien - Bacchus",
+    "distance": 6,
+    "latitude": 5,
+    "longitude": -98
+  },
+  "EEALUS.JUMPPOINTS.TRISE": {
+    "id": 2225,
+    "system": "EEALUS",
+    "code": "EEALUS.JUMPPOINTS.TRISE",
+    "designation": "Ē'aluth (Eealus) - Trise",
+    "distance": 1,
+    "latitude": 15.2723,
+    "longitude": -23.4344
+  },
+  "EEALUS.JUMPPOINTS.VIRTUS": {
+    "id": 2226,
+    "system": "EEALUS",
+    "code": "EEALUS.JUMPPOINTS.VIRTUS",
+    "designation": "Ē'aluth (Eealus) - La'uo (Virtus)",
+    "distance": 3.333,
+    "latitude": -33.8599,
+    "longitude": 58.836
+  },
+  "EEALUS.JUMPPOINTS.OYA": {
+    "id": 2227,
+    "system": "EEALUS",
+    "code": "EEALUS.JUMPPOINTS.OYA",
+    "designation": "Ē'aluth (Eealus) - Oya",
+    "distance": 1,
+    "latitude": -4.4031,
+    "longitude": 106.635
+  },
+  "EEALUS.JUMPPOINTS.RIHLAH": {
+    "id": 2229,
+    "system": "EEALUS",
+    "code": "EEALUS.JUMPPOINTS.RIHLAH",
+    "designation": "Ē'aluth (Eealus) - R.il'a (Rihlah)",
+    "distance": 1,
+    "latitude": -12.1299,
+    "longitude": 164.739
+  },
+  "ELLIS.JUMPPOINTS.KILIAN": {
+    "id": 1804,
+    "system": "ELLIS",
+    "code": "ELLIS.JUMPPOINTS.KILIAN",
+    "designation": "Ellis - Kilian",
+    "distance": 5,
+    "latitude": 14,
+    "longitude": 142
+  },
+  "ELLIS.JUMPPOINTS.NEXUS": {
+    "id": 1805,
+    "system": "ELLIS",
+    "code": "ELLIS.JUMPPOINTS.NEXUS",
+    "designation": "Ellis - Nexus",
+    "distance": 98,
+    "latitude": -32,
+    "longitude": 35.6691
+  },
+  "ELLIS.JUMPPOINTS.MAGNUS": {
+    "id": 1822,
+    "system": "ELLIS",
+    "code": "ELLIS.JUMPPOINTS.MAGNUS",
+    "designation": "Ellis - Magnus",
+    "distance": 2,
+    "latitude": 60,
+    "longitude": 45
+  },
+  "ELLIS.JUMPPOINTS.MIN": {
+    "id": 1823,
+    "system": "ELLIS",
+    "code": "ELLIS.JUMPPOINTS.MIN",
+    "designation": "Ellis - Min",
+    "distance": 0.74,
+    "latitude": 120,
+    "longitude": -38
+  },
+  "ELLIS.JUMPPOINTS.TARANIS": {
+    "id": 1824,
+    "system": "ELLIS",
+    "code": "ELLIS.JUMPPOINTS.TARANIS",
+    "designation": "Ellis - Taranis",
+    "distance": 101,
+    "latitude": 13,
+    "longitude": -144
+  },
+  "ELYSIUM.JUMPPOINTS.LEIR": {
+    "id": 2101,
+    "system": "ELYSIUM",
+    "code": "ELYSIUM.JUMPPOINTS.LEIR",
+    "designation": "Elysium - Leir",
+    "distance": 1,
+    "latitude": -10.9714,
+    "longitude": -128.857
+  },
+  "ELYSIUM.JUMPPOINTS.VANGUARD": {
+    "id": 2102,
+    "system": "ELYSIUM",
+    "code": "ELYSIUM.JUMPPOINTS.VANGUARD",
+    "designation": "Elysium - Vanguard",
+    "distance": 1,
+    "latitude": 5.6696,
+    "longitude": 5.9709
+  },
+  "ELYSIUM.JUMPPOINTS.CENTAURI": {
+    "id": 2103,
+    "system": "ELYSIUM",
+    "code": "ELYSIUM.JUMPPOINTS.CENTAURI",
+    "designation": "Elysium - Centauri",
+    "distance": 1,
+    "latitude": 21.5456,
+    "longitude": -90.8175
+  },
+  "ELYSIUM.JUMPPOINTS.IDRIS": {
+    "id": 2104,
+    "system": "ELYSIUM",
+    "code": "ELYSIUM.JUMPPOINTS.IDRIS",
+    "designation": "Elysium - Idris",
+    "distance": 1,
+    "latitude": 7.7898,
+    "longitude": 113.356
+  },
+  "FERRON.JUMPPOINTS.DAVIEN": {
+    "id": 2119,
+    "system": "FERRON",
+    "code": "FERRON.JUMPPOINTS.DAVIEN",
+    "designation": "Ferron - Davien",
+    "distance": 1,
+    "latitude": 21.6079,
+    "longitude": -122.647
+  },
+  "FERRON.JUMPPOINTS.IDRIS": {
+    "id": 2120,
+    "system": "FERRON",
+    "code": "FERRON.JUMPPOINTS.IDRIS",
+    "designation": "Ferron - Idris",
+    "distance": 1,
+    "latitude": -10.6787,
+    "longitude": -10.9418
+  },
+  "FERRON.JUMPPOINTS.CROSHAW": {
+    "id": 2122,
+    "system": "FERRON",
+    "code": "FERRON.JUMPPOINTS.CROSHAW",
+    "designation": "Ferron - Croshaw",
+    "distance": 1,
+    "latitude": -31,
+    "longitude": 167
+  },
+  "FORA.JUMPPOINTS.RHETOR": {
+    "id": 1856,
+    "system": "FORA",
+    "code": "FORA.JUMPPOINTS.RHETOR",
+    "designation": "Fora - Rhetor",
+    "distance": 3.25,
+    "latitude": 5.279,
+    "longitude": 19.2975
+  },
+  "FORA.JUMPPOINTS.NEMO": {
+    "id": 1858,
+    "system": "FORA",
+    "code": "FORA.JUMPPOINTS.NEMO",
+    "designation": "Fora - Nemo",
+    "distance": 8.5,
+    "latitude": 36.1469,
+    "longitude": -121.629
+  },
+  "FORA.JUMPPOINTS.BANSHEE": {
+    "id": 1859,
+    "system": "FORA",
+    "code": "FORA.JUMPPOINTS.BANSHEE",
+    "designation": "Fora - Banshee",
+    "distance": 14,
+    "latitude": 16.2186,
+    "longitude": -67.4815
+  },
+  "GARRON.JUMPPOINTS.IDRIS": {
+    "id": 2347,
+    "system": "GARRON",
+    "code": "GARRON.JUMPPOINTS.IDRIS",
+    "designation": "Garron - Idris",
+    "distance": 1,
+    "latitude": 4.3142,
+    "longitude": -122.927
+  },
+  "GARRON.JUMPPOINTS.LEIR": {
+    "id": 2348,
+    "system": "GARRON",
+    "code": "GARRON.JUMPPOINTS.LEIR",
+    "designation": "Garron - Leir",
+    "distance": 1,
+    "latitude": 16.1591,
+    "longitude": 108.309
+  },
+  "GARRON.JUMPPOINTS.BANSHEE": {
+    "id": 2349,
+    "system": "GARRON",
+    "code": "GARRON.JUMPPOINTS.BANSHEE",
+    "designation": "Garron - Banshee",
+    "distance": 1,
+    "latitude": 31.3682,
+    "longitude": -35.413
+  },
+  "GARRON.JUMPPOINTS.BACCHUS": {
+    "id": 2350,
+    "system": "GARRON",
+    "code": "GARRON.JUMPPOINTS.BACCHUS",
+    "designation": "Garron - Bacchus",
+    "distance": 1,
+    "latitude": -24.3142,
+    "longitude": 14.927
+  },
+  "GEDDON.JUMPPOINTS.COREL": {
+    "id": 2233,
+    "system": "GEDDON",
+    "code": "GEDDON.JUMPPOINTS.COREL",
+    "designation": "Geddon - Corel",
+    "distance": 99,
+    "latitude": -18.3182,
+    "longitude": -73.9692
+  },
+  "GEDDON.JUMPPOINTS.GLIESE": {
+    "id": 2234,
+    "system": "GEDDON",
+    "code": "GEDDON.JUMPPOINTS.GLIESE",
+    "designation": "Geddon - Gliese",
+    "distance": 79,
+    "latitude": 7.0944,
+    "longitude": 175.473
+  },
+  "GEDDON.JUMPPOINTS.BACCHUS": {
+    "id": 2235,
+    "system": "GEDDON",
+    "code": "GEDDON.JUMPPOINTS.BACCHUS",
+    "designation": "Geddon - Bacchus",
+    "distance": 22,
+    "latitude": 40.7496,
+    "longitude": 40.753
+  },
+  "GENESIS.JUMPPOINTS.CHARON": {
+    "id": 2360,
+    "system": "GENESIS",
+    "code": "GENESIS.JUMPPOINTS.CHARON",
+    "designation": "Genesis - Charon",
+    "distance": 1,
+    "latitude": -10.828,
+    "longitude": -61.2612
+  },
+  "GENESIS.JUMPPOINTS.COREL": {
+    "id": 2361,
+    "system": "GENESIS",
+    "code": "GENESIS.JUMPPOINTS.COREL",
+    "designation": "Genesis - Corel",
+    "distance": 1,
+    "latitude": 2.01163,
+    "longitude": 20.2429
+  },
+  "GENESIS.JUMPPOINTS.TARANIS": {
+    "id": 2363,
+    "system": "GENESIS",
+    "code": "GENESIS.JUMPPOINTS.TARANIS",
+    "designation": "Genesis - Taranis",
+    "distance": 1,
+    "latitude": -39.1588,
+    "longitude": 108.757
+  },
+  "GLIESE.JUMPPOINTS.GEDDON": {
+    "id": 2279,
+    "system": "GLIESE",
+    "code": "GLIESE.JUMPPOINTS.GEDDON",
+    "designation": "Gliese - Geddon",
+    "distance": 1,
+    "latitude": -37.0944,
+    "longitude": -104.527
+  },
+  "GOSS.JUMPPOINTS.OSIRIS": {
+    "id": 2054,
+    "system": "GOSS",
+    "code": "GOSS.JUMPPOINTS.OSIRIS",
+    "designation": "Goss - Osiris",
+    "distance": 3,
+    "latitude": 20.6627,
+    "longitude": -45.9825
+  },
+  "GOSS.JUMPPOINTS.TAYAC": {
+    "id": 2055,
+    "system": "GOSS",
+    "code": "GOSS.JUMPPOINTS.TAYAC",
+    "designation": "Goss - Tayac",
+    "distance": 6,
+    "latitude": -18.6919,
+    "longitude": -142.807
+  },
+  "GOSS.JUMPPOINTS.TERRA": {
+    "id": 2056,
+    "system": "GOSS",
+    "code": "GOSS.JUMPPOINTS.TERRA",
+    "designation": "Goss - Terra",
+    "distance": 5,
+    "latitude": -15.8886,
+    "longitude": 28.0646
+  },
+  "GOSS.JUMPPOINTS.HELIOS": {
+    "id": 2065,
+    "system": "GOSS",
+    "code": "GOSS.JUMPPOINTS.HELIOS",
+    "designation": "Goss - Helios",
+    "distance": 5,
+    "latitude": 2.8886,
+    "longitude": 156.0646
+  },
+  "GOSS.JUMPPOINTS.TYROL": {
+    "id": 2066,
+    "system": "GOSS",
+    "code": "GOSS.JUMPPOINTS.TYROL",
+    "designation": "Goss - Tyrol",
+    "distance": 4,
+    "latitude": -32.8886,
+    "longitude": 54.0646
+  },
+  "GURZIL.JUMPPOINTS.OYA": {
+    "id": 2321,
+    "system": "GURZIL",
+    "code": "GURZIL.JUMPPOINTS.OYA",
+    "designation": "Gurzil - Oya",
+    "distance": 4.2,
+    "latitude": -36.0649,
+    "longitude": -38.3015
+  },
+  "GURZIL.JUMPPOINTS.RIHLAH": {
+    "id": 2322,
+    "system": "GURZIL",
+    "code": "GURZIL.JUMPPOINTS.RIHLAH",
+    "designation": "Gurzil - R.il'a (Rihlah)",
+    "distance": 3.5649,
+    "latitude": 57.573,
+    "longitude": 6.1087
+  },
+  "GURZIL.JUMPPOINTS.HADRIAN": {
+    "id": 2323,
+    "system": "GURZIL",
+    "code": "GURZIL.JUMPPOINTS.HADRIAN",
+    "designation": "Gurzil - Hadrian",
+    "distance": 2,
+    "latitude": -20.5198,
+    "longitude": 78.1022
+  },
+  "GURZIL.JUMPPOINTS.HORUS": {
+    "id": 2324,
+    "system": "GURZIL",
+    "code": "GURZIL.JUMPPOINTS.HORUS",
+    "designation": "Gurzil - Horus",
+    "distance": 3,
+    "latitude": 11.573,
+    "longitude": 6.1087
+  },
+  "HADES.JUMPPOINTS.CATHCART": {
+    "id": 1897,
+    "system": "HADES",
+    "code": "HADES.JUMPPOINTS.CATHCART",
+    "designation": "Hades - Cathcart",
+    "distance": 1,
+    "latitude": -38.3327,
+    "longitude": -49.0984
+  },
+  "HADES.JUMPPOINTS.NEXUS": {
+    "id": 1919,
+    "system": "HADES",
+    "code": "HADES.JUMPPOINTS.NEXUS",
+    "designation": "Hades - Nexus",
+    "distance": 1,
+    "latitude": 7.313,
+    "longitude": -78.3289
+  },
+  "HADES.JUMPPOINTS.NEMO": {
+    "id": 2150,
+    "system": "HADES",
+    "code": "HADES.JUMPPOINTS.NEMO",
+    "designation": "Hades - Nemo",
+    "distance": 22,
+    "latitude": -11.0205,
+    "longitude": -33.8923
+  },
+  "HADRIAN.JUMPPOINTS.GURZIL": {
+    "id": 2340,
+    "system": "HADRIAN",
+    "code": "HADRIAN.JUMPPOINTS.GURZIL",
+    "designation": "Hadrian - Gurzil",
+    "distance": 27,
+    "latitude": 5.5198,
+    "longitude": -101.898
+  },
+  "HADRIAN.JUMPPOINTS.CASTRA": {
+    "id": 2341,
+    "system": "HADRIAN",
+    "code": "HADRIAN.JUMPPOINTS.CASTRA",
+    "designation": "Hadrian - Castra",
+    "distance": 33,
+    "latitude": 32.8841,
+    "longitude": -36.0222
+  },
+  "HADRIAN.JUMPPOINTS.KIEL": {
+    "id": 2342,
+    "system": "HADRIAN",
+    "code": "HADRIAN.JUMPPOINTS.KIEL",
+    "designation": "Hadrian - Kiel",
+    "distance": 14,
+    "latitude": -15.6979,
+    "longitude": 119.484
+  },
+  "HADRIAN.JUMPPOINTS.OYA": {
+    "id": 2343,
+    "system": "HADRIAN",
+    "code": "HADRIAN.JUMPPOINTS.OYA",
+    "designation": "Hadrian - Oya",
+    "distance": 44,
+    "latitude": 18.6919,
+    "longitude": 37.1935
+  },
+  "HADRIAN.JUMPPOINTS.TERRA": {
+    "id": 2344,
+    "system": "HADRIAN",
+    "code": "HADRIAN.JUMPPOINTS.TERRA",
+    "designation": "Hadrian - Terra",
+    "distance": 31.89,
+    "latitude": 0,
+    "longitude": 158.1
+  },
+  "HADRIAN.JUMPPOINTS.PYRO": {
+    "id": 2345,
+    "system": "HADRIAN",
+    "code": "HADRIAN.JUMPPOINTS.PYRO",
+    "designation": "Hadrian - Pyro",
+    "distance": 65,
+    "latitude": 0.6919,
+    "longitude": 37.1935
+  },
+  "HADUR.JUMPPOINTS.INDRA": {
+    "id": 2173,
+    "system": "HADUR",
+    "code": "HADUR.JUMPPOINTS.INDRA",
+    "designation": "Yā'mon (Hadur) - Kyuk'ya (Indra)",
+    "distance": 7.1346,
+    "latitude": -24.2507,
+    "longitude": 1
+  },
+  "HADUR.JUMPPOINTS.PALLAS": {
+    "id": 2174,
+    "system": "HADUR",
+    "code": "HADUR.JUMPPOINTS.PALLAS",
+    "designation": "Yā'mon (Hadur) - Th.us'ūng (Pallas)",
+    "distance": 15.26415,
+    "latitude": 7.9238,
+    "longitude": -75.6263
+  },
+  "HADUR.JUMPPOINTS.AYR'KA": {
+    "id": 2175,
+    "system": "HADUR",
+    "code": "HADUR.JUMPPOINTS.AYR'KA",
+    "designation": "Yā'mon (Hadur) - Ail'ka",
+    "distance": 2.565694,
+    "latitude": 19.1733,
+    "longitude": 98.7737
+  },
+  "HADUR.JUMPPOINTS.BAKER": {
+    "id": 2176,
+    "system": "HADUR",
+    "code": "HADUR.JUMPPOINTS.BAKER",
+    "designation": "Yā'mon (Hadur) - Baker",
+    "distance": 4.23646,
+    "latitude": 1.1733,
+    "longitude": -148.774
+  },
+  "HELIOS.JUMPPOINTS.TYROL": {
+    "id": 1832,
+    "system": "HELIOS",
+    "code": "HELIOS.JUMPPOINTS.TYROL",
+    "designation": "Helios - Tyrol",
+    "distance": 65,
+    "latitude": 14,
+    "longitude": -41
+  },
+  "HELIOS.JUMPPOINTS.CHARON": {
+    "id": 1833,
+    "system": "HELIOS",
+    "code": "HELIOS.JUMPPOINTS.CHARON",
+    "designation": "Helios - Charon",
+    "distance": 29,
+    "latitude": -11,
+    "longitude": -70
+  },
+  "HELIOS.JUMPPOINTS.GOSS": {
+    "id": 1834,
+    "system": "HELIOS",
+    "code": "HELIOS.JUMPPOINTS.GOSS",
+    "designation": "Helios - Goss",
+    "distance": 73,
+    "latitude": -5.19022,
+    "longitude": -136.5
+  },
+  "HELIOS.JUMPPOINTS.TARANIS": {
+    "id": 1835,
+    "system": "HELIOS",
+    "code": "HELIOS.JUMPPOINTS.TARANIS",
+    "designation": "Helios - Taranis",
+    "distance": 53,
+    "latitude": -31.4185,
+    "longitude": 47
+  },
+  "HORUS.JUMPPOINTS.RIHLAH": {
+    "id": 2353,
+    "system": "HORUS",
+    "code": "HORUS.JUMPPOINTS.RIHLAH",
+    "designation": "Horus - R.il'a (Rihlah)",
+    "distance": 1,
+    "latitude": 3.49673,
+    "longitude": -63.5576
+  },
+  "HORUS.JUMPPOINTS.KIEL": {
+    "id": 2354,
+    "system": "HORUS",
+    "code": "HORUS.JUMPPOINTS.KIEL",
+    "designation": "Horus - Kiel",
+    "distance": 1,
+    "latitude": -8.5968,
+    "longitude": 81.3894
+  },
+  "HORUS.JUMPPOINTS.KAYFA": {
+    "id": 2355,
+    "system": "HORUS",
+    "code": "HORUS.JUMPPOINTS.KAYFA",
+    "designation": "Horus - Kai'pua (Kayfa)",
+    "distance": 1,
+    "latitude": -48.7826,
+    "longitude": -95.3203
+  },
+  "HORUS.JUMPPOINTS.GURZIL": {
+    "id": 2358,
+    "system": "HORUS",
+    "code": "HORUS.JUMPPOINTS.GURZIL",
+    "designation": "Horus - Gurzil",
+    "distance": 1,
+    "latitude": 6.333,
+    "longitude": 165.32
+  },
+  "IDRIS.JUMPPOINTS.FERRON": {
+    "id": 2106,
+    "system": "IDRIS",
+    "code": "IDRIS.JUMPPOINTS.FERRON",
+    "designation": "Idris - Ferron",
+    "distance": 1,
+    "latitude": 10.6787,
+    "longitude": 169.058
+  },
+  "IDRIS.JUMPPOINTS.RHETOR": {
+    "id": 2107,
+    "system": "IDRIS",
+    "code": "IDRIS.JUMPPOINTS.RHETOR",
+    "designation": "Idris - Rhetor",
+    "distance": 1,
+    "latitude": 22.6455,
+    "longitude": -77.8096
+  },
+  "IDRIS.JUMPPOINTS.ELYSIUM": {
+    "id": 2109,
+    "system": "IDRIS",
+    "code": "IDRIS.JUMPPOINTS.ELYSIUM",
+    "designation": "Idris - Elysium",
+    "distance": 1,
+    "latitude": 2.6455,
+    "longitude": -164
+  },
+  "IDRIS.JUMPPOINTS.GARRON": {
+    "id": 2110,
+    "system": "IDRIS",
+    "code": "IDRIS.JUMPPOINTS.GARRON",
+    "designation": "Idris - Garron",
+    "distance": 1,
+    "latitude": -6.2,
+    "longitude": -3
+  },
+  "INDRA.JUMPPOINTS.HADUR": {
+    "id": 2273,
+    "system": "INDRA",
+    "code": "INDRA.JUMPPOINTS.HADUR",
+    "designation": "Kyuk'ya (Indra) - Yā'mon (Hadur)",
+    "distance": 3,
+    "latitude": 31.4185,
+    "longitude": -83.3475
+  },
+  "INDRA.JUMPPOINTS.AYR'KA": {
+    "id": 2274,
+    "system": "INDRA",
+    "code": "INDRA.JUMPPOINTS.AYR'KA",
+    "designation": "Kyuk'ya (Indra) - Ail'ka",
+    "distance": 12.515,
+    "latitude": 5.0037,
+    "longitude": -16.137
+  },
+  "INDRA.JUMPPOINTS.OSIRIS": {
+    "id": 2275,
+    "system": "INDRA",
+    "code": "INDRA.JUMPPOINTS.OSIRIS",
+    "designation": "Kyuk'ya (Indra) - Osiris",
+    "distance": 9.2145,
+    "latitude": 44.385004,
+    "longitude": 127
+  },
+  "INDRA.JUMPPOINTS.KINS": {
+    "id": 2276,
+    "system": "INDRA",
+    "code": "INDRA.JUMPPOINTS.KINS",
+    "designation": "Kyuk'ya (Indra) - Kins",
+    "distance": 4,
+    "latitude": -14,
+    "longitude": 127
+  },
+  "KABAL.JUMPPOINTS.LEIR": {
+    "id": 2657,
+    "system": "KABAL",
+    "code": "KABAL.JUMPPOINTS.LEIR",
+    "designation": "Kabal - Leir",
+    "distance": 3.52,
+    "latitude": 42,
+    "longitude": -29
+  },
+  "KALLIS.JUMPPOINTS.BREMEN": {
+    "id": 1903,
+    "system": "KALLIS",
+    "code": "KALLIS.JUMPPOINTS.BREMEN",
+    "designation": "Kallis - Bremen",
+    "distance": 1,
+    "latitude": 5.8169,
+    "longitude": -95.9009
+  },
+  "KALLIS.JUMPPOINTS.OSO": {
+    "id": 1904,
+    "system": "KALLIS",
+    "code": "KALLIS.JUMPPOINTS.OSO",
+    "designation": "Kallis - Oso",
+    "distance": 1,
+    "latitude": -71.8983,
+    "longitude": -105.862
+  },
+  "KAYFA.JUMPPOINTS.RIHLAH": {
+    "id": 2197,
+    "system": "KAYFA",
+    "code": "KAYFA.JUMPPOINTS.RIHLAH",
+    "designation": "Kai'pua (Kayfa) - R.il'a (Rihlah)",
+    "distance": 1,
+    "latitude": -38.9483,
+    "longitude": -136.459
+  },
+  "KAYFA.JUMPPOINTS.HORUS": {
+    "id": 2198,
+    "system": "KAYFA",
+    "code": "KAYFA.JUMPPOINTS.HORUS",
+    "designation": "Kai'pua (Kayfa) - Horus",
+    "distance": 1,
+    "latitude": 8.7826,
+    "longitude": 84.6797
+  },
+  "KELLOG.JUMPPOINTS.VIRGIL": {
+    "id": 1842,
+    "system": "KELLOG",
+    "code": "KELLOG.JUMPPOINTS.VIRGIL",
+    "designation": "Kellog - Virgil",
+    "distance": 1,
+    "latitude": 38.1168,
+    "longitude": 122.156
+  },
+  "KELLOG.JUMPPOINTS.VECTOR": {
+    "id": 1843,
+    "system": "KELLOG",
+    "code": "KELLOG.JUMPPOINTS.VECTOR",
+    "designation": "Kellog - Vector",
+    "distance": 1,
+    "latitude": 26.6366,
+    "longitude": 27.9255
+  },
+  "KELLOG.JUMPPOINTS.ODIN": {
+    "id": 1844,
+    "system": "KELLOG",
+    "code": "KELLOG.JUMPPOINTS.ODIN",
+    "designation": "Kellog - Odin",
+    "distance": 1,
+    "latitude": -14.1577,
+    "longitude": -85.6444
+  },
+  "KELLOG.JUMPPOINTS.CHRONOS": {
+    "id": 1845,
+    "system": "KELLOG",
+    "code": "KELLOG.JUMPPOINTS.CHRONOS",
+    "designation": "Kellog - Chronos",
+    "distance": 1,
+    "latitude": -55.397,
+    "longitude": -122.978
+  },
+  "KIEL.JUMPPOINTS.HORUS": {
+    "id": 2365,
+    "system": "KIEL",
+    "code": "KIEL.JUMPPOINTS.HORUS",
+    "designation": "Kiel - Horus",
+    "distance": 1,
+    "latitude": 8.5968,
+    "longitude": -98.6106
+  },
+  "KIEL.JUMPPOINTS.BAKER": {
+    "id": 2366,
+    "system": "KIEL",
+    "code": "KIEL.JUMPPOINTS.BAKER",
+    "designation": "Kiel - Baker",
+    "distance": 1,
+    "latitude": 23.8108,
+    "longitude": 59.8037
+  },
+  "KIEL.JUMPPOINTS.HADRIAN": {
+    "id": 2367,
+    "system": "KIEL",
+    "code": "KIEL.JUMPPOINTS.HADRIAN",
+    "designation": "Kiel - Hadrian",
+    "distance": 1,
+    "latitude": 50.6979,
+    "longitude": -60.5163
+  },
+  "KILIAN.JUMPPOINTS.ELLIS": {
+    "id": 1953,
+    "system": "KILIAN",
+    "code": "KILIAN.JUMPPOINTS.ELLIS",
+    "designation": "Kilian - Ellis",
+    "distance": 22,
+    "latitude": -39.3769,
+    "longitude": 63.5189
+  },
+  "KILIAN.JUMPPOINTS.DAVIEN": {
+    "id": 1954,
+    "system": "KILIAN",
+    "code": "KILIAN.JUMPPOINTS.DAVIEN",
+    "designation": "Kilian - Davien",
+    "distance": 22,
+    "latitude": -2.171,
+    "longitude": -12.189
+  },
+  "KILIAN.JUMPPOINTS.CATHCART": {
+    "id": 1955,
+    "system": "KILIAN",
+    "code": "KILIAN.JUMPPOINTS.CATHCART",
+    "designation": "Kilian - Cathcart",
+    "distance": 22,
+    "latitude": 45.0229,
+    "longitude": 82.2162
+  },
+  "KINS.JUMPPOINTS.CHARON": {
+    "id": 2191,
+    "system": "KINS",
+    "code": "KINS.JUMPPOINTS.CHARON",
+    "designation": "Kins - Charon",
+    "distance": 1,
+    "latitude": 18.5796,
+    "longitude": 148.244
+  },
+  "KINS.JUMPPOINTS.INDRA": {
+    "id": 2192,
+    "system": "KINS",
+    "code": "KINS.JUMPPOINTS.INDRA",
+    "designation": "Kins - Kyuk'ya (Indra)",
+    "distance": 1,
+    "latitude": 5,
+    "longitude": -110.729
+  },
+  "LEIR.JUMPPOINTS.GARRON": {
+    "id": 2333,
+    "system": "LEIR",
+    "code": "LEIR.JUMPPOINTS.GARRON",
+    "designation": "Leir - Garron",
+    "distance": 3.3,
+    "latitude": 7.3628,
+    "longitude": -146.929
+  },
+  "LEIR.JUMPPOINTS.VANGUARD": {
+    "id": 2334,
+    "system": "LEIR",
+    "code": "LEIR.JUMPPOINTS.VANGUARD",
+    "designation": "Leir - Vanguard",
+    "distance": 1,
+    "latitude": -13.1576,
+    "longitude": -57.2533
+  },
+  "LEIR.JUMPPOINTS.BANSHEE": {
+    "id": 2335,
+    "system": "LEIR",
+    "code": "LEIR.JUMPPOINTS.BANSHEE",
+    "designation": "Leir - Banshee",
+    "distance": 1,
+    "latitude": 4.95359,
+    "longitude": 166.875
+  },
+  "LEIR.JUMPPOINTS.YULIN": {
+    "id": 2336,
+    "system": "LEIR",
+    "code": "LEIR.JUMPPOINTS.YULIN",
+    "designation": "Leir - Yulin",
+    "distance": 1,
+    "latitude": 36.7062,
+    "longitude": 105.687
+  },
+  "LEIR.JUMPPOINTS.ELYSIUM": {
+    "id": 2337,
+    "system": "LEIR",
+    "code": "LEIR.JUMPPOINTS.ELYSIUM",
+    "designation": "Leir - Elysium",
+    "distance": 1,
+    "latitude": -7,
+    "longitude": -14.929
+  },
+  "LEIR.JUMPPOINTS.KABAL": {
+    "id": 2658,
+    "system": "LEIR",
+    "code": "LEIR.JUMPPOINTS.KABAL",
+    "designation": "Leir - Kabal",
+    "distance": 11.4,
+    "latitude": 4,
+    "longitude": 29
+  },
+  "MAGNUS.JUMPPOINTS.ELLIS": {
+    "id": 1755,
+    "system": "MAGNUS",
+    "code": "MAGNUS.JUMPPOINTS.ELLIS",
+    "designation": "Magnus - Ellis",
+    "distance": 1.99,
+    "latitude": 18,
+    "longitude": 40
+  },
+  "MAGNUS.JUMPPOINTS.TERRA": {
+    "id": 1756,
+    "system": "MAGNUS",
+    "code": "MAGNUS.JUMPPOINTS.TERRA",
+    "designation": "Magnus - Terra",
+    "distance": 2.41,
+    "latitude": 2,
+    "longitude": 131
+  },
+  "MAGNUS.JUMPPOINTS.STANTON": {
+    "id": 1757,
+    "system": "MAGNUS",
+    "code": "MAGNUS.JUMPPOINTS.STANTON",
+    "designation": "Magnus - Stanton",
+    "distance": 3,
+    "latitude": -14,
+    "longitude": -90
+  },
+  "MIN.JUMPPOINTS.NEXUS": {
+    "id": 1899,
+    "system": "MIN",
+    "code": "MIN.JUMPPOINTS.NEXUS",
+    "designation": "Min - Nexus",
+    "distance": 0.8,
+    "latitude": -20.9292,
+    "longitude": 76.382
+  },
+  "MIN.JUMPPOINTS.ELLIS": {
+    "id": 1918,
+    "system": "MIN",
+    "code": "MIN.JUMPPOINTS.ELLIS",
+    "designation": "Min - Ellis",
+    "distance": 1.3,
+    "latitude": 20.6627,
+    "longitude": 126.018
+  },
+  "NEMO.JUMPPOINTS.HADES": {
+    "id": 2093,
+    "system": "NEMO",
+    "code": "NEMO.JUMPPOINTS.HADES",
+    "designation": "Nemo - Hades",
+    "distance": 1,
+    "latitude": 1.7921,
+    "longitude": -72.0041
+  },
+  "NEMO.JUMPPOINTS.COREL": {
+    "id": 2094,
+    "system": "NEMO",
+    "code": "NEMO.JUMPPOINTS.COREL",
+    "designation": "Nemo - Corel",
+    "distance": 1,
+    "latitude": 33.9487,
+    "longitude": 123.202
+  },
+  "NEMO.JUMPPOINTS.FORA": {
+    "id": 2095,
+    "system": "NEMO",
+    "code": "NEMO.JUMPPOINTS.FORA",
+    "designation": "Nemo - Fora",
+    "distance": 1,
+    "latitude": -20.7992,
+    "longitude": 126.913
+  },
+  "NEXUS.JUMPPOINTS.CATHCART": {
+    "id": 2067,
+    "system": "NEXUS",
+    "code": "NEXUS.JUMPPOINTS.CATHCART",
+    "designation": "Nexus - Cathcart",
+    "distance": 9,
+    "latitude": 28.0411,
+    "longitude": -68.1828
+  },
+  "NEXUS.JUMPPOINTS.HADES": {
+    "id": 2068,
+    "system": "NEXUS",
+    "code": "NEXUS.JUMPPOINTS.HADES",
+    "designation": "Nexus - Hades",
+    "distance": 10,
+    "latitude": 42.6554,
+    "longitude": -96.9632
+  },
+  "NEXUS.JUMPPOINTS.ELLIS": {
+    "id": 2069,
+    "system": "NEXUS",
+    "code": "NEXUS.JUMPPOINTS.ELLIS",
+    "designation": "Nexus - Ellis",
+    "distance": 3,
+    "latitude": -9.384,
+    "longitude": -144.331
+  },
+  "NEXUS.JUMPPOINTS.MIN": {
+    "id": 2070,
+    "system": "NEXUS",
+    "code": "NEXUS.JUMPPOINTS.MIN",
+    "designation": "Nexus - Min",
+    "distance": 11.3,
+    "latitude": -25.723,
+    "longitude": 163.348
+  },
+  "NUL.JUMPPOINTS.CROSHAW": {
+    "id": 1764,
+    "system": "NUL",
+    "code": "NUL.JUMPPOINTS.CROSHAW",
+    "designation": "Nul - Croshaw",
+    "distance": 3,
+    "latitude": -5,
+    "longitude": -146
+  },
+  "NUL.JUMPPOINTS.CALIBAN": {
+    "id": 1766,
+    "system": "NUL",
+    "code": "NUL.JUMPPOINTS.CALIBAN",
+    "designation": "Nul - Caliban",
+    "distance": 4.1,
+    "latitude": 12,
+    "longitude": -39
+  },
+  "NUL.JUMPPOINTS.CENTAURI": {
+    "id": 1768,
+    "system": "NUL",
+    "code": "NUL.JUMPPOINTS.CENTAURI",
+    "designation": "Nul - Centauri",
+    "distance": 3.3,
+    "latitude": -1,
+    "longitude": -49
+  },
+  "NUL.JUMPPOINTS.VEGA": {
+    "id": 1778,
+    "system": "NUL",
+    "code": "NUL.JUMPPOINTS.VEGA",
+    "designation": "Nul - Vega",
+    "distance": 4.6,
+    "latitude": -28,
+    "longitude": -103
+  },
+  "NUL.JUMPPOINTS.OBERON": {
+    "id": 2830,
+    "system": "NUL",
+    "code": "NUL.JUMPPOINTS.OBERON",
+    "designation": "Nul - Oberon",
+    "distance": 5,
+    "latitude": -6.33525,
+    "longitude": -26.6764
+  },
+  "NYX.JUMPPOINTS.CASTRA": {
+    "id": 1701,
+    "system": "NYX",
+    "code": "NYX.JUMPPOINTS.CASTRA",
+    "designation": "Nyx - Castra",
+    "distance": 3.1,
+    "latitude": -8,
+    "longitude": -133
+  },
+  "NYX.JUMPPOINTS.BREMEN": {
+    "id": 1702,
+    "system": "NYX",
+    "code": "NYX.JUMPPOINTS.BREMEN",
+    "designation": "Nyx - Bremen",
+    "distance": 3.4,
+    "latitude": 21,
+    "longitude": -157
+  },
+  "NYX.JUMPPOINTS.PYRO": {
+    "id": 1710,
+    "system": "NYX",
+    "code": "NYX.JUMPPOINTS.PYRO",
+    "designation": "Nyx - Pyro",
+    "distance": 2.7,
+    "latitude": 1,
+    "longitude": 102
+  },
+  "NYX.JUMPPOINTS.VIRGIL": {
+    "id": 1711,
+    "system": "NYX",
+    "code": "NYX.JUMPPOINTS.VIRGIL",
+    "designation": "Nyx - Virgil",
+    "distance": 3.9,
+    "latitude": 31,
+    "longitude": 122
+  },
+  "NYX.JUMPPOINTS.TOHIL": {
+    "id": 1712,
+    "system": "NYX",
+    "code": "NYX.JUMPPOINTS.TOHIL",
+    "designation": "Nyx - Tohil",
+    "distance": 2.4,
+    "latitude": 16,
+    "longitude": -42
+  },
+  "NYX.JUMPPOINTS.ODIN": {
+    "id": 1713,
+    "system": "NYX",
+    "code": "NYX.JUMPPOINTS.ODIN",
+    "designation": "Nyx - Odin",
+    "distance": 3.9,
+    "latitude": -31,
+    "longitude": 122
+  },
+  "NYX.JUMPPOINTS.STANTON": {
+    "id": 2842,
+    "system": "NYX",
+    "code": "NYX.JUMPPOINTS.STANTON",
+    "designation": "Nyx - Stanton",
+    "distance": 2.6,
+    "latitude": 0,
+    "longitude": 260
+  },
+  "OBERON.JUMPPOINTS.TIBER": {
+    "id": 1988,
+    "system": "OBERON",
+    "code": "OBERON.JUMPPOINTS.TIBER",
+    "designation": "Oberon - Tiber",
+    "distance": 1,
+    "latitude": -22.6455,
+    "longitude": -122.19
+  },
+  "OBERON.JUMPPOINTS.VIRGIL": {
+    "id": 1989,
+    "system": "OBERON",
+    "code": "OBERON.JUMPPOINTS.VIRGIL",
+    "designation": "Oberon - Virgil",
+    "distance": 1,
+    "latitude": 51.8872,
+    "longitude": -179.538
+  },
+  "OBERON.JUMPPOINTS.CALIBAN": {
+    "id": 1990,
+    "system": "OBERON",
+    "code": "OBERON.JUMPPOINTS.CALIBAN",
+    "designation": "Oberon - Caliban",
+    "distance": 1,
+    "latitude": 39.6498,
+    "longitude": 134.089
+  },
+  "OBERON.JUMPPOINTS.VEGA": {
+    "id": 1992,
+    "system": "OBERON",
+    "code": "OBERON.JUMPPOINTS.VEGA",
+    "designation": "Oberon - Vega",
+    "distance": 1,
+    "latitude": 4.3628,
+    "longitude": 33.0705
+  },
+  "OBERON.JUMPPOINTS.NUL": {
+    "id": 2831,
+    "system": "OBERON",
+    "code": "OBERON.JUMPPOINTS.NUL",
+    "designation": "Oberon - Nul",
+    "distance": 4,
+    "latitude": -29,
+    "longitude": 38
+  },
+  "ODIN.JUMPPOINTS.KELLOG": {
+    "id": 1825,
+    "system": "ODIN",
+    "code": "ODIN.JUMPPOINTS.KELLOG",
+    "designation": "Odin - Kellog",
+    "distance": 7.5,
+    "latitude": 8,
+    "longitude": -60
+  },
+  "ODIN.JUMPPOINTS.NYX": {
+    "id": 1831,
+    "system": "ODIN",
+    "code": "ODIN.JUMPPOINTS.NYX",
+    "designation": "Odin - Nyx",
+    "distance": 8.5,
+    "latitude": -1,
+    "longitude": 155
+  },
+  "ODIN.JUMPPOINTS.TANGA": {
+    "id": 2713,
+    "system": "ODIN",
+    "code": "ODIN.JUMPPOINTS.TANGA",
+    "designation": "Odin - Tanga",
+    "distance": 2.35,
+    "latitude": 4.37,
+    "longitude": -77.26
+  },
+  "ORION.JUMPPOINTS.TIBER": {
+    "id": 2087,
+    "system": "ORION",
+    "code": "ORION.JUMPPOINTS.TIBER",
+    "designation": "Orion - Tiber",
+    "distance": 1,
+    "latitude": -25.9989,
+    "longitude": -170.212
+  },
+  "ORION.JUMPPOINTS.CALIBAN": {
+    "id": 2088,
+    "system": "ORION",
+    "code": "ORION.JUMPPOINTS.CALIBAN",
+    "designation": "Orion - Caliban",
+    "distance": 1,
+    "latitude": -28.2561,
+    "longitude": 149.687
+  },
+  "ORION.JUMPPOINTS.VIKING": {
+    "id": 2091,
+    "system": "ORION",
+    "code": "ORION.JUMPPOINTS.VIKING",
+    "designation": "Orion - Viking",
+    "distance": 1,
+    "latitude": 25.4573,
+    "longitude": 66.1331
+  },
+  "ORION.JUMPPOINT.VULTURE": {
+    "id": 2835,
+    "system": "ORION",
+    "code": "ORION.JUMPPOINT.VULTURE",
+    "designation": "Orion - VS-9 \"Vulture\"",
+    "distance": 5,
+    "latitude": 66,
+    "longitude": 66
+  },
+  "OSIRIS.JUMPPOINTS.GOSS": {
+    "id": 1852,
+    "system": "OSIRIS",
+    "code": "OSIRIS.JUMPPOINTS.GOSS",
+    "designation": "Osiris - Goss",
+    "distance": 1,
+    "latitude": -14.5437,
+    "longitude": 4.8776
+  },
+  "OSIRIS.JUMPPOINTS.BAKER": {
+    "id": 1853,
+    "system": "OSIRIS",
+    "code": "OSIRIS.JUMPPOINTS.BAKER",
+    "designation": "Osiris - Baker",
+    "distance": 1,
+    "latitude": 17.5116,
+    "longitude": -112.469
+  },
+  "OSIRIS.JUMPPOINTS.INDRA": {
+    "id": 1854,
+    "system": "OSIRIS",
+    "code": "OSIRIS.JUMPPOINTS.INDRA",
+    "designation": "Osiris - Kyuk'ya (Indra)",
+    "distance": 1,
+    "latitude": 50.5392,
+    "longitude": 79.2713
+  },
+  "OSO.JUMPPOINTS.KALLIS": {
+    "id": 1876,
+    "system": "OSO",
+    "code": "OSO.JUMPPOINTS.KALLIS",
+    "designation": "Oso - Kallis",
+    "distance": 5.5,
+    "latitude": 11.8983,
+    "longitude": 74.138
+  },
+  "OSO.JUMPPOINTS.PYRO": {
+    "id": 1877,
+    "system": "OSO",
+    "code": "OSO.JUMPPOINTS.PYRO",
+    "designation": "Oso - Pyro",
+    "distance": 11,
+    "latitude": 55.465,
+    "longitude": -86.2227
+  },
+  "OSO.JUMPPOINTS.CASTRA": {
+    "id": 1878,
+    "system": "OSO",
+    "code": "OSO.JUMPPOINTS.CASTRA",
+    "designation": "Oso - Castra",
+    "distance": 14.3,
+    "latitude": -15.0957,
+    "longitude": -174.019
+  },
+  "OYA.JUMPPOINTS.GURZIL": {
+    "id": 2327,
+    "system": "OYA",
+    "code": "OYA.JUMPPOINTS.GURZIL",
+    "designation": "Oya - Gurzil",
+    "distance": 1,
+    "latitude": -36.0649,
+    "longitude": 141.699
+  },
+  "OYA.JUMPPOINTS.EEALUS": {
+    "id": 2328,
+    "system": "OYA",
+    "code": "OYA.JUMPPOINTS.EEALUS",
+    "designation": "Oya - Ē'aluth (Eealus)",
+    "distance": 1,
+    "latitude": 43.4031,
+    "longitude": -73.3648
+  },
+  "OYA.JUMPPOINTS.CASTRA": {
+    "id": 2329,
+    "system": "OYA",
+    "code": "OYA.JUMPPOINTS.CASTRA",
+    "designation": "Oya - Castra",
+    "distance": 1,
+    "latitude": 4.3947,
+    "longitude": 5.1247
+  },
+  "OYA.JUMPPOINTS.HADRIAN": {
+    "id": 2330,
+    "system": "OYA",
+    "code": "OYA.JUMPPOINTS.HADRIAN",
+    "designation": "Oya - Hadrian",
+    "distance": 1,
+    "latitude": -8.2,
+    "longitude": -125.84
+  },
+  "OYA.JUMPPOINTS.TOHIL": {
+    "id": 2331,
+    "system": "OYA",
+    "code": "OYA.JUMPPOINTS.TOHIL",
+    "designation": "Oya - Tohil",
+    "distance": 1,
+    "latitude": 37,
+    "longitude": 165
+  },
+  "PALLAS.JUMPPOINTS.BAKER": {
+    "id": 2264,
+    "system": "PALLAS",
+    "code": "PALLAS.JUMPPOINTS.BAKER",
+    "designation": "Th.us'ūng (Pallas) - Baker",
+    "distance": 1,
+    "latitude": -25.0039,
+    "longitude": 85.0727
+  },
+  "PALLAS.JUMPPOINTS.HADUR": {
+    "id": 2266,
+    "system": "PALLAS",
+    "code": "PALLAS.JUMPPOINTS.HADUR",
+    "designation": "Th.us'ūng (Pallas) - Hadur",
+    "distance": 3.21095,
+    "latitude": -159.9239,
+    "longitude": 154.374
+  },
+  "PALLAS.JUMPPOINTS.TAL": {
+    "id": 2267,
+    "system": "PALLAS",
+    "code": "PALLAS.JUMPPOINTS.TAL",
+    "designation": "Th.us'ūng (Pallas) - T.āl",
+    "distance": 1,
+    "latitude": -1.957,
+    "longitude": -153.823
+  },
+  "PYRO.JUMPPOINTS.NYX": {
+    "id": 1739,
+    "system": "PYRO",
+    "code": "PYRO.JUMPPOINTS.NYX",
+    "designation": "Pyro - Nyx",
+    "distance": 13,
+    "latitude": 21,
+    "longitude": -134
+  },
+  "PYRO.JUMPPOINTS.STANTON": {
+    "id": 1740,
+    "system": "PYRO",
+    "code": "PYRO.JUMPPOINTS.STANTON",
+    "designation": "Pyro - Stanton",
+    "distance": 9,
+    "latitude": -1,
+    "longitude": -5
+  },
+  "PYRO.JUMPPOINTS.HADRIAN": {
+    "id": 1741,
+    "system": "PYRO",
+    "code": "PYRO.JUMPPOINTS.HADRIAN",
+    "designation": "Pyro - Hadrian",
+    "distance": 12,
+    "latitude": 15,
+    "longitude": 61
+  },
+  "PYRO.JUMPPOINTS.OSO": {
+    "id": 1742,
+    "system": "PYRO",
+    "code": "PYRO.JUMPPOINTS.OSO",
+    "designation": "Pyro - Oso",
+    "distance": 13,
+    "latitude": -8,
+    "longitude": -69
+  },
+  "PYRO.JUMPPOINTS.CASTRA": {
+    "id": 1743,
+    "system": "PYRO",
+    "code": "PYRO.JUMPPOINTS.CASTRA",
+    "designation": "Pyro - Castra",
+    "distance": 11,
+    "latitude": -9,
+    "longitude": 153
+  },
+  "PYRO.JUMPPOINTS.TERRA": {
+    "id": 1754,
+    "system": "PYRO",
+    "code": "PYRO.JUMPPOINTS.TERRA",
+    "designation": "Pyro - Terra",
+    "distance": 3,
+    "latitude": 14,
+    "longitude": 72
+  },
+  "PYRO.JUMPPOINTS.CANO": {
+    "id": 2704,
+    "system": "PYRO",
+    "code": "PYRO.JUMPPOINTS.CANO",
+    "designation": "Pyro - Cano",
+    "distance": 0.2,
+    "latitude": -15,
+    "longitude": 160
+  },
+  "RHETOR.JUMPPOINTS.CROSHAW": {
+    "id": 1994,
+    "system": "RHETOR",
+    "code": "RHETOR.JUMPPOINTS.CROSHAW",
+    "designation": "Rhetor - Croshaw",
+    "distance": 1,
+    "latitude": -18.6959,
+    "longitude": -77.6738
+  },
+  "RHETOR.JUMPPOINTS.IDRIS": {
+    "id": 1995,
+    "system": "RHETOR",
+    "code": "RHETOR.JUMPPOINTS.IDRIS",
+    "designation": "Rhetor - Idris",
+    "distance": 1,
+    "latitude": 21.7921,
+    "longitude": 77.996
+  },
+  "RHETOR.JUMPPOINTS.FORA": {
+    "id": 1996,
+    "system": "RHETOR",
+    "code": "RHETOR.JUMPPOINTS.FORA",
+    "designation": "Rhetor - Fora",
+    "distance": 1,
+    "latitude": 5.279,
+    "longitude": 120.703
+  },
+  "RIHLAH.JUMPPOINTS.EEALUS": {
+    "id": 2285,
+    "system": "RIHLAH",
+    "code": "RIHLAH.JUMPPOINTS.EEALUS",
+    "designation": "R.il'a (Rihlah) - Ē'aluth (Eealus)",
+    "distance": 8.6432,
+    "latitude": 12.1299,
+    "longitude": -25.261
+  },
+  "RIHLAH.JUMPPOINTS.GURZIL": {
+    "id": 2287,
+    "system": "RIHLAH",
+    "code": "RIHLAH.JUMPPOINTS.GURZIL",
+    "designation": "R.il'a (Rihlah) - Gurzil",
+    "distance": 18,
+    "latitude": -17.5732,
+    "longitude": 93.8913
+  },
+  "RIHLAH.JUMPPOINTS.HORUS": {
+    "id": 2289,
+    "system": "RIHLAH",
+    "code": "RIHLAH.JUMPPOINTS.HORUS",
+    "designation": "R.il'a (Rihlah) - Horus",
+    "distance": 1,
+    "latitude": 3.49673,
+    "longitude": 116.442
+  },
+  "RIHLAH.JUMPPOINTS.KAYFA": {
+    "id": 2290,
+    "system": "RIHLAH",
+    "code": "RIHLAH.JUMPPOINTS.KAYFA",
+    "designation": "R.il'a (Rihlah) - Kai'pua (Kayfa)",
+    "distance": 6.31698,
+    "latitude": 14.9,
+    "longitude": -66.61
+  },
+  "SOL.JUMPPOINTS.DAVIEN": {
+    "id": 2019,
+    "system": "SOL",
+    "code": "SOL.JUMPPOINTS.DAVIEN",
+    "designation": "Sol - Davien",
+    "distance": 16.3,
+    "latitude": 25.2863,
+    "longitude": -128.962
+  },
+  "SOL.JUMPPOINTS.CROSHAW": {
+    "id": 2021,
+    "system": "SOL",
+    "code": "SOL.JUMPPOINTS.CROSHAW",
+    "designation": "Sol - Croshaw",
+    "distance": 51,
+    "latitude": -4.19421,
+    "longitude": 87.2181
+  },
+  "STANTON.JUMPPOINTS.PYRO": {
+    "id": 1689,
+    "system": "STANTON",
+    "code": "STANTON.JUMPPOINTS.PYRO",
+    "designation": "Stanton - Pyro",
+    "distance": 1.8,
+    "latitude": -5,
+    "longitude": 130
+  },
+  "STANTON.JUMPPOINTS.MAGNUS": {
+    "id": 1690,
+    "system": "STANTON",
+    "code": "STANTON.JUMPPOINTS.MAGNUS",
+    "designation": "Stanton - Magnus",
+    "distance": 4.85,
+    "latitude": 15,
+    "longitude": 45
+  },
+  "STANTON.JUMPPOINTS.TERRA": {
+    "id": 1699,
+    "system": "STANTON",
+    "code": "STANTON.JUMPPOINTS.TERRA",
+    "designation": "Stanton - Terra",
+    "distance": 4.1,
+    "latitude": -20,
+    "longitude": -135
+  },
+  "STANTON.JUMPPOINTS.NYX": {
+    "id": 2843,
+    "system": "STANTON",
+    "code": "STANTON.JUMPPOINTS.NYX",
+    "designation": "Stanton - Nyx",
+    "distance": 3.3,
+    "latitude": 0,
+    "longitude": -78
+  },
+  "TAL.JUMPPOINTS.PALLAS": {
+    "id": 2210,
+    "system": "TAL",
+    "code": "TAL.JUMPPOINTS.PALLAS",
+    "designation": "T.āl - Th.us'ūng (Pallas)",
+    "distance": 11.5,
+    "latitude": 11.957,
+    "longitude": 26.1768
+  },
+  "TAL.JUMPPOINT.AILKA": {
+    "id": 2834,
+    "system": "TAL",
+    "code": "TAL.JUMPPOINT.AILKA",
+    "designation": "T.āl - Ail'ka",
+    "distance": 8,
+    "latitude": 1,
+    "longitude": 120
+  },
+  "TAMSA.JUMPPOINTS.BANSHEE": {
+    "id": 2659,
+    "system": "TAMSA",
+    "code": "TAMSA.JUMPPOINTS.BANSHEE",
+    "designation": "Tamsa - Banshee",
+    "distance": 17.9,
+    "latitude": 15,
+    "longitude": 98
+  },
+  "TANGA.JUMPPOINTS.ODIN": {
+    "id": 2712,
+    "system": "TANGA",
+    "code": "TANGA.JUMPPOINTS.ODIN",
+    "designation": "Tanga - Odin",
+    "distance": 19.45,
+    "latitude": -13.87,
+    "longitude": 159
+  },
+  "TANGA.JUMPPOINTS.BREMEN": {
+    "id": 2714,
+    "system": "TANGA",
+    "code": "TANGA.JUMPPOINTS.BREMEN",
+    "designation": "Tanga - Bremen",
+    "distance": 13.94,
+    "latitude": 11.24,
+    "longitude": 45.68
+  },
+  "TARANIS.JUMPPOINTS.ELLIS": {
+    "id": 1779,
+    "system": "TARANIS",
+    "code": "TARANIS.JUMPPOINTS.ELLIS",
+    "designation": "Taranis - Ellis",
+    "distance": 6,
+    "latitude": 6.47411,
+    "longitude": 49
+  },
+  "TARANIS.JUMPPOINTS.GENESIS": {
+    "id": 1780,
+    "system": "TARANIS",
+    "code": "TARANIS.JUMPPOINTS.GENESIS",
+    "designation": "Taranis - Genesis",
+    "distance": 4.8,
+    "latitude": 5,
+    "longitude": 168
+  },
+  "TARANIS.JUMPPOINTS.TERRA": {
+    "id": 1790,
+    "system": "TARANIS",
+    "code": "TARANIS.JUMPPOINTS.TERRA",
+    "designation": "Taranis - Terra",
+    "distance": 1.9,
+    "latitude": -3,
+    "longitude": -135
+  },
+  "TARANIS.JUMPPOINTS.HELIOS": {
+    "id": 1791,
+    "system": "TARANIS",
+    "code": "TARANIS.JUMPPOINTS.HELIOS",
+    "designation": "Taranis - Helios",
+    "distance": 7,
+    "latitude": -11,
+    "longitude": -30
+  },
+  "TAYAC.JUMPPOINTS.BAKER": {
+    "id": 1889,
+    "system": "TAYAC",
+    "code": "TAYAC.JUMPPOINTS.BAKER",
+    "designation": "Tayac - Baker",
+    "distance": 1,
+    "latitude": 22.5648,
+    "longitude": 71.3042
+  },
+  "TAYAC.JUMPPOINTS.TERRA": {
+    "id": 1890,
+    "system": "TAYAC",
+    "code": "TAYAC.JUMPPOINTS.TERRA",
+    "designation": "Tayac - Terra",
+    "distance": 1,
+    "latitude": -15.0039,
+    "longitude": -174.927
+  },
+  "TAYAC.JUMPPOINTS.GOSS": {
+    "id": 1891,
+    "system": "TAYAC",
+    "code": "TAYAC.JUMPPOINTS.GOSS",
+    "designation": "Tayac - Goss",
+    "distance": 2.5,
+    "latitude": 5.2507,
+    "longitude": 124.772
+  },
+  "TERRA.JUMPPOINTS.HADRIAN": {
+    "id": 1714,
+    "system": "TERRA",
+    "code": "TERRA.JUMPPOINTS.HADRIAN",
+    "designation": "Terra - Hadrian",
+    "distance": 5,
+    "latitude": 15,
+    "longitude": 0
+  },
+  "TERRA.JUMPPOINTS.TAYAC": {
+    "id": 1715,
+    "system": "TERRA",
+    "code": "TERRA.JUMPPOINTS.TAYAC",
+    "designation": "Terra - Tayac",
+    "distance": 12,
+    "latitude": 8,
+    "longitude": 67
+  },
+  "TERRA.JUMPPOINTS.GOSS": {
+    "id": 1716,
+    "system": "TERRA",
+    "code": "TERRA.JUMPPOINTS.GOSS",
+    "designation": "Terra - Goss",
+    "distance": 2.3,
+    "latitude": 20,
+    "longitude": 145
+  },
+  "TERRA.JUMPPOINTS.MAGNUS": {
+    "id": 1718,
+    "system": "TERRA",
+    "code": "TERRA.JUMPPOINTS.MAGNUS",
+    "designation": "Terra - Magnus",
+    "distance": 3,
+    "latitude": -12,
+    "longitude": -48
+  },
+  "TERRA.JUMPPOINTS.PYRO": {
+    "id": 1719,
+    "system": "TERRA",
+    "code": "TERRA.JUMPPOINTS.PYRO",
+    "designation": "Terra - Pyro",
+    "distance": 3.3,
+    "latitude": -3,
+    "longitude": -167
+  },
+  "TERRA.JUMPPOINTS.STANTON": {
+    "id": 1728,
+    "system": "TERRA",
+    "code": "TERRA.JUMPPOINTS.STANTON",
+    "designation": "Terra - Stanton",
+    "distance": 3.3,
+    "latitude": -13,
+    "longitude": 47
+  },
+  "TERRA.JUMPPOINTS.TARANIS": {
+    "id": 1729,
+    "system": "TERRA",
+    "code": "TERRA.JUMPPOINTS.TARANIS",
+    "designation": "Terra - Taranis",
+    "distance": 4.3,
+    "latitude": 1,
+    "longitude": 139
+  },
+  "TIBER.JUMPPOINTS.VIRGIL": {
+    "id": 1847,
+    "system": "TIBER",
+    "code": "TIBER.JUMPPOINTS.VIRGIL",
+    "designation": "Tiber - Virgil",
+    "distance": 1,
+    "latitude": -12.3196,
+    "longitude": -163.55
+  },
+  "TIBER.JUMPPOINTS.ORION": {
+    "id": 1848,
+    "system": "TIBER",
+    "code": "TIBER.JUMPPOINTS.ORION",
+    "designation": "Tiber - Orion",
+    "distance": 1,
+    "latitude": 25.9989,
+    "longitude": 29.7881
+  },
+  "TIBER.JUMPPOINTS.VECTOR": {
+    "id": 1849,
+    "system": "TIBER",
+    "code": "TIBER.JUMPPOINTS.VECTOR",
+    "designation": "Tiber - Vector",
+    "distance": 1,
+    "latitude": 15.55152,
+    "longitude": -99.6865
+  },
+  "TIBER.JUMPPOINTS.OBERON": {
+    "id": 1850,
+    "system": "TIBER",
+    "code": "TIBER.JUMPPOINTS.OBERON",
+    "designation": "Tiber - Oberon",
+    "distance": 1,
+    "latitude": -31.3682,
+    "longitude": 144.587
+  },
+  "TOHIL.JUMPPOINTS.OYA": {
+    "id": 2372,
+    "system": "TOHIL",
+    "code": "TOHIL.JUMPPOINTS.OYA",
+    "designation": "Tohil - Oya",
+    "distance": 1,
+    "latitude": 33.8599,
+    "longitude": -126.163
+  },
+  "TOHIL.JUMPPOINTS.VIRTUS": {
+    "id": 2373,
+    "system": "TOHIL",
+    "code": "TOHIL.JUMPPOINTS.VIRTUS",
+    "designation": "Tohil - La'uo (Virtus)",
+    "distance": 11,
+    "latitude": -25.465,
+    "longitude": 43
+  },
+  "TOHIL.JUMPPOINTS.NYX": {
+    "id": 2374,
+    "system": "TOHIL",
+    "code": "TOHIL.JUMPPOINTS.NYX",
+    "designation": "Tohil - Nyx",
+    "distance": 1,
+    "latitude": 13.9843,
+    "longitude": 121.759
+  },
+  "TRISE.JUMPPOINTS.VIRTUS": {
+    "id": 2215,
+    "system": "TRISE",
+    "code": "TRISE.JUMPPOINTS.VIRTUS",
+    "designation": "Trise - La'uo (Virtus)",
+    "distance": 11,
+    "latitude": -6.2647,
+    "longitude": 64.7308
+  },
+  "TRISE.JUMPPOINTS.EEALUS": {
+    "id": 2216,
+    "system": "TRISE",
+    "code": "TRISE.JUMPPOINTS.EEALUS",
+    "designation": "Trise - Ē'aluth (Eealus)",
+    "distance": 1,
+    "latitude": -15.2723,
+    "longitude": 156.566
+  },
+  "TYROL.JUMPPOINTS.CHARON": {
+    "id": 1984,
+    "system": "TYROL",
+    "code": "TYROL.JUMPPOINTS.CHARON",
+    "designation": "Tyrol - Charon",
+    "distance": 5,
+    "latitude": 69.1588,
+    "longitude": -71.2434
+  },
+  "TYROL.JUMPPOINTS.HELIOS": {
+    "id": 1985,
+    "system": "TYROL",
+    "code": "TYROL.JUMPPOINTS.HELIOS",
+    "designation": "Tyrol - Helios",
+    "distance": 3,
+    "latitude": 8.389,
+    "longitude": 108.045
+  },
+  "TYROL.JUMPPOINTS.GOSS": {
+    "id": 1986,
+    "system": "TYROL",
+    "code": "TYROL.JUMPPOINTS.GOSS",
+    "designation": "Tyrol - Goss",
+    "distance": 7,
+    "latitude": 31.4,
+    "longitude": 13
+  },
+  "VANGUARD.JUMPPOINTS.LEIR": {
+    "id": 2239,
+    "system": "VANGUARD",
+    "code": "VANGUARD.JUMPPOINTS.LEIR",
+    "designation": "Vanguard - Leir",
+    "distance": 1,
+    "latitude": 8.3393,
+    "longitude": -101.465
+  },
+  "VANGUARD.JUMPPOINTS.ELYSIUM": {
+    "id": 2240,
+    "system": "VANGUARD",
+    "code": "VANGUARD.JUMPPOINTS.ELYSIUM",
+    "designation": "Vanguard - Elysium",
+    "distance": 1,
+    "latitude": 28.8618,
+    "longitude": -143.681
+  },
+  "VECTOR.JUMPPOINTS.TIBER": {
+    "id": 2312,
+    "system": "VECTOR",
+    "code": "VECTOR.JUMPPOINTS.TIBER",
+    "designation": "Vector - Tiber",
+    "distance": 1,
+    "latitude": 5.69484,
+    "longitude": -150.021
+  },
+  "VECTOR.JUMPPOINTS.KELLOG": {
+    "id": 2313,
+    "system": "VECTOR",
+    "code": "VECTOR.JUMPPOINTS.KELLOG",
+    "designation": "Vector - Kellog",
+    "distance": 1,
+    "latitude": -17,
+    "longitude": 88
+  },
+  "VEGA.JUMPPOINTS.NUL": {
+    "id": 1794,
+    "system": "VEGA",
+    "code": "VEGA.JUMPPOINTS.NUL",
+    "designation": "Vega - Nul",
+    "distance": 8,
+    "latitude": 7,
+    "longitude": 77
+  },
+  "VEGA.JUMPPOINTS.VIRGIL": {
+    "id": 1795,
+    "system": "VEGA",
+    "code": "VEGA.JUMPPOINTS.VIRGIL",
+    "designation": "Vega - Virgil",
+    "distance": 0.6,
+    "latitude": -34,
+    "longitude": -117
+  },
+  "VEGA.JUMPPOINTS.OBERON": {
+    "id": 1796,
+    "system": "VEGA",
+    "code": "VEGA.JUMPPOINTS.OBERON",
+    "designation": "Vega - Oberon",
+    "distance": 1.3,
+    "latitude": 2,
+    "longitude": 63
+  },
+  "VEGA.JUMPPOINTS.BREMEN": {
+    "id": 1797,
+    "system": "VEGA",
+    "code": "VEGA.JUMPPOINTS.BREMEN",
+    "designation": "Vega - Bremen",
+    "distance": 8,
+    "latitude": -20,
+    "longitude": 140
+  },
+  "VIKING.JUMPPOINTS.ORION": {
+    "id": 2184,
+    "system": "VIKING",
+    "code": "VIKING.JUMPPOINTS.ORION",
+    "designation": "Viking - Orion",
+    "distance": 1,
+    "latitude": 65.4573,
+    "longitude": -113.867
+  },
+  "VIKING.JUMPPOINTS.CALIBAN": {
+    "id": 2185,
+    "system": "VIKING",
+    "code": "VIKING.JUMPPOINTS.CALIBAN",
+    "designation": "Viking - Caliban",
+    "distance": 1,
+    "latitude": 21,
+    "longitude": 143
+  },
+  "VIRGIL.JUMPPOINTS.VEGA": {
+    "id": 1730,
+    "system": "VIRGIL",
+    "code": "VIRGIL.JUMPPOINTS.VEGA",
+    "designation": "Virgil - Vega",
+    "distance": 4.6,
+    "latitude": 6,
+    "longitude": 172
+  },
+  "VIRGIL.JUMPPOINTS.TIBER": {
+    "id": 1731,
+    "system": "VIRGIL",
+    "code": "VIRGIL.JUMPPOINTS.TIBER",
+    "designation": "Virgil - Tiber",
+    "distance": 3.3,
+    "latitude": -9,
+    "longitude": 123
+  },
+  "VIRGIL.JUMPPOINTS.NYX": {
+    "id": 1732,
+    "system": "VIRGIL",
+    "code": "VIRGIL.JUMPPOINTS.NYX",
+    "designation": "Virgil - Nyx",
+    "distance": 4.5,
+    "latitude": 4,
+    "longitude": 62
+  },
+  "VIRGIL.JUMPPOINTS.OBERON": {
+    "id": 1733,
+    "system": "VIRGIL",
+    "code": "VIRGIL.JUMPPOINTS.OBERON",
+    "designation": "Virgil - Oberon",
+    "distance": 3.3,
+    "latitude": -12,
+    "longitude": 3
+  },
+  "VIRGIL.JUMPPOINTS.KELLOG": {
+    "id": 1734,
+    "system": "VIRGIL",
+    "code": "VIRGIL.JUMPPOINTS.KELLOG",
+    "designation": "Virgil - Kellog",
+    "distance": 4,
+    "latitude": 18,
+    "longitude": -45
+  },
+  "VIRTUS.JUMPPOINTS.TOHIL": {
+    "id": 2169,
+    "system": "VIRTUS",
+    "code": "VIRTUS.JUMPPOINTS.TOHIL",
+    "designation": "La'uo (Virtus) - Tohil",
+    "distance": 6.92,
+    "latitude": -28.389,
+    "longitude": -71.9555
+  },
+  "VIRTUS.JUMPPOINTS.TRISE": {
+    "id": 2170,
+    "system": "VIRTUS",
+    "code": "VIRTUS.JUMPPOINTS.TRISE",
+    "designation": "La'uo (Virtus) - Trise",
+    "distance": 3,
+    "latitude": 8.5796,
+    "longitude": 101.756
+  },
+  "VIRTUS.JUMPPOINTS.EEALUS": {
+    "id": 2171,
+    "system": "VIRTUS",
+    "code": "VIRTUS.JUMPPOINTS.EEALUS",
+    "designation": "La'uo (Virtus) - Ē'aluth (Eealus)",
+    "distance": 3.333,
+    "latitude": 16.95,
+    "longitude": -1.3
+  },
+  "VULTURE.JUMPPOINT.ORION": {
+    "id": 2836,
+    "system": "VULTURE",
+    "code": "VULTURE.JUMPPOINT.ORION",
+    "designation": "VS-9 \"Vulture\" - Orion",
+    "distance": 7,
+    "latitude": 77,
+    "longitude": 77
+  },
+  "YULIN.JUMPPOINTS.BANSHEE": {
+    "id": 2292,
+    "system": "YULIN",
+    "code": "YULIN.JUMPPOINTS.BANSHEE",
+    "designation": "Yulin - Banshee",
+    "distance": 1,
+    "latitude": 11.7025,
+    "longitude": -86.9554
+  },
+  "YULIN.JUMPPOINTS.LEIR": {
+    "id": 2293,
+    "system": "YULIN",
+    "code": "YULIN.JUMPPOINTS.LEIR",
+    "designation": "Yulin - Leir",
+    "distance": 1,
+    "latitude": -36.7062,
+    "longitude": -54.3133
+  }
+}

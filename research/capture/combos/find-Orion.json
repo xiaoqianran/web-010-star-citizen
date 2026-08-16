@@ -1,0 +1,247 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 360,
+          "code": "ORION",
+          "name": "Orion",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 14,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2092,
+          "code": "ORION.STARS.ORION",
+          "designation": "Orion",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2491,
+          "code": "ORION.PLANET.ORIONI",
+          "designation": "Orion I",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2492,
+          "code": "ORION.PLANET.ORIONII",
+          "designation": "Orion II",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2493,
+          "code": "ORION.PLANET.ORIONIIIARMITAGE",
+          "designation": "Orion III",
+          "name": "Armitage",
+          "star_system_id": 360,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2494,
+          "code": "ORION.PLANET.ORIONIVABYSS",
+          "designation": "Orion IV",
+          "name": "Abyss",
+          "star_system_id": 360,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2549,
+          "code": "ORION.BELTS.ALPHABELT",
+          "designation": "Orion Belt Alpha",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1848,
+          "code": "TIBER.JUMPPOINTS.ORION",
+          "designation": "Tiber - Orion",
+          "name": null,
+          "star_system_id": 327,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 327,
+            "code": "TIBER",
+            "name": "Tiber",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1924,
+          "code": "CALIBAN.JUMPPOINTS.ORION",
+          "designation": "Caliban - Orion",
+          "name": null,
+          "star_system_id": 339,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 339,
+            "code": "CALIBAN",
+            "name": "Caliban",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2087,
+          "code": "ORION.JUMPPOINTS.TIBER",
+          "designation": "Orion - Tiber",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2088,
+          "code": "ORION.JUMPPOINTS.CALIBAN",
+          "designation": "Orion - Caliban",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2091,
+          "code": "ORION.JUMPPOINTS.VIKING",
+          "designation": "Orion - Viking",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2184,
+          "code": "VIKING.JUMPPOINTS.ORION",
+          "designation": "Viking - Orion",
+          "name": null,
+          "star_system_id": 379,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 379,
+            "code": "VIKING",
+            "name": "Viking",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2835,
+          "code": "ORION.JUMPPOINT.VULTURE",
+          "designation": "Orion - VS-9 \"Vulture\"",
+          "name": null,
+          "star_system_id": 360,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 360,
+            "code": "ORION",
+            "name": "Orion",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2836,
+          "code": "VULTURE.JUMPPOINT.ORION",
+          "designation": "VS-9 \"Vulture\" - Orion",
+          "name": null,
+          "star_system_id": 383,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 383,
+            "code": "VULTURE",
+            "name": "Vulture",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 14,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

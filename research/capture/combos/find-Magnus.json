@@ -1,0 +1,187 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 319,
+          "code": "MAGNUS",
+          "name": "Magnus",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 10,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1758,
+          "code": "MAGNUS.STARS.MAGNUS",
+          "designation": "Magnus",
+          "name": null,
+          "star_system_id": 319,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 319,
+            "code": "MAGNUS",
+            "name": "Magnus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1759,
+          "code": "MAGNUS.PLANETS.MAGNUSI",
+          "designation": "Magnus I",
+          "name": null,
+          "star_system_id": 319,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 319,
+            "code": "MAGNUS",
+            "name": "Magnus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1760,
+          "code": "MAGNUS.PLANETS.MAGNUSIIBOREA",
+          "designation": "Magnus II",
+          "name": "Borea",
+          "star_system_id": 319,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 319,
+            "code": "MAGNUS",
+            "name": "Magnus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1761,
+          "code": "MAGNUS.PLANETS.MAGNUSIII",
+          "designation": "Magnus III",
+          "name": null,
+          "star_system_id": 319,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 319,
+            "code": "MAGNUS",
+            "name": "Magnus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1690,
+          "code": "STANTON.JUMPPOINTS.MAGNUS",
+          "designation": "Stanton - Magnus",
+          "name": null,
+          "star_system_id": 314,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 314,
+            "code": "STANTON",
+            "name": "Stanton",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1718,
+          "code": "TERRA.JUMPPOINTS.MAGNUS",
+          "designation": "Terra - Magnus",
+          "name": null,
+          "star_system_id": 316,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 316,
+            "code": "TERRA",
+            "name": "Terra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1755,
+          "code": "MAGNUS.JUMPPOINTS.ELLIS",
+          "designation": "Magnus - Ellis",
+          "name": null,
+          "star_system_id": 319,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 319,
+            "code": "MAGNUS",
+            "name": "Magnus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1756,
+          "code": "MAGNUS.JUMPPOINTS.TERRA",
+          "designation": "Magnus - Terra",
+          "name": null,
+          "star_system_id": 319,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 319,
+            "code": "MAGNUS",
+            "name": "Magnus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1757,
+          "code": "MAGNUS.JUMPPOINTS.STANTON",
+          "designation": "Magnus - Stanton",
+          "name": null,
+          "star_system_id": 319,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 319,
+            "code": "MAGNUS",
+            "name": "Magnus",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1822,
+          "code": "ELLIS.JUMPPOINTS.MAGNUS",
+          "designation": "Ellis - Magnus",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 10,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

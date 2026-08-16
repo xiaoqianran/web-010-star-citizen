@@ -1,0 +1,45 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2394,
+          "code": "KELLOG.PLANET.KELLOGVIQUARTERDECK",
+          "designation": "Kellog VI",
+          "name": "Quarterdeck",
+          "star_system_id": 326,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 326,
+            "code": "KELLOG",
+            "name": "Kellog",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

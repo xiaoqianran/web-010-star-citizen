@@ -1,0 +1,142 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 419,
+          "code": "KABAL",
+          "name": "Kabal",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 7,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2516,
+          "code": "KABAL.STAR.KABAL",
+          "designation": "Kabal",
+          "name": null,
+          "star_system_id": 419,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 419,
+            "code": "KABAL",
+            "name": "Kabal",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2517,
+          "code": "KABAL.PLANET.KABALI",
+          "designation": "Kabal I",
+          "name": null,
+          "star_system_id": 419,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 419,
+            "code": "KABAL",
+            "name": "Kabal",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2518,
+          "code": "KABAL.PLANET.KABALII",
+          "designation": "Kabal II",
+          "name": null,
+          "star_system_id": 419,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 419,
+            "code": "KABAL",
+            "name": "Kabal",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2519,
+          "code": "KABAL.PLANET.KABALIII",
+          "designation": "Kabal III",
+          "name": null,
+          "star_system_id": 419,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 419,
+            "code": "KABAL",
+            "name": "Kabal",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2540,
+          "code": "KABAL.BELTS.KABALCLUTERALPHA",
+          "designation": "Kabal Cluster Alpha",
+          "name": null,
+          "star_system_id": 419,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 419,
+            "code": "KABAL",
+            "name": "Kabal",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2657,
+          "code": "KABAL.JUMPPOINTS.LEIR",
+          "designation": "Kabal - Leir",
+          "name": null,
+          "star_system_id": 419,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 419,
+            "code": "KABAL",
+            "name": "Kabal",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2658,
+          "code": "LEIR.JUMPPOINTS.KABAL",
+          "designation": "Leir - Kabal",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 7,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

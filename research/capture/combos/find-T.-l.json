@@ -1,0 +1,202 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 385,
+          "code": "TAL",
+          "name": "T.āl",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 11,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2504,
+          "code": "TAL.PLANET.TALI",
+          "designation": "T.āl I",
+          "name": "Y.ōm'e",
+          "star_system_id": 385,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2505,
+          "code": "TAL.PLANET.TALIIOLISHA",
+          "designation": "T.āl II",
+          "name": "Oli'xa",
+          "star_system_id": 385,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2506,
+          "code": "TAL.PLANET.TALIIILUKSHI",
+          "designation": "T.āl III",
+          "name": "Lūng'xyi",
+          "star_system_id": 385,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2507,
+          "code": "TAL.PLANET.TALIVLISHAHVU",
+          "designation": "T.āl IV",
+          "name": "Lixāuu",
+          "star_system_id": 385,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2508,
+          "code": "TAL.PLANET.TALVRHIORR",
+          "designation": "T.āl V",
+          "name": "Ryōl",
+          "star_system_id": 385,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2509,
+          "code": "TAL.PLANET.TALVI",
+          "designation": "T.āl VI",
+          "name": "Chuaiton",
+          "star_system_id": 385,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2510,
+          "code": "TAL.PLANET.TALVII",
+          "designation": "T.āl VII",
+          "name": "Kyu'nao",
+          "star_system_id": 385,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2210,
+          "code": "TAL.JUMPPOINTS.PALLAS",
+          "designation": "T.āl - Th.us'ūng (Pallas)",
+          "name": null,
+          "star_system_id": 385,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2267,
+          "code": "PALLAS.JUMPPOINTS.TAL",
+          "designation": "Th.us'ūng (Pallas) - T.āl",
+          "name": null,
+          "star_system_id": 397,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2833,
+          "code": "AILKA.JUMPPOINT.TAL",
+          "designation": "Ail'ka - T.āl",
+          "name": null,
+          "star_system_id": 398,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 398,
+            "code": "AYR'KA",
+            "name": "Ail'ka",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2834,
+          "code": "TAL.JUMPPOINT.AILKA",
+          "designation": "T.āl - Ail'ka",
+          "name": null,
+          "star_system_id": 385,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 385,
+            "code": "TAL",
+            "name": "T.āl",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 11,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

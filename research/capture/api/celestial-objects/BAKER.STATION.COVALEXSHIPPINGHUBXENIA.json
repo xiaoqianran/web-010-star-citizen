@@ -1,0 +1,60 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2598,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "BAKER.STATION.COVALEXSHIPPINGHUBXENIA",
+        "description": "Operated by Covalex Shipping, the Xenia station not only serves as a major cargo transfer hub for goods heading throughout the Empire, but also houses most of the permanent population in Baker system.\n",
+        "designation": "Covalex Shipping Hub Xenia",
+        "distance": 5.986569,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": null,
+        "longitude": 156.156484,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": null,
+        "sensor_danger": "3",
+        "sensor_economy": "6",
+        "sensor_population": "3",
+        "shader_data": {
+          "orbitalMin": 1,
+          "orbitalMax": 5,
+          "orbitalFactor": 1,
+          "orbitalColor": "rgb(26,86,124)",
+          "orbitalHighlightColor": "rgb(128,128,255)",
+          "radius": 0.03
+        },
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": null,
+        "subtype_id": 44,
+        "time_modified": "2015-10-09 20:13:07",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

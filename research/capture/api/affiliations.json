@@ -1,0 +1,53 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 6,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 1,
+        "code": "uee",
+        "color": "#48bbd4",
+        "name": "UEE"
+      },
+      {
+        "id": 2,
+        "code": "BANU",
+        "color": "#ffce17",
+        "name": "Banu"
+      },
+      {
+        "id": 3,
+        "code": "VNCL",
+        "color": "#bd002d",
+        "name": "Vanduul"
+      },
+      {
+        "id": 4,
+        "code": "XIAN",
+        "color": "#52c231",
+        "name": "Xi'an"
+      },
+      {
+        "id": 7,
+        "code": "DEV",
+        "color": "#ca922d",
+        "name": "Developing"
+      },
+      {
+        "id": 8,
+        "code": "UNC",
+        "color": "#f6851f",
+        "name": "Unclaimed"
+      }
+    ],
+    "totalrows": 6,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

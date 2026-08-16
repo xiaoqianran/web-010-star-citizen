@@ -1,0 +1,53 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2728,
+        "age": null,
+        "appearance": "WARNING_RED",
+        "axial_tilt": null,
+        "code": "VEGA.POI.WARN01",
+        "description": "Police units swept down the block collecting survivors and escorting us through the collapsing buildings to a safer location. Saint Aerik’s Hospital was already overflowing. People slumped on the floors, covered in dust and blood. Screams and sobs echoed over the shouts of medics and doctors as they struggled in the smoke to save lives. It was tough to tell who was dead and who wasn’t.",
+        "designation": "VANDUUL-WARN-01",
+        "distance": 0.00003501,
+        "fairchanceact": null,
+        "habitable": null,
+        "info_url": null,
+        "latitude": 25.5,
+        "longitude": 12.2164,
+        "name": "Vanduul Attack",
+        "orbit_period": null,
+        "parent_id": 1800,
+        "sensor_danger": "0",
+        "sensor_economy": "0",
+        "sensor_population": "0",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": null,
+        "subtype_id": 75,
+        "time_modified": "2015-10-09 00:15:31",
+        "type": "POI",
+        "subtype": {
+          "id": 75,
+          "name": "POI",
+          "type": "POI"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

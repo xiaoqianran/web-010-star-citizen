@@ -1,0 +1,172 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 420,
+          "code": "TANGA",
+          "name": "Tanga",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 9,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2525,
+          "code": "TANGA.STAR.TANGA",
+          "designation": "Tanga",
+          "name": null,
+          "star_system_id": 420,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 420,
+            "code": "TANGA",
+            "name": "Tanga",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1837,
+          "code": "HELIOS.PLANETS.HELIOSII",
+          "designation": "Helios II",
+          "name": "Tangaroa",
+          "star_system_id": 325,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 325,
+            "code": "HELIOS",
+            "name": "Helios",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2585,
+          "code": "TANGA.PLANET.TANGAI",
+          "designation": "Tanga I",
+          "name": null,
+          "star_system_id": 420,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 420,
+            "code": "TANGA",
+            "name": "Tanga",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2586,
+          "code": "TANGA.PLANET.TANGAII",
+          "designation": "Tanga II",
+          "name": null,
+          "star_system_id": 420,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 420,
+            "code": "TANGA",
+            "name": "Tanga",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2595,
+          "code": "TANGA.BELTS.TANGABELTALPHA",
+          "designation": "Tanga Belt Alpha",
+          "name": null,
+          "star_system_id": 420,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 420,
+            "code": "TANGA",
+            "name": "Tanga",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2712,
+          "code": "TANGA.JUMPPOINTS.ODIN",
+          "designation": "Tanga - Odin",
+          "name": null,
+          "star_system_id": 420,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 420,
+            "code": "TANGA",
+            "name": "Tanga",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2713,
+          "code": "ODIN.JUMPPOINTS.TANGA",
+          "designation": "Odin - Tanga",
+          "name": null,
+          "star_system_id": 324,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 324,
+            "code": "ODIN",
+            "name": "Odin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2714,
+          "code": "TANGA.JUMPPOINTS.BREMEN",
+          "designation": "Tanga - Bremen",
+          "name": null,
+          "star_system_id": 420,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 420,
+            "code": "TANGA",
+            "name": "Tanga",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2715,
+          "code": "BREMEN.JUMPPOINTS.TANGA",
+          "designation": "Bremen - Tanga",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 9,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

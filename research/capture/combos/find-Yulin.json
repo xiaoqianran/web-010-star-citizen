@@ -1,0 +1,232 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 402,
+          "code": "YULIN",
+          "name": "Yulin",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 13,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2295,
+          "code": "YULIN.STARS.YULIN",
+          "designation": "Yulin",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2675,
+          "code": "YULIN.PLANET.YULINI",
+          "designation": "Yulin I",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2676,
+          "code": "YULIN.PLANET.YULINII",
+          "designation": "Yulin II",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2677,
+          "code": "YULIN.PLANET.YULINIII",
+          "designation": "Yulin III",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2678,
+          "code": "YULIN.PLANET.YULINIV",
+          "designation": "Yulin IV",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2679,
+          "code": "YULIN.PLANET.YULINV",
+          "designation": "Yulin V",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2680,
+          "code": "YULIN.PLANET.YULINVI",
+          "designation": "Yulin VI",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2702,
+          "code": "YULIN.STATION.YULINFLOTILLA",
+          "designation": "Yulin Flotilla",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2584,
+          "code": "YULIN.BELTS.YULINCLUSTERALPHA",
+          "designation": "Yulin Cluster Alpha",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "ASTEROID_FIELD",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1979,
+          "code": "BANSHEE.JUMPPOINTS.YULIN",
+          "designation": "Banshee - Yulin",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2292,
+          "code": "YULIN.JUMPPOINTS.BANSHEE",
+          "designation": "Yulin - Banshee",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2293,
+          "code": "YULIN.JUMPPOINTS.LEIR",
+          "designation": "Yulin - Leir",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2336,
+          "code": "LEIR.JUMPPOINTS.YULIN",
+          "designation": "Leir - Yulin",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 13,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

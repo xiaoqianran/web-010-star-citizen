@@ -1,0 +1,217 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 417,
+          "code": "TOHIL",
+          "name": "Tohil",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 12,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2375,
+          "code": "TOHIL.STARS.TOHIL",
+          "designation": "Tohil",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2636,
+          "code": "TOHIL.PLANETS.TOHILI",
+          "designation": "Tohil I",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2637,
+          "code": "TOHIL,PLANETS.TOHILII",
+          "designation": "Tohil II",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2638,
+          "code": "TOHIL.PLANETS.TOHILIII",
+          "designation": "Tohil III",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2639,
+          "code": "TOHIL.PLANETS.TOHILIV",
+          "designation": "Tohil IV",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2640,
+          "code": "TOHIL.BELTS.ALPHABELT",
+          "designation": "Tohil Belt Alpha",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1712,
+          "code": "NYX.JUMPPOINTS.TOHIL",
+          "designation": "Nyx - Tohil",
+          "name": null,
+          "star_system_id": 315,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2169,
+          "code": "VIRTUS.JUMPPOINTS.TOHIL",
+          "designation": "La'uo (Virtus) - Tohil",
+          "name": null,
+          "star_system_id": 376,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 376,
+            "code": "VIRTUS",
+            "name": "La'uo (Virtus)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2331,
+          "code": "OYA.JUMPPOINTS.TOHIL",
+          "designation": "Oya - Tohil",
+          "name": null,
+          "star_system_id": 409,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 409,
+            "code": "OYA",
+            "name": "Oya",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2372,
+          "code": "TOHIL.JUMPPOINTS.OYA",
+          "designation": "Tohil - Oya",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2373,
+          "code": "TOHIL.JUMPPOINTS.VIRTUS",
+          "designation": "Tohil - La'uo (Virtus)",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2374,
+          "code": "TOHIL.JUMPPOINTS.NYX",
+          "designation": "Tohil - Nyx",
+          "name": null,
+          "star_system_id": 417,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 417,
+            "code": "TOHIL",
+            "name": "Tohil",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 12,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

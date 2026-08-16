@@ -1,0 +1,277 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 342,
+          "code": "BAKER",
+          "name": "Baker",
+          "type": "BINARY"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 16,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1948,
+          "code": "BAKER.STARS.BAKERA",
+          "designation": "Baker A",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2528,
+          "code": "BAKER.STAR.BAKERB",
+          "designation": "Baker B",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2424,
+          "code": "BAKER.PLANET.BAKERI",
+          "designation": "Baker I",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2425,
+          "code": "BAKER.PLANET.BAKERII",
+          "designation": "Baker II",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2426,
+          "code": "BAKER.PLANET.BAKERIII",
+          "designation": "Baker III",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2427,
+          "code": "BAKER.PLANET.BAKERIV",
+          "designation": "Baker IV",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 1853,
+          "code": "OSIRIS.JUMPPOINTS.BAKER",
+          "designation": "Osiris - Baker",
+          "name": null,
+          "star_system_id": 328,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 328,
+            "code": "OSIRIS",
+            "name": "Osiris",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1889,
+          "code": "TAYAC.JUMPPOINTS.BAKER",
+          "designation": "Tayac - Baker",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1943,
+          "code": "BAKER.JUMPPOINTS.TAYAC",
+          "designation": "Baker - Tayac",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 1944,
+          "code": "BAKER.JUMPPOINTS.KIEL",
+          "designation": "Baker - Kiel",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 1945,
+          "code": "BAKER.JUMPPOINTS.HADUR",
+          "designation": "Baker - Yā'mon (Hadur)",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 1946,
+          "code": "BAKER.JUMPPOINTS.OSIRIS",
+          "designation": "Baker - Osiris",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 1947,
+          "code": "BAKER.JUMPPOINTS.PALLAS",
+          "designation": "Baker - Th.us'ūng (Pallas)",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2176,
+          "code": "HADUR.JUMPPOINTS.BAKER",
+          "designation": "Yā'mon (Hadur) - Baker",
+          "name": null,
+          "star_system_id": 377,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 377,
+            "code": "HADUR",
+            "name": "Yā'mon (Hadur)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2264,
+          "code": "PALLAS.JUMPPOINTS.BAKER",
+          "designation": "Th.us'ūng (Pallas) - Baker",
+          "name": null,
+          "star_system_id": 397,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 397,
+            "code": "PALLAS",
+            "name": "Th.us'ūng (Pallas)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2366,
+          "code": "KIEL.JUMPPOINTS.BAKER",
+          "designation": "Kiel - Baker",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 16,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

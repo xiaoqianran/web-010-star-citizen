@@ -1,0 +1,66 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2700,
+        "age": null,
+        "appearance": "CUSTOM",
+        "axial_tilt": null,
+        "code": "TAYAC.STATION.THEARK",
+        "description": "Opened by the UEE in 2800, the Ark was built following the massacre of Garron II and the fall of the Messer regime. It was intended to be a repository for universal knowledge as well as a neutral ground for diplomatic discussions between species. Though it has been used infrequently for diplomatic purposes, the Ark’s massive library contains a wealth of invaluable cultural and historical information.",
+        "designation": "The ARK",
+        "distance": 0.00004562,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": null,
+        "longitude": null,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 2688,
+        "sensor_danger": "3",
+        "sensor_economy": "3",
+        "sensor_population": "3",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": 1.2656,
+        "subtype_id": 44,
+        "time_modified": "2015-10-10 04:40:11",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [
+          {
+            "id": 1,
+            "code": "uee",
+            "color": "#48bbd4",
+            "name": "UEE",
+            "membership.id": 2458
+          }
+        ],
+        "population": [],
+        "children": [],
+        "model": {
+          "slug": "sxj9reqlg4ktj",
+          "source": "https://robertsspaceindustries.com/media/sxj9reqlg4ktjr/source/ARK_logo.dae",
+          "images": []
+        }
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

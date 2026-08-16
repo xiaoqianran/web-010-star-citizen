@@ -1,0 +1,61 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2729,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "GARRON.STATION.OBHELLER",
+        "description": "A station placed near Garron II, OB Heller houses the scientific teams working to restore the planet, but the station also acts as an ecotourist site to educate and inform people about terraforming, the Fair Chance Act, Humanity’s responsibility and the Synthworld.",
+        "designation": "OB Heller",
+        "distance": 3,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": 10,
+        "longitude": 260,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 2685,
+        "sensor_danger": "2",
+        "sensor_economy": "5",
+        "sensor_population": "3",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": null,
+        "subtype_id": 44,
+        "time_modified": "2015-10-08 17:56:40",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 44,
+          "name": "Space Station",
+          "type": "MANMADE"
+        },
+        "affiliation": [
+          {
+            "id": 1,
+            "code": "uee",
+            "color": "#48bbd4",
+            "name": "UEE",
+            "membership.id": 2053
+          }
+        ],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

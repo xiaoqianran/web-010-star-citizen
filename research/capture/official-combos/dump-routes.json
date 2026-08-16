@@ -1,0 +1,821 @@
+{
+  "title": "ARK Starmap | Roberts Space Industries | Follow the development of Star Citizen and Squadron 42",
+  "bodyText": "Home Explore Starmap Starmap BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE",
+  "href": "https://robertsspaceindustries.com/en/starmap/routes",
+  "menu": [
+    {
+      "tag": "section",
+      "text": "BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMA",
+      "cls": "sm-starmap-application",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 976
+      }
+    },
+    {
+      "tag": "section",
+      "text": "BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT",
+      "cls": "sm-starmap",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 1083
+      }
+    },
+    {
+      "tag": "section",
+      "text": "BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT",
+      "cls": "disc-root starmap-disc",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 554,
+        "h": 273
+      }
+    },
+    {
+      "tag": "ul",
+      "text": "BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID",
+      "cls": "disc-root__extended-menu",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 304,
+        "y": 40,
+        "w": 250,
+        "h": 400
+      }
+    },
+    {
+      "tag": "a",
+      "text": "SET AS:DEPARTURE",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 398,
+        "y": 166,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "SET AS:DESTINATION",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 407,
+        "y": 196,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "AVOID",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 410,
+        "y": 226,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "section",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE",
+      "cls": "sm-controls",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 974,
+        "w": 1920,
+        "h": 106
+      }
+    },
+    {
+      "tag": "ul",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+      "cls": "sm-tabs",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 933,
+        "w": 1920,
+        "h": 41
+      }
+    },
+    {
+      "tag": "a",
+      "text": "BOOKMARKS",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1565,
+        "y": 938,
+        "w": 142,
+        "h": 36
+      }
+    }
+  ],
+  "items": [
+    {
+      "tag": "a",
+      "text": "Home",
+      "cls": "a-breadcrumbItem__link",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 314,
+        "y": 10,
+        "w": 36,
+        "h": 20
+      }
+    },
+    {
+      "tag": "a",
+      "text": "Starmap",
+      "cls": "a-productHomeProductLogo -large",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 252,
+        "y": 40,
+        "w": 128,
+        "h": 64
+      }
+    },
+    {
+      "tag": "section",
+      "text": "BACKGLXSYSOBJ TERRA BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMA",
+      "cls": "sm-starmap-application",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 976
+      }
+    },
+    {
+      "tag": "div",
+      "text": "BACKGLXSYSOBJ TERRA",
+      "cls": "sm-header",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 41
+      }
+    },
+    {
+      "tag": "div",
+      "text": "BACKGLXSYSOBJ",
+      "cls": "sm-back-indicator-container",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 291,
+        "h": 41
+      }
+    },
+    {
+      "tag": "button",
+      "text": "BACK",
+      "cls": "sm-back",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 25,
+        "y": 104,
+        "w": 80,
+        "h": 40
+      }
+    },
+    {
+      "tag": "ul",
+      "text": "GLXSYSOBJ",
+      "cls": "sm-indicator",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 105,
+        "y": 104,
+        "w": 186,
+        "h": 40
+      }
+    },
+    {
+      "tag": "li",
+      "text": "SYS",
+      "cls": "sm-active",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 165,
+        "y": 104,
+        "w": 60,
+        "h": 40
+      }
+    },
+    {
+      "tag": "div",
+      "text": "TERRA",
+      "cls": "sm-info-container",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 321,
+        "y": 104,
+        "w": 1434,
+        "h": 41
+      }
+    },
+    {
+      "tag": "div",
+      "text": "TERRA",
+      "cls": "sm-info sm-status-P sm-affiliation-uee",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 933,
+        "y": 104,
+        "w": 210,
+        "h": 10
+      }
+    },
+    {
+      "tag": "div",
+      "text": "TERRA",
+      "cls": "sm-info-inner",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 963,
+        "y": 104,
+        "w": 150,
+        "h": 40
+      }
+    },
+    {
+      "tag": "span",
+      "text": "TERRA",
+      "cls": "sm-name",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1022,
+        "y": 115,
+        "w": 61,
+        "h": 17
+      }
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "cls": "sm-settings-container",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1755,
+        "y": 104,
+        "w": 165,
+        "h": 41
+      }
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "cls": "sm-settings",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1785,
+        "y": 104,
+        "w": 135,
+        "h": 41
+      }
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "cls": "sm-sound sm-enabled",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1785,
+        "y": 104,
+        "w": 57,
+        "h": 40
+      }
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "cls": "sm-fullscreen ",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1842,
+        "y": 104,
+        "w": 53,
+        "h": 40
+      }
+    },
+    {
+      "tag": "section",
+      "text": "BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT",
+      "cls": "sm-starmap",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 1083
+      }
+    },
+    {
+      "tag": "section",
+      "text": "BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT",
+      "cls": "disc-root starmap-disc",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 554,
+        "h": 273
+      }
+    },
+    {
+      "tag": "ul",
+      "text": "BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID",
+      "cls": "disc-root__extended-menu",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 304,
+        "y": 40,
+        "w": 250,
+        "h": 400
+      }
+    },
+    {
+      "tag": "a",
+      "text": "BACK",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 383,
+        "y": 136,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "SET AS:DEPARTURE",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 398,
+        "y": 166,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "SET AS:DESTINATION",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 407,
+        "y": 196,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "a",
+      "text": "AVOID",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 410,
+        "y": 226,
+        "w": 160,
+        "h": 30
+      }
+    },
+    {
+      "tag": "section",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE",
+      "cls": "sm-controls",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 974,
+        "w": 1920,
+        "h": 106
+      }
+    },
+    {
+      "tag": "ul",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+      "cls": "sm-tabs",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 933,
+        "w": 1920,
+        "h": 41
+      }
+    },
+    {
+      "tag": "a",
+      "text": "SEARCH",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1449,
+        "y": 938,
+        "w": 116,
+        "h": 36
+      }
+    },
+    {
+      "tag": "a",
+      "text": "BOOKMARKS",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1565,
+        "y": 938,
+        "w": 142,
+        "h": 36
+      }
+    },
+    {
+      "tag": "li",
+      "text": "ROUTES",
+      "cls": "sm-active",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1707,
+        "y": 933,
+        "w": 94,
+        "h": 41
+      }
+    },
+    {
+      "tag": "a",
+      "text": "ROUTES",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1707,
+        "y": 934,
+        "w": 94,
+        "h": 40
+      }
+    },
+    {
+      "tag": "a",
+      "text": "DISPLAY",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1801,
+        "y": 938,
+        "w": 119,
+        "h": 36
+      }
+    },
+    {
+      "tag": "div",
+      "text": "DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE",
+      "cls": "sm-routes-tab",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 0,
+        "y": 989,
+        "w": 1920,
+        "h": 60
+      }
+    },
+    {
+      "tag": "form",
+      "text": "DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE",
+      "cls": "sm-routes",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 224,
+        "y": 990,
+        "w": 1666,
+        "h": 60
+      }
+    },
+    {
+      "tag": "div",
+      "text": "DEPARTURE",
+      "cls": "sm-departure-region",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 907,
+        "y": 990,
+        "w": 294,
+        "h": 60
+      }
+    },
+    {
+      "tag": "div",
+      "text": "DEPARTURE",
+      "cls": "sm-field",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 847,
+        "y": 990,
+        "w": 354,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "DEPARTURE",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 907,
+        "y": 1058,
+        "w": 68,
+        "h": 10
+      }
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "cls": "sm-input-container",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 904,
+        "y": 1007,
+        "w": 230,
+        "h": 20
+      }
+    },
+    {
+      "tag": "input",
+      "text": "Goss A",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 924,
+        "y": 1007,
+        "w": 166,
+        "h": 20
+      }
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "cls": "sm-search-autocomplete",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1094,
+        "y": 1007,
+        "w": 44,
+        "h": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "DESTINATION",
+      "cls": "sm-destination-region",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1202,
+        "y": 990,
+        "w": 294,
+        "h": 60
+      }
+    },
+    {
+      "tag": "div",
+      "text": "DESTINATION",
+      "cls": "sm-field",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1142,
+        "y": 990,
+        "w": 354,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "DESTINATION",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1202,
+        "y": 1058,
+        "w": 76,
+        "h": 10
+      }
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "cls": "sm-input-container",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1199,
+        "y": 1007,
+        "w": 230,
+        "h": 20
+      }
+    },
+    {
+      "tag": "input",
+      "text": "TERRA",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1219,
+        "y": 1007,
+        "w": 166,
+        "h": 20
+      }
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "cls": "sm-search-autocomplete",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1389,
+        "y": 1007,
+        "w": 44,
+        "h": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "SHIP SIZE SMALL MEDIUM LARGE",
+      "cls": "sm-ship-size",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1536,
+        "y": 990,
+        "w": 123,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "SHIP SIZE",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1536,
+        "y": 1058,
+        "w": 55,
+        "h": 10
+      }
+    },
+    {
+      "tag": "label",
+      "text": "SMALL",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1477,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "MEDIUM",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1518,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "text": "LARGE",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1559,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "div",
+      "text": "CALCULATE",
+      "cls": "sm-actions",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1639,
+        "y": 990,
+        "w": 251,
+        "h": 60
+      }
+    },
+    {
+      "tag": "button",
+      "text": "CALCULATE",
+      "cls": "",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 1715,
+        "y": 1007,
+        "w": 111,
+        "h": 19
+      }
+    },
+    {
+      "tag": "a",
+      "text": "BACK TO RSI WEBSITE",
+      "cls": "sm-website",
+      "vis": true,
+      "opacity": "1",
+      "box": {
+        "x": 30,
+        "y": 1059,
+        "w": 118,
+        "h": 10
+      }
+    }
+  ],
+  "classesPresent": [
+    "sm-routes-tab",
+    "sm-search-autocomplete",
+    "starmap-disc",
+    "disc-root__menu"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 422,
+          "code": "TAMSA",
+          "name": "Tamsa",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 5,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2521,
+          "code": "TAMSA.STAR.TAMSA",
+          "designation": "Tamsa",
+          "name": null,
+          "star_system_id": 422,
+          "status": "P",
+          "type": "BLACKHOLE",
+          "star_system": {
+            "id": 422,
+            "code": "TAMSA",
+            "name": "Tamsa",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2522,
+          "code": "TAMSA.PLANET.TAMSAI",
+          "designation": "Tamsa I",
+          "name": null,
+          "star_system_id": 422,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 422,
+            "code": "TAMSA",
+            "name": "Tamsa",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2523,
+          "code": "TAMSA.PLANET.TAMSAII",
+          "designation": "Tamsa II",
+          "name": null,
+          "star_system_id": 422,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 422,
+            "code": "TAMSA",
+            "name": "Tamsa",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2659,
+          "code": "TAMSA.JUMPPOINTS.BANSHEE",
+          "designation": "Tamsa - Banshee",
+          "name": null,
+          "star_system_id": 422,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 422,
+            "code": "TAMSA",
+            "name": "Tamsa",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2660,
+          "code": "BANSHEE.JUMPPOINTS.TAMSA",
+          "designation": "Banshee - Tamsa",
+          "name": null,
+          "star_system_id": 346,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 346,
+            "code": "BANSHEE",
+            "name": "Banshee",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 5,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

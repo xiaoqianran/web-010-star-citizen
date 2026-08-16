@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Stanton to Pyro",
+      "label": "Through Pyro",
+      "first_jump": "Stanton - Pyro",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "STANTON",
+          "name": "Stanton",
+          "type": "system",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1689,
+          "name": "Stanton - Pyro",
+          "type": "jump",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": 1689,
+          "object_code": "STANTON.JUMPPOINTS.PYRO",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1740,
+          "name": "Pyro - Stanton",
+          "type": "jump",
+          "system_id": 318,
+          "system_code": "PYRO",
+          "object_id": 1740,
+          "object_code": "PYRO.JUMPPOINTS.STANTON",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "PYRO",
+          "name": "Pyro",
+          "type": "system",
+          "system_id": 318,
+          "system_code": "PYRO",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Stanton to Pyro",
+      "label": "Through Pyro",
+      "first_jump": "Stanton - Pyro",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "STANTON",
+          "name": "Stanton",
+          "type": "system",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1689,
+          "name": "Stanton - Pyro",
+          "type": "jump",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": 1689,
+          "object_code": "STANTON.JUMPPOINTS.PYRO",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1740,
+          "name": "Pyro - Stanton",
+          "type": "jump",
+          "system_id": 318,
+          "system_code": "PYRO",
+          "object_id": 1740,
+          "object_code": "PYRO.JUMPPOINTS.STANTON",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "PYRO",
+          "name": "Pyro",
+          "type": "system",
+          "system_id": 318,
+          "system_code": "PYRO",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Terra to Pyro",
+      "label": "Through Pyro",
+      "first_jump": "Terra - Pyro",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "TERRA",
+          "name": "Terra",
+          "type": "system",
+          "system_id": 316,
+          "system_code": "TERRA",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1719,
+          "name": "Terra - Pyro",
+          "type": "jump",
+          "system_id": 316,
+          "system_code": "TERRA",
+          "object_id": 1719,
+          "object_code": "TERRA.JUMPPOINTS.PYRO",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1754,
+          "name": "Pyro - Terra",
+          "type": "jump",
+          "system_id": 318,
+          "system_code": "PYRO",
+          "object_id": 1754,
+          "object_code": "PYRO.JUMPPOINTS.TERRA",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "PYRO",
+          "name": "Pyro",
+          "type": "system",
+          "system_id": 318,
+          "system_code": "PYRO",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Terra to Pyro",
+      "label": "Through Pyro",
+      "first_jump": "Terra - Pyro",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "TERRA",
+          "name": "Terra",
+          "type": "system",
+          "system_id": 316,
+          "system_code": "TERRA",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1719,
+          "name": "Terra - Pyro",
+          "type": "jump",
+          "system_id": 316,
+          "system_code": "TERRA",
+          "object_id": 1719,
+          "object_code": "TERRA.JUMPPOINTS.PYRO",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1754,
+          "name": "Pyro - Terra",
+          "type": "jump",
+          "system_id": 318,
+          "system_code": "PYRO",
+          "object_id": 1754,
+          "object_code": "PYRO.JUMPPOINTS.TERRA",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "PYRO",
+          "name": "Pyro",
+          "type": "system",
+          "system_id": 318,
+          "system_code": "PYRO",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

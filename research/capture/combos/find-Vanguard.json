@@ -1,0 +1,112 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 391,
+          "code": "VANGUARD",
+          "name": "Vanguard",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 5,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2241,
+          "code": "VANGUARD.STARS.VANGUARD",
+          "designation": "Vanguard",
+          "name": null,
+          "star_system_id": 391,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 391,
+            "code": "VANGUARD",
+            "name": "Vanguard",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2102,
+          "code": "ELYSIUM.JUMPPOINTS.VANGUARD",
+          "designation": "Elysium - Vanguard",
+          "name": null,
+          "star_system_id": 363,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 363,
+            "code": "ELYSIUM",
+            "name": "Elysium",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2239,
+          "code": "VANGUARD.JUMPPOINTS.LEIR",
+          "designation": "Vanguard - Leir",
+          "name": null,
+          "star_system_id": 391,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 391,
+            "code": "VANGUARD",
+            "name": "Vanguard",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2240,
+          "code": "VANGUARD.JUMPPOINTS.ELYSIUM",
+          "designation": "Vanguard - Elysium",
+          "name": null,
+          "star_system_id": 391,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 391,
+            "code": "VANGUARD",
+            "name": "Vanguard",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2334,
+          "code": "LEIR.JUMPPOINTS.VANGUARD",
+          "designation": "Leir - Vanguard",
+          "name": null,
+          "star_system_id": 410,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 410,
+            "code": "LEIR",
+            "name": "Leir",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 5,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Goss to Tyrol",
+      "label": "Through Tyrol",
+      "first_jump": "Goss - Tyrol",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "GOSS",
+          "name": "Goss",
+          "type": "system",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 2066,
+          "name": "Goss - Tyrol",
+          "type": "jump",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": 2066,
+          "object_code": "GOSS.JUMPPOINTS.TYROL",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1986,
+          "name": "Tyrol - Goss",
+          "type": "jump",
+          "system_id": 347,
+          "system_code": "TYROL",
+          "object_id": 1986,
+          "object_code": "TYROL.JUMPPOINTS.GOSS",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "TYROL",
+          "name": "Tyrol",
+          "type": "system",
+          "system_id": 347,
+          "system_code": "TYROL",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Goss to Tyrol",
+      "label": "Through Tyrol",
+      "first_jump": "Goss - Tyrol",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "GOSS",
+          "name": "Goss",
+          "type": "system",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 2066,
+          "name": "Goss - Tyrol",
+          "type": "jump",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": 2066,
+          "object_code": "GOSS.JUMPPOINTS.TYROL",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1986,
+          "name": "Tyrol - Goss",
+          "type": "jump",
+          "system_id": 347,
+          "system_code": "TYROL",
+          "object_id": 1986,
+          "object_code": "TYROL.JUMPPOINTS.GOSS",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "TYROL",
+          "name": "Tyrol",
+          "type": "system",
+          "system_id": 347,
+          "system_code": "TYROL",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

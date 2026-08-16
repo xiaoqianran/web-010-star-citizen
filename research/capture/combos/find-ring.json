@@ -1,0 +1,210 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 12,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1707,
+          "code": "NYX.BELTS.GLACIEMRING",
+          "designation": "Nyx Belt Alpha",
+          "name": "Glaciem Ring",
+          "star_system_id": 315,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 315,
+            "code": "NYX",
+            "name": "Nyx",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2038,
+          "code": "SOL.BELTS.RINGSOFSATURN",
+          "designation": "Rings of Saturn",
+          "name": null,
+          "star_system_id": 355,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2039,
+          "code": "SOL.BELTS.JOVIANRINGS",
+          "designation": "Jovian Rings",
+          "name": null,
+          "star_system_id": 355,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2040,
+          "code": "SOL.BELTS.RINGSOFNEPTUNE",
+          "designation": "Rings of Neptune",
+          "name": null,
+          "star_system_id": 355,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2041,
+          "code": "SOL.BELTS.RINGSOFURANUS",
+          "designation": "Rings of Uranus",
+          "name": null,
+          "star_system_id": 355,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2718,
+          "code": "TAYAC.RINGS.TAYACIIRINGS",
+          "designation": "Rings of Tayac II",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2732,
+          "code": "INDRA.RINGS.RINGSOFINDRA",
+          "designation": "Rings of Kyuk'ya I",
+          "name": null,
+          "star_system_id": 399,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 399,
+            "code": "INDRA",
+            "name": "Kyuk'ya (Indra)",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2734,
+          "code": "BRANAUGH.RINGS.BRANAUGHII",
+          "designation": "Rings of Branaugh II",
+          "name": null,
+          "star_system_id": 416,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 416,
+            "code": "BRANAUGH",
+            "name": "Branaugh",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2736,
+          "code": "VEGA.RINGS.RINGSOFAREMIS",
+          "designation": "Rings of Aremis",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2780,
+          "code": "ELLIS.RINGS.RINGSOFELLISVII",
+          "designation": "Rings of Ellis VII",
+          "name": null,
+          "star_system_id": 323,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 323,
+            "code": "ELLIS",
+            "name": "Ellis",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2782,
+          "code": "KIEL.RINGS.RINGSOFKIELV",
+          "designation": "Rings of Kiel V",
+          "name": null,
+          "star_system_id": 415,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 415,
+            "code": "KIEL",
+            "name": "Kiel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2829,
+          "code": "STANTON.RINGS.RINGSOFYELA",
+          "designation": "Ring of Yela",
+          "name": null,
+          "star_system_id": 314,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 314,
+            "code": "STANTON",
+            "name": "Stanton",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 12,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 396,
+        "code": "EL'SIN",
+        "description": "INCOMPLETE MAP DATA",
+        "frost_line": 0,
+        "habitable_zone_inner": 0,
+        "habitable_zone_outer": 0,
+        "info_url": null,
+        "name": "El'sin",
+        "position_x": 80.758041,
+        "position_y": 70.457497,
+        "position_z": 24.673809,
+        "shader_data": null,
+        "status": "N",
+        "time_modified": "2015-10-08 21:02:22",
+        "type": "SINGLE_STAR",
+        "affiliation": [
+          {
+            "id": 4,
+            "code": "XIAN",
+            "color": "#52c231",
+            "name": "Xi'an",
+            "membership.id": 570
+          }
+        ],
+        "celestial_objects": [
+          {
+            "id": 2263,
+            "age": 0,
+            "appearance": "DEFAULT",
+            "axial_tilt": 0,
+            "code": "EL'SIN.STARS.EL'SIN",
+            "description": "",
+            "designation": "El'sin",
+            "distance": 0,
+            "fairchanceact": false,
+            "habitable": false,
+            "info_url": null,
+            "latitude": 0,
+            "longitude": 0,
+            "name": null,
+            "orbit_period": -1,
+            "parent_id": null,
+            "sensor_danger": "0",
+            "sensor_economy": "0",
+            "sensor_population": "0",
+            "shader_data": null,
+            "show_label": true,
+            "show_orbitlines": false,
+            "size": 1,
+            "subtype_id": null,
+            "time_modified": "2015-09-15 14:34:14",
+            "type": "STAR",
+            "subtype": null,
+            "affiliation": [],
+            "population": []
+          }
+        ],
+        "aggregated_size": "0.00000000",
+        "aggregated_population": 0,
+        "aggregated_economy": 0,
+        "aggregated_danger": 0
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

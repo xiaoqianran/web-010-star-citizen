@@ -1,0 +1,60 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 2,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2259,
+          "code": "MARKAHIL.STARS.MARKAHIL",
+          "designation": "Markahil",
+          "name": null,
+          "star_system_id": 395,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 395,
+            "code": "MARKAHIL",
+            "name": "Malkail (Markahil)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2700,
+          "code": "TAYAC.STATION.THEARK",
+          "designation": "The ARK",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 2,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

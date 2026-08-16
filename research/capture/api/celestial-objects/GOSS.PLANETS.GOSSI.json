@@ -1,0 +1,70 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2059,
+        "age": 0,
+        "appearance": "PLANET_GREEN",
+        "axial_tilt": 0,
+        "code": "GOSS.PLANETS.GOSSI",
+        "description": "The abundant farmlands that cover most of this planet’s massive mono-continent are used to exclusively feed the large population on neighboring planet, Cassel. \n",
+        "designation": "Goss I",
+        "distance": 0.767,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": 0,
+        "longitude": 53,
+        "name": null,
+        "orbit_period": 205.82,
+        "parent_id": null,
+        "sensor_danger": "3",
+        "sensor_economy": "7",
+        "sensor_population": "5",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": true,
+        "size": 6313,
+        "subtype_id": 55,
+        "time_modified": "2022-06-24 22:29:04",
+        "type": "PLANET",
+        "subtype": {
+          "id": 55,
+          "name": "Terrestrial Rocky",
+          "type": "PLANET"
+        },
+        "affiliation": [
+          {
+            "id": 1,
+            "code": "uee",
+            "color": "#48bbd4",
+            "name": "UEE",
+            "membership.id": 2870
+          }
+        ],
+        "population": [],
+        "children": [],
+        "texture": {
+          "slug": "3s8vnafjwn09p",
+          "source": "https://robertsspaceindustries.com/media/3s8vnafjwn09pr/source/Planet_Chthonian.jpg",
+          "images": {
+            "post": "https://robertsspaceindustries.com/media/3s8vnafjwn09pr/post/Planet_Chthonian.jpg",
+            "product_thumb_large": "https://robertsspaceindustries.com/media/3s8vnafjwn09pr/product_thumb_large/Planet_Chthonian.jpg",
+            "subscribers_vault_thumbnail": "https://robertsspaceindustries.com/media/3s8vnafjwn09pr/subscribers_vault_thumbnail/Planet_Chthonian.jpg"
+          }
+        }
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

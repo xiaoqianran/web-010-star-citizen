@@ -1,0 +1,1024 @@
+{
+  "capturedAt": "2026-08-16T18:14:47.080Z",
+  "source": "https://robertsspaceindustries.com",
+  "find": [
+    {
+      "query": "Tamsa",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 5,
+      "objectTypes": {
+        "BLACKHOLE": 1,
+        "PLANET": 2,
+        "JUMPPOINT": 2
+      },
+      "sample": [
+        {
+          "name": "Tamsa",
+          "code": "TAMSA",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Tamsa",
+          "code": "TAMSA.STAR.TAMSA",
+          "type": "BLACKHOLE"
+        },
+        {
+          "name": "Tamsa I",
+          "code": "TAMSA.PLANET.TAMSAI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Tamsa II",
+          "code": "TAMSA.PLANET.TAMSAII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Tamsa - Banshee",
+          "code": "TAMSA.JUMPPOINTS.BANSHEE",
+          "type": "JUMPPOINT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Vega",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 16,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 4,
+        "SATELLITE": 2,
+        "ASTEROID_BELT": 1,
+        "JUMPPOINT": 8
+      },
+      "sample": [
+        {
+          "name": "Vega",
+          "code": "VEGA",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Vega",
+          "code": "VEGA.STARS.VEGA",
+          "type": "STAR"
+        },
+        {
+          "name": "Vega I",
+          "code": "VEGA.PLANETS.VEGAI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Aremis",
+          "code": "VEGA.PLANETS.VEGAIIAREMIS",
+          "type": "PLANET"
+        },
+        {
+          "name": "Selene",
+          "code": "VEGA.PLANETS.VEGAIIISELENE",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Nyx",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 20,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 3,
+        "ASTEROID_BELT": 2,
+        "JUMPPOINT": 14
+      },
+      "sample": [
+        {
+          "name": "Nyx",
+          "code": "NYX",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Nyx",
+          "code": "NYX.STARS.NYX",
+          "type": "STAR"
+        },
+        {
+          "name": "Nyx I",
+          "code": "NYX.PLANETS.NYXI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Nyx II",
+          "code": "NYX.PLANETS.NYXII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Nyx III",
+          "code": "NYX.PLANETS.NYXIII",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Tayac",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 12,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 3,
+        "ASTEROID_BELT": 2,
+        "JUMPPOINT": 6
+      },
+      "sample": [
+        {
+          "name": "Tayac",
+          "code": "TAYAC",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Tayac",
+          "code": "TAYAC.STARS.TAYAC",
+          "type": "STAR"
+        },
+        {
+          "name": "Tayac I",
+          "code": "TAYAC.PLANET.TAYACI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Tayac II",
+          "code": "TAYAC.PLANET.TAYACII",
+          "type": "PLANET"
+        },
+        {
+          "name": "Shepherd",
+          "code": "TAYAC.PLANET.TAYACIIISHEPHERD",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "ARK",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 2,
+      "objectTypes": {
+        "STAR": 1,
+        "MANMADE": 1
+      },
+      "sample": [
+        {
+          "name": "Markahil",
+          "code": "MARKAHIL.STARS.MARKAHIL",
+          "type": "STAR"
+        },
+        {
+          "name": "The ARK",
+          "code": "TAYAC.STATION.THEARK",
+          "type": "MANMADE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Olisar",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "MANMADE": 1
+      },
+      "sample": [
+        {
+          "name": "Port Olisar",
+          "code": "STANTON.STATION.PORTOLISAR",
+          "type": "MANMADE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Luna",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "SATELLITE": 1
+      },
+      "sample": [
+        {
+          "name": "Luna",
+          "code": "SOL.PLANETS.LUNA",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Io",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed"
+    },
+    {
+      "query": "Cellin",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "SATELLITE": 1
+      },
+      "sample": [
+        {
+          "name": "Cellin",
+          "code": "STANTON.MOONS.CELLIN",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Daymar",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "SATELLITE": 1
+      },
+      "sample": [
+        {
+          "name": "Daymar",
+          "code": "STANTON.MOONS.DAYMAR",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Yela",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 2,
+      "objectTypes": {
+        "SATELLITE": 1,
+        "ASTEROID_BELT": 1
+      },
+      "sample": [
+        {
+          "name": "Yela",
+          "code": "STANTON.MOONS.YELA",
+          "type": "SATELLITE"
+        },
+        {
+          "name": "Ring of Yela",
+          "code": "STANTON.RINGS.RINGSOFYELA",
+          "type": "ASTEROID_BELT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Port",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 2,
+      "objectTypes": {
+        "MANMADE": 1,
+        "LZ": 1
+      },
+      "sample": [
+        {
+          "name": "Port Olisar",
+          "code": "STANTON.STATION.PORTOLISAR",
+          "type": "MANMADE"
+        },
+        {
+          "name": "Port Renatus",
+          "code": "SOL.LZS.PORTRETANUS",
+          "type": "LZ"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "blackhole",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "neutron",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "binary",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Goss A",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "STAR": 1
+      },
+      "sample": [
+        {
+          "name": "Goss A",
+          "code": "GOSS.STARS.GOSSA",
+          "type": "STAR"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Olympus",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Vanduul",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "POI": 1
+      },
+      "sample": [
+        {
+          "name": "Vanduul Attack",
+          "code": "VEGA.POI.WARN01",
+          "type": "POI"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Banu",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "MANMADE": 1
+      },
+      "sample": [
+        {
+          "name": "Trise Flotilla",
+          "code": "TRISE.STATION.BANUSTATION",
+          "type": "MANMADE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Xi'an",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Developing",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Unclaimed",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Justice",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "MANMADE": 1
+      },
+      "sample": [
+        {
+          "name": "JusticeStar Satellite",
+          "code": "KELLOG.STATION.JUSTICESTARSATELLITE",
+          "type": "MANMADE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Ruin",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "MANMADE": 1
+      },
+      "sample": [
+        {
+          "name": "Ruin Station",
+          "code": "PYRO.STATION.RUINSTATION",
+          "type": "MANMADE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Aaron",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "ASTEROID_BELT": 1
+      },
+      "sample": [
+        {
+          "name": "Aaron Halo",
+          "code": "STANTON.BELTS.ALPHABELT",
+          "type": "ASTEROID_BELT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Glaciem",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "ASTEROID_BELT": 1
+      },
+      "sample": [
+        {
+          "name": "Glaciem Ring",
+          "code": "NYX.BELTS.GLACIEMRING",
+          "type": "ASTEROID_BELT"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Baker",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 16,
+      "objectTypes": {
+        "STAR": 2,
+        "PLANET": 4,
+        "JUMPPOINT": 10
+      },
+      "sample": [
+        {
+          "name": "Baker",
+          "code": "BAKER",
+          "type": "BINARY"
+        },
+        {
+          "name": "Baker A",
+          "code": "BAKER.STARS.BAKERA",
+          "type": "STAR"
+        },
+        {
+          "name": "Baker B",
+          "code": "BAKER.STAR.BAKERB",
+          "type": "STAR"
+        },
+        {
+          "name": "Baker I",
+          "code": "BAKER.PLANET.BAKERI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Baker II",
+          "code": "BAKER.PLANET.BAKERII",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Magnus",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 10,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 3,
+        "JUMPPOINT": 6
+      },
+      "sample": [
+        {
+          "name": "Magnus",
+          "code": "MAGNUS",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Magnus",
+          "code": "MAGNUS.STARS.MAGNUS",
+          "type": "STAR"
+        },
+        {
+          "name": "Magnus I",
+          "code": "MAGNUS.PLANETS.MAGNUSI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Borea",
+          "code": "MAGNUS.PLANETS.MAGNUSIIBOREA",
+          "type": "PLANET"
+        },
+        {
+          "name": "Magnus III",
+          "code": "MAGNUS.PLANETS.MAGNUSIII",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Davien",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 18,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 4,
+        "SATELLITE": 1,
+        "JUMPPOINT": 12
+      },
+      "sample": [
+        {
+          "name": "Davien",
+          "code": "DAVIEN",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Davien",
+          "code": "DAVIEN.STARS.DAVIEN",
+          "type": "STAR"
+        },
+        {
+          "name": "Davien I",
+          "code": "DAVIEN.PLANETS.DAVIENI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Cestulus",
+          "code": "DAVIEN.PLANETS.DAVIENIICESTULUS",
+          "type": "PLANET"
+        },
+        {
+          "name": "Davien III",
+          "code": "DAVIEN.PLANETS.DAVIENIII",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Cano",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 10,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 4,
+        "ASTEROID_BELT": 1,
+        "JUMPPOINT": 4
+      },
+      "sample": [
+        {
+          "name": "Cano",
+          "code": "CANO",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Cano",
+          "code": "CANO.STAR.CANO",
+          "type": "STAR"
+        },
+        {
+          "name": "Cano I",
+          "code": "CANO.PLANET.CANOI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Carteyna",
+          "code": "CANO.PLANET.CANOIICARTEYNA",
+          "type": "PLANET"
+        },
+        {
+          "name": "Cano III",
+          "code": "CANO.PLANET.CANOIII",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Croshaw",
+      "status": 200,
+      "success": 1,
+      "systems": 1,
+      "objects": 15,
+      "objectTypes": {
+        "STAR": 1,
+        "PLANET": 4,
+        "ASTEROID_FIELD": 2,
+        "JUMPPOINT": 8
+      },
+      "sample": [
+        {
+          "name": "Croshaw",
+          "code": "CROSHAW",
+          "type": "SINGLE_STAR"
+        },
+        {
+          "name": "Croshaw",
+          "code": "CROSHAW.STARS.CROSHAW",
+          "type": "STAR"
+        },
+        {
+          "name": "Croshaw I",
+          "code": "CROSHAW.PLANETS.CROSHAWI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Angeli",
+          "code": "CROSHAW.PLANETS.CROSHAWIIANGELI",
+          "type": "PLANET"
+        },
+        {
+          "name": "Vann",
+          "code": "CROSHAW.PLANETS.CROSHAWIIIVANN",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed"
+    },
+    {
+      "query": "  ",
+      "status": 200,
+      "success": 0,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed"
+    },
+    {
+      "query": "GOSS.STARS.GOSSA",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "microTech",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "PLANET": 1
+      },
+      "sample": [
+        {
+          "name": "microTech",
+          "code": "STANTON.PLANETS.STANTONIVMICROTECH",
+          "type": "PLANET"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Port Olisar",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "MANMADE": 1
+      },
+      "sample": [
+        {
+          "name": "Port Olisar",
+          "code": "STANTON.STATION.PORTOLISAR",
+          "type": "MANMADE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "THEARK",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 0,
+      "objectTypes": {},
+      "sample": [],
+      "code": "OK",
+      "msg": "OK"
+    },
+    {
+      "query": "Broken Moon",
+      "status": 200,
+      "success": 1,
+      "systems": 0,
+      "objects": 1,
+      "objectTypes": {
+        "SATELLITE": 1
+      },
+      "sample": [
+        {
+          "name": "Broken Moon",
+          "code": "TARANIS.MOONS.BROKENMOON",
+          "type": "SATELLITE"
+        }
+      ],
+      "code": "OK",
+      "msg": "OK"
+    }
+  ],
+  "routes": [
+    {
+      "pair": "TAYAC-GOSS",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 1,
+      "label": "Through Goss",
+      "name": "Tayac to Goss",
+      "first_jump": "Tayac - Goss"
+    },
+    {
+      "pair": "OSIRIS-TYROL",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 2,
+      "label": "Through Goss",
+      "name": "Osiris to Tyrol",
+      "first_jump": "Osiris - Goss"
+    },
+    {
+      "pair": "NYX-STANTON",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 1,
+      "label": "Through Stanton",
+      "name": "Nyx to Stanton",
+      "first_jump": "Nyx - Stanton"
+    },
+    {
+      "pair": "TAMSA-SOL",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 5,
+      "label": "Through Banshee",
+      "name": "Tamsa to Sol",
+      "first_jump": "Tamsa - Banshee"
+    },
+    {
+      "pair": "VEGA-TERRA",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 4,
+      "label": "Through Bremen",
+      "name": "Vega to Terra",
+      "first_jump": "Vega - Bremen"
+    },
+    {
+      "pair": "TERRA-GOSS",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 1,
+      "label": "Through Goss",
+      "name": "Terra to Goss",
+      "first_jump": "Terra - Goss"
+    },
+    {
+      "pair": "Cassel-Terra",
+      "size": null,
+      "status": 200,
+      "success": 0,
+      "code": "ErrInvalidObject",
+      "msg": "Invalid object specified",
+      "error": "Invalid object specified",
+      "detail": "Cassel"
+    },
+    {
+      "pair": "(empty)-(empty)",
+      "size": null,
+      "status": 200,
+      "success": 0,
+      "code": "ErrValidationFailed",
+      "msg": "Validation failed",
+      "error": "Validation failed",
+      "detail": {
+        "departure": "This field is required",
+        "destination": "This field is required"
+      }
+    },
+    {
+      "pair": "GOSS-TERRA",
+      "size": "S",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 1,
+      "label": "Through Terra",
+      "name": "Goss to Terra",
+      "first_jump": "Goss - Terra"
+    },
+    {
+      "pair": "GOSS-TERRA",
+      "size": "M",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 1,
+      "label": "Through Terra",
+      "name": "Goss to Terra",
+      "first_jump": "Goss - Terra"
+    },
+    {
+      "pair": "GOSS-TERRA",
+      "size": "L",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 1,
+      "label": "Through Terra",
+      "name": "Goss to Terra",
+      "first_jump": "Goss - Terra"
+    },
+    {
+      "pair": "GOSS-SOL",
+      "size": "S",
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 5,
+      "label": "Through Terra",
+      "name": "Goss to Sol",
+      "first_jump": "Goss - Terra"
+    },
+    {
+      "pair": "MAGNUS-STANTON",
+      "size": null,
+      "status": 200,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "jumps": 1,
+      "label": "Through Stanton",
+      "name": "Magnus to Stanton",
+      "first_jump": "Magnus - Stanton"
+    }
+  ],
+  "starSystems": [
+    {
+      "code": "TAMSA",
+      "action": "skipped",
+      "reason": "already saved"
+    },
+    {
+      "code": "VEGA",
+      "action": "skipped",
+      "reason": "already saved"
+    }
+  ]
+}

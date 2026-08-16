@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Magnus to Stanton",
+      "label": "Through Stanton",
+      "first_jump": "Magnus - Stanton",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "MAGNUS",
+          "name": "Magnus",
+          "type": "system",
+          "system_id": 319,
+          "system_code": "MAGNUS",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1757,
+          "name": "Magnus - Stanton",
+          "type": "jump",
+          "system_id": 319,
+          "system_code": "MAGNUS",
+          "object_id": 1757,
+          "object_code": "MAGNUS.JUMPPOINTS.STANTON",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1690,
+          "name": "Stanton - Magnus",
+          "type": "jump",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": 1690,
+          "object_code": "STANTON.JUMPPOINTS.MAGNUS",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "STANTON",
+          "name": "Stanton",
+          "type": "system",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Magnus to Stanton",
+      "label": "Through Stanton",
+      "first_jump": "Magnus - Stanton",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "MAGNUS",
+          "name": "Magnus",
+          "type": "system",
+          "system_id": 319,
+          "system_code": "MAGNUS",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1757,
+          "name": "Magnus - Stanton",
+          "type": "jump",
+          "system_id": 319,
+          "system_code": "MAGNUS",
+          "object_id": 1757,
+          "object_code": "MAGNUS.JUMPPOINTS.STANTON",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 1690,
+          "name": "Stanton - Magnus",
+          "type": "jump",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": 1690,
+          "object_code": "STANTON.JUMPPOINTS.MAGNUS",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "STANTON",
+          "name": "Stanton",
+          "type": "system",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

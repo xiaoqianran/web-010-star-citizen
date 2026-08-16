@@ -1,0 +1,49 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2730,
+        "age": null,
+        "appearance": "DEFAULT",
+        "axial_tilt": null,
+        "code": "NYX.LZS.LEVSKI",
+        "description": "This mining facility was abandoned for years before UEE refugees took up residence. Dedicated to creating an egalitarian society, the People's Alliance wanted to build the kind of community that the Messers had taken away. Levski has evolved into a self-sustaining port of political activists and those wishing to escape the eye of the Empire.\n",
+        "designation": "Levski",
+        "distance": 0,
+        "fairchanceact": null,
+        "habitable": null,
+        "info_url": null,
+        "latitude": -15,
+        "longitude": -55,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 2626,
+        "sensor_danger": "0",
+        "sensor_economy": "0",
+        "sensor_population": "0",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": null,
+        "subtype_id": null,
+        "time_modified": "2025-11-12 01:07:14",
+        "type": "LZ",
+        "subtype": null,
+        "affiliation": [],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

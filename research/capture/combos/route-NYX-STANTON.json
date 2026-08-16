@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Nyx to Stanton",
+      "label": "Through Stanton",
+      "first_jump": "Nyx - Stanton",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "NYX",
+          "name": "Nyx",
+          "type": "system",
+          "system_id": 315,
+          "system_code": "NYX",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 2842,
+          "name": "Nyx - Stanton",
+          "type": "jump",
+          "system_id": 315,
+          "system_code": "NYX",
+          "object_id": 2842,
+          "object_code": "NYX.JUMPPOINTS.STANTON",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2843,
+          "name": "Stanton - Nyx",
+          "type": "jump",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": 2843,
+          "object_code": "STANTON.JUMPPOINTS.NYX",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "STANTON",
+          "name": "Stanton",
+          "type": "system",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Nyx to Stanton",
+      "label": "Through Stanton",
+      "first_jump": "Nyx - Stanton",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "NYX",
+          "name": "Nyx",
+          "type": "system",
+          "system_id": 315,
+          "system_code": "NYX",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 2842,
+          "name": "Nyx - Stanton",
+          "type": "jump",
+          "system_id": 315,
+          "system_code": "NYX",
+          "object_id": 2842,
+          "object_code": "NYX.JUMPPOINTS.STANTON",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2843,
+          "name": "Stanton - Nyx",
+          "type": "jump",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": 2843,
+          "object_code": "STANTON.JUMPPOINTS.NYX",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "STANTON",
+          "name": "Stanton",
+          "type": "system",
+          "system_id": 314,
+          "system_code": "STANTON",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 9,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2200,
+          "code": "KAYFA.STARS.KAYFA",
+          "designation": "Kai'pua (Kayfa)",
+          "name": null,
+          "star_system_id": 382,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 382,
+            "code": "KAYFA",
+            "name": "Kai'pua (Kayfa)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2696,
+          "code": "KAYFA.PLANET.KAYFAI",
+          "designation": "Kai'pua (Kayfa) I",
+          "name": "Ui'r.a'ang",
+          "star_system_id": 382,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 382,
+            "code": "KAYFA",
+            "name": "Kai'pua (Kayfa)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2697,
+          "code": "KAYFA.PLANET.KAYFAII",
+          "designation": "Kai'pua (Kayfa) II",
+          "name": "R.aip'uāng",
+          "star_system_id": 382,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 382,
+            "code": "KAYFA",
+            "name": "Kai'pua (Kayfa)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2698,
+          "code": "KAYFA.PLANET.KAYFAIII",
+          "designation": "Kai'pua (Kayfa) III",
+          "name": "Kyu'kyu",
+          "star_system_id": 382,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 382,
+            "code": "KAYFA",
+            "name": "Kai'pua (Kayfa)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2699,
+          "code": "KAYFA.PLANET.KAYFAIV",
+          "designation": "Kai'pua (Kayfa) IV",
+          "name": "K.yuk'o",
+          "star_system_id": 382,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 382,
+            "code": "KAYFA",
+            "name": "Kai'pua (Kayfa)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2197,
+          "code": "KAYFA.JUMPPOINTS.RIHLAH",
+          "designation": "Kai'pua (Kayfa) - R.il'a (Rihlah)",
+          "name": null,
+          "star_system_id": 382,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 382,
+            "code": "KAYFA",
+            "name": "Kai'pua (Kayfa)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2198,
+          "code": "KAYFA.JUMPPOINTS.HORUS",
+          "designation": "Kai'pua (Kayfa) - Horus",
+          "name": null,
+          "star_system_id": 382,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 382,
+            "code": "KAYFA",
+            "name": "Kai'pua (Kayfa)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2290,
+          "code": "RIHLAH.JUMPPOINTS.KAYFA",
+          "designation": "R.il'a (Rihlah) - Kai'pua (Kayfa)",
+          "name": null,
+          "star_system_id": 401,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 401,
+            "code": "RIHLAH",
+            "name": "R.il'a (Rihlah)",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2355,
+          "code": "HORUS.JUMPPOINTS.KAYFA",
+          "designation": "Horus - Kai'pua (Kayfa)",
+          "name": null,
+          "star_system_id": 413,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 413,
+            "code": "HORUS",
+            "name": "Horus",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 9,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

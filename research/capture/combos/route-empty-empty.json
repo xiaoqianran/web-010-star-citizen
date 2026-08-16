@@ -1,0 +1,9 @@
+{
+  "success": 0,
+  "code": "ErrValidationFailed",
+  "msg": "Validation failed",
+  "data": {
+    "departure": "This field is required",
+    "destination": "This field is required"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 0,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [],
+      "totalrows": 0,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 5,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2597,
+          "code": "GLIESE.STATION.GLIESEFLOTILLA",
+          "designation": "Gliese Flotilla",
+          "name": "Lyris",
+          "star_system_id": 386,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2599,
+          "code": "BACCHUS.STATION.BACCHUSFLOTILLA",
+          "designation": "Bacchus Flotilla",
+          "name": null,
+          "star_system_id": 384,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 384,
+            "code": "BACCHUS",
+            "name": "Bacchus",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2604,
+          "code": "HADRIAN.STATION.HADRIANFLOTILLA",
+          "designation": "Hadrian Flotilla",
+          "name": null,
+          "star_system_id": 411,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 411,
+            "code": "HADRIAN",
+            "name": "Hadrian",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2611,
+          "code": "TRISE.STATION.BANUSTATION",
+          "designation": "Banu Station",
+          "name": "Trise Flotilla",
+          "star_system_id": 400,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 400,
+            "code": "TRISE",
+            "name": "Trise",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2702,
+          "code": "YULIN.STATION.YULINFLOTILLA",
+          "designation": "Yulin Flotilla",
+          "name": null,
+          "star_system_id": 402,
+          "status": "P",
+          "type": "MANMADE",
+          "star_system": {
+            "id": 402,
+            "code": "YULIN",
+            "name": "Yulin",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 5,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 333,
+          "code": "TAYAC",
+          "name": "Tayac",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 12,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1893,
+          "code": "TAYAC.STARS.TAYAC",
+          "designation": "Tayac",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2688,
+          "code": "TAYAC.PLANET.TAYACI",
+          "designation": "Tayac I",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2689,
+          "code": "TAYAC.PLANET.TAYACII",
+          "designation": "Tayac II",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2690,
+          "code": "TAYAC.PLANET.TAYACIIISHEPHERD",
+          "designation": "Tayac III",
+          "name": "Shepherd",
+          "star_system_id": 333,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2717,
+          "code": "TAYAC.ASTEROIDBELTS.ALPHABELT",
+          "designation": "Tayac Belt Alpha",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2718,
+          "code": "TAYAC.RINGS.TAYACIIRINGS",
+          "designation": "Rings of Tayac II",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1715,
+          "code": "TERRA.JUMPPOINTS.TAYAC",
+          "designation": "Terra - Tayac",
+          "name": null,
+          "star_system_id": 316,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 316,
+            "code": "TERRA",
+            "name": "Terra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1889,
+          "code": "TAYAC.JUMPPOINTS.BAKER",
+          "designation": "Tayac - Baker",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1890,
+          "code": "TAYAC.JUMPPOINTS.TERRA",
+          "designation": "Tayac - Terra",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1891,
+          "code": "TAYAC.JUMPPOINTS.GOSS",
+          "designation": "Tayac - Goss",
+          "name": null,
+          "star_system_id": 333,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 333,
+            "code": "TAYAC",
+            "name": "Tayac",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1943,
+          "code": "BAKER.JUMPPOINTS.TAYAC",
+          "designation": "Baker - Tayac",
+          "name": null,
+          "star_system_id": 342,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 342,
+            "code": "BAKER",
+            "name": "Baker",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2055,
+          "code": "GOSS.JUMPPOINTS.TAYAC",
+          "designation": "Goss - Tayac",
+          "name": null,
+          "star_system_id": 356,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 356,
+            "code": "GOSS",
+            "name": "Goss",
+            "type": "BINARY"
+          }
+        }
+      ],
+      "totalrows": 12,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

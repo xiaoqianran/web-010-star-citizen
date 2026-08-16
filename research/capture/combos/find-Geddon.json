@@ -1,0 +1,157 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 390,
+          "code": "GEDDON",
+          "name": "Geddon",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 8,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2236,
+          "code": "GEDDON.STARS.GEDDON",
+          "designation": "Geddon",
+          "name": null,
+          "star_system_id": 390,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 390,
+            "code": "GEDDON",
+            "name": "Geddon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2379,
+          "code": "GEDDON.PLANET.GEDDONI",
+          "designation": "Geddon I",
+          "name": "Takto",
+          "star_system_id": 390,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 390,
+            "code": "GEDDON",
+            "name": "Geddon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2143,
+          "code": "COREL.JUMPPOINTS.GEDDON",
+          "designation": "Corel - Geddon",
+          "name": null,
+          "star_system_id": 370,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 370,
+            "code": "COREL",
+            "name": "Corel",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2206,
+          "code": "BACCHUS.JUMPPOINTS.GEDDON",
+          "designation": "Bacchus - Geddon",
+          "name": null,
+          "star_system_id": 384,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 384,
+            "code": "BACCHUS",
+            "name": "Bacchus",
+            "type": "BINARY"
+          }
+        },
+        {
+          "id": 2233,
+          "code": "GEDDON.JUMPPOINTS.COREL",
+          "designation": "Geddon - Corel",
+          "name": null,
+          "star_system_id": 390,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 390,
+            "code": "GEDDON",
+            "name": "Geddon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2234,
+          "code": "GEDDON.JUMPPOINTS.GLIESE",
+          "designation": "Geddon - Gliese",
+          "name": null,
+          "star_system_id": 390,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 390,
+            "code": "GEDDON",
+            "name": "Geddon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2235,
+          "code": "GEDDON.JUMPPOINTS.BACCHUS",
+          "designation": "Geddon - Bacchus",
+          "name": null,
+          "star_system_id": 390,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 390,
+            "code": "GEDDON",
+            "name": "Geddon",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2279,
+          "code": "GLIESE.JUMPPOINTS.GEDDON",
+          "designation": "Gliese - Geddon",
+          "name": null,
+          "star_system_id": 386,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 386,
+            "code": "GLIESE",
+            "name": "Gliese",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 8,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

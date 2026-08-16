@@ -1,0 +1,49 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2066,
+        "age": 0,
+        "appearance": "DEFAULT",
+        "axial_tilt": 0,
+        "code": "GOSS.JUMPPOINTS.TYROL",
+        "description": "Jump Point",
+        "designation": "Goss - Tyrol",
+        "distance": 4,
+        "fairchanceact": null,
+        "habitable": null,
+        "info_url": null,
+        "latitude": -32.8886,
+        "longitude": 54.0646,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": null,
+        "sensor_danger": "0",
+        "sensor_economy": "0",
+        "sensor_population": "0",
+        "shader_data": null,
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": 0,
+        "subtype_id": null,
+        "time_modified": "2015-10-10 05:38:54",
+        "type": "JUMPPOINT",
+        "subtype": null,
+        "affiliation": [],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

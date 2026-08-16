@@ -1,0 +1,24 @@
+:root {
+  --bg: #000510;
+  --bg-panel: #001735cc;
+  --line: #0a5688;
+  --cyan: #00edff;
+  --cyan-2: #13dff3;
+  --cyan-3: #42cbf8;
+  --cyan-soft: #7acbff;
+  --ice: #aaedfd;
+  --orange: #ffb534;
+  --orange-2: #ed7346;
+  --gold: #efc22f;
+  --danger: #ff6b6b;
+  --text: #d1f3fd;
+  --muted: #5adbef;
+  --font-ui: "Electrolize", sans-serif;
+  --font-display: "Orbitron", sans-serif;
+  --aff-uee: #48bbd4;
+  --aff-banu: #ffce17;
+  --aff-vncl: #bd002d;
+  --aff-xian: #52c231;
+  --aff-dev: #ca922d;
+  --aff-unc: #f6851f;
+}

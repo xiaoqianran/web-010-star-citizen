@@ -1,0 +1,277 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 322,
+          "code": "VEGA",
+          "name": "Vega",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 16,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 1798,
+          "code": "VEGA.STARS.VEGA",
+          "designation": "Vega",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1799,
+          "code": "VEGA.PLANETS.VEGAI",
+          "designation": "Vega I",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1800,
+          "code": "VEGA.PLANETS.VEGAIIAREMIS",
+          "designation": "Vega II",
+          "name": "Aremis",
+          "star_system_id": 322,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1801,
+          "code": "VEGA.PLANETS.VEGAIIISELENE",
+          "designation": "Vega III",
+          "name": "Selene",
+          "star_system_id": 322,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1802,
+          "code": "VEGA.PLANETS.VEGAIV",
+          "designation": "Vega IV",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2796,
+          "code": "VEGA.MOONS.VEGA2A",
+          "designation": "Vega 2a",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2797,
+          "code": "VEGA.MOONS.VEGA2B",
+          "designation": "Vega 2b",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1803,
+          "code": "VEGA.BELTS.ASTEROIDBELT",
+          "designation": "Vega Belt Alpha",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1730,
+          "code": "VIRGIL.JUMPPOINTS.VEGA",
+          "designation": "Virgil - Vega",
+          "name": null,
+          "star_system_id": 317,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 317,
+            "code": "VIRGIL",
+            "name": "Virgil",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1778,
+          "code": "NUL.JUMPPOINTS.VEGA",
+          "designation": "Nul - Vega",
+          "name": null,
+          "star_system_id": 320,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 320,
+            "code": "NUL",
+            "name": "Nul",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1794,
+          "code": "VEGA.JUMPPOINTS.NUL",
+          "designation": "Vega - Nul",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1795,
+          "code": "VEGA.JUMPPOINTS.VIRGIL",
+          "designation": "Vega - Virgil",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1796,
+          "code": "VEGA.JUMPPOINTS.OBERON",
+          "designation": "Vega - Oberon",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1797,
+          "code": "VEGA.JUMPPOINTS.BREMEN",
+          "designation": "Vega - Bremen",
+          "name": null,
+          "star_system_id": 322,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 322,
+            "code": "VEGA",
+            "name": "Vega",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1872,
+          "code": "BREMEN.JUMPPOINTS.VEGA",
+          "designation": "Bremen - Vega",
+          "name": null,
+          "star_system_id": 331,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 331,
+            "code": "BREMEN",
+            "name": "Bremen",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1992,
+          "code": "OBERON.JUMPPOINTS.VEGA",
+          "designation": "Oberon - Vega",
+          "name": null,
+          "star_system_id": 348,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 348,
+            "code": "OBERON",
+            "name": "Oberon",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 16,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

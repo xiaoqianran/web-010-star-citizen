@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Nul to Croshaw",
+      "label": "Through Croshaw",
+      "first_jump": "Nul - Croshaw",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "NUL",
+          "name": "Nul",
+          "type": "system",
+          "system_id": 320,
+          "system_code": "NUL",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1764,
+          "name": "Nul - Croshaw",
+          "type": "jump",
+          "system_id": 320,
+          "system_code": "NUL",
+          "object_id": 1764,
+          "object_code": "NUL.JUMPPOINTS.CROSHAW",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2132,
+          "name": "Croshaw - Nul",
+          "type": "jump",
+          "system_id": 369,
+          "system_code": "CROSHAW",
+          "object_id": 2132,
+          "object_code": "CROSHAW.JUMPPOINTS.NUL",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "CROSHAW",
+          "name": "Croshaw",
+          "type": "system",
+          "system_id": 369,
+          "system_code": "CROSHAW",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Nul to Croshaw",
+      "label": "Through Croshaw",
+      "first_jump": "Nul - Croshaw",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "NUL",
+          "name": "Nul",
+          "type": "system",
+          "system_id": 320,
+          "system_code": "NUL",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1764,
+          "name": "Nul - Croshaw",
+          "type": "jump",
+          "system_id": 320,
+          "system_code": "NUL",
+          "object_id": 1764,
+          "object_code": "NUL.JUMPPOINTS.CROSHAW",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2132,
+          "name": "Croshaw - Nul",
+          "type": "jump",
+          "system_id": 369,
+          "system_code": "CROSHAW",
+          "object_id": 2132,
+          "object_code": "CROSHAW.JUMPPOINTS.NUL",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "CROSHAW",
+          "name": "Croshaw",
+          "type": "system",
+          "system_id": 369,
+          "system_code": "CROSHAW",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

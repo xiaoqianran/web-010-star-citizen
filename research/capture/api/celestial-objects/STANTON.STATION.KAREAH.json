@@ -1,0 +1,63 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2741,
+        "age": null,
+        "appearance": "CUSTOM",
+        "axial_tilt": null,
+        "code": "STANTON.STATION.KAREAH",
+        "description": "A brand new outpost built to house an extended Crusader Security presence in this sector. It is expected to be open and operating soon.",
+        "designation": "Security Post Kareah",
+        "distance": 0.008,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": 6,
+        "longitude": 335.264,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 1695,
+        "sensor_danger": "2",
+        "sensor_economy": "2",
+        "sensor_population": "1",
+        "shader_data": {
+          "orbitalMin": 1,
+          "orbitalMax": 5,
+          "orbitalFactor": 1,
+          "radius": 0.01
+        },
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": 0.4,
+        "subtype_id": 47,
+        "time_modified": "2015-10-10 00:06:57",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 47,
+          "name": "Orbital Defense",
+          "type": "MANMADE"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": [],
+        "model": {
+          "slug": "5bxoelq8c8uju",
+          "source": "https://robertsspaceindustries.com/media/5bxoelq8c8ujur/source/StationBravo.dae",
+          "images": []
+        }
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

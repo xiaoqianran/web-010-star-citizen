@@ -1,0 +1,577 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 355,
+          "code": "SOL",
+          "name": "Sol",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 36,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2023,
+          "code": "SOL.STARS.SOL",
+          "designation": "Sol",
+          "name": null,
+          "star_system_id": 355,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2032,
+          "code": "SOL.PLANETS.PLUTO",
+          "designation": "Sol IX",
+          "name": "Pluto",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2031,
+          "code": "SOL.PLANETS.NEPTUNE",
+          "designation": "Sol VIII",
+          "name": "Neptune",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2030,
+          "code": "SOL.PLANETS.URANUS",
+          "designation": "Sol VII",
+          "name": "Uranus",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2029,
+          "code": "SOL.PLANETS.SATURN",
+          "designation": "Sol VI",
+          "name": "Saturn",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2024,
+          "code": "SOL.PLANETS.MERCURY",
+          "designation": "Sol I",
+          "name": "Mercury",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2025,
+          "code": "SOL.PLANETS.VENUS",
+          "designation": "Sol II",
+          "name": "Venus",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2026,
+          "code": "SOL.PLANETS.EARTH",
+          "designation": "Sol III",
+          "name": "Earth",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2027,
+          "code": "SOL.PLANETS.MARS",
+          "designation": "Sol IV",
+          "name": "Mars",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2028,
+          "code": "SOL.PLANETS.JUPITER",
+          "designation": "Sol V",
+          "name": "Jupiter",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2839,
+          "code": "SOL.MOONS.TRITON",
+          "designation": "Sol 8a",
+          "name": "Triton",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2037,
+          "code": "SOL.PLANETS.CALLISTO",
+          "designation": "Sol 5d",
+          "name": "Callisto",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2033,
+          "code": "SOL.PLANETS.LUNA",
+          "designation": "Sol 3a",
+          "name": "Luna",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2034,
+          "code": "SOL.PLANETS.IO",
+          "designation": "Sol 5a",
+          "name": "Io",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2035,
+          "code": "SOL.PLANETS.EUROPA",
+          "designation": "Sol 5b",
+          "name": "Europa",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2036,
+          "code": "SOL.PLANETS.GANYMEDE",
+          "designation": "Sol 5c",
+          "name": "Ganymede",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2042,
+          "code": "SOL.PLANETS.TITAN",
+          "designation": "Sol 6a",
+          "name": "Titan",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2043,
+          "code": "SOL.PLANETS.RHEA",
+          "designation": "Sol 6b",
+          "name": "Rhea",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2044,
+          "code": "SOL.PLANETS.TETHYS",
+          "designation": "Sol 6c",
+          "name": "Tethys",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2045,
+          "code": "SOL.PLANETS.DIONE",
+          "designation": "Sol 6d",
+          "name": "Dione",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2046,
+          "code": "SOL.PLANETS.IAPETUS",
+          "designation": "Sol 6e",
+          "name": "Iapetus",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2047,
+          "code": "SOL.PLANETS.MIRANDA",
+          "designation": "Sol 7a",
+          "name": "Miranda",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2048,
+          "code": "SOL.PLANETS.ARIAL",
+          "designation": "Sol 7b",
+          "name": "Ariel",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2049,
+          "code": "SOL.PLANETS.UMBRIEL",
+          "designation": "Sol 7c",
+          "name": "Umbriel",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2050,
+          "code": "SOL.PLANETS.TITANIA",
+          "designation": "Sol 7d",
+          "name": "Titania",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2051,
+          "code": "SOL.PLANETS.OBERON",
+          "designation": "Sol 7e",
+          "name": "Oberon",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2757,
+          "code": "SOL.MOONS.PHOBOS",
+          "designation": "Sol 4a",
+          "name": "Phobos",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2758,
+          "code": "SOL.MOONS.DEIMOS",
+          "designation": "Sol 4b",
+          "name": "Deimos",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2774,
+          "code": "SOL.MOONS.CHARON",
+          "designation": "Sol 9a",
+          "name": "Charon",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "SATELLITE",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2052,
+          "code": "SOL.BELTS.MAINBELT",
+          "designation": "Sol Belt Alpha",
+          "name": "Herschel Belt",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2053,
+          "code": "SOL.BELTS.KEUPERBELT",
+          "designation": "Sol Belt Beta",
+          "name": "Kuiper Belt",
+          "star_system_id": 355,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1726,
+          "code": "TERRA.BELTS.MARISOLBELT",
+          "designation": "Terra Belt Beta",
+          "name": "Marisol Belt",
+          "star_system_id": 316,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 316,
+            "code": "TERRA",
+            "name": "Terra",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2019,
+          "code": "SOL.JUMPPOINTS.DAVIEN",
+          "designation": "Sol - Davien",
+          "name": null,
+          "star_system_id": 355,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 1938,
+          "code": "DAVIEN.JUMPPOINTS.SOL",
+          "designation": "Davien - Sol",
+          "name": null,
+          "star_system_id": 340,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 340,
+            "code": "DAVIEN",
+            "name": "Davien",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2021,
+          "code": "SOL.JUMPPOINTS.CROSHAW",
+          "designation": "Sol - Croshaw",
+          "name": null,
+          "star_system_id": 355,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 355,
+            "code": "SOL",
+            "name": "Sol",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2129,
+          "code": "CROSHAW.JUMPPOINTS.SOL",
+          "designation": "Croshaw - Sol",
+          "name": null,
+          "star_system_id": 369,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 369,
+            "code": "CROSHAW",
+            "name": "Croshaw",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 36,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

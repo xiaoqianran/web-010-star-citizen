@@ -1,0 +1,187 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "systems": {
+      "rowcount": 1,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 418,
+          "code": "CANO",
+          "name": "Cano",
+          "type": "SINGLE_STAR"
+        }
+      ],
+      "totalrows": 1,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    },
+    "objects": {
+      "rowcount": 10,
+      "pagecount": null,
+      "startrow": 0,
+      "resultset": [
+        {
+          "id": 2511,
+          "code": "CANO.STAR.CANO",
+          "designation": "Cano",
+          "name": null,
+          "star_system_id": 418,
+          "status": "P",
+          "type": "STAR",
+          "star_system": {
+            "id": 418,
+            "code": "CANO",
+            "name": "Cano",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2512,
+          "code": "CANO.PLANET.CANOI",
+          "designation": "Cano I",
+          "name": null,
+          "star_system_id": 418,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 418,
+            "code": "CANO",
+            "name": "Cano",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2513,
+          "code": "CANO.PLANET.CANOIICARTEYNA",
+          "designation": "Cano II",
+          "name": "Carteyna",
+          "star_system_id": 418,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 418,
+            "code": "CANO",
+            "name": "Cano",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2514,
+          "code": "CANO.PLANET.CANOIII",
+          "designation": "Cano III",
+          "name": null,
+          "star_system_id": 418,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 418,
+            "code": "CANO",
+            "name": "Cano",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2515,
+          "code": "CANO.PLANET.CANOIV",
+          "designation": "Cano IV",
+          "name": "Pox",
+          "star_system_id": 418,
+          "status": "P",
+          "type": "PLANET",
+          "star_system": {
+            "id": 418,
+            "code": "CANO",
+            "name": "Cano",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2532,
+          "code": "CANO.BELTS.CANOBELTALPHA",
+          "designation": "Cano Belt Alpha",
+          "name": null,
+          "star_system_id": 418,
+          "status": "P",
+          "type": "ASTEROID_BELT",
+          "star_system": {
+            "id": 418,
+            "code": "CANO",
+            "name": "Cano",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2703,
+          "code": "CANO.JUMPPOINTS.PYRO",
+          "designation": "Cano - Pyro",
+          "name": null,
+          "star_system_id": 418,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 418,
+            "code": "CANO",
+            "name": "Cano",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2704,
+          "code": "PYRO.JUMPPOINTS.CANO",
+          "designation": "Pyro - Cano",
+          "name": null,
+          "star_system_id": 318,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 318,
+            "code": "PYRO",
+            "name": "Pyro",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2705,
+          "code": "CANO.JUMPPOINTS.DAVIEN",
+          "designation": "Cano - Davien",
+          "name": null,
+          "star_system_id": 418,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 418,
+            "code": "CANO",
+            "name": "Cano",
+            "type": "SINGLE_STAR"
+          }
+        },
+        {
+          "id": 2706,
+          "code": "DAVIEN.JUMPPOINTS.CANO",
+          "designation": "Davien - Cano",
+          "name": null,
+          "star_system_id": 340,
+          "status": "P",
+          "type": "JUMPPOINT",
+          "star_system": {
+            "id": 340,
+            "code": "DAVIEN",
+            "name": "Davien",
+            "type": "SINGLE_STAR"
+          }
+        }
+      ],
+      "totalrows": 10,
+      "pagesize": 0,
+      "page": 1,
+      "offset": 0,
+      "estimatedrows": false
+    }
+  }
+}

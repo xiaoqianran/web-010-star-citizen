@@ -1,0 +1,129 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "shortest": {
+      "name": "Tayac to Goss",
+      "label": "Through Goss",
+      "first_jump": "Tayac - Goss",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "TAYAC",
+          "name": "Tayac",
+          "type": "system",
+          "system_id": 333,
+          "system_code": "TAYAC",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1891,
+          "name": "Tayac - Goss",
+          "type": "jump",
+          "system_id": 333,
+          "system_code": "TAYAC",
+          "object_id": 1891,
+          "object_code": "TAYAC.JUMPPOINTS.GOSS",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2055,
+          "name": "Goss - Tayac",
+          "type": "jump",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": 2055,
+          "object_code": "GOSS.JUMPPOINTS.TAYAC",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "GOSS",
+          "name": "Goss",
+          "type": "system",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    },
+    "leastjumps": {
+      "name": "Tayac to Goss",
+      "label": "Through Goss",
+      "first_jump": "Tayac - Goss",
+      "flight_distance": 0,
+      "jumps": 1,
+      "segments": [
+        {
+          "id": "TAYAC",
+          "name": "Tayac",
+          "type": "system",
+          "system_id": 333,
+          "system_code": "TAYAC",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": 1,
+          "is_destination": false
+        },
+        {
+          "id": 1891,
+          "name": "Tayac - Goss",
+          "type": "jump",
+          "system_id": 333,
+          "system_code": "TAYAC",
+          "object_id": 1891,
+          "object_code": "TAYAC.JUMPPOINTS.GOSS",
+          "segment_type": "J",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": 2055,
+          "name": "Goss - Tayac",
+          "type": "jump",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": 2055,
+          "object_code": "GOSS.JUMPPOINTS.TAYAC",
+          "segment_type": "F",
+          "segment_distance": 0,
+          "is_departure": false,
+          "is_destination": false
+        },
+        {
+          "id": "GOSS",
+          "name": "Goss",
+          "type": "system",
+          "system_id": 356,
+          "system_code": "GOSS",
+          "object_id": null,
+          "object_code": null,
+          "segment_type": "F",
+          "segment_distance": null,
+          "is_departure": false,
+          "is_destination": 1
+        }
+      ]
+    }
+  }
+}

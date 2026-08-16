@@ -1,0 +1,6 @@
+{
+  "success": 0,
+  "code": "ErrNotAuthenticated",
+  "msg": "You must be authenticated to reach this area.",
+  "data": null
+}

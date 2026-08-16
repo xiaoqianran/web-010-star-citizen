@@ -1,0 +1,63 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 2740,
+        "age": null,
+        "appearance": "CUSTOM",
+        "axial_tilt": null,
+        "code": "STANTON.STATION.PORTOLISAR",
+        "description": "Located in the trade lanes above Crusader, Port Olisar offers a breathtaking view of the planet below. Owned and operated by Crusader Industries, Port Olisar acts as a gateway to the company’s vast planetary holdings and orbital shipyards.",
+        "designation": "Port Olisar",
+        "distance": 0.001,
+        "fairchanceact": null,
+        "habitable": true,
+        "info_url": null,
+        "latitude": 5,
+        "longitude": 12.269499,
+        "name": null,
+        "orbit_period": null,
+        "parent_id": 1695,
+        "sensor_danger": "3",
+        "sensor_economy": "6",
+        "sensor_population": "3",
+        "shader_data": {
+          "orbitalMin": 1,
+          "orbitalMax": 5,
+          "orbitalFactor": 1,
+          "radius": 0.01
+        },
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": 0.35,
+        "subtype_id": 48,
+        "time_modified": "2015-10-10 00:06:58",
+        "type": "MANMADE",
+        "subtype": {
+          "id": 48,
+          "name": "Starbase",
+          "type": "MANMADE"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": [],
+        "model": {
+          "slug": "hq0yb5nb8kfgo",
+          "source": "https://robertsspaceindustries.com/media/hq0yb5nb8kfgor/source/StationAlpha.dae",
+          "images": []
+        }
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}

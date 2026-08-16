@@ -1,0 +1,80 @@
+{
+  "success": 1,
+  "code": "OK",
+  "msg": "OK",
+  "data": {
+    "rowcount": 1,
+    "pagecount": null,
+    "startrow": 0,
+    "resultset": [
+      {
+        "id": 1948,
+        "age": 0,
+        "appearance": "DEFAULT",
+        "axial_tilt": 0,
+        "code": "BAKER.STARS.BAKERA",
+        "description": null,
+        "designation": "Baker A",
+        "distance": 0.0783,
+        "fairchanceact": null,
+        "habitable": null,
+        "info_url": null,
+        "latitude": 0,
+        "longitude": 225,
+        "name": null,
+        "orbit_period": -1,
+        "parent_id": null,
+        "sensor_danger": "0",
+        "sensor_economy": "0",
+        "sensor_population": "0",
+        "shader_data": {
+          "orbitalMin": 1,
+          "orbitalMax": 5,
+          "orbitalFactor": 1,
+          "sun": {
+            "color1": "#ed830b",
+            "color2": "#d9d919",
+            "flare1": 0.265,
+            "flare2": 0.5,
+            "flare3": 0.265,
+            "flare4": 0.5,
+            "flare5": 0.5,
+            "flare6": 0.1,
+            "sphere": 1,
+            "texture": 1,
+            "corona": 1,
+            "glow": 0.5,
+            "alpha": 1,
+            "rotation1": 0.6,
+            "rotation2": 0.6,
+            "map": 0,
+            "iterations": 0,
+            "scaleMin": 1,
+            "scaleMax": 1,
+            "scalePeriod": 1
+          },
+          "radius": 0.05
+        },
+        "show_label": true,
+        "show_orbitlines": null,
+        "size": 571567.25769,
+        "subtype_id": 60,
+        "time_modified": "2018-01-13 02:35:30",
+        "type": "STAR",
+        "subtype": {
+          "id": 60,
+          "name": "Main Sequence-Dwarf-K",
+          "type": "STAR"
+        },
+        "affiliation": [],
+        "population": [],
+        "children": []
+      }
+    ],
+    "totalrows": 1,
+    "pagesize": 0,
+    "page": 1,
+    "offset": 0,
+    "estimatedrows": false
+  }
+}
