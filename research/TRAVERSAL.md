@@ -177,6 +177,23 @@
 
 DISPLAY 在银河视图类名是 `sm-galaxy-display-tab`，星系视图是 `sm-system-display-tab`。先前代理一直停在 GOSS 星系，所以复选框从未出现。
 
+### 银河 DISPLAY 已上屏（2026-08-16 窗口模式）
+
+底栏图标条，不是侧栏复选框列表：
+
+| 组 | 官方英文 | 控件 | 默认 |
+| --- | --- | --- | --- |
+| FACTIONS | UEE / BANU / VANDUUL / XI'AN / DEVELOPING / UNCLAIMED | checkbox 色点 | 全开 |
+| JUMP TUNNELS | SMALL / MEDIUM / LARGE | checkbox 圆环 | **全关** |
+| SENSORS | POPULATION / ECONOMY / THREAT | **radio**（内部值 lifeforms / economy / crime） | 全关 |
+| CAMERA | 3D / 2D | radio | 3D |
+
+打开隧道后银河出现橙色弧线。扫描器互斥。书签未登录空文案是 **`YOU HAVE NO BOOKMARKS YET.`**（带筛选才是 `NO BOOKMARKS FOUND WITH THOSE FILTERS`）。书签筛选：`STAR SYSTEM` / `CELESTIAL BODY`。
+
+银河默认镜头 `camera=10,0,0.4,0,0`（与星系 `10,102.98,0.002,0,0` 不同）。
+
+航线底栏：`DEPARTURE` / `DESTINATION` / `SHIP SIZE` 三圆 / `CALCULATE >`。GOSS 与 TERRA 能写入输入框。计算后的结果表这次窗口高度里没截到。盘上 ROUTING 现场是 **BACK / SET AS DEPARTURE / SET AS DESTINATION / AVOID**，仍无 Jump Through。
+
 ## 仍须对照官网补的现场
 
 - DISPLAY 每一项开关的完整上屏（先 GLX 再点 galaxy-display-tab）

@@ -113,6 +113,9 @@ export function ControlDisc({
         )}
         {page === "routing" && (
           <div className="disc-actions">
+            <button type="button" data-action="back" onClick={() => onPage("information")}>
+              {zh.hud.back}
+            </button>
             <button data-action="departure" onClick={onDeparture}>
               {zh.disc.setAs} {zh.disc.departure}
             </button>

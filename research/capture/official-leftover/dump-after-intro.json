@@ -1,6 +1,6 @@
 {
   "title": "ARK Starmap | Roberts Space Industries | Follow the development of Star Citizen and Squadron 42",
-  "bodyText": "Home Explore Starmap Starmap INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT STELLAR CARTOGRAPHICS Welcome to the ARK Starmap. Use the fullscreen mode for a better experience ENTER FULL SCREEN Or enter in window mode",
+  "bodyText": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D BACK TO RSI WEBSITE",
   "inputs": [
     {
       "type": "checkbox",
@@ -76,17 +76,113 @@
     },
     {
       "type": "checkbox",
-      "name": "",
+      "name": "affiliations",
       "placeholder": "",
-      "value": "on",
+      "value": "1",
       "vis": false,
       "cls": ""
     },
     {
       "type": "checkbox",
-      "name": "",
+      "name": "affiliations",
       "placeholder": "",
-      "value": "on",
+      "value": "2",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "checkbox",
+      "name": "affiliations",
+      "placeholder": "",
+      "value": "3",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "checkbox",
+      "name": "affiliations",
+      "placeholder": "",
+      "value": "4",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "checkbox",
+      "name": "affiliations",
+      "placeholder": "",
+      "value": "7",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "checkbox",
+      "name": "affiliations",
+      "placeholder": "",
+      "value": "8",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "checkbox",
+      "name": "route_sizes",
+      "placeholder": "",
+      "value": "small",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "checkbox",
+      "name": "route_sizes",
+      "placeholder": "",
+      "value": "medium",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "checkbox",
+      "name": "route_sizes",
+      "placeholder": "",
+      "value": "large",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "radio",
+      "name": "scanners",
+      "placeholder": "",
+      "value": "lifeforms",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "radio",
+      "name": "scanners",
+      "placeholder": "",
+      "value": "economy",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "radio",
+      "name": "scanners",
+      "placeholder": "",
+      "value": "crime",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "radio",
+      "name": "camera_view",
+      "placeholder": "",
+      "value": "false",
+      "vis": false,
+      "cls": ""
+    },
+    {
+      "type": "radio",
+      "name": "camera_view",
+      "placeholder": "",
+      "value": "true",
       "vis": false,
       "cls": ""
     }
@@ -147,13 +243,85 @@
       "vis": false
     },
     {
-      "text": "",
+      "text": "UEE",
+      "checked": true,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "BANU",
+      "checked": true,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "VANDUUL",
+      "checked": true,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "XI'AN",
+      "checked": true,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "DEVELOPING",
+      "checked": true,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "UNCLAIMED",
+      "checked": true,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "SMALL",
       "checked": false,
       "cls": "",
       "vis": false
     },
     {
-      "text": "",
+      "text": "MEDIUM",
+      "checked": false,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "LARGE",
+      "checked": false,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "POPULATION",
+      "checked": false,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "ECONOMY",
+      "checked": false,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "THREAT",
+      "checked": false,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "3D",
+      "checked": true,
+      "cls": "",
+      "vis": false
+    },
+    {
+      "text": "2D",
       "checked": false,
       "cls": "",
       "vis": false
@@ -1788,7 +1956,7 @@
       "tag": "section",
       "type": null,
       "checked": null,
-      "text": "INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT STELLAR CARTOGRAPHICS Welcome to the ARK Starmap. Use the fullscreen mode for a better experience",
+      "text": "GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JU",
       "cls": "sm-starmap-application",
       "vis": true,
       "box": {
@@ -1796,6 +1964,132 @@
         "y": 104,
         "w": 1920,
         "h": 976
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "GLXSYSOBJ",
+      "cls": "sm-header",
+      "vis": true,
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 1920,
+        "h": 41
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "GLXSYSOBJ",
+      "cls": "sm-back-indicator-container",
+      "vis": true,
+      "box": {
+        "x": 0,
+        "y": 104,
+        "w": 211,
+        "h": 41
+      }
+    },
+    {
+      "tag": "ul",
+      "type": null,
+      "checked": null,
+      "text": "GLXSYSOBJ",
+      "cls": "sm-indicator",
+      "vis": true,
+      "box": {
+        "x": 25,
+        "y": 104,
+        "w": 186,
+        "h": 40
+      }
+    },
+    {
+      "tag": "li",
+      "type": null,
+      "checked": null,
+      "text": "GLX",
+      "cls": "sm-active",
+      "vis": true,
+      "box": {
+        "x": 25,
+        "y": 104,
+        "w": 60,
+        "h": 40
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-info-container",
+      "vis": true,
+      "box": {
+        "x": 241,
+        "y": 104,
+        "w": 1514,
+        "h": 41
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-settings-container",
+      "vis": true,
+      "box": {
+        "x": 1755,
+        "y": 104,
+        "w": 165,
+        "h": 41
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "",
+      "cls": "sm-settings",
+      "vis": true,
+      "box": {
+        "x": 1785,
+        "y": 104,
+        "w": 135,
+        "h": 41
+      }
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "checked": null,
+      "text": "",
+      "cls": "sm-sound sm-enabled",
+      "vis": true,
+      "box": {
+        "x": 1785,
+        "y": 104,
+        "w": 57,
+        "h": 40
+      }
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "checked": null,
+      "text": "",
+      "cls": "sm-fullscreen ",
+      "vis": true,
+      "box": {
+        "x": 1842,
+        "y": 104,
+        "w": 53,
+        "h": 40
       }
     },
     {
@@ -1942,105 +2236,147 @@
       "tag": "section",
       "type": null,
       "checked": null,
-      "text": "STELLAR CARTOGRAPHICS Welcome to the ARK Starmap. Use the fullscreen mode for a better experience ENTER FULL SCREEN Or enter in window mode",
-      "cls": "sm-loading-screen sm-current-initial",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D",
+      "cls": "sm-controls",
       "vis": true,
       "box": {
         "x": 0,
-        "y": 104,
+        "y": 974,
         "w": 1920,
-        "h": 976
+        "h": 106
       }
     },
     {
-      "tag": "div",
+      "tag": "ul",
       "type": null,
       "checked": null,
-      "text": "STELLAR CARTOGRAPHICS Welcome to the ARK Starmap. Use the fullscreen mode for a better experience ENTER FULL SCREEN Or enter in window mode",
-      "cls": "sm-initial-scene",
+      "text": "SEARCH BOOKMARKS ROUTES DISPLAY",
+      "cls": "sm-tabs",
       "vis": true,
       "box": {
         "x": 0,
-        "y": 104,
+        "y": 933,
         "w": 1920,
-        "h": 976
+        "h": 41
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "SEARCH",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1448,
+        "y": 938,
+        "w": 116,
+        "h": 36
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "BOOKMARKS",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1564,
+        "y": 938,
+        "w": 142,
+        "h": 36
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "ROUTES",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1707,
+        "y": 938,
+        "w": 115,
+        "h": 36
+      }
+    },
+    {
+      "tag": "li",
+      "type": null,
+      "checked": null,
+      "text": "DISPLAY",
+      "cls": "sm-active",
+      "vis": true,
+      "box": {
+        "x": 1822,
+        "y": 933,
+        "w": 98,
+        "h": 41
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "DISPLAY",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1822,
+        "y": 934,
+        "w": 98,
+        "h": 40
       }
     },
     {
       "tag": "div",
       "type": null,
       "checked": null,
-      "text": "STELLAR CARTOGRAPHICS",
-      "cls": "ark-logo-wrapper sm-active",
+      "text": "FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED JUMP TUNNELS SMALL MEDIUM LARGE SENSORS POPULATION ECONOMY THREAT CAMERA 3D 2D",
+      "cls": "sm-galaxy-display-tab",
       "vis": true,
-      "box": {
-        "x": 828,
-        "y": 396,
-        "w": 265,
-        "h": 403
-      }
-    },
-    {
-      "tag": "button",
-      "type": "button",
-      "checked": null,
-      "text": "ENTER FULL SCREEN",
-      "cls": "launch-fullscreen",
-      "vis": true,
-      "box": {
-        "x": 795,
-        "y": 901,
-        "w": 330,
-        "h": 35
-      }
-    },
-    {
-      "tag": "button",
-      "type": "button",
-      "checked": null,
-      "text": "Or enter in window mode",
-      "cls": "launch",
-      "vis": true,
-      "box": {
-        "x": 847,
-        "y": 947,
-        "w": 225,
-        "h": 14
-      }
-    },
-    {
-      "tag": "div",
-      "type": null,
-      "checked": null,
-      "text": "",
-      "cls": "sm-loading-scene",
-      "vis": false,
       "box": {
         "x": 0,
-        "y": 1080,
+        "y": 989,
         "w": 1920,
-        "h": 0
+        "h": 60
       }
     },
     {
       "tag": "div",
       "type": null,
       "checked": null,
-      "text": "",
-      "cls": "sm-acknowledgment-scene",
-      "vis": false,
+      "text": "FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNCLAIMED",
+      "cls": "sm-affiliations",
+      "vis": true,
       "box": {
-        "x": 687,
-        "y": 392,
-        "w": 546,
-        "h": 400
+        "x": 1064,
+        "y": 990,
+        "w": 246,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "FACTIONS",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1064,
+        "y": 1058,
+        "w": 57,
+        "h": 10
       }
     },
     {
       "tag": "input",
       "type": "checkbox",
-      "checked": false,
-      "text": "on",
+      "checked": true,
+      "text": "1",
       "cls": "",
       "vis": false,
       "box": {
@@ -2051,38 +2387,24 @@
       }
     },
     {
-      "tag": "button",
-      "type": "button",
-      "checked": null,
-      "text": "",
-      "cls": "sm-acknowledge",
-      "vis": false,
-      "box": {
-        "x": 795,
-        "y": 762,
-        "w": 330,
-        "h": 35
-      }
-    },
-    {
-      "tag": "div",
+      "tag": "label",
       "type": null,
       "checked": null,
-      "text": "",
-      "cls": "sm-info-scene",
-      "vis": false,
+      "text": "UEE",
+      "cls": "",
+      "vis": true,
       "box": {
-        "x": 665,
-        "y": 392,
-        "w": 590,
-        "h": 400
+        "x": 1005,
+        "y": 990,
+        "w": 100,
+        "h": 60
       }
     },
     {
       "tag": "input",
       "type": "checkbox",
-      "checked": false,
-      "text": "on",
+      "checked": true,
+      "text": "2",
       "cls": "",
       "vis": false,
       "box": {
@@ -2093,91 +2415,460 @@
       }
     },
     {
-      "tag": "button",
-      "type": "button",
+      "tag": "label",
+      "type": null,
       "checked": null,
-      "text": "",
-      "cls": "sm-continue",
+      "text": "BANU",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1046,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": true,
+      "text": "3",
+      "cls": "",
       "vis": false,
       "box": {
-        "x": 795,
-        "y": 817,
-        "w": 330,
-        "h": 35
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "VANDUUL",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1087,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": true,
+      "text": "4",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "XI'AN",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1128,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": true,
+      "text": "7",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "DEVELOPING",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1169,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": true,
+      "text": "8",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "UNCLAIMED",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1210,
+        "y": 990,
+        "w": 100,
+        "h": 60
       }
     },
     {
       "tag": "div",
       "type": null,
       "checked": null,
-      "text": "",
-      "cls": "sm-no-webgl-scene",
+      "text": "JUMP TUNNELS SMALL MEDIUM LARGE",
+      "cls": "sm-route-sizes",
+      "vis": true,
+      "box": {
+        "x": 1394,
+        "y": 990,
+        "w": 123,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "JUMP TUNNELS",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1394,
+        "y": 1058,
+        "w": 87,
+        "h": 10
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": false,
+      "text": "small",
+      "cls": "",
       "vis": false,
       "box": {
-        "x": 610,
-        "y": 367,
-        "w": 700,
-        "h": 450
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "SMALL",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1335,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": false,
+      "text": "medium",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "MEDIUM",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1376,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "checked": false,
+      "text": "large",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "LARGE",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1417,
+        "y": 990,
+        "w": 100,
+        "h": 60
       }
     },
     {
       "tag": "div",
       "type": null,
       "checked": null,
-      "text": "",
-      "cls": "sm-contents",
-      "vis": false,
+      "text": "SENSORS POPULATION ECONOMY THREAT",
+      "cls": "sm-scanners",
+      "vis": true,
       "box": {
-        "x": 610,
-        "y": 385,
-        "w": 700,
-        "h": 264
+        "x": 1601,
+        "y": 990,
+        "w": 123,
+        "h": 60
       }
     },
     {
-      "tag": "p",
+      "tag": "label",
       "type": null,
       "checked": null,
-      "text": "",
-      "cls": "sm-welcome",
-      "vis": false,
+      "text": "SENSORS",
+      "cls": "",
+      "vis": true,
       "box": {
-        "x": 610,
-        "y": 385,
-        "w": 700,
-        "h": 158
+        "x": 1601,
+        "y": 1058,
+        "w": 54,
+        "h": 10
       }
     },
     {
-      "tag": "p",
-      "type": null,
-      "checked": null,
-      "text": "",
-      "cls": "sm-no-support",
+      "tag": "input",
+      "type": "radio",
+      "checked": false,
+      "text": "lifeforms",
+      "cls": "",
       "vis": false,
       "box": {
-        "x": 610,
-        "y": 583,
-        "w": 700,
-        "h": 30
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       }
     },
     {
-      "tag": "p",
+      "tag": "label",
       "type": null,
       "checked": null,
-      "text": "",
-      "cls": "sm-download",
+      "text": "POPULATION",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1542,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "checked": false,
+      "text": "economy",
+      "cls": "",
       "vis": false,
       "box": {
-        "x": 610,
-        "y": 631,
-        "w": 700,
-        "h": 18
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "ECONOMY",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1583,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "checked": false,
+      "text": "crime",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "THREAT",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1624,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "div",
+      "type": null,
+      "checked": null,
+      "text": "CAMERA 3D 2D",
+      "cls": "sm-camera-views",
+      "vis": true,
+      "box": {
+        "x": 1808,
+        "y": 990,
+        "w": 82,
+        "h": 60
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "CAMERA",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1808,
+        "y": 1058,
+        "w": 49,
+        "h": 10
+      }
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "checked": true,
+      "text": "false",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "3D",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1749,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "checked": false,
+      "text": "true",
+      "cls": "",
+      "vis": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    },
+    {
+      "tag": "label",
+      "type": null,
+      "checked": null,
+      "text": "2D",
+      "cls": "",
+      "vis": true,
+      "box": {
+        "x": 1790,
+        "y": 990,
+        "w": 100,
+        "h": 60
+      }
+    },
+    {
+      "tag": "a",
+      "type": null,
+      "checked": null,
+      "text": "BACK TO RSI WEBSITE",
+      "cls": "sm-website",
+      "vis": true,
+      "box": {
+        "x": 30,
+        "y": 1059,
+        "w": 118,
+        "h": 10
       }
     }
   ],
   "classesPresent": [
+    "sm-galaxy-display-tab",
+    "sm-affiliations",
+    "sm-scanners",
+    "sm-settings",
+    "sm-camera-views",
     "starmap-disc",
     "disc-root__menu"
   ]

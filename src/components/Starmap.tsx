@@ -21,11 +21,20 @@ import { StarMapCanvas, type DisplayState, type ScreenPt } from "@/scene/StarMap
 import { ArkMark } from "./Intro";
 import { ControlDisc } from "./ControlDisc";
 
+const AFFIL_HEX: Record<string, string> = {
+  uee: "#48bbd4",
+  BANU: "#ffce17",
+  VNCL: "#bd002d",
+  XIAN: "#52c231",
+  DEV: "#ca922d",
+  UNC: "#f6851f",
+};
+
 const initial = readMapUrl();
 
 const defaultDisplay = (): DisplayState => ({
   affiliations: Object.fromEntries(AFFILIATIONS.map((a) => [a.code, true])),
-  tunnels: { S: true, M: true, L: true },
+  tunnels: { S: false, M: false, L: false },
   scanners: { lifeforms: false, economy: false, crime: false },
 });
 
@@ -56,6 +65,7 @@ export function Starmap() {
   const [menu, setMenu] = useState(false);
   const [loading, setLoading] = useState(true);
   const [lookNonce, setLookNonce] = useState(0);
+  const [markFilter, setMarkFilter] = useState<"all" | "system" | "body">("all");
 
   const sys = systemByCode.get(systemCode);
   const focus = selected ? bodyLabel(selected) : level === "galaxy" ? zh.levels.galaxy : sys?.name || systemCode;
@@ -134,8 +144,10 @@ export function Starmap() {
       const sysRow = systems.find((s) => s.code === code);
       if (sysRow) rows.push({ name: sysRow.name, code: sysRow.code, type: "STAR_SYSTEM", system: sysRow.code });
     }
+    if (markFilter === "system") return rows.filter((r) => r.type === "STAR_SYSTEM");
+    if (markFilter === "body") return rows.filter((r) => r.type !== "STAR_SYSTEM");
     return rows;
-  }, [marks]);
+  }, [marks, markFilter]);
 
   const enterSystem = useCallback(
     (code: string, body?: CapturedBody | null) => {
@@ -259,6 +271,7 @@ export function Starmap() {
               onClick={() => {
                 setLevel("galaxy");
                 setSelected(null);
+                setCamera([10, 0, 0.4, 0, 0]);
               }}
             >
               {zh.hud.gal}
@@ -370,9 +383,13 @@ export function Starmap() {
             data-action="compass"
             title={zh.hud.camera}
             onClick={() => {
-              setSelected(null);
-              setLevel("system");
-              setCamera([10, 102.98, 0.002, 0, 0]);
+              if (level === "galaxy") {
+                setCamera([10, 0, 0.4, 0, 0]);
+              } else {
+                setSelected(null);
+                setLevel("system");
+                setCamera([10, 102.98, 0.002, 0, 0]);
+              }
               setLookNonce((n) => n + 1);
             }}
           >
@@ -441,6 +458,15 @@ export function Starmap() {
 
         {tab === "bookmarks" && (
           <section className="panel">
+            <div className="ship-row">
+              <span>{zh.hud.filters}</span>
+              <button className={markFilter === "system" ? "on" : ""} onClick={() => setMarkFilter(markFilter === "system" ? "all" : "system")}>
+                {zh.bookmarks.starSystem}
+              </button>
+              <button className={markFilter === "body" ? "on" : ""} onClick={() => setMarkFilter(markFilter === "body" ? "all" : "body")}>
+                {zh.bookmarks.celestialBody}
+              </button>
+            </div>
             <table>
               <thead>
                 <tr>
@@ -470,7 +496,9 @@ export function Starmap() {
                 ))}
               </tbody>
             </table>
-            {!markedHits.length && <p className="empty">{zh.bookmarks.empty}</p>}
+            {!markedHits.length && (
+              <p className="empty">{marks.length && markFilter !== "all" ? zh.bookmarks.emptyFiltered : zh.bookmarks.empty}</p>
+            )}
           </section>
         )}
 
@@ -558,12 +586,11 @@ export function Starmap() {
         )}
 
         {tab === "display" && (
-          <section className="panel">
-            <div className="display-grid">
-              <div>
-                <h3>{zh.disc.affiliation}</h3>
+          <section className="display-bar">
+            <div className="display-group">
+              <div className="display-icons">
                 {AFFILIATIONS.map((n) => (
-                  <label key={n.code}>
+                  <label key={n.code} className="display-dot" title={n.name}>
                     <input
                       data-affil={n.code}
                       type="checkbox"
@@ -574,15 +601,18 @@ export function Starmap() {
                           affiliations: { ...d.affiliations, [n.code]: e.target.checked },
                         }))
                       }
-                    />{" "}
-                    {n.name}
+                    />
+                    <i style={{ background: AFFIL_HEX[n.code] }} />
+                    <span>{n.name}</span>
                   </label>
                 ))}
               </div>
-              <div>
-                <h3>{zh.display.jumpTunnels}</h3>
+              <em>{zh.display.factions}</em>
+            </div>
+            <div className="display-group">
+              <div className="display-icons">
                 {(["S", "M", "L"] as const).map((sz) => (
-                  <label key={sz}>
+                  <label key={sz} className={`display-ring ${sz.toLowerCase()}`}>
                     <input
                       data-tunnel={sz}
                       type="checkbox"
@@ -590,47 +620,55 @@ export function Starmap() {
                       onChange={(e) =>
                         setDisplay((d) => ({ ...d, tunnels: { ...d.tunnels, [sz]: e.target.checked } }))
                       }
-                    />{" "}
-                    {sz === "S" ? zh.display.sizeS : sz === "M" ? zh.display.sizeM : zh.display.sizeL}
+                    />
+                    <i />
+                    <span>{sz === "S" ? zh.display.sizeS : sz === "M" ? zh.display.sizeM : zh.display.sizeL}</span>
                   </label>
                 ))}
               </div>
-              <div>
-                <h3>{zh.display.longRangeScanner}</h3>
-                <label>
-                  <input
-                    data-scan="lifeforms"
-                    type="checkbox"
-                    checked={display.scanners.lifeforms}
-                    onChange={(e) =>
-                      setDisplay((d) => ({ ...d, scanners: { ...d.scanners, lifeforms: e.target.checked } }))
-                    }
-                  />{" "}
-                  {zh.display.lifeforms}
-                </label>
-                <label>
-                  <input
-                    data-scan="economy"
-                    type="checkbox"
-                    checked={display.scanners.economy}
-                    onChange={(e) =>
-                      setDisplay((d) => ({ ...d, scanners: { ...d.scanners, economy: e.target.checked } }))
-                    }
-                  />{" "}
-                  {zh.display.economy}
-                </label>
-                <label>
-                  <input
-                    data-scan="crime"
-                    type="checkbox"
-                    checked={display.scanners.crime}
-                    onChange={(e) =>
-                      setDisplay((d) => ({ ...d, scanners: { ...d.scanners, crime: e.target.checked } }))
-                    }
-                  />{" "}
-                  {zh.display.crime}
-                </label>
+              <em>{zh.display.jumpTunnels}</em>
+            </div>
+            <div className="display-group">
+              <div className="display-icons">
+                {(
+                  [
+                    ["lifeforms", zh.display.lifeforms],
+                    ["economy", zh.display.economy],
+                    ["crime", zh.display.crime],
+                  ] as const
+                ).map(([key, label]) => (
+                  <label key={key} className={`display-scan ${key}`}>
+                    <input
+                      data-scan={key}
+                      type="checkbox"
+                      checked={display.scanners[key]}
+                      onChange={() =>
+                        setDisplay((d) => {
+                          const on = !d.scanners[key];
+                          return {
+                            ...d,
+                            scanners: { lifeforms: false, economy: false, crime: false, [key]: on },
+                          };
+                        })
+                      }
+                    />
+                    <i />
+                    <span>{label}</span>
+                  </label>
+                ))}
               </div>
+              <em>{zh.display.sensors}</em>
+            </div>
+            <div className="display-group">
+              <div className="display-icons">
+                <button data-view="3d" className={view === "3d" ? "on" : ""} onClick={() => setView("3d")}>
+                  {zh.hud.view3d}
+                </button>
+                <button data-view="2d" className={view === "2d" ? "on" : ""} onClick={() => setView("2d")}>
+                  {zh.hud.view2d}
+                </button>
+              </div>
+              <em>{zh.hud.camera}</em>
             </div>
           </section>
         )}

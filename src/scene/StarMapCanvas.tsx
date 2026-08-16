@@ -553,8 +553,10 @@ export function StarMapCanvas({
       applyDisplay,
       applyCamera,
       resetHome: () => {
-        applyCamera([10, 102.98, 0.002, 0, 0], "system");
-        camRef.current([10, 102.98, 0.002, 0, 0]);
+        const galaxy = modeRef.current === "galaxy";
+        const home: CameraTuple = galaxy ? [10, 0, 0.4, 0, 0] : [10, 102.98, 0.002, 0, 0];
+        applyCamera(home, galaxy ? "galaxy" : "system");
+        camRef.current(home);
       },
       nudge: (az, el, zoom) => {
         const sph = new THREE.Spherical().setFromVector3(cam.position.clone().sub(controls.target));

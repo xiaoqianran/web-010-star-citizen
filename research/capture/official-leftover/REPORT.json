@@ -1,0 +1,1030 @@
+{
+  "capturedAt": "2026-08-16T19:24:34.985Z",
+  "start": "https://robertsspaceindustries.com/en/starmap",
+  "log": [
+    {
+      "t": "2026-08-16T19:19:58.825Z",
+      "step": "intro:window",
+      "url": "https://robertsspaceindustries.com/en/starmap",
+      "text": "true"
+    },
+    {
+      "t": "2026-08-16T19:21:07.989Z",
+      "step": "intro-dump",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "found": "sm-galaxy-display-tab,sm-affiliations,sm-scanners,sm-settings,sm-camera-views,starmap-disc,disc-root__menu",
+      "text": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY FACTIONS UEE BANU VANDUUL XI'AN DEVELOPING UNC"
+    },
+    {
+      "t": "2026-08-16T19:21:09.369Z",
+      "step": "click-galaxy",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "false"
+    },
+    {
+      "t": "2026-08-16T19:21:12.444Z",
+      "step": "click-display",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "true"
+    },
+    {
+      "t": "2026-08-16T19:21:15.417Z",
+      "step": "display-dump",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "found": "23 checks; classes=sm-galaxy-display-tab,sm-affiliations,sm-scanners,sm-settings,sm-camera-views,starmap-disc,disc-root__menu",
+      "text": ":true | :true | :true | :true | :true | :false | :false | :false | :false | UEE:true | BANU:true | VANDUUL:true | XI'AN:true | DEVELOPING:true | UNCLAIMED:true | SMALL:false | MEDIUM:false | LARGE:false | POPULATION:false | ECONOMY:false | THREAT:false | 3D:true | 2D:false"
+    },
+    {
+      "t": "2026-08-16T19:21:17.630Z",
+      "step": "display-toggle:UEE",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "true -> false"
+    },
+    {
+      "t": "2026-08-16T19:21:21.076Z",
+      "step": "display-toggle:BANU",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "true -> false"
+    },
+    {
+      "t": "2026-08-16T19:21:24.825Z",
+      "step": "display-toggle:VANDUUL",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "true -> false"
+    },
+    {
+      "t": "2026-08-16T19:21:28.941Z",
+      "step": "display-toggle:XI'AN",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "true -> false"
+    },
+    {
+      "t": "2026-08-16T19:21:32.714Z",
+      "step": "display-toggle:DEVELOPING",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "true -> false"
+    },
+    {
+      "t": "2026-08-16T19:21:36.379Z",
+      "step": "display-toggle:UNCLAIMED",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "true -> false"
+    },
+    {
+      "t": "2026-08-16T19:21:40.083Z",
+      "step": "display-toggle:SMALL",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "false -> true"
+    },
+    {
+      "t": "2026-08-16T19:21:44.543Z",
+      "step": "display-toggle:MEDIUM",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "false -> true"
+    },
+    {
+      "t": "2026-08-16T19:21:48.525Z",
+      "step": "display-toggle:LARGE",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "false -> true"
+    },
+    {
+      "t": "2026-08-16T19:21:52.432Z",
+      "step": "display-toggle:POPULATION",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "false -> true"
+    },
+    {
+      "t": "2026-08-16T19:21:56.408Z",
+      "step": "display-toggle:ECONOMY",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "false -> true"
+    },
+    {
+      "t": "2026-08-16T19:22:00.434Z",
+      "step": "display-toggle:THREAT",
+      "url": "https://robertsspaceindustries.com/en/starmap?camera=10,0,0.4,0,0",
+      "text": "false -> true"
+    },
+    {
+      "t": "2026-08-16T19:22:04.140Z",
+      "step": "click-search",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "text": "SEARCH"
+    },
+    {
+      "t": "2026-08-16T19:22:06.426Z",
+      "step": "search:Terra",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:08.033Z",
+      "step": "search:Cassel",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:10.183Z",
+      "step": "search:Goss",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:12.320Z",
+      "step": "search:Goss A",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:14.498Z",
+      "step": "search:Stanton",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:16.708Z",
+      "step": "search:Sol",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:18.905Z",
+      "step": "search:Tamsa",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:20.989Z",
+      "step": "search:ARK",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:23.065Z",
+      "step": "search:Levski",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:25.280Z",
+      "step": "search:Area18",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:27.527Z",
+      "step": "search:Orison",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:29.704Z",
+      "step": "search:Lorville",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:31.929Z",
+      "step": "search:Port Renatus",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:34.121Z",
+      "step": "search:jump",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:36.326Z",
+      "step": "search:star",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:38.197Z",
+      "step": "search:the",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:40.367Z",
+      "step": "search:halo",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:42.521Z",
+      "step": "search:flotilla",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:44.646Z",
+      "step": "search:Kayfa",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:46.869Z",
+      "step": "search:Banu",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:49.032Z",
+      "step": "search:Vanduul",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:51.146Z",
+      "step": "search:a",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:53.270Z",
+      "step": "search:UE",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:55.499Z",
+      "step": "search:GOSS.STARS.GOSSA",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:58.281Z",
+      "step": "click-terra-system",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "text": "none"
+    },
+    {
+      "t": "2026-08-16T19:23:03.271Z",
+      "step": "click-cassel",
+      "url": "https://robertsspaceindustries.com/en/starmap/search",
+      "text": "none"
+    },
+    {
+      "t": "2026-08-16T19:23:07.316Z",
+      "step": "disc:information",
+      "url": "https://robertsspaceindustries.com/en/starmap/search#",
+      "text": "INFORMATION"
+    },
+    {
+      "t": "2026-08-16T19:23:07.913Z",
+      "step": "disc:routing",
+      "url": "https://robertsspaceindustries.com/en/starmap/search#",
+      "text": "ROUTING"
+    },
+    {
+      "t": "2026-08-16T19:23:08.497Z",
+      "step": "disc:bookmark",
+      "url": "https://robertsspaceindustries.com/en/starmap/search#",
+      "text": "BOOKMARK"
+    },
+    {
+      "t": "2026-08-16T19:23:14.364Z",
+      "step": "click-routes",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "ROUTES"
+    },
+    {
+      "t": "2026-08-16T19:23:19.053Z",
+      "step": "route:GOSS-TERRA",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:23:23.551Z",
+      "step": "route:SOL-NYX",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:23:32.784Z",
+      "step": "route:STANTON-TAMSA",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:23:37.915Z",
+      "step": "route:KILIAN-PYRO",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:23:42.259Z",
+      "step": "route:GOSS-GOSS",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:23:47.146Z",
+      "step": "route:Cassel-Terra",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:23:51.450Z",
+      "step": "route:BANU-SOL",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:23:55.945Z",
+      "step": "route:Goss A-TERRA",
+      "url": "https://robertsspaceindustries.com/en/starmap/routes",
+      "text": "no-ui"
+    },
+    {
+      "t": "2026-08-16T19:23:59.599Z",
+      "step": "click-bookmarks",
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks",
+      "text": "BOOKMARKS"
+    },
+    {
+      "t": "2026-08-16T19:24:29.002Z",
+      "step": "left-drag",
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks",
+      "cam": "null -> null"
+    }
+  ],
+  "searchTable": [
+    {
+      "q": "Terra",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Terra"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Cassel",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Cassel"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Goss",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Goss"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Goss A",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Goss A"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Stanton",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Stanton"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Sol",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Sol"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Tamsa",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Tamsa"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "ARK",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "ARK"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Levski",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Levski"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Area18",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Area18"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Orison",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Orison"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Lorville",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Lorville"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Port Renatus",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Port Renatus"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "jump",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "jump"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "star",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "star"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "the",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "the"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "halo",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "halo"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "flotilla",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "flotilla"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Kayfa",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Kayfa"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Banu",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Banu"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "Vanduul",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "Vanduul"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "a",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "a"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "UE",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "UE"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    },
+    {
+      "q": "GOSS.STARS.GOSSA",
+      "typed": {
+        "cls": "",
+        "placeholder": "",
+        "value": "GOSS.STARS.GOSSA"
+      },
+      "found": null,
+      "rows": [
+        []
+      ],
+      "bodySlice": "Home Explore Starmap Starmap GLXSYSOBJ INSPECT INFORMATION ROUTING BOOKMARK POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY SEARCH BACK TO RSI WEBSITE"
+    }
+  ],
+  "routeLog": [
+    {
+      "from": "GOSS",
+      "to": "TERRA",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      }
+    },
+    {
+      "from": "SOL",
+      "to": "NYX",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      }
+    },
+    {
+      "from": "STANTON",
+      "to": "TAMSA",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      }
+    },
+    {
+      "from": "KILIAN",
+      "to": "PYRO",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      }
+    },
+    {
+      "from": "GOSS",
+      "to": "GOSS",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      }
+    },
+    {
+      "from": "Cassel",
+      "to": "Terra",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      }
+    },
+    {
+      "from": "BANU",
+      "to": "SOL",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      }
+    },
+    {
+      "from": "Goss A",
+      "to": "TERRA",
+      "calc": "CALCULATE",
+      "ui": {
+        "jumps": null,
+        "through": null,
+        "err": null,
+        "hasShortest": false,
+        "slice": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY DEPARTURE DESTINATION SHIP SIZE SMALL MEDIUM LARGE CALCULATE BACK TO RSI WEBSITE"
+      }
+    }
+  ],
+  "checkToggles": [
+    {
+      "label": "UEE",
+      "checked": true,
+      "after": false
+    },
+    {
+      "label": "BANU",
+      "checked": true,
+      "after": false
+    },
+    {
+      "label": "VANDUUL",
+      "checked": true,
+      "after": false
+    },
+    {
+      "label": "XI'AN",
+      "checked": true,
+      "after": false
+    },
+    {
+      "label": "DEVELOPING",
+      "checked": true,
+      "after": false
+    },
+    {
+      "label": "UNCLAIMED",
+      "checked": true,
+      "after": false
+    },
+    {
+      "label": "SMALL",
+      "checked": false,
+      "after": true
+    },
+    {
+      "label": "MEDIUM",
+      "checked": false,
+      "after": true
+    },
+    {
+      "label": "LARGE",
+      "checked": false,
+      "after": true
+    },
+    {
+      "label": "POPULATION",
+      "checked": false,
+      "after": true
+    },
+    {
+      "label": "ECONOMY",
+      "checked": false,
+      "after": true
+    },
+    {
+      "label": "THREAT",
+      "checked": false,
+      "after": true
+    }
+  ],
+  "keyLog": [
+    {
+      "key": "w",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "a",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "s",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "d",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "ArrowLeft",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "ArrowRight",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "ArrowUp",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "ArrowDown",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "+",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "-",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "Escape",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "f",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "2",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "3",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "q",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "e",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": " ",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "Tab",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "Enter",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    },
+    {
+      "key": "r",
+      "before": null,
+      "after": null,
+      "changed": false,
+      "url": "https://robertsspaceindustries.com/en/starmap/bookmarks"
+    }
+  ],
+  "bookmarkText": "Home Explore Starmap Starmap GLXSYSOBJ BACK SET AS:DEPARTURE SET AS:DESTINATION AVOID POPULATION ECONOMY THREAT SEARCH BOOKMARKS ROUTES DISPLAY NAME TYPE YOU HAVE NO BOOKMARKS YET. FILTERS STAR SYSTEM CELESTIAL BODY SEARCH BACK TO RSI WEBSITE",
+  "classesAfterIntro": [
+    "sm-galaxy-display-tab",
+    "sm-affiliations",
+    "sm-scanners",
+    "sm-settings",
+    "sm-camera-views",
+    "starmap-disc",
+    "disc-root__menu"
+  ],
+  "classesDisplay": [
+    "sm-galaxy-display-tab",
+    "sm-affiliations",
+    "sm-scanners",
+    "sm-settings",
+    "sm-camera-views",
+    "starmap-disc",
+    "disc-root__menu"
+  ],
+  "classesFinal": [
+    "sm-routes-tab",
+    "sm-settings",
+    "sm-departure-region",
+    "sm-destination-region",
+    "sm-ship-size",
+    "sm-search-autocomplete",
+    "starmap-disc",
+    "disc-root__menu"
+  ],
+  "network": [
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/bootup",
+      "status": 200,
+      "method": "POST",
+      "post": null,
+      "success": 1,
+      "code": "OK",
+      "msg": "OK",
+      "shortest": null,
+      "leastjumps": null,
+      "find": {
+        "systems": 90,
+        "objects": 0
+      }
+    },
+    {
+      "url": "https://robertsspaceindustries.com/api/starmap/bookmarks/find",
+      "status": 200,
+      "method": "POST",
+      "post": "[]",
+      "success": 0,
+      "code": "ErrNotAuthenticated",
+      "msg": "You must be authenticated to reach this area.",
+      "shortest": null,
+      "leastjumps": null,
+      "find": null
+    }
+  ]
+}

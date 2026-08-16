@@ -1,0 +1,1327 @@
+{
+  "searchTable": [
+    {
+      "q": "a",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "UE",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "jump",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "GOSS.STARS.GOSSA",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "star",
+      "count": 1,
+      "sample": [
+        {
+          "name": "JusticeStar Satellite",
+          "type": "人造设施",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "planet",
+      "count": 7,
+      "sample": [
+        {
+          "name": "Protoplanetary Disk",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Protoplanetary Disk 2",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Protoplanetary Disk 3",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Protoplanetary Disk 6",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Protoplanetary Disk 7",
+          "type": "小行星带",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "moon",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Broken Moon",
+          "type": "卫星",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "belt",
+      "count": 32,
+      "sample": [
+        {
+          "name": "Aaron Halo",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Bacchus Belt Alpha",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Branaugh Belt Alpha",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Caliban Belt Alpha",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Cano Belt Alpha",
+          "type": "小行星带",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "station",
+      "count": 9,
+      "sample": [
+        {
+          "name": "Archangel Station",
+          "type": "人造设施",
+          "info": "书签 >"
+        },
+        {
+          "name": "Checkmate Station",
+          "type": "人造设施",
+          "info": "书签 >"
+        },
+        {
+          "name": "Encole Station",
+          "type": "人造设施",
+          "info": "书签 >"
+        },
+        {
+          "name": "Hephaestus Station",
+          "type": "人造设施",
+          "info": "书签 >"
+        },
+        {
+          "name": "OB Station Gryphon",
+          "type": "人造设施",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "the",
+      "count": 3,
+      "sample": [
+        {
+          "name": "The ARK",
+          "type": "人造设施",
+          "info": "书签 >"
+        },
+        {
+          "name": "The Coil",
+          "type": "小行星场",
+          "info": "书签 >"
+        },
+        {
+          "name": "The Red God",
+          "type": "行星",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "halo",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Aaron Halo",
+          "type": "小行星带",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "flotilla",
+      "count": 5,
+      "sample": [
+        {
+          "name": "Bacchus Flotilla",
+          "type": "人造设施",
+          "info": "书签 >"
+        },
+        {
+          "name": "Hadrian Flotilla",
+          "type": "人造设施",
+          "info": "书签 >"
+        },
+        {
+          "name": "Lyris",
+          "type": "人造设施",
+          "info": "书签 >"
+        },
+        {
+          "name": "Trise Flotilla",
+          "type": "人造设施",
+          "info": "书签 >"
+        },
+        {
+          "name": "Yulin Flotilla",
+          "type": "人造设施",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "ring",
+      "count": 12,
+      "sample": [
+        {
+          "name": "Ring of Yela",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Rings of Aremis",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Rings of Branaugh II",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Rings of Ellis VII",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Rings of Kiel V",
+          "type": "小行星带",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "cluster",
+      "count": 7,
+      "sample": [
+        {
+          "name": "Akiro Cluster",
+          "type": "小行星场",
+          "info": "书签 >"
+        },
+        {
+          "name": "Daedalus Cluster",
+          "type": "小行星场",
+          "info": "书签 >"
+        },
+        {
+          "name": "Gliese Cluster Gamma",
+          "type": "小行星场",
+          "info": "书签 >"
+        },
+        {
+          "name": "Henge Cluster",
+          "type": "小行星场",
+          "info": "书签 >"
+        },
+        {
+          "name": "Icarus Cluster",
+          "type": "小行星场",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "protoplanetary",
+      "count": 7,
+      "sample": [
+        {
+          "name": "Protoplanetary Disk",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Protoplanetary Disk 2",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Protoplanetary Disk 3",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Protoplanetary Disk 6",
+          "type": "小行星带",
+          "info": "书签 >"
+        },
+        {
+          "name": "Protoplanetary Disk 7",
+          "type": "小行星带",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Levski",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Levski",
+          "type": "着陆区",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Lorville",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Lorville",
+          "type": "着陆区",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Area18",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Area18",
+          "type": "着陆区",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Orison",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Orison",
+          "type": "着陆区",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Port Renatus",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Port Renatus",
+          "type": "着陆区",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Goss A",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Goss A",
+          "type": "恒星",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Cassel",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Cassel",
+          "type": "行星",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Tamsa",
+      "count": 6,
+      "sample": [
+        {
+          "name": "Tamsa",
+          "type": "黑洞",
+          "info": "书签 >"
+        },
+        {
+          "name": "Tamsa",
+          "type": "星系",
+          "info": "书签 >"
+        },
+        {
+          "name": "Tamsa - Banshee",
+          "type": "跳跃点",
+          "info": "书签 >"
+        },
+        {
+          "name": "Tamsa I",
+          "type": "行星",
+          "info": "书签 >"
+        },
+        {
+          "name": "Tamsa II",
+          "type": "行星",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "ARK",
+      "count": 3,
+      "sample": [
+        {
+          "name": "Malkail (Markahil)",
+          "type": "星系",
+          "info": "书签 >"
+        },
+        {
+          "name": "Markahil",
+          "type": "恒星",
+          "info": "书签 >"
+        },
+        {
+          "name": "The ARK",
+          "type": "人造设施",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Banu",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Trise Flotilla",
+          "type": "人造设施",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Vanduul",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Vanduul Attack",
+          "type": "兴趣点",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Kayfa",
+      "count": 10,
+      "sample": [
+        {
+          "name": "Kai'pua (Kayfa)",
+          "type": "星系",
+          "info": "书签 >"
+        },
+        {
+          "name": "K.yuk'o",
+          "type": "行星",
+          "info": "书签 >"
+        },
+        {
+          "name": "Kai'pua (Kayfa)",
+          "type": "恒星",
+          "info": "书签 >"
+        },
+        {
+          "name": "Kai'pua (Kayfa) - Horus",
+          "type": "跳跃点",
+          "info": "书签 >"
+        },
+        {
+          "name": "Kai'pua (Kayfa) - R.il'a (Rihlah)",
+          "type": "跳跃点",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Terra",
+      "count": 26,
+      "sample": [
+        {
+          "name": "Terra",
+          "type": "行星",
+          "info": "书签 >"
+        },
+        {
+          "name": "Terra",
+          "type": "星系",
+          "info": "书签 >"
+        },
+        {
+          "name": "Aero",
+          "type": "行星",
+          "info": "书签 >"
+        },
+        {
+          "name": "Eda",
+          "type": "卫星",
+          "info": "书签 >"
+        },
+        {
+          "name": "Gen",
+          "type": "行星",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Fair",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Fairo",
+          "type": "卫星",
+          "info": "书签 >"
+        }
+      ]
+    },
+    {
+      "q": "Warn",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Vanduul Attack",
+          "type": "兴趣点",
+          "info": "书签 >"
+        }
+      ]
+    }
+  ],
+  "visits": [
+    {
+      "q": "Cassel",
+      "name": "Cassel",
+      "hit": false,
+      "focus": "GOSS",
+      "disc": {
+        "pages": [],
+        "actions": [
+          "STAR CITIZEN"
+        ],
+        "side": []
+      }
+    },
+    {
+      "q": "Goss A",
+      "name": "Goss A",
+      "hit": true,
+      "focus": "GOSS A",
+      "disc": {
+        "pages": [
+          "信息",
+          "航线",
+          "书签"
+        ],
+        "actions": [
+          "STAR CITIZEN"
+        ],
+        "side": [
+          "恒星Main Sequence - Dwarf - K人造设施语音解说",
+          "人造设施",
+          "语音解说"
+        ]
+      }
+    },
+    {
+      "q": "Levski",
+      "name": "Levski",
+      "hit": true,
+      "focus": "LEVSKI",
+      "disc": {
+        "pages": [
+          "信息",
+          "航线",
+          "书签"
+        ],
+        "actions": [
+          "打开",
+          "STAR CITIZEN"
+        ],
+        "side": [
+          "跳跃点Landing Zone人造设施语音解说",
+          "人造设施",
+          "语音解说"
+        ]
+      }
+    },
+    {
+      "q": "Area18",
+      "name": "Area18",
+      "hit": true,
+      "focus": "AREA18",
+      "disc": {
+        "pages": [
+          "信息",
+          "航线",
+          "书签"
+        ],
+        "actions": [
+          "打开",
+          "STAR CITIZEN"
+        ],
+        "side": [
+          "跳跃点Landing Zone人造设施语音解说",
+          "人造设施",
+          "语音解说"
+        ]
+      }
+    }
+  ],
+  "bookmarkEmpty": "名称 类型 信息 没有符合筛选的书签。",
+  "routeLog": [
+    {
+      "from": "SOL",
+      "to": "NYX",
+      "empty": null,
+      "short": {
+        "text": "Sol to Nyx · Through Davien · 10 跳跃点",
+        "mode": "shortest",
+        "jumps": "10"
+      },
+      "least": {
+        "text": "Sol to Nyx · Through Davien · 4 跳跃点",
+        "mode": "leastjumps",
+        "jumps": "4"
+      },
+      "differ": true
+    },
+    {
+      "from": "STANTON",
+      "to": "TAMSA",
+      "empty": null,
+      "short": {
+        "text": "Stanton to Tamsa · Through Nyx · 11 跳跃点",
+        "mode": "shortest",
+        "jumps": "11"
+      },
+      "least": {
+        "text": "Stanton to Tamsa · Through Pyro · 7 跳跃点",
+        "mode": "leastjumps",
+        "jumps": "7"
+      },
+      "differ": true
+    },
+    {
+      "from": "KILIAN",
+      "to": "PYRO",
+      "empty": null,
+      "short": {
+        "text": "Kilian to Pyro · Through Ellis · 4 跳跃点",
+        "mode": "shortest",
+        "jumps": "4"
+      },
+      "least": {
+        "text": "Kilian to Pyro · Through Davien · 3 跳跃点",
+        "mode": "leastjumps",
+        "jumps": "3"
+      },
+      "differ": true
+    },
+    {
+      "from": "GOSS",
+      "to": "TERRA",
+      "empty": null,
+      "short": {
+        "text": "Goss to Terra · Through Terra · 1 跳跃点",
+        "mode": "shortest",
+        "jumps": "1"
+      },
+      "least": {
+        "text": "Goss to Terra · Through Terra · 1 跳跃点",
+        "mode": "leastjumps",
+        "jumps": "1"
+      },
+      "differ": false
+    },
+    {
+      "from": "GOSS",
+      "to": "GOSS",
+      "empty": "没有符合筛选的航线。",
+      "short": null,
+      "least": null,
+      "differ": false
+    },
+    {
+      "from": "Cassel",
+      "to": "Terra",
+      "empty": "Invalid object specified",
+      "short": null,
+      "least": null,
+      "differ": false
+    },
+    {
+      "from": "BANU",
+      "to": "SOL",
+      "empty": "Invalid object specified",
+      "short": null,
+      "least": null,
+      "differ": false
+    },
+    {
+      "from": "Goss A",
+      "to": "TERRA",
+      "empty": "Invalid object specified",
+      "short": null,
+      "least": null,
+      "differ": false
+    },
+    {
+      "from": "GOSS.STARS.GOSSA",
+      "to": "TERRA",
+      "empty": null,
+      "short": {
+        "text": "Goss to Terra · Through Terra · 1 跳跃点",
+        "mode": "shortest",
+        "jumps": "1"
+      },
+      "least": {
+        "text": "Goss to Terra · Through Terra · 1 跳跃点",
+        "mode": "leastjumps",
+        "jumps": "1"
+      },
+      "differ": false
+    }
+  ],
+  "displayBefore": [
+    {
+      "key": "uee",
+      "checked": true
+    },
+    {
+      "key": "BANU",
+      "checked": true
+    },
+    {
+      "key": "VNCL",
+      "checked": true
+    },
+    {
+      "key": "XIAN",
+      "checked": true
+    },
+    {
+      "key": "DEV",
+      "checked": true
+    },
+    {
+      "key": "UNC",
+      "checked": true
+    },
+    {
+      "key": "S",
+      "checked": true
+    },
+    {
+      "key": "M",
+      "checked": true
+    },
+    {
+      "key": "L",
+      "checked": true
+    },
+    {
+      "key": "lifeforms",
+      "checked": false
+    },
+    {
+      "key": "economy",
+      "checked": false
+    },
+    {
+      "key": "crime",
+      "checked": false
+    }
+  ],
+  "displayToggles": [
+    {
+      "label": "UEE",
+      "key": "uee",
+      "checked": false,
+      "scanTag": null
+    },
+    {
+      "label": "Banu",
+      "key": "BANU",
+      "checked": false,
+      "scanTag": null
+    },
+    {
+      "label": "Vanduul",
+      "key": "VNCL",
+      "checked": false,
+      "scanTag": null
+    },
+    {
+      "label": "Xi'an",
+      "key": "XIAN",
+      "checked": false,
+      "scanTag": null
+    },
+    {
+      "label": "Developing",
+      "key": "DEV",
+      "checked": false,
+      "scanTag": null
+    },
+    {
+      "label": "Unclaimed",
+      "key": "UNC",
+      "checked": false,
+      "scanTag": null
+    },
+    {
+      "label": "小型",
+      "key": "S",
+      "checked": false,
+      "scanTag": null
+    },
+    {
+      "label": "中型",
+      "key": "M",
+      "checked": false,
+      "scanTag": null
+    },
+    {
+      "label": "大型",
+      "key": "L",
+      "checked": false,
+      "scanTag": null
+    },
+    {
+      "label": "生命体",
+      "key": "lifeforms",
+      "checked": true,
+      "scanTag": "// 人口"
+    },
+    {
+      "label": "经济",
+      "key": "economy",
+      "checked": true,
+      "scanTag": "// 经济"
+    },
+    {
+      "label": "犯罪",
+      "key": "crime",
+      "checked": true,
+      "scanTag": "// 威胁"
+    }
+  ],
+  "keyLog": [
+    {
+      "key": "w",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "a",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "s",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "d",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "ArrowLeft",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "ArrowRight",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "ArrowUp",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "ArrowDown",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "+",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "-",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "changed": false,
+      "view": null
+    },
+    {
+      "key": "2",
+      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "after": "68.7,9.41,0.003502,0.00052398,-0.00018286",
+      "changed": true,
+      "view": "2d"
+    },
+    {
+      "key": "3",
+      "before": "68.7,9.41,0.003502,0.00052398,-0.00018286",
+      "after": "4.58,9.41,0.003481,0.00052398,-0.00018286",
+      "changed": true,
+      "view": null
+    },
+    {
+      "key": "Escape",
+      "before": "4.58,9.41,0.003481,0.00052398,-0.00018286",
+      "after": "66.89,9.41,0.003424,0.00052398,-0.00018286",
+      "changed": true,
+      "view": null
+    },
+    {
+      "key": " ",
+      "before": "66.89,9.41,0.003424,0.00052398,-0.00018286",
+      "after": "64.69,9.41,0.003338,0.00052398,-0.00018286",
+      "changed": true,
+      "view": null
+    }
+  ],
+  "compass": {
+    "before": "64.69,9.41,0.003338,0.00052398,-0.00018286",
+    "after": "10,102.98,0.002,0,0"
+  },
+  "log": [
+    {
+      "t": "2026-08-16T19:20:05.397Z",
+      "step": "search:a",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 0
+    },
+    {
+      "t": "2026-08-16T19:20:10.526Z",
+      "step": "search:UE",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 0
+    },
+    {
+      "t": "2026-08-16T19:20:15.816Z",
+      "step": "search:jump",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 0
+    },
+    {
+      "t": "2026-08-16T19:20:21.141Z",
+      "step": "search:GOSS.STARS.GOSSA",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 0
+    },
+    {
+      "t": "2026-08-16T19:20:29.071Z",
+      "step": "search:star",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:20:37.299Z",
+      "step": "search:planet",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 7
+    },
+    {
+      "t": "2026-08-16T19:20:44.660Z",
+      "step": "search:moon",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:20:53.197Z",
+      "step": "search:belt",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T19:21:01.720Z",
+      "step": "search:station",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 9
+    },
+    {
+      "t": "2026-08-16T19:21:10.366Z",
+      "step": "search:the",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 3
+    },
+    {
+      "t": "2026-08-16T19:21:19.197Z",
+      "step": "search:halo",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:21:27.682Z",
+      "step": "search:flotilla",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 5
+    },
+    {
+      "t": "2026-08-16T19:21:31.081Z",
+      "step": "search:ring",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 12
+    },
+    {
+      "t": "2026-08-16T19:21:39.227Z",
+      "step": "search:cluster",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 7
+    },
+    {
+      "t": "2026-08-16T19:21:46.229Z",
+      "step": "search:protoplanetary",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 7
+    },
+    {
+      "t": "2026-08-16T19:21:54.506Z",
+      "step": "search:Levski",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:02.611Z",
+      "step": "search:Lorville",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:10.650Z",
+      "step": "search:Area18",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:18.620Z",
+      "step": "search:Orison",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:26.514Z",
+      "step": "search:Port Renatus",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:34.561Z",
+      "step": "search:Goss A",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:41.951Z",
+      "step": "search:Cassel",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:22:49.983Z",
+      "step": "search:Tamsa",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 6
+    },
+    {
+      "t": "2026-08-16T19:22:58.094Z",
+      "step": "search:ARK",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 3
+    },
+    {
+      "t": "2026-08-16T19:23:05.768Z",
+      "step": "search:Banu",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:23:14.216Z",
+      "step": "search:Vanduul",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:23:22.385Z",
+      "step": "search:Kayfa",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 10
+    },
+    {
+      "t": "2026-08-16T19:23:31.609Z",
+      "step": "search:Terra",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 26
+    },
+    {
+      "t": "2026-08-16T19:23:33.627Z",
+      "step": "search:Fair",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:23:41.029Z",
+      "step": "search:Warn",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T19:23:46.632Z",
+      "step": "visit:Cassel",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0",
+      "focus": "GOSS"
+    },
+    {
+      "t": "2026-08-16T19:23:57.069Z",
+      "step": "visit:Goss A",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSA&system=GOSS&camera=10.32%2C97.73%2C0.001904%2C-0.0000002%2C-0.00000053",
+      "focus": "GOSS A"
+    },
+    {
+      "t": "2026-08-16T19:24:08.022Z",
+      "step": "visit:Levski",
+      "url": "http://127.0.0.1:4173/?location=NYX.LZS.LEVSKI&system=NYX&camera=25.69%2C50.41%2C0.001004%2C-0.00000226%2C-0.00000615",
+      "focus": "LEVSKI"
+    },
+    {
+      "t": "2026-08-16T19:24:18.657Z",
+      "step": "visit:Area18",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=40.54%2C41.25%2C0.000781%2C-0.00000389%2C-0.00005724",
+      "focus": "AREA18"
+    },
+    {
+      "t": "2026-08-16T19:24:27.137Z",
+      "step": "bookmarks",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=48.03%2C38.6%2C0.00072%2C0.00002787%2C0.00001188&tab=bookmarks",
+      "text": "名称 类型 信息 没有符合筛选的书签。"
+    },
+    {
+      "t": "2026-08-16T19:24:37.277Z",
+      "step": "route:SOL-NYX",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=58.59%2C9.57%2C0.028571%2C0.00037794%2C-0.00006077&tab=routes",
+      "text": "10/4"
+    },
+    {
+      "t": "2026-08-16T19:24:43.235Z",
+      "step": "route:STANTON-TAMSA",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.67%2C0.97%2C0.061765%2C0.00105514%2C-0.00035068&tab=routes",
+      "text": "11/7"
+    },
+    {
+      "t": "2026-08-16T19:24:49.800Z",
+      "step": "route:KILIAN-PYRO",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "4/3"
+    },
+    {
+      "t": "2026-08-16T19:24:56.268Z",
+      "step": "route:GOSS-TERRA",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "1/1"
+    },
+    {
+      "t": "2026-08-16T19:25:00.961Z",
+      "step": "route:GOSS-GOSS",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "没有符合筛选的航线。"
+    },
+    {
+      "t": "2026-08-16T19:25:05.993Z",
+      "step": "route:Cassel-Terra",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "Invalid object specified"
+    },
+    {
+      "t": "2026-08-16T19:25:11.171Z",
+      "step": "route:BANU-SOL",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "Invalid object specified"
+    },
+    {
+      "t": "2026-08-16T19:25:15.741Z",
+      "step": "route:Goss A-TERRA",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "Invalid object specified"
+    },
+    {
+      "t": "2026-08-16T19:25:22.226Z",
+      "step": "route:GOSS.STARS.GOSSA-TERRA",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "1/1"
+    },
+    {
+      "t": "2026-08-16T19:25:28.425Z",
+      "step": "display:UEE",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "false "
+    },
+    {
+      "t": "2026-08-16T19:25:30.440Z",
+      "step": "display:Banu",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "false "
+    },
+    {
+      "t": "2026-08-16T19:25:32.432Z",
+      "step": "display:Vanduul",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "false "
+    },
+    {
+      "t": "2026-08-16T19:25:34.609Z",
+      "step": "display:Xi'an",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "false "
+    },
+    {
+      "t": "2026-08-16T19:25:36.580Z",
+      "step": "display:Developing",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "false "
+    },
+    {
+      "t": "2026-08-16T19:25:38.642Z",
+      "step": "display:Unclaimed",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "false "
+    },
+    {
+      "t": "2026-08-16T19:25:40.691Z",
+      "step": "display:小型",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "false "
+    },
+    {
+      "t": "2026-08-16T19:25:42.935Z",
+      "step": "display:中型",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "false "
+    },
+    {
+      "t": "2026-08-16T19:25:45.065Z",
+      "step": "display:大型",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "false "
+    },
+    {
+      "t": "2026-08-16T19:25:47.151Z",
+      "step": "display:生命体",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "true // 人口"
+    },
+    {
+      "t": "2026-08-16T19:25:49.516Z",
+      "step": "display:经济",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "true // 经济"
+    },
+    {
+      "t": "2026-08-16T19:25:51.609Z",
+      "step": "display:犯罪",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "text": "true // 威胁"
+    },
+    {
+      "t": "2026-08-16T19:26:02.359Z",
+      "step": "key:2",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=68.7%2C9.41%2C0.003502%2C0.00052398%2C-0.00018286&tab=display&view=2d",
+      "cam": "60.95,0,0.07354,0.00127667,-0.00044552 -> 68.7,9.41,0.003502,0.00052398,-0.00018286"
+    },
+    {
+      "t": "2026-08-16T19:26:03.272Z",
+      "step": "key:3",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=4.58%2C9.41%2C0.003481%2C0.00052398%2C-0.00018286&tab=display",
+      "cam": "68.7,9.41,0.003502,0.00052398,-0.00018286 -> 4.58,9.41,0.003481,0.00052398,-0.00018286"
+    },
+    {
+      "t": "2026-08-16T19:26:04.160Z",
+      "step": "key:Escape",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=66.89%2C9.41%2C0.003424%2C0.00052398%2C-0.00018286",
+      "cam": "4.58,9.41,0.003481,0.00052398,-0.00018286 -> 66.89,9.41,0.003424,0.00052398,-0.00018286"
+    },
+    {
+      "t": "2026-08-16T19:26:05.056Z",
+      "step": "key: ",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=64.69%2C9.41%2C0.003338%2C0.00052398%2C-0.00018286",
+      "cam": "66.89,9.41,0.003424,0.00052398,-0.00018286 -> 64.69,9.41,0.003338,0.00052398,-0.00018286"
+    },
+    {
+      "t": "2026-08-16T19:26:05.671Z",
+      "step": "compass",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=10%2C102.98%2C0.002%2C0%2C0",
+      "cam": "64.69,9.41,0.003338,0.00052398,-0.00018286 -> 10,102.98,0.002,0,0"
+    },
+    {
+      "t": "2026-08-16T19:26:06.292Z",
+      "step": "view",
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=4.58%2C102.98%2C0.002003%2C0%2C0",
+      "text": "2d -> 3d-default"
+    }
+  ]
+}

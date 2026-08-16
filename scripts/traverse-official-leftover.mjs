@@ -301,9 +301,27 @@ async function main() {
   await page.reload({ waitUntil: "domcontentloaded", timeout: 90000 });
   await sleep(2500);
   await clickText(["allow all", "accept all"]);
-  const windowHit =
-    (await clickClass("launch")) ||
-    (await clickText(["or enter in window mode", "enter in window mode"]));
+  await page
+    .click("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll", { delay: 40 })
+    .catch(() => {});
+  await page.click("button.CybotCookiebotBannerCloseButton", { delay: 40 }).catch(() => {});
+  await sleep(400);
+  let windowHit = false;
+  try {
+    await page.click("button.launch", { delay: 60 });
+    windowHit = "button.launch";
+  } catch {
+    const box = await page.$eval("button.launch", (el) => {
+      const r = el.getBoundingClientRect();
+      return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
+    }).catch(() => null);
+    if (box) {
+      await page.mouse.click(box.x, box.y);
+      windowHit = `mouse:${Math.round(box.x)},${Math.round(box.y)}`;
+    } else {
+      windowHit = (await clickClass("launch")) || (await clickText(["or enter in window mode", "enter in window mode"]));
+    }
+  }
   note("intro:window", { text: String(windowHit) });
   await sleep(1200);
   for (const label of ["acknowledge & continue", "acknowledge", "explore starmap", "don't show this screen next time"]) {
