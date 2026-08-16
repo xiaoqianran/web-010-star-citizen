@@ -28,6 +28,7 @@
   },
   "disc": {
     "control": "Control Disc",
+    "inspect": "Inspect",
     "information": "Information",
     "routing": "Routing",
     "bookmark": "Bookmark",

@@ -194,6 +194,16 @@ DISPLAY 在银河视图类名是 `sm-galaxy-display-tab`，星系视图是 `sm-s
 
 航线底栏：`DEPARTURE` / `DESTINATION` / `SHIP SIZE` 三圆 / `CALCULATE >`。GOSS 与 TERRA 能写入输入框。计算后的结果表这次窗口高度里没截到。盘上 ROUTING 现场是 **BACK / SET AS DEPARTURE / SET AS DESTINATION / AVOID**，仍无 Jump Through。
 
+## 观察方法排行（2026-08-16）
+
+完整清单见 `research/METHODS.md`。本轮选用前三档：
+
+1. 公开 POST API（已穷尽 find/routes/bootup）
+2. 按官方 class 的 puppeteer（`traverse-official-combos.mjs` 重录未测组合）
+3. 第一方教程：CIG 2015 [Star Map](https://www.youtube.com/watch?v=4eAD0liNeis) 明确 **右键 → INSPECT / INFORMATION / ROUTING / BOOKMARK**；Q&A 确认航线 AU 不含跃迁段。
+
+社区仓库只对照字段：Dymerz/RSI-Scraper、koo04/GoScrapeRSI、Synchrones/ARK_Starmap（Unity 复刻，不抄其自加键位）。
+
 ## 仍须对照官网补的现场
 
 - 登录态书签 JSON（未登录只有 `ErrNotAuthenticated`）

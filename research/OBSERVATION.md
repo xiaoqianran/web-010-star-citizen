@@ -32,7 +32,7 @@
 开场：Stellar Cartographics → 全屏提示 → Nick Croshaw 引言 → ARK 设定 → Explore starmap  
 左侧：Back / Galaxy / Star System / Jump point  
 右侧：Search / Bookmarks / Routes / Display  
-Disc：Information / Routing / Bookmark；Set As Departure/Destination；Avoid；Population / Economy / Threat  
+Disc / 右键菜单：Inspect / Information / Routing / Bookmark（2015 官方教程 + leftover DOM）。Inspect 只拉近镜头；Information 打开右上信息卡。Set As Departure/Destination；Avoid；Population / Economy / Threat  
 Display：阵营、Jump tunnels（S/M/L）、Long-Range Scanner、Heatmap Scanner、2D/3D
 
 ## 明确不进仓库的东西

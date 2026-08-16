@@ -73,6 +73,7 @@ export const zh = {
   disc: {
     control: "控制盘",
     virtual: "虚拟盘",
+    inspect: "查看",
     information: "信息",
     routing: "航线",
     bookmark: "书签",

@@ -18,12 +18,12 @@ export function ControlDisc({
   onJump,
 }: {
   body: CapturedBody;
-  page: "information" | "routing" | "bookmark";
+  page: "inspect" | "information" | "routing" | "bookmark";
   point: ScreenPt;
   affiliation: string;
   bookmarked: boolean;
   avoided: boolean;
-  onPage: (p: "information" | "routing" | "bookmark") => void;
+  onPage: (p: "inspect" | "information" | "routing" | "bookmark") => void;
   onDeparture: () => void;
   onDestination: () => void;
   onBookmark: () => void;
@@ -74,6 +74,9 @@ export function ControlDisc({
         <div className="disc-side">{zh.disc.voiceOvers}</div>
       </div>
       <div className="disc-menu">
+        <button data-page="inspect" data-action="inspect" className={page === "inspect" ? "on" : ""} onClick={() => onPage("inspect")}>
+          {zh.disc.inspect}
+        </button>
         <button data-page="information" className={page === "information" ? "on" : ""} onClick={() => onPage("information")}>
           {zh.disc.information}
         </button>
@@ -84,6 +87,7 @@ export function ControlDisc({
           {zh.disc.bookmark}
         </button>
       </div>
+      {page !== "inspect" && (
       <aside className="info-card">
         <h2>{bodyLabel(body)}</h2>
         {page === "information" && (
@@ -141,6 +145,7 @@ export function ControlDisc({
           </div>
         )}
       </aside>
+      )}
     </div>
   );
 }

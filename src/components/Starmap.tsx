@@ -46,7 +46,9 @@ export function Starmap() {
   const [view, setView] = useState<"3d" | "2d">(initial.view);
   const [hover, setHover] = useState<CapturedBody | null>(null);
   const [selected, setSelected] = useState<CapturedBody | null>(null);
-  const [discPage, setDiscPage] = useState<"information" | "routing" | "bookmark">("information");
+  const [discPage, setDiscPage] = useState<"inspect" | "information" | "routing" | "bookmark">("information");
+  const [ctx, setCtx] = useState<{ x: number; y: number; body?: CapturedBody; system?: string } | null>(null);
+  const [inspectNonce, setInspectNonce] = useState(0);
   const [query, setQuery] = useState("");
   const [from, setFrom] = useState("GOSS");
   const [to, setTo] = useState("TERRA");
@@ -236,14 +238,24 @@ export function Starmap() {
         routeSystems={drawnRoute}
         camera={camera}
         lookNonce={lookNonce}
+        inspectNonce={inspectNonce}
         onHover={setHover}
         onSelect={(body) => {
           blip(sound);
+          setCtx(null);
           setSelected(body);
           setLevel("object");
           setDiscPage("information");
         }}
         onSelectSystem={(code) => enterSystem(code)}
+        onContext={(hit, x, y) => {
+          blip(sound);
+          if (!hit) {
+            setCtx(null);
+            return;
+          }
+          setCtx({ x, y, body: hit.body, system: hit.system });
+        }}
         onProject={setPoint}
         onCamera={setCamera}
       />
@@ -327,9 +339,79 @@ export function Starmap() {
           </button>
         </div>
 
-        {hover && !selected && point && (
+        {hover && !selected && !ctx && point && (
           <div className="hover-tip" style={{ left: point.x + 18, top: point.y - 10 }}>
             {zh.disc.controlDisc} &gt;
+          </div>
+        )}
+
+        {ctx && (
+          <div className="ctx-menu" data-ctx="menu" style={{ left: ctx.x, top: ctx.y }}>
+            <button
+              type="button"
+              data-action="inspect"
+              onClick={() => {
+                if (ctx.body) {
+                  setSelected(ctx.body);
+                  setLevel("object");
+                  setDiscPage("inspect");
+                  setInspectNonce((n) => n + 1);
+                } else if (ctx.system) {
+                  setSelected(null);
+                  setFocusCode(ctx.system);
+                }
+                setCtx(null);
+              }}
+            >
+              {zh.disc.inspect}
+            </button>
+            <button
+              type="button"
+              data-page="information"
+              onClick={() => {
+                if (ctx.body) {
+                  setSelected(ctx.body);
+                  setLevel("object");
+                  setDiscPage("information");
+                } else if (ctx.system) enterSystem(ctx.system);
+                setCtx(null);
+              }}
+            >
+              {zh.disc.information}
+            </button>
+            <button
+              type="button"
+              data-page="routing"
+              onClick={() => {
+                if (ctx.body) {
+                  setSelected(ctx.body);
+                  setLevel("object");
+                  setDiscPage("routing");
+                } else if (ctx.system) {
+                  setFrom(systemByCode.get(ctx.system)?.name || ctx.system);
+                  setTab("routes");
+                }
+                setCtx(null);
+              }}
+            >
+              {zh.disc.routing}
+            </button>
+            <button
+              type="button"
+              data-page="bookmark"
+              onClick={() => {
+                const code = ctx.body?.code || ctx.system;
+                if (code) setMarks(store.toggleBookmark(code));
+                if (ctx.body) {
+                  setSelected(ctx.body);
+                  setLevel("object");
+                  setDiscPage("bookmark");
+                }
+                setCtx(null);
+              }}
+            >
+              {zh.disc.bookmark}
+            </button>
           </div>
         )}
 
@@ -341,7 +423,10 @@ export function Starmap() {
             affiliation={selected.affiliation?.[0]?.name || sys?.affiliationName || "UEE"}
             bookmarked={marks.includes(selected.code)}
             avoided={avoids.includes(selected.code)}
-            onPage={setDiscPage}
+            onPage={(p) => {
+              setDiscPage(p);
+              if (p === "inspect") setInspectNonce((n) => n + 1);
+            }}
             onDeparture={() => {
               setFrom(bodyLabel(selected));
               setTab("routes");

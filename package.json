@@ -12,6 +12,7 @@
     "traverse": "node scripts/traverse-clone.mjs",
     "traverse:human": "node scripts/traverse-human.mjs",
     "traverse:official": "node scripts/traverse-official-leftover.mjs",
+    "traverse:official-combos": "node scripts/traverse-official-combos.mjs",
     "verify:routes": "node scripts/verify-routes.mjs"
   },
   "dependencies": {

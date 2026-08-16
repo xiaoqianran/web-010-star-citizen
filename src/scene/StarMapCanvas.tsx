@@ -34,9 +34,11 @@ type Props = {
   routeSystems: string[];
   camera: CameraTuple;
   lookNonce?: number;
+  inspectNonce?: number;
   onHover: (body: CapturedBody | null) => void;
   onSelect: (body: CapturedBody) => void;
   onSelectSystem: (code: string) => void;
+  onContext?: (hit: { body?: CapturedBody; system?: string } | null, x: number, y: number) => void;
   onProject: (pt: ScreenPt | null) => void;
   onCamera: (c: CameraTuple) => void;
 };
@@ -88,9 +90,11 @@ export function StarMapCanvas({
   routeSystems,
   camera,
   lookNonce = 0,
+  inspectNonce = 0,
   onHover,
   onSelect,
   onSelectSystem,
+  onContext,
   onProject,
   onCamera,
 }: Props) {
@@ -110,6 +114,7 @@ export function StarMapCanvas({
   const hoverRef = useRef(onHover);
   const selectRef = useRef(onSelect);
   const selectSysRef = useRef(onSelectSystem);
+  const contextRef = useRef(onContext);
   const camRef = useRef(onCamera);
   const selectedRef = useRef(selected);
   const modeRef = useRef(mode);
@@ -117,6 +122,7 @@ export function StarMapCanvas({
   hoverRef.current = onHover;
   selectRef.current = onSelect;
   selectSysRef.current = onSelectSystem;
+  contextRef.current = onContext;
   camRef.current = onCamera;
   selectedRef.current = selected;
   modeRef.current = mode;
@@ -515,11 +521,21 @@ export function StarMapCanvas({
     };
     const onClick = () => {
       if (drag > 6) return;
+      contextRef.current?.(null, 0, 0);
       if (modeRef.current === "galaxy" && hoverSys) {
         selectSysRef.current(hoverSys);
         return;
       }
       if (hovering) selectRef.current(hovering);
+    };
+    const onContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+      if (drag > 6) return;
+      if (modeRef.current === "galaxy") {
+        contextRef.current?.(hoverSys ? { system: hoverSys } : null, e.clientX, e.clientY);
+        return;
+      }
+      contextRef.current?.(hovering ? { body: hovering } : null, e.clientX, e.clientY);
     };
 
     const resize = () => {
@@ -564,6 +580,7 @@ export function StarMapCanvas({
         sph.phi = Math.min(Math.PI - 0.05, Math.max(0.05, sph.phi + el));
         sph.radius = Math.min(controls.maxDistance, Math.max(controls.minDistance, sph.radius * zoom));
         cam.position.copy(new THREE.Vector3().setFromSpherical(sph).add(controls.target));
+        camRef.current(poseToCamera(cam.position, controls.target, modeRef.current));
       },
     };
     rebuild(bodies);
@@ -590,7 +607,7 @@ export function StarMapCanvas({
     renderer.domElement.addEventListener("pointermove", onMove);
     renderer.domElement.addEventListener("pointerdown", onDown);
     renderer.domElement.addEventListener("click", onClick);
-    renderer.domElement.addEventListener("contextmenu", (e) => e.preventDefault());
+    renderer.domElement.addEventListener("contextmenu", onContextMenu);
     window.addEventListener("resize", resize);
 
     let frame = 0;
@@ -634,6 +651,7 @@ export function StarMapCanvas({
       renderer.domElement.removeEventListener("pointermove", onMove);
       renderer.domElement.removeEventListener("pointerdown", onDown);
       renderer.domElement.removeEventListener("click", onClick);
+      renderer.domElement.removeEventListener("contextmenu", onContextMenu);
       controls.dispose();
       composer.dispose();
       renderer.dispose();
@@ -679,6 +697,11 @@ export function StarMapCanvas({
     if (!lookNonce) return;
     api.current?.resetHome();
   }, [lookNonce]);
+
+  useEffect(() => {
+    if (!inspectNonce) return;
+    if (selected?.code) api.current?.select(selected.code);
+  }, [inspectNonce, selected]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
