@@ -380,7 +380,7 @@ export function StarMapCanvas({
           belt.rotation.x = Math.PI / 2;
           belt.position.set(0, 0, 0);
           systemGroup.add(belt);
-        } else if (isPoi) {
+        } else if (isPoi || body.type === "LZ") {
           group.add(new THREE.Mesh(new THREE.OctahedronGeometry(0.08, 0), new THREE.MeshBasicMaterial({ color: 0xff4444 })));
         } else {
           group.add(new THREE.Mesh(new THREE.OctahedronGeometry(0.06, 0), new THREE.MeshBasicMaterial({ color: 0x14e6fa })));

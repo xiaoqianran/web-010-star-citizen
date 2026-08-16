@@ -72,13 +72,13 @@ export function ControlDisc({
         <div>{sub}</div>
       </div>
       <div className="disc-menu">
-        <button className={page === "information" ? "on" : ""} onClick={() => onPage("information")}>
+        <button data-page="information" className={page === "information" ? "on" : ""} onClick={() => onPage("information")}>
           {zh.disc.information}
         </button>
-        <button className={page === "routing" ? "on" : ""} onClick={() => onPage("routing")}>
+        <button data-page="routing" className={page === "routing" ? "on" : ""} onClick={() => onPage("routing")}>
           {zh.disc.routing}
         </button>
-        <button className={page === "bookmark" ? "on" : ""} onClick={() => onPage("bookmark")}>
+        <button data-page="bookmark" className={page === "bookmark" ? "on" : ""} onClick={() => onPage("bookmark")}>
           {zh.disc.bookmark}
         </button>
       </div>
@@ -104,17 +104,17 @@ export function ControlDisc({
         )}
         {page === "routing" && (
           <div className="disc-actions">
-            <button onClick={onDeparture}>
+            <button data-action="departure" onClick={onDeparture}>
               {zh.disc.setAs} {zh.disc.departure}
             </button>
-            <button onClick={onDestination}>
+            <button data-action="destination" onClick={onDestination}>
               {zh.disc.setAs} {zh.disc.destination}
             </button>
-            <button className={avoided ? "on" : ""} onClick={onAvoid}>
+            <button data-action="avoid" className={avoided ? "on" : ""} onClick={onAvoid}>
               {zh.disc.avoid}
             </button>
             {dest && (
-              <button className="jump-cta" onClick={onJump}>
+              <button data-action="jump" className="jump-cta" onClick={onJump}>
                 {zh.disc.jumpThrough} {dest}
               </button>
             )}
@@ -122,7 +122,7 @@ export function ControlDisc({
         )}
         {page === "bookmark" && (
           <div className="disc-actions">
-            <button className={bookmarked ? "on" : ""} onClick={onBookmark}>
+            <button data-action="bookmark" className={bookmarked ? "on" : ""} onClick={onBookmark}>
               {bookmarked ? zh.search.removeBookmark : zh.disc.bookmark}
             </button>
             <p className="empty slim-empty">{zh.bookmarks.localNote}</p>

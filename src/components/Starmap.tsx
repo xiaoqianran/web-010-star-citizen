@@ -236,24 +236,26 @@ export function Starmap() {
           >
             &lt; {zh.hud.back}
           </button>
-          <button
-            className={level === "galaxy" ? "on" : ""}
-            onClick={() => {
-              setLevel("galaxy");
-              setSelected(null);
-            }}
-          >
-            {zh.hud.gal}
-          </button>
-          <button
-            className={level === "system" ? "on" : ""}
-            onClick={() => {
-              setLevel("system");
-              setSelected(null);
-            }}
-          >
-            {zh.hud.sys}
-          </button>
+            <button
+              data-level="galaxy"
+              className={level === "galaxy" ? "on" : ""}
+              onClick={() => {
+                setLevel("galaxy");
+                setSelected(null);
+              }}
+            >
+              {zh.hud.gal}
+            </button>
+            <button
+              data-level="system"
+              className={level === "system" ? "on" : ""}
+              onClick={() => {
+                setLevel("system");
+                setSelected(null);
+              }}
+            >
+              {zh.hud.sys}
+            </button>
           <button className={level === "object" ? "on" : ""} onClick={() => selected && setLevel("object")}>
             {zh.hud.obj}
           </button>
@@ -325,17 +327,22 @@ export function Starmap() {
           </div>
           <div className="tabs">
             {(["search", "bookmarks", "routes", "display"] as const).map((id) => (
-              <button key={id} className={`tab ${tab === id ? "on" : ""}`} onClick={() => setTab(tab === id ? null : id)}>
+              <button
+                key={id}
+                data-tab={id}
+                className={`tab ${tab === id ? "on" : ""}`}
+                onClick={() => setTab(tab === id ? null : id)}
+              >
                 {zh.hud[id]}
               </button>
             ))}
           </div>
           <div className="tools">
             <span>{zh.hud.sensors}</span>
-            <button className={view === "3d" ? "on" : ""} onClick={() => setView("3d")}>
+            <button data-view="3d" className={view === "3d" ? "on" : ""} onClick={() => setView("3d")}>
               {zh.hud.view3d}
             </button>
-            <button className={view === "2d" ? "on" : ""} onClick={() => setView("2d")}>
+            <button data-view="2d" className={view === "2d" ? "on" : ""} onClick={() => setView("2d")}>
               {zh.hud.view2d}
             </button>
             <span>{zh.hud.camera}</span>
@@ -359,6 +366,7 @@ export function Starmap() {
           <section className="panel">
             <div className="search-box">
               <input
+                data-search
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={zh.study.filterPlaceholder}
@@ -490,6 +498,7 @@ export function Starmap() {
                 {AFFILIATIONS.map((n) => (
                   <label key={n.code}>
                     <input
+                      data-affil={n.code}
                       type="checkbox"
                       checked={display.affiliations[n.code] !== false}
                       onChange={(e) =>
@@ -508,6 +517,7 @@ export function Starmap() {
                 {(["S", "M", "L"] as const).map((sz) => (
                   <label key={sz}>
                     <input
+                      data-tunnel={sz}
                       type="checkbox"
                       checked={display.tunnels[sz]}
                       onChange={(e) =>
@@ -522,6 +532,7 @@ export function Starmap() {
                 <h3>{zh.display.longRangeScanner}</h3>
                 <label>
                   <input
+                    data-scan="lifeforms"
                     type="checkbox"
                     checked={display.scanners.lifeforms}
                     onChange={(e) =>
@@ -532,6 +543,7 @@ export function Starmap() {
                 </label>
                 <label>
                   <input
+                    data-scan="economy"
                     type="checkbox"
                     checked={display.scanners.economy}
                     onChange={(e) =>
@@ -542,6 +554,7 @@ export function Starmap() {
                 </label>
                 <label>
                   <input
+                    data-scan="crime"
                     type="checkbox"
                     checked={display.scanners.crime}
                     onChange={(e) =>
