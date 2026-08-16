@@ -1,0 +1,10 @@
+{
+  "name": "web-010-star-citizen",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "dev",
+      "command": "npm run dev"
+    }
+  ]
+}
