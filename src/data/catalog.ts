@@ -188,7 +188,17 @@ export function searchCatalog(query: string, currentSystem?: string): SearchHit[
         (o.designation && o.designation.toLowerCase().includes(q)),
     )
     .map((o) => ({ name: bodyLabel(o), code: o.code, type: o.type, system: o.system }));
-  return [...objHits, ...sysHits].slice(0, 32);
+  const rank = (h: SearchHit) => {
+    const name = h.name.toLowerCase();
+    const code = h.code.toLowerCase();
+    const sys = (h.system || "").toLowerCase();
+    if (name === q || code === q) return 0;
+    if (h.type === "STAR_SYSTEM") return 1;
+    if (sys === q) return 2;
+    if (name.startsWith(q) || code.startsWith(q)) return 3;
+    return 4;
+  };
+  return [...objHits, ...sysHits].sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name)).slice(0, 32);
 }
 
 function bfs(from: string, to: string): { path: string[]; edges: Edge[] } | null {

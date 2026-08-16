@@ -460,6 +460,7 @@ export function StarMapCanvas({
     let hoverSys: string | null = null;
 
     const onMove = (e: PointerEvent) => {
+      if (e.buttons) drag = Math.hypot(e.clientX - downX, e.clientY - downY);
       const r = renderer.domElement.getBoundingClientRect();
       pointer.x = ((e.clientX - r.left) / r.width) * 2 - 1;
       pointer.y = -((e.clientY - r.top) / r.height) * 2 + 1;
@@ -483,7 +484,16 @@ export function StarMapCanvas({
         pickables.forEach((p) => p.mesh.userData.label?.classList.toggle("hover", p.body.code === next?.code));
       }
     };
+    let drag = 0;
+    let downX = 0;
+    let downY = 0;
+    const onDown = (e: PointerEvent) => {
+      drag = 0;
+      downX = e.clientX;
+      downY = e.clientY;
+    };
     const onClick = () => {
+      if (drag > 6) return;
       if (modeRef.current === "galaxy" && hoverSys) {
         selectSysRef.current(hoverSys);
         return;
@@ -531,8 +541,13 @@ export function StarMapCanvas({
     };
     rebuild(bodies);
     applyDisplay(display, routeSystems);
-    setMode(mode);
-    setView(view);
+    systemGroup.visible = mode !== "galaxy";
+    galaxyGroup.visible = mode === "galaxy";
+    controls.minDistance = mode === "galaxy" ? 8 : 2;
+    if (view === "2d") {
+      controls.minPolarAngle = 0;
+      controls.maxPolarAngle = 0.08;
+    }
     applyCamera(camera, mode);
 
     const ndc = new THREE.Vector3();
@@ -546,6 +561,7 @@ export function StarMapCanvas({
     controls.addEventListener("change", emitCam);
 
     renderer.domElement.addEventListener("pointermove", onMove);
+    renderer.domElement.addEventListener("pointerdown", onDown);
     renderer.domElement.addEventListener("click", onClick);
     renderer.domElement.addEventListener("contextmenu", (e) => e.preventDefault());
     window.addEventListener("resize", resize);
@@ -589,6 +605,7 @@ export function StarMapCanvas({
       cancelAnimationFrame(frame);
       window.removeEventListener("resize", resize);
       renderer.domElement.removeEventListener("pointermove", onMove);
+      renderer.domElement.removeEventListener("pointerdown", onDown);
       renderer.domElement.removeEventListener("click", onClick);
       controls.dispose();
       composer.dispose();
@@ -599,19 +616,27 @@ export function StarMapCanvas({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const boot = useRef(true);
+
   useEffect(() => {
     api.current?.rebuild(bodies);
   }, [bodies]);
 
   useEffect(() => {
+    if (boot.current) return;
     api.current?.setMode(mode);
   }, [mode]);
 
   useEffect(() => {
+    if (boot.current) return;
     api.current?.setView(view);
   }, [view]);
 
   useEffect(() => {
+    if (boot.current) {
+      boot.current = false;
+      return;
+    }
     api.current?.select(selected?.code ?? null);
   }, [selected]);
 

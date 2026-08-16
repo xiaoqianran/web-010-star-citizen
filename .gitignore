@@ -10,3 +10,4 @@ dist
 npm-debug.log*
 pnpm-debug.log*
 research/capture/.tmp
+research/capture/clone-pass/*.png

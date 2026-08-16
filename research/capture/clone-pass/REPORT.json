@@ -1,0 +1,797 @@
+{
+  "base": "http://127.0.0.1:4173/",
+  "log": [
+    {
+      "t": "2026-08-16T18:30:11.597Z",
+      "step": "boot",
+      "url": "http://127.0.0.1:4173/"
+    },
+    {
+      "t": "2026-08-16T18:30:12.241Z",
+      "step": "ack",
+      "url": "http://127.0.0.1:4173/"
+    },
+    {
+      "t": "2026-08-16T18:30:12.865Z",
+      "step": "lore",
+      "url": "http://127.0.0.1:4173/"
+    },
+    {
+      "t": "2026-08-16T18:30:17.084Z",
+      "step": "map",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0",
+      "text": "GOSS"
+    },
+    {
+      "t": "2026-08-16T18:30:29.151Z",
+      "step": "drag-zoom",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=10.07%2C54.21%2C0.001445%2C0.00000098%2C0.00000262",
+      "camera": "10.07,54.21,0.001445,0.00000098,0.00000262"
+    },
+    {
+      "t": "2026-08-16T18:30:37.131Z",
+      "step": "search:Terra",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=73.83%2C32.49%2C0.000643%2C0.0000037%2C0.00000991&tab=search",
+      "count": 29
+    },
+    {
+      "t": "2026-08-16T18:30:42.705Z",
+      "step": "search:Stanton",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.86%2C31.96%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T18:30:48.168Z",
+      "step": "search:Sol",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.81%2C31.75%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T18:30:52.996Z",
+      "step": "search:Cassel",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.8%2C31.68%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T18:30:57.385Z",
+      "step": "search:Tamsa",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.66%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 6
+    },
+    {
+      "t": "2026-08-16T18:31:02.262Z",
+      "step": "search:ARK",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.66%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 4
+    },
+    {
+      "t": "2026-08-16T18:31:05.153Z",
+      "step": "search:Olisar",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T18:31:09.156Z",
+      "step": "search:Cellin",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T18:31:14.213Z",
+      "step": "search:Goss A",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T18:31:19.764Z",
+      "step": "search:jump",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T18:31:25.395Z",
+      "step": "search:star",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T18:31:31.049Z",
+      "step": "search:planet",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T18:31:36.584Z",
+      "step": "search:moon",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T18:31:42.170Z",
+      "step": "search:station",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T18:31:47.721Z",
+      "step": "search:belt",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T18:31:49.006Z",
+      "step": "search:black",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 0
+    },
+    {
+      "t": "2026-08-16T18:31:54.175Z",
+      "step": "search:a",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 32
+    },
+    {
+      "t": "2026-08-16T18:31:57.468Z",
+      "step": "search:UE",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 3
+    },
+    {
+      "t": "2026-08-16T18:32:00.221Z",
+      "step": "search:xxxnomatch",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 0
+    },
+    {
+      "t": "2026-08-16T18:32:04.610Z",
+      "step": "search:Vanduul",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T18:32:09.502Z",
+      "step": "search:Banu",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T18:32:14.202Z",
+      "step": "search:Port Olisar",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T18:32:18.884Z",
+      "step": "search:microTech",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 1
+    },
+    {
+      "t": "2026-08-16T18:32:22.114Z",
+      "step": "search:(empty)",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSB&system=GOSS&camera=74.79%2C31.64%2C0.000643%2C0.00000372%2C0.00000998&tab=search",
+      "count": 10
+    },
+    {
+      "t": "2026-08-16T18:32:29.611Z",
+      "step": "click-cassel",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=74.81%2C31.74%2C0.000643%2C0.00000518%2C0.00001967",
+      "text": "CASSEL"
+    },
+    {
+      "t": "2026-08-16T18:32:36.259Z",
+      "step": "route:GOSS->TERRA",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=62.55%2C5.11%2C0.03588%2C0.00054299%2C-0.00017088&tab=routes",
+      "text": "Goss to Terra · Through Terra · 1 跳跃点"
+    },
+    {
+      "t": "2026-08-16T18:32:42.534Z",
+      "step": "route:GOSS->SOL",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=60.95%2C0.03%2C0.073103%2C0.00126817%2C-0.00044234&tab=routes",
+      "text": "Goss to Sol · Through Terra · 5 跳跃点"
+    },
+    {
+      "t": "2026-08-16T18:32:47.076Z",
+      "step": "route:GOSS->GOSS",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=60.95%2C-0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "没有符合筛选的航线。"
+    },
+    {
+      "t": "2026-08-16T18:32:51.469Z",
+      "step": "route:foo->bar",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=60.95%2C-0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "Invalid object specified"
+    },
+    {
+      "t": "2026-08-16T18:32:55.748Z",
+      "step": "route:Cassel->Terra",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=60.95%2C-0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "Invalid object specified"
+    },
+    {
+      "t": "2026-08-16T18:32:59.913Z",
+      "step": "route:->",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=60.95%2C-0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
+      "text": "Invalid object specified"
+    },
+    {
+      "t": "2026-08-16T18:33:05.154Z",
+      "step": "display-toggles",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=60.95%2C-0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
+      "n": 12
+    },
+    {
+      "t": "2026-08-16T18:33:06.641Z",
+      "step": "2d",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=4.58%2C0%2C0.072562%2C0.00127667%2C-0.00044552&tab=display&view=2d",
+      "view": "2d"
+    },
+    {
+      "t": "2026-08-16T18:33:09.498Z",
+      "step": "keyboard",
+      "url": "http://127.0.0.1:4173/?location=GOSS.PLANETS.GOSSIICASSEL&system=GOSS&camera=50.22%2C0.01%2C0.061681%2C0.00127667%2C-0.00044552"
+    },
+    {
+      "t": "2026-08-16T18:33:11.143Z",
+      "step": "galaxy",
+      "url": "http://127.0.0.1:4173/?location=GOSS&camera=33.74%2C0.04%2C0.05236%2C0.00127667%2C-0.00044552"
+    },
+    {
+      "t": "2026-08-16T18:33:15.409Z",
+      "step": "tamsa",
+      "url": "http://127.0.0.1:4173/?location=BANSHEE.JUMPPOINTS.TAMSA&system=BANSHEE&camera=26.88%2C2.31%2C0.003054%2C0.00115715%2C-0.00040443",
+      "text": "BANSHEE - TAMSA"
+    },
+    {
+      "t": "2026-08-16T18:33:19.754Z",
+      "step": "stanton",
+      "url": "http://127.0.0.1:4173/?location=STANTON.JUMPPOINTS.PYRO&system=STANTON&camera=30.66%2C7.86%2C0.002154%2C0.00081447%2C-0.00027776",
+      "text": "STANTON - PYRO"
+    }
+  ],
+  "searchRows": [
+    {
+      "q": "Terra",
+      "count": 29,
+      "sample": [
+        {
+          "name": "Stanton - Terra",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Terra - Hadrian",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Terra - Tayac",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Terra - Goss",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Terra - Magnus",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Terra - Pyro",
+          "type": "跳跃点"
+        }
+      ]
+    },
+    {
+      "q": "Stanton",
+      "count": 32,
+      "sample": [
+        {
+          "name": "Stanton - Pyro",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Stanton - Magnus",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Stanton",
+          "type": "恒星"
+        },
+        {
+          "name": "microTech",
+          "type": "行星"
+        },
+        {
+          "name": "Hurston",
+          "type": "行星"
+        },
+        {
+          "name": "ArcCorp",
+          "type": "行星"
+        }
+      ]
+    },
+    {
+      "q": "Sol",
+      "count": 32,
+      "sample": [
+        {
+          "name": "Marisol Belt",
+          "type": "小行星带"
+        },
+        {
+          "name": "Davien - Sol",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Sol - Davien",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Sol - Croshaw",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Sol",
+          "type": "恒星"
+        },
+        {
+          "name": "Mercury",
+          "type": "行星"
+        }
+      ]
+    },
+    {
+      "q": "Cassel",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Cassel",
+          "type": "行星"
+        }
+      ]
+    },
+    {
+      "q": "Tamsa",
+      "count": 6,
+      "sample": [
+        {
+          "name": "Banshee - Tamsa",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Tamsa",
+          "type": "黑洞"
+        },
+        {
+          "name": "Tamsa I",
+          "type": "行星"
+        },
+        {
+          "name": "Tamsa II",
+          "type": "行星"
+        },
+        {
+          "name": "Tamsa - Banshee",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Tamsa",
+          "type": "星系"
+        }
+      ]
+    },
+    {
+      "q": "ARK",
+      "count": 4,
+      "sample": [
+        {
+          "name": "The ARK",
+          "type": "人造设施"
+        },
+        {
+          "name": "Elcibre Belt",
+          "type": "小行星带"
+        },
+        {
+          "name": "Markahil",
+          "type": "恒星"
+        },
+        {
+          "name": "Malkail (Markahil)",
+          "type": "星系"
+        }
+      ]
+    },
+    {
+      "q": "Olisar",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Port Olisar",
+          "type": "人造设施"
+        }
+      ]
+    },
+    {
+      "q": "Cellin",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Cellin",
+          "type": "卫星"
+        }
+      ]
+    },
+    {
+      "q": "Goss A",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Goss A",
+          "type": "恒星"
+        }
+      ]
+    },
+    {
+      "q": "jump",
+      "count": 32,
+      "sample": [
+        {
+          "name": "Stanton - Pyro",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Stanton - Magnus",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Stanton - Terra",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Stanton - Nyx",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Nyx - Castra",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Nyx - Bremen",
+          "type": "跳跃点"
+        }
+      ]
+    },
+    {
+      "q": "star",
+      "count": 32,
+      "sample": [
+        {
+          "name": "Stanton",
+          "type": "恒星"
+        },
+        {
+          "name": "Nyx",
+          "type": "恒星"
+        },
+        {
+          "name": "Terra Nova",
+          "type": "恒星"
+        },
+        {
+          "name": "Virgil",
+          "type": "恒星"
+        },
+        {
+          "name": "Pyro",
+          "type": "恒星"
+        },
+        {
+          "name": "Magnus",
+          "type": "恒星"
+        }
+      ]
+    },
+    {
+      "q": "planet",
+      "count": 32,
+      "sample": [
+        {
+          "name": "microTech",
+          "type": "行星"
+        },
+        {
+          "name": "Hurston",
+          "type": "行星"
+        },
+        {
+          "name": "ArcCorp",
+          "type": "行星"
+        },
+        {
+          "name": "Crusader",
+          "type": "行星"
+        },
+        {
+          "name": "Nyx I",
+          "type": "行星"
+        },
+        {
+          "name": "Nyx II",
+          "type": "行星"
+        }
+      ]
+    },
+    {
+      "q": "moon",
+      "count": 32,
+      "sample": [
+        {
+          "name": "Cellin",
+          "type": "卫星"
+        },
+        {
+          "name": "Daymar",
+          "type": "卫星"
+        },
+        {
+          "name": "Yela",
+          "type": "卫星"
+        },
+        {
+          "name": "Arial",
+          "type": "卫星"
+        },
+        {
+          "name": "Aberdeen",
+          "type": "卫星"
+        },
+        {
+          "name": "Magda",
+          "type": "卫星"
+        }
+      ]
+    },
+    {
+      "q": "station",
+      "count": 32,
+      "sample": [
+        {
+          "name": "Port Olisar",
+          "type": "人造设施"
+        },
+        {
+          "name": "Security Post Kareah",
+          "type": "人造设施"
+        },
+        {
+          "name": "Covalex Hub Gundo",
+          "type": "人造设施"
+        },
+        {
+          "name": "Cry-Astro Service",
+          "type": "人造设施"
+        },
+        {
+          "name": "ICC ScanHub Stanton",
+          "type": "人造设施"
+        },
+        {
+          "name": "CommArray SCC",
+          "type": "人造设施"
+        }
+      ]
+    },
+    {
+      "q": "belt",
+      "count": 32,
+      "sample": [
+        {
+          "name": "Aaron Halo",
+          "type": "小行星带"
+        },
+        {
+          "name": "Glaciem Ring",
+          "type": "小行星带"
+        },
+        {
+          "name": "Keeger Belt",
+          "type": "小行星带"
+        },
+        {
+          "name": "Marisol Belt",
+          "type": "小行星带"
+        },
+        {
+          "name": "Henge Cluster",
+          "type": "小行星场"
+        },
+        {
+          "name": "Gideon's Belt",
+          "type": "小行星带"
+        }
+      ]
+    },
+    {
+      "q": "black",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "a",
+      "count": 32,
+      "sample": [
+        {
+          "name": "Stanton - Pyro",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Stanton - Magnus",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Stanton",
+          "type": "恒星"
+        },
+        {
+          "name": "microTech",
+          "type": "行星"
+        },
+        {
+          "name": "Hurston",
+          "type": "行星"
+        },
+        {
+          "name": "ArcCorp",
+          "type": "行星"
+        }
+      ]
+    },
+    {
+      "q": "UE",
+      "count": 3,
+      "sample": [
+        {
+          "name": "Fuego",
+          "type": "卫星"
+        },
+        {
+          "name": "OB Station Gryphon",
+          "type": "人造设施"
+        },
+        {
+          "name": "Pue'nu",
+          "type": "卫星"
+        }
+      ]
+    },
+    {
+      "q": "xxxnomatch",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "Vanduul",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Vanduul Attack",
+          "type": "兴趣点"
+        }
+      ]
+    },
+    {
+      "q": "Banu",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Trise Flotilla",
+          "type": "人造设施"
+        }
+      ]
+    },
+    {
+      "q": "Port Olisar",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Port Olisar",
+          "type": "人造设施"
+        }
+      ]
+    },
+    {
+      "q": "microTech",
+      "count": 1,
+      "sample": [
+        {
+          "name": "microTech",
+          "type": "行星"
+        }
+      ]
+    },
+    {
+      "q": "",
+      "count": 10,
+      "sample": [
+        {
+          "name": "Goss - Osiris",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Goss - Tayac",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Goss - Terra",
+          "type": "跳跃点"
+        },
+        {
+          "name": "Goss A",
+          "type": "恒星"
+        },
+        {
+          "name": "Goss B",
+          "type": "恒星"
+        },
+        {
+          "name": "Goss I",
+          "type": "行星"
+        }
+      ]
+    }
+  ],
+  "routeRows": [
+    {
+      "pair": "GOSS->TERRA",
+      "meta": "Goss to Terra · Through Terra · 1 跳跃点",
+      "empty": "",
+      "segs": [
+        "Goss星系",
+        "Goss - Terra跳跃点",
+        "Terra - Goss跳跃点",
+        "Terra星系"
+      ]
+    },
+    {
+      "pair": "GOSS->SOL",
+      "meta": "Goss to Sol · Through Terra · 5 跳跃点",
+      "empty": "",
+      "segs": [
+        "Goss星系",
+        "Goss - Terra跳跃点",
+        "Terra - Goss跳跃点",
+        "Terra - Pyro跳跃点",
+        "Pyro - Terra跳跃点",
+        "Pyro - Cano跳跃点",
+        "Cano - Pyro跳跃点",
+        "Cano - Davien跳跃点"
+      ]
+    },
+    {
+      "pair": "GOSS->GOSS",
+      "meta": "",
+      "empty": "没有符合筛选的航线。",
+      "segs": []
+    },
+    {
+      "pair": "foo->bar",
+      "meta": "",
+      "empty": "Invalid object specified",
+      "segs": []
+    },
+    {
+      "pair": "Cassel->Terra",
+      "meta": "",
+      "empty": "Invalid object specified",
+      "segs": []
+    },
+    {
+      "pair": "->",
+      "meta": "",
+      "empty": "Invalid object specified",
+      "segs": []
+    }
+  ],
+  "finalUrl": "http://127.0.0.1:4173/?location=STANTON.JUMPPOINTS.PYRO&system=STANTON&camera=30.66%2C7.86%2C0.002154%2C0.00081447%2C-0.00027776"
+}

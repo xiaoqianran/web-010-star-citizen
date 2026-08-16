@@ -58,6 +58,24 @@
 - S/M/L 不改变 GOSS→TERRA / GOSS→SOL 结果
 - TAMSA→SOL 5 跳 Through Banshee；VEGA→TERRA 4 跳 Through Bremen
 
+## 克隆真人遍历（headless Chrome → `research/capture/clone-pass/REPORT.json`）
+
+开场三屏可点通。进入 GOSS 后 URL 即为 `location=GOSS&camera=10,102.98,0.002,0,0`。拖动后 `camera` 五元组会变。
+
+| 搜索 | 条数 | 现象 |
+| --- | --- | --- |
+| Terra / Stanton / Sol | 29–32 | 子串命中跳跃点偏多（已改为星系/精确名优先） |
+| Cassel / Olisar / Cellin / Goss A / microTech | 1 | 与官方一致 |
+| Tamsa | 6 | 含黑洞恒星 |
+| ARK | 4 | 含 The ARK |
+| Vanduul / Banu | 1 | POI / Trise Flotilla |
+| black / xxxnomatch | 0 | 与官方空结果一致 |
+| jump/star/planet/moon/station/belt | 32（上限） | 本地子串比官方宽，便于穷尽 |
+
+航线：GOSS→TERRA 1 跳 Through Terra；GOSS→SOL 5 跳；GOSS→GOSS 空；foo/Cassel/空 → Invalid object specified。与官方 API 一致。
+
+点 Cassel：控制盘 + 信息卡（宜居/尺寸/UEE/人口 7/经济 9/威胁 3）。DISPLAY 12 个开关可点；全部关掉阵营后银河变空（符合过滤）。2D/键盘/GLX 可切换。
+
 ## 克隆已接上的操作
 
 开场（可跳过）→ 90 星系银河（阵营色 + 可筛选隧道）→ 点星系进入 → 恒星/行星/卫星/空间站/小行星带/黑洞/POI/跳跃点 → 悬停「控制盘 >」→ 信息/航线/书签盘 → 设为起终点 → 本机书签 → 跳跃点跃迁闪白进入邻系 → 搜索任意字串排列组合 → 航线 BFS（与官方隧道图一致）并在银河画线 → DISPLAY 阵营/SML/热力 → 2D/3D → WASD/方向键/+/-/Esc/2/3/F → `?location=&camera=&tab=&view=` 同步
