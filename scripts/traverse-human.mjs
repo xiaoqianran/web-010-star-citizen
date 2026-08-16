@@ -218,17 +218,18 @@ async function main() {
 
   await click('[data-level="galaxy"]');
   await openTab("display");
-  const displayBefore = await page.evaluate(() =>
-    [...document.querySelectorAll(".display-grid input")].map((el) => ({
+  const displaySel = ".display-bar input, .display-grid input";
+  const displayBefore = await page.evaluate((sel) =>
+    [...document.querySelectorAll(sel)].map((el) => ({
       key: el.getAttribute("data-affil") || el.getAttribute("data-tunnel") || el.getAttribute("data-scan"),
       checked: el.checked,
     })),
-  );
+  , displaySel);
   const displayToggles = [];
-  const n = await page.$$eval(".display-grid input", (els) => els.length);
+  const n = await page.$$eval(displaySel, (els) => els.length);
   for (let i = 0; i < n; i++) {
-    const row = await page.evaluate((idx) => {
-      const el = document.querySelectorAll(".display-grid input")[idx];
+    const row = await page.evaluate((idx, sel) => {
+      const el = document.querySelectorAll(sel)[idx];
       const label = el.closest("label")?.innerText.trim();
       el.click();
       return {
@@ -237,14 +238,14 @@ async function main() {
         checked: el.checked,
         scanTag: document.querySelector(".scan-tag")?.textContent.trim() || null,
       };
-    }, i);
+    }, i, displaySel);
     displayToggles.push(row);
     note(`display:${row.label}`, { text: `${row.checked} ${row.scanTag || ""}` });
     await page.screenshot({ path: join(OUT, `display-${i}.png`), captureBeyondViewport: false }).catch(() => {});
-    await page.evaluate((idx) => {
-      const el = document.querySelectorAll(".display-grid input")[idx];
+    await page.evaluate((idx, sel) => {
+      const el = document.querySelectorAll(sel)[idx];
       if (el && !el.checked && !el.getAttribute("data-scan")) el.click();
-    }, i);
+    }, i, displaySel);
   }
 
   await click('[data-level="system"]');

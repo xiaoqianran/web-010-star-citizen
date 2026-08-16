@@ -607,7 +607,7 @@
       }
     }
   ],
-  "bookmarkEmpty": "名称 类型 信息 没有符合筛选的书签。",
+  "bookmarkEmpty": "筛选 星系 天体 名称 类型 信息 你还没有书签。",
   "routeLog": [
     {
       "from": "SOL",
@@ -722,603 +722,409 @@
       "differ": false
     }
   ],
-  "displayBefore": [
-    {
-      "key": "uee",
-      "checked": true
-    },
-    {
-      "key": "BANU",
-      "checked": true
-    },
-    {
-      "key": "VNCL",
-      "checked": true
-    },
-    {
-      "key": "XIAN",
-      "checked": true
-    },
-    {
-      "key": "DEV",
-      "checked": true
-    },
-    {
-      "key": "UNC",
-      "checked": true
-    },
-    {
-      "key": "S",
-      "checked": true
-    },
-    {
-      "key": "M",
-      "checked": true
-    },
-    {
-      "key": "L",
-      "checked": true
-    },
-    {
-      "key": "lifeforms",
-      "checked": false
-    },
-    {
-      "key": "economy",
-      "checked": false
-    },
-    {
-      "key": "crime",
-      "checked": false
-    }
-  ],
-  "displayToggles": [
-    {
-      "label": "UEE",
-      "key": "uee",
-      "checked": false,
-      "scanTag": null
-    },
-    {
-      "label": "Banu",
-      "key": "BANU",
-      "checked": false,
-      "scanTag": null
-    },
-    {
-      "label": "Vanduul",
-      "key": "VNCL",
-      "checked": false,
-      "scanTag": null
-    },
-    {
-      "label": "Xi'an",
-      "key": "XIAN",
-      "checked": false,
-      "scanTag": null
-    },
-    {
-      "label": "Developing",
-      "key": "DEV",
-      "checked": false,
-      "scanTag": null
-    },
-    {
-      "label": "Unclaimed",
-      "key": "UNC",
-      "checked": false,
-      "scanTag": null
-    },
-    {
-      "label": "小型",
-      "key": "S",
-      "checked": false,
-      "scanTag": null
-    },
-    {
-      "label": "中型",
-      "key": "M",
-      "checked": false,
-      "scanTag": null
-    },
-    {
-      "label": "大型",
-      "key": "L",
-      "checked": false,
-      "scanTag": null
-    },
-    {
-      "label": "生命体",
-      "key": "lifeforms",
-      "checked": true,
-      "scanTag": "// 人口"
-    },
-    {
-      "label": "经济",
-      "key": "economy",
-      "checked": true,
-      "scanTag": "// 经济"
-    },
-    {
-      "label": "犯罪",
-      "key": "crime",
-      "checked": true,
-      "scanTag": "// 威胁"
-    }
-  ],
+  "displayBefore": [],
+  "displayToggles": [],
   "keyLog": [
     {
       "key": "w",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "a",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "s",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "d",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "ArrowLeft",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "ArrowRight",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "ArrowUp",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "ArrowDown",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "+",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "-",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "60.95,0,0.07354,0.00127667,-0.00044552",
+      "before": "10,0,0.4,0,0",
+      "after": "10,0,0.4,0,0",
       "changed": false,
       "view": null
     },
     {
       "key": "2",
-      "before": "60.95,0,0.07354,0.00127667,-0.00044552",
-      "after": "68.7,9.41,0.003502,0.00052398,-0.00018286",
+      "before": "10,0,0.4,0,0",
+      "after": "69.5,10.28,0.003412,0.00047155,-0.00016456",
       "changed": true,
       "view": "2d"
     },
     {
       "key": "3",
-      "before": "68.7,9.41,0.003502,0.00052398,-0.00018286",
-      "after": "4.58,9.41,0.003481,0.00052398,-0.00018286",
+      "before": "69.5,10.28,0.003412,0.00047155,-0.00016456",
+      "after": "4.58,10.28,0.003392,0.00047155,-0.00016456",
       "changed": true,
       "view": null
     },
     {
       "key": "Escape",
-      "before": "4.58,9.41,0.003481,0.00052398,-0.00018286",
-      "after": "66.89,9.41,0.003424,0.00052398,-0.00018286",
+      "before": "4.58,10.28,0.003392,0.00047155,-0.00016456",
+      "after": "67.64,10.29,0.003336,0.00047155,-0.00016456",
       "changed": true,
       "view": null
     },
     {
       "key": " ",
-      "before": "66.89,9.41,0.003424,0.00052398,-0.00018286",
-      "after": "64.69,9.41,0.003338,0.00052398,-0.00018286",
+      "before": "67.64,10.29,0.003336,0.00047155,-0.00016456",
+      "after": "65.36,10.29,0.003252,0.00047155,-0.00016456",
       "changed": true,
       "view": null
     }
   ],
   "compass": {
-    "before": "64.69,9.41,0.003338,0.00052398,-0.00018286",
+    "before": "65.36,10.29,0.003252,0.00047155,-0.00016456",
     "after": "10,102.98,0.002,0,0"
   },
   "log": [
     {
-      "t": "2026-08-16T19:20:05.397Z",
+      "t": "2026-08-16T19:27:22.636Z",
       "step": "search:a",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 0
     },
     {
-      "t": "2026-08-16T19:20:10.526Z",
+      "t": "2026-08-16T19:27:26.232Z",
       "step": "search:UE",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 0
     },
     {
-      "t": "2026-08-16T19:20:15.816Z",
+      "t": "2026-08-16T19:27:29.635Z",
       "step": "search:jump",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 0
     },
     {
-      "t": "2026-08-16T19:20:21.141Z",
+      "t": "2026-08-16T19:27:33.221Z",
       "step": "search:GOSS.STARS.GOSSA",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 0
     },
     {
-      "t": "2026-08-16T19:20:29.071Z",
+      "t": "2026-08-16T19:27:38.959Z",
       "step": "search:star",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:20:37.299Z",
+      "t": "2026-08-16T19:27:44.644Z",
       "step": "search:planet",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 7
     },
     {
-      "t": "2026-08-16T19:20:44.660Z",
+      "t": "2026-08-16T19:27:50.272Z",
       "step": "search:moon",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:20:53.197Z",
+      "t": "2026-08-16T19:27:56.354Z",
       "step": "search:belt",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 32
     },
     {
-      "t": "2026-08-16T19:21:01.720Z",
+      "t": "2026-08-16T19:27:59.374Z",
       "step": "search:station",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 9
     },
     {
-      "t": "2026-08-16T19:21:10.366Z",
+      "t": "2026-08-16T19:28:05.077Z",
       "step": "search:the",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 3
     },
     {
-      "t": "2026-08-16T19:21:19.197Z",
+      "t": "2026-08-16T19:28:10.768Z",
       "step": "search:halo",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:21:27.682Z",
+      "t": "2026-08-16T19:28:16.652Z",
       "step": "search:flotilla",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 5
     },
     {
-      "t": "2026-08-16T19:21:31.081Z",
+      "t": "2026-08-16T19:28:22.549Z",
       "step": "search:ring",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 12
     },
     {
-      "t": "2026-08-16T19:21:39.227Z",
+      "t": "2026-08-16T19:28:28.057Z",
       "step": "search:cluster",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 7
     },
     {
-      "t": "2026-08-16T19:21:46.229Z",
+      "t": "2026-08-16T19:28:33.274Z",
       "step": "search:protoplanetary",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 7
     },
     {
-      "t": "2026-08-16T19:21:54.506Z",
+      "t": "2026-08-16T19:28:38.902Z",
       "step": "search:Levski",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:22:02.611Z",
+      "t": "2026-08-16T19:28:40.625Z",
       "step": "search:Lorville",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:22:10.650Z",
+      "t": "2026-08-16T19:28:46.309Z",
       "step": "search:Area18",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:22:18.620Z",
+      "t": "2026-08-16T19:28:47.655Z",
       "step": "search:Orison",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:22:26.514Z",
+      "t": "2026-08-16T19:28:52.954Z",
       "step": "search:Port Renatus",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:22:34.561Z",
+      "t": "2026-08-16T19:28:58.633Z",
       "step": "search:Goss A",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:22:41.951Z",
+      "t": "2026-08-16T19:29:04.226Z",
       "step": "search:Cassel",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:22:49.983Z",
+      "t": "2026-08-16T19:29:09.921Z",
       "step": "search:Tamsa",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 6
     },
     {
-      "t": "2026-08-16T19:22:58.094Z",
+      "t": "2026-08-16T19:29:15.682Z",
       "step": "search:ARK",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 3
     },
     {
-      "t": "2026-08-16T19:23:05.768Z",
+      "t": "2026-08-16T19:29:21.394Z",
       "step": "search:Banu",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:23:14.216Z",
+      "t": "2026-08-16T19:29:27.113Z",
       "step": "search:Vanduul",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:23:22.385Z",
+      "t": "2026-08-16T19:29:32.866Z",
       "step": "search:Kayfa",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 10
     },
     {
-      "t": "2026-08-16T19:23:31.609Z",
+      "t": "2026-08-16T19:29:39.382Z",
       "step": "search:Terra",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 26
     },
     {
-      "t": "2026-08-16T19:23:33.627Z",
+      "t": "2026-08-16T19:29:45.201Z",
       "step": "search:Fair",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:23:41.029Z",
+      "t": "2026-08-16T19:29:50.739Z",
       "step": "search:Warn",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0&tab=search",
       "count": 1
     },
     {
-      "t": "2026-08-16T19:23:46.632Z",
+      "t": "2026-08-16T19:29:54.668Z",
       "step": "visit:Cassel",
       "url": "http://127.0.0.1:4173/?location=GOSS&camera=10%2C102.98%2C0.002%2C0%2C0",
       "focus": "GOSS"
     },
     {
-      "t": "2026-08-16T19:23:57.069Z",
+      "t": "2026-08-16T19:30:02.310Z",
       "step": "visit:Goss A",
-      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSA&system=GOSS&camera=10.32%2C97.73%2C0.001904%2C-0.0000002%2C-0.00000053",
+      "url": "http://127.0.0.1:4173/?location=GOSS.STARS.GOSSA&system=GOSS&camera=10.49%2C95.53%2C0.001865%2C-0.00000029%2C-0.00000075",
       "focus": "GOSS A"
     },
     {
-      "t": "2026-08-16T19:24:08.022Z",
+      "t": "2026-08-16T19:30:10.083Z",
       "step": "visit:Levski",
-      "url": "http://127.0.0.1:4173/?location=NYX.LZS.LEVSKI&system=NYX&camera=25.69%2C50.41%2C0.001004%2C-0.00000226%2C-0.00000615",
+      "url": "http://127.0.0.1:4173/?location=NYX.LZS.LEVSKI&system=NYX&camera=28.44%2C48.03%2C0.000947%2C-0.00000241%2C-0.00000627",
       "focus": "LEVSKI"
     },
     {
-      "t": "2026-08-16T19:24:18.657Z",
+      "t": "2026-08-16T19:30:17.564Z",
       "step": "visit:Area18",
-      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=40.54%2C41.25%2C0.000781%2C-0.00000389%2C-0.00005724",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=44.42%2C39.79%2C0.000746%2C-0.00000389%2C-0.00005267",
       "focus": "AREA18"
     },
     {
-      "t": "2026-08-16T19:24:27.137Z",
+      "t": "2026-08-16T19:30:23.900Z",
       "step": "bookmarks",
-      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=48.03%2C38.6%2C0.00072%2C0.00002787%2C0.00001188&tab=bookmarks",
-      "text": "名称 类型 信息 没有符合筛选的书签。"
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=53.61%2C37.02%2C0.000689%2C0.00003734%2C0.00003552&tab=bookmarks",
+      "text": "筛选 星系 天体 名称 类型 信息 你还没有书签。"
     },
     {
-      "t": "2026-08-16T19:24:37.277Z",
+      "t": "2026-08-16T19:30:31.261Z",
       "step": "route:SOL-NYX",
-      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=58.59%2C9.57%2C0.028571%2C0.00037794%2C-0.00006077&tab=routes",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=59.73%2C9.49%2C0.028571%2C0.0003817%2C-0.00005104&tab=routes",
       "text": "10/4"
     },
     {
-      "t": "2026-08-16T19:24:43.235Z",
+      "t": "2026-08-16T19:30:38.260Z",
       "step": "route:STANTON-TAMSA",
-      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.67%2C0.97%2C0.061765%2C0.00105514%2C-0.00035068&tab=routes",
+      "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.85%2C0.6%2C0.065758%2C0.00113121%2C-0.0003814&tab=routes",
       "text": "11/7"
     },
     {
-      "t": "2026-08-16T19:24:49.800Z",
+      "t": "2026-08-16T19:30:44.763Z",
       "step": "route:KILIAN-PYRO",
       "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
       "text": "4/3"
     },
     {
-      "t": "2026-08-16T19:24:56.268Z",
+      "t": "2026-08-16T19:30:50.985Z",
       "step": "route:GOSS-TERRA",
       "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
       "text": "1/1"
     },
     {
-      "t": "2026-08-16T19:25:00.961Z",
+      "t": "2026-08-16T19:30:56.021Z",
       "step": "route:GOSS-GOSS",
       "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
       "text": "没有符合筛选的航线。"
     },
     {
-      "t": "2026-08-16T19:25:05.993Z",
+      "t": "2026-08-16T19:31:00.975Z",
       "step": "route:Cassel-Terra",
       "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
       "text": "Invalid object specified"
     },
     {
-      "t": "2026-08-16T19:25:11.171Z",
+      "t": "2026-08-16T19:31:06.028Z",
       "step": "route:BANU-SOL",
       "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
       "text": "Invalid object specified"
     },
     {
-      "t": "2026-08-16T19:25:15.741Z",
+      "t": "2026-08-16T19:31:10.993Z",
       "step": "route:Goss A-TERRA",
       "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
       "text": "Invalid object specified"
     },
     {
-      "t": "2026-08-16T19:25:22.226Z",
+      "t": "2026-08-16T19:31:17.198Z",
       "step": "route:GOSS.STARS.GOSSA-TERRA",
       "url": "http://127.0.0.1:4173/?location=STANTON.LZS.AREA18&system=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=routes",
       "text": "1/1"
     },
     {
-      "t": "2026-08-16T19:25:28.425Z",
-      "step": "display:UEE",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "false "
-    },
-    {
-      "t": "2026-08-16T19:25:30.440Z",
-      "step": "display:Banu",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "false "
-    },
-    {
-      "t": "2026-08-16T19:25:32.432Z",
-      "step": "display:Vanduul",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "false "
-    },
-    {
-      "t": "2026-08-16T19:25:34.609Z",
-      "step": "display:Xi'an",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "false "
-    },
-    {
-      "t": "2026-08-16T19:25:36.580Z",
-      "step": "display:Developing",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "false "
-    },
-    {
-      "t": "2026-08-16T19:25:38.642Z",
-      "step": "display:Unclaimed",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "false "
-    },
-    {
-      "t": "2026-08-16T19:25:40.691Z",
-      "step": "display:小型",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "false "
-    },
-    {
-      "t": "2026-08-16T19:25:42.935Z",
-      "step": "display:中型",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "false "
-    },
-    {
-      "t": "2026-08-16T19:25:45.065Z",
-      "step": "display:大型",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "false "
-    },
-    {
-      "t": "2026-08-16T19:25:47.151Z",
-      "step": "display:生命体",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "true // 人口"
-    },
-    {
-      "t": "2026-08-16T19:25:49.516Z",
-      "step": "display:经济",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "true // 经济"
-    },
-    {
-      "t": "2026-08-16T19:25:51.609Z",
-      "step": "display:犯罪",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=60.95%2C0%2C0.07354%2C0.00127667%2C-0.00044552&tab=display",
-      "text": "true // 威胁"
-    },
-    {
-      "t": "2026-08-16T19:26:02.359Z",
+      "t": "2026-08-16T19:31:31.100Z",
       "step": "key:2",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=68.7%2C9.41%2C0.003502%2C0.00052398%2C-0.00018286&tab=display&view=2d",
-      "cam": "60.95,0,0.07354,0.00127667,-0.00044552 -> 68.7,9.41,0.003502,0.00052398,-0.00018286"
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=69.5%2C10.28%2C0.003412%2C0.00047155%2C-0.00016456&tab=display&view=2d",
+      "cam": "10,0,0.4,0,0 -> 69.5,10.28,0.003412,0.00047155,-0.00016456"
     },
     {
-      "t": "2026-08-16T19:26:03.272Z",
+      "t": "2026-08-16T19:31:31.987Z",
       "step": "key:3",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=4.58%2C9.41%2C0.003481%2C0.00052398%2C-0.00018286&tab=display",
-      "cam": "68.7,9.41,0.003502,0.00052398,-0.00018286 -> 4.58,9.41,0.003481,0.00052398,-0.00018286"
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=4.58%2C10.28%2C0.003392%2C0.00047155%2C-0.00016456&tab=display",
+      "cam": "69.5,10.28,0.003412,0.00047155,-0.00016456 -> 4.58,10.28,0.003392,0.00047155,-0.00016456"
     },
     {
-      "t": "2026-08-16T19:26:04.160Z",
+      "t": "2026-08-16T19:31:32.872Z",
       "step": "key:Escape",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=66.89%2C9.41%2C0.003424%2C0.00052398%2C-0.00018286",
-      "cam": "4.58,9.41,0.003481,0.00052398,-0.00018286 -> 66.89,9.41,0.003424,0.00052398,-0.00018286"
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=67.64%2C10.29%2C0.003336%2C0.00047155%2C-0.00016456",
+      "cam": "4.58,10.28,0.003392,0.00047155,-0.00016456 -> 67.64,10.29,0.003336,0.00047155,-0.00016456"
     },
     {
-      "t": "2026-08-16T19:26:05.056Z",
+      "t": "2026-08-16T19:31:33.650Z",
       "step": "key: ",
-      "url": "http://127.0.0.1:4173/?location=STANTON&camera=64.69%2C9.41%2C0.003338%2C0.00052398%2C-0.00018286",
-      "cam": "66.89,9.41,0.003424,0.00052398,-0.00018286 -> 64.69,9.41,0.003338,0.00052398,-0.00018286"
+      "url": "http://127.0.0.1:4173/?location=STANTON&camera=65.36%2C10.29%2C0.003252%2C0.00047155%2C-0.00016456",
+      "cam": "67.64,10.29,0.003336,0.00047155,-0.00016456 -> 65.36,10.29,0.003252,0.00047155,-0.00016456"
     },
     {
-      "t": "2026-08-16T19:26:05.671Z",
+      "t": "2026-08-16T19:31:34.225Z",
       "step": "compass",
       "url": "http://127.0.0.1:4173/?location=STANTON&camera=10%2C102.98%2C0.002%2C0%2C0",
-      "cam": "64.69,9.41,0.003338,0.00052398,-0.00018286 -> 10,102.98,0.002,0,0"
+      "cam": "65.36,10.29,0.003252,0.00047155,-0.00016456 -> 10,102.98,0.002,0,0"
     },
     {
-      "t": "2026-08-16T19:26:06.292Z",
+      "t": "2026-08-16T19:31:34.900Z",
       "step": "view",
       "url": "http://127.0.0.1:4173/?location=STANTON&camera=4.58%2C102.98%2C0.002003%2C0%2C0",
       "text": "2d -> 3d-default"
