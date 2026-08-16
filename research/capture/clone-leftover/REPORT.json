@@ -1,0 +1,240 @@
+{
+  "searchTable": [
+    {
+      "q": "a",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "UE",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "jump",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "GOSS.STARS.GOSSA",
+      "count": 0,
+      "sample": []
+    },
+    {
+      "q": "star",
+      "count": 1,
+      "sample": [
+        {
+          "name": "JusticeStar Satellite",
+          "type": "人造设施"
+        }
+      ]
+    },
+    {
+      "q": "Levski",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Levski",
+          "type": "着陆区"
+        }
+      ]
+    },
+    {
+      "q": "Lorville",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Lorville",
+          "type": "着陆区"
+        }
+      ]
+    },
+    {
+      "q": "Area18",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Area18",
+          "type": "着陆区"
+        }
+      ]
+    },
+    {
+      "q": "Orison",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Orison",
+          "type": "着陆区"
+        }
+      ]
+    },
+    {
+      "q": "Port Renatus",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Port Renatus",
+          "type": "着陆区"
+        }
+      ]
+    },
+    {
+      "q": "the",
+      "count": 3,
+      "sample": [
+        {
+          "name": "The ARK",
+          "type": "人造设施"
+        },
+        {
+          "name": "The Coil",
+          "type": "小行星场"
+        },
+        {
+          "name": "The Red God",
+          "type": "行星"
+        }
+      ]
+    },
+    {
+      "q": "halo",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Aaron Halo",
+          "type": "小行星带"
+        }
+      ]
+    },
+    {
+      "q": "flotilla",
+      "count": 5,
+      "sample": [
+        {
+          "name": "Bacchus Flotilla",
+          "type": "人造设施"
+        },
+        {
+          "name": "Hadrian Flotilla",
+          "type": "人造设施"
+        },
+        {
+          "name": "Lyris",
+          "type": "人造设施"
+        },
+        {
+          "name": "Trise Flotilla",
+          "type": "人造设施"
+        }
+      ]
+    },
+    {
+      "q": "Goss A",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Goss A",
+          "type": "恒星"
+        }
+      ]
+    },
+    {
+      "q": "Cassel",
+      "count": 1,
+      "sample": [
+        {
+          "name": "Cassel",
+          "type": "行星"
+        }
+      ]
+    }
+  ],
+  "visitLog": [
+    {
+      "q": "Levski",
+      "name": "Levski",
+      "hit": true,
+      "focus": "LEVSKI"
+    },
+    {
+      "q": "Area18",
+      "name": "Area18",
+      "hit": true,
+      "focus": "AREA18"
+    },
+    {
+      "q": "Orison",
+      "name": "Orison",
+      "hit": true,
+      "focus": "ORISON"
+    }
+  ],
+  "routeLog": [
+    {
+      "from": "SOL",
+      "to": "NYX",
+      "short": {
+        "text": "Sol to Nyx · Through Davien · 10 跳跃点",
+        "mode": "shortest",
+        "jumps": "10"
+      },
+      "least": {
+        "text": "Sol to Nyx · Through Davien · 4 跳跃点",
+        "mode": "leastjumps",
+        "jumps": "4"
+      },
+      "differ": true
+    },
+    {
+      "from": "STANTON",
+      "to": "TAMSA",
+      "short": {
+        "text": "Stanton to Tamsa · Through Nyx · 11 跳跃点",
+        "mode": "shortest",
+        "jumps": "11"
+      },
+      "least": {
+        "text": "Stanton to Tamsa · Through Pyro · 7 跳跃点",
+        "mode": "leastjumps",
+        "jumps": "7"
+      },
+      "differ": true
+    },
+    {
+      "from": "KILIAN",
+      "to": "PYRO",
+      "short": {
+        "text": "Kilian to Pyro · Through Ellis · 4 跳跃点",
+        "mode": "shortest",
+        "jumps": "4"
+      },
+      "least": {
+        "text": "Kilian to Pyro · Through Davien · 3 跳跃点",
+        "mode": "leastjumps",
+        "jumps": "3"
+      },
+      "differ": true
+    },
+    {
+      "from": "GOSS",
+      "to": "TERRA",
+      "short": {
+        "text": "Goss to Terra · Through Terra · 1 跳跃点",
+        "mode": "shortest",
+        "jumps": "1"
+      },
+      "least": {
+        "text": "Goss to Terra · Through Terra · 1 跳跃点",
+        "mode": "leastjumps",
+        "jumps": "1"
+      },
+      "differ": false
+    }
+  ],
+  "compass": {
+    "before": "60.95,0,0.07354,0.00127667,-0.00044552",
+    "after": "10,102.98,0.035714,0,0"
+  }
+}

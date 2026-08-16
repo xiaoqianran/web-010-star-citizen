@@ -143,6 +143,14 @@
 - 五个 LZ 注入对应星系场景（贴在行星上）。
 - 指南针点击回到官方默认 `camera=10,102.98,0.002,0,0`。
 
+## 克隆 leftover 真人遍历
+
+`scripts/traverse-leftover.mjs` → `research/capture/clone-leftover/REPORT.json`
+
+搜索与官方一致：`a`/`UE`/`jump`/`GOSS.STARS.GOSSA` = 0；`star` → JusticeStar；`the` 3；`halo` 1；`flotilla` 5；五个 LZ 各 1 且能点进 LEVSKI / AREA18 / ORISON。
+
+航线面板切换与官方数字一致：SOL–NYX 10 / 4；STANTON–TAMSA 11 / 7 Through Nyx / Through Pyro；KILIAN–PYRO 4 / 3 Through Ellis / Through Davien。
+
 ## 仍须对照官网补的现场
 
 - DISPLAY 热力是网格还是光晕（全屏点击代理仍在跑）

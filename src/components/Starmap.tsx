@@ -361,6 +361,8 @@ export function Starmap() {
             data-action="compass"
             title={zh.hud.camera}
             onClick={() => {
+              setSelected(null);
+              setLevel("system");
               setCamera([10, 102.98, 0.002, 0, 0]);
               setLookNonce((n) => n + 1);
             }}
@@ -465,7 +467,7 @@ export function Starmap() {
             </div>
             {shown && !route?.empty ? (
               <>
-                <p className="route-meta">
+                <p className="route-meta" data-route-shown={routeMode} data-jumps={shown.jumps ?? ""}>
                   {shown.name} · {shown.label} · {shown.jumps} {zh.levels.jumpPoint}
                 </p>
                 <table>

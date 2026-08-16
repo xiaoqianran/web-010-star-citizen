@@ -117,6 +117,16 @@ async function main() {
   }
 
   await openTab("routes");
+  const click = async (sel) => {
+    const ok = await page.evaluate((s) => {
+      const el = document.querySelector(s);
+      if (!el) return false;
+      el.click();
+      return true;
+    }, sel);
+    if (!ok) throw new Error("missing " + sel);
+    await sleep(120);
+  };
   const routePairs = [
     ["SOL", "NYX"],
     ["STANTON", "TAMSA"],
@@ -127,16 +137,21 @@ async function main() {
   for (const [from, to] of routePairs) {
     await setInput(".fields input:nth-of-type(1)", from);
     await setInput(".fields input:nth-of-type(2)", to);
-    await page.click(".cta");
-    await sleep(200);
-    await page.click('[data-route-mode="shortest"]');
-    await sleep(80);
-    const short = await page.$eval(".route-meta", (el) => el.textContent.trim());
-    await page.click('[data-route-mode="leastjumps"]');
-    await sleep(80);
-    const least = await page.$eval(".route-meta", (el) => el.textContent.trim());
-    routeLog.push({ from, to, short, least, differ: short !== least });
-    note(`route:${from}-${to}`, { text: `${short} || ${least}` });
+    await click(".panel .cta");
+    await click('[data-route-mode="shortest"]');
+    const short = await page.$eval(".route-meta", (el) => ({
+      text: el.textContent.trim(),
+      mode: el.getAttribute("data-route-shown"),
+      jumps: el.getAttribute("data-jumps"),
+    }));
+    await click('[data-route-mode="leastjumps"]');
+    const least = await page.$eval(".route-meta", (el) => ({
+      text: el.textContent.trim(),
+      mode: el.getAttribute("data-route-shown"),
+      jumps: el.getAttribute("data-jumps"),
+    }));
+    routeLog.push({ from, to, short, least, differ: short.jumps !== least.jumps });
+    note(`route:${from}-${to}`, { text: `${short.jumps}/${short.mode} || ${least.jumps}/${least.mode}` });
   }
 
   const before = new URL(page.url()).searchParams.get("camera");

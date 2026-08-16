@@ -103,6 +103,7 @@ export function StarMapCanvas({
     rebuild: (bodies: CapturedBody[]) => void;
     applyDisplay: (d: DisplayState, route: string[]) => void;
     applyCamera: (c: CameraTuple, m: Level) => void;
+    resetHome: () => void;
     nudge: (az: number, el: number, zoom: number) => void;
   } | null>(null);
   const projectRef = useRef(onProject);
@@ -550,6 +551,10 @@ export function StarMapCanvas({
       rebuild,
       applyDisplay,
       applyCamera,
+      resetHome: () => {
+        applyCamera([10, 102.98, 0.002, 0, 0], "system");
+        camRef.current([10, 102.98, 0.002, 0, 0]);
+      },
       nudge: (az, el, zoom) => {
         const sph = new THREE.Spherical().setFromVector3(cam.position.clone().sub(controls.target));
         sph.theta += az;
@@ -669,8 +674,8 @@ export function StarMapCanvas({
 
   useEffect(() => {
     if (!lookNonce) return;
-    api.current?.applyCamera(camera, mode);
-  }, [lookNonce, camera, mode]);
+    api.current?.resetHome();
+  }, [lookNonce]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
