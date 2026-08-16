@@ -1,37 +1,41 @@
+import { forwardRef } from "react";
 import type { CapturedBody } from "@/data/celestial";
 import { bodyLabel, jumpDestination, sensorNum } from "@/data/celestial";
 import { zh } from "@/i18n/zh";
-import type { ScreenPt } from "@/scene/StarMapCanvas";
 
-export function ControlDisc({
-  body,
-  page,
-  point,
-  affiliation,
-  bookmarked,
-  avoided,
-  onPage,
-  onDeparture,
-  onDestination,
-  onBookmark,
-  onAvoid,
-  onJump,
-  onOpen,
-}: {
-  body: CapturedBody;
-  page: "inspect" | "information" | "routing" | "bookmark";
-  point: ScreenPt;
-  affiliation: string;
-  bookmarked: boolean;
-  avoided: boolean;
-  onPage: (p: "inspect" | "information" | "routing" | "bookmark") => void;
-  onDeparture: () => void;
-  onDestination: () => void;
-  onBookmark: () => void;
-  onAvoid: () => void;
-  onJump: () => void;
-  onOpen?: () => void;
-}) {
+export const ControlDisc = forwardRef<
+  HTMLDivElement,
+  {
+    body: CapturedBody;
+    page: "inspect" | "information" | "routing" | "bookmark";
+    affiliation: string;
+    bookmarked: boolean;
+    avoided: boolean;
+    onPage: (p: "inspect" | "information" | "routing" | "bookmark") => void;
+    onDeparture: () => void;
+    onDestination: () => void;
+    onBookmark: () => void;
+    onAvoid: () => void;
+    onJump: () => void;
+    onOpen?: () => void;
+  }
+>(function ControlDisc(
+  {
+    body,
+    page,
+    affiliation,
+    bookmarked,
+    avoided,
+    onPage,
+    onDeparture,
+    onDestination,
+    onBookmark,
+    onAvoid,
+    onJump,
+    onOpen,
+  },
+  ref,
+) {
   const dest = jumpDestination(body.code);
   const kind =
     body.type === "STAR"
@@ -47,7 +51,7 @@ export function ControlDisc({
               : zh.levels.jumpPoint;
   const sub = body.subtype?.name.replaceAll("-", " - ") || kind;
   return (
-    <div className="disc-wrap" style={{ left: point.x, top: point.y }}>
+    <div className="disc-wrap" ref={ref}>
       <svg className="disc-svg" viewBox="0 0 240 240" aria-hidden>
         <circle cx="120" cy="120" r="108" fill="none" stroke="#14e6fa" strokeOpacity="0.25" />
         <circle cx="120" cy="120" r="92" fill="none" stroke="#14e6fa" strokeOpacity="0.45" />
@@ -150,4 +154,4 @@ export function ControlDisc({
       )}
     </div>
   );
-}
+});

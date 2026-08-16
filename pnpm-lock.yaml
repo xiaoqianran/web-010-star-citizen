@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@fontsource/electrolize':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource/orbitron':
+        specifier: ^5.3.0
+        version: 5.3.0
       react:
         specifier: ^19.1.1
         version: 19.2.8
@@ -286,6 +292,12 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/electrolize@5.3.0':
+    resolution: {integrity: sha512-saCfwUHcb6TQ+lygieIA28sjlBjQD3na6vMCHKM1y57F13ad6tVcMymtgaNtqQ7B198cCqpRvBTnKBWMb6696A==}
+
+  '@fontsource/orbitron@5.3.0':
+    resolution: {integrity: sha512-+BhPsbUAo/AF7sRcf+TEexm+EWWkgTiR9Zwb7AhYIPkc5oplfvw0C45Oc2xlKPhwVEmxG8hHuA6/Ansbl+Bc6w==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -989,6 +1001,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.28.2':
     optional: true
+
+  '@fontsource/electrolize@5.3.0': {}
+
+  '@fontsource/orbitron@5.3.0': {}
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:

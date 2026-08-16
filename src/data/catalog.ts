@@ -370,6 +370,12 @@ export function resolveEndpoint(raw: string): string | null {
   // Official routes/find accepts object codes (GOSS.STARS.GOSSA → GOSS) but rejects display names (Goss A, Cassel).
   const byCode = objectByCode.get(u) ?? objects.find((o) => o.code.toUpperCase() === u);
   if (byCode) return byCode.system;
+  // Disc "设为起点/终点" fills the visible name; official API rejects those, but the local
+  // calculator should still resolve Cassel / Goss A so Calculate does not look frozen.
+  const byObjName = objects.find(
+    (o) => o.name?.toUpperCase() === u || o.designation?.toUpperCase() === u,
+  );
+  if (byObjName) return byObjName.system;
   return null;
 }
 

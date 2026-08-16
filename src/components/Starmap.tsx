@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { CameraTuple, Level, TabId } from "@/data/cameraUrl";
-import { readMapUrl, writeMapUrl } from "@/data/cameraUrl";
+import { readMapUrl, sameCamera, writeMapUrl } from "@/data/cameraUrl";
 import type { CapturedBody } from "@/data/celestial";
 import { bodyLabel, jumpDestination, systemCodeOf } from "@/data/celestial";
 import {
@@ -67,8 +67,10 @@ export function Starmap() {
   const [route, setRoute] = useState<RouteResult | null>(null);
   const [routeMode, setRouteMode] = useState<"shortest" | "leastjumps">("shortest");
   const [seg, setSeg] = useState(0);
-  const [point, setPoint] = useState<ScreenPt | null>(null);
   const [focusCode, setFocusCode] = useState<string | null>(null);
+  const discRef = useRef<HTMLDivElement>(null);
+  const tipRef = useRef<HTMLDivElement>(null);
+  const jumpingRef = useRef(false);
   const [sound, setSound] = useState(() => store.sound());
   const [camera, setCamera] = useState<CameraTuple>(firstCamera);
   const [display, setDisplay] = useState<DisplayState>(defaultDisplay);
@@ -123,7 +125,9 @@ export function Starmap() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement | null)?.tagName === "INPUT") return;
+      const el = e.target as HTMLElement | null;
+      const tag = el?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || el?.isContentEditable) return;
       if (e.key === "Escape") {
         if (document.fullscreenElement) void document.exitFullscreen();
         else if (tab) setTab(null);
@@ -138,7 +142,7 @@ export function Starmap() {
         if (document.fullscreenElement) void document.exitFullscreen();
         else void document.documentElement.requestFullscreen?.();
       }
-      if (e.key === " ") {
+      if (e.key === " " && tag !== "BUTTON") {
         e.preventDefault();
         setSelected(null);
         setLevel(level === "galaxy" ? "system" : level);
@@ -186,17 +190,49 @@ export function Starmap() {
   const jumpThrough = useCallback(
     async (fromBody?: CapturedBody | null) => {
       const dest = fromBody ? jumpDestination(fromBody.code) : null;
-      if (!dest) return;
+      if (!dest || jumpingRef.current) return;
+      jumpingRef.current = true;
       setJumping(true);
       blip(sound);
-      await new Promise((r) => setTimeout(r, 720));
-      setSystemCode(dest);
-      setSelected(null);
-      setLevel("system");
-      setJumping(false);
+      try {
+        await new Promise((r) => setTimeout(r, 720));
+        setSystemCode(dest);
+        setSelected(null);
+        setLevel("system");
+      } finally {
+        jumpingRef.current = false;
+        setJumping(false);
+      }
     },
     [sound],
   );
+
+  const placeHud = useCallback((pt: ScreenPt | null) => {
+    const disc = discRef.current;
+    if (disc) {
+      if (pt) {
+        disc.style.left = `${pt.x}px`;
+        disc.style.top = `${pt.y}px`;
+        disc.style.visibility = "visible";
+      } else {
+        disc.style.visibility = "hidden";
+      }
+    }
+    const tip = tipRef.current;
+    if (tip) {
+      if (pt) {
+        tip.style.left = `${pt.x + 18}px`;
+        tip.style.top = `${pt.y - 10}px`;
+        tip.style.visibility = "visible";
+      } else {
+        tip.style.visibility = "hidden";
+      }
+    }
+  }, []);
+
+  const onCamera = useCallback((c: CameraTuple) => {
+    setCamera((prev) => (sameCamera(prev, c) ? prev : c));
+  }, []);
 
   const pickHit = (code: string, type: string, system?: string) => {
     blip(sound);
@@ -285,8 +321,8 @@ export function Starmap() {
           }
           setCtx({ x, y, body: hit.body, system: hit.system });
         }}
-        onProject={setPoint}
-        onCamera={setCamera}
+        onProject={placeHud}
+        onCamera={onCamera}
       />
 
       {jumping && <div className="jump-veil" />}
@@ -301,7 +337,7 @@ export function Starmap() {
         </div>
       )}
 
-      <div className="hud">
+      <div className="hud" data-ready={loading ? "0" : "1"}>
         <nav className="levels">
           <button
             onClick={() => {
@@ -321,6 +357,7 @@ export function Starmap() {
                 setLevel("galaxy");
                 setSelected(null);
                 setCamera([10, 0, 0.4, 0, 0]);
+                setLookNonce((n) => n + 1);
               }}
             >
               {zh.hud.gal}
@@ -368,8 +405,8 @@ export function Starmap() {
           </button>
         </div>
 
-        {hover && !selected && !ctx && point && (
-          <div className="hover-tip" style={{ left: point.x + 18, top: point.y - 10 }}>
+        {hover && !selected && !ctx && (
+          <div className="hover-tip" ref={tipRef}>
             {zh.disc.controlDisc} &gt;
           </div>
         )}
@@ -444,11 +481,11 @@ export function Starmap() {
           </div>
         )}
 
-        {selected && level === "object" && point && (
+        {selected && level === "object" && (
           <ControlDisc
+            ref={discRef}
             body={selected}
             page={discPage}
-            point={point}
             affiliation={selected.affiliation?.[0]?.name || sys?.affiliationName || "UEE"}
             bookmarked={marks.includes(selected.code)}
             avoided={avoids.includes(selected.code)}
@@ -526,9 +563,15 @@ export function Starmap() {
         <button className="burger-hit" onClick={() => setMenu((m) => !m)} aria-label="menu" />
         {menu && (
           <div className="flyout">
-            <a href="#">{zh.hud.home}</a>
-            <a href="#">{zh.hud.explore}</a>
-            <a href="#">{zh.hud.starmap}</a>
+            <a href="#starmap" onClick={(e) => e.preventDefault()}>
+              {zh.hud.home}
+            </a>
+            <a href="#starmap" onClick={(e) => e.preventDefault()}>
+              {zh.hud.explore}
+            </a>
+            <a href="#starmap" onClick={(e) => e.preventDefault()}>
+              {zh.hud.starmap}
+            </a>
             <p>{sys?.type === "BINARY" ? zh.disc.binary : zh.disc.singleStar}</p>
           </div>
         )}

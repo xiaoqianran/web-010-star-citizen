@@ -39,6 +39,10 @@ export function readMapUrl(): MapUrl {
   return { location, system, camera: parseCamera(q.get("camera")), tab, view };
 }
 
+export function sameCamera(a: CameraTuple, b: CameraTuple) {
+  return formatCamera(a) === formatCamera(b);
+}
+
 export function writeMapUrl(next: MapUrl) {
   const q = new URLSearchParams();
   q.set("location", next.location);
@@ -47,7 +51,11 @@ export function writeMapUrl(next: MapUrl) {
   if (next.tab) q.set("tab", next.tab);
   if (next.view === "2d") q.set("view", "2d");
   const url = `${window.location.pathname}?${q.toString()}`;
-  window.history.replaceState(null, "", url);
+  try {
+    window.history.replaceState(null, "", url);
+  } catch {
+    /* ignore quota / security errors in embedded previews */
+  }
 }
 
 /** Official camera=a,b,c,d,e → orbit pose. c is zoom (0.002 system, >0.05 galaxy). */

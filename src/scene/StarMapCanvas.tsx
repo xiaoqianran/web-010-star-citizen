@@ -7,7 +7,7 @@ import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
 import type { CameraTuple, Level } from "@/data/cameraUrl";
-import { cameraToPose, poseToCamera } from "@/data/cameraUrl";
+import { cameraToPose, formatCamera, poseToCamera } from "@/data/cameraUrl";
 import type { CapturedBody } from "@/data/celestial";
 import { bodyLabel, placeBodies, systemScale } from "@/data/celestial";
 import type { SystemRow } from "@/data/catalog";
@@ -144,13 +144,23 @@ export function StarMapCanvas({
 
     let renderer: THREE.WebGLRenderer;
     try {
-      renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: "high-performance" });
+      renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: false,
+        stencil: false,
+        powerPreference: "default",
+        failIfMajorPerformanceCaveat: false,
+      });
     } catch {
       el.classList.add("canvas-fail");
       el.textContent = "当前浏览器似乎不支持 WebGL。";
       return;
     }
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    const gl = renderer.getContext();
+    const dbg = gl.getExtension("WEBGL_debug_renderer_info");
+    const gpu = dbg ? String(gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) || "") : "";
+    const weak = (navigator.hardwareConcurrency || 8) <= 4 || /SwiftShader|llvmpipe|software/i.test(gpu);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, weak ? 1 : 1.75));
     renderer.toneMapping = THREE.NoToneMapping;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     el.appendChild(renderer.domElement);
@@ -159,11 +169,18 @@ export function StarMapCanvas({
     Object.assign(labels.domElement.style, { position: "absolute", inset: "0", pointerEvents: "none" });
     el.appendChild(labels.domElement);
 
-    const composer = new EffectComposer(renderer);
-    composer.addPass(new RenderPass(scene, cam));
-    const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 0.85, 0.42, 0.18);
-    composer.addPass(bloom);
-    composer.addPass(new OutputPass());
+    let composer: EffectComposer | null = null;
+    let bloom: UnrealBloomPass | null = null;
+    try {
+      composer = new EffectComposer(renderer);
+      composer.addPass(new RenderPass(scene, cam));
+      bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), weak ? 0.45 : 0.85, 0.42, 0.18);
+      composer.addPass(bloom);
+      composer.addPass(new OutputPass());
+    } catch {
+      composer = null;
+      bloom = null;
+    }
 
     const controls = new OrbitControls(cam, renderer.domElement);
     controls.enablePan = false;
@@ -578,14 +595,17 @@ export function StarMapCanvas({
     const resize = () => {
       const w = el.clientWidth;
       const h = el.clientHeight;
+      if (w < 2 || h < 2) return;
       cam.aspect = w / h;
       cam.updateProjectionMatrix();
-      renderer.setSize(w, h);
+      renderer.setSize(w, h, false);
       labels.setSize(w, h);
-      composer.setSize(w, h);
-      bloom.setSize(w, h);
+      composer?.setSize(w, h);
+      bloom?.setSize(w, h);
     };
     resize();
+    const ro = new ResizeObserver(() => resize());
+    ro.observe(el);
 
     api.current = {
       setMode,
@@ -636,18 +656,31 @@ export function StarMapCanvas({
 
     const ndc = new THREE.Vector3();
     let lastEmit = 0;
+    let lastCamKey = "";
+    let lastPx = 1e9;
+    let lastPy = 1e9;
     const emitCam = () => {
       const now = performance.now();
       if (now - lastEmit < 180) return;
       lastEmit = now;
-      camRef.current(poseToCamera(cam.position, controls.target, modeRef.current));
+      const next = poseToCamera(cam.position, controls.target, modeRef.current);
+      const key = formatCamera(next);
+      if (key === lastCamKey) return;
+      lastCamKey = key;
+      camRef.current(next);
     };
     controls.addEventListener("change", emitCam);
 
+    const onLost = (e: Event) => {
+      e.preventDefault();
+      el.classList.add("canvas-fail");
+      el.textContent = "当前浏览器似乎不支持 WebGL。";
+    };
     renderer.domElement.addEventListener("pointermove", onMove);
     renderer.domElement.addEventListener("pointerdown", onDown);
     renderer.domElement.addEventListener("click", onClick);
     renderer.domElement.addEventListener("contextmenu", onContextMenu);
+    renderer.domElement.addEventListener("webglcontextlost", onLost);
     window.addEventListener("resize", resize);
 
     let frame = 0;
@@ -667,7 +700,8 @@ export function StarMapCanvas({
         if (fly.t >= 1) fly = null;
       }
       controls.update();
-      composer.render();
+      if (composer) composer.render();
+      else renderer.render(scene, cam);
       labels.render(scene, cam);
 
       const code = selectedRef.current?.code;
@@ -675,11 +709,16 @@ export function StarMapCanvas({
       if (obj) {
         ndc.copy(obj.position).project(cam);
         const r = el.getBoundingClientRect();
-        projectRef.current({
-          x: (ndc.x * 0.5 + 0.5) * r.width,
-          y: (-ndc.y * 0.5 + 0.5) * r.height,
-        });
-      } else {
+        const x = (ndc.x * 0.5 + 0.5) * r.width;
+        const y = (-ndc.y * 0.5 + 0.5) * r.height;
+        if (Math.abs(x - lastPx) > 0.6 || Math.abs(y - lastPy) > 0.6) {
+          lastPx = x;
+          lastPy = y;
+          projectRef.current({ x, y });
+        }
+      } else if (lastPx < 1e8) {
+        lastPx = 1e9;
+        lastPy = 1e9;
         projectRef.current(null);
       }
     };
@@ -687,13 +726,15 @@ export function StarMapCanvas({
 
     return () => {
       cancelAnimationFrame(frame);
+      ro.disconnect();
       window.removeEventListener("resize", resize);
       renderer.domElement.removeEventListener("pointermove", onMove);
       renderer.domElement.removeEventListener("pointerdown", onDown);
       renderer.domElement.removeEventListener("click", onClick);
       renderer.domElement.removeEventListener("contextmenu", onContextMenu);
+      renderer.domElement.removeEventListener("webglcontextlost", onLost);
       controls.dispose();
-      composer.dispose();
+      composer?.dispose();
       renderer.dispose();
       el.replaceChildren();
     };
@@ -745,7 +786,9 @@ export function StarMapCanvas({
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement | null)?.tagName === "INPUT") return;
+      const el = e.target as HTMLElement | null;
+      const tag = el?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || el?.isContentEditable) return;
       const k = e.key.toLowerCase();
       if (k === "a" || k === "arrowleft") api.current?.nudge(-0.08, 0, 1);
       if (k === "d" || k === "arrowright") api.current?.nudge(0.08, 0, 1);

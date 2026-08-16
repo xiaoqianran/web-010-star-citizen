@@ -305,17 +305,19 @@
 .hud button,
 .hud input,
 .hud a,
+.hud label,
 .hud .panel,
 .hud .tab,
 .hud .levels,
 .hud .utils,
-.hud .focus,
 .hud .tools,
 .hud .brand-ark,
 .hud .compass,
 .hud .disc-menu,
 .hud .info-card,
-.hud .ctx-menu {
+.hud .ctx-menu,
+.hud .flyout,
+.hud .display-bar {
   pointer-events: auto;
 }
 
@@ -347,6 +349,7 @@
   transform: translateX(-50%);
   min-width: 160px;
   height: 34px;
+  pointer-events: none;
   padding: 0 28px;
   display: flex;
   align-items: center;
@@ -732,6 +735,8 @@
 
 .disc-wrap {
   position: absolute;
+  left: 50%;
+  top: 42%;
   width: 240px;
   height: 240px;
   transform: translate(-50%, -50%);
@@ -810,6 +815,8 @@
 
 .hover-tip {
   position: absolute;
+  left: 50%;
+  top: 40%;
   color: #ffb534;
   font-size: 11px;
   letter-spacing: 0.14em;

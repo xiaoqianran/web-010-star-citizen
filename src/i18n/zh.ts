@@ -38,6 +38,7 @@ export const zh = {
     noWebglWelcome: "欢迎来到 ARK Starmap",
     noWebgl: "当前浏览器似乎不支持 WebGL。",
     noWebglHint: "建议下载最新版 Google Chrome。",
+    crash: "星图界面出错，请刷新页面重试。",
   },
   hud: {
     back: "返回",

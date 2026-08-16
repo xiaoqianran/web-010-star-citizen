@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { Intro, TopBar } from "@/components/Intro";
 import { Starmap } from "@/components/Starmap";
 import { store } from "@/data/storage";
@@ -48,7 +49,9 @@ export default function App() {
           }}
         />
       ) : (
-        <Starmap />
+        <ErrorBoundary>
+          <Starmap />
+        </ErrorBoundary>
       )}
     </div>
   );

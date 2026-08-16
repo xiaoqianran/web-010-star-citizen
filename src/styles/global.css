@@ -14,13 +14,27 @@ body,
   overflow: hidden;
   background: #000508;
   color: #d1f3fd;
-  font-family: Electrolize, sans-serif;
+  font-family: Electrolize, "Segoe UI", sans-serif;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 button,
-input {
+input,
+textarea {
   font-family: inherit;
+}
+
+input,
+textarea {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+button,
+a,
+label {
+  touch-action: manipulation;
 }
 
 button {

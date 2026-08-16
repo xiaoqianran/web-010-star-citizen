@@ -7,9 +7,25 @@ const KEYS = {
   recent: "sm_recent",
 } as const;
 
+function readItem(key: string): string | null {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function writeItem(key: string, value: string) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    /* private mode / blocked storage must not crash the map */
+  }
+}
+
 function readList(key: string): string[] {
   try {
-    const raw = localStorage.getItem(key);
+    const raw = readItem(key);
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     return Array.isArray(parsed) ? parsed.filter((x) => typeof x === "string") : [];
@@ -20,22 +36,22 @@ function readList(key: string): string[] {
 
 export const store = {
   sound(): boolean {
-    return localStorage.getItem(KEYS.sound) !== "0";
+    return readItem(KEYS.sound) !== "0";
   },
   setSound(on: boolean) {
-    localStorage.setItem(KEYS.sound, on ? "1" : "0");
+    writeItem(KEYS.sound, on ? "1" : "0");
   },
   skipAck(): boolean {
-    return localStorage.getItem(KEYS.skipAck) === "1";
+    return readItem(KEYS.skipAck) === "1";
   },
   setSkipAck(on: boolean) {
-    localStorage.setItem(KEYS.skipAck, on ? "1" : "0");
+    writeItem(KEYS.skipAck, on ? "1" : "0");
   },
   skipInfo(): boolean {
-    return localStorage.getItem(KEYS.skipInfo) === "1";
+    return readItem(KEYS.skipInfo) === "1";
   },
   setSkipInfo(on: boolean) {
-    localStorage.setItem(KEYS.skipInfo, on ? "1" : "0");
+    writeItem(KEYS.skipInfo, on ? "1" : "0");
   },
   bookmarks(): string[] {
     return readList(KEYS.bookmarks);
@@ -44,7 +60,7 @@ export const store = {
     const cur = new Set(readList(KEYS.bookmarks));
     if (cur.has(code)) cur.delete(code);
     else cur.add(code);
-    localStorage.setItem(KEYS.bookmarks, JSON.stringify([...cur]));
+    writeItem(KEYS.bookmarks, JSON.stringify([...cur]));
     return [...cur];
   },
   recent(): string[] {
@@ -54,7 +70,7 @@ export const store = {
     const clean = name.trim();
     if (!clean) return readList(KEYS.recent);
     const next = [clean, ...readList(KEYS.recent).filter((x) => x.toLowerCase() !== clean.toLowerCase())].slice(0, 8);
-    localStorage.setItem(KEYS.recent, JSON.stringify(next));
+    writeItem(KEYS.recent, JSON.stringify(next));
     return next;
   },
   avoid(): string[] {
@@ -64,7 +80,7 @@ export const store = {
     const cur = new Set(readList(KEYS.avoid));
     if (cur.has(code)) cur.delete(code);
     else cur.add(code);
-    localStorage.setItem(KEYS.avoid, JSON.stringify([...cur]));
+    writeItem(KEYS.avoid, JSON.stringify([...cur]));
     return [...cur];
   },
 };
@@ -75,6 +91,7 @@ export function blip(on: boolean) {
   if (!on) return;
   try {
     audio ??= new AudioContext();
+    if (audio.state === "suspended") void audio.resume();
     const o = audio.createOscillator();
     const g = audio.createGain();
     o.type = "sine";
